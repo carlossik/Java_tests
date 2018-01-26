@@ -1,0 +1,736 @@
+[
+  {
+    "source": "All Flights matching search/filter combination load as results",
+    "steps": [
+      {
+        "name": "All Flights matching search/filter combination load as results",
+        "aggregatedDurations": {
+          "average": 0.02558976,
+          "median": 0.02558976
+        },
+        "durations": [
+          {
+            "duration": 0.026316789,
+            "location": "AbilityToSearchForFlights.feature:81"
+          },
+          {
+            "duration": 0.024862732,
+            "location": "AbilityToSearchForFlights.feature:93"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "All Flights loads which I have access to",
+    "steps": [
+      {
+        "name": "All Flights loads which I have access to",
+        "aggregatedDurations": {
+          "average": 0.035972734,
+          "median": 0.033291393
+        },
+        "durations": [
+          {
+            "duration": 0.051354452,
+            "location": "AbilityToSearchForFlights.feature:15"
+          },
+          {
+            "duration": 0.033194541,
+            "location": "AbilityToSearchForFlights.feature:23"
+          },
+          {
+            "duration": 0.032605324,
+            "location": "AbilityToSearchForFlights.feature:32"
+          },
+          {
+            "duration": 0.034330736,
+            "location": "AbilityToSearchForFlights.feature:42"
+          },
+          {
+            "duration": 0.033246167,
+            "location": "AbilityToSearchForFlights.feature:58"
+          },
+          {
+            "duration": 0.033201794,
+            "location": "AbilityToSearchForFlights.feature:68"
+          },
+          {
+            "duration": 0.036512246,
+            "location": "AbilityToSearchForFlights.feature:78"
+          },
+          {
+            "duration": 0.033336619,
+            "location": "AbilityToSearchForFlights.feature:90"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I go to the Proteus Home URL in my browser",
+    "steps": [
+      {
+        "name": "I go to the Proteus Home URL in my browser",
+        "aggregatedDurations": {
+          "average": 4.40858269,
+          "median": 4.284615211
+        },
+        "durations": [
+          {
+            "duration": 5.493218886,
+            "location": "AbilityLogInProWeb.feature:7"
+          },
+          {
+            "duration": 4.776052366,
+            "location": "AbilityLogInProWeb.feature:7"
+          },
+          {
+            "duration": 4.170022984,
+            "location": "AbilityLogInProWeb.feature:7"
+          },
+          {
+            "duration": 4.316428654,
+            "location": "AbilityLogInProWeb.feature:7"
+          },
+          {
+            "duration": 4.086675464,
+            "location": "AbilityLogInProWeb.feature:7"
+          },
+          {
+            "duration": 4.106581693,
+            "location": "AbilityToSearchForFlights.feature:7"
+          },
+          {
+            "duration": 4.142388244,
+            "location": "AbilityToSearchForFlights.feature:7"
+          },
+          {
+            "duration": 4.460916063,
+            "location": "AbilityToSearchForFlights.feature:7"
+          },
+          {
+            "duration": 4.740294882,
+            "location": "AbilityToSearchForFlights.feature:7"
+          },
+          {
+            "duration": 4.284615211,
+            "location": "AbilityToSearchForFlights.feature:7"
+          },
+          {
+            "duration": 4.136569034,
+            "location": "AbilityToSearchForFlights.feature:7"
+          },
+          {
+            "duration": 4.36937156,
+            "location": "AbilityToSearchForFlights.feature:7"
+          },
+          {
+            "duration": 4.228439932,
+            "location": "AbilityToSearchForFlights.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Click on Apply button",
+    "steps": [
+      {
+        "name": "Click on Apply button",
+        "aggregatedDurations": {
+          "average": 2.223517774,
+          "median": 2.223517774
+        },
+        "durations": [
+          {
+            "duration": 2.202165383,
+            "location": "AbilityToSearchForFlights.feature:80"
+          },
+          {
+            "duration": 2.244870165,
+            "location": "AbilityToSearchForFlights.feature:92"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I can search by Flight Name or Booking Code",
+    "steps": [
+      {
+        "name": "I can search by Flight Name or Booking Code",
+        "aggregatedDurations": {
+          "average": 0.450515384,
+          "median": 0.450515384
+        },
+        "durations": [
+          {
+            "duration": 0.450515384,
+            "location": "AbilityToSearchForFlights.feature:24"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I search/filter for a particular result",
+    "steps": [
+      {
+        "name": "I search/filter for a particular result",
+        "aggregatedDurations": {
+          "average": 3.206579176,
+          "median": 3.138094129
+        },
+        "durations": [
+          {
+            "duration": 3.108197026,
+            "location": "AbilityToSearchForFlights.feature:59"
+          },
+          {
+            "duration": 3.44193142,
+            "location": "AbilityToSearchForFlights.feature:69"
+          },
+          {
+            "duration": 3.139289842,
+            "location": "AbilityToSearchForFlights.feature:79"
+          },
+          {
+            "duration": 3.136898416,
+            "location": "AbilityToSearchForFlights.feature:91"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on Campaigns from home page",
+    "steps": [
+      {
+        "name": "I click on Campaigns from home page",
+        "aggregatedDurations": {
+          "average": 2.267638387,
+          "median": 2.267698159
+        },
+        "durations": [
+          {
+            "duration": 2.278715789,
+            "location": "AbilityLogInProWeb.feature:27"
+          },
+          {
+            "duration": 2.276809048,
+            "location": "AbilityLogInProWeb.feature:35"
+          },
+          {
+            "duration": 2.283172248,
+            "location": "AbilityLogInProWeb.feature:35"
+          },
+          {
+            "duration": 2.267698159,
+            "location": "AbilityToSearchForFlights.feature:13"
+          },
+          {
+            "duration": 2.307303686,
+            "location": "AbilityToSearchForFlights.feature:22"
+          },
+          {
+            "duration": 2.263282659,
+            "location": "AbilityToSearchForFlights.feature:31"
+          },
+          {
+            "duration": 2.296781835,
+            "location": "AbilityToSearchForFlights.feature:41"
+          },
+          {
+            "duration": 2.263187514,
+            "location": "AbilityToSearchForFlights.feature:57"
+          },
+          {
+            "duration": 2.230505391,
+            "location": "AbilityToSearchForFlights.feature:67"
+          },
+          {
+            "duration": 2.260328468,
+            "location": "AbilityToSearchForFlights.feature:77"
+          },
+          {
+            "duration": 2.216237469,
+            "location": "AbilityToSearchForFlights.feature:89"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "LogOut ProteusWeb from Home Page",
+    "steps": [
+      {
+        "name": "LogOut ProteusWeb from Home Page",
+        "aggregatedDurations": {
+          "average": 0.293957562,
+          "median": 0.293957562
+        },
+        "durations": [
+          {
+            "duration": 0.383820813,
+            "location": "AbilityLogInProWeb.feature:15"
+          },
+          {
+            "duration": 0.204094311,
+            "location": "AbilityLogInProWeb.feature:29"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "There is a box called Campaigns",
+    "steps": [
+      {
+        "name": "There is a box called Campaigns",
+        "aggregatedDurations": {
+          "average": 0.063698567,
+          "median": 0.063698567
+        },
+        "durations": [
+          {
+            "duration": 0.063698567,
+            "location": "AbilityLogInProWeb.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I have the role: Pro Web Campaigns",
+    "steps": [
+      {
+        "name": "I have the role: Pro Web Campaigns",
+        "aggregatedDurations": {
+          "average": 0.000041517,
+          "median": 0.000033706
+        },
+        "durations": [
+          {
+            "duration": 0.000074239,
+            "location": "AbilityLogInProWeb.feature:6"
+          },
+          {
+            "duration": 0.000072105,
+            "location": "AbilityLogInProWeb.feature:6"
+          },
+          {
+            "duration": 0.000054612,
+            "location": "AbilityLogInProWeb.feature:6"
+          },
+          {
+            "duration": 0.000048639,
+            "location": "AbilityLogInProWeb.feature:6"
+          },
+          {
+            "duration": 0.000057173,
+            "location": "AbilityLogInProWeb.feature:6"
+          },
+          {
+            "duration": 0.000034133,
+            "location": "AbilityToSearchForFlights.feature:6"
+          },
+          {
+            "duration": 0.000033706,
+            "location": "AbilityToSearchForFlights.feature:6"
+          },
+          {
+            "duration": 0.000025173,
+            "location": "AbilityToSearchForFlights.feature:6"
+          },
+          {
+            "duration": 0.000029013,
+            "location": "AbilityToSearchForFlights.feature:6"
+          },
+          {
+            "duration": 0.000026453,
+            "location": "AbilityToSearchForFlights.feature:6"
+          },
+          {
+            "duration": 0.000031573,
+            "location": "AbilityToSearchForFlights.feature:6"
+          },
+          {
+            "duration": 0.000027733,
+            "location": "AbilityToSearchForFlights.feature:6"
+          },
+          {
+            "duration": 0.000025173,
+            "location": "AbilityToSearchForFlights.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Login with the correct details username and password",
+    "steps": [
+      {
+        "name": "Login with the correct details username and password",
+        "aggregatedDurations": {
+          "average": 3.265919735,
+          "median": 3.246017879
+        },
+        "durations": [
+          {
+            "duration": 3.448935463,
+            "location": "AbilityLogInProWeb.feature:11"
+          },
+          {
+            "duration": 3.249875309,
+            "location": "AbilityLogInProWeb.feature:25"
+          },
+          {
+            "duration": 3.243105928,
+            "location": "AbilityLogInProWeb.feature:33"
+          },
+          {
+            "duration": 3.205534287,
+            "location": "AbilityLogInProWeb.feature:33"
+          },
+          {
+            "duration": 3.206270701,
+            "location": "AbilityToSearchForFlights.feature:11"
+          },
+          {
+            "duration": 3.232341307,
+            "location": "AbilityToSearchForFlights.feature:20"
+          },
+          {
+            "duration": 3.31486708,
+            "location": "AbilityToSearchForFlights.feature:29"
+          },
+          {
+            "duration": 3.290216824,
+            "location": "AbilityToSearchForFlights.feature:39"
+          },
+          {
+            "duration": 3.233596966,
+            "location": "AbilityToSearchForFlights.feature:55"
+          },
+          {
+            "duration": 3.275161715,
+            "location": "AbilityToSearchForFlights.feature:65"
+          },
+          {
+            "duration": 3.248929831,
+            "location": "AbilityToSearchForFlights.feature:75"
+          },
+          {
+            "duration": 3.242201409,
+            "location": "AbilityToSearchForFlights.feature:87"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Log Out button exist",
+    "steps": [
+      {
+        "name": "Log Out button exist",
+        "aggregatedDurations": {
+          "average": 0.310338515,
+          "median": 0.310338515
+        },
+        "durations": [
+          {
+            "duration": 0.310338515,
+            "location": "AbilityLogInProWeb.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "The Campaigns page loads successfully",
+    "steps": [
+      {
+        "name": "The Campaigns page loads successfully",
+        "aggregatedDurations": {
+          "average": 0.077385592,
+          "median": 0.077385592
+        },
+        "durations": [
+          {
+            "duration": 0.070245657,
+            "location": "AbilityLogInProWeb.feature:28"
+          },
+          {
+            "duration": 0.084525527,
+            "location": "AbilityToSearchForFlights.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Login with the incorrect details username and password",
+    "steps": [
+      {
+        "name": "Login with the incorrect details username and password",
+        "aggregatedDurations": {
+          "average": 2.972497951,
+          "median": 2.972497951
+        },
+        "durations": [
+          {
+            "duration": 2.972497951,
+            "location": "AbilityLogInProWeb.feature:20"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Filter dropdown fields exist",
+    "steps": [
+      {
+        "name": "Filter dropdown fields exist",
+        "aggregatedDurations": {
+          "average": 0.152093042,
+          "median": 0.152093042
+        },
+        "durations": [
+          {
+            "duration": 0.152093042,
+            "location": "AbilityToSearchForFlights.feature:33"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "An error message displayed advising to try again",
+    "steps": [
+      {
+        "name": "An error message displayed advising to try again",
+        "aggregatedDurations": {
+          "average": 1.096267624,
+          "median": 1.096267624
+        },
+        "durations": [
+          {
+            "duration": 1.096267624,
+            "location": "AbilityLogInProWeb.feature:21"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I am a Proteus User",
+    "steps": [
+      {
+        "name": "I am a Proteus User",
+        "aggregatedDurations": {
+          "average": 0.02143193,
+          "median": 0.000447993
+        },
+        "durations": [
+          {
+            "duration": 0.273534861,
+            "location": "AbilityLogInProWeb.feature:5"
+          },
+          {
+            "duration": 0.000520525,
+            "location": "AbilityLogInProWeb.feature:5"
+          },
+          {
+            "duration": 0.000468899,
+            "location": "AbilityLogInProWeb.feature:5"
+          },
+          {
+            "duration": 0.000447993,
+            "location": "AbilityLogInProWeb.feature:5"
+          },
+          {
+            "duration": 0.000466338,
+            "location": "AbilityLogInProWeb.feature:5"
+          },
+          {
+            "duration": 0.000453112,
+            "location": "AbilityToSearchForFlights.feature:5"
+          },
+          {
+            "duration": 0.000425806,
+            "location": "AbilityToSearchForFlights.feature:5"
+          },
+          {
+            "duration": 0.000373327,
+            "location": "AbilityToSearchForFlights.feature:5"
+          },
+          {
+            "duration": 0.000335781,
+            "location": "AbilityToSearchForFlights.feature:5"
+          },
+          {
+            "duration": 0.000363514,
+            "location": "AbilityToSearchForFlights.feature:5"
+          },
+          {
+            "duration": 0.000442872,
+            "location": "AbilityToSearchForFlights.feature:5"
+          },
+          {
+            "duration": 0.000472312,
+            "location": "AbilityToSearchForFlights.feature:5"
+          },
+          {
+            "duration": 0.000309754,
+            "location": "AbilityToSearchForFlights.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "The main homepage loads successfully",
+    "steps": [
+      {
+        "name": "The main homepage loads successfully",
+        "aggregatedDurations": {
+          "average": 0.068856454,
+          "median": 0.069036931
+        },
+        "durations": [
+          {
+            "duration": 0.066525187,
+            "location": "AbilityLogInProWeb.feature:12"
+          },
+          {
+            "duration": 0.068595765,
+            "location": "AbilityLogInProWeb.feature:26"
+          },
+          {
+            "duration": 0.068686217,
+            "location": "AbilityLogInProWeb.feature:34"
+          },
+          {
+            "duration": 0.069275434,
+            "location": "AbilityLogInProWeb.feature:34"
+          },
+          {
+            "duration": 0.069160236,
+            "location": "AbilityToSearchForFlights.feature:12"
+          },
+          {
+            "duration": 0.069170903,
+            "location": "AbilityToSearchForFlights.feature:21"
+          },
+          {
+            "duration": 0.068839388,
+            "location": "AbilityToSearchForFlights.feature:30"
+          },
+          {
+            "duration": 0.069177729,
+            "location": "AbilityToSearchForFlights.feature:40"
+          },
+          {
+            "duration": 0.068199399,
+            "location": "AbilityToSearchForFlights.feature:56"
+          },
+          {
+            "duration": 0.069100504,
+            "location": "AbilityToSearchForFlights.feature:66"
+          },
+          {
+            "duration": 0.070573333,
+            "location": "AbilityToSearchForFlights.feature:76"
+          },
+          {
+            "duration": 0.068973359,
+            "location": "AbilityToSearchForFlights.feature:88"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Clear Filters button is enabled",
+    "steps": [
+      {
+        "name": "Clear Filters button is enabled",
+        "aggregatedDurations": {
+          "average": 0.079307907,
+          "median": 0.079307907
+        },
+        "durations": [
+          {
+            "duration": 0.079307907,
+            "location": "AbilityToSearchForFlights.feature:70"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "LogOut ProteusWeb from Campaigns page",
+    "steps": [
+      {
+        "name": "LogOut ProteusWeb from Campaigns page",
+        "aggregatedDurations": {
+          "average": 0.586357869,
+          "median": 0.613771333
+        },
+        "durations": [
+          {
+            "duration": 0.548883453,
+            "location": "AbilityToSearchForFlights.feature:16"
+          },
+          {
+            "duration": 0.959915334,
+            "location": "AbilityToSearchForFlights.feature:25"
+          },
+          {
+            "duration": 0.324696464,
+            "location": "AbilityToSearchForFlights.feature:34"
+          },
+          {
+            "duration": 0.277077843,
+            "location": "AbilityToSearchForFlights.feature:51"
+          },
+          {
+            "duration": 0.678659214,
+            "location": "AbilityToSearchForFlights.feature:61"
+          },
+          {
+            "duration": 0.83631547,
+            "location": "AbilityToSearchForFlights.feature:71"
+          },
+          {
+            "duration": 0.754570911,
+            "location": "AbilityToSearchForFlights.feature:82"
+          },
+          {
+            "duration": 0.31074427,
+            "location": "AbilityToSearchForFlights.feature:95"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Apply button is enabled",
+    "steps": [
+      {
+        "name": "Apply button is enabled",
+        "aggregatedDurations": {
+          "average": 0.078702477,
+          "median": 0.078702477
+        },
+        "durations": [
+          {
+            "duration": 0.078702477,
+            "location": "AbilityToSearchForFlights.feature:60"
+          }
+        ]
+      }
+    ]
+  }
+]
