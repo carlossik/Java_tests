@@ -3,6 +3,7 @@ package SupportingUtilites;
 import  org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.firefox.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.*;
 import org.openqa.selenium.remote.*;
 import java.util.*;
@@ -33,11 +34,11 @@ public class BrowserFactory {
         switch (strBrowserName)
         {
             case "Firefox":
-                if (driver == null)
-                {
+
+                    System.setProperty("webdriver.gecko.driver", librariespath+ "geckodriver.exe");
                     driver = new FirefoxDriver();
                     Drivers.put("Firefox", driver);
-                }
+
                 break;
 
             case "IE":
@@ -59,9 +60,7 @@ public class BrowserFactory {
                     options.addArguments(strOptions);
                     options.addArguments("no-sandbox");
                     System.setProperty("webdriver.chrome.driver", librariespath+ "chromedriver.exe");
-                   // driver = new ChromeDriver(options);
                     driver = new ChromeDriver();
-                    //driver = new ChromeDriver(librariespath,options);
                     Drivers.put("Chrome", driver);
                 }
                 break;
@@ -93,13 +92,11 @@ public class BrowserFactory {
     public static void closeAllDrivers()
     {
         //Loop through and Close all the browsers
-
         for (String key: Drivers.keySet())
         {
             Drivers.get(key).close();
             Drivers.get(key).quit();
         }
-
         Drivers.clear();
         driver = null;
     }

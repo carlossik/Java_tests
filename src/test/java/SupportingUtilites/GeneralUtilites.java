@@ -79,9 +79,15 @@ public class GeneralUtilites
             {
                 if (isProcessRunning("chromedriver.exe"))
                     Runtime.getRuntime().exec("taskkill /F /IM " + "chromedriver.exe");
-
                 if (isProcessRunning("chrome.exe"))
                     Runtime.getRuntime().exec("taskkill /F /IM " + "chrome.exe");
+            }
+            if(prop.getProperty("Browser").equals("Firefox"))
+            {
+                if (isProcessRunning("geckodriver.exe"))
+                    Runtime.getRuntime().exec("taskkill /F /IM " + "geckodriver.exe");
+                if (isProcessRunning("firefox.exe"))
+                    Runtime.getRuntime().exec("taskkill /F /IM " + "firefox.exe");
             }
         }
         catch (Exception e)
