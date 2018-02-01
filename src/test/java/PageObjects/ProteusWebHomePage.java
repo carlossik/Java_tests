@@ -21,26 +21,34 @@ public class ProteusWebHomePage extends BrowserFactory
         PageFactory.initElements(browserFactory.getDriver(),this );
     }
 
-      @FindBy(how = How.ID, using = "administration")
-      @CacheLookup
-      public WebElement tabAdministration;
+    @FindBy(how = How.ID, using = "administration")
+    @CacheLookup
+    public WebElement tabAdministration;
 
-     @FindBy(how = How.ID, using = "campaigns")
-     @CacheLookup
-     public WebElement tabCampaign ;
+    @FindBy(how = How.ID, using = "reporting")
+    @CacheLookup
+    public WebElement tabReporting;
 
-     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[2]/img")
-     @CacheLookup
-     public WebElement imgHomeProtues ;
+    @FindBy(how = How.ID, using = "clientReporting")
+    @CacheLookup
+    public WebElement tabClientReporting;
 
-     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[3]/div/div/div[1]/button")
-     @CacheLookup
-     public WebElement btnExpand  ;
+    @FindBy(how = How.ID, using = "campaigns")
+    @CacheLookup
+    public WebElement tabCampaign ;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[2]/img")
+    @CacheLookup
+    public WebElement imgHomeProtues ;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[3]/div/div/div[1]/button")
+    @CacheLookup
+    public WebElement btnExpand  ;
 
 
-     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[3]/div/div/div[2]/ul/li[2]")
-     @CacheLookup
-     public WebElement btnLogOut;
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[3]/div/div/div[2]/ul/li[2]")
+    @CacheLookup
+    public WebElement btnLogOut;
 
 
     public void NavigateProteusAdministration()
@@ -55,9 +63,34 @@ public class ProteusWebHomePage extends BrowserFactory
         ElementExtensions.mouseClick(tabCampaign,browserFactory.getDriver());
     }
 
+    public void NavigateProteusReports()
+    {
+        GeneralUtilites.wait(1);
+        ElementExtensions.mouseClick(tabReporting,browserFactory.getDriver());
+    }
+
+    public void NavigateProteusClientReports()
+    {
+        GeneralUtilites.wait(1);
+        ElementExtensions.mouseClick(tabClientReporting,browserFactory.getDriver());
+    }
+
     public boolean CheckCampaignTabExist()
     {
         return tabCampaign.isDisplayed();
+    }
+
+    public boolean CheckReportsTabExist()
+    {
+        return tabReporting.isDisplayed();
+    }
+    public boolean CheckClientReportsTabExist()
+    {
+        return tabClientReporting.isDisplayed();
+    }
+    public boolean CheckAdministrationTabExist()
+    {
+        return tabAdministration.isDisplayed();
     }
 
     public boolean CheckHomePage()
@@ -69,17 +102,15 @@ public class ProteusWebHomePage extends BrowserFactory
     {
         GeneralUtilites.wait(0.5);
         ElementExtensions.mouseClick(btnExpand,browserFactory.getDriver());
-
         GeneralUtilites.wait(0.5);
         boolean boolLogOut = btnLogOut.isDisplayed();
         ElementExtensions.mouseClick(btnExpand,browserFactory.getDriver());
-
         return boolLogOut;
     }
 
     public void Logout()
     {
-        ElementExtensions.mouseClick(btnLogOut,browserFactory.getDriver());
+        ElementExtensions.mouseClick(btnExpand,browserFactory.getDriver());
         GeneralUtilites.wait(0.5);
         ElementExtensions.mouseClick(btnLogOut,browserFactory.getDriver());
     }

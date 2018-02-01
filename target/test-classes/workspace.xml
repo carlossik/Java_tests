@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="14c0a861-ce48-4df8-a711-5e9e94835522" name="Default" comment="" />
+    <list default="true" id="14c0a861-ce48-4df8-a711-5e9e94835522" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/Reso/AbilityLogInProWeb.feature" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/Reso/AbilityToSearchForFlights.feature" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/DataModels/CampaigFlightSearchItems.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/DataModels/CampaigFlightSearchRoot.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/DataModels/CampaignFlightSearchInput.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/DataModels/CampaignFlightSearchOutPut.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/DataModels/Login.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/DataModels/MaxEndDate.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/DataModels/MaxStartDate.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/DataModels/MinEndDate.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/DataModels/MinStartDate.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/DataModels/Oauth.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SupportingUtilites/RestAssuredClient.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/repoProteusWebJava.iml" afterPath="$PROJECT_DIR$/repoProteusWebJava.iml" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Features/AbilityLogInProWeb.feature" afterPath="$PROJECT_DIR$/src/test/java/Features/AbilityLogInProWeb.feature" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Features/AbilityToSearchForFlights.feature" afterPath="$PROJECT_DIR$/src/test/java/Features/AbilityToSearchForFlights.feature" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Resources/config.properties" afterPath="$PROJECT_DIR$/src/test/java/Resources/config.properties" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java" afterPath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/RunCucumberTest.java" afterPath="$PROJECT_DIR$/src/test/java/cucumber/RunCucumberTest.java" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/CucumberTestReport.json" afterPath="$PROJECT_DIR$/target/cucumber-reports/CucumberTestReport.json" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-results-usage.html" afterPath="$PROJECT_DIR$/target/cucumber-results-usage.html" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-results-usage.html.bak.html" afterPath="$PROJECT_DIR$/target/cucumber-results-usage.html.bak.html" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-results-usage.pdf" afterPath="$PROJECT_DIR$/target/cucumber-results-usage.pdf" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/ProteusWebCampaignsPage.class" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/ProteusWebCampaignsPage.class" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefination/ProteusWebSteps.class" afterPath="$PROJECT_DIR$/target/test-classes/StepDefination/ProteusWebSteps.class" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/cucumber/RunCucumberTest.class" afterPath="$PROJECT_DIR$/target/test-classes/cucumber/RunCucumberTest.class" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/workspace.xml" afterPath="$PROJECT_DIR$/target/test-classes/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/mavensurefireplugin/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,46 +55,132 @@
   <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" userTempatePath="" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="AbilityToSearchForFlights.feature" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AbilityToSearchForFlights.feature" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Features/AbilityToSearchForFlights.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1587">
-              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="738">
+              <caret line="99" column="15" lean-forward="false" selection-start-line="99" selection-start-column="15" selection-end-line="99" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RunCucumberTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/cucumber/RunCucumberTest.java">
+      <file leaf-file-name="RestAssuredClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SupportingUtilites/RestAssuredClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-322">
-              <caret line="28" column="40" lean-forward="false" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+            <state relative-caret-position="594">
+              <caret line="101" column="61" lean-forward="false" selection-start-line="101" selection-start-column="61" selection-end-line="101" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1774#1775#0" expanded="true" />
-                <element signature="e#1818#1819#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProteusWebCampaignsPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java">
+      <file leaf-file-name="Utils.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/Utils.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="50" column="38" lean-forward="false" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="160" />
-              <folding />
+            <state relative-caret-position="864">
+              <caret line="46" column="21" lean-forward="false" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+              <folding>
+                <marker date="1516702596176" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1516702596176" expanded="false" signature="140:541" ph="..." />
+                <marker date="1516702596176" expanded="true" signature="584:591" ph="{}" />
+                <marker date="1516702596176" expanded="true" signature="647:794" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="853:1107" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="1236:2290" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="1358:2267" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="1410:2257" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="2390:3244" ph="{...}" />
+                <marker date="1516702596176" expanded="false" signature="3292:3303" ph=" { " />
+                <marker date="1516702596176" expanded="false" signature="3339:3345" ph=" }" />
+                <marker date="1516702596176" expanded="false" signature="3391:3402" ph=" { " />
+                <marker date="1516702596176" expanded="false" signature="3437:3443" ph=" }" />
+                <marker date="1516702596176" expanded="false" signature="3491:3502" ph=" { " />
+                <marker date="1516702596176" expanded="false" signature="3537:3543" ph=" }" />
+                <marker date="1516702596176" expanded="true" signature="3623:4319" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="4367:4735" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="4783:4942" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="repoProteusWebJava.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/repoProteusWebJava.iml">
+      <file leaf-file-name="StepDefinitionMatch.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/StepDefinitionMatch.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-              <folding />
+            <state relative-caret-position="702">
+              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+              <folding>
+                <marker date="1516702596176" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1516702596176" expanded="false" signature="140:703" ph="..." />
+                <marker date="1516702596176" expanded="true" signature="1102:1334" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="1388:1744" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="1820:3140" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="3211:3504" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="3590:3969" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="4035:4491" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="4562:5180" ph="{...}" />
+                <marker date="1516702596176" expanded="false" signature="4885:4987" ph="map(row) → {" />
+                <marker date="1516702596176" expanded="false" signature="5043:5062" ph="}" />
+                <marker date="1516702596176" expanded="true" signature="5296:6089" ph="{...}" />
+                <marker date="1516702596176" expanded="false" signature="6121:6132" ph=" { " />
+                <marker date="1516702596176" expanded="false" signature="6172:6178" ph=" }" />
+                <marker date="1516702596176" expanded="false" signature="6226:6237" ph=" { " />
+                <marker date="1516702596176" expanded="false" signature="6293:6299" ph=" }" />
+                <marker date="1516702596176" expanded="false" signature="6332:6343" ph=" { " />
+                <marker date="1516702596176" expanded="false" signature="6370:6376" ph=" }" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Runtime.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/Runtime.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2241">
+              <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+              <folding>
+                <marker date="1516702596176" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1516702596176" expanded="false" signature="140:992" ph="..." />
+                <marker date="1516702596176" expanded="true" signature="1898:2007" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="2155:2268" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="2442:2550" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="2745:3836" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="3956:4177" ph="{...}" />
+                <marker date="1516702596176" expanded="false" signature="4220:4231" ph=" { " />
+                <marker date="1516702596176" expanded="false" signature="4254:4260" ph=" }" />
+                <marker date="1516702596176" expanded="true" signature="4303:5055" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="5088:5225" ph="{...}" />
+                <marker date="1516702596176" expanded="false" signature="5263:5274" ph=" { " />
+                <marker date="1516702596176" expanded="false" signature="5333:5339" ph=" }" />
+                <marker date="1516702596176" expanded="true" signature="5436:5783" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="5850:6125" ph="{...}" />
+                <marker date="1516702596176" expanded="false" signature="6165:6176" ph=" { " />
+                <marker date="1516702596176" expanded="false" signature="6195:6201" ph=" }" />
+                <marker date="1516702596176" expanded="true" signature="6232:6419" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="6481:6572" ph="{...}" />
+                <marker date="1516702596176" expanded="false" signature="6622:6633" ph=" { " />
+                <marker date="1516702596176" expanded="false" signature="6691:6697" ph=" }" />
+                <marker date="1516702596176" expanded="false" signature="6738:6749" ph=" { " />
+                <marker date="1516702596176" expanded="false" signature="6803:6809" ph=" }" />
+                <marker date="1516702596176" expanded="false" signature="6848:6859" ph=" { " />
+                <marker date="1516702596176" expanded="false" signature="6910:6916" ph=" }" />
+                <marker date="1516702596176" expanded="true" signature="6950:7225" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="7265:7407" ph="{...}" />
+                <marker date="1516702596176" expanded="false" signature="7434:7445" ph=" { " />
+                <marker date="1516702596176" expanded="false" signature="7462:7468" ph=" }" />
+                <marker date="1516702596176" expanded="true" signature="7535:7615" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="7681:7761" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="7869:8171" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="8282:10355" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="10541:11321" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="11408:14220" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="14271:14496" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="14556:14640" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="14700:14802" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="14815:14897" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,29 +188,109 @@
       <file leaf-file-name="ProteusWebSteps.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="29" column="25" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-              <folding />
+            <state relative-caret-position="6318">
+              <caret line="234" column="54" lean-forward="false" selection-start-line="234" selection-start-column="54" selection-end-line="234" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProteusWebLoginPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebLoginPage.java">
+      <file leaf-file-name="Main.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/api/cli/Main.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-              <folding />
+            <state relative-caret-position="324">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <marker date="1516702596176" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1516702596176" expanded="false" signature="140:460" ph="..." />
+                <marker date="1516702596176" expanded="true" signature="500:507" ph="{}" />
+                <marker date="1516702596176" expanded="true" signature="569:694" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="782:1206" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="StepContainer.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/model/StepContainer.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="147" column="34" lean-forward="false" selection-start-line="147" selection-start-column="34" selection-end-line="147" selection-end-column="34" />
-              <folding />
+            <state relative-caret-position="1053">
+              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+              <folding>
+                <marker date="1516702596176" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1516702596176" expanded="false" signature="146:404" ph="..." />
+                <marker date="1516702596176" expanded="true" signature="654:745" ph="{...}" />
+                <marker date="1516702596176" expanded="false" signature="779:790" ph=" { " />
+                <marker date="1516702596176" expanded="false" signature="808:814" ph=" }" />
+                <marker date="1516702596176" expanded="false" signature="847:858" ph=" { " />
+                <marker date="1516702596176" expanded="false" signature="879:885" ph=" }" />
+                <marker date="1516702596176" expanded="true" signature="924:1146" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="1202:1399" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="1465:1577" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CucumberScenario.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/model/CucumberScenario.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="945">
+              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding>
+                <marker date="1516702596176" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1516702596176" expanded="false" signature="146:377" ph="..." />
+                <marker date="1516702596176" expanded="true" signature="654:791" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="932:1092" ph="{...}" />
+                <marker date="1516702596176" expanded="false" signature="1147:1158" ph=" { " />
+                <marker date="1516702596176" expanded="false" signature="1189:1195" ph=" }" />
+                <marker date="1516702596176" expanded="true" signature="1274:1854" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="1903:2077" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="2167:2352" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CucumberFeature.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/model/CucumberFeature.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4320">
+              <caret line="195" column="0" lean-forward="false" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
+              <folding>
+                <marker date="1516702596176" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1516702596176" expanded="false" signature="146:798" ph="..." />
+                <marker date="1516702596176" expanded="true" signature="1308:1918" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="2045:2733" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="2872:3624" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="3777:4569" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="4738:5439" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="5498:5563" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="5615:5759" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="5805:6047" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="6114:6445" ph="{...}" />
+                <marker date="1516702596176" expanded="false" signature="6490:6501" ph=" { " />
+                <marker date="1516702596176" expanded="false" signature="6548:6554" ph=" }" />
+                <marker date="1516702596176" expanded="false" signature="6587:6598" ph=" { " />
+                <marker date="1516702596176" expanded="false" signature="6635:6641" ph=" }" />
+                <marker date="1516702596176" expanded="false" signature="6681:6692" ph=" { " />
+                <marker date="1516702596176" expanded="false" signature="6712:6718" ph=" }" />
+                <marker date="1516702596176" expanded="false" signature="6778:6789" ph=" { " />
+                <marker date="1516702596176" expanded="false" signature="6823:6829" ph=" }" />
+                <marker date="1516702596176" expanded="false" signature="6865:6876" ph=" { " />
+                <marker date="1516702596176" expanded="false" signature="6893:6899" ph=" }" />
+                <marker date="1516702596176" expanded="false" signature="6926:6937" ph=" { " />
+                <marker date="1516702596176" expanded="false" signature="6954:6960" ph=" }" />
+                <marker date="1516702596176" expanded="false" signature="6989:7000" ph=" { " />
+                <marker date="1516702596176" expanded="false" signature="7017:7023" ph=" }" />
+                <marker date="1516702596176" expanded="true" signature="7102:7491" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="7586:7785" ph="{...}" />
+                <marker date="1516702596176" expanded="true" signature="7635:7646" ph="{}" />
+                <marker date="1516702596176" expanded="false" signature="7712:7727" ph=" { " />
+                <marker date="1516702596176" expanded="false" signature="7769:7779" ph=" }" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -112,6 +309,9 @@
       <find>cucumber-junit</find>
       <find>cucumberFeatures</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -140,21 +340,35 @@
         <option value="$PROJECT_DIR$/src/main/java/SupportingUtilites/BrowserFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/Features/MyStepdefs.java" />
         <option value="$PROJECT_DIR$/.idea/compiler.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/Features/AbilityLogInProWeb.feature" />
         <option value="$PROJECT_DIR$/src/test/java/Base/BaseUtil.java" />
         <option value="$PROJECT_DIR$/repoProteusWebJava.iml" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdvertisersPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Resources/config.properties" />
         <option value="$PROJECT_DIR$/src/test/java/SupportingUtilites/BrowserFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/SupportingUtilites/ElementExtensions.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebHomePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebLoginPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/StepDefination/Hook.java" />
-        <option value="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Features/AbilityToSearchForFlights.feature" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/test/Reso/AbilityLogInProWeb.feature" />
+        <option value="$PROJECT_DIR$/src/test/Reso/AbilityToSearchForFlights.feature" />
         <option value="$PROJECT_DIR$/src/test/java/cucumber/RunCucumberTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Features/AbilityLogInProWeb.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/Resources/config.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/DataModels/Oauth.java" />
+        <option value="$PROJECT_DIR$/src/test/java/DataModels/Login.java" />
+        <option value="$PROJECT_DIR$/src/test/java/DataModels/MinStartDate.java" />
+        <option value="$PROJECT_DIR$/src/test/java/DataModels/MinEndDate.java" />
+        <option value="$PROJECT_DIR$/src/test/java/DataModels/MaxStartDate.java" />
+        <option value="$PROJECT_DIR$/src/test/java/DataModels/MaxEndDate.java" />
+        <option value="$PROJECT_DIR$/src/test/java/DataModels/CampaigFlightSearchRoot.java" />
+        <option value="$PROJECT_DIR$/src/test/java/DataModels/CampaigFlightSearchItems.java" />
+        <option value="$PROJECT_DIR$/src/test/java/DataModels/CampaignFlightSearchInput.java" />
+        <option value="$PROJECT_DIR$/src/test/java/DataModels/CampaignFlightSearchOutPut.java" />
+        <option value="$PROJECT_DIR$/src/test/java/StepDefination/Hook.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Features/AbilityToSearchForFlights.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SupportingUtilites/RestAssuredClient.java" />
       </list>
     </option>
   </component>
@@ -166,10 +380,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1608" />
-    <option name="y" value="67" />
-    <option name="width" value="1400" />
-    <option name="height" value="992" />
+    <option name="x" value="1977" />
+    <option name="y" value="267" />
+    <option name="width" value="1440" />
+    <option name="height" value="774" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -188,6 +402,7 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -203,6 +418,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -214,6 +431,19 @@
               <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
               <item name="repoProteusWebJava" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="repoProteusWebJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="repoProteusWebJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
@@ -247,20 +477,64 @@
             <path>
               <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
               <item name="repoProteusWebJava" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Jars" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="repoProteusWebJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Libraries" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="repoProteusWebJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="PageObjects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="repoProteusWebJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="repoProteusWebJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="StepDefination" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="repoProteusWebJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="SupportingUtilites" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="repoProteusWebJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="Reso" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -276,6 +550,9 @@
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\repoProteusWebJava\src\test\Reso" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\repoProteusWebJava\src\test\java\Features" />
@@ -297,7 +574,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RunCucumberTest">
+  <component name="RunManager" selected="Cucumber java.Scenario: 09 API Search for Flights">
     <configuration name="Feature: AbilityLogInProWeb (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -321,52 +598,6 @@
       <module name="repoProteusWebJava" />
       <envs />
     </configuration>
-    <configuration name="Feature: AbilityLogInProWeb" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="myFilePath" value="$PROJECT_DIR$/src/test/resources/Features/AbilityLogInProWeb.feature" />
-      <option name="GLUE" value="StepDefination" />
-      <option name="myNameFilter" value="" />
-      <option name="myGeneratedName" value="Feature: AbilityLogInProWeb" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="repoProteusWebJava" />
-      <envs />
-    </configuration>
-    <configuration name="Scenario: 01 Entering Pro Web" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="myFilePath" value="$PROJECT_DIR$/src/test/java/Features/AbilityLogInProWeb.feature" />
-      <option name="GLUE" value="StepDefination" />
-      <option name="myNameFilter" value="^01 Entering Pro Web$" />
-      <option name="myGeneratedName" value="Scenario: 01 Entering Pro Web" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^01 Entering Pro Web$&quot;" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="repoProteusWebJava" />
-      <envs />
-    </configuration>
     <configuration name="Scenario: 04 Campaigns page loaded with different options" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -381,6 +612,52 @@
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^04 Campaigns page loaded with different options$&quot;" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="repoProteusWebJava" />
+      <envs />
+    </configuration>
+    <configuration name="Scenario: 07 Flights matching Search/Filter Combination loaded as results" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="myFilePath" value="$PROJECT_DIR$/src/test/java/Features/AbilityToSearchForFlights.feature" />
+      <option name="GLUE" value="StepDefination" />
+      <option name="myNameFilter" value="^07 Flights matching Search\/Filter Combination loaded as results$" />
+      <option name="myGeneratedName" value="Scenario: 07 Flights matching Search/Filter Combination loaded as results" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^07 Flights matching Search\/Filter Combination loaded as results$&quot;" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="repoProteusWebJava" />
+      <envs />
+    </configuration>
+    <configuration name="Scenario: 09 API Search for Flights" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="myFilePath" value="$PROJECT_DIR$/src/test/java/Features/AbilityToSearchForFlights.feature" />
+      <option name="GLUE" value="StepDefination" />
+      <option name="myNameFilter" value="^09 API Search for Flights$" />
+      <option name="myGeneratedName" value="Scenario: 09 API Search for Flights" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^09 API Search for Flights$&quot;" />
       <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -432,18 +709,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.RunCucumberTest" />
-      <item index="1" class="java.lang.String" itemvalue="Cucumber java.Scenario: 01 Entering Pro Web" />
-      <item index="2" class="java.lang.String" itemvalue="Cucumber java.Feature: AbilityLogInProWeb" />
-      <item index="3" class="java.lang.String" itemvalue="Cucumber java.Feature: AbilityLogInProWeb (1)" />
-      <item index="4" class="java.lang.String" itemvalue="Cucumber java.Scenario: 04 Campaigns page loaded with different options" />
+      <item index="1" class="java.lang.String" itemvalue="Cucumber java.Feature: AbilityLogInProWeb (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Cucumber java.Scenario: 04 Campaigns page loaded with different options" />
+      <item index="3" class="java.lang.String" itemvalue="Cucumber java.Scenario: 07 Flights matching Search/Filter Combination loaded as results" />
+      <item index="4" class="java.lang.String" itemvalue="Cucumber java.Scenario: 09 API Search for Flights" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.RunCucumberTest" />
-        <item index="1" class="java.lang.String" itemvalue="Cucumber java.Feature: AbilityLogInProWeb (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Cucumber java.Scenario: 04 Campaigns page loaded with different options" />
-        <item index="3" class="java.lang.String" itemvalue="Cucumber java.Scenario: 01 Entering Pro Web" />
-        <item index="4" class="java.lang.String" itemvalue="Cucumber java.Feature: AbilityLogInProWeb" />
+        <item index="0" class="java.lang.String" itemvalue="Cucumber java.Scenario: 09 API Search for Flights" />
+        <item index="1" class="java.lang.String" itemvalue="Cucumber java.Scenario: 07 Flights matching Search/Filter Combination loaded as results" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.RunCucumberTest" />
+        <item index="3" class="java.lang.String" itemvalue="Cucumber java.Feature: AbilityLogInProWeb (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Cucumber java.Scenario: 04 Campaigns page loaded with different options" />
       </list>
     </recent_temporary>
   </component>
@@ -469,67 +746,68 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RunCucumberTest - 2018.01.26 at 10h 31m 16s.xml">
+    <history-entry file="RunCucumberTest - 2018.01.29 at 10h 20m 11s.xml">
       <configuration name="RunCucumberTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RunCucumberTest - 2018.01.26 at 10h 55m 50s.xml">
-      <configuration name="RunCucumberTest" configurationId="JUnit" />
+    <history-entry file="Scenario__07_Flights_matching_Search_Filter_Combination_loaded_as_results - 2018.01.30 at 15h 21m 14s.xml">
+      <configuration name="Scenario: 07 Flights matching Search/Filter Combination loaded as results" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="RunCucumberTest - 2018.01.26 at 10h 56m 53s.xml">
-      <configuration name="RunCucumberTest" configurationId="JUnit" />
+    <history-entry file="Scenario__07_Flights_matching_Search_Filter_Combination_loaded_as_results - 2018.01.30 at 15h 29m 16s.xml">
+      <configuration name="Scenario: 07 Flights matching Search/Filter Combination loaded as results" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="RunCucumberTest - 2018.01.26 at 11h 10m 25s.xml">
-      <configuration name="RunCucumberTest" configurationId="JUnit" />
+    <history-entry file="Scenario__07_Flights_matching_Search_Filter_Combination_loaded_as_results - 2018.01.30 at 15h 30m 26s.xml">
+      <configuration name="Scenario: 07 Flights matching Search/Filter Combination loaded as results" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="RunCucumberTest - 2018.01.26 at 11h 29m 09s.xml">
-      <configuration name="RunCucumberTest" configurationId="JUnit" />
+    <history-entry file="Scenario__07_Flights_matching_Search_Filter_Combination_loaded_as_results - 2018.01.30 at 15h 35m 34s.xml">
+      <configuration name="Scenario: 07 Flights matching Search/Filter Combination loaded as results" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="RunCucumberTest - 2018.01.26 at 11h 56m 38s.xml">
-      <configuration name="RunCucumberTest" configurationId="JUnit" />
+    <history-entry file="Scenario__07_Flights_matching_Search_Filter_Combination_loaded_as_results - 2018.01.30 at 15h 35m 52s.xml">
+      <configuration name="Scenario: 07 Flights matching Search/Filter Combination loaded as results" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="RunCucumberTest - 2018.01.26 at 12h 03m 41s.xml">
-      <configuration name="RunCucumberTest" configurationId="JUnit" />
+    <history-entry file="Scenario__07_Flights_matching_Search_Filter_Combination_loaded_as_results - 2018.01.30 at 15h 36m 30s.xml">
+      <configuration name="Scenario: 07 Flights matching Search/Filter Combination loaded as results" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="RunCucumberTest - 2018.01.26 at 12h 07m 05s.xml">
-      <configuration name="RunCucumberTest" configurationId="JUnit" />
+    <history-entry file="Scenario__07_Flights_matching_Search_Filter_Combination_loaded_as_results - 2018.01.30 at 15h 54m 32s.xml">
+      <configuration name="Scenario: 07 Flights matching Search/Filter Combination loaded as results" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="RunCucumberTest - 2018.01.26 at 12h 10m 09s.xml">
-      <configuration name="RunCucumberTest" configurationId="JUnit" />
+    <history-entry file="Scenario__07_Flights_matching_Search_Filter_Combination_loaded_as_results - 2018.01.30 at 16h 04m 38s.xml">
+      <configuration name="Scenario: 07 Flights matching Search/Filter Combination loaded as results" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="RunCucumberTest - 2018.01.26 at 12h 21m 49s.xml">
-      <configuration name="RunCucumberTest" configurationId="JUnit" />
+    <history-entry file="Scenario__09_API_Search_for_Flights - 2018.01.30 at 16h 11m 28s.xml">
+      <configuration name="Scenario: 09 API Search for Flights" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1929" y="-9" width="1938" height="1098" extended-state="6" />
+    <frame x="1911" y="-9" width="1938" height="1098" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.49791667" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4840484" sideWeight="0.14739583" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42215255" sideWeight="0.85260415" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20271683" sideWeight="0.85260415" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27395833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2390625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3354232" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50935096" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.013020833" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31661442" sideWeight="0.49791667" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -538,391 +816,552 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java</url>
+          <line>140</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/SupportingUtilites/RestAssuredClient.java</url>
+          <line>154</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java</url>
+          <line>234</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/SupportingUtilites/RestAssuredClient.java</url>
+          <line>100</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/SupportingUtilites/RestAssuredClient.java</url>
+          <line>102</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="1" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/SupportingUtilites/GeneralUtilites.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/DataModels/Oauth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/DataModels/Login.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SupportingUtilites/RandomString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="32" column="68" lean-forward="true" selection-start-line="32" selection-start-column="68" selection-end-line="32" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Features/AbilityToSearchForFlights.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2160">
-          <caret line="80" column="71" lean-forward="false" selection-start-line="80" selection-start-column="71" selection-end-line="80" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SupportingUtilites/BrowserFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="8" lean-forward="true" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#541#542#0" expanded="false" />
-            <element signature="e#569#570#0" expanded="false" />
-            <element signature="e#625#626#0" expanded="false" />
-            <element signature="e#655#656#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/Page.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java" />
-    <entry file="file://$PROJECT_DIR$/Jars/selenium-java-3.8.1/LICENSE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Jars/selenium-java-3.8.1/NOTICE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Jars/selenium-java-3.8.1/NOTICE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Jars/selenium-java-3.8.1/LICENSE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/MyStepdefs.java" />
-    <entry file="file://$PROJECT_DIR$/src/MyStepdefss.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/fff.feature" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/MyStep.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/SupportingUtilites/RandomString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="32" column="68" lean-forward="false" selection-start-line="32" selection-start-column="68" selection-end-line="32" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mavensurefireplugin/mavensurefireplugin.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mavensurefireplugin/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="10" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Runner/Runner.java" />
-    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="49" lean-forward="false" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Features/MyStepdefs.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/7zO48C7D9BF/DriverUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/Page.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdvertisersPage.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/Base/BaseUtil.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ProjectSetUp.properties" />
     <entry file="file://$PROJECT_DIR$/src/test/java/Resources/config.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="13" />
+        <state relative-caret-position="162">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SupportingUtilites/GeneralUtilites.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/DataModels/MinStartDate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1701">
-          <caret line="73" column="18" lean-forward="false" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="54">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SupportingUtilites/ElementExtensions.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/DataModels/MinEndDate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="542">
+          <caret line="33" column="1" lean-forward="false" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebHomePage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/DataModels/MaxStartDate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1836">
-          <caret line="83" column="73" lean-forward="false" selection-start-line="83" selection-start-column="73" selection-end-line="83" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1695#1696#0" expanded="false" />
-            <element signature="e#1743#1744#0" expanded="false" />
-            <element signature="e#1785#1786#0" expanded="false" />
-            <element signature="e#1836#1837#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="891">
+          <caret line="33" column="1" lean-forward="false" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/Jars/cucumber-core-2.3.1.jar!/cucumber/api/CucumberOptions.class">
+    <entry file="file://$PROJECT_DIR$/src/test/java/DataModels/MaxEndDate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="245">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/RuntimeOptions.class">
+    <entry file="file://$PROJECT_DIR$/src/test/java/DataModels/CampaigFlightSearchItems.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="289" column="79" lean-forward="false" selection-start-line="289" selection-start-column="65" selection-end-line="289" selection-end-column="79" />
-          <folding>
-            <marker date="1516702596176" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1516702596176" expanded="false" signature="140:952" ph="..." />
-            <marker date="1516702596176" expanded="false" signature="1853:1864" ph=" { " />
-            <marker date="1516702596176" expanded="false" signature="1914:1920" ph=" }" />
-            <marker date="1516702596176" expanded="false" signature="1966:1977" ph=" { " />
-            <marker date="1516702596176" expanded="false" signature="2009:2015" ph=" }" />
-            <marker date="1516702596176" expanded="false" signature="2070:2081" ph=" { " />
-            <marker date="1516702596176" expanded="false" signature="2118:2124" ph=" }" />
-            <marker date="1516702596176" expanded="false" signature="2199:2210" ph=" { " />
-            <marker date="1516702596176" expanded="false" signature="2250:2256" ph=" }" />
-            <marker date="1516702596176" expanded="true" signature="2341:3407" ph="{...}" />
-            <marker date="1516702596176" expanded="true" signature="3451:10690" ph="{...}" />
-            <marker date="1516702596176" expanded="true" signature="10761:11095" ph="{...}" />
-            <marker date="1516702596176" expanded="true" signature="11168:11505" ph="{...}" />
-            <marker date="1516702596176" expanded="true" signature="11537:11616" ph="{...}" />
-            <marker date="1516702596176" expanded="true" signature="11658:12043" ph="{...}" />
-            <marker date="1516702596176" expanded="true" signature="12088:12489" ph="{...}" />
-            <marker date="1516702596176" expanded="true" signature="12557:12956" ph="{...}" />
-            <marker date="1516702596176" expanded="true" signature="13039:13144" ph="{...}" />
-            <marker date="1516702596176" expanded="true" signature="13176:14320" ph="{...}" />
-            <marker date="1516702596176" expanded="true" signature="14378:14459" ph="{...}" />
-            <marker date="1516702596176" expanded="true" signature="14515:14594" ph="{...}" />
-            <marker date="1516702596176" expanded="true" signature="14678:14785" ph="{...}" />
-            <marker date="1516702596176" expanded="true" signature="14853:14944" ph="{...}" />
-            <marker date="1516702596176" expanded="true" signature="15021:16054" ph="{...}" />
-            <marker date="1516702596176" expanded="false" signature="15101:15223" ph="invoke(target, method, args) → {" />
-            <marker date="1516702596176" expanded="false" signature="15998:16013" ph="}" />
-            <marker date="1516702596176" expanded="true" signature="16121:16294" ph="{...}" />
-            <marker date="1516702596176" expanded="true" signature="16358:16528" ph="{...}" />
-            <marker date="1516702596176" expanded="false" signature="16563:16574" ph=" { " />
-            <marker date="1516702596176" expanded="false" signature="16591:16597" ph=" }" />
-            <marker date="1516702596176" expanded="false" signature="16628:16639" ph=" { " />
-            <marker date="1516702596176" expanded="false" signature="16658:16664" ph=" }" />
-            <marker date="1516702596176" expanded="false" signature="16695:16706" ph=" { " />
-            <marker date="1516702596176" expanded="false" signature="16725:16731" ph=" }" />
-            <marker date="1516702596176" expanded="false" signature="16774:16785" ph=" { " />
-            <marker date="1516702596176" expanded="false" signature="16810:16816" ph=" }" />
-            <marker date="1516702596176" expanded="false" signature="16858:16869" ph=" { " />
-            <marker date="1516702596176" expanded="false" signature="16894:16900" ph=" }" />
-            <marker date="1516702596176" expanded="false" signature="16938:16949" ph=" { " />
-            <marker date="1516702596176" expanded="false" signature="16969:16975" ph=" }" />
-            <marker date="1516702596176" expanded="false" signature="17010:17021" ph=" { " />
-            <marker date="1516702596176" expanded="false" signature="17044:17050" ph=" }" />
-            <marker date="1516702596176" expanded="false" signature="17091:17102" ph=" { " />
-            <marker date="1516702596176" expanded="false" signature="17126:17132" ph=" }" />
-            <marker date="1516702596176" expanded="false" signature="17175:17186" ph=" { " />
-            <marker date="1516702596176" expanded="false" signature="17211:17217" ph=" }" />
-            <marker date="1516702596176" expanded="true" signature="17247:17848" ph="{...}" />
-            <marker date="1516702596176" expanded="true" signature="17373:17384" ph="{}" />
-            <marker date="1516702596176" expanded="true" signature="17448:17577" ph="{...}" />
-            <marker date="1516702596176" expanded="true" signature="17637:17842" ph="{...}" />
-            <marker date="1516702596176" expanded="true" signature="17877:19441" ph="{...}" />
-            <marker date="1516702596176" expanded="true" signature="18234:18245" ph="{}" />
-            <marker date="1516702596176" expanded="true" signature="18315:18868" ph="{...}" />
-            <marker date="1516702596176" expanded="true" signature="18952:19033" ph="{...}" />
-            <marker date="1516702596176" expanded="true" signature="19143:19250" ph="{...}" />
-            <marker date="1516702596176" expanded="true" signature="19344:19435" ph="{...}" />
-          </folding>
+        <state relative-caret-position="362">
+          <caret line="78" column="45" lean-forward="false" selection-start-line="78" selection-start-column="45" selection-end-line="78" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources.properties">
+    <entry file="file://$PROJECT_DIR$/src/test/java/DataModels/CampaigFlightSearchRoot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="416">
+          <caret line="357" column="1" lean-forward="true" selection-start-line="357" selection-start-column="1" selection-end-line="357" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/cucumber-reports/cucumber-pretty/report.js">
+    <entry file="file://$PROJECT_DIR$/src/test/java/DataModels/CampaignFlightSearchInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="416">
+          <caret line="249" column="1" lean-forward="true" selection-start-line="249" selection-start-column="1" selection-end-line="249" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/cucumber-reports/cucumber-pretty/style.css">
+    <entry file="file://$PROJECT_DIR$/src/test/java/DataModels/CampaignFlightSearchOutPut.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="864">
+          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SupportingUtilites/BrowserFactory.java">
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/net/AbstractPlainSocketImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="27" />
-          <folding />
+        <state relative-caret-position="219">
+          <caret line="685" column="0" lean-forward="false" selection-start-line="685" selection-start-column="0" selection-end-line="685" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/net/SocketInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar!/org/apache/http/impl/io/HttpTransportMetricsImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar!/org/apache/http/util/ByteArrayBuffer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar!/org/apache/http/impl/io/SessionInputBufferImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="189" column="0" lean-forward="false" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar!/org/apache/http/protocol/HTTP.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar!/org/apache/http/util/CharArrayBuffer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar!/org/apache/http/impl/conn/DefaultHttpResponseParser.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar!/org/apache/http/util/Args.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar!/org/apache/http/ProtocolVersion.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar!/org/apache/http/message/ParserCursor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar!/org/apache/http/message/BasicLineParser.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/Hook.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Features/AbilityLogInProWeb.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="747">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/cucumber-reports/cucumber-pretty/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test Results - Scenario__01_Entering_Pro_Web.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="7" lean-forward="false" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/cucumber-reports/CucumberTestReport.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="29" column="25" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebLoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/cucumber-pretty.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-324">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/cucumber-usage.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-190">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/cucumber.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3240">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/repoProteusWebJava.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="147" column="34" lean-forward="false" selection-start-line="147" selection-start-column="34" selection-end-line="147" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Features/AbilityToSearchForFlights.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1587">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        <state relative-caret-position="288">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="50" column="38" lean-forward="false" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="160" />
+        <state relative-caret-position="357">
+          <caret line="143" column="0" lean-forward="false" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cucumber/RunCucumberTest.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/Timeout.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-322">
-          <caret line="28" column="40" lean-forward="false" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+        <state relative-caret-position="324">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar!/cucumber/runtime/java/JavaStepDefinition.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/3.0.6/rest-assured-3.0.6.jar!/io/restassured/internal/ResponseParserRegistrar.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar!/org/apache/commons/lang3/StringUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="289" column="0" lean-forward="false" selection-start-line="289" selection-start-column="0" selection-end-line="289" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/3.0.6/rest-assured-3.0.6.jar!/io/restassured/internal/log/LogRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/3.0.6/rest-assured-3.0.6.jar!/io/restassured/http/Headers.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured-common/3.0.6/rest-assured-common-3.0.6.jar!/io/restassured/internal/assertion/AssertParameter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/3.0.6/rest-assured-3.0.6.jar!/io/restassured/internal/MultiValueEntity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/3.0.6/rest-assured-3.0.6.jar!/io/restassured/http/Cookies.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/3.0.6/rest-assured-3.0.6.jar!/io/restassured/internal/support/ParameterUpdater.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/3.0.6/rest-assured-3.0.6.jar!/io/restassured/assertion/BodyMatcherGroup.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar!/org/apache/commons/lang3/Validate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/3.0.6/rest-assured-3.0.6.jar!/io/restassured/internal/ResponseSpecificationImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/3.0.6/rest-assured-3.0.6.jar!/io/restassured/internal/TestSpecificationImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="254" column="0" lean-forward="false" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/3.0.6/rest-assured-3.0.6.jar!/io/restassured/RestAssured.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="159" column="0" lean-forward="false" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/3.0.6/rest-assured-3.0.6.jar!/io/restassured/internal/RequestSpecificationImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="325" column="104" lean-forward="false" selection-start-line="325" selection-start-column="104" selection-end-line="325" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/StepDefinitionMatch.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <marker date="1516702596176" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1516702596176" expanded="false" signature="140:703" ph="..." />
+            <marker date="1516702596176" expanded="true" signature="1102:1334" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="1388:1744" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="1820:3140" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="3211:3504" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="3590:3969" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="4035:4491" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="4562:5180" ph="{...}" />
+            <marker date="1516702596176" expanded="false" signature="4885:4987" ph="map(row) → {" />
+            <marker date="1516702596176" expanded="false" signature="5043:5062" ph="}" />
+            <marker date="1516702596176" expanded="true" signature="5296:6089" ph="{...}" />
+            <marker date="1516702596176" expanded="false" signature="6121:6132" ph=" { " />
+            <marker date="1516702596176" expanded="false" signature="6172:6178" ph=" }" />
+            <marker date="1516702596176" expanded="false" signature="6226:6237" ph=" { " />
+            <marker date="1516702596176" expanded="false" signature="6293:6299" ph=" }" />
+            <marker date="1516702596176" expanded="false" signature="6332:6343" ph=" { " />
+            <marker date="1516702596176" expanded="false" signature="6370:6376" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/model/StepContainer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1053">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <marker date="1516702596176" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1516702596176" expanded="false" signature="146:404" ph="..." />
+            <marker date="1516702596176" expanded="true" signature="654:745" ph="{...}" />
+            <marker date="1516702596176" expanded="false" signature="779:790" ph=" { " />
+            <marker date="1516702596176" expanded="false" signature="808:814" ph=" }" />
+            <marker date="1516702596176" expanded="false" signature="847:858" ph=" { " />
+            <marker date="1516702596176" expanded="false" signature="879:885" ph=" }" />
+            <marker date="1516702596176" expanded="true" signature="924:1146" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="1202:1399" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="1465:1577" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/model/CucumberScenario.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <marker date="1516702596176" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1516702596176" expanded="false" signature="146:377" ph="..." />
+            <marker date="1516702596176" expanded="true" signature="654:791" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="932:1092" ph="{...}" />
+            <marker date="1516702596176" expanded="false" signature="1147:1158" ph=" { " />
+            <marker date="1516702596176" expanded="false" signature="1189:1195" ph=" }" />
+            <marker date="1516702596176" expanded="true" signature="1274:1854" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="1903:2077" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="2167:2352" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/model/CucumberFeature.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4320">
+          <caret line="195" column="0" lean-forward="false" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
+          <folding>
+            <marker date="1516702596176" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1516702596176" expanded="false" signature="146:798" ph="..." />
+            <marker date="1516702596176" expanded="true" signature="1308:1918" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="2045:2733" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="2872:3624" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="3777:4569" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="4738:5439" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="5498:5563" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="5615:5759" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="5805:6047" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="6114:6445" ph="{...}" />
+            <marker date="1516702596176" expanded="false" signature="6490:6501" ph=" { " />
+            <marker date="1516702596176" expanded="false" signature="6548:6554" ph=" }" />
+            <marker date="1516702596176" expanded="false" signature="6587:6598" ph=" { " />
+            <marker date="1516702596176" expanded="false" signature="6635:6641" ph=" }" />
+            <marker date="1516702596176" expanded="false" signature="6681:6692" ph=" { " />
+            <marker date="1516702596176" expanded="false" signature="6712:6718" ph=" }" />
+            <marker date="1516702596176" expanded="false" signature="6778:6789" ph=" { " />
+            <marker date="1516702596176" expanded="false" signature="6823:6829" ph=" }" />
+            <marker date="1516702596176" expanded="false" signature="6865:6876" ph=" { " />
+            <marker date="1516702596176" expanded="false" signature="6893:6899" ph=" }" />
+            <marker date="1516702596176" expanded="false" signature="6926:6937" ph=" { " />
+            <marker date="1516702596176" expanded="false" signature="6954:6960" ph=" }" />
+            <marker date="1516702596176" expanded="false" signature="6989:7000" ph=" { " />
+            <marker date="1516702596176" expanded="false" signature="7017:7023" ph=" }" />
+            <marker date="1516702596176" expanded="true" signature="7102:7491" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="7586:7785" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="7635:7646" ph="{}" />
+            <marker date="1516702596176" expanded="false" signature="7712:7727" ph=" { " />
+            <marker date="1516702596176" expanded="false" signature="7769:7779" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/Runtime.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2241">
+          <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding>
+            <marker date="1516702596176" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1516702596176" expanded="false" signature="140:992" ph="..." />
+            <marker date="1516702596176" expanded="true" signature="1898:2007" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="2155:2268" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="2442:2550" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="2745:3836" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="3956:4177" ph="{...}" />
+            <marker date="1516702596176" expanded="false" signature="4220:4231" ph=" { " />
+            <marker date="1516702596176" expanded="false" signature="4254:4260" ph=" }" />
+            <marker date="1516702596176" expanded="true" signature="4303:5055" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="5088:5225" ph="{...}" />
+            <marker date="1516702596176" expanded="false" signature="5263:5274" ph=" { " />
+            <marker date="1516702596176" expanded="false" signature="5333:5339" ph=" }" />
+            <marker date="1516702596176" expanded="true" signature="5436:5783" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="5850:6125" ph="{...}" />
+            <marker date="1516702596176" expanded="false" signature="6165:6176" ph=" { " />
+            <marker date="1516702596176" expanded="false" signature="6195:6201" ph=" }" />
+            <marker date="1516702596176" expanded="true" signature="6232:6419" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="6481:6572" ph="{...}" />
+            <marker date="1516702596176" expanded="false" signature="6622:6633" ph=" { " />
+            <marker date="1516702596176" expanded="false" signature="6691:6697" ph=" }" />
+            <marker date="1516702596176" expanded="false" signature="6738:6749" ph=" { " />
+            <marker date="1516702596176" expanded="false" signature="6803:6809" ph=" }" />
+            <marker date="1516702596176" expanded="false" signature="6848:6859" ph=" { " />
+            <marker date="1516702596176" expanded="false" signature="6910:6916" ph=" }" />
+            <marker date="1516702596176" expanded="true" signature="6950:7225" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="7265:7407" ph="{...}" />
+            <marker date="1516702596176" expanded="false" signature="7434:7445" ph=" { " />
+            <marker date="1516702596176" expanded="false" signature="7462:7468" ph=" }" />
+            <marker date="1516702596176" expanded="true" signature="7535:7615" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="7681:7761" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="7869:8171" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="8282:10355" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="10541:11321" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="11408:14220" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="14271:14496" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="14556:14640" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="14700:14802" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="14815:14897" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/api/cli/Main.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <marker date="1516702596176" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1516702596176" expanded="false" signature="140:460" ph="..." />
+            <marker date="1516702596176" expanded="true" signature="500:507" ph="{}" />
+            <marker date="1516702596176" expanded="true" signature="569:694" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="782:1206" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/Utils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="46" column="21" lean-forward="false" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+          <folding>
+            <marker date="1516702596176" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1516702596176" expanded="false" signature="140:541" ph="..." />
+            <marker date="1516702596176" expanded="true" signature="584:591" ph="{}" />
+            <marker date="1516702596176" expanded="true" signature="647:794" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="853:1107" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="1236:2290" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="1358:2267" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="1410:2257" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="2390:3244" ph="{...}" />
+            <marker date="1516702596176" expanded="false" signature="3292:3303" ph=" { " />
+            <marker date="1516702596176" expanded="false" signature="3339:3345" ph=" }" />
+            <marker date="1516702596176" expanded="false" signature="3391:3402" ph=" { " />
+            <marker date="1516702596176" expanded="false" signature="3437:3443" ph=" }" />
+            <marker date="1516702596176" expanded="false" signature="3491:3502" ph=" { " />
+            <marker date="1516702596176" expanded="false" signature="3537:3543" ph=" }" />
+            <marker date="1516702596176" expanded="true" signature="3623:4319" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="4367:4735" ph="{...}" />
+            <marker date="1516702596176" expanded="true" signature="4783:4942" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6318">
+          <caret line="234" column="54" lean-forward="false" selection-start-line="234" selection-start-column="54" selection-end-line="234" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1774#1775#0" expanded="true" />
-            <element signature="e#1818#1819#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SupportingUtilites/RestAssuredClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="101" column="61" lean-forward="false" selection-start-line="101" selection-start-column="61" selection-end-line="101" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Features/AbilityToSearchForFlights.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="99" column="15" lean-forward="false" selection-start-line="99" selection-start-column="15" selection-end-line="99" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -983,6 +1422,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

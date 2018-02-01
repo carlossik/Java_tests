@@ -1,0 +1,129 @@
+
+package PageObjects;
+
+
+  import SupportingUtilites.ElementExtensions;
+  import SupportingUtilites.GeneralUtilites;
+  import org.openqa.selenium.WebElement;
+  import org.openqa.selenium.interactions.Actions;
+  import org.openqa.selenium.support.*;
+  import SupportingUtilites.BrowserFactory;
+  import org.openqa.selenium.support.PageFactory;
+
+public class ProteusWebAdminPage extends BrowserFactory
+{
+    private BrowserFactory browserFactory;
+
+    public ProteusWebAdminPage(BrowserFactory browserFactory)
+    {
+        this.browserFactory = browserFactory;
+        PageFactory.initElements(browserFactory.getDriver(),this );
+    }
+
+    @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[1]/aside/button[1]")
+    @CacheLookup
+    public WebElement btnSeats;
+
+    @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[1]/aside/button[2]")
+    @CacheLookup
+    public WebElement btnJobs;
+
+    @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[1]/aside/button[3]")
+    @CacheLookup
+    public WebElement btnMasterData;
+
+    @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[2]/div/div/div/div/div[1]/div[1]/button")
+    @CacheLookup
+    public WebElement btnAddPlatform;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]")
+    @CacheLookup
+    public WebElement grdSeats;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[1]/div[2]/div[1]/div/div/input")
+    @CacheLookup
+    public WebElement btnJobsRefresh ;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[1]/div[2]/div[1]/div/div/input")
+    @CacheLookup
+    public WebElement drpdwnOperationalUnit ;
+
+    @FindBy(how = How.ID, using = "TEL")
+    @CacheLookup
+    public WebElement lstTEL;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[1]/div/div/div/div[2]/div/button")
+    @CacheLookup
+    public WebElement btnMasterDataAddPubLocation ;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div/div[1]/div[2]/div/button")
+    @CacheLookup
+    public WebElement btnMasterDataAddJobScdTemplates ;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[2]/img")
+    @CacheLookup
+    public WebElement imgHomeProtues ;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[3]/div/div/div[1]/button")
+    @CacheLookup
+    public WebElement btnExpand;
+
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[3]/div/div/div[2]/ul/li[2]")
+    @CacheLookup
+    public WebElement btnLogOut;
+
+
+    public void NavigateAdministrationSeats()
+    {
+        GeneralUtilites.wait(1);
+        ElementExtensions.mouseClick(btnSeats,browserFactory.getDriver());
+    }
+
+    public void NavigateAdministrationJobs()
+    {
+        GeneralUtilites.wait(1);
+        ElementExtensions.mouseClick(btnJobs,browserFactory.getDriver());
+    }
+
+    public void NavigateAdministrationMasterData()
+    {
+        GeneralUtilites.wait(1);
+        ElementExtensions.mouseClick(btnMasterData,browserFactory.getDriver());
+    }
+
+    public boolean FilterOperationalUnit()
+    {
+      try
+      {
+          Actions action = new Actions(browserFactory.getDriver());
+          action.moveToElement(drpdwnOperationalUnit).build().perform();
+          action.click(drpdwnOperationalUnit).perform();
+          action.moveToElement(lstTEL).build().perform();
+          action.click(lstTEL).perform();
+          return true;
+      }
+      catch (Exception ex)
+      {
+          System.out.println(ex.toString());
+          return false;
+      }
+    }
+
+    public boolean CheckLogOutExist()
+    {
+        GeneralUtilites.wait(0.5);
+        ElementExtensions.mouseClick(btnExpand,browserFactory.getDriver());
+        GeneralUtilites.wait(0.5);
+        boolean boolLogOut = btnLogOut.isDisplayed();
+        ElementExtensions.mouseClick(btnExpand,browserFactory.getDriver());
+        return boolLogOut;
+    }
+
+    public void Logout()
+    {
+        ElementExtensions.mouseClick(btnExpand,browserFactory.getDriver());
+        GeneralUtilites.wait(0.5);
+        ElementExtensions.mouseClick(btnLogOut,browserFactory.getDriver());
+    }
+}

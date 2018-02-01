@@ -40,19 +40,23 @@ public class ProteusWebCampaignsPage extends BrowserFactory
     @CacheLookup
     public WebElement btnLogOut ;
 
-    @FindBy(how= How.XPATH , using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/div/form/div[@class='flightsFilterSearchText']/div/input")
+    @FindBy(how= How.XPATH , using = "//*[@id='root']//*[@class='flightsFilterSearchText']//input")
     @CacheLookup
     public WebElement txtSearch;
 
-    @FindBy(how= How.XPATH , using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/div[2]/div[1]/div/div/input")
+    @FindBy(how= How.XPATH , using = "//*[@id='root']//*[@class='flightsFilterSort']//button")
     @CacheLookup
     public WebElement txtSort;
 
-    @FindBy(how= How.XPATH , using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/div/form/div[@class='flightsFilterAdvertiser']/div/div/input")
+    @FindBy(how= How.XPATH , using = "//*[@id='root']//*[@class='flightsFilterAdvertiser']//input")
     @CacheLookup
     public WebElement txtAdvertiser ;
 
-    @FindBy(how= How.XPATH , using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/div/form/div[@class='flightsFilterAgency']/div/div/input")
+    @FindBy(how= How.XPATH , using = "//*[@id='root']//input[@name='onlyWithEmptyGoalOrUnknownTrader']")
+    @CacheLookup
+    public WebElement chbxRequiresAction ;
+
+    @FindBy(how= How.XPATH , using = "//*[@id='root']//*[@class='flightsFilterAgency']//input")
     @CacheLookup
     public WebElement txtAgency;
 
@@ -126,15 +130,15 @@ public class ProteusWebCampaignsPage extends BrowserFactory
 
     public void EnterSearchFilter(String Sort, String Search , String Advertiser, String Agency)
     {
-        if (Sort != "")
+        if (!Sort.equals(""))
             ElementExtensions.enterText(txtSort,Sort);
-        if (Search != "")
+        if (!Search.equals(""))
             ElementExtensions.enterText(txtSearch,Search);
             //txtSearch.enterText(Search);
-        if (Advertiser != "")
+        if (!Advertiser.equals(""))
             ElementExtensions.enterText(txtAdvertiser,Advertiser);
             //txtAdvertiser.enterText(Advertiser);
-        if (Agency != "")
+        if (!Agency.equals(""))
             ElementExtensions.enterText(txtAgency,Agency);
             //txtAgency.enterText(Agency);
     }

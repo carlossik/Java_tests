@@ -8,9 +8,7 @@ import cucumber.api.java.Before;
 
 public class Hook extends BrowserFactory
 {
-
     private BrowserFactory browserFactory;
-
     public Hook(BrowserFactory browserFactory) {
         this.browserFactory = browserFactory;
     }

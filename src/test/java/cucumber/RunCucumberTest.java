@@ -14,7 +14,7 @@ import com.github.mkolisnyk.cucumber.runner.ExtendedCucumberOptions;
 //@RunWith(E.class)
 @RunWith(ExtendedCucumber.class)
 @CucumberOptions(
-        strict = false,
+
         features = {"./src/test/java/Features"},
         format = {
                 "pretty",
@@ -41,7 +41,7 @@ import com.github.mkolisnyk.cucumber.runner.ExtendedCucumberOptions;
         toPDF = true,
         excludeCoverageTags = {"@flaky" },
         includeCoverageTags = {"@passed" },
-        outputFolder = "target")
+        outputFolder = "target/reports")
 public class RunCucumberTest     {
 
         @Test
