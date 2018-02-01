@@ -55,7 +55,7 @@ public class BrowserFactory {
                 if (driver == null)
                 {
                     ChromeOptions options = new ChromeOptions();
-                    String strOptions = "user-data-dir=C:\\Users\\" +  "ramchander.telu"  + "\\AppData\\Local\\Google\\Chrome\\User Data";
+                    String strOptions = "user-data-dir=C:\\Users\\" +  new com.sun.security.auth.module.NTSystem().getName()  + "\\AppData\\Local\\Google\\Chrome\\User Data";
                     options.addArguments(strOptions);
                     options.addArguments("no-sandbox");
                     System.setProperty("webdriver.chrome.driver", librariespath+ "chromedriver.exe");
