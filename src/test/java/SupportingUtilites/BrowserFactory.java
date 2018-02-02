@@ -5,7 +5,10 @@ import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.firefox.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.*;
+import org.openqa.selenium.support.ui.Select;
+
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 import java.lang.*;
@@ -53,21 +56,23 @@ public class BrowserFactory {
                 }
                 break;
             case "Chrome":
-                if (driver == null)
-                {
+                if (driver == null) {
                     ChromeOptions options = new ChromeOptions();
-                    String strOptions = "user-data-dir=C:\\Users\\" +  new com.sun.security.auth.module.NTSystem().getName()  + "\\AppData\\Local\\Google\\Chrome\\User Data";
+                    String strOptions = "user-data-dir=C:\\Users\\" + new com.sun.security.auth.module.NTSystem().getName() + "\\AppData\\Local\\Google\\Chrome\\User Data";
                     options.addArguments(strOptions);
                     options.addArguments("no-sandbox");
-                    System.setProperty("webdriver.chrome.driver", librariespath+ "chromedriver.exe");
-                    driver = new ChromeDriver();
+                    System.setProperty("webdriver.chrome.driver", librariespath + "chromedriver.exe");
+                    driver = new ChromeDriver(options);
                     Drivers.put("Chrome", driver);
                 }
                 break;
             case "Headless":
                 if (driver == null)
                 {
-                    driver = new RemoteWebDriver(DesiredCapabilities.htmlUnit());
+                    ChromeOptions chromeOptions = new ChromeOptions();
+                    chromeOptions.addArguments("--headless");
+                    System.setProperty("webdriver.chrome.driver", librariespath+ "chromedriver.exe");
+                    driver = new ChromeDriver(chromeOptions);
                     Drivers.put("Headless", driver);
                 }
                 break;
@@ -94,11 +99,48 @@ public class BrowserFactory {
         //Loop through and Close all the browsers
         for (String key: Drivers.keySet())
         {
-            Drivers.get(key).close();
+            //Drivers.get(key).close();
             Drivers.get(key).quit();
         }
-        Drivers.clear();
         driver = null;
+        Drivers.clear();
+
     }
+
+    public void mouseClick(WebElement objElement)
+    {
+        Actions action = new  Actions(getDriver());
+        action.moveToElement(objElement).build().perform();
+        action.click(objElement).perform();
+    }
+
+    public void enterText(WebElement objElement,String strText)
+    {
+        if (strText != null)
+        {
+            objElement.clear();
+            objElement.sendKeys(strText);
+            objElement.sendKeys(Keys.TAB);
+        }
+    }
+
+    public static void selectText(WebElement objElement, String strText)
+    {
+        if (!strText.equals(""))
+        {
+            Select  select = new Select (objElement);
+            select.selectByVisibleText(strText);
+        }
+    }
+
+    public static void selectValue(WebElement objElement, String strValue)
+    {
+        if (!strValue.equals(""))
+        {
+            Select select = new Select(objElement);
+            select.selectByValue(strValue);
+        }
+    }
+
 }
 
