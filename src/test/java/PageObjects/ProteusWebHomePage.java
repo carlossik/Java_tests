@@ -54,25 +54,25 @@ public class ProteusWebHomePage extends BrowserFactory
     public void NavigateProteusAdministration()
     {
         GeneralUtilites.wait(1);
-        ElementExtensions.mouseClick(tabAdministration,browserFactory.getDriver());
+        mouseClick(tabAdministration );
     }
 
     public void NavigateProteusCampaign()
     {
         GeneralUtilites.wait(1);
-        ElementExtensions.mouseClick(tabCampaign,browserFactory.getDriver());
+         mouseClick(tabCampaign );
     }
 
     public void NavigateProteusReports()
     {
         GeneralUtilites.wait(1);
-        ElementExtensions.mouseClick(tabReporting,browserFactory.getDriver());
+         mouseClick(tabReporting );
     }
 
     public void NavigateProteusClientReports()
     {
         GeneralUtilites.wait(1);
-        ElementExtensions.mouseClick(tabClientReporting,browserFactory.getDriver());
+         mouseClick(tabClientReporting );
     }
 
     public boolean CheckCampaignTabExist()
@@ -101,17 +101,17 @@ public class ProteusWebHomePage extends BrowserFactory
     public boolean CheckLogOutExist()
     {
         GeneralUtilites.wait(0.5);
-        ElementExtensions.mouseClick(btnExpand,browserFactory.getDriver());
+         mouseClick(btnExpand);
         GeneralUtilites.wait(0.5);
         boolean boolLogOut = btnLogOut.isDisplayed();
-        ElementExtensions.mouseClick(btnExpand,browserFactory.getDriver());
+         mouseClick(btnExpand );
         return boolLogOut;
     }
 
     public void Logout()
     {
-        ElementExtensions.mouseClick(btnExpand,browserFactory.getDriver());
+         mouseClick(btnExpand );
         GeneralUtilites.wait(0.5);
-        ElementExtensions.mouseClick(btnLogOut,browserFactory.getDriver());
+         mouseClick(btnLogOut );
     }
 }

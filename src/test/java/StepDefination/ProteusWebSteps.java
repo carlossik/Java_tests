@@ -174,7 +174,7 @@ public class ProteusWebSteps extends BrowserFactory
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         //  Assert.assertTrue(Page.ProteusWebCampaigns.btnApplyFilters.Enabled, "Apply button is not enabled after enter search");
         GeneralUtilites.wait(1);
-        ElementExtensions.mouseClick(campaignsPage.btnApplyFilters,browserFactory.getDriver());
+        mouseClick(campaignsPage.btnApplyFilters );
         GeneralUtilites.wait(1);
     }
 
@@ -313,8 +313,9 @@ public class ProteusWebSteps extends BrowserFactory
     public void ableToNavigateToAdministrationMasterData()
     {
         adminPage = new ProteusWebAdminPage(this.browserFactory);
+        GeneralUtilites.wait(2);
         adminPage.NavigateAdministrationMasterData();
-        GeneralUtilites.wait(1);
+        GeneralUtilites.wait(2);
         Assert.assertTrue("Unable to navigate to Administration Master Data",
                 adminPage.btnMasterDataAddPubLocation.isDisplayed() &&
                         adminPage.btnMasterDataAddJobScdTemplates.isDisplayed());

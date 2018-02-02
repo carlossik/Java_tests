@@ -1,6 +1,4 @@
 package StepDefination;
-
-
 import SupportingUtilites.BrowserFactory;
 import SupportingUtilites.GeneralUtilites;
 import cucumber.api.java.After;
@@ -13,6 +11,7 @@ public class Hook extends BrowserFactory
         this.browserFactory = browserFactory;
     }
     public Hook(){}
+
     @Before
     public void InitializeTest()
     {

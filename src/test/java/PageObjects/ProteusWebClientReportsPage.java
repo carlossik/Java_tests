@@ -87,48 +87,49 @@ public class ProteusWebClientReportsPage extends BrowserFactory
 
      //  ElementExtensions.enterText(txtAdvertiser,tAdvertiser);
        GeneralUtilites.wait(1);
-       ElementExtensions.mouseClick(btnOK,browserFactory.getDriver());
+       mouseClick(btnOK );
        GeneralUtilites.wait(1);
    }
+
 
     public void NavigateClientReportDashborad()
     {
         GeneralUtilites.wait(1);
-        ElementExtensions.mouseClick(btnDashBoard,browserFactory.getDriver());
+         mouseClick(btnDashBoard );
     }
 
     public void NavigateClientReportPerformance()
     {
         GeneralUtilites.wait(1);
-        ElementExtensions.mouseClick(btnPerformance,browserFactory.getDriver());
+         mouseClick(btnPerformance );
     }
 
     public void NavigateClientReportDSP()
     {
         GeneralUtilites.wait(1);
-        ElementExtensions.mouseClick(btnDSP,browserFactory.getDriver());
+         mouseClick(btnDSP );
     }
 
     public void NavigateClientReportTactics()
     {
         GeneralUtilites.wait(1);
-        ElementExtensions.mouseClick(btnTactics,browserFactory.getDriver());
+         mouseClick(btnTactics );
     }
 
     public boolean CheckLogOutExist()
     {
         GeneralUtilites.wait(0.5);
-        ElementExtensions.mouseClick(btnExpand,browserFactory.getDriver());
+        mouseClick(btnExpand );
         GeneralUtilites.wait(0.5);
         boolean boolLogOut = btnLogOut.isDisplayed();
-        ElementExtensions.mouseClick(btnExpand,browserFactory.getDriver());
+        mouseClick(btnExpand );
         return boolLogOut;
     }
 
     public void Logout()
     {
-        ElementExtensions.mouseClick(btnExpand,browserFactory.getDriver());
+        mouseClick(btnExpand );
         GeneralUtilites.wait(0.5);
-        ElementExtensions.mouseClick(btnLogOut,browserFactory.getDriver());
+        mouseClick(btnLogOut );
     }
 }

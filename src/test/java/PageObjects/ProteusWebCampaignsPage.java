@@ -21,8 +21,8 @@ public class ProteusWebCampaignsPage extends BrowserFactory
         PageFactory.initElements(browserFactory.getDriver(),this );
     }
 
-@FindBy(how= How.XPATH , using = "//*[@id='3']")
-   @CacheLookup
+    @FindBy(how= How.XPATH , using = "//*[@id='3']")
+    @CacheLookup
     public WebElement txtCampaigns;
 
 
@@ -93,20 +93,20 @@ public class ProteusWebCampaignsPage extends BrowserFactory
 
     public boolean CheckLogOutExist()
     {
-        ElementExtensions.mouseClick(btnExpand,browserFactory.getDriver());
+      mouseClick(btnExpand );
         //btnExpand.mouseClick();
         boolean boolLogOut = btnLogOut.isDisplayed();
-        ElementExtensions.mouseClick(btnExpand,browserFactory.getDriver());
+         mouseClick(btnExpand );
         //btnExpand.mouseClick();
         return boolLogOut;
     }
 
     public void Logout()
     {
-        ElementExtensions.mouseClick(btnExpand,browserFactory.getDriver());
+         mouseClick(btnExpand );
         //btnExpand.mouseClick();
         GeneralUtilites.wait(0.5);
-        ElementExtensions.mouseClick(btnLogOut,browserFactory.getDriver());
+        mouseClick(btnLogOut );
         //btnLogOut.mouseClick();
     }
 
@@ -115,11 +115,9 @@ public class ProteusWebCampaignsPage extends BrowserFactory
     {
         try
         {
-            ElementExtensions.enterText(txtSearch,"FINANCE");
-            ElementExtensions.enterText(txtSearch,"IO-6466");
-            // txtSearch.enterText("FINANCE");
-            //txtSearch.enterText("IO-6466");
-            return txtSearch.isDisplayed();
+             enterText(txtSearch,"FINANCE");
+             enterText(txtSearch,"IO-6466");
+             return txtSearch.isDisplayed();
         }
         catch(Exception ex)
         {
@@ -131,15 +129,15 @@ public class ProteusWebCampaignsPage extends BrowserFactory
     public void EnterSearchFilter(String Sort, String Search , String Advertiser, String Agency)
     {
         if (!Sort.equals(""))
-            ElementExtensions.enterText(txtSort,Sort);
+             enterText(txtSort,Sort);
         if (!Search.equals(""))
-            ElementExtensions.enterText(txtSearch,Search);
+             enterText(txtSearch,Search);
             //txtSearch.enterText(Search);
         if (!Advertiser.equals(""))
-            ElementExtensions.enterText(txtAdvertiser,Advertiser);
+           enterText(txtAdvertiser,Advertiser);
             //txtAdvertiser.enterText(Advertiser);
         if (!Agency.equals(""))
-            ElementExtensions.enterText(txtAgency,Agency);
+            enterText(txtAgency,Agency);
             //txtAgency.enterText(Agency);
     }
 

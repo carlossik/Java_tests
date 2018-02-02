@@ -1,7 +1,4 @@
-
 package PageObjects;
-
-
   import SupportingUtilites.ElementExtensions;
   import SupportingUtilites.GeneralUtilites;
   import org.openqa.selenium.WebElement;
@@ -77,19 +74,19 @@ public class ProteusWebAdminPage extends BrowserFactory
     public void NavigateAdministrationSeats()
     {
         GeneralUtilites.wait(1);
-        ElementExtensions.mouseClick(btnSeats,browserFactory.getDriver());
+        mouseClick(btnSeats );
     }
 
     public void NavigateAdministrationJobs()
     {
         GeneralUtilites.wait(1);
-        ElementExtensions.mouseClick(btnJobs,browserFactory.getDriver());
+        mouseClick(btnJobs );
     }
 
     public void NavigateAdministrationMasterData()
     {
         GeneralUtilites.wait(1);
-        ElementExtensions.mouseClick(btnMasterData,browserFactory.getDriver());
+        mouseClick(btnMasterData );
     }
 
     public boolean FilterOperationalUnit()
@@ -113,17 +110,17 @@ public class ProteusWebAdminPage extends BrowserFactory
     public boolean CheckLogOutExist()
     {
         GeneralUtilites.wait(0.5);
-        ElementExtensions.mouseClick(btnExpand,browserFactory.getDriver());
+        mouseClick(btnExpand );
         GeneralUtilites.wait(0.5);
         boolean boolLogOut = btnLogOut.isDisplayed();
-        ElementExtensions.mouseClick(btnExpand,browserFactory.getDriver());
+        mouseClick(btnExpand );
         return boolLogOut;
     }
 
     public void Logout()
     {
-        ElementExtensions.mouseClick(btnExpand,browserFactory.getDriver());
+        mouseClick(btnExpand );
         GeneralUtilites.wait(0.5);
-        ElementExtensions.mouseClick(btnLogOut,browserFactory.getDriver());
+        mouseClick(btnLogOut );
     }
 }

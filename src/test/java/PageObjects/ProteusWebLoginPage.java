@@ -6,6 +6,8 @@ import SupportingUtilites.GeneralUtilites;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.*;
 
+
+@lombok.experimental.ExtensionMethod({ElementExtensions.class})
 public class ProteusWebLoginPage extends BrowserFactory
 {
     private BrowserFactory browserFactory;
@@ -15,6 +17,8 @@ public class ProteusWebLoginPage extends BrowserFactory
         this.browserFactory = browserFactory;
         PageFactory.initElements(browserFactory.getDriver(),this );
     }
+
+
 
      @FindBy (how =  How.ID , using = "username")
      @CacheLookup
@@ -46,20 +50,11 @@ public class ProteusWebLoginPage extends BrowserFactory
     public void loginToApplication(String username, String password)
     {
         GeneralUtilites.wait(1);
-        //Enter Username in UserName Textbox
-        ElementExtensions.enterText(txtUserName,username);
-        //txtUserName.enterText(username);
-
-        //Enter Password in Password Textbox
-        ElementExtensions.enterText(txtPassword,password);
-        //txtPassword.enterText(password);
-
+        enterText(txtUserName,username);
+        enterText(txtPassword,password);
         if (chbxRememberMe.isSelected())
-            ElementExtensions.mouseClick(chbxRememberMe,browserFactory.getDriver());
-            //chbxRememberMe.mouseClick();
-        //Click on SignIn Button
-        ElementExtensions.mouseClick(btnLogIn,browserFactory.getDriver());
-      //  btnLogIn.mouseClick();
+          mouseClick(chbxRememberMe);
+         mouseClick(btnLogIn );
     }
 
     public boolean CheckInvalidUsernamePassword()
@@ -67,6 +62,5 @@ public class ProteusWebLoginPage extends BrowserFactory
         GeneralUtilites.wait(1);
         return txtInvalidUsernamePassword.isDisplayed();
     }
-
-
 }
+
