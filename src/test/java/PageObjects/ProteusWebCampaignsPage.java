@@ -2,8 +2,10 @@ package PageObjects;
 
 import SupportingUtilites.BrowserFactory;
 import SupportingUtilites.GeneralUtilites;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -21,20 +23,22 @@ public class ProteusWebCampaignsPage extends BrowserFactory
         PageFactory.initElements(browserFactory.getDriver(),this );
     }
 
-    @FindBy(how= How.XPATH , using = "//*[@id='3']")
+
+    @FindBy(how= How.XPATH , using = "//*[@id='0']")
     @CacheLookup
-    public WebElement txtCampaigns;
+    public WebElement tabHome;
 
-
-    @FindBy(how= How.XPATH , using = "//*[@id='root']/div/header/div/div[3]/div/div/div[1]/button")
+    @FindBy(how= How.XPATH , using = "//*[@id='4']")
     @CacheLookup
-    public WebElement btnExpand ;
+    public WebElement tabCampaigns;
 
+    @FindBy(how= How.XPATH , using = "//*[@id='root']/div/header//button")
+    @CacheLookup
+    public WebElement btnExpand;
 
     @FindBy(how= How.XPATH , using = "//*[@id='root']/div/section/div/div[1]/aside/button")
     @CacheLookup
-    public WebElement btnFLIGHTS ;
-
+    public WebElement btnFLIGHTS;
 
     @FindBy(how= How.XPATH , using = "//*[@id='root']/div/header/div/div[3]/div/div/div[2]/ul/li[2]")
     @CacheLookup
@@ -45,16 +49,16 @@ public class ProteusWebCampaignsPage extends BrowserFactory
     public WebElement txtSearch;
 
     @FindBy(how= How.XPATH , using = "//*[@id='root']//*[@class='flightsFilterSort']//button")
-    @CacheLookup
-    public WebElement txtSort;
+    public WebElement btnSort;
 
     @FindBy(how= How.XPATH , using = "//*[@id='root']//*[@class='flightsFilterAdvertiser']//input")
     @CacheLookup
     public WebElement txtAdvertiser ;
 
-    @FindBy(how= How.XPATH , using = "//*[@id='root']//input[@name='onlyWithEmptyGoalOrUnknownTrader']")
+    @FindBy(how= How.XPATH , using = "//*[@id='root']//label/input[@name='onlyWithEmptyGoalOrUnknownTrader']/../div")
     @CacheLookup
     public WebElement chbxRequiresAction ;
+
 
     @FindBy(how= How.XPATH , using = "//*[@id='root']//*[@class='flightsFilterAgency']//input")
     @CacheLookup
@@ -62,20 +66,46 @@ public class ProteusWebCampaignsPage extends BrowserFactory
 
     @FindBy(how= How.XPATH , using= "//*[@id='root']//*[contains(@class,'flightsFilterApply')]")
     @CacheLookup
-    public WebElement btnApplyFilters ;
+    public WebElement btnApplyFilters;
 
     @FindBy(how= How.XPATH , using= "//*[@id='root']//*[contains(@class,'flightsFilterCancel')]")
     @CacheLookup
-    public WebElement btnClearFilters ;
+    public WebElement btnClearFilters;
 
-    @FindBy(how= How.XPATH , using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]")
+    @FindBy(how= How.XPATH , using = "//*[@id='root']//section/div/div[2]/div/div/div/div[2]/div")
     @CacheLookup
-    public WebElement rowFlights ;
+    public WebElement rowFlights;
 
+    @FindBy(how= How.XPATH , using = "/html/body//section//ul/li[1]/span")
+    public WebElement lstSortByStartDateDescending;
+
+    @FindBy(how= How.XPATH , using = "/html/body//section//ul/li[1]")
+    public WebElement lstSortByStartDateDescendingBackground;
+
+    @FindBy(how= How.XPATH , using = "/html/body//section//ul/li[2]/span")
+    public WebElement lstSortByFlightCreatedDescending;
+
+    @FindBy(how= How.XPATH , using = "/html/body//section//ul/li[2]")
+    public WebElement lstSortByFlightCreatedDescendingBackground;
+
+    @FindBy(how= How.XPATH , using = "/html/body//section//ul/li[3]/span")
+    public WebElement lstSortByFlightUpdatedDescending;
+
+    @FindBy(how= How.XPATH , using = "/html/body//section//ul/li[3]")
+    public WebElement lstSortByFlightUpdatedDescendingBackground;
+
+    @FindBy(how= How.XPATH , using = "//*[@id='root']//h4")
+    @CacheLookup
+    public WebElement txtFlightsCount;
 
     public boolean CheckCampaignsPageLoad()
     {
-        return txtCampaigns.isDisplayed();
+        return tabCampaigns.isDisplayed();
+    }
+
+    public boolean CheckForNavigateToHome()
+    {
+        return tabHome.isDisplayed();
     }
 
     public int GetFligtRowsCount()
@@ -85,32 +115,23 @@ public class ProteusWebCampaignsPage extends BrowserFactory
        System.out.println("Flight Count : " + elementTypes.size() );
        return elementTypes.size();
     }
-
     public boolean CheckFLIGHTSExist()
     {
-        return btnExpand.isDisplayed();
+        return txtFlightsCount.isDisplayed();
     }
-
     public boolean CheckLogOutExist()
     {
-      mouseClick(btnExpand );
-        //btnExpand.mouseClick();
+        mouseClick(btnExpand );
         boolean boolLogOut = btnLogOut.isDisplayed();
-         mouseClick(btnExpand );
-        //btnExpand.mouseClick();
+        mouseClick(btnExpand );
         return boolLogOut;
     }
-
     public void Logout()
     {
-         mouseClick(btnExpand );
-        //btnExpand.mouseClick();
+        mouseClick(btnExpand);
         GeneralUtilites.wait(0.5);
         mouseClick(btnLogOut );
-        //btnLogOut.mouseClick();
     }
-
-
     public boolean CheckSearchByFlightNameOrBookingCodeExist()
     {
         try
@@ -125,25 +146,107 @@ public class ProteusWebCampaignsPage extends BrowserFactory
             return false;
         }
     }
-
-    public void EnterSearchFilter(String Sort, String Search , String Advertiser, String Agency)
+    public void EnterSearchFilter(String Search, String Advertiser, String Agency)
     {
-        if (!Sort.equals(""))
-             enterText(txtSort,Sort);
+
         if (!Search.equals(""))
-             enterText(txtSearch,Search);
-            //txtSearch.enterText(Search);
+            enterText(txtSearch,Search);
         if (!Advertiser.equals(""))
-           enterText(txtAdvertiser,Advertiser);
-            //txtAdvertiser.enterText(Advertiser);
+            enterText(txtAdvertiser,Advertiser);
         if (!Agency.equals(""))
             enterText(txtAgency,Agency);
-            //txtAgency.enterText(Agency);
     }
-
     public boolean CheckFliterExist()
     {
         return txtAdvertiser.isDisplayed() && txtAgency.isDisplayed();
     }
 
+    public void SelectRequiredAction()
+    {
+       if(!chbxRequiresAction.getAttribute("class").equals("theme_check_2B20W theme_checked_2NQ9n")) {
+           Actions action = new Actions(browserFactory.getDriver());
+           action.moveToElement(chbxRequiresAction).build().perform();
+           action.click(chbxRequiresAction).perform();
+           GeneralUtilites.wait(1);
+       }
+    }
+
+    public void SelectSortBy(String sortType)
+    {
+        GeneralUtilites.wait(1);
+        Actions action = new Actions(browserFactory.getDriver());
+        action.moveToElement(btnSort).build().perform();
+        action.click(btnSort).perform();
+        if(sortType.equals("SortByFlightCreatedDescending")) {
+            action.moveToElement(lstSortByFlightCreatedDescending).build().perform();
+            action.click(lstSortByFlightCreatedDescending).perform();
+        }
+        else if(sortType.equals("SortByFlightUpdatedDescending")) {
+            action.moveToElement(lstSortByFlightUpdatedDescending).build().perform();
+            action.click(lstSortByFlightUpdatedDescending).perform();
+        }
+        else
+        {
+            action.moveToElement(lstSortByStartDateDescending).build().perform();
+            action.click(lstSortByStartDateDescending).perform();
+        }
+        GeneralUtilites.wait(1);
+    }
+
+    public void ClickOnSortBy()
+    {
+        GeneralUtilites.wait(1);
+        Actions action = new Actions(browserFactory.getDriver());
+        action.moveToElement(btnSort).build().perform();
+        action.click(btnSort).perform();
+    }
+
+    public void UnClickOnSortBy()
+    {
+        GeneralUtilites.wait(1);
+        Actions action = new Actions(browserFactory.getDriver());
+        action.moveToElement(txtFlightsCount).build().perform();
+        action.click(txtFlightsCount).perform();
+    }
+
+    public boolean checkForSortOptions()
+    {
+         boolean returnValue =   btnSort.isDisplayed();
+         Actions action = new Actions(browserFactory.getDriver());
+         action.moveToElement(btnSort).build().perform();
+         action.click(btnSort).perform();
+         GeneralUtilites.wait(1);
+         returnValue = returnValue &&   lstSortByFlightCreatedDescending.isDisplayed();
+         returnValue = returnValue &&   lstSortByFlightUpdatedDescending.isDisplayed();
+         action.moveToElement(lstSortByStartDateDescending).build().perform();
+         action.click(lstSortByStartDateDescending).perform();
+        return returnValue;
+    }
+
+
+    public boolean IsSelected(String sortType)
+    {
+        GeneralUtilites.wait(3);
+        if(sortType.equals("SortByFlightCreatedDescending"))
+        {
+            if(lstSortByFlightCreatedDescendingBackground.getAttribute("class").contains("activeMenuItem"))
+                return true;
+            else
+                return false;
+
+        }
+        else if(sortType.equals("SortByFlightUpdatedDescending")) {
+            if(lstSortByFlightUpdatedDescendingBackground.getAttribute("class").contains("activeMenuItem"))
+                return true;
+            else
+                return false;
+        }
+        else
+        {
+            if(lstSortByStartDateDescendingBackground.getAttribute("class").contains("activeMenuItem"))
+                return true;
+            else
+                return false;
+        }
+    }
 }

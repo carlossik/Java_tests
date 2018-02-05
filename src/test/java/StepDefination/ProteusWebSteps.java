@@ -21,9 +21,10 @@ public class ProteusWebSteps extends BrowserFactory
     ProteusWebClientReportsPage clientReportsPage;
     Properties prop = new Properties();
     InputStream input = null;
-
     static String currentPath = System.getProperty("user.dir");
+
     public ProteusWebSteps(){}
+
     public ProteusWebSteps(BrowserFactory browserFactory) {
        this.browserFactory = browserFactory;
        try
@@ -38,12 +39,14 @@ public class ProteusWebSteps extends BrowserFactory
        }
     }
 
+
     @Given("I am a Proteus User")
     public void GivenIAmAProteusUser()
     {
         Assert.assertTrue("I am not Proteus User", 1==1);
         System.out.println("I am a Proteus User step");
     }
+
 
     @Given("I have the role: Pro Web Campaigns")
     public void GivenIHaveTheRoleProWebCampaigns()
@@ -52,14 +55,13 @@ public class ProteusWebSteps extends BrowserFactory
         System.out.println("I have the role: Pro Web Campaigns");
     }
 
-     @Given("I go to the Proteus Home URL in my browser")
+    @Given("I go to the Proteus Home URL in my browser")
     public void GivenIGoToTheProteusHomeURLInMyBrowser()
     {
         browserFactory.initBrowser(prop.getProperty("Browser"));
         browserFactory.loadApplication(prop.getProperty("ProteusWebURL").replace("{Environment}",prop.getProperty("Environment")));
         System.out.println("I go to the Proteus Home URL in my browser");
     }
-
 
 
     @When("^Login as \"([^\"]*)\"$")
@@ -124,8 +126,7 @@ public class ProteusWebSteps extends BrowserFactory
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("Logout option not shown on Campaign page",campaignsPage.CheckLogOutExist());
         Assert.assertTrue("Flights icon not shown on Campaign page",campaignsPage.CheckFLIGHTSExist() );
-        // Need to implement this
-      //  Assert.assertTrue( "Back to Home not shown on Campaign page",1==2);
+        Assert.assertTrue( "Back to Home not shown on Campaign page",campaignsPage.CheckForNavigateToHome());
     }
 
     @Then("All Flights loads which I have access to")
@@ -133,7 +134,6 @@ public class ProteusWebSteps extends BrowserFactory
     {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         System.out.println("Need to implement this to check the list of flights");
-        // Need to implement this
         Assert.assertTrue("Need to implement this to check the list of flights",campaignsPage.GetFligtRowsCount()> 0);
     }
 
@@ -157,7 +157,7 @@ public class ProteusWebSteps extends BrowserFactory
     public void WhenISearchFilterForAParticularResult()
     {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
-        campaignsPage.EnterSearchFilter("", "FINANCE", "FINANCE - INSURE", "Agency > Business & Industrial 1742");
+        campaignsPage.EnterSearchFilter("FINANCE", "FINANCE - INSURE", "Agency > Business & Industrial 1742");
         GeneralUtilites.wait(2);
     }
 
@@ -397,6 +397,83 @@ public class ProteusWebSteps extends BrowserFactory
     }
 
 
+    @Then("^There is an option to filter by 'Requires action'$")
+    public void thereIsAnOptionToFilterByRequiresAction() throws Throwable
+    {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        GeneralUtilites.wait(1);
+        Assert.assertTrue("Option to filter by 'Requires action' does not exist",
+                campaignsPage.chbxRequiresAction.isDisplayed());
+    }
 
+    @And("^Default 'Requires action' is unselected$")
+    public void defaultRequiresActionIsUnselected() throws Throwable
+    {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertFalse("Default 'Requires action' is selected",
+                campaignsPage.chbxRequiresAction.getAttribute("class").equals("theme_check_2B20W theme_checked_2NQ9n"));
+
+        campaignsPage.SelectRequiredAction();
+        GeneralUtilites.wait(1);
+
+    }
+
+    @When("^Click on 'Requires action'$")
+    public void clickOnRequiresAction() throws Throwable {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        campaignsPage.SelectRequiredAction();
+        GeneralUtilites.wait(1);
+    }
+
+    @Then("^'Requires action' is selected$")
+    public void requiresActionIsSelected() throws Throwable {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue(" 'Requires action' is not selected after clicking on it ",
+                campaignsPage.chbxRequiresAction.getAttribute("class").equals("theme_check_2B20W theme_checked_2NQ9n"));
+    }
+
+    @Then("^Option to sort result by Flight Created and Updated$")
+    public void optionToSortResultByFlightCreatedAndUpdated() throws Throwable {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Option to sort result by Flight Created and Updated does not exist",
+            campaignsPage.checkForSortOptions() );
+
+    }
+
+    @When("^Select sort by Flight created$")
+    public void selectSortByFlightCreated() throws Throwable {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        campaignsPage.SelectSortBy("SortByFlightCreatedDescending");
+    }
+
+    @When("^Select sort by Flight Updated$")
+    public void selectSortByFlightUpdated() throws Throwable {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        campaignsPage.SelectSortBy("SortByFlightUpdatedDescending");
+    }
+
+
+    @Then("^Sort by Flight created selected$")
+    public void sortByFlightCreatedSelected() throws Throwable {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        GeneralUtilites.wait(1);
+        campaignsPage.ClickOnSortBy();
+        GeneralUtilites.wait(1);
+        Assert.assertTrue("Sort by Flight created not selected",
+                campaignsPage.IsSelected("SortByFlightCreatedDescending"));
+        campaignsPage.UnClickOnSortBy();
+    }
+
+
+    @Then("^Sort by Flight updated selected$")
+    public void sortByFlightUpdatedSelected() throws Throwable {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        GeneralUtilites.wait(1);
+        campaignsPage.ClickOnSortBy();
+        GeneralUtilites.wait(1);
+        Assert.assertTrue("Sort by Flight updated not selected",
+                  campaignsPage.IsSelected("SortByFlightUpdatedDescending"));
+        campaignsPage.UnClickOnSortBy();
+    }
 }
 

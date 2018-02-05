@@ -37,11 +37,9 @@ public class BrowserFactory {
         switch (strBrowserName)
         {
             case "Firefox":
-
                     System.setProperty("webdriver.gecko.driver", librariespath+ "geckodriver.exe");
                     driver = new FirefoxDriver();
                     Drivers.put("Firefox", driver);
-
                 break;
 
             case "IE":
@@ -77,7 +75,6 @@ public class BrowserFactory {
                 }
                 break;
         }
-
         //Set the Timeouts
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
         driver.manage().timeouts().pageLoadTimeout(60,TimeUnit.SECONDS);
@@ -111,6 +108,7 @@ public class BrowserFactory {
     {
         Actions action = new  Actions(getDriver());
         action.moveToElement(objElement).build().perform();
+        GeneralUtilites.wait(1);
         action.click(objElement).perform();
     }
 

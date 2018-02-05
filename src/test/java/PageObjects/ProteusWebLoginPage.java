@@ -18,8 +18,6 @@ public class ProteusWebLoginPage extends BrowserFactory
         PageFactory.initElements(browserFactory.getDriver(),this );
     }
 
-
-
      @FindBy (how =  How.ID , using = "username")
      @CacheLookup
      public WebElement txtUserName;

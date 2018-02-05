@@ -41,7 +41,7 @@ public class ProteusWebHomePage extends BrowserFactory
     @CacheLookup
     public WebElement imgHomeProtues ;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[3]/div/div/div[1]/button")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header//button")
     @CacheLookup
     public WebElement btnExpand  ;
 

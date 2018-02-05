@@ -37,8 +37,8 @@ import com.github.mkolisnyk.cucumber.runner.ExtendedCucumberOptions;
         overviewReport = true,
         //coverageReport = true,
         jsonUsageReport = "target/cucumber-reports/cucumber-usage.json",
-        usageReport = true,
-        toPDF = true,
+       // usageReport = false,
+      //  toPDF = false,
         excludeCoverageTags = {"@flaky" },
         includeCoverageTags = {"@passed" },
         outputFolder = "target/reports")
