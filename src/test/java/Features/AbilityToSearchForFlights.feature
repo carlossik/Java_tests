@@ -13,6 +13,7 @@ Feature: Ability to search for Flights
     When I click on "Campaigns" from home page
     Then The Campaigns page loads successfully
     And All Flights loads which I have access to
+    And  There is a section called 'Flights'
     And LogOut ProteusWeb from Campaigns page
 
   @SearchOnProWeb
@@ -40,14 +41,6 @@ Feature: Ability to search for Flights
     Then The main homepage loads successfully
     When I click on "Campaigns" from home page
     Then All Flights loads which I have access to
-  #And  I am able to use all search and filter combinations:
-    # Search only (Flight Name OR Booking Code)
-    # Advertiser only
-    # Agency only
-    # Search and Advertiser
-    # Search and Agency
-    # Advertiser and Agency
-    # Search, Advertiser and Agency
     And LogOut ProteusWeb from Campaigns page
 
   @SearchOnProWeb
@@ -79,11 +72,38 @@ Feature: Ability to search for Flights
     When I search/filter for a particular result
     And Click on Apply button
     Then All Flights matching search/filter combination load as results
+    And  There is a section called 'Flights'
+    And  Each flight title includes Advertiser, Agency, Flight Names and External Booking Reference
     Then LogOut ProteusWeb from Campaigns page
 
 
   @SearchOnProWeb
-  Scenario: 08 Pagination shown when more than 20 flights displayed
+  Scenario: 08 Goal Type, Goal Value, Optimisation Manager, Budget, Spend information and Flight Dates
+    When Login as "ADMINISTRATOR"
+    Then The main homepage loads successfully
+    When I click on "Campaigns" from home page
+    Then All Flights loads which I have access to
+    When I search/filter for a particular result
+    And Click on Apply button
+    Then All Flights matching search/filter combination load as results
+    And  Goal Type, Goal Value, Optimisation Manager, Budget, Spend information and Flight Dates
+    Then LogOut ProteusWeb from Campaigns page
+
+  @SearchOnProWeb
+  Scenario: 09 Goal Type, Goal Value, Optimisation Manager are editable
+    When Login as "ADMINISTRATOR"
+    Then The main homepage loads successfully
+    When I click on "Campaigns" from home page
+    Then All Flights loads which I have access to
+    When I search/filter for a particular result
+    And Click on Apply button
+    Then All Flights matching search/filter combination load as results
+    And  Goal Type, Goal Value, Optimisation Manager are editable
+    Then LogOut ProteusWeb from Campaigns page
+
+
+  @SearchOnProWeb
+  Scenario: 10 Pagination shown when more than 20 flights displayed
     When Login as "ADMINISTRATOR"
     Then The main homepage loads successfully
     When I click on "Campaigns" from home page
@@ -96,5 +116,5 @@ Feature: Ability to search for Flights
 
 
     @SearchProWeb
-    Scenario: 09 API Search for Flights
+    Scenario: 11 API Search for Flights
       When API Search for Flights

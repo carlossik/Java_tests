@@ -1,5 +1,6 @@
 package StepDefination;
 
+import DBDataModel.JDBCTemplate;
 import PageObjects.*;
 import SupportingUtilites.BrowserFactory;
 import java.util.Properties;
@@ -134,7 +135,7 @@ public class ProteusWebSteps extends BrowserFactory
     {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         System.out.println("Need to implement this to check the list of flights");
-        Assert.assertTrue("Need to implement this to check the list of flights",campaignsPage.GetFligtRowsCount()> 0);
+        Assert.assertTrue("Need to implement this to check the list of flights",campaignsPage.GetFlightRowsCount()> 0);
     }
 
     @Then("All Flights matching search/filter combination load as results")
@@ -144,12 +145,10 @@ public class ProteusWebSteps extends BrowserFactory
                  "FINANCE",
                  "2039",
                  "2793");*/
-
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         System.out.println("All Flights matching search/filter combination load as results");
         // Need to implement this
-
-        Assert.assertTrue( "All Flights matching search/filter combination are not loaded as results",campaignsPage.GetFligtRowsCount()>0 );
+        Assert.assertTrue( "All Flights matching search/filter combination are not loaded as results",campaignsPage.GetFlightRowsCount()>0 );
     }
 
 
@@ -198,7 +197,7 @@ public class ProteusWebSteps extends BrowserFactory
     public void ThenFilterDropdownFieldsExist()
     {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
-        Assert.assertTrue( "Filter dropdown fields does not exist",campaignsPage.CheckFliterExist());
+        Assert.assertTrue( "Filter dropdown fields does not exist",campaignsPage.CheckFilterExist());
     }
 
     @Then("There is a box called Campaigns")
@@ -270,7 +269,6 @@ public class ProteusWebSteps extends BrowserFactory
         if(tabName.equals("Client Reports"))
             homePage.NavigateProteusClientReports();
         GeneralUtilites.wait(1);
-
     }
 
     @Then("^Administration page shown correctly$")
@@ -466,7 +464,8 @@ public class ProteusWebSteps extends BrowserFactory
 
 
     @Then("^Sort by Flight updated selected$")
-    public void sortByFlightUpdatedSelected() throws Throwable {
+    public void sortByFlightUpdatedSelected() throws Throwable
+    {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         GeneralUtilites.wait(1);
         campaignsPage.ClickOnSortBy();
@@ -474,6 +473,93 @@ public class ProteusWebSteps extends BrowserFactory
         Assert.assertTrue("Sort by Flight updated not selected",
                   campaignsPage.IsSelected("SortByFlightUpdatedDescending"));
         campaignsPage.UnClickOnSortBy();
+    }
+
+    @And("^There is a section called 'Flights'$")
+    public void thereIsASectionCalledFlights() throws Throwable
+    {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("There is a section called 'Flights' not shown",
+                campaignsPage.txtFlightsCount.isDisplayed());
+    }
+
+    @And("^Each flight title includes Advertiser, Agency, Flight Names and External Booking Reference$")
+    public void CheckFlightDetailsShown() throws Throwable
+    {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Each flight title does not includes Advertiser, Agency, Flight Names and External Booking Reference",
+                campaignsPage.CheckFlightDetailsShown());
+    }
+
+    @And("^Goal Type, Goal Value, Optimisation Manager, Budget, Spend information and Flight Dates$")
+    public void goalTypeGoalValueOptimisationManagerBudgetSpendInformationAndFlightDates() throws Throwable
+    {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Goal Type, Goal Value, Optimisation Manager, Budget, Spend information and Flight Dates not shown",
+                campaignsPage.CheckFlightGoalDetailsShown());
+    }
+
+    @And("^Goal Type, Goal Value, Optimisation Manager are editable$")
+    public void goalTypeGoalValueOptimisationManagerAreEditable() throws Throwable {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Goal Type, Goal Value, Optimisation Manager, Budget, Spend information and Flight Dates not shown",
+                campaignsPage.CheckGoalDetailsEditable());
+
+    }
+
+    @And("^A progress bar shown$")
+    public void aProgressBarShown() throws Throwable {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("A progress bar not shown",
+                campaignsPage.CheckForProgressBar());
+    }
+
+    @When("^I search/filter for result with end date$")
+    public void iSearchResultWithEndDate() throws Throwable {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        campaignsPage.EnterSearchFilter("FINANCE", "FINANCE - INSURE", "Agency > Business & Industrial 1742");
+    }
+
+    @When("^I search/filter for result without end date$")
+    public void iSearchResultWithOutEndDate() throws Throwable {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        campaignsPage.EnterSearchFilter("Collection_io", "", "");
+    }
+
+
+    @Then("^Box shown with Start Date and End Date$")
+    public void boxShownWithStartDateAndEndDate() throws Throwable {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Box not shown with Start Date and End Date",
+                campaignsPage.CheckForStartDate() && campaignsPage.CheckForEndDate() );
+    }
+
+    @Then("^Box shown with Start Date$")
+    public void boxShownWithStartDate() throws Throwable {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Box not shown with Start Date",
+                campaignsPage.CheckForStartDate());
+    }
+
+    @Then("^End date shown as an icon and Tooltip shown$")
+    public void endDateShownAsAnIcon() throws Throwable {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Box not shown with Start Date",
+                campaignsPage.CheckForInfiniteBudgetIcon());
+    }
+
+    @And("^All flights sorted based on created date$")
+    public void allFlightsSortedBasedOnCreatedDate() throws Throwable {
+        JDBCTemplate objJDBCTemp = new JDBCTemplate();
+        String strQuery = "Select  camFlg.campaign_flight_name  \n" +
+                "from campaign.campaign_flight camFlg \n" +
+                "  JOIN campaign.campaign cam On cam.campaign_id =camFlg.campaign_id \n" +
+                "  JOIN campaign.advertiser_account advAcc On advAcc.advertiser_account_id = cam.advertiser_account_id\n" +
+                "  JOIN campaign.organisation Org1 on Org1.organisation_id = advAcc.advertiser_organisation_id\n" +
+                "  JOIN campaign.organisation Org2 on Org2.organisation_id = advAcc.agency_organisation_id\n" +
+                "WHERE   camFlg.campaign_flight_name like '%Automation 8%'\n" +
+                "ORDER BY  camFlg.create_time DESC ";
+        objJDBCTemp.GetCampaignFlightDetails(strQuery);
     }
 }
 
