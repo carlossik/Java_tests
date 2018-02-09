@@ -7,11 +7,6 @@ Feature: Ability to log into Pro Web
    And I go to the Proteus Home URL in my browser
 
 
- # @SortOnProWeb
-  #Scenario: 05 Flights sorted by Created date
-
-   # And  All flights sorted based on created date
-
   @LoginProWeb
   Scenario: 01 Entering Pro Web
     When Login as "ADMINISTRATOR"

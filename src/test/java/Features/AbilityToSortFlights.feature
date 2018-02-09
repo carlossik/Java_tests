@@ -29,16 +29,17 @@ Feature: Ability to sort Flights
   @SortOnProWeb
   Scenario: 03 Flights sorted by Created date
     When I search/filter for a particular result
-    When Select sort by Flight created
     And Click on Apply button
+    When Select sort by Flight created
     Then All Flights matching search/filter combination load as results
     And  All flights sorted based on created date
+
 
 
   @SortOnProWeb
   Scenario: 04 Flights sorted by Updated date
     When I search/filter for a particular result
-    When Select sort by Flight Updated
     And Click on Apply button
+    When Select sort by Flight Updated
     Then All Flights matching search/filter combination load as results
     And  All flights sorted based on updated date

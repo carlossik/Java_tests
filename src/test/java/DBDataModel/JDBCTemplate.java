@@ -9,9 +9,14 @@ public class JDBCTemplate implements CampaignFlightDAO, RecordCountDAO {
     private DataSource dataSource;
     private JdbcTemplate jdbcTemplateObject;
 
+    public void setDataSource(DataSource dataSource) {
+        this.dataSource = dataSource;
+        this.jdbcTemplateObject = new JdbcTemplate(dataSource);
+    }
+
     public List<campaign_flight> GetCampaignFlightDetails(String strSQL) {
-        List <campaign_flight> objCampFlits = jdbcTemplateObject.query(strSQL, new CampaignFlightMapper());
-        return objCampFlits;
+
+        return jdbcTemplateObject.query(strSQL, new CampaignFlightMapper());
     }
 
     public RecordCount GetRecordDetails(String strSQL) {

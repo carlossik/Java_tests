@@ -1,12 +1,10 @@
 package StepDefination;
 
-import DBDataModel.JDBCTemplate;
+
 import PageObjects.*;
 import SupportingUtilites.BrowserFactory;
 import java.util.Properties;
 import java.io.*;
-
-import cucumber.api.PendingException;
 import cucumber.api.java.en.*;
 import org.junit.Assert;
 import SupportingUtilites.*;
@@ -14,15 +12,15 @@ import SupportingUtilites.*;
 public class ProteusWebSteps extends BrowserFactory
 {
     private BrowserFactory browserFactory;
-    ProteusWebLoginPage loginPage;
-    ProteusWebHomePage  homePage;
-    ProteusWebCampaignsPage campaignsPage;
-    ProteusWebAdminPage adminPage;
-    ProteusWebReportsPage reportsPage;
-    ProteusWebClientReportsPage clientReportsPage;
-    Properties prop = new Properties();
-    InputStream input = null;
-    static String currentPath = System.getProperty("user.dir");
+    private ProteusWebLoginPage loginPage;
+    private ProteusWebHomePage  homePage;
+    private ProteusWebCampaignsPage campaignsPage;
+    private ProteusWebAdminPage adminPage;
+    private ProteusWebReportsPage reportsPage;
+    private ProteusWebClientReportsPage clientReportsPage;
+    private Properties prop = new Properties();
+    private InputStream input = null;
+    private static String currentPath = System.getProperty("user.dir");
 
     public ProteusWebSteps(){}
 
@@ -44,7 +42,7 @@ public class ProteusWebSteps extends BrowserFactory
     @Given("I am a Proteus User")
     public void GivenIAmAProteusUser()
     {
-        Assert.assertTrue("I am not Proteus User", 1==1);
+   //     Assert.assertTrue("I am not Proteus User", 1==1);
         System.out.println("I am a Proteus User step");
     }
 
@@ -52,15 +50,15 @@ public class ProteusWebSteps extends BrowserFactory
     @Given("I have the role: Pro Web Campaigns")
     public void GivenIHaveTheRoleProWebCampaigns()
     {
-        Assert.assertTrue("I don't have the role: Pro Web Campaigns",1==1);
+      //  Assert.assertTrue("I don't have the role: Pro Web Campaigns",1==1);
         System.out.println("I have the role: Pro Web Campaigns");
     }
 
     @Given("I go to the Proteus Home URL in my browser")
     public void GivenIGoToTheProteusHomeURLInMyBrowser()
     {
-        browserFactory.initBrowser(prop.getProperty("Browser"));
-        browserFactory.loadApplication(prop.getProperty("ProteusWebURL").replace("{Environment}",prop.getProperty("Environment")));
+       SupportingUtilites.BrowserFactory.initBrowser(prop.getProperty("Browser"));
+        SupportingUtilites.BrowserFactory.loadApplication(prop.getProperty("ProteusWebURL").replace("{Environment}",prop.getProperty("Environment")));
         System.out.println("I go to the Proteus Home URL in my browser");
     }
 
@@ -70,32 +68,29 @@ public class ProteusWebSteps extends BrowserFactory
     {
         String strUserName;
         String strPassword;
-        if(strRole.equals("ADMINISTRATOR"))
+        switch (strRole)
         {
-              strUserName = prop.getProperty("AdminUserName");
-              strPassword = prop.getProperty("AdminPassword");
+            case "ADMINISTRATOR" :
+                strUserName = prop.getProperty("AdminUserName");
+                strPassword = prop.getProperty("AdminPassword");
+                break;
+            case "CAMPAIGN MANAGEMENT WEB" :
+                strUserName = prop.getProperty("CampaignWebUserName");
+                strPassword = prop.getProperty("CampaignWebPassword");
+                break;
+            case "INVALID" :
+                strUserName = prop.getProperty("InvalidUserName");
+                strPassword = prop.getProperty("InvalidPassword");
+                break;
+            default:
+                strUserName = prop.getProperty("AdminUserName");
+                strPassword = prop.getProperty("AdminPassword");
         }
-        else if(strRole.equals("CAMPAIGN MANAGEMENT WEB"))
-        {
-              strUserName = prop.getProperty("CampaignWebUserName");
-              strPassword = prop.getProperty("CampaignWebPassword");
-        }
-        else if(strRole.equals("INVALID"))
-        {
-              strUserName = prop.getProperty("InvalidUserName");
-              strPassword = prop.getProperty("InvalidPassword");
-        }
-        else
-            {
-                  strUserName = prop.getProperty("AdminUserName");
-                  strPassword = prop.getProperty("AdminPassword");
-            }
 
         loginPage = new ProteusWebLoginPage(this.browserFactory);
         loginPage.loginToApplication(strUserName, strPassword);
         GeneralUtilites.wait(1);
         System.out.println(" I go to the Proteus Home URL in my browser");
-
     }
 
     @Then("An error message displayed advising to try again")
@@ -156,7 +151,7 @@ public class ProteusWebSteps extends BrowserFactory
     public void WhenISearchFilterForAParticularResult()
     {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
-        campaignsPage.EnterSearchFilter("FINANCE", "FINANCE - INSURE", "Agency > Business & Industrial 1742");
+        campaignsPage.EnterSearchFilter("Automation 8", "", "");
         GeneralUtilites.wait(2);
     }
 
@@ -396,7 +391,7 @@ public class ProteusWebSteps extends BrowserFactory
 
 
     @Then("^There is an option to filter by 'Requires action'$")
-    public void thereIsAnOptionToFilterByRequiresAction() throws Throwable
+    public void thereIsAnOptionToFilterByRequiresAction()
     {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         GeneralUtilites.wait(1);
@@ -405,7 +400,7 @@ public class ProteusWebSteps extends BrowserFactory
     }
 
     @And("^Default 'Requires action' is unselected$")
-    public void defaultRequiresActionIsUnselected() throws Throwable
+    public void defaultRequiresActionIsUnselected()
     {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertFalse("Default 'Requires action' is selected",
@@ -417,21 +412,21 @@ public class ProteusWebSteps extends BrowserFactory
     }
 
     @When("^Click on 'Requires action'$")
-    public void clickOnRequiresAction() throws Throwable {
+    public void clickOnRequiresAction()   {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         campaignsPage.SelectRequiredAction();
         GeneralUtilites.wait(1);
     }
 
     @Then("^'Requires action' is selected$")
-    public void requiresActionIsSelected() throws Throwable {
+    public void requiresActionIsSelected()   {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue(" 'Requires action' is not selected after clicking on it ",
                 campaignsPage.chbxRequiresAction.getAttribute("class").equals("theme_check_2B20W theme_checked_2NQ9n"));
     }
 
     @Then("^Option to sort result by Flight Created and Updated$")
-    public void optionToSortResultByFlightCreatedAndUpdated() throws Throwable {
+    public void optionToSortResultByFlightCreatedAndUpdated()   {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("Option to sort result by Flight Created and Updated does not exist",
             campaignsPage.checkForSortOptions() );
@@ -439,20 +434,20 @@ public class ProteusWebSteps extends BrowserFactory
     }
 
     @When("^Select sort by Flight created$")
-    public void selectSortByFlightCreated() throws Throwable {
+    public void selectSortByFlightCreated()   {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         campaignsPage.SelectSortBy("SortByFlightCreatedDescending");
     }
 
     @When("^Select sort by Flight Updated$")
-    public void selectSortByFlightUpdated() throws Throwable {
+    public void selectSortByFlightUpdated()  {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         campaignsPage.SelectSortBy("SortByFlightUpdatedDescending");
     }
 
 
     @Then("^Sort by Flight created selected$")
-    public void sortByFlightCreatedSelected() throws Throwable {
+    public void sortByFlightCreatedSelected()   {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         GeneralUtilites.wait(1);
         campaignsPage.ClickOnSortBy();
@@ -464,7 +459,7 @@ public class ProteusWebSteps extends BrowserFactory
 
 
     @Then("^Sort by Flight updated selected$")
-    public void sortByFlightUpdatedSelected() throws Throwable
+    public void sortByFlightUpdatedSelected()
     {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         GeneralUtilites.wait(1);
@@ -476,7 +471,7 @@ public class ProteusWebSteps extends BrowserFactory
     }
 
     @And("^There is a section called 'Flights'$")
-    public void thereIsASectionCalledFlights() throws Throwable
+    public void thereIsASectionCalledFlights()
     {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("There is a section called 'Flights' not shown",
@@ -484,7 +479,7 @@ public class ProteusWebSteps extends BrowserFactory
     }
 
     @And("^Each flight title includes Advertiser, Agency, Flight Names and External Booking Reference$")
-    public void CheckFlightDetailsShown() throws Throwable
+    public void CheckFlightDetailsShown()
     {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("Each flight title does not includes Advertiser, Agency, Flight Names and External Booking Reference",
@@ -492,7 +487,7 @@ public class ProteusWebSteps extends BrowserFactory
     }
 
     @And("^Goal Type, Goal Value, Optimisation Manager, Budget, Spend information and Flight Dates$")
-    public void goalTypeGoalValueOptimisationManagerBudgetSpendInformationAndFlightDates() throws Throwable
+    public void goalTypeGoalValueOptimisationManagerBudgetSpendInformationAndFlightDates()
     {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("Goal Type, Goal Value, Optimisation Manager, Budget, Spend information and Flight Dates not shown",
@@ -500,7 +495,7 @@ public class ProteusWebSteps extends BrowserFactory
     }
 
     @And("^Goal Type, Goal Value, Optimisation Manager are editable$")
-    public void goalTypeGoalValueOptimisationManagerAreEditable() throws Throwable {
+    public void goalTypeGoalValueOptimisationManagerAreEditable()  {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("Goal Type, Goal Value, Optimisation Manager, Budget, Spend information and Flight Dates not shown",
                 campaignsPage.CheckGoalDetailsEditable());
@@ -508,58 +503,60 @@ public class ProteusWebSteps extends BrowserFactory
     }
 
     @And("^A progress bar shown$")
-    public void aProgressBarShown() throws Throwable {
+    public void aProgressBarShown()   {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("A progress bar not shown",
                 campaignsPage.CheckForProgressBar());
     }
 
     @When("^I search/filter for result with end date$")
-    public void iSearchResultWithEndDate() throws Throwable {
+    public void iSearchResultWithEndDate()   {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         campaignsPage.EnterSearchFilter("FINANCE", "FINANCE - INSURE", "Agency > Business & Industrial 1742");
     }
 
     @When("^I search/filter for result without end date$")
-    public void iSearchResultWithOutEndDate() throws Throwable {
+    public void iSearchResultWithOutEndDate()   {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         campaignsPage.EnterSearchFilter("Collection_io", "", "");
     }
 
 
     @Then("^Box shown with Start Date and End Date$")
-    public void boxShownWithStartDateAndEndDate() throws Throwable {
+    public void boxShownWithStartDateAndEndDate()   {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("Box not shown with Start Date and End Date",
                 campaignsPage.CheckForStartDate() && campaignsPage.CheckForEndDate() );
     }
 
     @Then("^Box shown with Start Date$")
-    public void boxShownWithStartDate() throws Throwable {
+    public void boxShownWithStartDate() {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("Box not shown with Start Date",
                 campaignsPage.CheckForStartDate());
     }
 
     @Then("^End date shown as an icon and Tooltip shown$")
-    public void endDateShownAsAnIcon() throws Throwable {
+    public void endDateShownAsAnIcon()  {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("Box not shown with Start Date",
                 campaignsPage.CheckForInfiniteBudgetIcon());
     }
 
     @And("^All flights sorted based on created date$")
-    public void allFlightsSortedBasedOnCreatedDate() throws Throwable {
-        JDBCTemplate objJDBCTemp = new JDBCTemplate();
-        String strQuery = "Select  camFlg.campaign_flight_name  \n" +
-                "from campaign.campaign_flight camFlg \n" +
-                "  JOIN campaign.campaign cam On cam.campaign_id =camFlg.campaign_id \n" +
-                "  JOIN campaign.advertiser_account advAcc On advAcc.advertiser_account_id = cam.advertiser_account_id\n" +
-                "  JOIN campaign.organisation Org1 on Org1.organisation_id = advAcc.advertiser_organisation_id\n" +
-                "  JOIN campaign.organisation Org2 on Org2.organisation_id = advAcc.agency_organisation_id\n" +
-                "WHERE   camFlg.campaign_flight_name like '%Automation 8%'\n" +
-                "ORDER BY  camFlg.create_time DESC ";
-        objJDBCTemp.GetCampaignFlightDetails(strQuery);
+    public void allFlightsSortedBasedOnCreatedDate()   {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        String strQuery = prop.getProperty("SQLQuerySortByCreatedTime").replace("{SearchKey}","Automation 8");
+        Assert.assertTrue("All flights are not sorted based on created date",
+                campaignsPage.RecordsSortedBy(strQuery));
+    }
+
+    @And("^All flights sorted based on updated date$")
+    public void allFlightsSortedBasedOnUpdatedDate()  {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        String strQuery = prop.getProperty("SQLQuerySortByUpdatedTime").replace("{SearchKey}","Automation 8");
+        Assert.assertTrue("All flights are not sorted based on updated date",
+                campaignsPage.RecordsSortedBy(strQuery));
     }
 }
 

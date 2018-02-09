@@ -14,9 +14,9 @@ import java.util.concurrent.TimeUnit;
 import java.lang.*;
 
 public class BrowserFactory {
-    public static   Map <String, WebDriver> Drivers = new HashMap <String, WebDriver>();
-    public static WebDriver driver;
-    static String currentPath = System.getProperty("user.dir");
+    private static   Map <String, WebDriver> Drivers = new HashMap <>();
+    private static WebDriver driver;
+    private static String currentPath = System.getProperty("user.dir");
 
     public WebDriver getDriver()
     {
@@ -56,8 +56,8 @@ public class BrowserFactory {
             case "Chrome":
                 if (driver == null) {
                     ChromeOptions options = new ChromeOptions();
-                    String strOptions = "user-data-dir=C:\\Users\\" + new com.sun.security.auth.module.NTSystem().getName() + "\\AppData\\Local\\Google\\Chrome\\User Data";
-                    options.addArguments(strOptions);
+                  //  String strOptions = "user-data-dir=C:\\Users\\" + new com.sun.security.auth.module.NTSystem().getName() + "\\AppData\\Local\\Google\\Chrome\\User Data";
+                   // options.addArguments(strOptions);
                     options.addArguments("no-sandbox");
                     System.setProperty("webdriver.chrome.driver", librariespath + "chromedriver.exe");
                     driver = new ChromeDriver(options);
@@ -104,7 +104,7 @@ public class BrowserFactory {
 
     }
 
-    public void mouseClick(WebElement objElement)
+    protected void mouseClick(WebElement objElement)
     {
         Actions action = new  Actions(getDriver());
         action.moveToElement(objElement).build().perform();
@@ -112,7 +112,7 @@ public class BrowserFactory {
         action.click(objElement).perform();
     }
 
-    public void enterText(WebElement objElement,String strText)
+    protected void enterText(WebElement objElement,String strText)
     {
         if (strText != null)
         {
