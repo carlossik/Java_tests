@@ -4,7 +4,6 @@ import DBDataModel.JDBCTemplate;
 import DBDataModel.campaign_flight;
 import SupportingUtilites.BrowserFactory;
 import SupportingUtilites.GeneralUtilites;
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -14,112 +13,130 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.*;
-import java.util.stream.Collectors;
 
-public class ProteusWebCampaignsPage extends BrowserFactory
-{
+
+public class ProteusWebCampaignsPage extends BrowserFactory {
     private BrowserFactory browserFactory;
     private Properties prop = new Properties();
     private InputStream input = null;
     private static String currentPath = System.getProperty("user.dir");
 
-    public ProteusWebCampaignsPage(BrowserFactory browserFactory)  {
+    public ProteusWebCampaignsPage(BrowserFactory browserFactory) {
         this.browserFactory = browserFactory;
-        PageFactory.initElements(browserFactory.getDriver(),this );
+        PageFactory.initElements(browserFactory.getDriver(), this);
 
-        try
-        {
+        try {
             InputStream input = new FileInputStream(currentPath + "/src/test/java/Resources/config.properties");
             prop.load(input);
-        }
-        catch(Exception e)
-        {
+        } catch (Exception e) {
             e.printStackTrace();
             System.exit(0);
         }
     }
 
-    @FindBy(how= How.XPATH , using = "//*[@id='0']")
+    @FindBy(how = How.XPATH, using = "//*[@id='0']")
     @CacheLookup
     private WebElement tabHome;
 
-    @FindBy(how= How.XPATH , using = "//*[@id='4']")
+    @FindBy(how = How.XPATH, using = "//*[@id='4']")
     @CacheLookup
     private WebElement tabCampaigns;
 
-    @FindBy(how= How.XPATH , using = "//*[@id='root']/div/header//button")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header//button")
     @CacheLookup
     private WebElement btnExpand;
 
-    @FindBy(how= How.XPATH , using = "//*[@id='root']/div/section/div/div[1]/aside/button")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[1]/aside/button")
     @CacheLookup
     public WebElement btnFLIGHTS;
 
-    @FindBy(how= How.XPATH , using = "//*[@id='root']/div/header/div/div[3]/div/div/div[2]/ul/li[2]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[3]/div/div/div[2]/ul/li[2]")
     @CacheLookup
-    private WebElement btnLogOut ;
+    private WebElement btnLogOut;
 
-    @FindBy(how= How.XPATH , using = "//*[@id='root']//*[@class='automation_flightsFilterSearchText']//input")
-    @CacheLookup
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//*[@class='automation_flightsFilterSearchText']//input")
     private WebElement txtSearch;
 
-    @FindBy(how= How.XPATH , using = "//*[@id='root']//*[@class='automation_flightsFilterSort']//button")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//*[@class='automation_flightsFilterSort']//button")
     private WebElement btnSort;
 
-    @FindBy(how= How.XPATH , using = "//*[@id='root']//*[@class='automation_flightsFilterAdvertiser']//input")
-    @CacheLookup
-    private WebElement txtAdvertiser ;
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//*[@class='automation_flightsFilterAdvertiser']//input")
+    private WebElement txtAdvertiser;
 
-    @FindBy(how= How.XPATH , using = "//*[@id='root']//*[@class='automation_flightsFilterRequiresAction']//input[@name='onlyWithEmptyGoalOrUnknownTrader']/../div")
-    @CacheLookup
-    public WebElement chbxRequiresAction ;
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//*[@class='automation_flightsFilterRequiresAction']//input[@name='onlyWithEmptyGoalOrUnknownTrader']/../div")
+    public WebElement chbxRequiresAction;
 
-    @FindBy(how= How.XPATH , using = "//*[@id='root']//*[@class='automation_flightsFilterAgency']//input")
-    @CacheLookup
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//*[@class='automation_flightsFilterAgency']//input")
     private WebElement txtAgency;
 
-    @FindBy(how= How.XPATH , using= "//*[@id='root']//*[contains(@class,'automation_flightsFilterApply')]")
-    @CacheLookup
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//*[contains(@class,'automation_flightsFilterApply')]")
     public WebElement btnApplyFilters;
 
-    @FindBy(how= How.XPATH , using= "//*[@id='root']//*[contains(@class,'automation_flightsFilterCancel')]")
-    @CacheLookup
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//*[contains(@class,'automation_flightsFilterCancel')]")
     public WebElement btnClearFilters;
 
-    @FindBy(how= How.XPATH , using = "//*[@id='root']//section/div/div[2]/div/div/div/div[2]/div")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//section/div/div[2]/div/div/div/div[2]/div")
     public WebElement rowFlights;
 
-    @FindBy(how= How.XPATH , using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/div[2]/span/div/div/ul/li[1]/span")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/div[2]/span/div/div/ul/li[1]/span")
     private WebElement lstSortByStartDateDescending;
 
-    @FindBy(how= How.XPATH , using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/div[2]/span/div/div/ul/li[1]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/div[2]/span/div/div/ul/li[1]")
     private WebElement lstSortByStartDateDescendingBackground;
 
-    @FindBy(how= How.XPATH , using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/div[2]/span/div/div/ul/li[2]/span")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/div[2]/span/div/div/ul/li[2]/span")
     private WebElement lstSortByFlightCreatedDescending;
 
-    @FindBy(how= How.XPATH , using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/div[2]/span/div/div/ul/li[2]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/div[2]/span/div/div/ul/li[2]")
     private WebElement lstSortByFlightCreatedDescendingBackground;
 
-    @FindBy(how= How.XPATH , using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/div[2]/span/div/div/ul/li[3]/span")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/div[2]/span/div/div/ul/li[3]/span")
     private WebElement lstSortByFlightUpdatedDescending;
 
-    @FindBy(how= How.XPATH , using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/div[2]/span/div/div/ul/li[3]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/div[2]/span/div/div/ul/li[3]")
     private WebElement lstSortByFlightUpdatedDescendingBackground;
 
-    @FindBy(how= How.XPATH , using = "//*[@id='root']//h4")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//h4")
     public WebElement txtFlightsCount;
 
-    @FindBy(how= How.XPATH , using = "/html/body/div[2]/span/span")
+    @FindBy(how = How.XPATH, using = "/html/body/div[2]/span/span")
     private WebElement txtTooltip;
 
+    @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/div[2]/div/span[2]")
+    private WebElement lblSortBy;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div[4]/div[2]/span/div/div/ul/li[1]")
+    private WebElement lstAdvertiserAnalysis;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div[4]/div[2]/span/div/div/ul/li[2]")
+    private WebElement lstOperationsBreakdown;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div[1]/i")
+    private WebElement btnAddEditGoalDetails;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/form/div/div[1]//input")
+    private WebElement drpdwnGoalType;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/form/div/div[2]//input")
+    private WebElement txtGoalTarget;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/form/div/button[1]")
+    private WebElement btnSave;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div[2]")
+    private WebElement txtOptimisationManager;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div[2]/i")
+    private WebElement btnEditOptimisationManager;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/form/div/div/div/div/input")
+    private WebElement txtEditOptimisationManager;
 
 
-    public boolean CheckCampaignsPageLoad()   {
+    public boolean CheckCampaignsPageLoad() {
         return tabCampaigns.isDisplayed();
     }
 
@@ -127,39 +144,36 @@ public class ProteusWebCampaignsPage extends BrowserFactory
         return tabHome.isDisplayed();
     }
 
-    public int GetFlightRowsCount()   {
-       By FlightRow = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div");
-       List<WebElement> elementTypes = browserFactory.getDriver().findElements(FlightRow);
-       System.out.println("Flight Count : " + elementTypes.size() );
-       return elementTypes.size();
+    public int GetFlightRowsCount() {
+        By FlightRow = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div");
+        List<WebElement> elementTypes = browserFactory.getDriver().findElements(FlightRow);
+        System.out.println("Flight Count : " + elementTypes.size());
+        return elementTypes.size();
     }
 
-    public boolean CheckFLIGHTSExist()  {
+    public boolean CheckFLIGHTSExist() {
         return txtFlightsCount.isDisplayed();
     }
 
     public boolean CheckLogOutExist() {
-        mouseClick(btnExpand );
+        mouseClick(btnExpand);
         boolean boolLogOut = btnLogOut.isDisplayed();
-        mouseClick(btnExpand );
+        mouseClick(btnExpand);
         return boolLogOut;
     }
 
     public void Logout() {
         mouseClick(btnExpand);
         GeneralUtilites.wait(0.5);
-        mouseClick(btnLogOut );
+        mouseClick(btnLogOut);
     }
 
     public boolean CheckSearchByFlightNameOrBookingCodeExist() {
-        try
-        {
-             enterText(txtSearch,"FINANCE");
-             enterText(txtSearch,"IO-6466");
-             return txtSearch.isDisplayed();
-        }
-        catch(Exception ex)
-        {
+        try {
+            enterText(txtSearch, "FINANCE");
+            enterText(txtSearch, "IO-6466");
+            return txtSearch.isDisplayed();
+        } catch (Exception ex) {
             System.out.println("Exception : " + ex.getMessage());
             return false;
         }
@@ -167,11 +181,11 @@ public class ProteusWebCampaignsPage extends BrowserFactory
 
     public void EnterSearchFilter(String Search, String Advertiser, String Agency) {
         if (!Search.equals(""))
-            enterText(txtSearch,Search);
+            enterText(txtSearch, Search);
         if (!Advertiser.equals(""))
-            enterText(txtAdvertiser,Advertiser);
+            enterText(txtAdvertiser, Advertiser);
         if (!Agency.equals(""))
-            enterText(txtAgency,Agency);
+            enterText(txtAgency, Agency);
     }
 
     public boolean CheckFilterExist() {
@@ -179,22 +193,21 @@ public class ProteusWebCampaignsPage extends BrowserFactory
     }
 
     public void SelectRequiredAction() {
-       if(!chbxRequiresAction.getAttribute("class").equals("theme_check_2B20W theme_checked_2NQ9n")) {
-           Actions action = new Actions(browserFactory.getDriver());
-           action.moveToElement(chbxRequiresAction).build().perform();
-           action.click(chbxRequiresAction).perform();
-           GeneralUtilites.wait(1);
-       }
+        if (!chbxRequiresAction.getAttribute("class").equals("theme_check_2B20W theme_checked_2NQ9n")) {
+            Actions action = new Actions(browserFactory.getDriver());
+            action.moveToElement(chbxRequiresAction).build().perform();
+            action.click(chbxRequiresAction).perform();
+            GeneralUtilites.wait(1);
+        }
     }
 
-    public void SelectSortBy(String sortType)  {
+    public void SelectSortBy(String sortType) {
         GeneralUtilites.wait(1);
         Actions action = new Actions(browserFactory.getDriver());
         action.moveToElement(btnSort).build().perform();
         action.click(btnSort).perform();
         WebElement obj;
-        switch (sortType)
-        {
+        switch (sortType) {
             case "SortByFlightCreatedDescending":
                 obj = lstSortByFlightCreatedDescending;
                 break;
@@ -225,23 +238,22 @@ public class ProteusWebCampaignsPage extends BrowserFactory
     }
 
     public boolean checkForSortOptions() {
-         boolean returnValue =   btnSort.isDisplayed();
-         Actions action = new Actions(browserFactory.getDriver());
-         action.moveToElement(btnSort).build().perform();
-         action.click(btnSort).perform();
-         GeneralUtilites.wait(1);
-         returnValue = returnValue &&   lstSortByFlightCreatedDescending.isDisplayed();
-         returnValue = returnValue &&   lstSortByFlightUpdatedDescending.isDisplayed();
-         action.moveToElement(lstSortByStartDateDescending).build().perform();
-         action.click(lstSortByStartDateDescending).perform();
+        boolean returnValue = btnSort.isDisplayed();
+        Actions action = new Actions(browserFactory.getDriver());
+        action.moveToElement(btnSort).build().perform();
+        action.click(btnSort).perform();
+        GeneralUtilites.wait(1);
+        returnValue = returnValue && lstSortByFlightCreatedDescending.isDisplayed();
+        returnValue = returnValue && lstSortByFlightUpdatedDescending.isDisplayed();
+        action.moveToElement(lstSortByStartDateDescending).build().perform();
+        action.click(lstSortByStartDateDescending).perform();
         return returnValue;
     }
 
     public boolean IsSelected(String sortType) {
         GeneralUtilites.wait(3);
-        WebElement obj ;
-        switch (sortType)
-        {
+        WebElement obj;
+        switch (sortType) {
             case "SortByFlightCreatedDescending":
                 obj = lstSortByFlightCreatedDescendingBackground;
                 break;
@@ -253,7 +265,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory
                 break;
         }
         GeneralUtilites.wait(3);
-        return  obj.getAttribute("class").contains("activeMenuItem") ;
+        return obj.getAttribute("class").contains("activeMenuItem");
 
     }
 
@@ -283,120 +295,259 @@ public class ProteusWebCampaignsPage extends BrowserFactory
                     return false;
                 else
                     returnType = returnType && elementFlightDetails.get(0).getText().toLowerCase().contains("Booking Code:".toLowerCase());
-               // elementFlightDetails = browserFactory.getDriver().findElements(By.xpath("//*[@id='root']//span[contains(text(),'Agency: ')]"));
-               // if (elementFlightDetails.size() <= 0)
+                // elementFlightDetails = browserFactory.getDriver().findElements(By.xpath("//*[@id='root']//span[contains(text(),'Agency: ')]"));
+                // if (elementFlightDetails.size() <= 0)
                 //else
-                  //  returnType = returnType && elementFlightDetails.get(3).getText().contains("Agency:");
+                //  returnType = returnType && elementFlightDetails.get(3).getText().contains("Agency:");
+            }
+        }
+        return returnType;
+    }
+
+
+    public boolean CheckFlightGoalDetailsShown() {
+        By FlightRows = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div");
+        List<WebElement> elementTypes = browserFactory.getDriver().findElements(FlightRows);
+        System.out.println("Flight Count : " + elementTypes.size());
+        boolean returnType = true;
+        if (elementTypes.size() <= 0)
+            return false;
+        else {
+            for (WebElement objFlightRow : elementTypes) {
+                List<WebElement> elementFlightDetails = objFlightRow.findElements(By.xpath("./div[2]/div"));
+                if (elementFlightDetails.size() <= 0)
+                    return false;
+                else {
+                    returnType = returnType && !elementFlightDetails.get(0).getText().equals("");
+                    returnType = returnType && !elementFlightDetails.get(1).getText().equals("");
+                    returnType = returnType && elementFlightDetails.get(2).getText().contains("BUDGET VS SPEND");
+                    returnType = returnType && elementFlightDetails.get(3).getText().contains("Start:");
                 }
             }
             return returnType;
         }
+    }
 
+    public boolean CheckFlightBudgetCurrencyCodeShown() {
+        By FlightRows = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div");
+        List<WebElement> elementTypes = browserFactory.getDriver().findElements(FlightRows);
+        System.out.println("\nFlight Count : " + elementTypes.size());
+        boolean returnType = true;
+        if (elementTypes.size() <= 0)
+            return false;
+        else {
+            for (WebElement objFlightRow : elementTypes) {
+                List<WebElement> elementFlightDetails = objFlightRow.findElements(By.xpath("./div[2]/div[3]"));
+                if (elementFlightDetails.size() <= 0)
+                    return false;
+                else {
+                    String strCCY = elementFlightDetails.get(0).getText().split(":")[1].split(" ")[1];
+                    System.out.println("\nstrCCY : " + strCCY + " ");
+                    returnType = returnType && !Character.isDigit(strCCY.charAt(0));
 
-    public boolean CheckFlightGoalDetailsShown() {
-            By FlightRows = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div");
-            List<WebElement> elementTypes = browserFactory.getDriver().findElements(FlightRows);
-            System.out.println("Flight Count : " + elementTypes.size() );
-            boolean returnType = true;
-            if(elementTypes.size() <=0)
-                return false;
-            else
-            {
-                for (WebElement objFlightRow :elementTypes)
-                {
-                    List<WebElement> elementFlightDetails = objFlightRow.findElements(By.xpath("./div[2]/div"));
-                    if(elementFlightDetails.size() <=0)
-                        return false;
-                    else
-                    {
-                        returnType = returnType && !elementFlightDetails.get(0).getText().equals("");
-                        returnType = returnType && !elementFlightDetails.get(1).getText().equals("") ;
-                        returnType = returnType && elementFlightDetails.get(2).getText().contains("BUDGET VS SPEND");
-                        returnType = returnType && elementFlightDetails.get(3).getText().contains("Start:");
-                    }
                 }
-                return returnType;
             }
-
-
+            return returnType;
+        }
 
     }
 
     public boolean CheckGoalDetailsEditable() {
         By editableButtons = By.xpath(" //*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[2]/div/i");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(editableButtons);
-        System.out.println("Flight Count : " + elementTypes.size() );
-        return  elementTypes.size() >=2;
+        System.out.println("\nFlight Count : " + elementTypes.size());
+        return elementTypes.size() >= 2;
 
-        }
+    }
 
-    public boolean CheckForProgressBar()  {
+    public boolean CheckForProgressBar() {
         By ProgressBar = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[2]/div[4]/div/div[2]/div/div");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(ProgressBar);
-        System.out.println("Flight Count : " + elementTypes.size() );
-        return  elementTypes.size() >=1;
+        System.out.println("\nFlight Count : " + elementTypes.size());
+        return elementTypes.size() >= 1;
     }
 
 
-    public boolean CheckForStartDate()  {
+    public boolean CheckForStartDate() {
         By StartDate = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[2]/div[4]/div/div[1]/div[1]");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(StartDate);
-        System.out.println("Flight Count : " + elementTypes.size() );
-        return  elementTypes.size() >=1;
+        System.out.println("\nFlight Count : " + elementTypes.size());
+        return elementTypes.size() >= 1;
 
     }
 
 
-    public boolean CheckForEndDate()  {
+    public boolean CheckForEndDate() {
         By EndDate = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[2]/div[4]/div/div[1]/div[3]");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(EndDate);
-        System.out.println("Flight Count : " + elementTypes.size());
-        return  elementTypes.size() >=1;
+        System.out.println("\nFlight Count : " + elementTypes.size());
+        return elementTypes.size() >= 1;
 
     }
 
-    public boolean  CheckForInfiniteBudgetIcon()
-    {
+    public boolean CheckForInfiniteBudgetIcon() {
         By EndDate = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div[4]/div/div[1]/div[3]/div/span ");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(EndDate);
-        System.out.println("Flight Count : " + elementTypes.size());
+        System.out.println("\n Flight Count : " + elementTypes.size());
         boolean returnType;
-        if(elementTypes.size() >=1) {
-            returnType =  elementTypes.get(0).getAttribute("class").contains("infiniteBudgetIcon");
+        if (elementTypes.size() >= 1) {
+            returnType = elementTypes.get(0).getAttribute("class").contains("infiniteBudgetIcon");
             Actions toolAct = new Actions(browserFactory.getDriver());
             toolAct.clickAndHold(elementTypes.get(0)).build().perform();
             GeneralUtilites.wait(2);
             returnType = returnType && txtTooltip.getText().toLowerCase().contains("Indefinite".toLowerCase());
-            return   returnType;
-        }
-        else
-            return  false;
+            return returnType;
+        } else
+            return false;
     }
 
-    public boolean RecordsSortedBy(String strQuery )
-    {
+    public boolean RecordsSortedBy(String strQuery) {
         By flights = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[1]/div[1]/span[2]");
         ApplicationContext context =
                 new ClassPathXmlApplicationContext("Beans.xml");
         JDBCTemplate objJDBCTemp = (JDBCTemplate) context.getBean("JDBCTemplate");
         List<campaign_flight> objCamFlgt = objJDBCTemp.GetCampaignFlightDetails(strQuery);
-        List<String> lstFlightsUI = new ArrayList<>() ;
-        List<String> lstFlightsDB = new ArrayList<>() ;
-        for(campaign_flight objCamF :objCamFlgt )
+        List<String> lstFlightsUI = new ArrayList<>();
+        List<String> lstFlightsDB = new ArrayList<>();
+        for (campaign_flight objCamF : objCamFlgt)
             lstFlightsDB.add(objCamF.getcampaign_flight_name());
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(flights);
-        for(WebElement elementType : elementTypes)
+        for (WebElement elementType : elementTypes)
             lstFlightsUI.add(elementType.getText());
-         return compareList(lstFlightsUI,  lstFlightsDB);
+        return compareList(lstFlightsUI, lstFlightsDB);
     }
 
-    private static boolean compareList(List ls1, List ls2){
+    private static boolean compareList(List ls1, List ls2) {
         boolean returnType;
-        returnType =   ls1.size() == ls2.size();
+        returnType = ls1.size() == ls2.size();
         for (int i = 0; i < ls1.size(); i++) {
             returnType = returnType && ls1.get(i).toString().toUpperCase().equals(ls2.get(i).toString().toUpperCase());
         }
         return returnType;
+    }
+
+    public String getSortByLabel() {
+        return lblSortBy.getText();
+    }
+
+    public int getReportButtonCount() {
+        By ReportButtons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[1]/div/div[2]/span/div/button");
+        List<WebElement> elementTypes = browserFactory.getDriver().findElements(ReportButtons);
+        System.out.println("\n ReportButtons Count : " + elementTypes.size());
+        return elementTypes.size();
+    }
+
+    public boolean ReportToolTipShown() {
+        By btnReports = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[1]/div/div[2]/span/div/button");
+        List<WebElement> elementTypes = browserFactory.getDriver().findElements(btnReports);
+        System.out.println("\n Flight Count : " + elementTypes.size());
+        boolean returnType;
+        if (elementTypes.size() >= 1) {
+            Actions toolAct = new Actions(browserFactory.getDriver());
+            toolAct.clickAndHold(elementTypes.get(0)).build().perform();
+            GeneralUtilites.wait(2);
+            returnType = txtTooltip.getText().toLowerCase().contains("Click to go to reports".toLowerCase());
+            return returnType;
+        } else
+            return false;
+    }
+
+    public boolean ReportingOptions() {
+
+        By ReportButtons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[1]/div/div[2]/span/div/button");
+        List<WebElement> elementTypes = browserFactory.getDriver().findElements(ReportButtons);
+        mouseClick(elementTypes.get(0));
+        By ReportOptions = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div/div[2]/span/div/div/ul/li/span");
+        List<WebElement> elementReportOptions = browserFactory.getDriver().findElements(ReportOptions);
+
+        return elementReportOptions.size() == 2
+                && elementReportOptions.get(0).getText().contains("Advertiser Analysis".toUpperCase())
+                && elementReportOptions.get(1).getText().contains("Operations Breakdown".toUpperCase());
+    }
+
+    public void SelectTableauReporting(String ReportType) {
+        By ReportButtons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[1]/div/div[2]/span/div/button");
+        List<WebElement> elementTypes = browserFactory.getDriver().findElements(ReportButtons);
+        mouseClick(elementTypes.get(0));
+        GeneralUtilites.wait(2);
+        By ReportOptions = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div/div[2]/span/div/div/ul/li/span");
+        List<WebElement> elementReportOptions = browserFactory.getDriver().findElements(ReportOptions);
+
+        if (ReportType.equals("Advertiser Analysis"))
+            mouseClick(elementReportOptions.get(0));
+        else if (ReportType.equals("Operations Breakdown"))
+            mouseClick(elementReportOptions.get(1));
+    }
+
+    public boolean AddGoalDetailsButtonExist() {
+        return btnAddEditGoalDetails.isDisplayed();
+    }
+    public boolean  EditGoalDetailsButtonExist() {
+        return btnAddEditGoalDetails.getAttribute("class").contains("edit");
+    }
+
+    public boolean GoalInfoAndTargetExist(){
+        By AddGoalDetailsButton = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div[1]/div[2]");
+        List<WebElement> elementTypes = browserFactory.getDriver().findElements(AddGoalDetailsButton);
+        return elementTypes.get(0).getText().toLowerCase().equals("Goal Info and Target".toLowerCase());
+    }
+
+    public void ClickOnAddGoalDetails(){
+        mouseClick( btnAddEditGoalDetails);
+    }
+
+    public boolean OptionsToAddGoalDetails(){
+        return  drpdwnGoalType.isDisplayed() && txtGoalTarget.isDisplayed();
+    }
+
+    public void SaveGoalDetails(String GoalType, String GoalTarget){
+        mouseClick(drpdwnGoalType);
+        enterText(drpdwnGoalType, GoalType);
+        mouseClick(txtGoalTarget);
+        enterText(txtGoalTarget, GoalTarget);
+        mouseClick(btnSave);
+    }
+
+    public boolean CheckGoalDetailsSaved(String GoalType, String GoalTarget)
+    {
+        String flightName = txtSearch.getAttribute("value");
+        mouseClick(btnClearFilters);
+        GeneralUtilites.wait(2);
+        EnterSearchFilter(flightName,"","");
+        mouseClick(btnApplyFilters);
+        GeneralUtilites.wait(2);
+        By txtGoalType   = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div[1]/div[1]");
+        By txtGoalTarget = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div[1]/div[2]");
+        WebElement  elementGoalType = browserFactory.getDriver().findElement(txtGoalType);
+        WebElement  elementGoalTarget = browserFactory.getDriver().findElement(txtGoalTarget);
+
+        return elementGoalType.getText().toLowerCase().contains(GoalType.toLowerCase())
+               && elementGoalTarget.getText().toLowerCase().contains(GoalTarget.toLowerCase());
+    }
+
+    public boolean CheckForUnknownUser() {
+        return  txtOptimisationManager.getText().toLowerCase().equals("Unknown User".toLowerCase());
+    }
+    public boolean CheckForEditOptimisationManager(){
+        return  btnEditOptimisationManager.isDisplayed();
+    }
+
+    public void SaveOptimisationManagerDetails(String OptManager){
+        mouseClick(btnEditOptimisationManager);
+        mouseClick(txtEditOptimisationManager);
+        enterText(txtEditOptimisationManager, OptManager);
+        mouseClick(btnSave);
+    }
+
+
+    public boolean CheckOptimisationManagerDetailsSaved(String OptManager ){
+        String flightName = txtSearch.getAttribute("value");
+        mouseClick(btnClearFilters);
+        GeneralUtilites.wait(2);
+        EnterSearchFilter(flightName,"","");
+        mouseClick(btnApplyFilters);
+        GeneralUtilites.wait(2);
+        return  txtOptimisationManager.getText().toLowerCase().equals(OptManager.toLowerCase());
     }
 
 }

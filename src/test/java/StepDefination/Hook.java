@@ -15,14 +15,14 @@ public class Hook extends BrowserFactory
     @Before
     public void InitializeTest()
     {
-        System.out.println(" Open the browser \n");
+        System.out.println("\n Open the browser \n");
         GeneralUtilites.KillProcesses();
     }
 
     @After
     public void TearDownTest()
     {
-        browserFactory.closeAllDrivers();
-        System.out.println("Close the browser \n");
+       SupportingUtilites.BrowserFactory.closeAllDrivers();
+       System.out.println("\n Close the browser \n");
     }
 }

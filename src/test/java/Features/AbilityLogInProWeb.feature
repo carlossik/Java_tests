@@ -6,7 +6,6 @@ Feature: Ability to log into Pro Web
    And I have the role: Pro Web Campaigns
    And I go to the Proteus Home URL in my browser
 
-
   @LoginProWeb
   Scenario: 01 Entering Pro Web
     When Login as "ADMINISTRATOR"

@@ -5,9 +5,12 @@ import PageObjects.*;
 import SupportingUtilites.BrowserFactory;
 import java.util.Properties;
 import java.io.*;
+
+import cucumber.api.PendingException;
 import cucumber.api.java.en.*;
 import org.junit.Assert;
 import SupportingUtilites.*;
+import java.util.*;
 
 public class ProteusWebSteps extends BrowserFactory
 {
@@ -141,7 +144,7 @@ public class ProteusWebSteps extends BrowserFactory
                  "2039",
                  "2793");*/
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
-        System.out.println("All Flights matching search/filter combination load as results");
+        System.out.println("\nAll Flights matching search/filter combination load as results");
         // Need to implement this
         Assert.assertTrue( "All Flights matching search/filter combination are not loaded as results",campaignsPage.GetFlightRowsCount()>0 );
     }
@@ -494,6 +497,13 @@ public class ProteusWebSteps extends BrowserFactory
                 campaignsPage.CheckFlightGoalDetailsShown());
     }
 
+    @And("^The Currency code for the Flight is displayed next to the Budget$")
+    public void theCurrencyCodeForTheFlightIsDisplayedNextToTheBudget()   {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("The Currency code for the Flight is not displayed next to the Budget",
+                campaignsPage.CheckFlightBudgetCurrencyCodeShown());
+    }
+
     @And("^Goal Type, Goal Value, Optimisation Manager are editable$")
     public void goalTypeGoalValueOptimisationManagerAreEditable()  {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
@@ -557,6 +567,178 @@ public class ProteusWebSteps extends BrowserFactory
         String strQuery = prop.getProperty("SQLQuerySortByUpdatedTime").replace("{SearchKey}","Automation 8");
         Assert.assertTrue("All flights are not sorted based on updated date",
                 campaignsPage.RecordsSortedBy(strQuery));
+    }
+
+    @Then("^Sort by \"([^\"]*)\" is shown$")
+    public void sortByIsShown(String strSortBy)  {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("^Sort by " + strSortBy + " is not shown$",
+                campaignsPage.getSortByLabel().trim().toLowerCase().equals(strSortBy.trim().toLowerCase()));
+
+    }
+
+
+    @And("^There is a reporting chart icon to the right hand side of the Flight$")
+    public void thereIsAReportingChartIconToTheRightHandSideOfTheFlight() {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("There is a reporting chart icon not shown to the right hand side of the Flight",
+                campaignsPage.getReportButtonCount() > 0);
+
+    }
+
+    @Then("^Tooltip 'Click to go to reports' shown on mouseover$")
+    public void tooltipClickToGoToReportsShownOnMouseover()  {
+
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Tooltip 'Click to go to reports' not shown on mouseover",
+                campaignsPage.ReportToolTipShown());
+
+    }
+
+    @And("^There are two links in the pop up for the following core reports:$")
+    public void thereAreTwoLinksInThePopUpForTheFollowingCoreReports() {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Tooltip 'Click to go to reports' not shown on mouseover",
+                campaignsPage.ReportingOptions());
+    }
+
+    @When("^Click on \"([^\"]*)\" Tableau report$")
+    public void clickOnTableauReport(String strReportType)  {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+                campaignsPage.SelectTableauReporting(strReportType);
+    }
+
+    @Then("^Tableau report opened for \"([^\"]*)\"$")
+    public void tableauReportOpenedFor(String arg0)  {
+        List<String> browserTabs = new ArrayList<> (this.browserFactory.getDriver().getWindowHandles());
+      //  System.out.println("browserTabs.size()  : " + browserTabs.size() );
+        Assert.assertTrue("Tableau report opened for " + arg0,
+                browserTabs.size() >= 2 );
+        this.browserFactory.getDriver().switchTo().window(browserTabs .get(1));
+       // System.out.println(this.browserFactory.getDriver().getTitle());
+        this.browserFactory.getDriver().close();
+        this.browserFactory.getDriver().switchTo().window(browserTabs.get(0));
+    }
+
+    @When("^I search/filter for a flight with No goal$")
+    public void iSearchFilterForAFlightWithNoGoal()   {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        campaignsPage.EnterSearchFilter(GeneralUtilites.getFlightNameDB("NoGoalDetails"), "", "");
+        GeneralUtilites.wait(2);
+
+    }
+
+    @Then("^There is an Add icon in the box orange to inform the user action is required$")
+    public void thereIsAnAddIconInTheBoxOrangeToInformTheUserActionIsRequired()  {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Add icon in the box orange to inform the user action is required does not exist",
+                campaignsPage.AddGoalDetailsButtonExist());
+    }
+
+    @And("^The box states 'Goal Info and Target'$")
+    public void theBoxStatesGoalInfoAndTarget()   {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("The box states 'Goal Info and Target' does not exist",
+                campaignsPage.GoalInfoAndTargetExist());
+    }
+
+    @When("^Click on Add 'Goal Info and Target'$")
+    public void clickOnAddGoalInfoAndTarget()   {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        campaignsPage.ClickOnAddGoalDetails();
+    }
+
+    @When("^Click to edit Goal Type$")
+    public void clickOnEditGoalInfoAndTarget()   {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        campaignsPage.ClickOnAddGoalDetails();
+    }
+
+    @Then("^Option to select Goal Type and Goal Value exist$")
+    public void optionToSelectGoalTypeAndGoalValueExist() {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Option to select Goal Type and Goal Value does not exist",
+                campaignsPage.OptionsToAddGoalDetails());
+    }
+
+    @When("^Select Goal Type, Goal Value and Save$")
+    public void selectGoalTypeGoalValueAndSave()  {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        campaignsPage.SaveGoalDetails("CTR","10");
+    }
+
+    @When("^Edit Goal Type, Goal Value and Save$")
+    public void editGoalTypeGoalValueAndSave()  {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        campaignsPage.SaveGoalDetails("eCPA","12");
+    }
+
+    @Then("^Selected Goal Type and Goal Values saved$")
+    public void selectedGoalTypeAndGoalValuesSaved()  {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        campaignsPage.CheckGoalDetailsSaved("CTR","10");
+    }
+
+    @Then("^Edited Goal Type and Goal Values saved$")
+    public void editedGoalTypeAndGoalValuesSaved()  {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        campaignsPage.CheckGoalDetailsSaved("eCPA","12");
+    }
+
+
+    @Then("^There is an edit icon in the box$")
+    public void thereIsAnEditIconInTheBox()  {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("An edit icon in the box does not exist",
+                campaignsPage.EditGoalDetailsButtonExist());
+    }
+
+
+    @When("^I search/filter for a flight with no Optimisation Manager$")
+    public void iSearchFilterForAFlightWithNoOptimisationManager()  {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        campaignsPage.EnterSearchFilter(GeneralUtilites.getFlightNameDB("NoTrader"), "", "");
+        GeneralUtilites.wait(2);
+    }
+
+    @Then("^The box states 'Unknown User'$")
+    public void theBoxStatesUnknownUser()  {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("The box states 'Unknown User' does not exist",
+                campaignsPage.CheckForUnknownUser());
+    }
+
+    @And("^Option to edit Optimisation Manager exist$")
+    public void optionToEditOptimisationManagerExist() {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Option to edit Optimisation Manager not exist",
+                campaignsPage.CheckForEditOptimisationManager());
+    }
+
+    @When("^Select one of Optimisation Manager and Save$")
+    public void selectOneOfOptimisationManagerAndSave()  {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        campaignsPage.SaveOptimisationManagerDetails("Amelia Lee");
+    }
+
+    @Then("^Optimisation Manager saved$")
+    public void optimisationManagerSaved()   {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Optimisation Manager not saved",
+                campaignsPage.CheckOptimisationManagerDetailsSaved("Amelia Lee"));
+    }
+
+    @When("^Edit Optimisation Manager and Save$")
+    public void editOptimisationManagerAndSave() {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        campaignsPage.SaveOptimisationManagerDetails("Oliver Smith");
+    }
+
+    @Then("^Edited Optimisation Manager saved$")
+    public void editedOptimisationManagerSaved()  {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Optimisation Manager not saved",
+                campaignsPage.CheckOptimisationManagerDetailsSaved("Oliver Smith"));
     }
 }
 

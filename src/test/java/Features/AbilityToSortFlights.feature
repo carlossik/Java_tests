@@ -19,6 +19,7 @@ Feature: Ability to sort Flights
 
   @SortOnProWeb
   Scenario: 02 Option to sort result
+    Then Sort by "Start Date Descending" is shown
     Then Option to sort result by Flight Created and Updated
     When Select sort by Flight created
     Then Sort by Flight created selected
@@ -30,9 +31,11 @@ Feature: Ability to sort Flights
   Scenario: 03 Flights sorted by Created date
     When I search/filter for a particular result
     And Click on Apply button
+    Then Sort by "Start Date Descending" is shown
     When Select sort by Flight created
     Then All Flights matching search/filter combination load as results
     And  All flights sorted based on created date
+    And  Sort by "Flight Created Descending" is shown
 
 
 
@@ -40,6 +43,8 @@ Feature: Ability to sort Flights
   Scenario: 04 Flights sorted by Updated date
     When I search/filter for a particular result
     And Click on Apply button
+    Then Sort by "Start Date Descending" is shown
     When Select sort by Flight Updated
     Then All Flights matching search/filter combination load as results
     And  All flights sorted based on updated date
+    And Sort by "Flight Updated Descending" is shown

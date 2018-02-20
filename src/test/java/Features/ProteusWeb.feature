@@ -1,5 +1,5 @@
 @ProteusWebRegression
-Feature: Ability to log into Pro Web
+Feature: Regression on Reports,Client Reports,Administration tabs
 
   Background:
     Given I am a Proteus User
@@ -24,7 +24,18 @@ Feature: Ability to log into Pro Web
     Then Reports page shown correctly
     And LogOut ProteusWeb from Reports Page
 
-  Scenario: 03 Check if Client Reports tab opened correctly
+  @ProteusWebRegression
+  Scenario: 03 Check if Admin tab opened correctly
+    When Login as "ADMINISTRATOR"
+    Then The main homepage loads successfully
+    When I click on "Administration" from home page
+    Then Administration page shown correctly
+    And Able to filter seats by Operation Unit TEL
+    And Able to navigate to Administration Jobs
+    And Able to navigate to Administration Master Data
+    And LogOut ProteusWeb from Admin Page
+
+  Scenario: 04 Check if Client Reports tab opened correctly
     When Login as "ADMINISTRATOR"
     Then The main homepage loads successfully
     When I click on "Client Reports" from home page
@@ -35,13 +46,3 @@ Feature: Ability to log into Pro Web
     And Able to navigate to Client Reports Tactics
     And LogOut ProteusWeb from Client Reports Page
 
-  @ProteusWebRegression
-  Scenario: 04 Check if Admin tab opened correctly
-    When Login as "ADMINISTRATOR"
-    Then The main homepage loads successfully
-    When I click on "Administration" from home page
-    Then Administration page shown correctly
-    And Able to filter seats by Operation Unit TEL
-    And Able to navigate to Administration Jobs
-    And Able to navigate to Administration Master Data
-    And LogOut ProteusWeb from Admin Page

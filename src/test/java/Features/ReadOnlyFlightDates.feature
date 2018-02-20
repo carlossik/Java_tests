@@ -1,5 +1,5 @@
 @FlightDates
-Feature: Ability to sort Flights
+Feature: Flight Start and End Dates shown
 
   Background:
     Given I am a Proteus User

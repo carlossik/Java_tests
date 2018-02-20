@@ -1,16 +1,18 @@
 package SupportingUtilites;
+import DBDataModel.JDBCTemplate;
+import DBDataModel.campaign_flight;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 import java.security.SecureRandom;
-import java.util.Locale;
-import java.util.Objects;
-import java.util.Properties;
-import java.util.Random;
+import java.util.*;
 import java.io.*;
 
 
 public class GeneralUtilites
 {
-    static Properties prop = new Properties();
-    static String currentPath = System.getProperty("user.dir");
+    private static Properties  prop = new Properties();
+    private static String currentPath = System.getProperty("user.dir");
     static
     {
         try
@@ -56,7 +58,7 @@ public class GeneralUtilites
         }
     }
 
-    public static boolean isProcessRunning(String serviceName) throws Exception
+    private static boolean isProcessRunning(String serviceName) throws Exception
     {
         Process p = Runtime.getRuntime().exec( "tasklist");
         BufferedReader reader = new BufferedReader
@@ -95,6 +97,27 @@ public class GeneralUtilites
         {
             System.out.println(e.getMessage());
         }
+    }
+
+    public static String getFlightNameDB(String strCondition){
+        String strQuery;
+        switch (strCondition)
+        {
+            case "NoGoalDetails" :
+                strQuery = prop.getProperty("SQLQueryFlightNameWithNoGoalDetails");
+                break;
+            case "NoTrader" :
+                strQuery = prop.getProperty("SQLQueryFlightNameWithNoTrader");
+                break;
+            default:
+                strQuery = prop.getProperty("SQLQueryFlightNameWithNoGoalDetails");
+        }
+
+        ApplicationContext context =
+                new ClassPathXmlApplicationContext("Beans.xml");
+        JDBCTemplate objJDBCTemp = (JDBCTemplate) context.getBean("JDBCTemplate");
+        List<campaign_flight> objCamFlgt = objJDBCTemp.GetCampaignFlightDetails(strQuery);
+        return objCamFlgt.get(0).getcampaign_flight_name();
     }
 
 }

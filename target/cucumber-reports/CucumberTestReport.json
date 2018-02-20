@@ -1,0 +1,5449 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 270595970,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 66131,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5980164757,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 252843663,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "01 Entering Pro Web",
+        "description": "",
+        "id": "ability-to-log-into-pro-web;01-entering-pro-web",
+        "after": [
+          {
+            "result": {
+              "duration": 589626795,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5364507246,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 75824896,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 59111070,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "There is a box called \"Campaigns\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Campaigns",
+                  "offset": 23
+                }
+              ],
+              "location": "ProteusWebSteps.thereIsABoxCalled(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2219571740,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Log Out button exist",
+            "match": {
+              "location": "ProteusWebSteps.ThenLogOutButtonExist()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2582682114,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "LogOut ProteusWeb from Home Page",
+            "match": {
+              "location": "ProteusWebSteps.ThenLogoutProteusWeb()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@LoginProWeb"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2704573,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 65705,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4173615756,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 249388602,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "02 Entering Pro Web with incorrect details",
+        "description": "",
+        "id": "ability-to-log-into-pro-web;02-entering-pro-web-with-incorrect-details",
+        "after": [
+          {
+            "result": {
+              "duration": 594237241,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5042186902,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Login as \"INVALID\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "INVALID",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1052907491,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "An error message displayed advising to try again",
+            "match": {
+              "location": "ProteusWebSteps.ThenAnErrorMessageDisplayedAdvisingToTryAgain()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 17,
+            "name": "@LoginProWeb"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 400630,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 41812,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4291423615,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 204220653,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "03 Campaigns page loaded",
+        "description": "",
+        "id": "ability-to-log-into-pro-web;03-campaigns-page-loaded",
+        "after": [
+          {
+            "result": {
+              "duration": 583046905,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5093772613,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 45850599,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3114852411,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I click on \"Campaigns\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Campaigns",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 66460649,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "The Campaigns page loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheCampaignsPageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2542136131,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "LogOut ProteusWeb from Home Page",
+            "match": {
+              "location": "ProteusWebSteps.ThenLogoutProteusWeb()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 22,
+            "name": "@LoginProWeb"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 410444,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 32852,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4262846615,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 198357545,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "04 Campaigns page loaded with different options",
+        "description": "",
+        "id": "ability-to-log-into-pro-web;04-campaigns-page-loaded-with-different-options",
+        "after": [
+          {
+            "result": {
+              "duration": 583815739,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5068974507,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 49387578,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3123403879,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I click on \"Campaigns\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Campaigns",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2760041778,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Log out, Back to Home, Flights icon shown on Campaign page",
+            "match": {
+              "location": "ProteusWebSteps.ThenLogOutBackToHomeFlightsIconShownOnCampaignPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2479060571,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "LogOut ProteusWeb from Home Page",
+            "match": {
+              "location": "ProteusWebSteps.ThenLogoutProteusWeb()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 30,
+            "name": "@LoginProWeb"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 377590,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 51626,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4224509857,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 193827737,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 39,
+        "name": "05 Navigated to Campaigns when logged in with only Campaign Web role",
+        "description": "",
+        "id": "ability-to-log-into-pro-web;05-navigated-to-campaigns-when-logged-in-with-only-campaign-web-role",
+        "after": [
+          {
+            "result": {
+              "duration": 575158033,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5128830945,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Login as \"CAMPAIGN MANAGEMENT WEB\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CAMPAIGN MANAGEMENT WEB",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2731896554,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "Log out, Back to Home, Flights icon shown on Campaign page",
+            "match": {
+              "location": "ProteusWebSteps.ThenLogOutBackToHomeFlightsIconShownOnCampaignPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2597620625,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "LogOut ProteusWeb from Home Page",
+            "match": {
+              "location": "ProteusWebSteps.ThenLogoutProteusWeb()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 38,
+            "name": "@LoginProWeb"
+          }
+        ]
+      }
+    ],
+    "name": "Ability to log into Pro Web",
+    "description": "",
+    "id": "ability-to-log-into-pro-web",
+    "keyword": "Feature",
+    "uri": "AbilityLogInProWeb.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@LoginProWeb"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 384417,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 26879,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4207539184,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 197624550,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "01 View Flights - initial load",
+        "description": "",
+        "id": "ability-to-search-for-flights;01-view-flights---initial-load",
+        "after": [
+          {
+            "result": {
+              "duration": 587111657,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5089208245,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 43155838,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3110740299,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click on \"Campaigns\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Campaigns",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 345743764,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "The Campaigns page loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheCampaignsPageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 41673208,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "All Flights loads which I have access to",
+            "match": {
+              "location": "ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44992594,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "There is a section called \u0027Flights\u0027",
+            "match": {
+              "location": "ProteusWebSteps.thereIsASectionCalledFlights()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2538888424,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "LogOut ProteusWeb from Campaigns page",
+            "match": {
+              "location": "ProteusWebSteps.ThenLogOutProteusWebFromCampaignsPage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@SearchOnProWeb"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 491507,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 49066,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4203442005,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 198797427,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "02 Ability to Search fights by Flight Name or Booking Code",
+        "description": "",
+        "id": "ability-to-search-for-flights;02-ability-to-search-fights-by-flight-name-or-booking-code",
+        "after": [
+          {
+            "result": {
+              "duration": 579034204,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5061363815,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 47494505,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3117677302,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I click on \"Campaigns\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Campaigns",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 333496174,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "All Flights loads which I have access to",
+            "match": {
+              "location": "ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 620730879,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I can search by Flight Name or Booking Code",
+            "match": {
+              "location": "ProteusWebSteps.ThenICanSearchByFlightNameOrBookingCode()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2595129806,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "LogOut ProteusWeb from Campaigns page",
+            "match": {
+              "location": "ProteusWebSteps.ThenLogOutProteusWebFromCampaignsPage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@SearchOnProWeb"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 395510,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 32426,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4179823177,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 205053059,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "03 Ability to Filter fights by Advertiser or Agency",
+        "description": "",
+        "id": "ability-to-search-for-flights;03-ability-to-filter-fights-by-advertiser-or-agency",
+        "after": [
+          {
+            "result": {
+              "duration": 581533129,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5072588710,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 48280832,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3092265237,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I click on \"Campaigns\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Campaigns",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 315955061,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "All Flights loads which I have access to",
+            "match": {
+              "location": "ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 169682841,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "Filter dropdown fields exist",
+            "match": {
+              "location": "ProteusWebSteps.ThenFilterDropdownFieldsExist()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2518452450,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "LogOut ProteusWeb from Campaigns page",
+            "match": {
+              "location": "ProteusWebSteps.ThenLogOutProteusWebFromCampaignsPage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 28,
+            "name": "@SearchOnProWeb"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 386123,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 30719,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4196350554,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 202249928,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 39,
+        "name": "04 Ability to use search and filter combinations",
+        "description": "",
+        "id": "ability-to-search-for-flights;04-ability-to-use-search-and-filter-combinations",
+        "after": [
+          {
+            "result": {
+              "duration": 573720629,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5102615913,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 44212239,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3117819378,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I click on \"Campaigns\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Campaigns",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 257574852,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "All Flights loads which I have access to",
+            "match": {
+              "location": "ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2601123471,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "LogOut ProteusWeb from Campaigns page",
+            "match": {
+              "location": "ProteusWebSteps.ThenLogOutProteusWebFromCampaignsPage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 38,
+            "name": "@SearchOnProWeb"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 341751,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 37119,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4193843523,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 196366767,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 47,
+        "name": "05 Apply button is enabled after entering/selecting search and filters",
+        "description": "",
+        "id": "ability-to-search-for-flights;05-apply-button-is-enabled-after-entering/selecting-search-and-filters",
+        "after": [
+          {
+            "result": {
+              "duration": 580868825,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5086399569,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 45246454,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3109946720,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "I click on \"Campaigns\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Campaigns",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 320078693,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "All Flights loads which I have access to",
+            "match": {
+              "location": "ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2456528009,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "I search/filter for a particular result",
+            "match": {
+              "location": "ProteusWebSteps.WhenISearchFilterForAParticularResult()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 48851697,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "Apply button is enabled",
+            "match": {
+              "location": "ProteusWebSteps.ThenApplyButtonIsEnabled()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2567464570,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "LogOut ProteusWeb from Campaigns page",
+            "match": {
+              "location": "ProteusWebSteps.ThenLogOutProteusWebFromCampaignsPage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 46,
+            "name": "@SearchOnProWeb"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 357964,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 50346,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4183561111,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 202806288,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 57,
+        "name": "06 Clear Filters button is enabled after entering/selecting search and filters",
+        "description": "",
+        "id": "ability-to-search-for-flights;06-clear-filters-button-is-enabled-after-entering/selecting-search-and-filters",
+        "after": [
+          {
+            "result": {
+              "duration": 583481241,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5048519333,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 54580410,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3106886742,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "I click on \"Campaigns\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Campaigns",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 339978360,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "All Flights loads which I have access to",
+            "match": {
+              "location": "ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2445505775,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "I search/filter for a particular result",
+            "match": {
+              "location": "ProteusWebSteps.WhenISearchFilterForAParticularResult()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 48293631,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "Clear Filters button is enabled",
+            "match": {
+              "location": "ProteusWebSteps.ThenClearFiltersButtonIsEnabled()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2607862930,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "LogOut ProteusWeb from Campaigns page",
+            "match": {
+              "location": "ProteusWebSteps.ThenLogOutProteusWebFromCampaignsPage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 56,
+            "name": "@SearchOnProWeb"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 560200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 42666,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4201902630,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 200512158,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 67,
+        "name": "07 Flights matching Search/Filter Combination loaded as results",
+        "description": "",
+        "id": "ability-to-search-for-flights;07-flights-matching-search/filter-combination-loaded-as-results",
+        "after": [
+          {
+            "result": {
+              "duration": 582036157,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5016582416,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 46460717,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3100614897,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "I click on \"Campaigns\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Campaigns",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 296161204,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "All Flights loads which I have access to",
+            "match": {
+              "location": "ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2430594997,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "I search/filter for a particular result",
+            "match": {
+              "location": "ProteusWebSteps.WhenISearchFilterForAParticularResult()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3141952754,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "Click on Apply button",
+            "match": {
+              "location": "ProteusWebSteps.WhenClickOnApplyButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13597530,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "All Flights matching search/filter combination load as results",
+            "match": {
+              "location": "ProteusWebSteps.ThenAllFlightsMatchingSearchFilterCombinationLoadAsResults()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 45381703,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "There is a section called \u0027Flights\u0027",
+            "match": {
+              "location": "ProteusWebSteps.thereIsASectionCalledFlights()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 683618282,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "Each flight title includes Advertiser, Agency, Flight Names and External Booking Reference",
+            "match": {
+              "location": "ProteusWebSteps.CheckFlightDetailsShown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2817209856,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "LogOut ProteusWeb from Campaigns page",
+            "match": {
+              "location": "ProteusWebSteps.ThenLogOutProteusWebFromCampaignsPage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 66,
+            "name": "@SearchOnProWeb"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 334072,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 39252,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4630770524,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 203426219,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 81,
+        "name": "08 Goal Type, Goal Value, Optimisation Manager, Budget, Spend information and Flight Dates",
+        "description": "",
+        "id": "ability-to-search-for-flights;08-goal-type,-goal-value,-optimisation-manager,-budget,-spend-information-and-flight-dates",
+        "after": [
+          {
+            "result": {
+              "duration": 583414682,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5028677263,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 45501168,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3121337584,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "I click on \"Campaigns\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Campaigns",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 313417311,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "All Flights loads which I have access to",
+            "match": {
+              "location": "ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2434509994,
+              "status": "passed"
+            },
+            "line": 86,
+            "name": "I search/filter for a particular result",
+            "match": {
+              "location": "ProteusWebSteps.WhenISearchFilterForAParticularResult()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3151884881,
+              "status": "passed"
+            },
+            "line": 87,
+            "name": "Click on Apply button",
+            "match": {
+              "location": "ProteusWebSteps.WhenClickOnApplyButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14422256,
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "All Flights matching search/filter combination load as results",
+            "match": {
+              "location": "ProteusWebSteps.ThenAllFlightsMatchingSearchFilterCombinationLoadAsResults()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1292452283,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "Goal Type, Goal Value, Optimisation Manager, Budget, Spend information and Flight Dates",
+            "match": {
+              "location": "ProteusWebSteps.goalTypeGoalValueOptimisationManagerBudgetSpendInformationAndFlightDates()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2509492245,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "LogOut ProteusWeb from Campaigns page",
+            "match": {
+              "location": "ProteusWebSteps.ThenLogOutProteusWebFromCampaignsPage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 80,
+            "name": "@SearchOnProWeb"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 477429,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 53759,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4171355759,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 200705433,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 93,
+        "name": "09 Goal Type, Goal Value, Optimisation Manager are editable",
+        "description": "",
+        "id": "ability-to-search-for-flights;09-goal-type,-goal-value,-optimisation-manager-are-editable",
+        "after": [
+          {
+            "result": {
+              "duration": 582636035,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5045070245,
+              "status": "passed"
+            },
+            "line": 94,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 43498017,
+              "status": "passed"
+            },
+            "line": 95,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3103288750,
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "I click on \"Campaigns\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Campaigns",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 310302721,
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "All Flights loads which I have access to",
+            "match": {
+              "location": "ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2431354019,
+              "status": "passed"
+            },
+            "line": 98,
+            "name": "I search/filter for a particular result",
+            "match": {
+              "location": "ProteusWebSteps.WhenISearchFilterForAParticularResult()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3146058892,
+              "status": "passed"
+            },
+            "line": 99,
+            "name": "Click on Apply button",
+            "match": {
+              "location": "ProteusWebSteps.WhenClickOnApplyButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16884062,
+              "status": "passed"
+            },
+            "line": 100,
+            "name": "All Flights matching search/filter combination load as results",
+            "match": {
+              "location": "ProteusWebSteps.ThenAllFlightsMatchingSearchFilterCombinationLoadAsResults()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 27475800,
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "Goal Type, Goal Value, Optimisation Manager are editable",
+            "match": {
+              "location": "ProteusWebSteps.goalTypeGoalValueOptimisationManagerAreEditable()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2551673602,
+              "status": "passed"
+            },
+            "line": 102,
+            "name": "LogOut ProteusWeb from Campaigns page",
+            "match": {
+              "location": "ProteusWebSteps.ThenLogOutProteusWebFromCampaignsPage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 92,
+            "name": "@SearchOnProWeb"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 347724,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 28159,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4200157607,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 196687612,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 106,
+        "name": "10 Pagination shown when more than 20 flights displayed",
+        "description": "",
+        "id": "ability-to-search-for-flights;10-pagination-shown-when-more-than-20-flights-displayed",
+        "after": [
+          {
+            "result": {
+              "duration": 583392496,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5050272890,
+              "status": "passed"
+            },
+            "line": 107,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 45060858,
+              "status": "passed"
+            },
+            "line": 108,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3105439951,
+              "status": "passed"
+            },
+            "line": 109,
+            "name": "I click on \"Campaigns\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Campaigns",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 321578389,
+              "status": "passed"
+            },
+            "line": 110,
+            "name": "All Flights loads which I have access to",
+            "match": {
+              "location": "ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2424189609,
+              "status": "passed"
+            },
+            "line": 111,
+            "name": "I search/filter for a particular result",
+            "match": {
+              "location": "ProteusWebSteps.WhenISearchFilterForAParticularResult()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3161120706,
+              "status": "passed"
+            },
+            "line": 112,
+            "name": "Click on Apply button",
+            "match": {
+              "location": "ProteusWebSteps.WhenClickOnApplyButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15831502,
+              "status": "passed"
+            },
+            "line": 113,
+            "name": "All Flights matching search/filter combination load as results",
+            "match": {
+              "location": "ProteusWebSteps.ThenAllFlightsMatchingSearchFilterCombinationLoadAsResults()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2543143039,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 114,
+                "value": "# And Pagination shown when more than 20 flights displayed"
+              }
+            ],
+            "line": 115,
+            "name": "LogOut ProteusWeb from Campaigns page",
+            "match": {
+              "location": "ProteusWebSteps.ThenLogOutProteusWebFromCampaignsPage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 105,
+            "name": "@SearchOnProWeb"
+          }
+        ]
+      }
+    ],
+    "name": "Ability to search for Flights",
+    "description": "",
+    "id": "ability-to-search-for-flights",
+    "keyword": "Feature",
+    "uri": "AbilityToSearchForFlights.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@SearchOnProWeb"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 812780,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 255994,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4214149367,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5025482890,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 44632495,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3096970827,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on \"Campaigns\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Campaigns",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 193977493,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "01 Requires action tick box shown",
+        "description": "",
+        "id": "ability-to-sort-flights;01-requires-action-tick-box-shown",
+        "after": [
+          {
+            "result": {
+              "duration": 585601295,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1054371775,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "There is an option to filter by \u0027Requires action\u0027",
+            "match": {
+              "location": "ProteusWebSteps.thereIsAnOptionToFilterByRequiresAction()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2157034621,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Default \u0027Requires action\u0027 is unselected",
+            "match": {
+              "location": "ProteusWebSteps.defaultRequiresActionIsUnselected()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1021766288,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Click on \u0027Requires action\u0027",
+            "match": {
+              "location": "ProteusWebSteps.clickOnRequiresAction()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24450809,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "\u0027Requires action\u0027 is selected",
+            "match": {
+              "location": "ProteusWebSteps.requiresActionIsSelected()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3141437780,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Click on Apply button",
+            "match": {
+              "location": "ProteusWebSteps.WhenClickOnApplyButton()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@SortOnProWeb"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 360098,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 74665,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4187862231,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5055743048,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 45507567,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3109766670,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on \"Campaigns\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Campaigns",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 198145923,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "02 Option to sort result",
+        "description": "",
+        "id": "ability-to-sort-flights;02-option-to-sort-result",
+        "after": [
+          {
+            "result": {
+              "duration": 582684674,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 441064285,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Sort by \"Start Date Descending\" is shown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Start Date Descending",
+                  "offset": 9
+                }
+              ],
+              "location": "ProteusWebSteps.sortByIsShown(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1476030459,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Option to sort result by Flight Created and Updated",
+            "match": {
+              "location": "ProteusWebSteps.optionToSortResultByFlightCreatedAndUpdated()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2299639731,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Select sort by Flight created",
+            "match": {
+              "location": "ProteusWebSteps.selectSortByFlightCreated()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10322402261,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Sort by Flight created selected",
+            "match": {
+              "location": "ProteusWebSteps.sortByFlightCreatedSelected()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2260014472,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Select sort by Flight Updated",
+            "match": {
+              "location": "ProteusWebSteps.selectSortByFlightUpdated()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9185402985,
+              "error_message": "java.lang.AssertionError: Sort by Flight updated not selected\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat StepDefination.ProteusWebSteps.sortByFlightUpdatedSelected(ProteusWebSteps.java:470)\r\n\tat ✽.Then Sort by Flight updated selected(AbilityToSortFlights.feature:27)\r\n",
+              "status": "failed"
+            },
+            "line": 27,
+            "name": "Sort by Flight updated selected",
+            "match": {
+              "location": "ProteusWebSteps.sortByFlightUpdatedSelected()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 20,
+            "name": "@SortOnProWeb"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 338765,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 27306,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4202149238,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5057700972,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 40995679,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3108636885,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on \"Campaigns\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Campaigns",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 192790536,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "02 Option to sort result",
+        "description": "",
+        "id": "ability-to-sort-flights;02-option-to-sort-result",
+        "after": [
+          {
+            "result": {
+              "duration": 586012591,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 436964120,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Sort by \"Start Date Descending\" is shown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Start Date Descending",
+                  "offset": 9
+                }
+              ],
+              "location": "ProteusWebSteps.sortByIsShown(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1448334932,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Option to sort result by Flight Created and Updated",
+            "match": {
+              "location": "ProteusWebSteps.optionToSortResultByFlightCreatedAndUpdated()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2296578474,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Select sort by Flight created",
+            "match": {
+              "location": "ProteusWebSteps.selectSortByFlightCreated()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10304385427,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Sort by Flight created selected",
+            "match": {
+              "location": "ProteusWebSteps.sortByFlightCreatedSelected()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2260558032,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Select sort by Flight Updated",
+            "match": {
+              "location": "ProteusWebSteps.selectSortByFlightUpdated()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9162512885,
+              "error_message": "java.lang.AssertionError: Sort by Flight updated not selected\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat StepDefination.ProteusWebSteps.sortByFlightUpdatedSelected(ProteusWebSteps.java:470)\r\n\tat ✽.Then Sort by Flight updated selected(AbilityToSortFlights.feature:27)\r\n",
+              "status": "failed"
+            },
+            "line": 27,
+            "name": "Sort by Flight updated selected",
+            "match": {
+              "location": "ProteusWebSteps.sortByFlightUpdatedSelected()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 20,
+            "name": "@SortOnProWeb"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 319992,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 56318,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4197694094,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5061639861,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 45298079,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3096053943,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on \"Campaigns\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Campaigns",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 192881413,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "03 Flights sorted by Created date",
+        "description": "",
+        "id": "ability-to-sort-flights;03-flights-sorted-by-created-date",
+        "after": [
+          {
+            "result": {
+              "duration": 597473001,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2738967100,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I search/filter for a particular result",
+            "match": {
+              "location": "ProteusWebSteps.WhenISearchFilterForAParticularResult()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3148165720,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Click on Apply button",
+            "match": {
+              "location": "ProteusWebSteps.WhenClickOnApplyButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 49765169,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "Sort by \"Start Date Descending\" is shown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Start Date Descending",
+                  "offset": 9
+                }
+              ],
+              "location": "ProteusWebSteps.sortByIsShown(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2321827983,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Select sort by Flight created",
+            "match": {
+              "location": "ProteusWebSteps.selectSortByFlightCreated()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 19455518,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "All Flights matching search/filter combination load as results",
+            "match": {
+              "location": "ProteusWebSteps.ThenAllFlightsMatchingSearchFilterCombinationLoadAsResults()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1536149719,
+              "error_message": "java.lang.AssertionError: All flights are not sorted based on created date\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat StepDefination.ProteusWebSteps.allFlightsSortedBasedOnCreatedDate(ProteusWebSteps.java:552)\r\n\tat ✽.And All flights sorted based on created date(AbilityToSortFlights.feature:37)\r\n",
+              "status": "failed"
+            },
+            "line": 37,
+            "name": "All flights sorted based on created date",
+            "match": {
+              "location": "ProteusWebSteps.allFlightsSortedBasedOnCreatedDate()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "Sort by \"Flight Created Descending\" is shown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Flight Created Descending",
+                  "offset": 9
+                }
+              ],
+              "location": "ProteusWebSteps.sortByIsShown(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 30,
+            "name": "@SortOnProWeb"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 482548,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 42239,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4170307892,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5039015141,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 42881925,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3096576597,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on \"Campaigns\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Campaigns",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 322320770,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "03 Flights sorted by Created date",
+        "description": "",
+        "id": "ability-to-sort-flights;03-flights-sorted-by-created-date",
+        "after": [
+          {
+            "result": {
+              "duration": 578141639,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2715854285,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I search/filter for a particular result",
+            "match": {
+              "location": "ProteusWebSteps.WhenISearchFilterForAParticularResult()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3138337697,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Click on Apply button",
+            "match": {
+              "location": "ProteusWebSteps.WhenClickOnApplyButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 45394077,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "Sort by \"Start Date Descending\" is shown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Start Date Descending",
+                  "offset": 9
+                }
+              ],
+              "location": "ProteusWebSteps.sortByIsShown(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2333406149,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Select sort by Flight created",
+            "match": {
+              "location": "ProteusWebSteps.selectSortByFlightCreated()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 22244143,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "All Flights matching search/filter combination load as results",
+            "match": {
+              "location": "ProteusWebSteps.ThenAllFlightsMatchingSearchFilterCombinationLoadAsResults()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 571169226,
+              "error_message": "java.lang.AssertionError: All flights are not sorted based on created date\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat StepDefination.ProteusWebSteps.allFlightsSortedBasedOnCreatedDate(ProteusWebSteps.java:552)\r\n\tat ✽.And All flights sorted based on created date(AbilityToSortFlights.feature:37)\r\n",
+              "status": "failed"
+            },
+            "line": 37,
+            "name": "All flights sorted based on created date",
+            "match": {
+              "location": "ProteusWebSteps.allFlightsSortedBasedOnCreatedDate()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "Sort by \"Flight Created Descending\" is shown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Flight Created Descending",
+                  "offset": 9
+                }
+              ],
+              "location": "ProteusWebSteps.sortByIsShown(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 30,
+            "name": "@SortOnProWeb"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 273487,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 17493,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4142225814,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5068207806,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 43152852,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3105064067,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on \"Campaigns\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Campaigns",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 207349323,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 43,
+        "name": "04 Flights sorted by Updated date",
+        "description": "",
+        "id": "ability-to-sort-flights;04-flights-sorted-by-updated-date",
+        "after": [
+          {
+            "result": {
+              "duration": 574104620,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2679249751,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I search/filter for a particular result",
+            "match": {
+              "location": "ProteusWebSteps.WhenISearchFilterForAParticularResult()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3141119921,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "Click on Apply button",
+            "match": {
+              "location": "ProteusWebSteps.WhenClickOnApplyButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 47875082,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "Sort by \"Start Date Descending\" is shown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Start Date Descending",
+                  "offset": 9
+                }
+              ],
+              "location": "ProteusWebSteps.sortByIsShown(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2339308510,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "Select sort by Flight Updated",
+            "match": {
+              "location": "ProteusWebSteps.selectSortByFlightUpdated()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 23666615,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "All Flights matching search/filter combination load as results",
+            "match": {
+              "location": "ProteusWebSteps.ThenAllFlightsMatchingSearchFilterCombinationLoadAsResults()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 616080754,
+              "error_message": "java.lang.AssertionError: All flights are not sorted based on updated date\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat StepDefination.ProteusWebSteps.allFlightsSortedBasedOnUpdatedDate(ProteusWebSteps.java:560)\r\n\tat ✽.And All flights sorted based on updated date(AbilityToSortFlights.feature:49)\r\n",
+              "status": "failed"
+            },
+            "line": 49,
+            "name": "All flights sorted based on updated date",
+            "match": {
+              "location": "ProteusWebSteps.allFlightsSortedBasedOnUpdatedDate()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 50,
+            "name": "Sort by \"Flight Updated Descending\" is shown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Flight Updated Descending",
+                  "offset": 9
+                }
+              ],
+              "location": "ProteusWebSteps.sortByIsShown(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 42,
+            "name": "@SortOnProWeb"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1039334,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 40959,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4149839492,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5048117423,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 42916484,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3098571214,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on \"Campaigns\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Campaigns",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 205546700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 43,
+        "name": "04 Flights sorted by Updated date",
+        "description": "",
+        "id": "ability-to-sort-flights;04-flights-sorted-by-updated-date",
+        "after": [
+          {
+            "result": {
+              "duration": 572419328,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2696882168,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I search/filter for a particular result",
+            "match": {
+              "location": "ProteusWebSteps.WhenISearchFilterForAParticularResult()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3152202740,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "Click on Apply button",
+            "match": {
+              "location": "ProteusWebSteps.WhenClickOnApplyButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46932599,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "Sort by \"Start Date Descending\" is shown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Start Date Descending",
+                  "offset": 9
+                }
+              ],
+              "location": "ProteusWebSteps.sortByIsShown(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2326709355,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "Select sort by Flight Updated",
+            "match": {
+              "location": "ProteusWebSteps.selectSortByFlightUpdated()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 18816388,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "All Flights matching search/filter combination load as results",
+            "match": {
+              "location": "ProteusWebSteps.ThenAllFlightsMatchingSearchFilterCombinationLoadAsResults()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 600989928,
+              "error_message": "java.lang.AssertionError: All flights are not sorted based on updated date\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat StepDefination.ProteusWebSteps.allFlightsSortedBasedOnUpdatedDate(ProteusWebSteps.java:560)\r\n\tat ✽.And All flights sorted based on updated date(AbilityToSortFlights.feature:49)\r\n",
+              "status": "failed"
+            },
+            "line": 49,
+            "name": "All flights sorted based on updated date",
+            "match": {
+              "location": "ProteusWebSteps.allFlightsSortedBasedOnUpdatedDate()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 50,
+            "name": "Sort by \"Flight Updated Descending\" is shown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Flight Updated Descending",
+                  "offset": 9
+                }
+              ],
+              "location": "ProteusWebSteps.sortByIsShown(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 42,
+            "name": "@SortOnProWeb"
+          }
+        ]
+      }
+    ],
+    "name": "Ability to sort Flights",
+    "description": "",
+    "id": "ability-to-sort-flights",
+    "keyword": "Feature",
+    "uri": "AbilityToSortFlights.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@SortOnProWeb"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 457802,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 24747,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4137059435,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 204952795,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "01 All four sections shown on the proteus home page",
+        "description": "",
+        "id": "ability-to-log-into-pro-web;01-all-four-sections-shown-on-the-proteus-home-page",
+        "after": [
+          {
+            "result": {
+              "duration": 584179250,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5088882707,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 47673700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 45088591,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "There is a box called \"Campaigns\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Campaigns",
+                  "offset": 23
+                }
+              ],
+              "location": "ProteusWebSteps.thereIsABoxCalled(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 48747594,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "There is a box called \"Reports\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Reports",
+                  "offset": 23
+                }
+              ],
+              "location": "ProteusWebSteps.thereIsABoxCalled(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 48941295,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "There is a box called \"Client Reports\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Client Reports",
+                  "offset": 23
+                }
+              ],
+              "location": "ProteusWebSteps.thereIsABoxCalled(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 53915252,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "There is a box called \"Administration\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Administration",
+                  "offset": 23
+                }
+              ],
+              "location": "ProteusWebSteps.thereIsABoxCalled(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2503893237,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "LogOut ProteusWeb from Home Page",
+            "match": {
+              "location": "ProteusWebSteps.ThenLogoutProteusWeb()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@ProteusWebRegression"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 268367,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 45226,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4181001601,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 194857685,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "02 Check if Reports tab opened correctly",
+        "description": "",
+        "id": "ability-to-log-into-pro-web;02-check-if-reports-tab-opened-correctly",
+        "after": [
+          {
+            "result": {
+              "duration": 585755318,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5041231193,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 44275811,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3095733951,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I click on \"Reports\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Reports",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1100586737,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Reports page shown correctly",
+            "match": {
+              "location": "ProteusWebSteps.reportsPageShownCorrectly()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2490290587,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "LogOut ProteusWeb from Reports Page",
+            "match": {
+              "location": "ProteusWebSteps.logoutProteusWebFromReportsPage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@ProteusWebRegression"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 270073,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 17493,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4189319688,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 202365979,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "03 Check if Admin tab opened correctly",
+        "description": "",
+        "id": "ability-to-log-into-pro-web;03-check-if-admin-tab-opened-correctly",
+        "after": [
+          {
+            "result": {
+              "duration": 575210939,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6066093298,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 43088001,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3112711024,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I click on \"Administration\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Administration",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 194181008,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Administration page shown correctly",
+            "match": {
+              "location": "ProteusWebSteps.administrationPageShownCorrectly()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2409009185,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Able to filter seats by Operation Unit TEL",
+            "match": {
+              "location": "ProteusWebSteps.ableToFilterSeatsByOperationUnitTEL()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3120081935,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "Able to navigate to Administration Jobs",
+            "match": {
+              "location": "ProteusWebSteps.ableToNavigateToAdministrationJobs()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6177997515,
+              "error_message": "java.lang.AssertionError: Unable to navigate to Administration Master Data\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat StepDefination.ProteusWebSteps.ableToNavigateToAdministrationMasterData(ProteusWebSteps.java:314)\r\n\tat ✽.And Able to navigate to Administration Master Data(ProteusWeb.feature:35)\r\n",
+              "status": "failed"
+            },
+            "line": 35,
+            "name": "Able to navigate to Administration Master Data",
+            "match": {
+              "location": "ProteusWebSteps.ableToNavigateToAdministrationMasterData()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "LogOut ProteusWeb from Admin Page",
+            "match": {
+              "location": "ProteusWebSteps.logoutProteusWebFromAdminPage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 27,
+            "name": "@ProteusWebRegression"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 410443,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 35413,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4401494491,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 208407002,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "03 Check if Admin tab opened correctly",
+        "description": "",
+        "id": "ability-to-log-into-pro-web;03-check-if-admin-tab-opened-correctly",
+        "after": [
+          {
+            "result": {
+              "duration": 573546127,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5052237641,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 45112910,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3095477957,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I click on \"Administration\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Administration",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 225059817,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Administration page shown correctly",
+            "match": {
+              "location": "ProteusWebSteps.administrationPageShownCorrectly()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2407462983,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Able to filter seats by Operation Unit TEL",
+            "match": {
+              "location": "ProteusWebSteps.ableToFilterSeatsByOperationUnitTEL()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3122168710,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "Able to navigate to Administration Jobs",
+            "match": {
+              "location": "ProteusWebSteps.ableToNavigateToAdministrationJobs()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6176536645,
+              "error_message": "java.lang.AssertionError: Unable to navigate to Administration Master Data\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat StepDefination.ProteusWebSteps.ableToNavigateToAdministrationMasterData(ProteusWebSteps.java:314)\r\n\tat ✽.And Able to navigate to Administration Master Data(ProteusWeb.feature:35)\r\n",
+              "status": "failed"
+            },
+            "line": 35,
+            "name": "Able to navigate to Administration Master Data",
+            "match": {
+              "location": "ProteusWebSteps.ableToNavigateToAdministrationMasterData()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "LogOut ProteusWeb from Admin Page",
+            "match": {
+              "location": "ProteusWebSteps.logoutProteusWebFromAdminPage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 27,
+            "name": "@ProteusWebRegression"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 381857,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 20906,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4221888909,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 209133171,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 38,
+        "name": "04 Check if Client Reports tab opened correctly",
+        "description": "",
+        "id": "ability-to-log-into-pro-web;04-check-if-client-reports-tab-opened-correctly",
+        "after": [
+          {
+            "result": {
+              "duration": 595858108,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5095460464,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 45569432,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3100404982,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I click on \"Client Reports\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Client Reports",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4554966106,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "Client Reports page shown correctly",
+            "match": {
+              "location": "ProteusWebSteps.clientReportsPageShownCorrectly()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2150566940,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "Able to navigate to Client Reports Dashboard",
+            "match": {
+              "location": "ProteusWebSteps.ableToNavigateToClientReportsDashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2166481213,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "Able to navigate to Client Reports Performance",
+            "match": {
+              "location": "ProteusWebSteps.ableToNavigateToClientReportsPerformance()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2135958662,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "Able to navigate to Client Reports DSP",
+            "match": {
+              "location": "ProteusWebSteps.ableToNavigateToClientReportsDSP()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2140616894,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "Able to navigate to Client Reports Tactics",
+            "match": {
+              "location": "ProteusWebSteps.ableToNavigateToClientReportsTactics()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2537573470,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "LogOut ProteusWeb from Client Reports Page",
+            "match": {
+              "location": "ProteusWebSteps.logoutProteusWebFromClientReportsPage()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Ability to log into Pro Web",
+    "description": "",
+    "id": "ability-to-log-into-pro-web",
+    "keyword": "Feature",
+    "uri": "ProteusWeb.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@ProteusWebRegression"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 411296,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 38825,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4213557169,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5076037798,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 42896432,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3110280791,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on \"Campaigns\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Campaigns",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 208870351,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "01 There is a box/area to show Start Date and End Date",
+        "description": "",
+        "id": "ability-to-sort-flights;01-there-is-a-box/area-to-show-start-date-and-end-date",
+        "after": [
+          {
+            "result": {
+              "duration": 583248714,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1628086430,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I search/filter for result with end date",
+            "match": {
+              "location": "ProteusWebSteps.iSearchResultWithEndDate()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3130575115,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Click on Apply button",
+            "match": {
+              "location": "ProteusWebSteps.WhenClickOnApplyButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 55202474,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Box shown with Start Date and End Date",
+            "match": {
+              "location": "ProteusWebSteps.boxShownWithStartDateAndEndDate()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 25470516,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "A progress bar shown",
+            "match": {
+              "location": "ProteusWebSteps.aProgressBarShown()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@FlightDates"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 309752,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15786,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4160721783,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5050927380,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 46329306,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3092212758,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on \"Campaigns\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Campaigns",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 199957505,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "02 There is a box/area to show Start Date Indefinite",
+        "description": "",
+        "id": "ability-to-sort-flights;02-there-is-a-box/area-to-show-start-date-indefinite",
+        "after": [
+          {
+            "result": {
+              "duration": 580537314,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 780412900,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I search/filter for result without end date",
+            "match": {
+              "location": "ProteusWebSteps.iSearchResultWithOutEndDate()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3150987624,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Click on Apply button",
+            "match": {
+              "location": "ProteusWebSteps.WhenClickOnApplyButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19440159,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Box shown with Start Date",
+            "match": {
+              "location": "ProteusWebSteps.boxShownWithStartDate()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2162509472,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "End date shown as an icon and Tooltip shown",
+            "match": {
+              "location": "ProteusWebSteps.endDateShownAsAnIcon()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 19013930,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "A progress bar shown",
+            "match": {
+              "location": "ProteusWebSteps.aProgressBarShown()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 20,
+            "name": "@FlightDates"
+          }
+        ]
+      }
+    ],
+    "name": "Ability to sort Flights",
+    "description": "",
+    "id": "ability-to-sort-flights",
+    "keyword": "Feature",
+    "uri": "ReadOnlyFlightDates.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@FlightDates"
+      }
+    ]
+  }
+]
