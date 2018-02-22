@@ -740,5 +740,25 @@ public class ProteusWebSteps extends BrowserFactory
         Assert.assertTrue("Optimisation Manager not saved",
                 campaignsPage.CheckOptimisationManagerDetailsSaved("Oliver Smith"));
     }
+
+    @And("^There icons for platforms are displayed$")
+    public void thereIconsForPlatformsAreDisplayed() {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Icons not shown for platforms are displayed",
+                campaignsPage.CheckForPlatformIcons());
+    }
+
+    @And("^Tooltips shown on mouseover on each platform icon$")
+    public void tooltipsShownOnMouseoverOnEachIcon()   {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Tooltips not shown on mouseover on each platform icon",
+                campaignsPage.CheckForPlatformIconsTooltips());
+    }
+
+    @And("^Platforms tab opened for the Advertiser in the Platform on click$")
+    public void platformsTabOpenedForTheAdvertiserInThePlatformOnClick() {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Platforms tab not opened for the advertiser in the platform",campaignsPage.CheckForAdvertiserPlatformTab());
+    }
 }
 

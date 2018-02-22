@@ -4,6 +4,7 @@ import DBDataModel.JDBCTemplate;
 import DBDataModel.campaign_flight;
 import SupportingUtilites.BrowserFactory;
 import SupportingUtilites.GeneralUtilites;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -549,5 +550,44 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         GeneralUtilites.wait(2);
         return  txtOptimisationManager.getText().toLowerCase().equals(OptManager.toLowerCase());
     }
+
+    public boolean CheckForPlatformIcons(){
+        By PlatformIcons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div[5]/div[1]/span");
+        List<WebElement> elementTypes = browserFactory.getDriver().findElements(PlatformIcons);
+        return elementTypes.size() >= 1 ;
+    }
+
+    public boolean  CheckForPlatformIconsTooltips(){
+        boolean returnType = true;
+        By PlatformIcons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div[5]/div[1]/span");
+        List<WebElement> elementTypes = browserFactory.getDriver().findElements(PlatformIcons);
+        for (WebElement elementType :elementTypes){
+            Actions toolAct = new Actions(browserFactory.getDriver());
+            toolAct.moveToElement(elementType).build().perform();
+            GeneralUtilites.wait(1);
+            returnType = returnType && !txtTooltip.getText().equals("");
+        }
+        return returnType;
+
+    }
+
+    public boolean CheckForAdvertiserPlatformTab(){
+        boolean returnType = true;
+        By PlatformIcons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div[5]/div[1]/span");
+        List<WebElement> elementTypes = browserFactory.getDriver().findElements(PlatformIcons);
+        for (WebElement elementType :elementTypes){
+            mouseClick(elementType);
+            GeneralUtilites.wait(2);
+            List<String> browserTabs = new ArrayList<>(this.browserFactory.getDriver().getWindowHandles());
+            returnType = browserTabs.size() >= 2 && returnType  ;
+
+            this.browserFactory.getDriver().switchTo().window(browserTabs.get(1));
+            this.browserFactory.getDriver().close();
+            this.browserFactory.getDriver().switchTo().window(browserTabs.get(0));
+        }
+
+        return returnType;
+    }
+
 
 }
