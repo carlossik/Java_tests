@@ -12,6 +12,7 @@
         <property name="password" value="password" />
     </bean>
 
+
     <!-- Definition for studentJDBCTemplate bean -->
     <bean id = "JDBCTemplate"
           class = "DBDataModel.JDBCTemplate">

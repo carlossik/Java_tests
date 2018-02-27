@@ -4,14 +4,19 @@ import DataModels.CampaignFlightSearchInput;
 import DataModels.CampaignFlightSearchOutPut;
 import DataModels.Login;
 import DataModels.Oauth;
+import DataModels.*;
+import com.fasterxml.jackson.core.JsonGenerationException;
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.parsing.Parser;
-import io.restassured.response.ResponseBody;
-import org.apache.maven.doxia.site.decoration.Body;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import java.io.IOException;
 import java.util.*;
 import java.util.Properties;
 import java.io.FileInputStream;
@@ -21,13 +26,13 @@ import static io.restassured.RestAssured.given;
 
 public class RestAssuredClient
 {
-    static String currentPath = System.getProperty("user.dir");
-    static Properties prop = new Properties();
+    private static String currentPath = System.getProperty("user.dir");
+    private static Properties  prop = new Properties();
     InputStream input = null;
 
-    static String Client_id= "";
-    static String Client_secret= "";
-    static String Access_token = "";
+    private static String Client_id= "";
+    private static String Client_secret= "";
+    private static String Access_token = "";
 
     static
     {
@@ -82,21 +87,29 @@ public class RestAssuredClient
     }
 
 
-    public static Response RestRequestExecute(Method method,String endpoint, Object objInput)
+    private static Response RestRequestExecute(Method method,String endpoint, Object objInput, Boolean IsReportingAPI)
     {
         RestAssured.defaultParser = Parser.JSON;
+        String strURI ;
+        if(IsReportingAPI)
+            strURI=  prop.getProperty("reportingAPIBaseURI").replace("{Environment}",prop.getProperty("Environment"))+endpoint;
+        else
+            strURI=  prop.getProperty("baseURI").replace("{Environment}",prop.getProperty("Environment"))+endpoint;
+
        // RestAssured.baseURI = prop.getProperty("baseURI").replace("{Environment}",prop.getProperty("Environment"));
         if (method.equals(Method.GET)) {
-            return given().contentType("application/json").header("Authorization","Bearer "+Access_token).body(objInput).when().get(prop.getProperty("baseURI").replace("{Environment}",prop.getProperty("Environment"))+endpoint).then().contentType(ContentType.JSON).extract().response();
+            return given().contentType("application/json").header("Authorization","Bearer "+Access_token).body(objInput).when().get(strURI).then().contentType(ContentType.JSON).extract().response();
         } else if (method.equals(Method.POST)) {
-               return given().contentType("application/json").header("Authorization","Bearer "+Access_token).body(objInput).when().post(prop.getProperty("baseURI").replace("{Environment}",prop.getProperty("Environment"))+endpoint).then().extract().response();
+
+               return given().contentType("application/json").header("Authorization","Bearer "+Access_token).body(objInput).when().post(strURI).then().extract().response();
+
         } else if (method.equals(Method.PUT)) {
-              return given().contentType("application/json").header("Authorization","Bearer "+Access_token).body(objInput).when().put(prop.getProperty("baseURI").replace("{Environment}",prop.getProperty("Environment"))+endpoint).then().extract().response();
+              return given().contentType("application/json").header("Authorization","Bearer "+Access_token).body(objInput).when().put(strURI).then().extract().response();
         }
         return  null;
     }
 
-    public static void GetMetalabAccess()
+    private static void GetMetalabAccess()
     {
         try
         {
@@ -116,14 +129,20 @@ public class RestAssuredClient
             Client_id = proteusHome.getOauth_client_id() + "_"+proteusHome.getRandom_id();
 
         }
+        catch (NullPointerException ex)
+        {
+            ex.printStackTrace();
+            System.exit(0);
+        }
         catch(Exception ex)
         {
             ex.printStackTrace();
             System.exit(0);
         }
+
     }
 
-    public static void ProteusHomeLogin()
+    private static void ProteusHomeLogin()
     {
         try
         {
@@ -152,13 +171,13 @@ public class RestAssuredClient
     }
 
 
-    public static Oauth getOauthObject(List<Oauth> objOauths, String searchText)
+    private static Oauth getOauthObject(List<Oauth> objOauths, String searchText)
     {
-       for(int i =0 ; i< objOauths.size();i++)
-       {
-           if(objOauths.get(i).getName().equals("proteus_home") && objOauths.get(i).getRedirect_uris().contains(prop.getProperty("Environment")))
-               return objOauths.get(i);
-       }
+        for (Oauth objOauth :objOauths ) {
+            if(objOauth .getName().equals("proteus_home") && objOauth.getRedirect_uris().contains(prop.getProperty("Environment")))
+                return objOauth;
+        }
+
        return null;
     }
     public static int GetFlightCount(String endPoint, String searchText, String Advertiser, String Agency)
@@ -174,8 +193,41 @@ public class RestAssuredClient
         if (!Agency.equals(""))
             objInput.setAgencyId(Agency);
         //Response objResponse =  RestRequestExecute(Method.POST,"/campaign-flight/search?order-by=START_DATE_DESC&page-number=0&page-size=20",objInput);
-        Response objResponse =  RestRequestExecute(Method.POST,endPoint,objInput);
+        Response objResponse =  RestRequestExecute(Method.POST,endPoint,objInput,false);
         CampaignFlightSearchOutPut objCampaignFlightSearchOutPut = objResponse.as(CampaignFlightSearchOutPut.class);
         return Integer.parseInt( objCampaignFlightSearchOutPut.getCount());
+    }
+
+    public static ReportingAPIResponse ReportingAPI(int strFlightId){
+
+        try {
+            if (Access_token.equals(""))
+                ProteusHomeLogin();
+            ReportingAPIInput objInput = new ReportingAPIInput();
+            objInput.setFlightId(strFlightId);
+            objInput.setLocked(true);
+            Response objResponse = RestRequestExecute(Method.POST,
+                    "/delivery/flight-budget/search", objInput, true);
+             String strBody = objResponse.getBody().asString().replace(strFlightId + "", "FlightId");
+
+
+            System.out.println("Response Body is: " + strBody);
+            ObjectMapper mapper = new ObjectMapper();
+            mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+            ReportingAPIResponse  objReportingAPIResponse  = mapper.readValue(strBody, ReportingAPIResponse.class);
+            System.out.println(objReportingAPIResponse);
+            return objReportingAPIResponse;
+        }
+        catch (NullPointerException e){
+            e.printStackTrace();
+        }
+        catch (JsonGenerationException e) {
+            e.printStackTrace();
+        } catch (JsonMappingException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return new ReportingAPIResponse();
     }
 }

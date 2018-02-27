@@ -1,12 +1,15 @@
 package StepDefination;
 
 
+import DataModels.ReportingAPIInput;
+import DataModels.ReportingAPIResponse;
 import PageObjects.*;
 import SupportingUtilites.BrowserFactory;
 import java.util.Properties;
 import java.io.*;
 
 import cucumber.api.PendingException;
+import cucumber.api.Scenario;
 import cucumber.api.java.en.*;
 import org.junit.Assert;
 import SupportingUtilites.*;
@@ -21,6 +24,7 @@ public class ProteusWebSteps extends BrowserFactory
     private ProteusWebAdminPage adminPage;
     private ProteusWebReportsPage reportsPage;
     private ProteusWebClientReportsPage clientReportsPage;
+    private ReportingAPIResponse objResponse;
     private Properties prop = new Properties();
     private InputStream input = null;
     private static String currentPath = System.getProperty("user.dir");
@@ -759,6 +763,34 @@ public class ProteusWebSteps extends BrowserFactory
     public void platformsTabOpenedForTheAdvertiserInThePlatformOnClick() {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("Platforms tab not opened for the advertiser in the platform",campaignsPage.CheckForAdvertiserPlatformTab());
+    }
+
+
+
+    @And("^I get numbers from reporting API for flight \"([^\"]*)\"$")
+    public void iGetNumbersFromReportingAPIForFlight(int FlightId)  {
+          objResponse =  RestAssuredClient.ReportingAPI(FlightId);
+        System.out.println("Impressions : " + objResponse.FlightId.getImpressions());
+        System.out.println("Clicks : " + objResponse.FlightId.getClicks());
+    }
+
+    @When("^I search/filter for a flight \"([^\"]*)\"$")
+    public void iSearchFilterForAFlight(String FlightId)  {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        campaignsPage.EnterSearchFilter(GeneralUtilites.getFlightNameDB(FlightId), "", "");
+        GeneralUtilites.wait(2);
+    }
+
+    @Then("^Numbers displayed match the reporting API for flight \"([^\"]*)\"$")
+    public void numbersDisplayedMatchTheReportingAPIForFlight(String FlightId)  {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+      String strNumbersUI =   campaignsPage.GetNumbersFromFlightDetails();
+
+      Assert.assertTrue( "UI Impressions not matching , Reporting API numbers",
+              strNumbersUI.split(";")[0].replace(",","").equals(objResponse.FlightId.getImpressions()));
+
+        Assert.assertTrue("UI Clicks not matching , Reporting API numbers",
+                strNumbersUI.split(";")[1].replace(",","").equals(objResponse.FlightId.getClicks()));
     }
 }
 

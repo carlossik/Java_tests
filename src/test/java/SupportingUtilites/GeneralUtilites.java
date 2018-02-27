@@ -110,7 +110,7 @@ public class GeneralUtilites
                 strQuery = prop.getProperty("SQLQueryFlightNameWithNoTrader");
                 break;
             default:
-                strQuery = prop.getProperty("SQLQueryFlightNameWithNoGoalDetails");
+                strQuery = prop.getProperty("SQLQueryFlightNameForFlightId") + strCondition ;
         }
 
         ApplicationContext context =

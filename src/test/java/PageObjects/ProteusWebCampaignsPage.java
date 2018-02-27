@@ -115,26 +115,36 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div[4]/div[2]/span/div/div/ul/li[2]")
     private WebElement lstOperationsBreakdown;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div[1]/i")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div/div[1]/i")
     private WebElement btnAddEditGoalDetails;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/form/div/div[1]//input")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]//form/div[1]//input")
     private WebElement drpdwnGoalType;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/form/div/div[2]//input")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]//form/div[2]//input")
     private WebElement txtGoalTarget;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/form/div/button[1]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]//form//button[1]")
     private WebElement btnSave;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div[2]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div/div[2]/div[2]")
     private WebElement txtOptimisationManager;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div[2]/i")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div/div[2]/i")
     private WebElement btnEditOptimisationManager;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/form/div/div/div/div/input")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div/div[2]/form/div/div/div/input")
     private WebElement txtEditOptimisationManager;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div/i")
+    private WebElement btnExpandFlightDetails;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div[2]/div[3]/div[2]/span[2]")
+    private WebElement txtImpressions;
+
+    @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div[2]/div[3]/div[3]/span[2]")
+    private WebElement txtClicks;
+
 
 
     public boolean CheckCampaignsPageLoad() {
@@ -315,14 +325,14 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
             return false;
         else {
             for (WebElement objFlightRow : elementTypes) {
-                List<WebElement> elementFlightDetails = objFlightRow.findElements(By.xpath("./div[2]/div"));
+                List<WebElement> elementFlightDetails = objFlightRow.findElements(By.xpath("./div[2]/div/div/div/div/div/div"));
                 if (elementFlightDetails.size() <= 0)
                     return false;
                 else {
                     returnType = returnType && !elementFlightDetails.get(0).getText().equals("");
-                    returnType = returnType && !elementFlightDetails.get(1).getText().equals("");
-                    returnType = returnType && elementFlightDetails.get(2).getText().contains("BUDGET VS SPEND");
-                    returnType = returnType && elementFlightDetails.get(3).getText().contains("Start:");
+                    returnType = returnType && !elementFlightDetails.get(2).getText().equals("");
+                    returnType = returnType && elementFlightDetails.get(1).getText().contains("BUDGET VS SPEND");
+                    returnType = returnType && elementFlightDetails.get(4                                                    ).getText().contains("Start:");
                 }
             }
             return returnType;
@@ -330,7 +340,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     }
 
     public boolean CheckFlightBudgetCurrencyCodeShown() {
-        By FlightRows = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div");
+        By FlightRows = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(FlightRows);
         System.out.println("\nFlight Count : " + elementTypes.size());
         boolean returnType = true;
@@ -338,14 +348,13 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
             return false;
         else {
             for (WebElement objFlightRow : elementTypes) {
-                List<WebElement> elementFlightDetails = objFlightRow.findElements(By.xpath("./div[2]/div[3]"));
+                List<WebElement> elementFlightDetails = objFlightRow.findElements(By.xpath("./div/div[3]/div/div[1]/div[3]"));
                 if (elementFlightDetails.size() <= 0)
                     return false;
                 else {
                     String strCCY = elementFlightDetails.get(0).getText().split(":")[1].split(" ")[1];
                     System.out.println("\nstrCCY : " + strCCY + " ");
                     returnType = returnType && !Character.isDigit(strCCY.charAt(0));
-
                 }
             }
             return returnType;
@@ -354,15 +363,15 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     }
 
     public boolean CheckGoalDetailsEditable() {
-        By editableButtons = By.xpath(" //*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[2]/div/i");
+        By editableButtons = By.xpath(" //*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[2]/div/div/div[1]/i");
+                                        //*[@id="root"]/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[2]/div/div/div[1]/i
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(editableButtons);
         System.out.println("\nFlight Count : " + elementTypes.size());
         return elementTypes.size() >= 2;
-
     }
 
     public boolean CheckForProgressBar() {
-        By ProgressBar = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[2]/div[4]/div/div[2]/div/div");
+        By ProgressBar = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[2]/div/div/div[4]/div/div[2]/div/div");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(ProgressBar);
         System.out.println("\nFlight Count : " + elementTypes.size());
         return elementTypes.size() >= 1;
@@ -370,24 +379,22 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
 
 
     public boolean CheckForStartDate() {
-        By StartDate = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[2]/div[4]/div/div[1]/div[1]");
+        By StartDate = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[2]/div/div/div[4]/div/div[1]/div[1]");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(StartDate);
         System.out.println("\nFlight Count : " + elementTypes.size());
         return elementTypes.size() >= 1;
-
     }
 
 
     public boolean CheckForEndDate() {
-        By EndDate = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[2]/div[4]/div/div[1]/div[3]");
+        By EndDate = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[2]/div/div/div[4]/div/div[1]/div[3]");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(EndDate);
         System.out.println("\nFlight Count : " + elementTypes.size());
         return elementTypes.size() >= 1;
-
     }
 
     public boolean CheckForInfiniteBudgetIcon() {
-        By EndDate = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div[4]/div/div[1]/div[3]/div/span ");
+        By EndDate = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[2]/div/div/div[4]/div/div[1]/div[3]/div/span ");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(EndDate);
         System.out.println("\n Flight Count : " + elementTypes.size());
         boolean returnType;
@@ -460,7 +467,6 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         mouseClick(elementTypes.get(0));
         By ReportOptions = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div/div[2]/span/div/div/ul/li/span");
         List<WebElement> elementReportOptions = browserFactory.getDriver().findElements(ReportOptions);
-
         return elementReportOptions.size() == 2
                 && elementReportOptions.get(0).getText().contains("Advertiser Analysis".toUpperCase())
                 && elementReportOptions.get(1).getText().contains("Operations Breakdown".toUpperCase());
@@ -488,7 +494,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     }
 
     public boolean GoalInfoAndTargetExist(){
-        By AddGoalDetailsButton = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div[1]/div[2]");
+        By AddGoalDetailsButton = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div/div[1]/div[2]");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(AddGoalDetailsButton);
         return elementTypes.get(0).getText().toLowerCase().equals("Goal Info and Target".toLowerCase());
     }
@@ -517,8 +523,8 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         EnterSearchFilter(flightName,"","");
         mouseClick(btnApplyFilters);
         GeneralUtilites.wait(2);
-        By txtGoalType   = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div[1]/div[1]");
-        By txtGoalTarget = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div[1]/div[2]");
+        By txtGoalType   = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div/div[1]/div[1]");
+        By txtGoalTarget = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div/div[1]/div[2]");
         WebElement  elementGoalType = browserFactory.getDriver().findElement(txtGoalType);
         WebElement  elementGoalTarget = browserFactory.getDriver().findElement(txtGoalTarget);
 
@@ -527,7 +533,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     }
 
     public boolean CheckForUnknownUser() {
-        return  txtOptimisationManager.getText().toLowerCase().equals("Unknown User".toLowerCase());
+        return  txtOptimisationManager.getText().toLowerCase().equals("Optimisation Manager".toLowerCase());
     }
     public boolean CheckForEditOptimisationManager(){
         return  btnEditOptimisationManager.isDisplayed();
@@ -571,6 +577,13 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
 
     }
 
+    public String GetNumbersFromFlightDetails(){
+        GeneralUtilites.wait(1);
+        mouseClick(btnExpandFlightDetails);
+        GeneralUtilites.wait(1);
+        return txtImpressions.getText() +";"+txtClicks.getText();
+    }
+
     public boolean CheckForAdvertiserPlatformTab(){
         boolean returnType = true;
         By PlatformIcons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div[5]/div[1]/span");
@@ -585,9 +598,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
             this.browserFactory.getDriver().close();
             this.browserFactory.getDriver().switchTo().window(browserTabs.get(0));
         }
-
         return returnType;
     }
-
 
 }
