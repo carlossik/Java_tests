@@ -139,10 +139,10 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div/i")
     private WebElement btnExpandFlightDetails;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div[2]/div[3]/div[2]/span[2]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[3]/div[2]/span[2]")
     private WebElement txtImpressions;
 
-    @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div[2]/div[3]/div[3]/span[2]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[3]/div[3]/span[2]")
     private WebElement txtClicks;
 
 
@@ -331,8 +331,8 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
                 else {
                     returnType = returnType && !elementFlightDetails.get(0).getText().equals("");
                     returnType = returnType && !elementFlightDetails.get(2).getText().equals("");
-                    returnType = returnType && elementFlightDetails.get(1).getText().contains("BUDGET VS SPEND");
-                    returnType = returnType && elementFlightDetails.get(4                                                    ).getText().contains("Start:");
+                    returnType = returnType && elementFlightDetails.get(1).getText().contains("SPEND VS BUDGET");
+                    returnType = returnType && elementFlightDetails.get(4).getText().contains("Start:");
                 }
             }
             return returnType;
@@ -363,8 +363,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     }
 
     public boolean CheckGoalDetailsEditable() {
-        By editableButtons = By.xpath(" //*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[2]/div/div/div[1]/i");
-                                        //*[@id="root"]/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[2]/div/div/div[1]/i
+        By editableButtons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[2]/div/div/div/i");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(editableButtons);
         System.out.println("\nFlight Count : " + elementTypes.size());
         return elementTypes.size() >= 2;
@@ -582,6 +581,67 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         mouseClick(btnExpandFlightDetails);
         GeneralUtilites.wait(1);
         return txtImpressions.getText() +";"+txtClicks.getText();
+    }
+
+    public void ExpandFlightDetails()
+    {
+        GeneralUtilites.wait(1);
+        mouseClick(btnExpandFlightDetails);
+        GeneralUtilites.wait(1);
+    }
+
+    public boolean CheckForDiscrepancyDetails(){
+
+        By DiscrepancyDetails = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[5]/div[1]");
+        WebElement webElement = browserFactory.getDriver().findElement(DiscrepancyDetails);
+
+        By ImpressionPercentage = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[5]/div[2]/span[2]");
+        WebElement objImpressionPercentage = browserFactory.getDriver().findElement(ImpressionPercentage);
+        System.out.println("objImpressionPercentage : " + objImpressionPercentage.getText());
+        return webElement.getText().toLowerCase().contains("Discrepancy (DSP vs Ad Server)".toLowerCase());
+    }
+
+    public boolean CheckForPrimaryGoalDetails(){
+        boolean returnType;
+        By DiscrepancyDetails = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[1]/div");
+        List<WebElement> webElements = browserFactory.getDriver().findElements(DiscrepancyDetails);
+        returnType = webElements.get(0).getText().toLowerCase().contains("Primary Goal".toLowerCase());
+        returnType = returnType && webElements.get(1).getText().toLowerCase().contains("Actual".toLowerCase());
+        returnType = returnType && webElements.get(2).getText().toLowerCase().contains("7 day actual".toLowerCase());
+        return returnType;
+    }
+
+    public boolean CheckForViewabilityDetails(){
+        boolean returnType;
+        By DiscrepancyDetails = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[2]/div");
+        List<WebElement> webElements = browserFactory.getDriver().findElements(DiscrepancyDetails);
+        returnType = webElements.get(0).getText().toLowerCase().contains("Viewability".toLowerCase());
+        returnType = returnType && webElements.get(1).getText().toLowerCase().contains("Measurable".toLowerCase());
+        returnType = returnType && webElements.get(2).getText().toLowerCase().contains("Trackable".toLowerCase());
+        returnType = returnType && webElements.get(3).getText().toLowerCase().contains("Viewable".toLowerCase());
+        return returnType;
+    }
+
+    public boolean CheckForDSPDataDetails(){
+        boolean returnType;
+        By DiscrepancyDetails = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[3]/div");
+        List<WebElement> webElements = browserFactory.getDriver().findElements(DiscrepancyDetails);
+        returnType = webElements.get(0).getText().toLowerCase().contains("DSP Data".toLowerCase());
+        returnType = returnType && webElements.get(1).getText().toLowerCase().contains("Impressions".toLowerCase());
+        returnType = returnType && webElements.get(2).getText().toLowerCase().contains("Clicks".toLowerCase());
+        returnType = returnType && webElements.get(3).getText().toLowerCase().contains("Conversions".toLowerCase());
+        return returnType;
+    }
+
+    public boolean CheckForAdServerDataDetails(){
+        boolean returnType;
+        By DiscrepancyDetails = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[4]/div");
+        List<WebElement> webElements = browserFactory.getDriver().findElements(DiscrepancyDetails);
+        returnType = webElements.get(0).getText().toLowerCase().contains("Ad Server Data".toLowerCase());
+        returnType = returnType && webElements.get(1).getText().toLowerCase().contains("Impressions".toLowerCase());
+        returnType = returnType && webElements.get(2).getText().toLowerCase().contains("Clicks".toLowerCase());
+        returnType = returnType && webElements.get(3).getText().toLowerCase().contains("Conversions".toLowerCase());
+        return returnType;
     }
 
     public boolean CheckForAdvertiserPlatformTab(){

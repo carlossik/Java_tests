@@ -87,7 +87,7 @@ Feature: Ability to search for Flights
     And Click on Apply button
     Then All Flights matching search/filter combination load as results
     And  Goal Type, Goal Value, Optimisation Manager, Budget, Spend information and Flight Dates
-    And  The Currency code for the Flight is displayed next to the Budget
+    #And  The Currency code for the Flight is displayed next to the Budget
     Then LogOut ProteusWeb from Campaigns page
 
   @SearchOnProWeb

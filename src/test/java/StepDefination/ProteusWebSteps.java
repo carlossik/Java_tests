@@ -792,5 +792,54 @@ public class ProteusWebSteps extends BrowserFactory
         Assert.assertTrue("UI Clicks not matching , Reporting API numbers",
                 strNumbersUI.split(";")[1].replace(",","").equals(objResponse.FlightId.getClicks()));
     }
+
+    @When("^I search/filter for a flightName \"([^\"]*)\"$")
+    public void iSearchFilterForAFlightName(String FlightName)   {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        campaignsPage.EnterSearchFilter(FlightName, "", "");
+        GeneralUtilites.wait(2);
+    }
+
+    @Then("^Discrepancy Details displayed when flight is expanded$")
+    public void discrepancyDetailsDisplayedWhenFlightIsExpanded()   {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Discrepancy Details not displayed when flight is expanded",
+                campaignsPage.CheckForDiscrepancyDetails());
+    }
+
+    @Then("^Primary Goal Details displayed when flight is expanded$")
+    public void primaryGoalDetailsDisplayedWhenFlightIsExpanded()   {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Primary Goal Details not displayed when flight is expanded",
+                campaignsPage.CheckForPrimaryGoalDetails());
+
+    }
+
+    @And("^Expand flight details$")
+    public void expandFlightDetails()   {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        campaignsPage.ExpandFlightDetails();
+    }
+
+    @Then("^Viewability Details displayed when flight is expanded$")
+    public void viewabilityDetailsDisplayedWhenFlightIsExpanded() {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Primary Goal Details not displayed when flight is expanded",
+                campaignsPage.CheckForViewabilityDetails());
+    }
+
+    @Then("^DSP Data Details displayed when flight is expanded$")
+    public void dspDataDetailsDisplayedWhenFlightIsExpanded()  {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("DSP Data Details not displayed when flight is expanded",
+                campaignsPage.CheckForDSPDataDetails());
+    }
+
+    @Then("^AdServer Data Details displayed when flight is expanded$")
+    public void adserverDataDetailsDisplayedWhenFlightIsExpanded()   {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Ad Server Data Details not displayed when flight is expanded",
+                campaignsPage.CheckForAdServerDataDetails());
+    }
 }
 

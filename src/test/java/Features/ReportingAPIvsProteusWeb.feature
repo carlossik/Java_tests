@@ -1,7 +1,6 @@
 @ReportingAPIvsProteusWeb
 Feature: Reporting API Vs Proteus web
 
-
   Background:
     Given I am a Proteus User
     And I have the role: Pro Web Campaigns
