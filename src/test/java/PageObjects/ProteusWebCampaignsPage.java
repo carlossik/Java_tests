@@ -583,8 +583,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         return txtImpressions.getText() +";"+txtClicks.getText();
     }
 
-    public void ExpandFlightDetails()
-    {
+    public void ExpandFlightDetails() {
         GeneralUtilites.wait(1);
         mouseClick(btnExpandFlightDetails);
         GeneralUtilites.wait(1);
