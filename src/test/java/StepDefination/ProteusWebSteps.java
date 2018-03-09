@@ -841,5 +841,40 @@ public class ProteusWebSteps extends BrowserFactory
         Assert.assertTrue("Ad Server Data Details not displayed when flight is expanded",
                 campaignsPage.CheckForAdServerDataDetails());
     }
+
+    @Then("^Discrepancy Details show tooltip$")
+    public void discrepancyDetailsShowTooltip()  {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Discrepancy Details tooltip not shown",
+                campaignsPage.CheckForDiscrepancyDetailsToolTip());
+    }
+
+    @And("^Actual Goal detials show tooltip$")
+    public void actualGoalDetialsShowTooltip() {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Actual Goal detials tooltip not shown",
+                campaignsPage.CheckForActualGoalDetailsToolTip());
+    }
+
+    @And("^Viewability detials show tooltip$")
+    public void viewabilityDetialsShowTooltip()  {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Viewability detials tooltip not shown",
+                campaignsPage.CheckForViewabilityDetailsToolTip());
+    }
+
+    @And("^DSP Data detials show tooltip$")
+    public void dspDataDetialsShowTooltip()  {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("DSP Data detials tooltip not shown",
+                campaignsPage.CheckForDSPDataDetailsToolTip());
+    }
+
+    @And("^AdServer detials show tooltip$")
+    public void adserverDetialsShowTooltip()  {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Ad Server detials tooltip not shown",
+                campaignsPage.CheckForAdServerDetailsToolTip());
+    }
 }
 

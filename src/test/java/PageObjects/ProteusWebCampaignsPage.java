@@ -599,6 +599,49 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         return webElement.getText().toLowerCase().contains("Discrepancy (DSP vs Ad Server)".toLowerCase());
     }
 
+    public boolean CheckForDiscrepancyDetailsToolTip(){
+        By DiscrepancyDetails = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[5]/div[1]/span");
+        WebElement webElement = browserFactory.getDriver().findElement(DiscrepancyDetails);
+        Actions toolAct = new Actions(browserFactory.getDriver());
+        toolAct.moveToElement(webElement).build().perform();
+        GeneralUtilites.wait(2);
+        return txtTooltip.getText().toLowerCase().contains("Discrepancy between DSP and AD Server data where DSP is the source of truth".toLowerCase());
+    }
+    public boolean CheckForActualGoalDetailsToolTip(){
+        By ActualGoalDetails = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[1]/div[1]/span");
+        WebElement webElement = browserFactory.getDriver().findElement(ActualGoalDetails);
+        Actions toolAct = new Actions(browserFactory.getDriver());
+        toolAct.moveToElement(webElement).build().perform();
+        GeneralUtilites.wait(2);
+        return txtTooltip.getText().toLowerCase().contains("Actual Goal".toLowerCase());
+    }
+    public boolean CheckForViewabilityDetailsToolTip(){
+        By ActualGoalDetails = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[2]/div[1]/span");
+        WebElement webElement = browserFactory.getDriver().findElement(ActualGoalDetails);
+        Actions toolAct = new Actions(browserFactory.getDriver());
+        toolAct.moveToElement(webElement).build().perform();
+        GeneralUtilites.wait(2);
+        return txtTooltip.getText().toLowerCase().contains("Viewability".toLowerCase());
+    }
+    public boolean CheckForDSPDataDetailsToolTip(){
+
+        By ActualGoalDetails = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[3]/div[1]/span");
+        WebElement webElement = browserFactory.getDriver().findElement(ActualGoalDetails);
+        Actions toolAct = new Actions(browserFactory.getDriver());
+        toolAct.moveToElement(webElement).build().perform();
+        GeneralUtilites.wait(2);
+        return txtTooltip.getText().toLowerCase().contains("DSP data at flight level".toLowerCase());
+
+    }
+    public boolean CheckForAdServerDetailsToolTip(){
+        By ActualGoalDetails = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[4]/div[1]/span");
+        WebElement webElement = browserFactory.getDriver().findElement(ActualGoalDetails);
+        Actions toolAct = new Actions(browserFactory.getDriver());
+        toolAct.moveToElement(webElement).build().perform();
+        GeneralUtilites.wait(2);
+        return txtTooltip.getText().toLowerCase().contains("Ad server data at flight level".toLowerCase());
+    }
+
     public boolean CheckForPrimaryGoalDetails(){
         boolean returnType;
         By DiscrepancyDetails = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[1]/div");

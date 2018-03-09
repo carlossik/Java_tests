@@ -1,6 +1,5 @@
 @FlightDates
 Feature: Flight Start and End Dates shown
-
   Background:
     Given I am a Proteus User
     And I have the role: Pro Web Campaigns
@@ -16,7 +15,6 @@ Feature: Flight Start and End Dates shown
     Then Box shown with Start Date and End Date
     And A progress bar shown
 
-
   @FlightDates
   Scenario: 02 There is a box/area to show Start Date Indefinite
     When I search/filter for result without end date
@@ -24,5 +22,3 @@ Feature: Flight Start and End Dates shown
     Then Box shown with Start Date
     Then End date shown as an icon and Tooltip shown
     And A progress bar shown
-
-

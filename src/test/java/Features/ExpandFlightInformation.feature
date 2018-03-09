@@ -16,7 +16,12 @@ Feature: Proteus web Flight Information
     And Click on Apply button
     And Expand flight details
     Then Discrepancy Details displayed when flight is expanded
+    Then Discrepancy Details show tooltip
     And Primary Goal Details displayed when flight is expanded
+    And Actual Goal detials show tooltip
     And Viewability Details displayed when flight is expanded
+    And Viewability detials show tooltip
     And DSP Data Details displayed when flight is expanded
+    And DSP Data detials show tooltip
     And AdServer Data Details displayed when flight is expanded
+    And AdServer detials show tooltip
