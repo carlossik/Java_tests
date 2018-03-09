@@ -398,7 +398,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         System.out.println("\n Flight Count : " + elementTypes.size());
         boolean returnType;
         if (elementTypes.size() >= 1) {
-            returnType = elementTypes.get(0).getAttribute("class").contains("infiniteBudgetIcon");
+            returnType = elementTypes.get(0).getAttribute("class").contains("infinity");
             Actions toolAct = new Actions(browserFactory.getDriver());
             toolAct.clickAndHold(elementTypes.get(0)).build().perform();
             GeneralUtilites.wait(2);
@@ -534,6 +534,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     public boolean CheckForUnknownUser() {
         return  txtOptimisationManager.getText().toLowerCase().equals("Optimisation Manager".toLowerCase());
     }
+
     public boolean CheckForEditOptimisationManager(){
         return  btnEditOptimisationManager.isDisplayed();
     }
@@ -544,7 +545,6 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         enterText(txtEditOptimisationManager, OptManager);
         mouseClick(btnSave);
     }
-
 
     public boolean CheckOptimisationManagerDetailsSaved(String OptManager ){
         String flightName = txtSearch.getAttribute("value");
@@ -573,7 +573,6 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
             returnType = returnType && !txtTooltip.getText().equals("");
         }
         return returnType;
-
     }
 
     public String GetNumbersFromFlightDetails(){
@@ -604,8 +603,8 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         boolean returnType;
         By DiscrepancyDetails = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[1]/div");
         List<WebElement> webElements = browserFactory.getDriver().findElements(DiscrepancyDetails);
-        returnType = webElements.get(0).getText().toLowerCase().contains("Primary Goal".toLowerCase());
-        returnType = returnType && webElements.get(1).getText().toLowerCase().contains("Actual".toLowerCase());
+        returnType = webElements.get(0).getText().toLowerCase().contains("Actual Goal".toLowerCase());
+        returnType = returnType && webElements.get(1).getText().toLowerCase().contains("Overall Actual".toLowerCase());
         returnType = returnType && webElements.get(2).getText().toLowerCase().contains("7 day actual".toLowerCase());
         return returnType;
     }
@@ -615,8 +614,8 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         By DiscrepancyDetails = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[2]/div");
         List<WebElement> webElements = browserFactory.getDriver().findElements(DiscrepancyDetails);
         returnType = webElements.get(0).getText().toLowerCase().contains("Viewability".toLowerCase());
-        returnType = returnType && webElements.get(1).getText().toLowerCase().contains("Measurable".toLowerCase());
-        returnType = returnType && webElements.get(2).getText().toLowerCase().contains("Trackable".toLowerCase());
+        returnType = returnType && webElements.get(2).getText().toLowerCase().contains("Measurable".toLowerCase());
+        returnType = returnType && webElements.get(1).getText().toLowerCase().contains("Trackable".toLowerCase());
         returnType = returnType && webElements.get(3).getText().toLowerCase().contains("Viewable".toLowerCase());
         return returnType;
     }
@@ -651,8 +650,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
             mouseClick(elementType);
             GeneralUtilites.wait(2);
             List<String> browserTabs = new ArrayList<>(this.browserFactory.getDriver().getWindowHandles());
-            returnType = browserTabs.size() >= 2 && returnType  ;
-
+            returnType = browserTabs.size() >= 2 && returnType;
             this.browserFactory.getDriver().switchTo().window(browserTabs.get(1));
             this.browserFactory.getDriver().close();
             this.browserFactory.getDriver().switchTo().window(browserTabs.get(0));
