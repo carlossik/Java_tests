@@ -642,6 +642,12 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         return txtTooltip.getText().toLowerCase().contains("Ad server data at flight level".toLowerCase());
     }
 
+    public boolean CheckForNoFlightsMatchingForSearch(){
+        By Message = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div");
+        WebElement webElement = browserFactory.getDriver().findElement(Message);
+        return webElement.getText().toLowerCase().contains("Sorry, there are no flights matching your search. Please try again.".toLowerCase());
+    }
+
     public boolean CheckForPrimaryGoalDetails(){
         boolean returnType;
         By DiscrepancyDetails = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[1]/div");

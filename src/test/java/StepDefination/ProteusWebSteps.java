@@ -871,10 +871,17 @@ public class ProteusWebSteps extends BrowserFactory
     }
 
     @And("^AdServer detials show tooltip$")
-    public void adserverDetialsShowTooltip()  {
+    public void adserverDetialsShowTooltip(){
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("Ad Server detials tooltip not shown",
                 campaignsPage.CheckForAdServerDetailsToolTip());
+    }
+
+    @Then("^No flights returned and message displayed$")
+    public void noFlightsReturnedAndMessageDisplayed()  {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Flights returned and message not displayed",
+                campaignsPage.CheckForNoFlightsMatchingForSearch());
     }
 }
 
