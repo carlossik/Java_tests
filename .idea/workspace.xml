@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="14c0a861-ce48-4df8-a711-5e9e94835522" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/AbilityToSearchForFlights.feature" afterPath="$PROJECT_DIR$/src/test/java/Features/AbilityToSearchForFlights.feature" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java" afterPath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/ProteusWebCampaignsPage.class" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/ProteusWebCampaignsPage.class" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefination/ProteusWebSteps.class" afterPath="$PROJECT_DIR$/target/test-classes/StepDefination/ProteusWebSteps.class" />
     </list>
@@ -663,7 +660,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520610672751</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added scripts for searching for no flights">
+      <created>1520948163505</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1520948163505</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -805,7 +809,8 @@
     <MESSAGE value="Added Tests for Expand flight details" />
     <MESSAGE value="Fixed the changes for explanded flight details" />
     <MESSAGE value="Added scripts to check the tooltip for flight info on expand" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added scripts to check the tooltip for flight info on expand" />
+    <MESSAGE value="Added scripts for searching for no flights" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added scripts for searching for no flights" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
