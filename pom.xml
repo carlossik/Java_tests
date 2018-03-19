@@ -2,33 +2,65 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <build>
-
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>(whatever version is current)</version>
-                <configuration>
-                    <!-- or whatever version you use -->
-                    <source>9</source>
-                    <target>9</target>
-                </configuration>
-            </plugin>
-
-
-        </plugins>
-
-    </build>
-
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>groupId</groupId>
+    <groupId>ProteusWeb</groupId>
     <artifactId>repoProteusWebJava</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>ProteusWebFramework</name>
+
+    <properties>
+        <maven-compiler-plugin-version>3.7.0</maven-compiler-plugin-version>
+        <Selenuim-version>3.11.0</Selenuim-version>
+        <cucumber-version>1.2.5</cucumber-version>
+        <cucumber-report-version>1.3.1</cucumber-report-version>
+        <rest-assured-version>3.0.7</rest-assured-version>
+        <spring-version>5.0.4.RELEASE</spring-version>
+    </properties>
 
     <!-- https://mvnrepository.com/artifact/info.cukes/cucumber-java -->
     <dependencies>
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>${maven-compiler-plugin-version}</version>
+            <type>maven-plugin</type>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugin-tools/maven-plugin-annotations -->
+        <dependency>
+            <groupId>org.apache.maven.plugin-tools</groupId>
+            <artifactId>maven-plugin-annotations</artifactId>
+            <version>3.5.1</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-plugin-api</artifactId>
+            <version>3.5.3</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.maven/maven-project -->
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-project</artifactId>
+            <version>2.2.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.maven/maven-core -->
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-core</artifactId>
+            <version>3.5.3</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.maven/maven-model -->
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-model</artifactId>
+            <version>3.5.3</version>
+        </dependency>
 
         <dependency>
             <groupId>junit</groupId>
@@ -40,34 +72,34 @@
         <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>1.2.5</version>
+            <version>${cucumber-version}</version>
 
         </dependency>
 
         <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-junit</artifactId>
-            <version>1.2.5</version>
+            <version>${cucumber-version}</version>
 
         </dependency>
 
          <dependency>
              <groupId>info.cukes</groupId>
              <artifactId>cucumber-java8</artifactId>
-             <version>1.2.5</version>
+             <version>${cucumber-version}</version>
 
          </dependency>
 
          <dependency>
              <groupId>info.cukes</groupId>
              <artifactId>cucumber-core</artifactId>
-             <version>1.2.5</version>
+             <version>${cucumber-version}</version>
 
          </dependency>
          <dependency>
              <groupId>info.cukes</groupId>
              <artifactId>cucumber-picocontainer</artifactId>
-             <version>1.2.5</version>
+             <version>${cucumber-version}</version>
 
          </dependency>
          <dependency>
@@ -87,77 +119,77 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>3.8.1</version>
+            <version>${Selenuim-version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-server</artifactId>
-            <version>3.8.1</version>
+            <version>${Selenuim-version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-chrome-driver</artifactId>
-            <version>3.8.1</version>
+            <version>${Selenuim-version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-firefox-driver</artifactId>
-            <version>3.8.1</version>
+            <version>${Selenuim-version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-ie-driver</artifactId>
-            <version>3.8.1</version>
+            <version>${Selenuim-version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-remote-driver</artifactId>
-            <version>3.8.1</version>
+            <version>${Selenuim-version}</version>
         </dependency>
 
         <dependency>
             <groupId>net.masterthought</groupId>
             <artifactId>cucumber-reporting</artifactId>
-            <version>3.14.0</version>
+            <version>3.15.0</version>
         </dependency>
         <dependency>
             <groupId>net.masterthought</groupId>
             <artifactId>maven-cucumber-reporting</artifactId>
-            <version>3.14.0</version>
+            <version>3.15.0</version>
         </dependency>
 
 
         <dependency>
             <groupId>com.github.mkolisnyk</groupId>
             <artifactId>cucumber-report-generator</artifactId>
-            <version>1.3</version>
+            <version>${cucumber-report-version}</version>
         </dependency>
         <dependency>
             <groupId>com.github.mkolisnyk</groupId>
             <artifactId>cucumber-runner</artifactId>
-            <version>1.3</version>
+            <version>${cucumber-report-version}</version>
         </dependency>
         <dependency>
             <groupId>com.github.mkolisnyk</groupId>
             <artifactId>cucumber-reports</artifactId>
-            <version>1.3</version>
+            <version>${cucumber-report-version}</version>
             <type>pom</type>
         </dependency>
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
-            <version>3.0.6</version>
+            <version>${rest-assured-version}</version>
 
         </dependency>
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>json-schema-validator</artifactId>
-            <version>3.0.6</version>
+            <version>${rest-assured-version}</version>
 
         </dependency>
 
@@ -186,25 +218,31 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>5.0.3.RELEASE</version>
+            <version>${spring-version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>5.0.3.RELEASE</version>
+            <version>${spring-version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
-             <version>5.0.3.RELEASE</version>
+             <version>${spring-version}</version>
             <scope>test</scope>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>24.1-jre</version>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
-            <version>5.0.3.RELEASE</version>
+            <version>${spring-version}</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
@@ -217,4 +255,23 @@
             <version>8.0.9-rc</version>
         </dependency>
     </dependencies>
+
+    <build>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin-version}</version>
+                <configuration>
+                    <!-- or whatever version you use -->
+                    <source>9</source>
+                    <target>9</target>
+                </configuration>
+            </plugin>
+
+
+        </plugins>
+
+    </build>
 </project>

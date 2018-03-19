@@ -77,21 +77,27 @@ public class GeneralUtilites
     {
         try
         {
-            if(prop.getProperty("Browser").equals("Firefox"))
+            switch (prop.getProperty("Browser"))
             {
-                if (isProcessRunning("geckodriver.exe"))
-                    Runtime.getRuntime().exec("taskkill /F /IM " + "geckodriver.exe");
-                if (isProcessRunning("firefox.exe"))
-                    Runtime.getRuntime().exec("taskkill /F /IM " + "firefox.exe");
+                case "Firefox" :
+                    if (isProcessRunning("geckodriver.exe"))
+                        Runtime.getRuntime().exec("taskkill /F /IM " + "geckodriver.exe");
+                    if (isProcessRunning("firefox.exe"))
+                        Runtime.getRuntime().exec("taskkill /F /IM " + "firefox.exe");
+                    break;
+                case "IE" :
+                    if (isProcessRunning("IEDriverServer.exe"))
+                        Runtime.getRuntime().exec("taskkill /F /IM " + "IEDriverServer.exe");
+                    if (isProcessRunning("iexplore.exe"))
+                        Runtime.getRuntime().exec("taskkill /F /IM " + "iexplore.exe");
+                    break;
+               default:
+                   if (isProcessRunning("chromedriver.exe"))
+                       Runtime.getRuntime().exec("taskkill /F /IM " + "chromedriver.exe");
+                   if (isProcessRunning("chrome.exe"))
+                       Runtime.getRuntime().exec("taskkill /F /IM " + "chrome.exe");
+                   break;
             }
-            else
-            {
-                if (isProcessRunning("chromedriver.exe"))
-                    Runtime.getRuntime().exec("taskkill /F /IM " + "chromedriver.exe");
-                if (isProcessRunning("chrome.exe"))
-                    Runtime.getRuntime().exec("taskkill /F /IM " + "chrome.exe");
-            }
-
         }
         catch (Exception e)
         {

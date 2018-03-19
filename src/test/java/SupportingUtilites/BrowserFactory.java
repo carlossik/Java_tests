@@ -48,7 +48,7 @@ public class BrowserFactory {
                     InternetExplorerOptions options = new InternetExplorerOptions();
                     options.enableNativeEvents();
                     options.introduceFlakinessByIgnoringSecurityDomains();
-                    System.setProperty("webdriver.ie.driver", librariespath);
+                    System.setProperty("webdriver.ie.driver", librariespath+ "IEDriverServer.exe");
                     driver = new InternetExplorerDriver(options);
                     Drivers.put("IE", driver);
                 }
