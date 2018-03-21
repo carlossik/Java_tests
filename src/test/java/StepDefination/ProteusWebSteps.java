@@ -12,6 +12,9 @@ import cucumber.api.PendingException;
 import cucumber.api.Scenario;
 import cucumber.api.java.en.*;
 import org.junit.Assert;
+import org.testng.Reporter.*;
+import org.testng.asserts.*;
+import org.testng.annotations.*;
 import SupportingUtilites.*;
 import java.util.*;
 
@@ -104,6 +107,7 @@ public class ProteusWebSteps extends BrowserFactory
     public void ThenAnErrorMessageDisplayedAdvisingToTryAgain()
     {
         loginPage = new ProteusWebLoginPage(this.browserFactory);
+        org.testng.Assert.assertTrue(loginPage.CheckInvalidUsernamePassword(),"Error message not displayed for incorrect username/password");
         Assert.assertTrue("Error message not displayed for incorrect username/password",loginPage.CheckInvalidUsernamePassword());
         System.out.println(" An error message displayed advising to try again");
     }
@@ -113,6 +117,7 @@ public class ProteusWebSteps extends BrowserFactory
     public void ThenTheMainHomepageLoadsSuccessfully()
     {
         homePage = new ProteusWebHomePage(this.browserFactory);
+        org.testng.Assert.assertTrue(homePage.CheckHomePage(),"The main homepage not shown");
         Assert.assertTrue("The main homepage not shown", homePage.CheckHomePage());
     }
 
@@ -121,6 +126,7 @@ public class ProteusWebSteps extends BrowserFactory
     {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("The Campaigns page not loaded",campaignsPage.CheckCampaignsPageLoad());
+       // org.testng.Assert.assertTrue(campaignsPage.CheckCampaignsPageLoad(),"The Campaigns page not loaded",);
     }
 
     @Then("Log out, Back to Home, Flights icon shown on Campaign page")

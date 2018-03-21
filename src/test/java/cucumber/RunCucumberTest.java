@@ -20,7 +20,8 @@ import com.github.mkolisnyk.cucumber.runner.ExtendedCucumberOptions;
                 "pretty",
                 "html:target/cucumber-reports/cucumber-html-report",
                 "json:target/cucumber-reports/CucumberTestReport.json",
-                "rerun:target/cucumber-reports/rerun.txt"
+                "rerun:target/cucumber-reports/rerun.txt",
+                "junit:target/cucumber-junit-report/cucumbertestreport.xml"
         },
         plugin = { "html:target/cucumber-reports/cucumber-html-report",
                 "json:target/cucumber-reports/CucumberTestReport.json",
