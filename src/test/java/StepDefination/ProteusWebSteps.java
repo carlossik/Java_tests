@@ -1,20 +1,13 @@
 package StepDefination;
 
-
-import DataModels.ReportingAPIInput;
 import DataModels.ReportingAPIResponse;
 import PageObjects.*;
 import SupportingUtilites.BrowserFactory;
 import java.util.Properties;
 import java.io.*;
-
 import cucumber.api.PendingException;
-import cucumber.api.Scenario;
 import cucumber.api.java.en.*;
 import org.junit.Assert;
-import org.testng.Reporter.*;
-import org.testng.asserts.*;
-import org.testng.annotations.*;
 import SupportingUtilites.*;
 import java.util.*;
 
@@ -27,6 +20,7 @@ public class ProteusWebSteps extends BrowserFactory
     private ProteusWebAdminPage adminPage;
     private ProteusWebReportsPage reportsPage;
     private ProteusWebClientReportsPage clientReportsPage;
+    private ProteusWebAdvertiserAccountsPage adverAcctPage;
     private ReportingAPIResponse objResponse;
     private Properties prop = new Properties();
     private InputStream input = null;
@@ -50,23 +44,23 @@ public class ProteusWebSteps extends BrowserFactory
 
 
     @Given("I am a Proteus User")
-    public void GivenIAmAProteusUser()
-    {
-   //     Assert.assertTrue("I am not Proteus User", 1==1);
+    public void GivenIAmAProteusUser()    {
         System.out.println("I am a Proteus User step");
     }
 
 
     @Given("I have the role: Pro Web Campaigns")
-    public void GivenIHaveTheRoleProWebCampaigns()
-    {
-      //  Assert.assertTrue("I don't have the role: Pro Web Campaigns",1==1);
+    public void GivenIHaveTheRoleProWebCampaigns()    {
         System.out.println("I have the role: Pro Web Campaigns");
     }
 
+    @Given("I have the role: Pro Web Advertiser_Manager_Editor")
+    public void GivenIHaveTheRoleProWebAdvertiserManagerEditor()    {
+        System.out.println("I have the role: Pro Web Advertiser_Manager_Editor");
+    }
+
     @Given("I go to the Proteus Home URL in my browser")
-    public void GivenIGoToTheProteusHomeURLInMyBrowser()
-    {
+    public void GivenIGoToTheProteusHomeURLInMyBrowser()    {
        SupportingUtilites.BrowserFactory.initBrowser(prop.getProperty("Browser"));
         SupportingUtilites.BrowserFactory.loadApplication(prop.getProperty("ProteusWebURL").replace("{Environment}",prop.getProperty("Environment")));
         System.out.println("I go to the Proteus Home URL in my browser");
@@ -74,8 +68,7 @@ public class ProteusWebSteps extends BrowserFactory
 
 
     @When("^Login as \"([^\"]*)\"$")
-    public void loginAs(String strRole)
-    {
+    public void loginAs(String strRole)    {
         String strUserName;
         String strPassword;
         switch (strRole)
@@ -104,8 +97,7 @@ public class ProteusWebSteps extends BrowserFactory
     }
 
     @Then("An error message displayed advising to try again")
-    public void ThenAnErrorMessageDisplayedAdvisingToTryAgain()
-    {
+    public void ThenAnErrorMessageDisplayedAdvisingToTryAgain()    {
         loginPage = new ProteusWebLoginPage(this.browserFactory);
         org.testng.Assert.assertTrue(loginPage.CheckInvalidUsernamePassword(),"Error message not displayed for incorrect username/password");
         Assert.assertTrue("Error message not displayed for incorrect username/password",loginPage.CheckInvalidUsernamePassword());
@@ -114,24 +106,21 @@ public class ProteusWebSteps extends BrowserFactory
 
 
     @Then("The main homepage loads successfully")
-    public void ThenTheMainHomepageLoadsSuccessfully()
-    {
+    public void ThenTheMainHomepageLoadsSuccessfully()    {
         homePage = new ProteusWebHomePage(this.browserFactory);
         org.testng.Assert.assertTrue(homePage.CheckHomePage(),"The main homepage not shown");
         Assert.assertTrue("The main homepage not shown", homePage.CheckHomePage());
     }
 
     @Then("The Campaigns page loads successfully")
-    public void ThenTheCampaignsPageLoadsSuccessfully()
-    {
+    public void ThenTheCampaignsPageLoadsSuccessfully()    {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("The Campaigns page not loaded",campaignsPage.CheckCampaignsPageLoad());
        // org.testng.Assert.assertTrue(campaignsPage.CheckCampaignsPageLoad(),"The Campaigns page not loaded",);
     }
 
     @Then("Log out, Back to Home, Flights icon shown on Campaign page")
-    public void ThenLogOutBackToHomeFlightsIconShownOnCampaignPage()
-    {
+    public void ThenLogOutBackToHomeFlightsIconShownOnCampaignPage()    {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("Logout option not shown on Campaign page",campaignsPage.CheckLogOutExist());
         Assert.assertTrue("Flights icon not shown on Campaign page",campaignsPage.CheckFLIGHTSExist() );
@@ -139,16 +128,14 @@ public class ProteusWebSteps extends BrowserFactory
     }
 
     @Then("All Flights loads which I have access to")
-    public void ThenAllFlightsLoadsWhichIHaveAccessTo()
-    {
+    public void ThenAllFlightsLoadsWhichIHaveAccessTo()    {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         System.out.println("Need to implement this to check the list of flights");
         Assert.assertTrue("Need to implement this to check the list of flights",campaignsPage.GetFlightRowsCount()> 0);
     }
 
     @Then("All Flights matching search/filter combination load as results")
-    public void ThenAllFlightsMatchingSearchFilterCombinationLoadAsResults()
-    {
+    public void ThenAllFlightsMatchingSearchFilterCombinationLoadAsResults()    {
      /*   int intFlightCount = RestAssuredClient.GetFlightCount("/campaign-flight/search?order-by=START_DATE_DESC&page-number=0&page-size=20",
                  "FINANCE",
                  "2039",
@@ -161,23 +148,20 @@ public class ProteusWebSteps extends BrowserFactory
 
 
     @When("I search/filter for a particular result")
-    public void WhenISearchFilterForAParticularResult()
-    {
+    public void WhenISearchFilterForAParticularResult()    {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         campaignsPage.EnterSearchFilter("Automation 8", "", "");
         GeneralUtilites.wait(2);
     }
 
     @Then("Apply button is enabled")
-    public void ThenApplyButtonIsEnabled()
-    {
+    public void ThenApplyButtonIsEnabled()    {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue( "Apply button is not enabled after enter search",campaignsPage.btnApplyFilters.isEnabled());
     }
 
     @When("Click on Apply button")
-    public void WhenClickOnApplyButton()
-    {
+    public void WhenClickOnApplyButton()    {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         //  Assert.assertTrue(Page.ProteusWebCampaigns.btnApplyFilters.Enabled, "Apply button is not enabled after enter search");
         GeneralUtilites.wait(1);
@@ -187,59 +171,51 @@ public class ProteusWebSteps extends BrowserFactory
 
 
     @Then("Clear Filters button is enabled")
-    public void ThenClearFiltersButtonIsEnabled()
-    {
+    public void ThenClearFiltersButtonIsEnabled()    {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("Clear Filters button is not enabled after enter search",campaignsPage.btnClearFilters.isEnabled() );
     }
 
 
     @Then("I can search by Flight Name or Booking Code")
-    public void ThenICanSearchByFlightNameOrBookingCode()
-    {
+    public void ThenICanSearchByFlightNameOrBookingCode()    {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("I can't search by Flight Name or Booking Code",campaignsPage.CheckSearchByFlightNameOrBookingCodeExist() );
     }
 
     @Then("Filter dropdown fields exist")
-    public void ThenFilterDropdownFieldsExist()
-    {
+    public void ThenFilterDropdownFieldsExist()    {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue( "Filter dropdown fields does not exist",campaignsPage.CheckFilterExist());
     }
 
     @Then("There is a box called Campaigns")
-    public void ThenThereIsABoxCalledCampaigns()
-    {
+    public void ThenThereIsABoxCalledCampaigns()    {
         homePage = new ProteusWebHomePage(this.browserFactory);
         Assert.assertTrue( "There is a box called Campaigns does not exist",homePage.CheckCampaignTabExist());
     }
 
     @Then("Log Out button exist")
-    public void ThenLogOutButtonExist()
-    {
+    public void ThenLogOutButtonExist()    {
         homePage = new ProteusWebHomePage(this.browserFactory);
         Assert.assertTrue("Log Out button does not exist",homePage.CheckLogOutExist() );
     }
 
     @Then("LogOut ProteusWeb from Home Page")
-    public void ThenLogoutProteusWeb()
-    {
+    public void ThenLogoutProteusWeb()    {
         homePage = new ProteusWebHomePage(this.browserFactory);
         homePage.Logout();
     }
 
     @Then("LogOut ProteusWeb from Campaigns page")
-    public void ThenLogOutProteusWebFromCampaignsPage()
-    {
+    public void ThenLogOutProteusWebFromCampaignsPage()    {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         campaignsPage.Logout();
     }
 
 
     @When("^API Search for Flights$")
-    public void apiSearchForFlights()
-    {
+    public void apiSearchForFlights()    {
         int intFlightCount = RestAssuredClient.GetFlightCount("/campaign-flight/search?order-by=START_DATE_DESC&page-number=0&page-size=20",
                 "FINANCE",
                 "2039",
@@ -248,11 +224,8 @@ public class ProteusWebSteps extends BrowserFactory
         Assert.assertTrue("API Search for Flights",intFlightCount > 0);
     }
 
-
-
     @Then("^There is a box called \"([^\"]*)\"$")
-    public void thereIsABoxCalled(String tabName)
-    {
+    public void thereIsABoxCalled(String tabName)    {
         homePage = new ProteusWebHomePage(this.browserFactory);
         if(tabName.equals("Campaigns"))
             Assert.assertTrue( "There is a box called Campaigns does not exist",homePage.CheckCampaignTabExist());
@@ -265,8 +238,7 @@ public class ProteusWebSteps extends BrowserFactory
     }
 
     @When("^I click on \"([^\"]*)\" from home page$")
-    public void iClickOnFromHomePage(String tabName)
-    {
+    public void iClickOnFromHomePage(String tabName)    {
         homePage = new ProteusWebHomePage(this.browserFactory);
         if(tabName.equals("Campaigns"))
             homePage.NavigateProteusCampaign();
@@ -280,8 +252,7 @@ public class ProteusWebSteps extends BrowserFactory
     }
 
     @Then("^Administration page shown correctly$")
-    public void administrationPageShownCorrectly()
-    {
+    public void administrationPageShownCorrectly()    {
         adminPage = new ProteusWebAdminPage(this.browserFactory);
         Assert.assertTrue("Administration page not shown correctly",
                 adminPage.btnSeats.isDisplayed() &&
@@ -290,15 +261,13 @@ public class ProteusWebSteps extends BrowserFactory
     }
 
     @And("^LogOut ProteusWeb from Admin Page$")
-    public void logoutProteusWebFromAdminPage()
-    {
+    public void logoutProteusWebFromAdminPage()    {
         adminPage = new ProteusWebAdminPage(this.browserFactory);
         adminPage.Logout();
     }
 
     @And("^Able to filter seats by Operation Unit TEL$")
-    public void ableToFilterSeatsByOperationUnitTEL()
-    {
+    public void ableToFilterSeatsByOperationUnitTEL()    {
         adminPage = new ProteusWebAdminPage(this.browserFactory);
         adminPage.NavigateAdministrationSeats();
         Assert.assertTrue("Unable to filter seats by Operation Unit TEL",
@@ -306,8 +275,7 @@ public class ProteusWebSteps extends BrowserFactory
     }
 
     @And("^Able to navigate to Administration Jobs$")
-    public void ableToNavigateToAdministrationJobs()
-    {
+    public void ableToNavigateToAdministrationJobs()    {
         adminPage = new ProteusWebAdminPage(this.browserFactory);
         adminPage.NavigateAdministrationJobs();
         GeneralUtilites.wait(1);
@@ -316,8 +284,7 @@ public class ProteusWebSteps extends BrowserFactory
     }
 
     @And("^Able to navigate to Administration Master Data$")
-    public void ableToNavigateToAdministrationMasterData()
-    {
+    public void ableToNavigateToAdministrationMasterData()    {
         adminPage = new ProteusWebAdminPage(this.browserFactory);
         GeneralUtilites.wait(2);
         adminPage.NavigateAdministrationMasterData();
@@ -327,9 +294,20 @@ public class ProteusWebSteps extends BrowserFactory
                         adminPage.btnMasterDataAddJobScdTemplates.isDisplayed());
     }
 
+    @And("^Able to navigate to Administration Advertiser Accounts$")
+    public void ableToNavigateToAdministrationAdvertiserAccounts() throws Throwable {
+        adminPage = new ProteusWebAdminPage(this.browserFactory);
+        GeneralUtilites.wait(2);
+        adminPage.NavigateAdministrationAdvertiserAccounts();
+        GeneralUtilites.wait(2);
+        adverAcctPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
+        Assert.assertTrue("Unable to navigate to Administration Advertiser Accounts",
+                adverAcctPage.lblAdvertiserAccounts.isDisplayed() &&
+                        adverAcctPage.txtSearch.isDisplayed());
+    }
+
     @Then("^Reports page shown correctly$")
-    public void reportsPageShownCorrectly()
-    {
+    public void reportsPageShownCorrectly()    {
         reportsPage = new ProteusWebReportsPage(this.browserFactory);
         GeneralUtilites.wait(1);
         Assert.assertTrue("Reports page not shown correctly",
@@ -338,22 +316,19 @@ public class ProteusWebSteps extends BrowserFactory
     }
 
     @And("^LogOut ProteusWeb from Reports Page$")
-    public void logoutProteusWebFromReportsPage()
-    {
+    public void logoutProteusWebFromReportsPage()    {
         reportsPage = new ProteusWebReportsPage(this.browserFactory);
         reportsPage.Logout();
     }
 
     @And("^LogOut ProteusWeb from Client Reports Page$")
-    public void logoutProteusWebFromClientReportsPage()
-    {
+    public void logoutProteusWebFromClientReportsPage()    {
         clientReportsPage = new ProteusWebClientReportsPage(this.browserFactory);
         clientReportsPage.Logout();
     }
 
     @Then("^Client Reports page shown correctly$")
-    public void clientReportsPageShownCorrectly()
-    {
+    public void clientReportsPageShownCorrectly()    {
         clientReportsPage = new ProteusWebClientReportsPage(this.browserFactory);
 
         if(clientReportsPage.txtAdvertiser.isDisplayed())
@@ -367,8 +342,7 @@ public class ProteusWebSteps extends BrowserFactory
     }
 
     @And("^Able to navigate to Client Reports Dashboard$")
-    public void ableToNavigateToClientReportsDashboard()
-    {
+    public void ableToNavigateToClientReportsDashboard()    {
         clientReportsPage = new ProteusWebClientReportsPage(this.browserFactory);
         clientReportsPage.NavigateClientReportDashborad();
         Assert.assertTrue("Unable to navigate to Client Reports Dashboard",
@@ -376,8 +350,7 @@ public class ProteusWebSteps extends BrowserFactory
     }
 
     @And("^Able to navigate to Client Reports Performance$")
-    public void ableToNavigateToClientReportsPerformance()
-    {
+    public void ableToNavigateToClientReportsPerformance()    {
         clientReportsPage = new ProteusWebClientReportsPage(this.browserFactory);
         clientReportsPage.NavigateClientReportPerformance();
         Assert.assertTrue("Unable to navigate to Client Reports Performace",
@@ -385,8 +358,7 @@ public class ProteusWebSteps extends BrowserFactory
     }
 
     @And("^Able to navigate to Client Reports DSP$")
-    public void ableToNavigateToClientReportsDSP()
-    {
+    public void ableToNavigateToClientReportsDSP()    {
         clientReportsPage = new ProteusWebClientReportsPage(this.browserFactory);
         clientReportsPage.NavigateClientReportDSP();
         Assert.assertTrue("Unable to navigate to Client Reports DSP",
@@ -394,8 +366,7 @@ public class ProteusWebSteps extends BrowserFactory
     }
 
     @And("^Able to navigate to Client Reports Tactics$")
-    public void ableToNavigateToClientReportsTactics()
-    {
+    public void ableToNavigateToClientReportsTactics()    {
         clientReportsPage = new ProteusWebClientReportsPage(this.browserFactory);
         clientReportsPage.NavigateClientReportTactics();
         Assert.assertTrue("Unable to navigate to Client Reports Tactics",
@@ -404,8 +375,7 @@ public class ProteusWebSteps extends BrowserFactory
 
 
     @Then("^There is an option to filter by 'Requires action'$")
-    public void thereIsAnOptionToFilterByRequiresAction()
-    {
+    public void thereIsAnOptionToFilterByRequiresAction()    {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         GeneralUtilites.wait(1);
         Assert.assertTrue("Option to filter by 'Requires action' does not exist",
@@ -413,8 +383,7 @@ public class ProteusWebSteps extends BrowserFactory
     }
 
     @And("^Default 'Requires action' is unselected$")
-    public void defaultRequiresActionIsUnselected()
-    {
+    public void defaultRequiresActionIsUnselected()    {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertFalse("Default 'Requires action' is selected",
                 campaignsPage.chbxRequiresAction.getAttribute("class").equals("theme_check_2B20W theme_checked_2NQ9n"));
@@ -472,8 +441,7 @@ public class ProteusWebSteps extends BrowserFactory
 
 
     @Then("^Sort by Flight updated selected$")
-    public void sortByFlightUpdatedSelected()
-    {
+    public void sortByFlightUpdatedSelected()    {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         GeneralUtilites.wait(1);
         campaignsPage.ClickOnSortBy();
@@ -484,24 +452,21 @@ public class ProteusWebSteps extends BrowserFactory
     }
 
     @And("^There is a section called 'Flights'$")
-    public void thereIsASectionCalledFlights()
-    {
+    public void thereIsASectionCalledFlights()    {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("There is a section called 'Flights' not shown",
                 campaignsPage.txtFlightsCount.isDisplayed());
     }
 
     @And("^Each flight title includes Advertiser, Agency, Flight Names and External Booking Reference$")
-    public void CheckFlightDetailsShown()
-    {
+    public void CheckFlightDetailsShown()    {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("Each flight title does not includes Advertiser, Agency, Flight Names and External Booking Reference",
                 campaignsPage.CheckFlightDetailsShown());
     }
 
     @And("^Goal Type, Goal Value, Optimisation Manager, Budget, Spend information and Flight Dates$")
-    public void goalTypeGoalValueOptimisationManagerBudgetSpendInformationAndFlightDates()
-    {
+    public void goalTypeGoalValueOptimisationManagerBudgetSpendInformationAndFlightDates()    {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("Goal Type, Goal Value, Optimisation Manager, Budget, Spend information and Flight Dates not shown",
                 campaignsPage.CheckFlightGoalDetailsShown());
@@ -593,16 +558,13 @@ public class ProteusWebSteps extends BrowserFactory
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("There is a reporting chart icon not shown to the right hand side of the Flight",
                 campaignsPage.getReportButtonCount() > 0);
-
     }
 
     @Then("^Tooltip 'Click to go to reports' shown on mouseover$")
     public void tooltipClickToGoToReportsShownOnMouseover()  {
-
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("Tooltip 'Click to go to reports' not shown on mouseover",
                 campaignsPage.ReportToolTipShown());
-
     }
 
     @And("^There are two links in the pop up for the following core reports:$")
@@ -702,7 +664,6 @@ public class ProteusWebSteps extends BrowserFactory
         Assert.assertTrue("An edit icon in the box does not exist",
                 campaignsPage.EditGoalDetailsButtonExist());
     }
-
 
     @When("^I search/filter for a flight with no Optimisation Manager$")
     public void iSearchFilterForAFlightWithNoOptimisationManager()  {
@@ -818,7 +779,6 @@ public class ProteusWebSteps extends BrowserFactory
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("Primary Goal Details not displayed when flight is expanded",
                 campaignsPage.CheckForPrimaryGoalDetails());
-
     }
 
     @And("^Expand flight details$")
@@ -883,11 +843,6 @@ public class ProteusWebSteps extends BrowserFactory
                 campaignsPage.CheckForAdServerDetailsToolTip());
     }
 
-    @Then("^No flights returned and message displayed$")
-    public void noFlightsReturnedAndMessageDisplayed()  {
-        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
-        Assert.assertTrue("Flights returned and message not displayed",
-                campaignsPage.CheckForNoFlightsMatchingForSearch());
-    }
-}
 
+
+}

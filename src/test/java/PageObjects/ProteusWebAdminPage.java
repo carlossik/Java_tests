@@ -29,6 +29,11 @@ public class ProteusWebAdminPage extends BrowserFactory
     @CacheLookup
     public WebElement btnMasterData;
 
+    @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[1]/aside/button[4]")
+    @CacheLookup
+    public WebElement btnAdvertiserAccounts;
+
+
     @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[2]/div/div/div/div/div[1]/div[1]/button")
     @CacheLookup
     public WebElement btnAddPlatform;
@@ -87,6 +92,12 @@ public class ProteusWebAdminPage extends BrowserFactory
     {
         GeneralUtilites.wait(1);
         mouseClick(btnMasterData );
+    }
+
+    public void NavigateAdministrationAdvertiserAccounts()
+    {
+        GeneralUtilites.wait(1);
+        mouseClick(btnAdvertiserAccounts );
     }
 
     public boolean FilterOperationalUnit()

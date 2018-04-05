@@ -24,18 +24,15 @@ public class GeneralUtilites
         }
     }
 
-    public static String randomStringGenerator(int intSize)
-    {
+    public static String randomStringGenerator(int intSize)    {
       return  new RandomString(intSize).nextString();
     }
 
-    public static int RandomNumber(int Low, int High)
-    {
+    public static int RandomNumber(int Low, int High)    {
         return  new Random().nextInt((High - Low) + 1) + Low;
     }
 
-    public static void wait(int seconds)
-    {
+    public static void wait(int seconds)    {
         try
         {
             Thread.sleep(seconds * 1000);
@@ -46,8 +43,7 @@ public class GeneralUtilites
         }
     }
 
-    public static void wait(double seconds)
-    {
+    public static void wait(double seconds)    {
         try
         {
         Thread.sleep((int)seconds * 1000);
@@ -58,8 +54,7 @@ public class GeneralUtilites
         }
     }
 
-    private static boolean isProcessRunning(String serviceName) throws Exception
-    {
+    private static boolean isProcessRunning(String serviceName) throws Exception    {
         Process p = Runtime.getRuntime().exec( "tasklist");
         BufferedReader reader = new BufferedReader
                 (new InputStreamReader(p.getInputStream()));
@@ -73,8 +68,7 @@ public class GeneralUtilites
         return false;
     }
 
-    public static void KillProcesses()
-    {
+    public static void KillProcesses()    {
         try
         {
             switch (prop.getProperty("Browser"))
@@ -118,12 +112,10 @@ public class GeneralUtilites
             default:
                 strQuery = prop.getProperty("SQLQueryFlightNameForFlightId") + strCondition ;
         }
-
         ApplicationContext context =
                 new ClassPathXmlApplicationContext("Beans.xml");
         JDBCTemplate objJDBCTemp = (JDBCTemplate) context.getBean("JDBCTemplate");
         List<campaign_flight> objCamFlgt = objJDBCTemp.GetCampaignFlightDetails(strQuery);
         return objCamFlgt.get(0).getcampaign_flight_name();
     }
-
 }

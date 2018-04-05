@@ -10,6 +10,4 @@ public class CampaignFlightMapper implements RowMapper<campaign_flight>  {
         objCamFlg.setcampaign_flight_name(rs.getString("campaign_flight_name"));
         return objCamFlg;
     }
-
-
 }

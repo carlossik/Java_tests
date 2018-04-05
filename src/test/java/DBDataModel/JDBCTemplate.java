@@ -14,7 +14,6 @@ public class JDBCTemplate implements CampaignFlightDAO, RecordCountDAO {
         this.jdbcTemplateObject = new JdbcTemplate(dataSource);
     }
 
-
     public List<campaign_flight> GetCampaignFlightDetails(String strSQL) {
 
         return jdbcTemplateObject.query(strSQL, new CampaignFlightMapper());
