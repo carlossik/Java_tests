@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14c0a861-ce48-4df8-a711-5e9e94835522" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Features/AdvertiserAccounts.feature" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdvertiserAccountsPage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebAdvertiserSteps.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Beans.xml" afterPath="$PROJECT_DIR$/src/main/resources/Beans.xml" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DBDataModel/CampaignFlightMapper.java" afterPath="$PROJECT_DIR$/src/test/java/DBDataModel/CampaignFlightMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DBDataModel/JDBCTemplate.java" afterPath="$PROJECT_DIR$/src/test/java/DBDataModel/JDBCTemplate.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/ProteusWebOtherModules.feature" afterPath="$PROJECT_DIR$/src/test/java/Features/RegressionOtherModules.feature" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdminPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdminPage.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Resources/Beans.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java" afterPath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SupportingUtilites/GeneralUtilites.java" afterPath="$PROJECT_DIR$/src/test/java/SupportingUtilites/GeneralUtilites.java" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/CucumberTestReport.json" afterPath="$PROJECT_DIR$/target/cucumber-reports/CucumberTestReport.json" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/rerun.txt" afterPath="$PROJECT_DIR$/target/cucumber-reports/rerun.txt" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefination/ProteusWebSteps.class" afterPath="$PROJECT_DIR$/target/test-classes/StepDefination/ProteusWebSteps.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SupportingUtilites/GeneralUtilites.class" afterPath="$PROJECT_DIR$/target/test-classes/SupportingUtilites/GeneralUtilites.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/workspace.xml" afterPath="$PROJECT_DIR$/target/test-classes/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/mavensurefireplugin/target/" />
@@ -78,7 +62,7 @@
       <file leaf-file-name="AdvertiserAccounts.feature" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Features/AdvertiserAccounts.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
+            <state relative-caret-position="777">
               <caret line="69" column="21" lean-forward="false" selection-start-line="69" selection-start-column="3" selection-end-line="69" selection-end-column="21" />
               <folding />
             </state>
@@ -559,22 +543,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Features" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="repoProteusWebJava" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="PageObjects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="repoProteusWebJava" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="StepDefination" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -952,7 +920,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521734700674</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Added AdvertiserAccounts tests">
+      <created>1522934349124</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1522934349124</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -998,7 +973,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.55335534" sideWeight="0.35885417" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3552769" sideWeight="0.6411458" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26959246" sideWeight="0.6411458" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2431243" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1068,7 +1043,8 @@
     <MESSAGE value="Updated selenium version" />
     <MESSAGE value="Added options to run tests from command prompt" />
     <MESSAGE value="Updated query SQLQueryFlightNameWithNoTrader" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated query SQLQueryFlightNameWithNoTrader" />
+    <MESSAGE value="Added AdvertiserAccounts tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added AdvertiserAccounts tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1755,7 +1731,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Features/AdvertiserAccounts.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
+        <state relative-caret-position="777">
           <caret line="69" column="21" lean-forward="false" selection-start-line="69" selection-start-column="3" selection-end-line="69" selection-end-column="21" />
           <folding />
         </state>
