@@ -24,6 +24,10 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
     private ReportingAPIResponse objResponse;
     private Properties prop = new Properties();
     private InputStream input = null;
+    private String AdvertiserMerger;
+    private String MergedAdvertiser;
+    private String AdvertiserNameBeforeEdit;
+    private String AdvertiserNameAfterEdit;
     private static String currentPath = System.getProperty("user.dir");
 
     public ProteusWebAdvertiserSteps() {
@@ -63,17 +67,10 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
     @When("^Search for a Advertiser Name \"([^\"]*)\"$")
     public void searchForAAdvertiserName(String strSearchKey)  {
         advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
-        enterText(advertiserAccountsPage.txtSearch, strSearchKey);
-        mouseClick(advertiserAccountsPage.btnApplyFilters);
-        GeneralUtilites.wait(1);
+        advertiserAccountsPage.SearchForOnAdvertiserPage(strSearchKey);
     }
 
-    @Then("^Advertisers filtered as per search key \"([^\"]*)\"$")
-    public void advertisersFilteredAsPerSearchKey(String strSearchKey)   {
-        advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
-        Assert.assertTrue( "Advertisers not filtered as per search key",
-                advertiserAccountsPage.CheckForAdvertiserRows(strSearchKey));
-    }
+
 
     @And("^Advertiser Account details displayed on the page$")
     public void advertiserAccountDetailsDisplayedOnThePage()  {
@@ -133,7 +130,126 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
         GeneralUtilites.wait(2);
         Assert.assertTrue( "Advertiser Platforms tab not opened on clicking Platform icon",
                 advertiserAccountsPage.CheckForAdvertiserPlatformTab());
+    }
+
+    @When("^Search for an Advertiser to Merge$")
+    public void searchForAnAdvertiserToMerge()  {
+
+        advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
+        this.AdvertiserMerger = GeneralUtilites.getAdvertiserNameDB("NoAgency");
+        advertiserAccountsPage.SearchForAdvertiser(this.AdvertiserMerger);
+        GeneralUtilites.wait(2);
+    }
+
+    @And("^Select the Advertiser to be merged and Save$")
+    public void selectTheAdvertiserToBeMergedAndSave(){
+        advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
+       this.MergedAdvertiser = advertiserAccountsPage.SelectAdvertiserToMerge();
+        GeneralUtilites.wait(1);
+    }
+
+    @Then("^Second Advertiser details page shown$")
+    public void secondAdvertiserDetailsPageShown(){
+       advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
+       Assert.assertTrue("Second Advertiser details page not shown", advertiserAccountsPage.txtAdvertiserName.getAttribute("value").toLowerCase().equals(this.MergedAdvertiser.toLowerCase()));
+       mouseClick(advertiserAccountsPage.btnBack);
+    }
+
+    @When("^Search for Advertiser one merged$")
+    public void searchForAdvertiserOneMerged() {
+        advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
+        advertiserAccountsPage.SearchForOnAdvertiserPage(this.AdvertiserMerger);
+    }
+
+    @Then("^No Advertisers returned$")
+    public void noAdvertisersReturned()  {
+        advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
+        Assert.assertTrue("Advertiser Still exist after Merge", advertiserAccountsPage.CheckForNoAdvertiserMatched());
+    }
+
+    @When("^Search for Advertiser two merged$")
+    public void searchForAdvertiserTwoMerged()  {
+        advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
+        advertiserAccountsPage.SearchForOnAdvertiserPage(this.MergedAdvertiser);
+    }
 
 
+    @Then("^Advertisers filtered as per search key \"([^\"]*)\"$")
+    public void advertisersFilteredAsPerSearchKey(String strSearchKey)   {
+        advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
+        switch (strSearchKey)
+        {
+            case "MergedAdvertiser":
+                Assert.assertTrue( "Advertisers not filtered as per search key",
+                        advertiserAccountsPage.CheckForAdvertiserRows(this.MergedAdvertiser));
+                break;
+            case "AdvertiserMerged":
+                Assert.assertTrue( "Advertisers not filtered as per search key",
+                        advertiserAccountsPage.CheckForAdvertiserRows(this.AdvertiserMerger));
+                break;
+            case "AdvertiserNameAfterEdit":
+                Assert.assertTrue( "Advertisers not filtered as per search key",
+                        advertiserAccountsPage.CheckForAdvertiserRows(this.AdvertiserNameAfterEdit));
+                break;
+            case "AdvertiserNameBeforeEdit":
+                Assert.assertTrue( "Advertisers not filtered as per search key",
+                        advertiserAccountsPage.CheckForAdvertiserRows(this.AdvertiserNameBeforeEdit));
+                break;
+            default:
+                Assert.assertTrue( "Advertisers not filtered as per search key",
+                        advertiserAccountsPage.CheckForAdvertiserRows(strSearchKey));
+                break;
+        }
+
+
+    }
+
+    @And("^Select the Advertiser to be merged and Cancel$")
+    public void selectTheAdvertiserToBeMergedAndCancel() {
+        advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
+        this.MergedAdvertiser = advertiserAccountsPage.SelectAdvertiserToMergeAndCancel();
+        GeneralUtilites.wait(1);
+    }
+
+    @Then("^First Advertiser details page shown$")
+    public void firstAdvertiserDetailsPageShown()   {
+        advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
+        Assert.assertTrue("First Advertiser details page not shown", advertiserAccountsPage.txtAdvertiserName.getAttribute("value").toLowerCase().contains(this.AdvertiserMerger.toLowerCase()));
+        mouseClick(advertiserAccountsPage.btnBack);
+    }
+
+    @When("^Click on edit icon to change advertiser information$")
+    public void clickOnEditIconToChangeAdvertiserInformation()  {
+        advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
+        mouseClick(advertiserAccountsPage.btnEditAdvertiserDetails);
+    }
+
+    @And("^Update Advertiser, Agency Name and save the details$")
+    public void updateAdvertiserAgencyNameAndSaveTheDetails()  {
+        advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
+        this.AdvertiserNameAfterEdit = this.AdvertiserNameBeforeEdit + "Edited";
+        advertiserAccountsPage.EditAdvertiserName(this.AdvertiserNameAfterEdit);
+    }
+
+    @When("^Search for an Advertiser to EditName$")
+    public void searchForAnAdvertiserToEditName()  {
+        advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
+        this.AdvertiserNameBeforeEdit = GeneralUtilites.getAdvertiserNameDB("EditName");
+        advertiserAccountsPage.SearchForAdvertiser(this.AdvertiserNameBeforeEdit);
+        GeneralUtilites.wait(2);
+    }
+
+    @When("^Search for Advertiser before edit name$")
+    public void searchForAdvertiserBeforeEditName()   {
+        advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
+        advertiserAccountsPage.SearchForAdvertiser(this.AdvertiserNameBeforeEdit);
+        GeneralUtilites.wait(2);
+    }
+
+    @When("^Search for Advertiser with updated name$")
+    public void searchForAdvertiserWithUpdatedName()   {
+        advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
+        advertiserAccountsPage.SearchForAdvertiser(this.AdvertiserNameAfterEdit);
+        GeneralUtilites.wait(2);
     }
 }

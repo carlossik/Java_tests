@@ -1,4 +1,5 @@
 package SupportingUtilites;
+import DBDataModel.Advertiser_Account;
 import DBDataModel.JDBCTemplate;
 import DBDataModel.campaign_flight;
 import org.springframework.context.ApplicationContext;
@@ -117,5 +118,23 @@ public class GeneralUtilites
         JDBCTemplate objJDBCTemp = (JDBCTemplate) context.getBean("JDBCTemplate");
         List<campaign_flight> objCamFlgt = objJDBCTemp.GetCampaignFlightDetails(strQuery);
         return objCamFlgt.get(0).getcampaign_flight_name();
+    }
+
+
+    public static String getAdvertiserNameDB(String strCondition){
+        String strQuery;
+        switch (strCondition)
+        {
+            case "NoAgency" :
+                strQuery = prop.getProperty("SQLQueryAdvertiserNameWithNoAgency");
+                break;
+            default:
+                strQuery = prop.getProperty("SQLQueryAdvertiserNameWithNoAgency");
+        }
+        ApplicationContext context =
+                new ClassPathXmlApplicationContext("Beans.xml");
+        JDBCTemplate objJDBCTemp = (JDBCTemplate) context.getBean("JDBCTemplate");
+        List<Advertiser_Account> objAdvAcc = objJDBCTemp.GetAdvertiserAccountDetails(strQuery);
+        return objAdvAcc.get(0).getAdvertiserName();
     }
 }

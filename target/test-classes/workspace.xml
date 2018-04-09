@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14c0a861-ce48-4df8-a711-5e9e94835522" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Features/AdvertiserAccounts.feature" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdvertiserAccountsPage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebAdvertiserSteps.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Beans.xml" afterPath="$PROJECT_DIR$/src/main/resources/Beans.xml" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DBDataModel/CampaignFlightMapper.java" afterPath="$PROJECT_DIR$/src/test/java/DBDataModel/CampaignFlightMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DBDataModel/JDBCTemplate.java" afterPath="$PROJECT_DIR$/src/test/java/DBDataModel/JDBCTemplate.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/ProteusWebOtherModules.feature" afterPath="$PROJECT_DIR$/src/test/java/Features/RegressionOtherModules.feature" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdminPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdminPage.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Resources/Beans.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java" afterPath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SupportingUtilites/GeneralUtilites.java" afterPath="$PROJECT_DIR$/src/test/java/SupportingUtilites/GeneralUtilites.java" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/CucumberTestReport.json" afterPath="$PROJECT_DIR$/target/cucumber-reports/CucumberTestReport.json" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/rerun.txt" afterPath="$PROJECT_DIR$/target/cucumber-reports/rerun.txt" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefination/ProteusWebSteps.class" afterPath="$PROJECT_DIR$/target/test-classes/StepDefination/ProteusWebSteps.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SupportingUtilites/GeneralUtilites.class" afterPath="$PROJECT_DIR$/target/test-classes/SupportingUtilites/GeneralUtilites.class" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/repoProteusWebJava.iml" afterPath="$PROJECT_DIR$/repoProteusWebJava.iml" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Features/AdvertiserAccounts.feature" afterPath="$PROJECT_DIR$/src/test/java/Features/AdvertiserAccounts.feature" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/workspace.xml" afterPath="$PROJECT_DIR$/target/test-classes/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -45,333 +33,92 @@
   <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" userTempatePath="" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ProteusWebSteps.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java">
+      <file leaf-file-name="DisplayPlatformForFlight.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Features/DisplayPlatformForFlight.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6750">
-              <caret line="263" column="16" lean-forward="false" selection-start-line="263" selection-start-column="16" selection-end-line="263" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1630#1631#0" expanded="true" />
-                <element signature="e#1702#1703#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="621">
+              <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="72" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdvertiserAccounts.feature" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ExpandFlightInformation.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Features/ExpandFlightInformation.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="12" column="2" lean-forward="false" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbilityToDeeplinkTableauReports.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Features/AbilityToDeeplinkTableauReports.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReadOnlyFlightDates.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Features/ReadOnlyFlightDates.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdvertiserAccounts.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Features/AdvertiserAccounts.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1332">
-              <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+            <state relative-caret-position="765">
+              <caret line="93" column="14" lean-forward="false" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbilityToSortFlights.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Features/AbilityToSortFlights.feature">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1134">
-              <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+            <state relative-caret-position="1340">
+              <caret line="283" column="20" lean-forward="true" selection-start-line="283" selection-start-column="20" selection-end-line="283" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProteusWebAdvertiserSteps.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebAdvertiserSteps.java">
+      <file leaf-file-name="ReportingAPIvsProteusWeb.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Features/ReportingAPIvsProteusWeb.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2673">
-              <caret line="109" column="44" lean-forward="false" selection-start-line="109" selection-start-column="44" selection-end-line="109" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="351">
+              <caret line="13" column="27" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProteusWebAdvertiserAccountsPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdvertiserAccountsPage.java">
+      <file leaf-file-name="AbilityToSearchForFlights.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Features/AbilityToSearchForFlights.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3078">
-              <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4958#4959#0" expanded="true" />
-                <element signature="e#4999#5000#0" expanded="true" />
-                <element signature="e#5669#5670#0" expanded="true" />
-                <element signature="e#5724#5725#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="2754">
+              <caret line="102" column="36" lean-forward="false" selection-start-line="102" selection-start-column="36" selection-end-line="102" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LocatingElementHandler.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.11.0/selenium-support-3.11.0.jar!/org/openqa/selenium/support/pagefactory/internal/LocatingElementHandler.class">
+      <file leaf-file-name="AbilityToEditGoalData.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Features/AbilityToEditGoalData.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="729">
-              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-              <folding>
-                <marker date="1521458446748" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1521458446748" expanded="false" signature="172:446" ph="..." />
-                <marker date="1521458446748" expanded="false" signature="615:626" ph=" { " />
-                <marker date="1521458446748" expanded="false" signature="649:655" ph=" }" />
-                <marker date="1521458446748" expanded="true" signature="747:1368" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RemoteWebElement.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.11.0/selenium-remote-driver-3.11.0.jar!/org/openqa/selenium/remote/RemoteWebElement.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5589">
-              <caret line="292" column="0" lean-forward="false" selection-start-line="292" selection-start-column="0" selection-end-line="292" selection-end-column="0" />
-              <folding>
-                <marker date="1521458446925" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1521458446925" expanded="false" signature="150:1429" ph="..." />
-                <marker date="1521458446925" expanded="true" signature="1811:1818" ph="{}" />
-                <marker date="1521458446925" expanded="true" signature="1904:1993" ph="{...}" />
-                <marker date="1521458446925" expanded="false" signature="2044:2055" ph=" { " />
-                <marker date="1521458446925" expanded="false" signature="2076:2082" ph=" }" />
-                <marker date="1521458446925" expanded="false" signature="2109:2120" ph=" { " />
-                <marker date="1521458446925" expanded="false" signature="2135:2141" ph=" }" />
-                <marker date="1521458446925" expanded="false" signature="2175:2186" ph=" { " />
-                <marker date="1521458446925" expanded="false" signature="2199:2205" ph=" }" />
-                <marker date="1521458446925" expanded="false" signature="2261:2272" ph=" { " />
-                <marker date="1521458446925" expanded="false" signature="2301:2307" ph=" }" />
-                <marker date="1521458446925" expanded="false" signature="2332:2343" ph=" { " />
-                <marker date="1521458446925" expanded="false" signature="2404:2410" ph=" }" />
-                <marker date="1521458446925" expanded="false" signature="2436:2447" ph=" { " />
-                <marker date="1521458446925" expanded="false" signature="2509:2515" ph=" }" />
-                <marker date="1521458446925" expanded="true" signature="2570:3082" ph="{...}" />
-                <marker date="1521458446925" expanded="true" signature="3126:3630" ph="{...}" />
-                <marker date="1521458446925" expanded="false" signature="3655:3666" ph=" { " />
-                <marker date="1521458446925" expanded="false" signature="3727:3733" ph=" }" />
-                <marker date="1521458446925" expanded="true" signature="3766:3874" ph="{...}" />
-                <marker date="1521458446925" expanded="true" signature="3920:4051" ph="{...}" />
-                <marker date="1521458446925" expanded="false" signature="4102:4113" ph=" { " />
-                <marker date="1521458446925" expanded="false" signature="4157:4163" ph=" }" />
-                <marker date="1521458446925" expanded="true" signature="4197:4516" ph="{...}" />
-                <marker date="1521458446925" expanded="true" signature="4549:4867" ph="{...}" />
-                <marker date="1521458446925" expanded="true" signature="4897:5040" ph="{...}" />
-                <marker date="1521458446925" expanded="true" signature="5093:5280" ph="{...}" />
-                <marker date="1521458446925" expanded="false" signature="5329:5340" ph=" { " />
-                <marker date="1521458446925" expanded="false" signature="5369:5375" ph=" }" />
-                <marker date="1521458446925" expanded="false" signature="5417:5428" ph=" { " />
-                <marker date="1521458446925" expanded="false" signature="5456:5462" ph=" }" />
-                <marker date="1521458446925" expanded="true" signature="5529:6056" ph="{...}" />
-                <marker date="1521458446925" expanded="true" signature="6130:6981" ph="{...}" />
-                <marker date="1521458446925" expanded="false" signature="7034:7045" ph=" { " />
-                <marker date="1521458446925" expanded="false" signature="7082:7088" ph=" }" />
-                <marker date="1521458446925" expanded="false" signature="7148:7159" ph=" { " />
-                <marker date="1521458446925" expanded="false" signature="7197:7203" ph=" }" />
-                <marker date="1521458446925" expanded="false" signature="7262:7273" ph=" { " />
-                <marker date="1521458446925" expanded="false" signature="7317:7323" ph=" }" />
-                <marker date="1521458446925" expanded="false" signature="7389:7400" ph=" { " />
-                <marker date="1521458446925" expanded="false" signature="7445:7451" ph=" }" />
-                <marker date="1521458446925" expanded="false" signature="7506:7517" ph=" { " />
-                <marker date="1521458446925" expanded="false" signature="7556:7562" ph=" }" />
-                <marker date="1521458446925" expanded="false" signature="7624:7635" ph=" { " />
-                <marker date="1521458446925" expanded="false" signature="7675:7681" ph=" }" />
-                <marker date="1521458446925" expanded="false" signature="7741:7752" ph=" { " />
-                <marker date="1521458446925" expanded="false" signature="7797:7803" ph=" }" />
-                <marker date="1521458446925" expanded="false" signature="7870:7881" ph=" { " />
-                <marker date="1521458446925" expanded="false" signature="7927:7933" ph=" }" />
-                <marker date="1521458446925" expanded="false" signature="7995:8006" ph=" { " />
-                <marker date="1521458446925" expanded="false" signature="8053:8059" ph=" }" />
-                <marker date="1521458446925" expanded="false" signature="8128:8139" ph=" { " />
-                <marker date="1521458446925" expanded="false" signature="8187:8193" ph=" }" />
-                <marker date="1521458446925" expanded="false" signature="8249:8260" ph=" { " />
-                <marker date="1521458446925" expanded="false" signature="8300:8306" ph=" }" />
-                <marker date="1521458446925" expanded="false" signature="8369:8380" ph=" { " />
-                <marker date="1521458446925" expanded="false" signature="8421:8427" ph=" }" />
-                <marker date="1521458446925" expanded="true" signature="8494:8562" ph="{...}" />
-                <marker date="1521458446925" expanded="true" signature="8636:8705" ph="{...}" />
-                <marker date="1521458446925" expanded="false" signature="8763:8774" ph=" { " />
-                <marker date="1521458446925" expanded="false" signature="8817:8823" ph=" }" />
-                <marker date="1521458446925" expanded="false" signature="8888:8899" ph=" { " />
-                <marker date="1521458446925" expanded="false" signature="8943:8949" ph=" }" />
-                <marker date="1521458446925" expanded="true" signature="9025:9089" ph="{...}" />
-                <marker date="1521458446925" expanded="true" signature="9129:9689" ph="{...}" />
-                <marker date="1521458446925" expanded="false" signature="9716:9727" ph=" { " />
-                <marker date="1521458446925" expanded="false" signature="9753:9759" ph=" }" />
-                <marker date="1521458446925" expanded="false" signature="9800:9811" ph=" { " />
-                <marker date="1521458446925" expanded="false" signature="9830:9836" ph=" }" />
-                <marker date="1521458446925" expanded="true" signature="9871:10191" ph="{...}" />
-                <marker date="1521458446925" expanded="true" signature="10224:10536" ph="{...}" />
-                <marker date="1521458446925" expanded="true" signature="10569:10905" ph="{...}" />
-                <marker date="1521458446925" expanded="true" signature="10938:11390" ph="{...}" />
-                <marker date="1521458446925" expanded="true" signature="11432:12238" ph="{...}" />
-                <marker date="1521458446925" expanded="true" signature="11467:12231" ph="{...}" />
-                <marker date="1521458446925" expanded="false" signature="11504:11523" ph=" { " />
-                <marker date="1521458446925" expanded="false" signature="11585:11599" ph=" }" />
-                <marker date="1521458446925" expanded="true" signature="11639:11998" ph="{...}" />
-                <marker date="1521458446925" expanded="false" signature="12033:12052" ph=" { " />
-                <marker date="1521458446925" expanded="false" signature="12095:12109" ph=" }" />
-                <marker date="1521458446925" expanded="false" signature="12151:12170" ph=" { " />
-                <marker date="1521458446925" expanded="false" signature="12207:12221" ph=" }" />
-                <marker date="1521458446925" expanded="true" signature="12335:13070" ph="{...}" />
-                <marker date="1521458446925" expanded="true" signature="13101:13244" ph="{...}" />
-                <marker date="1521458446925" expanded="true" signature="13286:13425" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImmutableMap.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/24.1-jre/guava-24.1-jre.jar!/com/google/common/collect/ImmutableMap.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="999">
-              <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-              <folding>
-                <marker date="1521459644359" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1521459644359" expanded="false" signature="149:1220" ph="..." />
-                <marker date="1521459644359" expanded="true" signature="1222:1284" ph="@{...}" />
-                <marker date="1521459644359" expanded="true" signature="1888:1972" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="2190:2496" ph="{...}" />
-                <marker date="1521459644359" expanded="false" signature="2546:2557" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="2590:2596" ph=" }" />
-                <marker date="1521459644359" expanded="true" signature="2656:2667" ph=" { " />
-                <marker date="1521459644359" expanded="true" signature="2700:2706" ph=" }" />
-                <marker date="1521459644359" expanded="true" signature="2779:2881" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="2966:3085" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="3182:3318" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="3427:3580" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="3636:3756" ph="{...}" />
-                <marker date="1521459644359" expanded="false" signature="3819:3830" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="3864:3870" ph=" }" />
-                <marker date="1521459644359" expanded="true" signature="3976:4115" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="4231:4343" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="4457:4597" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="4685:5099" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="5223:5632" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="5743:6087" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="6108:6115" ph="{}" />
-                <marker date="1521459644359" expanded="true" signature="6121:6139" ph="/**...*/" />
-                <marker date="1521459644359" expanded="true" signature="6144:6181" ph="@{...}" />
-                <marker date="1521459644359" expanded="false" signature="6214:6225" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="6267:6273" ph=" }" />
-                <marker date="1521459644359" expanded="true" signature="6279:6297" ph="/**...*/" />
-                <marker date="1521459644359" expanded="true" signature="6302:6339" ph="@{...}" />
-                <marker date="1521459644359" expanded="false" signature="6386:6397" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="6439:6445" ph=" }" />
-                <marker date="1521459644359" expanded="true" signature="6451:6469" ph="/**...*/" />
-                <marker date="1521459644359" expanded="false" signature="6549:6560" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="6602:6608" ph=" }" />
-                <marker date="1521459644359" expanded="true" signature="6614:6632" ph="/**...*/" />
-                <marker date="1521459644359" expanded="false" signature="6691:6702" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="6744:6750" ph=" }" />
-                <marker date="1521459644359" expanded="true" signature="6756:6774" ph="/**...*/" />
-                <marker date="1521459644359" expanded="true" signature="6883:6941" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="6947:6965" ph="/**...*/" />
-                <marker date="1521459644359" expanded="true" signature="7090:7148" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="7154:7172" ph="/**...*/" />
-                <marker date="1521459644359" expanded="true" signature="7288:7346" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="7352:7370" ph="/**...*/" />
-                <marker date="1521459644359" expanded="true" signature="7493:7551" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="7557:7575" ph="/**...*/" />
-                <marker date="1521459644359" expanded="false" signature="7655:7666" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="7708:7714" ph=" }" />
-                <marker date="1521459644359" expanded="true" signature="7720:7738" ph="/**...*/" />
-                <marker date="1521459644359" expanded="true" signature="7844:7902" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="7908:7926" ph="/**...*/" />
-                <marker date="1521459644359" expanded="false" signature="7978:7989" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="8031:8037" ph=" }" />
-                <marker date="1521459644359" expanded="true" signature="8043:8061" ph="/**...*/" />
-                <marker date="1521459644359" expanded="false" signature="8135:8146" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="8188:8194" ph=" }" />
-                <marker date="1521459644359" expanded="true" signature="8200:8218" ph="/**...*/" />
-                <marker date="1521459644359" expanded="false" signature="8264:8275" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="8317:8323" ph=" }" />
-                <marker date="1521459644359" expanded="false" signature="8353:8364" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="8388:8394" ph=" }" />
-                <marker date="1521459644359" expanded="false" signature="8452:8463" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="8492:8498" ph=" }" />
-                <marker date="1521459644359" expanded="false" signature="8560:8571" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="8608:8614" ph=" }" />
-                <marker date="1521459644359" expanded="true" signature="8759:8855" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="8905:9052" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="9148:9279" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="9369:9735" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="9508:9728" ph="{...}" />
-                <marker date="1521459644359" expanded="false" signature="9546:9565" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="9596:9610" ph=" }" />
-                <marker date="1521459644359" expanded="false" signature="9639:9658" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="9704:9718" ph=" }" />
-                <marker date="1521459644359" expanded="false" signature="9772:9783" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="9860:9866" ph=" }" />
-                <marker date="1521459644359" expanded="true" signature="9911:10049" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="10155:10511" ph="{...}" />
-                <marker date="1521459644359" expanded="false" signature="10567:10578" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="10615:10621" ph=" }" />
-                <marker date="1521459644359" expanded="false" signature="10687:10698" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="10740:10746" ph=" }" />
-                <marker date="1521459644359" expanded="false" signature="10776:10787" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="10800:10806" ph=" }" />
-                <marker date="1521459644359" expanded="false" signature="10836:10847" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="10878:10884" ph=" }" />
-                <marker date="1521459644359" expanded="false" signature="10911:10922" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="10967:10973" ph=" }" />
-                <marker date="1521459644359" expanded="true" signature="11031:12055" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="11214:11610" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="11641:11799" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="11872:12049" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="12179:13993" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="12230:12241" ph="{}" />
-                <marker date="1521459644359" expanded="false" signature="12268:12283" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="12315:12325" ph=" }" />
-                <marker date="1521459644359" expanded="false" signature="12365:12380" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="12414:12424" ph=" }" />
-                <marker date="1521459644359" expanded="false" signature="12486:12501" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="12543:12553" ph=" }" />
-                <marker date="1521459644359" expanded="true" signature="12616:12758" ph="{...}" />
-                <marker date="1521459644359" expanded="false" signature="12791:12806" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="12847:12857" ph=" }" />
-                <marker date="1521459644359" expanded="false" signature="12888:12903" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="12939:12949" ph=" }" />
-                <marker date="1521459644359" expanded="false" signature="12983:12998" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="13040:13050" ph=" }" />
-                <marker date="1521459644359" expanded="true" signature="13124:13987" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="13298:13976" ph="{...}" />
-                <marker date="1521459644359" expanded="false" signature="13340:13363" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="13396:13414" ph=" }" />
-                <marker date="1521459644359" expanded="true" signature="13472:13962" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="13628:13943" ph="{...}" />
-                <marker date="1521459644359" expanded="false" signature="13671:13702" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="13731:13757" ph=" }" />
-                <marker date="1521459644359" expanded="false" signature="13816:13847" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="13895:13921" ph=" }" />
-                <marker date="1521459644359" expanded="true" signature="14080:15092" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="14118:14129" ph="{}" />
-                <marker date="1521459644359" expanded="true" signature="14252:14355" ph="{...}" />
-                <marker date="1521459644359" expanded="false" signature="14395:14410" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="14446:14456" ph=" }" />
-                <marker date="1521459644359" expanded="true" signature="14509:14978" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="14577:14928" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="14610:14629" ph="{}" />
-                <marker date="1521459644359" expanded="false" signature="14671:14694" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="14732:14750" ph=" }" />
-                <marker date="1521459644359" expanded="true" signature="14820:14914" ph="{...}" />
-                <marker date="1521459644359" expanded="false" signature="15025:15040" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="15076:15086" ph=" }" />
-                <marker date="1521459644359" expanded="true" signature="15132:19192" ph="{...}" />
-                <marker date="1521459644359" expanded="false" signature="15314:15329" ph=" { " />
-                <marker date="1521459644359" expanded="false" signature="15337:15347" ph=" }" />
-                <marker date="1521459644359" expanded="true" signature="15386:15517" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="15572:15868" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="15962:16159" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="16276:16350" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="16466:16535" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="16545:16580" ph="@{...}" />
-                <marker date="1521459644359" expanded="true" signature="16691:17079" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="17089:17124" ph="@{...}" />
-                <marker date="1521459644359" expanded="true" signature="17226:17476" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="17585:17847" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="17891:18605" ph="{...}" />
-                <marker date="1521459644359" expanded="true" signature="18678:19186" ph="{...}" />
-              </folding>
+            <state relative-caret-position="378">
+              <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -382,27 +129,6 @@
             <state relative-caret-position="729">
               <caret line="27" column="50" lean-forward="false" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultElementLocator.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.11.0/selenium-support-3.11.0.jar!/org/openqa/selenium/support/pagefactory/DefaultElementLocator.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding>
-                <marker date="1521458446748" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1521458446748" expanded="false" signature="163:322" ph="..." />
-                <marker date="1521458446748" expanded="true" signature="660:743" ph="{...}" />
-                <marker date="1521458446748" expanded="true" signature="840:989" ph="{...}" />
-                <marker date="1521458446748" expanded="true" signature="1027:1365" ph="{...}" />
-                <marker date="1521458446748" expanded="true" signature="1410:1770" ph="{...}" />
-                <marker date="1521458446748" expanded="false" signature="1807:1818" ph=" { " />
-                <marker date="1521458446748" expanded="false" signature="1842:1848" ph=" }" />
-                <marker date="1521458446748" expanded="false" signature="1878:1889" ph=" { " />
-                <marker date="1521458446748" expanded="false" signature="1951:1957" ph=" }" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -429,6 +155,7 @@
       <find>Close the browser</find>
       <find>Undefined</find>
       <find>InputStream</find>
+      <find>Discrepancy</find>
     </findStrings>
     <replaceStrings>
       <replace>mouseClick</replace>
@@ -488,7 +215,6 @@
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/SupportingUtilites/BrowserFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/cucumber/RunCucumberTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Resources/config.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/Beans.xml" />
         <option value="$PROJECT_DIR$/src/test/java/DBDataModel/CampaignFlightMapper.java" />
@@ -499,6 +225,7 @@
         <option value="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebAdvertiserSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdvertiserAccountsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Features/AdvertiserAccounts.feature" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -510,10 +237,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1828" />
-    <option name="y" value="54" />
+    <option name="x" value="2048" />
+    <option name="y" value="160" />
     <option name="width" value="1938" />
-    <option name="height" value="1098" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -548,7 +275,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -582,20 +308,13 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Features" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="repoProteusWebJava" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="StepDefination" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -644,7 +363,30 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: 04 Flights sorted by Updated date">
+  <component name="RunManager" selected="Cucumber java.Feature: AdvertiserAccounts">
+    <configuration name="Feature: AdvertiserAccounts" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="myFilePath" value="$PROJECT_DIR$/src/test/java/Features/AdvertiserAccounts.feature" />
+      <option name="GLUE" value="StepDefination" />
+      <option name="myNameFilter" value="" />
+      <option name="myGeneratedName" value="Feature: AdvertiserAccounts" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="repoProteusWebJava" />
+      <envs />
+    </configuration>
     <configuration name="Scenario: 02 Option to sort result" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -659,29 +401,6 @@
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^02 Option to sort result$&quot;" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="repoProteusWebJava" />
-      <envs />
-    </configuration>
-    <configuration name="Scenario: 04 Able to see Advertiser Account Overview screen information" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="myFilePath" value="$PROJECT_DIR$/src/test/java/Features/AdvertiserAccounts.feature" />
-      <option name="GLUE" value="StepDefination" />
-      <option name="myNameFilter" value="^04 Able to see Advertiser Account Overview screen information$" />
-      <option name="myGeneratedName" value="Scenario: 04 Able to see Advertiser Account Overview screen information" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^04 Able to see Advertiser Account Overview screen information$&quot;" />
       <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -714,29 +433,6 @@
       <module name="repoProteusWebJava" />
       <envs />
     </configuration>
-    <configuration name="Scenario: 06 Option to Merge advertiser account into another" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="myFilePath" value="$PROJECT_DIR$/src/test/java/Features/AdvertiserAccounts.feature" />
-      <option name="GLUE" value="StepDefination" />
-      <option name="myNameFilter" value="^06 Option to Merge advertiser account into another$" />
-      <option name="myGeneratedName" value="Scenario: 06 Option to Merge advertiser account into another" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^06 Option to Merge advertiser account into another$&quot;" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="repoProteusWebJava" />
-      <envs />
-    </configuration>
     <configuration name="Scenario: 07 Option to Merge advertiser account into another" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -751,6 +447,29 @@
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^07 Option to Merge advertiser account into another$&quot;" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="repoProteusWebJava" />
+      <envs />
+    </configuration>
+    <configuration name="Scenario: 08 Advertiser Platform Details shown on the Advertiser details page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="myFilePath" value="$PROJECT_DIR$/src/test/java/Features/AdvertiserAccounts.feature" />
+      <option name="GLUE" value="StepDefination" />
+      <option name="myNameFilter" value="^08 Advertiser Platform Details shown on the Advertiser details page$" />
+      <option name="myGeneratedName" value="Scenario: 08 Advertiser Platform Details shown on the Advertiser details page" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^08 Advertiser Platform Details shown on the Advertiser details page$&quot;" />
       <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -776,19 +495,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Cucumber java.Scenario: 04 Able to see Advertiser Account Overview screen information" />
-      <item index="1" class="java.lang.String" itemvalue="Cucumber java.Scenario: 06 Option to Merge advertiser account into another" />
-      <item index="2" class="java.lang.String" itemvalue="Cucumber java.Scenario: 07 Option to Merge advertiser account into another" />
-      <item index="3" class="java.lang.String" itemvalue="Cucumber java.Scenario: 02 Option to sort result" />
-      <item index="4" class="java.lang.String" itemvalue="Cucumber java.Scenario: 04 Flights sorted by Updated date" />
+      <item index="0" class="java.lang.String" itemvalue="Cucumber java.Scenario: 07 Option to Merge advertiser account into another" />
+      <item index="1" class="java.lang.String" itemvalue="Cucumber java.Scenario: 02 Option to sort result" />
+      <item index="2" class="java.lang.String" itemvalue="Cucumber java.Scenario: 04 Flights sorted by Updated date" />
+      <item index="3" class="java.lang.String" itemvalue="Cucumber java.Scenario: 08 Advertiser Platform Details shown on the Advertiser details page" />
+      <item index="4" class="java.lang.String" itemvalue="Cucumber java.Feature: AdvertiserAccounts" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Cucumber java.Scenario: 04 Flights sorted by Updated date" />
-        <item index="1" class="java.lang.String" itemvalue="Cucumber java.Scenario: 02 Option to sort result" />
-        <item index="2" class="java.lang.String" itemvalue="Cucumber java.Scenario: 07 Option to Merge advertiser account into another" />
-        <item index="3" class="java.lang.String" itemvalue="Cucumber java.Scenario: 04 Able to see Advertiser Account Overview screen information" />
-        <item index="4" class="java.lang.String" itemvalue="Cucumber java.Scenario: 06 Option to Merge advertiser account into another" />
+        <item index="0" class="java.lang.String" itemvalue="Cucumber java.Feature: AdvertiserAccounts" />
+        <item index="1" class="java.lang.String" itemvalue="Cucumber java.Scenario: 08 Advertiser Platform Details shown on the Advertiser details page" />
+        <item index="2" class="java.lang.String" itemvalue="Cucumber java.Scenario: 04 Flights sorted by Updated date" />
+        <item index="3" class="java.lang.String" itemvalue="Cucumber java.Scenario: 02 Option to sort result" />
+        <item index="4" class="java.lang.String" itemvalue="Cucumber java.Scenario: 07 Option to Merge advertiser account into another" />
       </list>
     </recent_temporary>
   </component>
@@ -965,21 +684,26 @@
       <option name="project" value="LOCAL" />
       <updated>1521734700674</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Added AdvertiserAccounts tests">
+      <created>1522934349124</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1522934349124</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Added AdvertiserAccounts tests">
+      <created>1522934414291</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1522934414291</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Scenario__02_Option_to_sort_result - 2018.04.04 at 13h 27m 16s.xml">
-      <configuration name="Scenario: 02 Option to sort result" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__04_Able_to_see_Advertiser_Account_Overview_screen_information - 2018.04.03 at 12h 14m 08s.xml">
-      <configuration name="Scenario: 04 Able to see Advertiser Account Overview screen information" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__04_Flights_sorted_by_Updated_date - 2018.04.04 at 13h 27m 54s.xml">
-      <configuration name="Scenario: 04 Flights sorted by Updated date" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__06_Option_to_Merge_advertiser_account_into_another - 2018.04.03 at 12h 00m 50s.xml">
-      <configuration name="Scenario: 06 Option to Merge advertiser account into another" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__AdvertiserAccounts - 2018.04.06 at 09h 56m 56s.xml">
+      <configuration name="Feature: AdvertiserAccounts" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
     <history-entry file="Scenario__06_Option_to_Merge_advertiser_account_into_another - 2018.04.03 at 12h 01m 35s.xml">
       <configuration name="Scenario: 06 Option to Merge advertiser account into another" configurationId="CucumberJavaRunConfigurationType" />
@@ -999,6 +723,15 @@
     <history-entry file="Scenario__07_Option_to_Merge_advertiser_account_into_another - 2018.04.03 at 14h 13m 17s.xml">
       <configuration name="Scenario: 07 Option to Merge advertiser account into another" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
+    <history-entry file="Scenario__08_Advertiser_Platform_Details_shown_on_the_Advertiser_details_page - 2018.04.05 at 13h 11m 11s.xml">
+      <configuration name="Scenario: 08 Advertiser Platform Details shown on the Advertiser details page" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__08_Advertiser_Platform_Details_shown_on_the_Advertiser_details_page - 2018.04.05 at 13h 13m 15s.xml">
+      <configuration name="Scenario: 08 Advertiser Platform Details shown on the Advertiser details page" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__08_Advertiser_Platform_Details_shown_on_the_Advertiser_details_page - 2018.04.05 at 14h 16m 21s.xml">
+      <configuration name="Scenario: 08 Advertiser Platform Details shown on the Advertiser details page" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1911" y="-9" width="1938" height="1098" extended-state="6" />
@@ -1011,12 +744,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.55335534" sideWeight="0.35885417" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.6411458" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12852664" sideWeight="0.6411458" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2431243" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22239584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26822916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1082,7 +815,8 @@
     <MESSAGE value="Updated selenium version" />
     <MESSAGE value="Added options to run tests from command prompt" />
     <MESSAGE value="Updated query SQLQueryFlightNameWithNoTrader" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated query SQLQueryFlightNameWithNoTrader" />
+    <MESSAGE value="Added AdvertiserAccounts tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added AdvertiserAccounts tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1092,12 +826,6 @@
           <line>272</line>
           <properties />
           <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdvertiserAccountsPage.java</url>
-          <line>140</line>
-          <properties />
-          <option name="timeStamp" value="74" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -1177,13 +905,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Features/AbilityExpandFlightInformation.feature" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/Features/ExpandFlightInformation.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="51" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/reports/cucumber-results-agg-test-results.html" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console.snippet">
       <provider selected="true" editor-type-id="text-editor">
@@ -1213,13 +934,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Features/AbilityToDeeplinkTableauReports.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/cucumber/RunCucumberTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="972">
@@ -1231,20 +945,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Features/ReportingAPIvsProteusWeb.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="27" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Features/ReadOnlyFlightDates.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -1263,32 +963,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Resources/Beans.xml" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/Features/AbilityToEditGoalData.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/DataModels/CampaigFlightSearchRoot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="932">
-          <caret line="290" column="32" lean-forward="true" selection-start-line="290" selection-start-column="32" selection-end-line="290" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Features/AbilityToEditOptimisationManager.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="49" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -1324,7 +1002,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1384,13 +1061,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Features/AbilityToSearchForFlights.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="717">
-          <caret line="102" column="36" lean-forward="true" selection-start-line="102" selection-start-column="36" selection-end-line="102" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebClientReportsPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -1419,13 +1089,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Features/DisplayPlatformForFlight.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdminPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
@@ -1433,41 +1096,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17874">
-          <caret line="696" column="95" lean-forward="false" selection-start-line="694" selection-start-column="7" selection-end-line="696" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6750">
-          <caret line="263" column="16" lean-forward="false" selection-start-line="263" selection-start-column="16" selection-end-line="263" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1630#1631#0" expanded="true" />
-            <element signature="e#1702#1703#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.11.0/selenium-support-3.11.0.jar!/org/openqa/selenium/support/pagefactory/DefaultElementLocator.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
           <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <marker date="1521458446748" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521458446748" expanded="false" signature="163:322" ph="..." />
-            <marker date="1521458446748" expanded="true" signature="660:743" ph="{...}" />
-            <marker date="1521458446748" expanded="true" signature="840:989" ph="{...}" />
-            <marker date="1521458446748" expanded="true" signature="1027:1365" ph="{...}" />
-            <marker date="1521458446748" expanded="true" signature="1410:1770" ph="{...}" />
-            <marker date="1521458446748" expanded="false" signature="1807:1818" ph=" { " />
-            <marker date="1521458446748" expanded="false" signature="1842:1848" ph=" }" />
-            <marker date="1521458446748" expanded="false" signature="1878:1889" ph=" { " />
-            <marker date="1521458446748" expanded="false" signature="1951:1957" ph=" }" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1475,13 +1107,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="729">
           <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <marker date="1521458446748" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521458446748" expanded="false" signature="172:446" ph="..." />
-            <marker date="1521458446748" expanded="false" signature="615:626" ph=" { " />
-            <marker date="1521458446748" expanded="false" signature="649:655" ph=" }" />
-            <marker date="1521458446748" expanded="true" signature="747:1368" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1489,94 +1114,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5589">
           <caret line="292" column="0" lean-forward="false" selection-start-line="292" selection-start-column="0" selection-end-line="292" selection-end-column="0" />
-          <folding>
-            <marker date="1521458446925" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521458446925" expanded="false" signature="150:1429" ph="..." />
-            <marker date="1521458446925" expanded="true" signature="1811:1818" ph="{}" />
-            <marker date="1521458446925" expanded="true" signature="1904:1993" ph="{...}" />
-            <marker date="1521458446925" expanded="false" signature="2044:2055" ph=" { " />
-            <marker date="1521458446925" expanded="false" signature="2076:2082" ph=" }" />
-            <marker date="1521458446925" expanded="false" signature="2109:2120" ph=" { " />
-            <marker date="1521458446925" expanded="false" signature="2135:2141" ph=" }" />
-            <marker date="1521458446925" expanded="false" signature="2175:2186" ph=" { " />
-            <marker date="1521458446925" expanded="false" signature="2199:2205" ph=" }" />
-            <marker date="1521458446925" expanded="false" signature="2261:2272" ph=" { " />
-            <marker date="1521458446925" expanded="false" signature="2301:2307" ph=" }" />
-            <marker date="1521458446925" expanded="false" signature="2332:2343" ph=" { " />
-            <marker date="1521458446925" expanded="false" signature="2404:2410" ph=" }" />
-            <marker date="1521458446925" expanded="false" signature="2436:2447" ph=" { " />
-            <marker date="1521458446925" expanded="false" signature="2509:2515" ph=" }" />
-            <marker date="1521458446925" expanded="true" signature="2570:3082" ph="{...}" />
-            <marker date="1521458446925" expanded="true" signature="3126:3630" ph="{...}" />
-            <marker date="1521458446925" expanded="false" signature="3655:3666" ph=" { " />
-            <marker date="1521458446925" expanded="false" signature="3727:3733" ph=" }" />
-            <marker date="1521458446925" expanded="true" signature="3766:3874" ph="{...}" />
-            <marker date="1521458446925" expanded="true" signature="3920:4051" ph="{...}" />
-            <marker date="1521458446925" expanded="false" signature="4102:4113" ph=" { " />
-            <marker date="1521458446925" expanded="false" signature="4157:4163" ph=" }" />
-            <marker date="1521458446925" expanded="true" signature="4197:4516" ph="{...}" />
-            <marker date="1521458446925" expanded="true" signature="4549:4867" ph="{...}" />
-            <marker date="1521458446925" expanded="true" signature="4897:5040" ph="{...}" />
-            <marker date="1521458446925" expanded="true" signature="5093:5280" ph="{...}" />
-            <marker date="1521458446925" expanded="false" signature="5329:5340" ph=" { " />
-            <marker date="1521458446925" expanded="false" signature="5369:5375" ph=" }" />
-            <marker date="1521458446925" expanded="false" signature="5417:5428" ph=" { " />
-            <marker date="1521458446925" expanded="false" signature="5456:5462" ph=" }" />
-            <marker date="1521458446925" expanded="true" signature="5529:6056" ph="{...}" />
-            <marker date="1521458446925" expanded="true" signature="6130:6981" ph="{...}" />
-            <marker date="1521458446925" expanded="false" signature="7034:7045" ph=" { " />
-            <marker date="1521458446925" expanded="false" signature="7082:7088" ph=" }" />
-            <marker date="1521458446925" expanded="false" signature="7148:7159" ph=" { " />
-            <marker date="1521458446925" expanded="false" signature="7197:7203" ph=" }" />
-            <marker date="1521458446925" expanded="false" signature="7262:7273" ph=" { " />
-            <marker date="1521458446925" expanded="false" signature="7317:7323" ph=" }" />
-            <marker date="1521458446925" expanded="false" signature="7389:7400" ph=" { " />
-            <marker date="1521458446925" expanded="false" signature="7445:7451" ph=" }" />
-            <marker date="1521458446925" expanded="false" signature="7506:7517" ph=" { " />
-            <marker date="1521458446925" expanded="false" signature="7556:7562" ph=" }" />
-            <marker date="1521458446925" expanded="false" signature="7624:7635" ph=" { " />
-            <marker date="1521458446925" expanded="false" signature="7675:7681" ph=" }" />
-            <marker date="1521458446925" expanded="false" signature="7741:7752" ph=" { " />
-            <marker date="1521458446925" expanded="false" signature="7797:7803" ph=" }" />
-            <marker date="1521458446925" expanded="false" signature="7870:7881" ph=" { " />
-            <marker date="1521458446925" expanded="false" signature="7927:7933" ph=" }" />
-            <marker date="1521458446925" expanded="false" signature="7995:8006" ph=" { " />
-            <marker date="1521458446925" expanded="false" signature="8053:8059" ph=" }" />
-            <marker date="1521458446925" expanded="false" signature="8128:8139" ph=" { " />
-            <marker date="1521458446925" expanded="false" signature="8187:8193" ph=" }" />
-            <marker date="1521458446925" expanded="false" signature="8249:8260" ph=" { " />
-            <marker date="1521458446925" expanded="false" signature="8300:8306" ph=" }" />
-            <marker date="1521458446925" expanded="false" signature="8369:8380" ph=" { " />
-            <marker date="1521458446925" expanded="false" signature="8421:8427" ph=" }" />
-            <marker date="1521458446925" expanded="true" signature="8494:8562" ph="{...}" />
-            <marker date="1521458446925" expanded="true" signature="8636:8705" ph="{...}" />
-            <marker date="1521458446925" expanded="false" signature="8763:8774" ph=" { " />
-            <marker date="1521458446925" expanded="false" signature="8817:8823" ph=" }" />
-            <marker date="1521458446925" expanded="false" signature="8888:8899" ph=" { " />
-            <marker date="1521458446925" expanded="false" signature="8943:8949" ph=" }" />
-            <marker date="1521458446925" expanded="true" signature="9025:9089" ph="{...}" />
-            <marker date="1521458446925" expanded="true" signature="9129:9689" ph="{...}" />
-            <marker date="1521458446925" expanded="false" signature="9716:9727" ph=" { " />
-            <marker date="1521458446925" expanded="false" signature="9753:9759" ph=" }" />
-            <marker date="1521458446925" expanded="false" signature="9800:9811" ph=" { " />
-            <marker date="1521458446925" expanded="false" signature="9830:9836" ph=" }" />
-            <marker date="1521458446925" expanded="true" signature="9871:10191" ph="{...}" />
-            <marker date="1521458446925" expanded="true" signature="10224:10536" ph="{...}" />
-            <marker date="1521458446925" expanded="true" signature="10569:10905" ph="{...}" />
-            <marker date="1521458446925" expanded="true" signature="10938:11390" ph="{...}" />
-            <marker date="1521458446925" expanded="true" signature="11432:12238" ph="{...}" />
-            <marker date="1521458446925" expanded="true" signature="11467:12231" ph="{...}" />
-            <marker date="1521458446925" expanded="false" signature="11504:11523" ph=" { " />
-            <marker date="1521458446925" expanded="false" signature="11585:11599" ph=" }" />
-            <marker date="1521458446925" expanded="true" signature="11639:11998" ph="{...}" />
-            <marker date="1521458446925" expanded="false" signature="12033:12052" ph=" { " />
-            <marker date="1521458446925" expanded="false" signature="12095:12109" ph=" }" />
-            <marker date="1521458446925" expanded="false" signature="12151:12170" ph=" { " />
-            <marker date="1521458446925" expanded="false" signature="12207:12221" ph=" }" />
-            <marker date="1521458446925" expanded="true" signature="12335:13070" ph="{...}" />
-            <marker date="1521458446925" expanded="true" signature="13101:13244" ph="{...}" />
-            <marker date="1521458446925" expanded="true" signature="13286:13425" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1584,153 +1121,69 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="999">
           <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Features/AbilityToSortFlights.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="731" column="108" lean-forward="false" selection-start-line="731" selection-start-column="108" selection-end-line="731" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="704" column="29" lean-forward="false" selection-start-line="704" selection-start-column="29" selection-end-line="704" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebAdvertiserSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="125" column="47" lean-forward="false" selection-start-line="125" selection-start-column="47" selection-end-line="125" selection-end-column="47" />
           <folding>
-            <marker date="1521459644359" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521459644359" expanded="false" signature="149:1220" ph="..." />
-            <marker date="1521459644359" expanded="true" signature="1222:1284" ph="@{...}" />
-            <marker date="1521459644359" expanded="true" signature="1888:1972" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="2190:2496" ph="{...}" />
-            <marker date="1521459644359" expanded="false" signature="2546:2557" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="2590:2596" ph=" }" />
-            <marker date="1521459644359" expanded="true" signature="2656:2667" ph=" { " />
-            <marker date="1521459644359" expanded="true" signature="2700:2706" ph=" }" />
-            <marker date="1521459644359" expanded="true" signature="2779:2881" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="2966:3085" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="3182:3318" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="3427:3580" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="3636:3756" ph="{...}" />
-            <marker date="1521459644359" expanded="false" signature="3819:3830" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="3864:3870" ph=" }" />
-            <marker date="1521459644359" expanded="true" signature="3976:4115" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="4231:4343" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="4457:4597" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="4685:5099" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="5223:5632" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="5743:6087" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="6108:6115" ph="{}" />
-            <marker date="1521459644359" expanded="true" signature="6121:6139" ph="/**...*/" />
-            <marker date="1521459644359" expanded="true" signature="6144:6181" ph="@{...}" />
-            <marker date="1521459644359" expanded="false" signature="6214:6225" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="6267:6273" ph=" }" />
-            <marker date="1521459644359" expanded="true" signature="6279:6297" ph="/**...*/" />
-            <marker date="1521459644359" expanded="true" signature="6302:6339" ph="@{...}" />
-            <marker date="1521459644359" expanded="false" signature="6386:6397" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="6439:6445" ph=" }" />
-            <marker date="1521459644359" expanded="true" signature="6451:6469" ph="/**...*/" />
-            <marker date="1521459644359" expanded="false" signature="6549:6560" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="6602:6608" ph=" }" />
-            <marker date="1521459644359" expanded="true" signature="6614:6632" ph="/**...*/" />
-            <marker date="1521459644359" expanded="false" signature="6691:6702" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="6744:6750" ph=" }" />
-            <marker date="1521459644359" expanded="true" signature="6756:6774" ph="/**...*/" />
-            <marker date="1521459644359" expanded="true" signature="6883:6941" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="6947:6965" ph="/**...*/" />
-            <marker date="1521459644359" expanded="true" signature="7090:7148" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="7154:7172" ph="/**...*/" />
-            <marker date="1521459644359" expanded="true" signature="7288:7346" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="7352:7370" ph="/**...*/" />
-            <marker date="1521459644359" expanded="true" signature="7493:7551" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="7557:7575" ph="/**...*/" />
-            <marker date="1521459644359" expanded="false" signature="7655:7666" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="7708:7714" ph=" }" />
-            <marker date="1521459644359" expanded="true" signature="7720:7738" ph="/**...*/" />
-            <marker date="1521459644359" expanded="true" signature="7844:7902" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="7908:7926" ph="/**...*/" />
-            <marker date="1521459644359" expanded="false" signature="7978:7989" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="8031:8037" ph=" }" />
-            <marker date="1521459644359" expanded="true" signature="8043:8061" ph="/**...*/" />
-            <marker date="1521459644359" expanded="false" signature="8135:8146" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="8188:8194" ph=" }" />
-            <marker date="1521459644359" expanded="true" signature="8200:8218" ph="/**...*/" />
-            <marker date="1521459644359" expanded="false" signature="8264:8275" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="8317:8323" ph=" }" />
-            <marker date="1521459644359" expanded="false" signature="8353:8364" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="8388:8394" ph=" }" />
-            <marker date="1521459644359" expanded="false" signature="8452:8463" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="8492:8498" ph=" }" />
-            <marker date="1521459644359" expanded="false" signature="8560:8571" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="8608:8614" ph=" }" />
-            <marker date="1521459644359" expanded="true" signature="8759:8855" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="8905:9052" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="9148:9279" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="9369:9735" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="9508:9728" ph="{...}" />
-            <marker date="1521459644359" expanded="false" signature="9546:9565" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="9596:9610" ph=" }" />
-            <marker date="1521459644359" expanded="false" signature="9639:9658" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="9704:9718" ph=" }" />
-            <marker date="1521459644359" expanded="false" signature="9772:9783" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="9860:9866" ph=" }" />
-            <marker date="1521459644359" expanded="true" signature="9911:10049" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="10155:10511" ph="{...}" />
-            <marker date="1521459644359" expanded="false" signature="10567:10578" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="10615:10621" ph=" }" />
-            <marker date="1521459644359" expanded="false" signature="10687:10698" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="10740:10746" ph=" }" />
-            <marker date="1521459644359" expanded="false" signature="10776:10787" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="10800:10806" ph=" }" />
-            <marker date="1521459644359" expanded="false" signature="10836:10847" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="10878:10884" ph=" }" />
-            <marker date="1521459644359" expanded="false" signature="10911:10922" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="10967:10973" ph=" }" />
-            <marker date="1521459644359" expanded="true" signature="11031:12055" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="11214:11610" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="11641:11799" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="11872:12049" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="12179:13993" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="12230:12241" ph="{}" />
-            <marker date="1521459644359" expanded="false" signature="12268:12283" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="12315:12325" ph=" }" />
-            <marker date="1521459644359" expanded="false" signature="12365:12380" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="12414:12424" ph=" }" />
-            <marker date="1521459644359" expanded="false" signature="12486:12501" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="12543:12553" ph=" }" />
-            <marker date="1521459644359" expanded="true" signature="12616:12758" ph="{...}" />
-            <marker date="1521459644359" expanded="false" signature="12791:12806" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="12847:12857" ph=" }" />
-            <marker date="1521459644359" expanded="false" signature="12888:12903" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="12939:12949" ph=" }" />
-            <marker date="1521459644359" expanded="false" signature="12983:12998" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="13040:13050" ph=" }" />
-            <marker date="1521459644359" expanded="true" signature="13124:13987" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="13298:13976" ph="{...}" />
-            <marker date="1521459644359" expanded="false" signature="13340:13363" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="13396:13414" ph=" }" />
-            <marker date="1521459644359" expanded="true" signature="13472:13962" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="13628:13943" ph="{...}" />
-            <marker date="1521459644359" expanded="false" signature="13671:13702" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="13731:13757" ph=" }" />
-            <marker date="1521459644359" expanded="false" signature="13816:13847" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="13895:13921" ph=" }" />
-            <marker date="1521459644359" expanded="true" signature="14080:15092" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="14118:14129" ph="{}" />
-            <marker date="1521459644359" expanded="true" signature="14252:14355" ph="{...}" />
-            <marker date="1521459644359" expanded="false" signature="14395:14410" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="14446:14456" ph=" }" />
-            <marker date="1521459644359" expanded="true" signature="14509:14978" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="14577:14928" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="14610:14629" ph="{}" />
-            <marker date="1521459644359" expanded="false" signature="14671:14694" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="14732:14750" ph=" }" />
-            <marker date="1521459644359" expanded="true" signature="14820:14914" ph="{...}" />
-            <marker date="1521459644359" expanded="false" signature="15025:15040" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="15076:15086" ph=" }" />
-            <marker date="1521459644359" expanded="true" signature="15132:19192" ph="{...}" />
-            <marker date="1521459644359" expanded="false" signature="15314:15329" ph=" { " />
-            <marker date="1521459644359" expanded="false" signature="15337:15347" ph=" }" />
-            <marker date="1521459644359" expanded="true" signature="15386:15517" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="15572:15868" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="15962:16159" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="16276:16350" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="16466:16535" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="16545:16580" ph="@{...}" />
-            <marker date="1521459644359" expanded="true" signature="16691:17079" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="17089:17124" ph="@{...}" />
-            <marker date="1521459644359" expanded="true" signature="17226:17476" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="17585:17847" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="17891:18605" ph="{...}" />
-            <marker date="1521459644359" expanded="true" signature="18678:19186" ph="{...}" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdvertiserAccountsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="181" column="48" lean-forward="false" selection-start-line="181" selection-start-column="19" selection-end-line="181" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Features/AbilityToEditOptimisationManager.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="2" lean-forward="false" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Features/AbilityToEditGoalData.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Features/AbilityToSearchForFlights.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2754">
+          <caret line="102" column="36" lean-forward="false" selection-start-line="102" selection-start-column="36" selection-end-line="102" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1742,42 +1195,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebAdvertiserSteps.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Features/ReportingAPIvsProteusWeb.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2673">
-          <caret line="109" column="44" lean-forward="false" selection-start-line="109" selection-start-column="44" selection-end-line="109" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="351">
+          <caret line="13" column="27" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdvertiserAccountsPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Features/ReadOnlyFlightDates.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3078">
-          <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4958#4959#0" expanded="true" />
-            <element signature="e#4999#5000#0" expanded="true" />
-            <element signature="e#5669#5670#0" expanded="true" />
-            <element signature="e#5724#5725#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="270">
+          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Features/AbilityToSortFlights.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Features/ExpandFlightInformation.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+        <state relative-caret-position="324">
+          <caret line="12" column="2" lean-forward="false" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Features/AbilityToDeeplinkTableauReports.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Features/DisplayPlatformForFlight.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="72" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Features/AdvertiserAccounts.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1332">
-          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+        <state relative-caret-position="765">
+          <caret line="93" column="14" lean-forward="false" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1340">
+          <caret line="283" column="20" lean-forward="true" selection-start-line="283" selection-start-column="20" selection-end-line="283" selection-end-column="20" />
           <folding />
         </state>
       </provider>

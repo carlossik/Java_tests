@@ -140,5 +140,11 @@ public class BrowserFactory {
         }
     }
 
+    public static void selectIndex(WebElement objElement, int strValue)
+    {
+        Select select = new Select(objElement);
+        select.selectByIndex(strValue);
+    }
+
 }
 
