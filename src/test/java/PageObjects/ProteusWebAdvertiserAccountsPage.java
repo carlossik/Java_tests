@@ -36,9 +36,9 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
     @CacheLookup
     public WebElement cmbAgency;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/form/div[3]/div/div/input")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//input[@name='emptyAgency']")
     @CacheLookup
-    public WebElement chbxRequiresAction;
+    private WebElement chbxRequiresAction;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/form/div[5]/button[1]")
     @CacheLookup
@@ -47,6 +47,19 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/form/div[5]/button[2]")
     @CacheLookup
     public WebElement btnClearFilters;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/button")
+    @CacheLookup
+    public WebElement btnBulkEdit;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[2]/button[1]")
+    @CacheLookup
+    private WebElement btnBulkSave;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[2]/button[2]")
+    @CacheLookup
+    public WebElement btnBulkCancel;
+
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[3]/div[1]/div/div[1]/div[1]/span[1]")
     @CacheLookup
@@ -118,6 +131,9 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
     @FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div/ul/li[1]")
     private WebElement txtMergeAdvertiserAccount;
 
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div/form/div[2]/div[2]/div/div/ul/li[1]")
+    private WebElement listitemAgency;
+
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div")
     private WebElement txtNoAdvertiserAccountMatched;
 
@@ -130,7 +146,12 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
     public void EditAdvertiserName(String strAdvertiserName)
     {
         enterText(txtAdvertiserName,strAdvertiserName);
+        mouseClick(cmbAgencyName);
+        GeneralUtilites.wait(1);
+        mouseClick(listitemAgency);
+        GeneralUtilites.wait(1);
         mouseClick(btnSave);
+        GeneralUtilites.wait(1);
         mouseClick(btnBack);
     }
 
@@ -146,8 +167,8 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
 
     public boolean CheckForAdvertiserAccountDetails(){
         GeneralUtilites.wait(1);
-        return  txtAdvertiserName.isDisplayed() &&
-                cmbAgencyName.isDisplayed() &&
+        return txtAdvertiserName.isDisplayed() &&
+               cmbAgencyName.isDisplayed() &&
                cmbOperationalUnit.isDisplayed();
     }
 
@@ -217,6 +238,21 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
         mouseClick(btnApplyFilters);
     }
 
+    public void SearchForAdvertiserByRequiresAction(){
+        mouseClick(chbxRequiresAction);
+        mouseClick(btnApplyFilters);
+    }
+
+    public boolean CheckForAdvertiserRequiresActions(){
+        Boolean returnType = true;
+        By AgencyName = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[3]/div[1]/div/div[2]/div/div/div[2]/label");
+        List<WebElement> elementTypes = browserFactory.getDriver().findElements(AgencyName);
+        for (WebElement elementType :elementTypes){
+            returnType = returnType && elementType.getText().toLowerCase().equals("Please select agency".toLowerCase());
+        }
+        return returnType;
+    }
+
     public String SelectAdvertiserToMerge(){
         mouseClick(cmbMergeAdvertiser);
         GeneralUtilites.wait(1);
@@ -241,6 +277,41 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
         return txtNoAdvertiserAccountMatched.isDisplayed();
     }
 
+    public void BulkEditAdvertiserAgency(){
+        By AdvertiserName = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[3]/div[1]/div/div[2]/div/div/div/div/div/input");
+        List<WebElement> elementTypes = browserFactory.getDriver().findElements(AdvertiserName);
+        int maxLimit = 6;
+        if(elementTypes.size() < maxLimit)
+            maxLimit = elementTypes.size();
+        int indexOne =   GeneralUtilites.RandomNumber(1,maxLimit);
+        int indexTwo =  GeneralUtilites.RandomNumber(1,maxLimit);
+        if(indexOne == indexTwo) {indexTwo++;}
+        if(indexTwo > maxLimit) { indexTwo = 1;}
 
+        By AdvertiserNameOne = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[3]/div[1]/div/div[2]/div/div["+indexOne+"]/div/div/div/input");
+        browserFactory.getDriver().findElement(AdvertiserNameOne).click();
+        browserFactory.getDriver().findElement(AdvertiserNameOne).sendKeys("Edit");
+
+        By AdvertiserNameTwo = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[3]/div[1]/div/div[2]/div/div["+indexTwo+"]/div/div/div/input");
+        browserFactory.getDriver().findElement(AdvertiserNameTwo).click();
+        browserFactory.getDriver().findElement(AdvertiserNameTwo).sendKeys("Edit");
+
+        By AgencyNameOne = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[3]/div[1]/div/div[2]/div/div["+indexOne+"]/div[2]/div/div/div/input");
+        browserFactory.getDriver().findElement(AgencyNameOne).click();
+
+        By AgencyListOne = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[3]/div[1]/div/div[2]/div/div["+indexOne+"]/div[2]/div/div/ul/li[1]");
+        browserFactory.getDriver().findElement(AgencyListOne).click();
+
+
+        By AgencyNameTwo = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[3]/div[1]/div/div[2]/div/div["+indexTwo+"]/div[2]/div/div/div/input");
+        browserFactory.getDriver().findElement(AgencyNameTwo).click();
+
+        By AgencyListTwo = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[3]/div[1]/div/div[2]/div/div["+indexTwo+"]/div[2]/div/div/ul/li[1]");
+        browserFactory.getDriver().findElement(AgencyListTwo).click();
+
+        GeneralUtilites.wait(1);
+        mouseClick(btnBulkSave);
+
+    }
 }
 

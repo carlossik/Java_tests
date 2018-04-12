@@ -180,28 +180,24 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
         switch (strSearchKey)
         {
             case "MergedAdvertiser":
-                Assert.assertTrue( "Advertisers not filtered as per search key",
-                        advertiserAccountsPage.CheckForAdvertiserRows(this.MergedAdvertiser));
+                strSearchKey = this.MergedAdvertiser.replace("_"," ");
                 break;
             case "AdvertiserMerged":
-                Assert.assertTrue( "Advertisers not filtered as per search key",
-                        advertiserAccountsPage.CheckForAdvertiserRows(this.AdvertiserMerger));
+                strSearchKey =this.AdvertiserMerger.replace("_"," ");
                 break;
             case "AdvertiserNameAfterEdit":
-                Assert.assertTrue( "Advertisers not filtered as per search key",
-                        advertiserAccountsPage.CheckForAdvertiserRows(this.AdvertiserNameAfterEdit));
+                strSearchKey =this.AdvertiserNameAfterEdit.replace("_"," ");
                 break;
             case "AdvertiserNameBeforeEdit":
-                Assert.assertTrue( "Advertisers not filtered as per search key",
-                        advertiserAccountsPage.CheckForAdvertiserRows(this.AdvertiserNameBeforeEdit));
+                strSearchKey =this.AdvertiserNameBeforeEdit.replace("_"," ");
                 break;
             default:
-                Assert.assertTrue( "Advertisers not filtered as per search key",
-                        advertiserAccountsPage.CheckForAdvertiserRows(strSearchKey));
+                strSearchKey = strSearchKey.replace("_"," ");
                 break;
+
         }
-
-
+        Assert.assertTrue( "Advertisers not filtered as per search key",
+                advertiserAccountsPage.CheckForAdvertiserRows(strSearchKey.replace("_"," ")));
     }
 
     @And("^Select the Advertiser to be merged and Cancel$")
@@ -214,7 +210,7 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
     @Then("^First Advertiser details page shown$")
     public void firstAdvertiserDetailsPageShown()   {
         advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
-        Assert.assertTrue("First Advertiser details page not shown", advertiserAccountsPage.txtAdvertiserName.getAttribute("value").toLowerCase().contains(this.AdvertiserMerger.toLowerCase()));
+        Assert.assertTrue("First Advertiser details page not shown", advertiserAccountsPage.txtAdvertiserName.getAttribute("value").toLowerCase().contains(this.AdvertiserMerger.toLowerCase().replace("_"," ")));
         mouseClick(advertiserAccountsPage.btnBack);
     }
 
@@ -227,7 +223,7 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
     @And("^Update Advertiser, Agency Name and save the details$")
     public void updateAdvertiserAgencyNameAndSaveTheDetails()  {
         advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
-        this.AdvertiserNameAfterEdit = this.AdvertiserNameBeforeEdit + "Edited";
+        this.AdvertiserNameAfterEdit = "EditedAdvertiser" + GeneralUtilites.RandomNumber(1000,9999);
         advertiserAccountsPage.EditAdvertiserName(this.AdvertiserNameAfterEdit);
     }
 
@@ -251,5 +247,37 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
         advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
         advertiserAccountsPage.SearchForAdvertiser(this.AdvertiserNameAfterEdit);
         GeneralUtilites.wait(2);
+    }
+
+    @When("^Search based on Requires action$")
+    public void searchBasedOnRequiresAction()  {
+        advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
+        advertiserAccountsPage.SearchForAdvertiserByRequiresAction();
+        GeneralUtilites.wait(2);
+    }
+
+    @Then("^Advertisers filtered as per Requires action$")
+    public void advertisersFilteredAsPerRequiresAction()  {
+        advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
+        Assert.assertTrue("Advertisers not filtered as per Requires action", advertiserAccountsPage.CheckForAdvertiserRequiresActions());
+
+    }
+
+    @And("^Click on bulk edit$")
+    public void clickOnBulkEdit()   {
+        advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
+        mouseClick(advertiserAccountsPage.btnBulkEdit);
+    }
+
+    @And("^Edit two or more Advertiser, Agency details and Save$")
+    public void editTwoOrMoreAdvertiserAgencyDetailsAndSave()  {
+        advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
+        advertiserAccountsPage.BulkEditAdvertiserAgency();
+    }
+
+    @Then("^Bulk edit saved successfuly$")
+    public void bulkEditSavedSuccessfuly()     {
+        advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
+        Assert.assertTrue("Bulk edit not saved successfuly", advertiserAccountsPage.CheckForAdvertiserRequiresActions());
     }
 }

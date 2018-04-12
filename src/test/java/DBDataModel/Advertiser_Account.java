@@ -1,4 +1,5 @@
 package DBDataModel;
+
 public class  Advertiser_Account {
     private String AdvertiserName;
     public String getAdvertiserName() {

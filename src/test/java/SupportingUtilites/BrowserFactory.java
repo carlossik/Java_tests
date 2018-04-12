@@ -2,7 +2,6 @@ package SupportingUtilites;
 
 import  org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
-import org.openqa.selenium.firefox.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.*;
 import org.openqa.selenium.interactions.Actions;
@@ -145,6 +144,5 @@ public class BrowserFactory {
         Select select = new Select(objElement);
         select.selectByIndex(strValue);
     }
-
 }
 

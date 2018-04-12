@@ -1,5 +1,7 @@
 package DataModels;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 public class Values {
     private Display Display;
 

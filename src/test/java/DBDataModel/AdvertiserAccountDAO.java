@@ -1,4 +1,5 @@
 package DBDataModel;
+
 import java.util.List;
 public interface AdvertiserAccountDAO
 {
