@@ -5,7 +5,6 @@ import PageObjects.*;
 import SupportingUtilites.BrowserFactory;
 import java.util.Properties;
 import java.io.*;
-import cucumber.api.PendingException;
 import cucumber.api.java.en.*;
 import org.junit.Assert;
 import SupportingUtilites.*;
@@ -295,7 +294,7 @@ public class ProteusWebSteps extends BrowserFactory
     }
 
     @And("^Able to navigate to Administration Advertiser Accounts$")
-    public void ableToNavigateToAdministrationAdvertiserAccounts() throws Throwable {
+    public void ableToNavigateToAdministrationAdvertiserAccounts()   {
         adminPage = new ProteusWebAdminPage(this.browserFactory);
         GeneralUtilites.wait(2);
         adminPage.NavigateAdministrationAdvertiserAccounts();
@@ -431,11 +430,12 @@ public class ProteusWebSteps extends BrowserFactory
     @Then("^Sort by Flight created selected$")
     public void sortByFlightCreatedSelected()   {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
-        GeneralUtilites.wait(1);
+        GeneralUtilites.wait(2);
         campaignsPage.ClickOnSortBy();
-        GeneralUtilites.wait(1);
+        GeneralUtilites.wait(2);
         Assert.assertTrue("Sort by Flight created not selected",
                 campaignsPage.IsSelected("SortByFlightCreatedDescending"));
+        GeneralUtilites.wait(2);
         campaignsPage.UnClickOnSortBy();
     }
 
@@ -546,6 +546,7 @@ public class ProteusWebSteps extends BrowserFactory
 
     @Then("^Sort by \"([^\"]*)\" is shown$")
     public void sortByIsShown(String strSortBy)  {
+        GeneralUtilites.wait(1);
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("^Sort by " + strSortBy + " is not shown$",
                 campaignsPage.getSortByLabel().trim().toLowerCase().equals(strSortBy.trim().toLowerCase()));
