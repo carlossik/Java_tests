@@ -467,8 +467,8 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         By ReportOptions = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div/div[2]/span/div/div/ul/li/span");
         List<WebElement> elementReportOptions = browserFactory.getDriver().findElements(ReportOptions);
         return elementReportOptions.size() == 2
-                && elementReportOptions.get(0).getText().contains("Advertiser Analysis".toUpperCase())
-                && elementReportOptions.get(1).getText().contains("Operations Breakdown".toUpperCase());
+                && elementReportOptions.get(1).getText().toUpperCase().contains("Data Explorer".toUpperCase())
+                && elementReportOptions.get(0).getText().toUpperCase().contains("Operations Breakdown".toUpperCase());
     }
 
     public void SelectTableauReporting(String ReportType) {
@@ -479,10 +479,10 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         By ReportOptions = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div/div[2]/span/div/div/ul/li/span");
         List<WebElement> elementReportOptions = browserFactory.getDriver().findElements(ReportOptions);
 
-        if (ReportType.equals("Advertiser Analysis"))
-            mouseClick(elementReportOptions.get(0));
-        else if (ReportType.equals("Operations Breakdown"))
+        if (ReportType.equals("Data Explorer"))
             mouseClick(elementReportOptions.get(1));
+        else if (ReportType.equals("Operations Breakdown"))
+            mouseClick(elementReportOptions.get(0));
     }
 
     public boolean AddGoalDetailsButtonExist() {
@@ -557,14 +557,14 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     }
 
     public boolean CheckForPlatformIcons(){
-        By PlatformIcons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div[5]/div[1]/span");
+        By PlatformIcons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div/div[1]/span");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(PlatformIcons);
         return elementTypes.size() >= 1 ;
     }
 
     public boolean  CheckForPlatformIconsTooltips(){
         boolean returnType = true;
-        By PlatformIcons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div[5]/div[1]/span");
+        By PlatformIcons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div/div[1]/span");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(PlatformIcons);
         for (WebElement elementType :elementTypes){
             Actions toolAct = new Actions(browserFactory.getDriver());

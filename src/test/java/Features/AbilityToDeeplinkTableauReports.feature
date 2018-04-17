@@ -26,8 +26,8 @@ Feature: Ability to deep-link to Tableau reports
 
   @TableauReporting
   Scenario: 03 Tableau Reporting tab opened for Advertiser Analysis
-    When Click on "Advertiser Analysis" Tableau report
-    Then Tableau report opened for "Advertiser Analysis"
+    When Click on "Data Explorer" Tableau report
+    Then Tableau report opened for "Data Explorer"
 
 
   @TableauReporting
