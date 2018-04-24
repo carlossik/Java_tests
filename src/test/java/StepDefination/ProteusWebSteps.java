@@ -5,6 +5,8 @@ import PageObjects.*;
 import SupportingUtilites.BrowserFactory;
 import java.util.Properties;
 import java.io.*;
+
+import cucumber.api.PendingException;
 import cucumber.api.java.en.*;
 import org.junit.Assert;
 import SupportingUtilites.*;
@@ -39,6 +41,7 @@ public class ProteusWebSteps extends BrowserFactory
            e.printStackTrace();
            System.exit(0);
        }
+       loginPage = new ProteusWebLoginPage(this.browserFactory);
     }
 
 
@@ -60,11 +63,10 @@ public class ProteusWebSteps extends BrowserFactory
 
     @Given("I go to the Proteus Home URL in my browser")
     public void GivenIGoToTheProteusHomeURLInMyBrowser()    {
-       SupportingUtilites.BrowserFactory.initBrowser(prop.getProperty("Browser"));
+        SupportingUtilites.BrowserFactory.initBrowser(prop.getProperty("Browser"));
         SupportingUtilites.BrowserFactory.loadApplication(prop.getProperty("ProteusWebURL").replace("{Environment}",prop.getProperty("Environment")));
         System.out.println("I go to the Proteus Home URL in my browser");
     }
-
 
     @When("^Login as \"([^\"]*)\"$")
     public void loginAs(String strRole)    {
@@ -107,7 +109,7 @@ public class ProteusWebSteps extends BrowserFactory
     @Then("The main homepage loads successfully")
     public void ThenTheMainHomepageLoadsSuccessfully()    {
         homePage = new ProteusWebHomePage(this.browserFactory);
-        org.testng.Assert.assertTrue(homePage.CheckHomePage(),"The main homepage not shown");
+
         Assert.assertTrue("The main homepage not shown", homePage.CheckHomePage());
     }
 
@@ -115,7 +117,7 @@ public class ProteusWebSteps extends BrowserFactory
     public void ThenTheCampaignsPageLoadsSuccessfully()    {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("The Campaigns page not loaded",campaignsPage.CheckCampaignsPageLoad());
-       // org.testng.Assert.assertTrue(campaignsPage.CheckCampaignsPageLoad(),"The Campaigns page not loaded",);
+
     }
 
     @Then("Log out, Back to Home, Flights icon shown on Campaign page")
@@ -565,13 +567,13 @@ public class ProteusWebSteps extends BrowserFactory
     public void tooltipClickToGoToReportsShownOnMouseover()  {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("Tooltip 'Click to go to reports' not shown on mouseover",
-                campaignsPage.ReportToolTipShown());
+                campaignsPage.ReportToolTipShown("Flight Level"));
     }
 
     @And("^There are two links in the pop up for the following core reports:$")
     public void thereAreTwoLinksInThePopUpForTheFollowingCoreReports() {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
-        Assert.assertTrue("Tooltip 'Click to go to reports' not shown on mouseover",
+        Assert.assertTrue("Two links core reports does not exist in the pop up",
                 campaignsPage.ReportingOptions());
     }
 
@@ -582,13 +584,15 @@ public class ProteusWebSteps extends BrowserFactory
     }
 
     @Then("^Tableau report opened for \"([^\"]*)\"$")
-    public void tableauReportOpenedFor(String arg0)  {
+    public void tableauReportOpenedFor(String strReportName)  {
         List<String> browserTabs = new ArrayList<> (this.browserFactory.getDriver().getWindowHandles());
       //  System.out.println("browserTabs.size()  : " + browserTabs.size() );
-        Assert.assertTrue("Tableau report opened for " + arg0,
+        Assert.assertTrue("Tableau report not opened for " + strReportName,
                 browserTabs.size() >= 2 );
         this.browserFactory.getDriver().switchTo().window(browserTabs .get(1));
-       // System.out.println(this.browserFactory.getDriver().getTitle());
+        Assert.assertTrue("Tableau report not opened for " + strReportName,
+                this.browserFactory.getDriver().getCurrentUrl().contains(strReportName) );
+    //    System.out.println(this.browserFactory.getDriver().getCurrentUrl());
         this.browserFactory.getDriver().close();
         this.browserFactory.getDriver().switchTo().window(browserTabs.get(0));
     }
@@ -844,6 +848,52 @@ public class ProteusWebSteps extends BrowserFactory
                 campaignsPage.CheckForAdServerDetailsToolTip());
     }
 
+    @Then("^There is a Operation Unit Level reporting chart icon to the right hand side of the Flight count$")
+    public void thereIsAOperationUnitLevelReportingChartIconToTheRightHandSideOfTheFlight()  {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("There is a Operation Unit Level reporting chart icon not shown next to Flight count",
+                campaignsPage.getOperationUnitReportButtonCount() > 0);
+    }
 
+    @Then("^Tooltip 'Click to go to reports Operational Unit level' shown on mouseover at Operation Unit icon$")
+    public void tooltipClickToGoToReportsOperationalUnitLevelShownOnMouseoverAtOperationUnitIcon()  {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Tooltip 'Click to go to reports at Operation Unit level' not shown on mouseover",
+                campaignsPage.ReportToolTipShown("OperationUnit"));
+    }
 
+    @When("^Click on \"([^\"]*)\" Operation Unit Tableau report$")
+    public void clickOnOperationUnitTableauReport(String strReportType)   {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        campaignsPage.SelectTableauOPerationalUnitReporting(strReportType);
+    }
+
+    @And("^There are two links in the pop up for the following Operational Unit reports:$")
+    public void thereAreTwoLinksInThePopUpForTheFollowingOperationalUnitReports()   {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Tooltip 'Click to go to reports' not shown on mouseover",
+                campaignsPage.ReportingOptions());
+        campaignsPage.OperationalUnitReportingOptions();
+    }
+
+    @When("^I search/filter for a Campaign \"([^\"]*)\"$")
+    public void iSearchFilterForACampaign(String CampaignName)   {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        campaignsPage.EnterSearchFilter(CampaignName, "", "");
+        GeneralUtilites.wait(2);
+    }
+
+    @Then("^Campaign details shown for each flight row$")
+    public void campaignDetailsShownForEachFlightRow()  {
+      campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+      Assert.assertTrue("Campaign details not shown for each flight row",
+                campaignsPage.CheckForCampaignDetailsForFlight());
+    }
+
+    @And("^All Flights matching campaign \"([^\"]*)\" are filtered$")
+    public void allFlightsMatchingCampaignAreFiltered(String CampaignName)  {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("All flights matching Campaign are not listed",
+                campaignsPage.CheckForCampaignNameForFlight(CampaignName));
+    }
 }

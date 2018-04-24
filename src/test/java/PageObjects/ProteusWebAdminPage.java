@@ -31,7 +31,7 @@ public class ProteusWebAdminPage extends BrowserFactory
 
     @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[1]/aside/button[4]")
     @CacheLookup
-    public WebElement btnAdvertiserAccounts;
+    private WebElement btnAdvertiserAccounts;
 
 
     @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[2]/div/div/div/div/div[1]/div[1]/button")
@@ -48,11 +48,11 @@ public class ProteusWebAdminPage extends BrowserFactory
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[1]/div[2]/div[1]/div/div/input")
     @CacheLookup
-    public WebElement drpdwnOperationalUnit ;
+    private WebElement drpdwnOperationalUnit ;
 
     @FindBy(how = How.ID, using = "TEL")
     @CacheLookup
-    public WebElement lstTEL;
+    private WebElement lstTEL;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[1]/div/div/div/div[2]/div/button")
     @CacheLookup
@@ -68,18 +68,19 @@ public class ProteusWebAdminPage extends BrowserFactory
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header//button")
     @CacheLookup
-    public WebElement btnExpand;
+    private WebElement btnExpand;
 
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[3]/div/div/div[2]/ul/li[2]")
     @CacheLookup
-    public WebElement btnLogOut;
+    private WebElement btnLogOut;
 
 
     public void NavigateAdministrationSeats()
     {
         GeneralUtilites.wait(1);
         mouseClick(btnSeats );
+
     }
 
     public void NavigateAdministrationJobs()

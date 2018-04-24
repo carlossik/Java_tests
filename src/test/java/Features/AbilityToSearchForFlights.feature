@@ -18,14 +18,12 @@ Feature: Ability to search for Flights
 
   @SearchOnProWeb
   Scenario: 02 Ability to Search fights by Flight Name or Booking Code
-
     Then All Flights loads which I have access to
     And I can search by Flight Name or Booking Code
     And LogOut ProteusWeb from Campaigns page
 
   @SearchOnProWeb
   Scenario: 03 Ability to Filter fights by Advertiser or Agency
-
     Then All Flights loads which I have access to
     And Filter dropdown fields exist
     And LogOut ProteusWeb from Campaigns page
@@ -33,13 +31,11 @@ Feature: Ability to search for Flights
 
   @SearchOnProWeb
   Scenario: 04 Ability to use search and filter combinations
-
     Then All Flights loads which I have access to
     And LogOut ProteusWeb from Campaigns page
 
   @SearchOnProWeb
   Scenario: 05 Apply button is enabled after entering/selecting search and filters
-
     Then All Flights loads which I have access to
     When I search/filter for a particular result
     Then Apply button is enabled
@@ -47,7 +43,6 @@ Feature: Ability to search for Flights
 
   @SearchOnProWeb
   Scenario: 06 Clear Filters button is enabled after entering/selecting search and filters
-
     Then All Flights loads which I have access to
     When I search/filter for a particular result
     Then Clear Filters button is enabled
@@ -55,7 +50,6 @@ Feature: Ability to search for Flights
 
   @SearchOnProWeb
   Scenario: 07 Flights matching Search/Filter Combination loaded as results
-
     Then All Flights loads which I have access to
     When I search/filter for a particular result
     And Click on Apply button
@@ -91,11 +85,11 @@ Feature: Ability to search for Flights
     When I search/filter for a particular result
     And Click on Apply button
     Then All Flights matching search/filter combination load as results
-  # And Pagination shown when more than 20 flights displayed
+    # And Pagination shown when more than 20 flights displayed
     Then LogOut ProteusWeb from Campaigns page
 
 
-     @SearchOnProWeb
+  @SearchOnProWeb
   Scenario: 11 No flights matching your search message shown
     Then All Flights loads which I have access to
     When I search/filter for a flightName "AAAAAAAAA"
@@ -103,4 +97,11 @@ Feature: Ability to search for Flights
     Then No flights returned and message displayed
     Then LogOut ProteusWeb from Campaigns page
 
-
+  @SearchOnProWeb
+  Scenario: 12 Able to search flights based on Campaign Name
+    Then All Flights loads which I have access to
+    When I search/filter for a Campaign "LOCAL BRANDING - GAME/COUNTRY"
+    And Click on Apply button
+    Then Campaign details shown for each flight row
+    And All Flights matching campaign "LOCAL BRANDING - GAME/COUNTRY" are filtered
+    And LogOut ProteusWeb from Campaigns page

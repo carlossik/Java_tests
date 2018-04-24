@@ -444,16 +444,32 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         return elementTypes.size();
     }
 
-    public boolean ReportToolTipShown() {
-        By btnReports = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[1]/div/div[2]/span/div/button");
+    public int getOperationUnitReportButtonCount(){
+        By ReportButtons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/div[1]/span/div/button");
+        List<WebElement> elementTypes = browserFactory.getDriver().findElements(ReportButtons);
+        System.out.println("\n ReportButtons Count : " + elementTypes.size());
+        return elementTypes.size();
+    }
+
+    public boolean ReportToolTipShown(String strReportType) {
+        By btnReports;
+        String ToolTipText;
+        if(strReportType.toUpperCase().equals("OperationUnit".toUpperCase())) {
+           btnReports = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/div[1]/span/div/button");
+            ToolTipText= "Click to go to reports at Operational Unit level";
+        }
+        else {
+           btnReports = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[1]/div/div[2]/span/div/button");
+            ToolTipText= "Click to go to reports at Flight level";
+        }
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(btnReports);
-        System.out.println("\n Flight Count : " + elementTypes.size());
+     //   System.out.println("\n Flight Count : " + elementTypes.size());
         boolean returnType;
         if (elementTypes.size() >= 1) {
             Actions toolAct = new Actions(browserFactory.getDriver());
             toolAct.clickAndHold(elementTypes.get(0)).build().perform();
             GeneralUtilites.wait(2);
-            returnType = txtTooltip.getText().toLowerCase().contains("Click to go to reports".toLowerCase());
+            returnType = txtTooltip.getText().toLowerCase().contains(ToolTipText.toLowerCase());
             return returnType;
         } else
             return false;
@@ -471,6 +487,17 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
                 && elementReportOptions.get(0).getText().toUpperCase().contains("Operations Breakdown".toUpperCase());
     }
 
+    public boolean OperationalUnitReportingOptions(){
+        By ReportButtons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/div[1]/span/div/button");
+        List<WebElement> elementTypes = browserFactory.getDriver().findElements(ReportButtons);
+        mouseClick(elementTypes.get(0));
+        By ReportOptions = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/div[1]/span/div/div/ul/li/span");
+        List<WebElement> elementReportOptions = browserFactory.getDriver().findElements(ReportOptions);
+        return elementReportOptions.size() == 2
+                && elementReportOptions.get(1).getText().toUpperCase().contains("Performance Overview".toUpperCase())
+                && elementReportOptions.get(0).getText().toUpperCase().contains("Management Report".toUpperCase());
+    }
+
     public void SelectTableauReporting(String ReportType) {
         By ReportButtons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[1]/div/div[2]/span/div/button");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(ReportButtons);
@@ -483,6 +510,20 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
             mouseClick(elementReportOptions.get(1));
         else if (ReportType.equals("Operations Breakdown"))
             mouseClick(elementReportOptions.get(0));
+    }
+
+    public void SelectTableauOPerationalUnitReporting(String ReportType) {
+        By ReportButtons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/div[1]/span/div/button");
+        List<WebElement> elementTypes = browserFactory.getDriver().findElements(ReportButtons);
+        mouseClick(elementTypes.get(0));
+        GeneralUtilites.wait(2);
+        By ReportOptions = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/div[1]/span/div/div/ul/li/span");
+        List<WebElement> elementReportOptions = browserFactory.getDriver().findElements(ReportOptions);
+
+        if (ReportType.equals("Management Report"))
+            mouseClick(elementReportOptions.get(0));
+        else if (ReportType.equals("Performance Overview"))
+            mouseClick(elementReportOptions.get(1));
     }
 
     public boolean AddGoalDetailsButtonExist() {
@@ -666,6 +707,22 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         returnType = returnType && webElements.get(2).getText().toLowerCase().contains("Measurable".toLowerCase());
         returnType = returnType && webElements.get(1).getText().toLowerCase().contains("Trackable".toLowerCase());
         returnType = returnType && webElements.get(3).getText().toLowerCase().contains("Viewable".toLowerCase());
+        return returnType;
+    }
+
+    public boolean CheckForCampaignDetailsForFlight(){
+        By CampaignDetails = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[1]/div[2]/span[1]");
+        List<WebElement> webElements = browserFactory.getDriver().findElements(CampaignDetails);
+        return webElements.get(0).getText().toLowerCase().contains("CAMPAIGN:".toLowerCase());
+    }
+
+    public boolean CheckForCampaignNameForFlight(String CampaignName){
+        boolean returnType = true;
+        By CampaignDetails = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[1]/div[2]/span[2]");
+        List<WebElement> webElements = browserFactory.getDriver().findElements(CampaignDetails);
+        for (WebElement camp:webElements) {
+            returnType = returnType &&  camp.getText().toLowerCase().contains(CampaignName.toLowerCase());
+        }
         return returnType;
     }
 

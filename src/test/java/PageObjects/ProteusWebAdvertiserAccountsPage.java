@@ -25,7 +25,6 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
     public WebElement lblAdvertiserAccounts;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/form/div[1]/div/input")
-    @CacheLookup
     public WebElement txtSearch;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/form/div[2]/div/div/input")
@@ -41,7 +40,7 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
     private WebElement chbxRequiresAction;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/form/div[5]/button[1]")
-    @CacheLookup
+    //@CacheLookup
     private WebElement btnApplyFilters;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/form/div[5]/button[2]")
@@ -234,6 +233,7 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
     }
 
     public void SearchForAdvertiser(String AdvertiserName){
+        GeneralUtilites.wait(1);
         enterText(txtSearch, AdvertiserName);
         mouseClick(btnApplyFilters);
     }
