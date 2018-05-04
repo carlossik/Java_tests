@@ -33,10 +33,12 @@ Feature: Ability to log into Pro Web
     Then The main homepage loads successfully
     When  I click on "Campaigns" from home page
     Then Log out, Back to Home, Flights icon shown on Campaign page
+    And Creatives option shown on the Campaigns tab
     And LogOut ProteusWeb from Home Page
 
   @LoginProWeb
   Scenario: 05 Navigated to Campaigns when logged in with only Campaign Web role
     When Login as "CAMPAIGN MANAGEMENT WEB"
     Then Log out, Back to Home, Flights icon shown on Campaign page
+    And Creatives option not shown on the Campaigns tab
     And LogOut ProteusWeb from Home Page

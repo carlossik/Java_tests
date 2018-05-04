@@ -1,5 +1,5 @@
 package PageObjects;
-import SupportingUtilites.ElementExtensions;
+
 import SupportingUtilites.GeneralUtilites;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,7 +7,6 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.*;
 import SupportingUtilites.BrowserFactory;
 import org.openqa.selenium.support.PageFactory;
-
 import java.util.ArrayList;
 import java.util.List;
 

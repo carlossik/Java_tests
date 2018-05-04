@@ -50,9 +50,13 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     @CacheLookup
     private WebElement btnExpand;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[1]/aside/button")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[1]/aside/button[1]")
     @CacheLookup
     public WebElement btnFLIGHTS;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[1]/aside/button[2]")
+    @CacheLookup
+    public WebElement btnCREATIVES;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[3]/div/div/div[2]/ul/li[2]")
     @CacheLookup
@@ -145,7 +149,34 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[3]/div[3]/span[2]")
     private WebElement txtClicks;
 
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div[6]/div[1]/span")
+    public  WebElement btnFlightCreatives;
 
+    public boolean CheckForCreativeTab()
+    {
+        By asideButtons = By.xpath("//*[@id='root']/div/section/div/div[1]/aside/button");
+        List<WebElement> elementTypes = browserFactory.getDriver().findElements(asideButtons);
+        System.out.println("asideButtons count : " + elementTypes.size());
+        return elementTypes.size() == 2 && elementTypes.get(1).getText().toUpperCase().contains("CREATIVES".toUpperCase());
+    }
+
+    public boolean CheckForAdvertiserCreativeIcon()
+    {
+        By btnCreatives = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[1]/div[6]/div[1]/span");
+        List<WebElement> elementTypes = browserFactory.getDriver().findElements(btnCreatives);
+        System.out.println("btnCreatives count : " + elementTypes.size());
+        return elementTypes.size() > 0;
+    }
+
+    public boolean CheckForAdvertiserCreativeToopTip()
+    {
+        By AdvertiserCreativeIcon = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div[6]/div[1]/span");
+        WebElement webElement = browserFactory.getDriver().findElement(AdvertiserCreativeIcon);
+        Actions toolAct = new Actions(browserFactory.getDriver());
+        toolAct.moveToElement(webElement).build().perform();
+        GeneralUtilites.wait(2);
+        return txtTooltip.getText().toLowerCase().contains("View Creatives at Advertiser Level".toLowerCase());
+    }
 
     public boolean CheckCampaignsPageLoad() {
         return tabCampaigns.isDisplayed();
@@ -459,7 +490,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
             ToolTipText= "Click to go to reports at Operational Unit level";
         }
         else {
-           btnReports = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[1]/div/div[2]/span/div/button");
+           btnReports = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[1]/div/div[3]/span/div/button");
             ToolTipText= "Click to go to reports at Flight level";
         }
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(btnReports);
@@ -477,10 +508,10 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
 
     public boolean ReportingOptions() {
 
-        By ReportButtons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[1]/div/div[2]/span/div/button");
+        By ReportButtons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[1]/div/div[3]/span/div/button");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(ReportButtons);
         mouseClick(elementTypes.get(0));
-        By ReportOptions = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div/div[2]/span/div/div/ul/li/span");
+        By ReportOptions = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div/div[3]/span/div/div/ul/li/span");
         List<WebElement> elementReportOptions = browserFactory.getDriver().findElements(ReportOptions);
         return elementReportOptions.size() == 2
                 && elementReportOptions.get(1).getText().toUpperCase().contains("Data Explorer".toUpperCase())
@@ -499,11 +530,11 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     }
 
     public void SelectTableauReporting(String ReportType) {
-        By ReportButtons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[1]/div/div[2]/span/div/button");
+        By ReportButtons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[1]/div/div[3]/span/div/button");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(ReportButtons);
         mouseClick(elementTypes.get(0));
         GeneralUtilites.wait(2);
-        By ReportOptions = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div/div[2]/span/div/div/ul/li/span");
+        By ReportOptions = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div/div[3]/span/div/div/ul/li/span");
         List<WebElement> elementReportOptions = browserFactory.getDriver().findElements(ReportOptions);
 
         if (ReportType.equals("Data Explorer"))
@@ -598,14 +629,14 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     }
 
     public boolean CheckForPlatformIcons(){
-        By PlatformIcons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div/div[1]/span");
+        By PlatformIcons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div/div[2]/span");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(PlatformIcons);
         return elementTypes.size() >= 1 ;
     }
 
     public boolean  CheckForPlatformIconsTooltips(){
         boolean returnType = true;
-        By PlatformIcons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div/div[1]/span");
+        By PlatformIcons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div/div[2]/span");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(PlatformIcons);
         for (WebElement elementType :elementTypes){
             Actions toolAct = new Actions(browserFactory.getDriver());
@@ -748,11 +779,14 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         return returnType;
     }
 
-    public boolean CheckForAdvertiserPlatformTab(){
+    public boolean  CheckForAdvertiserPlatformTab(){
         boolean returnType = true;
-        By PlatformIcons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div[5]/div[1]/span");
+        By SeatIcons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div/div[2]/span");
+        WebElement SeatIconsObj = browserFactory.getDriver().findElement(SeatIcons);
+        mouseClick(SeatIconsObj);
+        By PlatformIcons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div[6]/div[2]/span/div/div/ul/li");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(PlatformIcons);
-        for (WebElement elementType :elementTypes){
+        for (WebElement elementType :elementTypes) {
             mouseClick(elementType);
             GeneralUtilites.wait(2);
             List<String> browserTabs = new ArrayList<>(this.browserFactory.getDriver().getWindowHandles());
@@ -760,6 +794,8 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
             this.browserFactory.getDriver().switchTo().window(browserTabs.get(1));
             this.browserFactory.getDriver().close();
             this.browserFactory.getDriver().switchTo().window(browserTabs.get(0));
+            GeneralUtilites.wait(1);
+            mouseClick(SeatIconsObj);
         }
         return returnType;
     }

@@ -56,6 +56,10 @@ public class GeneralUtilites
         }
     }
 
+    public static <T> boolean listEqualsIgnoreOrder(List<T> list1, List<T> list2) {
+        return new HashSet<>(list1).equals(new HashSet<>(list2));
+    }
+
     private static boolean isProcessRunning(String serviceName) throws Exception    {
         Process p = Runtime.getRuntime().exec( "tasklist");
         BufferedReader reader = new BufferedReader

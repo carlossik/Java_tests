@@ -6,6 +6,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.*;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.*;
@@ -143,6 +145,29 @@ public class BrowserFactory {
     {
         Select select = new Select(objElement);
         select.selectByIndex(strValue);
+    }
+
+    protected static int getElementCount(String xpath)
+    {
+        By objBy = By.xpath(xpath);
+        List<WebElement> elementTypes = driver.findElements(objBy);
+        return elementTypes.size();
+    }
+
+    protected static List<WebElement> getElements(String xpath)
+    {
+        By objBy = By.xpath(xpath);
+        return driver.findElements(objBy);
+    }
+
+    protected static String getToolTip(WebElement objWebElement)
+    {
+        Actions toolAct = new Actions(driver);
+        toolAct.moveToElement(objWebElement).build().perform();
+        GeneralUtilites.wait(2);
+        By objBy = By.xpath("/html/body/div[2]/span/span");
+        WebElement  txtToolTip = driver.findElement(objBy);
+        return txtToolTip.getText();
     }
 }
 

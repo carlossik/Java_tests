@@ -22,6 +22,7 @@ public class ProteusWebSteps extends BrowserFactory
     private ProteusWebReportsPage reportsPage;
     private ProteusWebClientReportsPage clientReportsPage;
     private ProteusWebAdvertiserAccountsPage adverAcctPage;
+    private ProteusWebCreativesPage creativesPage;
     private ReportingAPIResponse objResponse;
     private Properties prop = new Properties();
     private InputStream input = null;
@@ -42,6 +43,7 @@ public class ProteusWebSteps extends BrowserFactory
            System.exit(0);
        }
        loginPage = new ProteusWebLoginPage(this.browserFactory);
+       campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
     }
 
 
@@ -109,14 +111,13 @@ public class ProteusWebSteps extends BrowserFactory
     @Then("The main homepage loads successfully")
     public void ThenTheMainHomepageLoadsSuccessfully()    {
         homePage = new ProteusWebHomePage(this.browserFactory);
-
         Assert.assertTrue("The main homepage not shown", homePage.CheckHomePage());
     }
 
     @Then("The Campaigns page loads successfully")
     public void ThenTheCampaignsPageLoadsSuccessfully()    {
-        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
-        Assert.assertTrue("The Campaigns page not loaded",campaignsPage.CheckCampaignsPageLoad());
+      campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+      Assert.assertTrue("The Campaigns page not loaded",campaignsPage.CheckCampaignsPageLoad());
 
     }
 
@@ -872,8 +873,8 @@ public class ProteusWebSteps extends BrowserFactory
     public void thereAreTwoLinksInThePopUpForTheFollowingOperationalUnitReports()   {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("Tooltip 'Click to go to reports' not shown on mouseover",
-                campaignsPage.ReportingOptions());
-        campaignsPage.OperationalUnitReportingOptions();
+                campaignsPage.OperationalUnitReportingOptions());
+
     }
 
     @When("^I search/filter for a Campaign \"([^\"]*)\"$")
@@ -896,4 +897,36 @@ public class ProteusWebSteps extends BrowserFactory
         Assert.assertTrue("All flights matching Campaign are not listed",
                 campaignsPage.CheckForCampaignNameForFlight(CampaignName));
     }
+
+    @And("^Creatives option shown on the Campaigns tab$")
+    public void creativesOptionShownOnTheCampaignsTab()   {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Creatives option not shown on the Campaigns tab", campaignsPage.CheckForCreativeTab());
+    }
+
+    @And("^Creatives option not shown on the Campaigns tab$")
+    public void creativesOptionNotShownOnTheCampaignsTab()  {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertFalse("Creatives option shown on the Campaigns tab", campaignsPage.CheckForCreativeTab());
+    }
+
+    @And("^There is an icons for Creatives$")
+    public void thereIsAnIconsForCreatives()  {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Icons for Creatives not shown", campaignsPage.CheckForAdvertiserCreativeIcon());
+    }
+
+    @And("^Tooltips shown on mouseover on each Creatives icon$")
+    public void tooltipsShownOnMouseoverOnEachCreativesIcon()   {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Tooltips not shown on mouseover on each Creatives icon", campaignsPage.CheckForAdvertiserCreativeToopTip());
+    }
+
+    @When("^I click on the creatives icon on flight row$")
+    public void iClickOnTheCreativesIconOnFlightRow()  {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        mouseClick( campaignsPage.btnFlightCreatives);
+    }
+
+
 }
