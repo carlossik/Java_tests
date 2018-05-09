@@ -140,7 +140,7 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
 
     @And("^The following column for advertiser with ad server mapped$")
     public void theFollowingColumnInformationIsAvailable()   {
-        List<String> expectedHeaders = Arrays.asList ("Platform","arrow_upward","Creative Name","External ID","AD Server Placement","Classification","DSP Status","DSP Status");
+        List<String> expectedHeaders = Arrays.asList ("Platform","arrow_upward","Creative Name","External ID","AD Server Placement","Classification","DSP Status","DSP Audit Status");
         Assert.assertTrue("All the expected columns not shown",
                 creativesPage.checkForCreativeColumns(expectedHeaders));
     }
@@ -152,7 +152,7 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
 
     @Then("^The following column for advertiser without ad server mapped$")
     public void theFollowingColumnForAdvertiserWithoutAdServerMapped()  {
-        List<String> expectedHeaders = Arrays.asList ("Platform","arrow_upward","Creative Name","External ID", "Classification","DSP Status","DSP Status");
+        List<String> expectedHeaders = Arrays.asList ("Platform","arrow_upward","Creative Name","External ID", "Classification","DSP Status","DSP Audit Status");
         Assert.assertTrue("All the expected columns not shown",
                 creativesPage.checkForCreativeColumns(expectedHeaders));
     }
