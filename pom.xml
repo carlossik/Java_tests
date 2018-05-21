@@ -12,11 +12,11 @@
 
     <properties>
         <maven-compiler-plugin-version>3.7.0</maven-compiler-plugin-version>
-        <Selenuim-version>3.11.0</Selenuim-version>
+        <Selenuim-version>3.12.0</Selenuim-version>
         <cucumber-version>1.2.5</cucumber-version>
-        <cucumber-report-version>1.3.1</cucumber-report-version>
-        <rest-assured-version>3.0.7</rest-assured-version>
-        <spring-version>5.0.5.RELEASE</spring-version>
+        <cucumber-report-version>1.3.3</cucumber-report-version>
+        <rest-assured-version>3.1.0</rest-assured-version>
+        <spring-version>5.0.6.RELEASE</spring-version>
     </properties>
 
     <dependencies>
@@ -158,7 +158,7 @@
         <dependency>
             <groupId>net.masterthought</groupId>
             <artifactId>cucumber-reporting</artifactId>
-            <version>3.16.0</version>
+            <version>3.17.1</version>
         </dependency>
 
         <dependency>
@@ -257,19 +257,19 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.9-rc</version>
+            <version>8.0.11</version>
         </dependency>
 
         <dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-surefire-provider</artifactId>
-            <version>1.1.1</version>
+            <version>1.2.0</version>
         </dependency>
 
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.1.0</version>
+            <version>5.2.0</version>
         </dependency>
 
         <dependency>
