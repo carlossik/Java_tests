@@ -123,6 +123,16 @@ public class BrowserFactory {
         }
     }
 
+    protected void typeText(WebElement objElement,String strText)
+    {
+        if (strText != null)
+        {
+            objElement.clear();
+            objElement.sendKeys(strText);
+           // objElement.sendKeys(Keys.TAB);
+        }
+    }
+
     public static void selectText(WebElement objElement, String strText)
     {
         if (!strText.equals(""))
@@ -147,17 +157,14 @@ public class BrowserFactory {
         select.selectByIndex(strValue);
     }
 
-    protected static int getElementCount(String xpath)
-    {
-        By objBy = By.xpath(xpath);
-        List<WebElement> elementTypes = driver.findElements(objBy);
-        return elementTypes.size();
+    protected static int getElementCount(String xpath)    {
+        return driver.findElements(By.xpath(xpath)).size();
     }
 
     protected static List<WebElement> getElements(String xpath)
     {
-        By objBy = By.xpath(xpath);
-        return driver.findElements(objBy);
+
+        return driver.findElements(By.xpath(xpath));
     }
 
     protected static String getToolTip(WebElement objWebElement)
@@ -168,6 +175,11 @@ public class BrowserFactory {
         By objBy = By.xpath("/html/body/div[2]/span/span");
         WebElement  txtToolTip = driver.findElement(objBy);
         return txtToolTip.getText();
+    }
+
+    protected static String getToolTip(String Xpath)
+    {
+        return  getToolTip(driver.findElement(By.xpath(Xpath)));
     }
 }
 

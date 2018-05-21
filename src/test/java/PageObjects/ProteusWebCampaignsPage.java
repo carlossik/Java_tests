@@ -58,6 +58,10 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     @CacheLookup
     public WebElement btnCREATIVES;
 
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[1]/aside/button[3]")
+    @CacheLookup
+    public WebElement btnPIXELS;
+
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[3]/div/div/div[2]/ul/li[2]")
     @CacheLookup
     private WebElement btnLogOut;
@@ -149,8 +153,11 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[3]/div[3]/span[2]")
     private WebElement txtClicks;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div[6]/div[1]/span")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div/div[1]/span")
     public  WebElement btnFlightCreatives;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div/div[2]/span")
+    public  WebElement btnFlightPixels;
 
     public boolean CheckForCreativeTab()
     {
@@ -160,22 +167,42 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         return elementTypes.size() > 2 && elementTypes.get(1).getText().toUpperCase().contains("CREATIVES".toUpperCase());
     }
 
+    public boolean CheckForPixelsTab()
+    {
+        By asideButtons = By.xpath("//*[@id='root']/div/section/div/div[1]/aside/button");
+        List<WebElement> elementTypes = browserFactory.getDriver().findElements(asideButtons);
+        System.out.println("asideButtons count : " + elementTypes.size());
+        return elementTypes.size() >= 3 && elementTypes.get(2).getText().toUpperCase().contains("PIXELS".toUpperCase());
+    }
+
     public boolean CheckForAdvertiserCreativeIcon()
     {
-        By btnCreatives = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[1]/div[6]/div[1]/span");
+        By btnCreatives = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[1]/div/div[1]/span");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(btnCreatives);
         System.out.println("btnCreatives count : " + elementTypes.size());
         return elementTypes.size() > 0;
     }
 
-    public boolean CheckForAdvertiserCreativeToopTip()
+    public boolean CheckForAdvertiserPixelIcon()    {
+        By btnCreatives = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[1]/div/div[2]/span");
+        List<WebElement> elementTypes = browserFactory.getDriver().findElements(btnCreatives);
+        System.out.println("btnPixel count : " + elementTypes.size());
+        return elementTypes.size() > 0;
+    }
+
+    public boolean CheckForAdvertiserCreativeToolTip()
     {
-        By AdvertiserCreativeIcon = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div[6]/div[1]/span");
+        By AdvertiserCreativeIcon = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[1]/div/div[1]/span");
         WebElement webElement = browserFactory.getDriver().findElement(AdvertiserCreativeIcon);
-        Actions toolAct = new Actions(browserFactory.getDriver());
-        toolAct.moveToElement(webElement).build().perform();
-        GeneralUtilites.wait(2);
-        return txtTooltip.getText().toLowerCase().contains("View Creatives at Advertiser Level".toLowerCase());
+       // System.out.println("Toop tip : " + getToolTip(webElement).toLowerCase());
+        return getToolTip(webElement).toLowerCase().contains("View Creatives at Advertiser Level".toLowerCase());
+
+    }
+
+    public boolean  CheckForAdvertiserPixelToolTip()    {
+        By AdvertiserPixelIcon = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[1]/div/div[2]/span");
+        WebElement webElement = browserFactory.getDriver().findElement(AdvertiserPixelIcon);
+        return getToolTip(webElement).toLowerCase().contains("View pixels at Advertiser Level".toLowerCase());
     }
 
     public boolean CheckCampaignsPageLoad() {

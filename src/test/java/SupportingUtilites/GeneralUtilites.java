@@ -60,6 +60,13 @@ public class GeneralUtilites
         return new HashSet<>(list1).equals(new HashSet<>(list2));
     }
 
+    public static boolean isCollectionSorted(List<String> list) {
+        GeneralUtilites.wait(1);
+        List<String> copy = new ArrayList<>(list);
+        Collections.sort(copy);
+        return copy.equals(list);
+    }
+
     private static boolean isProcessRunning(String serviceName) throws Exception    {
         Process p = Runtime.getRuntime().exec( "tasklist");
         BufferedReader reader = new BufferedReader

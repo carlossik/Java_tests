@@ -903,12 +903,28 @@ public class ProteusWebSteps extends BrowserFactory
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("Creatives option not shown on the Campaigns tab", campaignsPage.CheckForCreativeTab());
     }
+    @And("^Pixels option shown on the Campaigns tab$")
+    public void pixelsOptionShownOnTheCampaignsTab()   {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Pixels option not shown on the Campaigns tab", campaignsPage.CheckForPixelsTab());
+    }
+
+
 
     @And("^Creatives option not shown on the Campaigns tab$")
     public void creativesOptionNotShownOnTheCampaignsTab()  {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertFalse("Creatives option shown on the Campaigns tab", campaignsPage.CheckForCreativeTab());
     }
+
+
+    @And("^Pixels option not shown on the Campaigns tab$")
+    public void pixelsOptionNotShownOnTheCampaignsTab()  {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertFalse("Creatives option shown on the Campaigns tab", campaignsPage.CheckForPixelsTab());
+    }
+
+
 
     @And("^There is an icons for Creatives$")
     public void thereIsAnIconsForCreatives()  {
@@ -919,7 +935,7 @@ public class ProteusWebSteps extends BrowserFactory
     @And("^Tooltips shown on mouseover on each Creatives icon$")
     public void tooltipsShownOnMouseoverOnEachCreativesIcon()   {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
-        Assert.assertTrue("Tooltips not shown on mouseover on each Creatives icon", campaignsPage.CheckForAdvertiserCreativeToopTip());
+        Assert.assertTrue("Tooltips not shown on mouseover on each Creatives icon", campaignsPage.CheckForAdvertiserCreativeToolTip());
     }
 
     @When("^I click on the creatives icon on flight row$")
@@ -929,4 +945,10 @@ public class ProteusWebSteps extends BrowserFactory
     }
 
 
+    @When("^I search/filter for a search key \"([^\"]*)\"$")
+    public void iSearchFilterForASearchKey(String searchKey)     {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        campaignsPage.EnterSearchFilter(searchKey, "", "");
+        GeneralUtilites.wait(2);
+    }
 }

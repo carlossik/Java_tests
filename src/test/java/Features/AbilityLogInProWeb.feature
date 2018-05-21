@@ -34,6 +34,7 @@ Feature: Ability to log into Pro Web
     When  I click on "Campaigns" from home page
     Then Log out, Back to Home, Flights icon shown on Campaign page
     And Creatives option shown on the Campaigns tab
+    And Pixels option shown on the Campaigns tab
     And LogOut ProteusWeb from Home Page
 
   @LoginProWeb
@@ -41,4 +42,5 @@ Feature: Ability to log into Pro Web
     When Login as "CAMPAIGN MANAGEMENT WEB"
     Then Log out, Back to Home, Flights icon shown on Campaign page
     And Creatives option not shown on the Campaigns tab
+    And Pixels option not shown on the Campaigns tab
     And LogOut ProteusWeb from Home Page

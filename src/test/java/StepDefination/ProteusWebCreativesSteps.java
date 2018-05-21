@@ -58,9 +58,7 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
 
     @And("^Creatives are listed for the Advertiser Account of the Flight selected$")
     public void creativesAreListedForTheAdvertiserAccountOfTheFlightSelected()  {
-
-        Assert.assertTrue("",creativesPage.creativesForAdvertiserListed());
-
+        Assert.assertTrue("Creatives are not listed for the Advertiser Account of the Flight selected",creativesPage.creativesForAdvertiserListed());
     }
 
     @And("^Flights Advertiser Account is automatically applied on the Advertiser Account Name$")
