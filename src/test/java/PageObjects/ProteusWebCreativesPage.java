@@ -61,7 +61,6 @@ public class ProteusWebCreativesPage extends BrowserFactory {
     public WebElement btnChange;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/button")
-    @CacheLookup
     public WebElement btnCreativesBulkEdit;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div/button[1]")
@@ -146,7 +145,7 @@ public class ProteusWebCreativesPage extends BrowserFactory {
 
     private String strCreativeAdvertiserIconXpath=  "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[2]";
     private String strTagIconXpath =  "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[8]/span" ;
-    private String strColumnHeaders = "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//span[text() != '']";
+    private String strColumnHeaders = "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]/div/div";
 
     public boolean creativesForAdvertiserListed()
     {
@@ -192,5 +191,39 @@ public class ProteusWebCreativesPage extends BrowserFactory {
         mouseClick(getElements("/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div/ul").get(0));
         GeneralUtilites.wait(1);
         btnOK.click();
+    }
+
+    public void BulkEditCreatives(){
+        List<WebElement> elementTypes = getElements("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[4]/div/div/div/div/input");
+        int maxLimit = 6;
+        if(elementTypes.size() < maxLimit)
+            maxLimit = elementTypes.size();
+        int indexOne =   GeneralUtilites.RandomNumber(1,maxLimit);
+        int indexTwo =  GeneralUtilites.RandomNumber(1,maxLimit);
+        if(indexOne == indexTwo) {indexTwo++;}
+        if(indexTwo > maxLimit) { indexTwo = 1;}
+
+        // Editing AD Server Placements
+        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div["+indexOne+"]/div[4]/div/div/div/div/input"));
+        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div["+indexOne+"]/div[4]/div/div//ul/li[1]"));
+        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div["+indexTwo+"]/div[4]/div/div/div/div/input"));
+        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div["+indexTwo+"]/div[4]/div/div//ul/li[1]"));
+
+        // Editing Classification Type
+        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div["+indexOne+"]/div[5]/div/div[1]/div/div/div/input"));
+        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div["+indexOne+"]/div[5]/div/div[1]/div/div/ul/li[1]"));
+        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div["+indexTwo+"]/div[5]/div/div[1]/div/div/div/input"));
+        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div["+indexTwo+"]/div[5]/div/div[1]/div/div/ul/li[2]"));
+
+        // Editing Classification
+        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div["+indexOne+"]/div[5]/div/div[2]/div/div/div/input"));
+        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div["+indexOne+"]/div[5]/div/div[2]/div/div/ul/li[1]"));
+        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div["+indexTwo+"]/div[5]/div/div[2]/div/div/div/input"));
+        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div["+indexTwo+"]/div[5]/div/div[2]/div/div/ul/li[2]"));
+
+
+
+        GeneralUtilites.wait(1);
+
     }
 }

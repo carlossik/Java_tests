@@ -1,4 +1,4 @@
-package cucumber;
+package runner;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
@@ -14,8 +14,8 @@ import com.github.mkolisnyk.cucumber.runner.ExtendedCucumberOptions;
 //@RunWith(E.class)
 @RunWith(ExtendedCucumber.class)
 @CucumberOptions(
-
-        features = {"./src/test/java/Features"},
+         strict = true,
+        features = {"./src/test/java/Features/"},
         format = {
                 "pretty",
                 "html:target/cucumber-reports/cucumber-html-report",
@@ -43,7 +43,7 @@ import com.github.mkolisnyk.cucumber.runner.ExtendedCucumberOptions;
         excludeCoverageTags = {"@flaky" },
         includeCoverageTags = {"@passed" },
         outputFolder = "target/reports")
-public class RunCucumberTest     {
+public class RunCucumberTest1     {
 
         @Test
         public void testMe() {

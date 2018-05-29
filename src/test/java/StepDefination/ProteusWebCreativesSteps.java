@@ -138,7 +138,8 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
 
     @And("^The following column for advertiser with ad server mapped$")
     public void theFollowingColumnInformationIsAvailable()   {
-        List<String> expectedHeaders = Arrays.asList ("Platform","arrow_upward","Creative Name","External ID","AD Server Placement","Classification","DSP Status","DSP Audit Status");
+        List<String> expectedHeaders = Arrays.asList ("Platform", "Creative Name","External ID",
+                "AD Server Placement","Classification","DSP Status","DSP Audit Status");
         Assert.assertTrue("All the expected columns not shown",
                 creativesPage.checkForCreativeColumns(expectedHeaders));
     }
@@ -150,9 +151,109 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
 
     @Then("^The following column for advertiser without ad server mapped$")
     public void theFollowingColumnForAdvertiserWithoutAdServerMapped()  {
-        List<String> expectedHeaders = Arrays.asList ("Platform","arrow_upward","Creative Name","External ID", "Classification","DSP Status","DSP Audit Status");
+        List<String> expectedHeaders = Arrays.asList ("Platform" ,"Creative Name","External ID",
+                "Classification","DSP Status","DSP Audit Status");
         Assert.assertTrue("All the expected columns not shown",
                 creativesPage.checkForCreativeColumns(expectedHeaders));
+    }
+
+    @And("^Creatives bulk edit button shown on Creatives tab$")
+    public void creativesBulkEditButtonShownOnCreativesTab()  {
+        Assert.assertTrue("Creatives bulk edit button not shown on pixel tab",
+                creativesPage.btnCreativesBulkEdit.isDisplayed() &&  creativesPage.btnCreativesBulkEdit.isEnabled());
+    }
+
+    @When("^Click on Creatives bulk edit$")
+    public void clickOnCreativesBulkEdit()  {
+        mouseClick( creativesPage.btnCreativesBulkEdit);
+    }
+
+    @Then("^Creatives grid changed to editable state$")
+    public void creativesGridChangedToEditableState()  {
+        GeneralUtilites.wait(1);
+        Assert.assertTrue("Creatives grid not changed to editable state",
+                creativesPage.btnCreativesBulkEdit.isDisplayed() && !creativesPage.btnCreativesBulkEdit.isEnabled());
+    }
+
+    @And("^Editable columns shown on Creatives grid$")
+    public void editableColumnsShownOnPixelGrid() {
+        Assert.assertTrue("AD Server Placement or Classification columns are not editable",
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[4]/div/div/div//input") > 0
+                        && getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[5]/div/div[1]/div//input") > 0
+                        && getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[5]/div/div[2]/div//input") > 0);
+    }
+
+    @And("^ReadOnly columns shown on Creatives grid$")
+    public void readonlyColumnsShownOnPixelGrid() {
+        Assert.assertTrue("ReadOnly columns not shown on Creatives grid",
+                   getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[3]") > 0
+                        && getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[2]") > 0
+                        && getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[1]") > 0
+                        && getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[6]") > 0
+                        && getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[7]") > 0);
+    }
+
+    @And("^Tooltips shown on mouseover on Creative Bulk edit button$")
+    public void tooltipsShownOnMouseoverOnBulkEditButton() {
+        Assert.assertTrue("Tooltips not shown on mouseover on Creative Bulk edit button",
+                getToolTip(creativesPage.btnCreativesBulkEdit).toLowerCase().equals("Edit creative mappings and classification".toLowerCase()) );
+    }
+
+    @When("^I click on the creatives add icon$")
+    public void iClickOnTheCreativesAddIcon()     {
+        if (getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div[2]/div/div/span") > 0)
+            mouseClick(getElements("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div[2]/div/div/span").get(0));
+        else {
+            System.out.println("No add icon shown");
+            mouseClick(creativesPage.btnCreativesBulkEdit);
+        }
+    }
+
+    @Then("^Dropdown list with AD Server Placements for each Creative$")
+    public void dropdownListWithADServerPlacementsForEachCreative()   {
+        Assert.assertTrue("Dropdown list with AD Server Placements for each Creative not shown",
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div /div/div[2]/div/div/div/div/div/div/ul/li") >= 8);
+    }
+
+
+    @And("^Dropdown lists for Classification and Classification Type exist for each Creative$")
+    public void dropdownListsForClassificationAndClassificationTypeExistForEachCreative() {
+        Assert.assertTrue("Dropdown lists for Classification and Classification Type exist for each Creative not shown",
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div[1]/div[5]/div/div[1]/div/div/ul/li") == 2
+                     && getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div[1]/div[5]/div/div[2]/div/div/ul/li") >= 3);
+
+    }
+
+    @Then("^Save button Enabled on Creatives tab$")
+    public void saveButtonEnabledOnCreativesTab()   {
+        Assert.assertTrue("Save button not enabled on Creatives tab",
+                creativesPage.btnCreativesBulkEditSave.isEnabled());
+    }
+
+    @Then("^Creatives details saved$")
+    public void creativesDetailsSaved()     {
+        Assert.assertTrue("Creatives details not saved",
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div//button")==1);
+
+    }
+
+
+    @When("^Bulk edit AD Server Placements and Classification$")
+    public void bulkEditADServerPlacementsAndClassification()  {
+      creativesPage.BulkEditCreatives();
+    }
+
+    @And("^The Creative Name is a deeplink$")
+    public void theCreativeNameIsADeeplink()    {
+        Assert.assertTrue("The Creative Name is a not deeplink",
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[2]/div/a") > 0 &&
+                        !getElements("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[2]/div/a").get(0).getAttribute("href").equals(""));
+
+    }
+
+    @When("^Click on the Creative Name$")
+    public void clickOnTheCreativeName()     {
+        mouseClick(getElements("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[2]/div/a").get(0));
     }
 }
 

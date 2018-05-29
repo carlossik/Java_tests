@@ -158,3 +158,13 @@ Feature: Creatives for flights and Advertisers
     When I click on the add icon
     Then Dropdown list with categories, Hard and Soft
     And Dropdown list with Types: Homepage, Confirmation Page, Landing Page
+
+
+  @Pixels
+  Scenario: 14 Deeplink Pixel Name
+    When I click on the pixels icon on flight row
+    And I change the pixel advertiser to "TestBrand GB" and save
+    Then Pixels screen opened
+    And The Pixels Name is a deeplink
+    When Click on the Pixel Name
+    Then DSP tab opened in the browser for the Advertiser

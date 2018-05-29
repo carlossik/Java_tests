@@ -3,6 +3,8 @@ package SupportingUtilites;
 import DBDataModel.Advertiser_Account;
 import DBDataModel.JDBCTemplate;
 import DBDataModel.campaign_flight;
+import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -148,5 +150,16 @@ public class GeneralUtilites
         JDBCTemplate objJDBCTemp = (JDBCTemplate) context.getBean("JDBCTemplate");
         List<Advertiser_Account> objAdvAcc = objJDBCTemp.GetAdvertiserAccountDetails(strQuery);
         return objAdvAcc.get(0).getAdvertiserName();
+    }
+
+    public static void CheckBrowserTabs(WebDriver  driver)
+    {
+        List<String> browserTabs = new ArrayList<> (driver.getWindowHandles());
+        //  System.out.println("browserTabs.size()  : " + browserTabs.size() );
+        Assert.assertTrue("DSP Tab not opened ",browserTabs.size() >= 2 );
+        driver.switchTo().window(browserTabs .get(1));
+        Assert.assertTrue("DSP Tab not opened ", !driver.getCurrentUrl().equals(""));
+        driver.close();
+        driver.switchTo().window(browserTabs.get(0));
     }
 }

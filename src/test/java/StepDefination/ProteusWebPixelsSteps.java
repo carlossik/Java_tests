@@ -377,4 +377,23 @@ public class ProteusWebPixelsSteps extends BrowserFactory {
         mouseClick( pixelsPage.btnPixelsBulkEdit);
       }
     }
+
+    @And("^The Pixels Name is a deeplink$")
+    public void thePixelsNameIsADeeplink(){
+        Assert.assertTrue("The Pixels Name is a not deeplink",
+         getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[2]/div/a") > 0 &&
+                 !getElements("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[2]/div/a").get(0).getAttribute("href").equals(""));
+
+        }
+
+    @When("^Click on the Pixel Name$")
+    public void clickOnThePixelName() {
+       mouseClick(getElements("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[2]/div/a").get(0));
+    }
+
+    @Then("^DSP tab opened in the browser for the Advertiser$")
+    public void dspTabOpenedInTheBrowserForTheAdvertiser() {
+       GeneralUtilites.CheckBrowserTabs(this.browserFactory.getDriver());
+    }
+
 }

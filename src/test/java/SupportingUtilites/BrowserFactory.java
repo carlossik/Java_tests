@@ -163,9 +163,14 @@ public class BrowserFactory {
 
     protected static List<WebElement> getElements(String xpath)
     {
-
         return driver.findElements(By.xpath(xpath));
     }
+
+    protected static WebElement getElement(String xpath)
+    {
+        return driver.findElement(By.xpath(xpath));
+    }
+
 
     protected static String getToolTip(WebElement objWebElement)
     {

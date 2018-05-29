@@ -61,3 +61,51 @@ Feature: Creatives for flights and Advertisers
     Then Creatives screen opened
     When I change the advertiser "TestBrand GB" and save
     Then  The following column for advertiser without ad server mapped
+
+
+  @Creatives
+  Scenario: 07 Bulk Edit - read only and editable columns
+    When I click on the creatives icon on flight row
+    Then Creatives screen opened
+    And  Creatives bulk edit button shown on Creatives tab
+    And  Tooltips shown on mouseover on Creative Bulk edit button
+    When Click on Creatives bulk edit
+    Then Creatives grid changed to editable state
+    And Save button shown and is disabled
+    And Cancel button shown and is enabled
+    And Editable columns shown on Creatives grid
+    And ReadOnly columns shown on Creatives grid
+
+
+  @Creatives
+  Scenario: 08 Missing values for Creatives
+    When I click on the creatives icon on flight row
+    And I change the advertiser "TRAVEL - LUXURY" and save
+    Then Creatives screen opened
+    When I click on the creatives add icon
+    Then Dropdown list with AD Server Placements for each Creative
+    And Dropdown lists for Classification and Classification Type exist for each Creative
+
+
+  @Creatives
+  Scenario: 09 Ability to edit and save Creatives classification
+    When I click on the creatives icon on flight row
+    Then Creatives screen opened
+    When Click on Creatives bulk edit
+    Then Dropdown list with AD Server Placements for each Creative
+    And Dropdown lists for Classification and Classification Type exist for each Creative
+    When Bulk edit AD Server Placements and Classification
+    Then Save button Enabled on Creatives tab
+    When Click on Save
+    Then Creatives details saved
+
+
+  @Creatives
+  Scenario: 10 Deeplink Creatives Name
+    When I click on the creatives icon on flight row
+    And I change the advertiser "TestBrand GB" and save
+    Then Creatives screen opened
+    And The Creative Name is a deeplink
+    When Click on the Creative Name
+    Then DSP tab opened in the browser for the Advertiser
+

@@ -226,6 +226,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
 
     public boolean CheckLogOutExist() {
         mouseClick(btnExpand);
+        GeneralUtilites.wait(0.5);
         boolean boolLogOut = btnLogOut.isDisplayed();
         mouseClick(btnExpand);
         return boolLogOut;
