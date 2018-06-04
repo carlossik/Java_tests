@@ -123,10 +123,10 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
     @CacheLookup
     private WebElement btnMergeSave;
 
-    @FindBy(how = How.XPATH, using = "/html/body/div[2]/span/span")
+    @FindBy(how = How.XPATH, using = "/html/body/div/span[contains(@class,'theme_tooltip')]/span[contains(@class,'theme_tooltipInner')]")
     private WebElement txtTooltip;
 
-    @FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div/ul/li[1]")
+    @FindBy(how = How.XPATH, using = "/html/body/div/div/div[2]/section/div[2]/form/div[1]/div/ul/li[1]")
     private WebElement txtMergeAdvertiserAccount;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div/form/div[2]/div[2]/div/div/ul/li[1]")
@@ -206,11 +206,8 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
         By PlatformIcons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[2]/div/div[2]/div/div[1]");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(PlatformIcons);
         for (WebElement elementType :elementTypes){
-            Actions toolAct = new Actions(browserFactory.getDriver());
-            toolAct.moveToElement(elementType).build().perform();
-            GeneralUtilites.wait(1);
-            returnType = returnType && !txtTooltip.getText().equals("");
-            System.out.println("Tool tip : " + txtTooltip.getText() );
+               returnType = returnType && !getToolTip(elementType).equals("");
+            System.out.println("Tool tip : " +  getToolTip(elementType) );
         }
         return returnType;
     }

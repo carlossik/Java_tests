@@ -71,10 +71,10 @@ public class ProteusWebPixelsPage extends BrowserFactory {
     public WebElement btnPixelsBulkCancel;
 
 
-    @FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div/div/input")
+    @FindBy(how = How.XPATH, using = "/html/body/div/div/div[2]/section/div[2]/form/div[1]/div/div/input")
     public WebElement txtAdvertiserAccount;
 
-    @FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div[2]/section/div[2]/form/div[2]/button")
+    @FindBy(how = How.XPATH, using = "/html/body/div/div/div[2]/section/div[2]/form/div[2]/button")
     public WebElement btnOK;
 
     private String  strPixelAdvertiserIconXpath = "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[2]";
@@ -96,7 +96,7 @@ public class ProteusWebPixelsPage extends BrowserFactory {
         txtAdvertiserAccount.clear();
         txtAdvertiserAccount.sendKeys(strAdvertiserName);
         GeneralUtilites.wait(1);
-        mouseClick(getElements("/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div/ul").get(0));
+        mouseClick(getElements("/html/body/div/div/div[2]/section/div[2]/form/div[1]/div/ul").get(0));
         GeneralUtilites.wait(1);
         btnOK.click();
     }

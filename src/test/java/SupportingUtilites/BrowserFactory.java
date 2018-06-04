@@ -177,8 +177,9 @@ public class BrowserFactory {
         Actions toolAct = new Actions(driver);
         toolAct.moveToElement(objWebElement).build().perform();
         GeneralUtilites.wait(2);
-        By objBy = By.xpath("/html/body/div[2]/span/span");
+        By objBy = By.xpath("/html/body/div/span[contains(@class,'theme_tooltip')]/span[contains(@class,'theme_tooltipInner')]");
         WebElement  txtToolTip = driver.findElement(objBy);
+        System.out.println("Tool Tip : " + txtToolTip.getText());
         return txtToolTip.getText();
     }
 

@@ -52,23 +52,23 @@ public class ProteusWebClientReportsPage extends BrowserFactory
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header//button")
     @CacheLookup
-    public WebElement btnExpand;
+    private WebElement btnExpand;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[3]/div/div/div[2]/ul/li[2]")
     @CacheLookup
-    public WebElement btnLogOut;
+    private WebElement btnLogOut;
 
-    @FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div[1]/div/input")
+    @FindBy(how = How.XPATH, using = "/html/body/div/div/div[2]/section/div[2]/form/div[1]/div[1]/div/input")
     @CacheLookup
-    public WebElement txtAdvertiser;
+    private WebElement txtAdvertiser;
 
-    @FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div[1]/ul/li[2]")
+    @FindBy(how = How.XPATH, using = "/html/body/div/div/div[2]/section/div[2]/form/div[1]/div[1]/ul/li[2]")
     @CacheLookup
-    public WebElement lstAdvertiser;
+    private WebElement lstAdvertiser;
 
-    @FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div[2]/section/div[2]/form/div[2]/button")
+    @FindBy(how = How.XPATH, using = "/html/body/div/div/div[2]/section/div[2]/form/div[2]/button")
     @CacheLookup
-    public WebElement btnOK;
+    private WebElement btnOK;
 
 
 

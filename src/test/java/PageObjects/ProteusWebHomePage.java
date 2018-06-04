@@ -23,32 +23,32 @@ public class ProteusWebHomePage extends BrowserFactory
 
     @FindBy(how = How.ID, using = "administration")
     @CacheLookup
-    public WebElement tabAdministration;
+    private WebElement tabAdministration;
 
     @FindBy(how = How.ID, using = "reporting")
     @CacheLookup
-    public WebElement tabReporting;
+    private WebElement tabReporting;
 
     @FindBy(how = How.ID, using = "clientReporting")
     @CacheLookup
-    public WebElement tabClientReporting;
+    private WebElement tabClientReporting;
 
     @FindBy(how = How.ID, using = "campaigns")
     @CacheLookup
-    public WebElement tabCampaign ;
+    private WebElement tabCampaign ;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[2]/img")
     @CacheLookup
-    public WebElement imgHomeProtues ;
+    private WebElement imgHomeProtues ;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header//button")
     @CacheLookup
-    public WebElement btnExpand  ;
+    private WebElement btnExpand  ;
 
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[3]/div/div/div[2]/ul/li[2]")
     @CacheLookup
-    public WebElement btnLogOut;
+    private WebElement btnLogOut;
 
 
     public void NavigateProteusAdministration()
@@ -60,7 +60,7 @@ public class ProteusWebHomePage extends BrowserFactory
     public void NavigateProteusCampaign()
     {
         GeneralUtilites.wait(1);
-         mouseClick(tabCampaign );
+        mouseClick(tabCampaign );
     }
 
     public void NavigateProteusReports()
@@ -111,7 +111,7 @@ public class ProteusWebHomePage extends BrowserFactory
     public void Logout()
     {
          mouseClick(btnExpand );
-        GeneralUtilites.wait(0.5);
+         GeneralUtilites.wait(0.5);
          mouseClick(btnLogOut );
     }
 }

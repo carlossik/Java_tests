@@ -71,7 +71,7 @@ public class ProteusWebPixelsSteps extends BrowserFactory {
        {
            pixelsPage.txtAdvertiserAccount.click();
            typeText(pixelsPage.txtAdvertiserAccount,"QAAutomationAdvertiser 1 GB");
-           mouseClick(getElements("/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div/ul").get(0));
+           mouseClick(getElements("/html/body/div/div/div[2]/section/div[2]/form/div[1]/div/ul").get(0));
            pixelsPage.btnOK.click();
        }
     }
@@ -125,7 +125,7 @@ public class ProteusWebPixelsSteps extends BrowserFactory {
     @When("^I change the pixel advertiser and save$")
     public void iChangeThePixelAdvertiserAndSave()   {
         pixelsPage.txtAdvertiserAccount.click();
-        mouseClick(getElements("/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div/ul").get(0));
+        mouseClick(getElements("/html/body/div/div/div[2]/section/div[2]/form/div[1]/div/ul").get(0));
         pixelsPage.btnOK.click();
     }
 
@@ -199,7 +199,7 @@ public class ProteusWebPixelsSteps extends BrowserFactory {
         {
             pixelsPage.txtAdvertiserAccount.click();
             typeText(pixelsPage.txtAdvertiserAccount,AdvertiserName);
-            mouseClick(getElements("/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div/ul").get(0));
+            mouseClick(getElements("/html/body/div/div/div[2]/section/div[2]/form/div[1]/div/ul").get(0));
             pixelsPage.btnOK.click();
             GeneralUtilites.wait(1);
         }
@@ -246,8 +246,8 @@ public class ProteusWebPixelsSteps extends BrowserFactory {
 
     @Then("^the Pixels list of results is defaulted to 'Missing Classification'$")
     public void thePixelsListOfResultsIsDefaultedToMissingClassification()  {
-        Assert.assertTrue("The Pixels list of results is not defaulted to 'Missing Classification'",
-                pixelsPage.chbxMissingUnclassified.getAttribute("checked").equals("true"));
+        Assert.assertEquals("The Pixels list of results is not defaulted to 'Missing Classification'",
+                pixelsPage.chbxMissingUnclassified.getAttribute("checked"),"true");
     }
 
     @And("^Dropdown to filter based on Platforms exist and defaulted to ALL$")
@@ -289,8 +289,8 @@ public class ProteusWebPixelsSteps extends BrowserFactory {
 
     @And("^Tooltips shown on mouseover on Bulk edit button$")
     public void tooltipsShownOnMouseoverOnBulkEditButton() {
-        Assert.assertTrue("Tooltips not shown on mouseover on Bulk edit button",
-             getToolTip(pixelsPage.btnPixelsBulkEdit).toLowerCase().equals("Edit pixel classification".toLowerCase()) );
+        Assert.assertEquals("Tooltips not shown on mouseover on Bulk edit button",
+             getToolTip(pixelsPage.btnPixelsBulkEdit).toLowerCase(),"Edit pixel classification".toLowerCase() );
     }
 
     @When("^Click on pixel bulk edit$")
@@ -335,14 +335,14 @@ public class ProteusWebPixelsSteps extends BrowserFactory {
 
     @Then("^Dropdown list with categories, Hard and Soft$")
     public void dropdownListWithCategoriesHardAndSoft(){
-        Assert.assertTrue("Dropdown list with categories(Hard and Soft) not shown",
-                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div[1]/div[4]/div/div/ul/li") == 2);
+        Assert.assertEquals("Dropdown list with categories(Hard and Soft) not shown",
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div[1]/div[4]/div/div/ul/li"), 2);
     }
 
     @And("^Dropdown list with Types: Homepage, Confirmation Page, Landing Page$")
     public void dropdownListWithTypesHomepageConfirmationPageLandingPage(){
-        Assert.assertTrue("Dropdown list with Types: Homepage, Confirmation Page, Landing Page not shown",
-                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div[1]/div[5]/div/div/ul/li") == 17);
+        Assert.assertEquals("Dropdown list with Types: Homepage, Confirmation Page, Landing Page not shown",
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div[1]/div[5]/div/div/ul/li"), 17);
     }
 
     @When("^Bulk edit Category and Type$")
@@ -364,8 +364,8 @@ public class ProteusWebPixelsSteps extends BrowserFactory {
 
     @Then("^Pixel details saved$")
     public void pixelDetailsSaved() {
-        Assert.assertTrue("Pixel details not saved",
-                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div//button")==1);
+        Assert.assertEquals("Pixel details not saved",
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div//button"),1);
     }
 
     @When("^I click on the add icon$")

@@ -75,6 +75,18 @@ public class ProteusWebAdminPage extends BrowserFactory
     @CacheLookup
     private WebElement btnLogOut;
 
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[1]/div[2]/div[3]/div/input")
+    @CacheLookup
+    private WebElement txtSearch;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[1]/div/div[2]/div/div")
+    @CacheLookup
+    private WebElement rowPlaformSeat;
+
+
+
+
+
 
     public void NavigateAdministrationSeats()
     {

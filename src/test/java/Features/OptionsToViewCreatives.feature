@@ -62,7 +62,6 @@ Feature: Creatives for flights and Advertisers
     When I change the advertiser "TestBrand GB" and save
     Then  The following column for advertiser without ad server mapped
 
-
   @Creatives
   Scenario: 07 Bulk Edit - read only and editable columns
     When I click on the creatives icon on flight row
@@ -76,7 +75,6 @@ Feature: Creatives for flights and Advertisers
     And Editable columns shown on Creatives grid
     And ReadOnly columns shown on Creatives grid
 
-
   @Creatives
   Scenario: 08 Missing values for Creatives
     When I click on the creatives icon on flight row
@@ -85,7 +83,6 @@ Feature: Creatives for flights and Advertisers
     When I click on the creatives add icon
     Then Dropdown list with AD Server Placements for each Creative
     And Dropdown lists for Classification and Classification Type exist for each Creative
-
 
   @Creatives
   Scenario: 09 Ability to edit and save Creatives classification
@@ -99,7 +96,6 @@ Feature: Creatives for flights and Advertisers
     When Click on Save
     Then Creatives details saved
 
-
   @Creatives
   Scenario: 10 Deeplink Creatives Name
     When I click on the creatives icon on flight row
@@ -108,4 +104,3 @@ Feature: Creatives for flights and Advertisers
     And The Creative Name is a deeplink
     When Click on the Creative Name
     Then DSP tab opened in the browser for the Advertiser
-

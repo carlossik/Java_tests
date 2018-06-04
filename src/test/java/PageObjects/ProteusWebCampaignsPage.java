@@ -111,7 +111,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     @FindBy(how = How.XPATH, using = "//*[@id='root']//h4")
     public WebElement txtFlightsCount;
 
-    @FindBy(how = How.XPATH, using = "/html/body/div[2]/span/span")
+    @FindBy(how = How.XPATH, using = "/html/body/div/span[contains(@class,'theme_tooltip')]/span[contains(@class,'theme_tooltipInner')]")
     private WebElement txtTooltip;
 
     @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/div[2]/div/span[2]")

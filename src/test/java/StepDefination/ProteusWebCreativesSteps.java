@@ -90,7 +90,7 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
     @When("^I change the advertiser and save$")
     public void iChangeTheAdvertiserAndSave(){
         creativesPage.txtAdvertiserAccount.click();
-        mouseClick(getElements("/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div/ul").get(0));
+        mouseClick(getElements("/html/body/div/div/div[2]/section/div[2]/form/div[1]/div/ul").get(0));
         creativesPage.btnOK.click();
     }
 
@@ -195,8 +195,8 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
 
     @And("^Tooltips shown on mouseover on Creative Bulk edit button$")
     public void tooltipsShownOnMouseoverOnBulkEditButton() {
-        Assert.assertTrue("Tooltips not shown on mouseover on Creative Bulk edit button",
-                getToolTip(creativesPage.btnCreativesBulkEdit).toLowerCase().equals("Edit creative mappings and classification".toLowerCase()) );
+        Assert.assertEquals("Tooltips not shown on mouseover on Creative Bulk edit button",
+                getToolTip(creativesPage.btnCreativesBulkEdit).toLowerCase(),"Edit creative mappings and classification".toLowerCase());
     }
 
     @When("^I click on the creatives add icon$")
@@ -232,8 +232,8 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
 
     @Then("^Creatives details saved$")
     public void creativesDetailsSaved()     {
-        Assert.assertTrue("Creatives details not saved",
-                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div//button")==1);
+        Assert.assertEquals("Creatives details not saved",
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div//button"),1);
 
     }
 

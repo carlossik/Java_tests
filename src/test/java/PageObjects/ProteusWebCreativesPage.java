@@ -115,15 +115,15 @@ public class ProteusWebCreativesPage extends BrowserFactory {
     @CacheLookup
     public WebElement btnClassification;
 
-    @FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div/div/input")
+    @FindBy(how = How.XPATH, using = "/html/body/div/div/div[2]/section/div[2]/form/div[1]/div/div/input")
     @CacheLookup
     public WebElement txtAdvertiserAccount;
 
-    @FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div[2]/section/div[2]/form/div[2]/button")
+    @FindBy(how = How.XPATH, using = "/html/body/div/div/div[2]/section/div[2]/form/div[2]/button")
     @CacheLookup
     public WebElement btnOK;
 
-    @FindBy(how = How.XPATH, using = "/html/body/div[3]/div/div[2]/section/div[1]")
+    @FindBy(how = How.XPATH, using = "/html/body/div/div/div[2]/section/div[1]")
     @CacheLookup
     public WebElement txtTagIcon;
 
@@ -188,7 +188,7 @@ public class ProteusWebCreativesPage extends BrowserFactory {
         txtAdvertiserAccount.clear();
         txtAdvertiserAccount.sendKeys(strAdvertiserName);
         GeneralUtilites.wait(1);
-        mouseClick(getElements("/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div/ul").get(0));
+        mouseClick(getElements("/html/body/div/div/div[2]/section/div[2]/form/div[1]/div/ul").get(0));
         GeneralUtilites.wait(1);
         btnOK.click();
     }
