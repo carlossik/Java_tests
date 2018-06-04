@@ -60,7 +60,7 @@ public class ProteusWebClientReportsPage extends BrowserFactory
 
     @FindBy(how = How.XPATH, using = "/html/body/div/div/div[2]/section/div[2]/form/div[1]/div[1]/div/input")
     @CacheLookup
-    private WebElement txtAdvertiser;
+    public WebElement txtAdvertiser;
 
     @FindBy(how = How.XPATH, using = "/html/body/div/div/div[2]/section/div[2]/form/div[1]/div[1]/ul/li[2]")
     @CacheLookup
