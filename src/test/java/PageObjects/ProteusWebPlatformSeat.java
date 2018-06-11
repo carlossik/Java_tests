@@ -56,6 +56,10 @@ public class ProteusWebPlatformSeat extends BrowserFactory {
     @CacheLookup
     public WebElement txtReadyFileNamePattern;
 
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[1]/div[1]/div[1]/div[2]/p")
+    @CacheLookup
+    public WebElement lblCredentials;
+
     @FindBy(how = How.XPATH, using = "/html/body/div/div/div[2]/section/div[2]/form/div[3]/label/div")
     @CacheLookup
     public WebElement chbxRegularExpression;

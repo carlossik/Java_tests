@@ -60,7 +60,7 @@ public class ProteusWebCreativesPage extends BrowserFactory {
     @CacheLookup
     public WebElement btnChange;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/button")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]//button[1]")
     public WebElement btnCreativesBulkEdit;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div/button[1]")

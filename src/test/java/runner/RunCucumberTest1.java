@@ -1,13 +1,12 @@
 package runner;
 
 import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import static junit.framework.TestCase.assertTrue;
 import com.github.mkolisnyk.cucumber.runner.ReportRunner;
 import com.github.mkolisnyk.cucumber.runner.ExtendedCucumber;
+import com.github.mkolisnyk.cucumber.runner.ExtendedParallelCucumber;
 import com.github.mkolisnyk.cucumber.runner.ExtendedCucumberOptions;
 
 
@@ -15,7 +14,7 @@ import com.github.mkolisnyk.cucumber.runner.ExtendedCucumberOptions;
 @RunWith(ExtendedCucumber.class)
 @CucumberOptions(
          strict = true,
-        features = {"./src/test/java/Features/"},
+        features = {"./src/test/resources/features/"},
         format = {
                 "pretty",
                 "html:target/cucumber-reports/cucumber-html-report",
@@ -32,10 +31,12 @@ import com.github.mkolisnyk.cucumber.runner.ExtendedCucumberOptions;
         tags = { "~@ignore" })
 @ExtendedCucumberOptions(
         jsonReport = "target/cucumber-reports/CucumberTestReport.json",
-        retryCount = 1,
+       // retryCount = 0,
+      //  threadsCount = 1,
         detailedReport = true,
         detailedAggregatedReport = true,
         overviewReport = true,
+        overviewChartsReport = true,
         //coverageReport = true,
         jsonUsageReport = "target/cucumber-reports/cucumber-usage.json",
        // usageReport = false,

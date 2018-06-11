@@ -255,5 +255,7 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
     public void clickOnTheCreativeName()     {
         mouseClick(getElements("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[2]/div/a").get(0));
     }
+
+
 }
 

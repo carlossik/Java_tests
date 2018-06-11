@@ -70,9 +70,6 @@ public class ProteusWebClientReportsPage extends BrowserFactory
     @CacheLookup
     private WebElement btnOK;
 
-
-
-
    public void SelectAdvertiser()
    {
        Actions action = new Actions(browserFactory.getDriver());

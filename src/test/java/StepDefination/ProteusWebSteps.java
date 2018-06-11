@@ -22,6 +22,7 @@ public class ProteusWebSteps extends BrowserFactory
     private ProteusWebReportsPage reportsPage;
     private ProteusWebClientReportsPage clientReportsPage;
     private ProteusWebAdvertiserAccountsPage adverAcctPage;
+    private ProteusWebPlatformSeat platformSeatPage;
     private ProteusWebCreativesPage creativesPage;
     private ReportingAPIResponse objResponse;
     private Properties prop = new Properties();
@@ -152,7 +153,7 @@ public class ProteusWebSteps extends BrowserFactory
     @When("I search/filter for a particular result")
     public void WhenISearchFilterForAParticularResult()    {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
-        campaignsPage.EnterSearchFilter("Automation 8", "", "");
+        campaignsPage.EnterSearchFilter("Automation 84", "", "");
         GeneralUtilites.wait(2);
     }
 
@@ -387,8 +388,8 @@ public class ProteusWebSteps extends BrowserFactory
     @And("^Default 'Requires action' is unselected$")
     public void defaultRequiresActionIsUnselected()    {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
-        Assert.assertFalse("Default 'Requires action' is selected",
-                campaignsPage.chbxRequiresAction.getAttribute("class").equals("theme_check_2B20W theme_checked_2NQ9n"));
+        Assert.assertNotEquals("Default 'Requires action' is selected",
+                campaignsPage.chbxRequiresAction.getAttribute("class"),"theme_check_2B20W theme_checked_2NQ9n");
 
         campaignsPage.SelectRequiredAction();
         GeneralUtilites.wait(1);
@@ -405,8 +406,8 @@ public class ProteusWebSteps extends BrowserFactory
     @Then("^'Requires action' is selected$")
     public void requiresActionIsSelected()   {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
-        Assert.assertTrue(" 'Requires action' is not selected after clicking on it ",
-                campaignsPage.chbxRequiresAction.getAttribute("class").equals("theme_check_2B20W theme_checked_2NQ9n"));
+        Assert.assertEquals(" 'Requires action' is not selected after clicking on it ",
+                campaignsPage.chbxRequiresAction.getAttribute("class"),"theme_check_2B20W theme_checked_2NQ9n");
     }
 
     @Then("^Option to sort result by Flight Created and Updated$")
@@ -534,7 +535,7 @@ public class ProteusWebSteps extends BrowserFactory
     @And("^All flights sorted based on created date$")
     public void allFlightsSortedBasedOnCreatedDate()   {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
-        String strQuery = prop.getProperty("SQLQuerySortByCreatedTime").replace("{SearchKey}","Automation 8");
+        String strQuery = prop.getProperty("SQLQuerySortByCreatedTime").replace("{SearchKey}","Automation 84");
         Assert.assertTrue("All flights are not sorted based on created date",
                 campaignsPage.RecordsSortedBy(strQuery));
     }
@@ -542,7 +543,7 @@ public class ProteusWebSteps extends BrowserFactory
     @And("^All flights sorted based on updated date$")
     public void allFlightsSortedBasedOnUpdatedDate()  {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
-        String strQuery = prop.getProperty("SQLQuerySortByUpdatedTime").replace("{SearchKey}","Automation 8");
+        String strQuery = prop.getProperty("SQLQuerySortByUpdatedTime").replace("{SearchKey}","Automation 84");
         Assert.assertTrue("All flights are not sorted based on updated date",
                 campaignsPage.RecordsSortedBy(strQuery));
     }
@@ -551,8 +552,8 @@ public class ProteusWebSteps extends BrowserFactory
     public void sortByIsShown(String strSortBy)  {
         GeneralUtilites.wait(1);
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
-        Assert.assertTrue("^Sort by " + strSortBy + " is not shown$",
-                campaignsPage.getSortByLabel().trim().toLowerCase().equals(strSortBy.trim().toLowerCase()));
+        Assert.assertEquals("^Sort by " + strSortBy + " is not shown$",
+                campaignsPage.getSortByLabel().trim().toLowerCase(),strSortBy.trim().toLowerCase());
 
     }
 
@@ -759,11 +760,11 @@ public class ProteusWebSteps extends BrowserFactory
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
       String strNumbersUI =   campaignsPage.GetNumbersFromFlightDetails();
 
-      Assert.assertTrue( "UI Impressions not matching , Reporting API numbers",
-              strNumbersUI.split(";")[0].replace(",","").equals(objResponse.FlightId.getImpressions()));
+      Assert.assertEquals( "UI Impressions not matching , Reporting API numbers",
+              strNumbersUI.split(";")[0].replace(",",""),objResponse.FlightId.getImpressions());
 
-        Assert.assertTrue("UI Clicks not matching , Reporting API numbers",
-                strNumbersUI.split(";")[1].replace(",","").equals(objResponse.FlightId.getClicks()));
+        Assert.assertEquals("UI Clicks not matching , Reporting API numbers",
+                strNumbersUI.split(";")[1].replace(",",""),objResponse.FlightId.getClicks());
     }
 
     @When("^I search/filter for a flightName \"([^\"]*)\"$")
@@ -950,5 +951,99 @@ public class ProteusWebSteps extends BrowserFactory
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         campaignsPage.EnterSearchFilter(searchKey, "", "");
         GeneralUtilites.wait(2);
+    }
+
+    @When("^I click on \"([^\"]*)\" on Administration Tab$")
+    public void iClickOnOnAdministrationTab(String strBtnName)  {
+        adminPage = new ProteusWebAdminPage(this.browserFactory);
+       adminPage.NavigateAdministrationSeats();
+    }
+
+    @Then("^Seats page shown correctly$")
+    public void seatsPageShownCorrectly()  {
+        adminPage = new ProteusWebAdminPage(this.browserFactory);
+       Assert.assertTrue("Seats page not shown correctly",  adminPage.drpdwnOperationalUnit.isDisplayed());
+    }
+
+    @When("^Search and select seat \"([^\"]*)\"$")
+    public void searchAndSelectSeat(String strSearchKey)   {
+     typeText(adminPage.txtSearch,strSearchKey);
+     mouseClick(adminPage.rowPlaformSeat);
+    }
+
+    @Then("^Seat details page shown$")
+    public void seatDetailsPageShown()   {
+        platformSeatPage = new ProteusWebPlatformSeat(this.browserFactory);
+        Assert.assertTrue("Seat details page not shown", platformSeatPage.btnManageCredentials.isDisplayed());
+    }
+
+    @When("^Click on MANAGE CREDENTIALS$")
+    public void clickOnMANAGECREDENTIALS()   {
+        platformSeatPage = new ProteusWebPlatformSeat(this.browserFactory);
+        mouseClick(platformSeatPage.btnManageCredentials);
+    }
+
+    @Then("^Credentials page shown$")
+    public void credentialsPageShown()   {
+        platformSeatPage = new ProteusWebPlatformSeat(this.browserFactory);
+        Assert.assertTrue("Credentials page not shown", platformSeatPage.lblCredentials.isDisplayed());
+    }
+
+    @When("^Select the credential \"([^\"]*)\"$")
+    public void selectTheCredential(String strCredentials)   {
+       mouseClick( getElement("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[1]/div[2]/ul/li//div[text()='"+strCredentials+"']"));
+    }
+
+    @Then("^Option to add Storage Location$")
+    public void optionToAddStorageLocation() {
+        platformSeatPage = new ProteusWebPlatformSeat(this.browserFactory);
+         Assert.assertTrue("", platformSeatPage.btnAddStorgeLocation.isDisplayed());
+    }
+
+    @When("^I clicked on the Storage Locations Add button$")
+    public void iClickedOnTheStorageLocationsButton()  {
+        platformSeatPage = new ProteusWebPlatformSeat(this.browserFactory);
+        mouseClick(platformSeatPage.btnAddStorgeLocation);
+        GeneralUtilites.wait(1);
+    }
+
+    @Then("^Default Values selected on add storage location popup$")
+    public void defaultValuesSelectedOnAddStorageLocationPopup()   {
+        platformSeatPage = new ProteusWebPlatformSeat(this.browserFactory);
+        Assert.assertTrue("", platformSeatPage.txtDataFormat.getText().toLowerCase().equals("DELIMITED".toLowerCase())
+                                           && platformSeatPage.txtSchema.getText().toLowerCase().equals("DEFAULT".toLowerCase()));
+    }
+
+    @Then("^Mandatory options shown on the popup$")
+    public void mandatoryOptionsShownOnThePopup()   {
+        platformSeatPage = new ProteusWebPlatformSeat(this.browserFactory);
+        Assert.assertTrue("",  platformSeatPage.txtDataType.isDisplayed()
+                                            && platformSeatPage.txtBucketName.isDisplayed()
+                                            && platformSeatPage.txtFileNamePattern.isDisplayed()
+                                            && platformSeatPage.txtFolderNamePattern.isDisplayed()
+                                            && platformSeatPage.txtReadyFileNamePattern.isDisplayed()
+        );
+    }
+
+    @When("^Enter seat storage details and save$")
+    public void enterSeatStorageDetailsAndSave()  {
+        platformSeatPage = new ProteusWebPlatformSeat(this.browserFactory);
+        mouseClick(platformSeatPage.txtDataType);
+        typeText(platformSeatPage.txtDataType, "INSERTION_ORDER");
+        mouseClick(getElement("/html/body/div[7]/div/div[2]/section/div[2]/form/div[1]/div[1]/ul/li[1]"));
+        mouseClick(platformSeatPage.txtDataFormat);
+        mouseClick(getElement("/html/body/div/div/div[2]/section/div[2]/form/div[1]/div[2]/ul/li[1]"));
+        mouseClick(platformSeatPage.txtSchema);
+        mouseClick(getElement("/html/body/div/div/div[2]/section/div[2]/form/div[1]/div[3]/ul/li[1]"));
+        typeText(platformSeatPage.txtBucketName, "gdbm-1501436");
+        typeText(platformSeatPage.txtFileNamePattern, "{yyyyMMdd}.0.Campaign.json");
+        typeText(platformSeatPage.txtFolderNamePattern, "entity");
+        mouseClick(platformSeatPage.btnSave);
+    }
+
+    @Then("^New seat storage details saved$")
+    public void newSeatStorageDetailsSaved()   {
+       Assert.assertTrue("New seat storage details not saved",
+      getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[3]/form/div/div[2]/div[7]/div[2]/div[1]/div/div[2]/div/div/div[1]/span[text()='INSERTION_ORDER']")>0);
     }
 }

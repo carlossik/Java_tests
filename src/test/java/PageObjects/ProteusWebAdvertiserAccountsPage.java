@@ -106,20 +106,20 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
     @CacheLookup
     public WebElement btnMergeAdvertiser;
 
-    @FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div/div/input")
+    @FindBy(how = How.XPATH, using = "/html/body/div/div/div[2]/section/div[2]/form/div[1]/div/div/input")
     @CacheLookup
     private WebElement cmbMergeAdvertiser;
 
 
-    @FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div[2]/section/div[2]/form/div[2]/div/div/label/div")
+    @FindBy(how = How.XPATH, using = "/html/body/div/div/div[2]/section/div[2]/form/div[2]/div/div/label/div")
     @CacheLookup
     private WebElement chbxConfirmMergeAdvertiser;
 
-    @FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div[2]/section/div[2]/form/div[3]/button[1]")
+    @FindBy(how = How.XPATH, using = "/html/body/div/div/div[2]/section/div[2]/form/div[3]/button[1]")
     @CacheLookup
     private WebElement btnMergeCancel;
 
-    @FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div[2]/section/div[2]/form/div[3]/button[2]")
+    @FindBy(how = How.XPATH, using = "/html/body/div/div/div[2]/section/div[2]/form/div[3]/button[2]")
     @CacheLookup
     private WebElement btnMergeSave;
 

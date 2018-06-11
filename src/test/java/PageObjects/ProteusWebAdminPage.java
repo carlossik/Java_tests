@@ -48,7 +48,7 @@ public class ProteusWebAdminPage extends BrowserFactory
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[1]/div[2]/div[1]/div/div/input")
     @CacheLookup
-    private WebElement drpdwnOperationalUnit ;
+    public WebElement drpdwnOperationalUnit ;
 
     @FindBy(how = How.ID, using = "TEL")
     @CacheLookup
@@ -77,16 +77,11 @@ public class ProteusWebAdminPage extends BrowserFactory
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[1]/div[2]/div[3]/div/input")
     @CacheLookup
-    private WebElement txtSearch;
+    public WebElement txtSearch;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[1]/div/div[2]/div/div")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[1]/div/div//div[@aria-label='row']")
     @CacheLookup
-    private WebElement rowPlaformSeat;
-
-
-
-
-
+    public WebElement rowPlaformSeat;
 
     public void NavigateAdministrationSeats()
     {

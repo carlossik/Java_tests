@@ -522,24 +522,20 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
             ToolTipText= "Click to go to reports at Flight level";
         }
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(btnReports);
-     //   System.out.println("\n Flight Count : " + elementTypes.size());
+        //   System.out.println("\n Flight Count : " + elementTypes.size());
         boolean returnType;
         if (elementTypes.size() >= 1) {
-            Actions toolAct = new Actions(browserFactory.getDriver());
-            toolAct.clickAndHold(elementTypes.get(0)).build().perform();
-            GeneralUtilites.wait(2);
-            returnType = txtTooltip.getText().toLowerCase().contains(ToolTipText.toLowerCase());
+            returnType = getToolTip(elementTypes.get(0)).toLowerCase().contains(ToolTipText.toLowerCase());
             return returnType;
-        } else
+        }
+        else
             return false;
     }
 
     public boolean ReportingOptions() {
-
         By ReportButtons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[1]/div[6]/div[4]/span/div/button");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(ReportButtons);
         mouseClick(elementTypes.get(0));
-
         By ReportOptions = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div[1]/div[6]/div[4]/span/div/div/ul/li/span");
         List<WebElement> elementReportOptions = browserFactory.getDriver().findElements(ReportOptions);
         return elementReportOptions.size() == 2
@@ -589,6 +585,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     public boolean AddGoalDetailsButtonExist() {
         return btnAddEditGoalDetails.isDisplayed();
     }
+
     public boolean  EditGoalDetailsButtonExist() {
         return btnAddEditGoalDetails.getAttribute("class").contains("edit");
     }

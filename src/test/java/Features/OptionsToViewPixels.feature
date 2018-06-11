@@ -1,5 +1,5 @@
 @Pixels
-Feature: Creatives for flights and Advertisers
+Feature: Pixels for flights and Advertisers
 
   Background:
     Given I am a Proteus User

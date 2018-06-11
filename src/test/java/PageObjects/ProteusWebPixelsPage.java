@@ -62,11 +62,11 @@ public class ProteusWebPixelsPage extends BrowserFactory {
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/button")
     public WebElement btnPixelsBulkEdit;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div/button[1]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]//button[text()='Save']")
     @CacheLookup
     public WebElement btnPixelsBulkSave;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div/button[2]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]//button[text()='Cancel']")
     @CacheLookup
     public WebElement btnPixelsBulkCancel;
 
@@ -78,7 +78,7 @@ public class ProteusWebPixelsPage extends BrowserFactory {
     public WebElement btnOK;
 
     private String  strPixelAdvertiserIconXpath = "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[2]";
-    private String strColumnHeaders = "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//span[text() != '']";
+    private String strColumnHeaders = "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//*[text()!='more_vert' and text()!='arrow_upward']";
 
     public boolean pixelsForAdvertiserListed()
     {
@@ -117,7 +117,7 @@ public class ProteusWebPixelsPage extends BrowserFactory {
 
     public void SortPixelGridOn(String HeaderName)
     {
-        By header = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//span[text() = '"+HeaderName+"']");
+        By header = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//div[text() = '"+HeaderName+"']");
         WebElement webElement = browserFactory.getDriver().findElement(header);
         mouseClick(webElement);
         if(HeaderName.equals("Platform")) {

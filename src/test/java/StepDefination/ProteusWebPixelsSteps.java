@@ -186,7 +186,7 @@ public class ProteusWebPixelsSteps extends BrowserFactory {
 
     @And("^The following column shown in pixel grid$")
     public void theFollowingColumnShownInPixelGrid()     {
-        List<String> expectedHeaders = Arrays.asList ("Platform","arrow_upward","Pixel Name","External ID","Category","info_outline","Type","info_outline");
+        List<String> expectedHeaders = Arrays.asList ("Platform", "Pixel Name","External ID","Category","Type");
         Assert.assertTrue("All the expected columns not shown",
                 pixelsPage.checkForPixelColumns(expectedHeaders));
     }
