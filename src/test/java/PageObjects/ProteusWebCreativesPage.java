@@ -1,7 +1,6 @@
 package PageObjects;
 
 import SupportingUtilites.GeneralUtilites;
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
@@ -10,9 +9,7 @@ import org.openqa.selenium.support.*;
 import SupportingUtilites.BrowserFactory;
 import org.openqa.selenium.support.PageFactory;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-
 
 public class ProteusWebCreativesPage extends BrowserFactory {
 
@@ -264,7 +261,6 @@ public class ProteusWebCreativesPage extends BrowserFactory {
                 .click(fromObj)
                 .dragAndDrop(fromObj, toObj)
                 .keyUp(Keys.CONTROL);
-
         Action selected = builder.build();
         selected.perform();
         System.out.println("Drag and drop done");

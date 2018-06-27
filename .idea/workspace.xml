@@ -2,50 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14c0a861-ce48-4df8-a711-5e9e94835522" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_cssparser_cssparser_0_9_24.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_neko_htmlunit_2_28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_w3c_css_sac_1_3.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repoProteusWebJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/repoProteusWebJava.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Reso/fff.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/ManageAdvanceMappings.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/AbilityLogInProWeb.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/AbilityLogInProWeb.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/AbilityToDeeplinkTableauReports.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/AbilityToDeeplinkTableauReports.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/AbilityToEditGoalData.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/AbilityToEditOptimisationManager.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/AbilityToEditOptimisationManager.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/AbilityToSearchForFlights.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/AbilityToSearchForFlights.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/AbilityToSortFlights.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/AbilityToSortFlights.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/AdvertiserAccounts.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/AdvertiserAccounts.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/DisplayPlatformForFlight.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/DisplayPlatformForFlight.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/ExpandFlightInformation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/ExpandFlightInformation.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/OptionToEditSeatsStorageConfig.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/OptionToEditSeatsStorageConfig.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/OptionsToViewCreatives.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/OptionsToViewCreatives.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/OptionsToViewPixels.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/OptionsToViewPixels.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/ReadOnlyFlightDates.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/ReadOnlyFlightDates.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/RegressionOtherModules.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/RegressionOtherModules.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/ReportingAPIvsProteusWeb.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/ReportingAPIvsProteusWeb.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Libraries/IEDriverServer.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Libraries/IEDriverServer.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Libraries/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Libraries/chromedriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Libraries/geckodriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Libraries/geckodriver.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCreativesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCreativesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebPixelsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebPixelsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebCreativesSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebCreativesSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runner/RunCucumberTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/RunCucumberTest1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runner/RunCucumberTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/RunCucumberTest2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefination/ProteusWebSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StepDefination/ProteusWebSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/libraries/Maven__com_google_code_gson_gson_2_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/libraries/Maven__net_sourceforge_cssparser_cssparser_0_9_24.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/libraries/Maven__net_sourceforge_htmlunit_neko_htmlunit_2_28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/libraries/Maven__org_w3c_css_sac_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/mavensurefireplugin/target/" />
@@ -75,9 +34,10 @@
       <file leaf-file-name="ProteusWebCreativesPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCreativesPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="653">
-              <caret line="255" column="9" lean-forward="true" selection-start-line="255" selection-start-column="9" selection-end-line="255" selection-end-column="9" />
+            <state relative-caret-position="-3692">
+              <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#8502#8503#0" expanded="true" />
                 <element signature="e#8576#8577#0" expanded="true" />
                 <element signature="e#8799#8800#0" expanded="true" />
@@ -87,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ManageAdvanceMappings.feature" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ManageAdvanceMappings.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/Features/ManageAdvanceMappings.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="42" lean-forward="true" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+            <state relative-caret-position="470">
+              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -99,8 +59,8 @@
       <file leaf-file-name="ProteusWebCreativesSteps.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebCreativesSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="348" column="29" lean-forward="true" selection-start-line="348" selection-start-column="29" selection-end-line="348" selection-end-column="29" />
+            <state relative-caret-position="365">
+              <caret line="348" column="28" selection-start-line="348" selection-start-column="28" selection-end-line="348" selection-end-column="28" />
               <folding>
                 <element signature="e#12802#12803#0" expanded="true" />
                 <element signature="e#12827#12828#0" expanded="true" />
@@ -136,11 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.properties" pinned="false" current-in-tab="false">
+      <file leaf-file-name="config.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Resources/config.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+            <state relative-caret-position="189">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -340,6 +300,13 @@
               <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
               <item name="repoProteusWebJava" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="repoProteusWebJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -348,14 +315,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="repoProteusWebJava" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="PageObjects" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
@@ -372,22 +331,6 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="runner" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="repoProteusWebJava" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="StepDefination" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="repoProteusWebJava" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="SupportingUtilites" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
@@ -825,7 +768,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528710485427</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Updated Seleinum version to 3.13">
+      <created>1530096989679</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1530096989679</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -862,21 +812,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.5375" weight="0.21572796" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.53697914" visible="true" weight="0.23804463" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.10520833" side_tool="true" visible="true" weight="0.34431455" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.46302083" side_tool="true" visible="true" weight="0.23804463" />
       <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.89479166" visible="true" weight="0.34431455" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.89479166" weight="0.34431455" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.2431243" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49947917" weight="0.32943678" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21510416" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19166666" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -923,7 +874,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added tests for Sort Flights" />
     <MESSAGE value="Updated Xpaths on Campaign page" />
     <MESSAGE value="Added DB verification scripts" />
     <MESSAGE value="Added Tests for editing goal details and Opt Manager details" />
@@ -948,7 +898,8 @@
     <MESSAGE value="Added tests for Pixel and Creatives deep links" />
     <MESSAGE value="Fixed the script for tooltip changes" />
     <MESSAGE value="Added scripts for Seat Storage Config" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added scripts for Seat Storage Config" />
+    <MESSAGE value="Updated Seleinum version to 3.13" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Seleinum version to 3.13" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1000,24 +951,6 @@
           <line>215</line>
           <properties />
           <option name="timeStamp" value="120" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebCreativesSteps.java</url>
-          <line>290</line>
-          <properties />
-          <option name="timeStamp" value="128" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCreativesPage.java</url>
-          <line>269</line>
-          <properties />
-          <option name="timeStamp" value="131" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebCreativesSteps.java</url>
-          <line>348</line>
-          <properties />
-          <option name="timeStamp" value="132" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -1334,30 +1267,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebCreativesSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="348" column="29" lean-forward="true" selection-start-line="348" selection-start-column="29" selection-end-line="348" selection-end-column="29" />
-          <folding>
-            <element signature="e#12802#12803#0" expanded="true" />
-            <element signature="e#12827#12828#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCreativesPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="653">
-          <caret line="255" column="9" lean-forward="true" selection-start-line="255" selection-start-column="9" selection-end-line="255" selection-end-column="9" />
-          <folding>
-            <element signature="e#8502#8503#0" expanded="true" />
-            <element signature="e#8576#8577#0" expanded="true" />
-            <element signature="e#8799#8800#0" expanded="true" />
-            <element signature="e#8858#8859#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/Features/DisplayPlatformForFlight.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-324" />
@@ -1370,17 +1279,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Resources/config.properties">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/ManageAdvanceMappings.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        <state relative-caret-position="470">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/ManageAdvanceMappings.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebCreativesSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="42" lean-forward="true" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+        <state relative-caret-position="365">
+          <caret line="348" column="28" selection-start-line="348" selection-start-column="28" selection-end-line="348" selection-end-column="28" />
+          <folding>
+            <element signature="e#12802#12803#0" expanded="true" />
+            <element signature="e#12827#12828#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCreativesPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3692">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#8502#8503#0" expanded="true" />
+            <element signature="e#8576#8577#0" expanded="true" />
+            <element signature="e#8799#8800#0" expanded="true" />
+            <element signature="e#8858#8859#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
