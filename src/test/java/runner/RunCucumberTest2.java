@@ -1,21 +1,19 @@
 package runner;
 
+import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import com.cucumber.listener.Reporter;
 import org.junit.runner.RunWith;
-import static junit.framework.TestCase.assertTrue;
-import com.github.mkolisnyk.cucumber.runner.ReportRunner;
-import com.github.mkolisnyk.cucumber.runner.ExtendedCucumber;
-import com.github.mkolisnyk.cucumber.runner.ExtendedCucumberOptions;
+import org.junit.AfterClass;
+import java.io.File;
 
 
 //@RunWith(E.class)
-@RunWith(ExtendedCucumber.class)
+@RunWith(Cucumber.class)
 @CucumberOptions(
         strict = true,
-        features = {"./src/test/java/Features/AbilityLogInProWeb.feature"},
+        features = {"./src/test/resources/features/AbilityLogInProWeb.feature"},
         format = {
                 "pretty",
                 "html:target/cucumber-reports/cucumber-html-report",
@@ -23,30 +21,17 @@ import com.github.mkolisnyk.cucumber.runner.ExtendedCucumberOptions;
                 "rerun:target/cucumber-reports/rerun.txt",
                 "junit:target/cucumber-junit-report/cucumbertestreport.xml"
         },
-        plugin = { "html:target/cucumber-reports/cucumber-html-report",
-                "json:target/cucumber-reports/CucumberTestReport.json",
-                "pretty:target/cucumber-reports/cucumber-pretty.txt",
-                "usage:target/cucumber-reports/cucumber-usage.json",
-                "junit:target/cucumber-reports/cucumber-results.xml" },
+        plugin = {"com.cucumber.listener.ExtentCucumberFormatter:output/report.html"},
         glue = {"StepDefination"},
         tags = { "~@ignore" })
-@ExtendedCucumberOptions(
-        jsonReport = "target/cucumber-reports/CucumberTestReport.json",
-        retryCount = 1,
-        detailedReport = true,
-        detailedAggregatedReport = true,
-        overviewReport = true,
-        //coverageReport = true,
-        jsonUsageReport = "target/cucumber-reports/cucumber-usage.json",
-        // usageReport = false,
-        //  toPDF = false,
-        excludeCoverageTags = {"@flaky" },
-        includeCoverageTags = {"@passed" },
-        outputFolder = "target/reports")
-public class RunCucumberTest2 {
 
-    @Test
-    public void testMe() {
-        assertTrue(true);
+public class RunCucumberTest2 {
+    @AfterClass
+    public static void teardown() {
+        // Reporter.loadXMLConfig(new File("src/test/resources/extent-config.xml"));
+        Reporter.setSystemInfo("user", System.getProperty("user.name"));
+        Reporter.setSystemInfo("os", "Windows 10");
+        Reporter.setTestRunnerOutput("Sample test runner output message");
     }
 }
+

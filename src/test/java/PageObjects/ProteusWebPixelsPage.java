@@ -117,7 +117,7 @@ public class ProteusWebPixelsPage extends BrowserFactory {
 
     public void SortPixelGridOn(String HeaderName)
     {
-        By header = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//div[text() = '"+HeaderName+"']");
+        By header = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//*[text() = '"+HeaderName+"']");
         WebElement webElement = browserFactory.getDriver().findElement(header);
         mouseClick(webElement);
         if(HeaderName.equals("Platform")) {

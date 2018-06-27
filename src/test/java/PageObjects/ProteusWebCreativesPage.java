@@ -2,7 +2,9 @@ package PageObjects;
 
 import SupportingUtilites.GeneralUtilites;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.*;
 import SupportingUtilites.BrowserFactory;
@@ -13,9 +15,10 @@ import java.util.List;
 
 
 public class ProteusWebCreativesPage extends BrowserFactory {
+
     private BrowserFactory browserFactory;
-    public ProteusWebCreativesPage(BrowserFactory browserFactory)
-    {
+
+    public ProteusWebCreativesPage(BrowserFactory browserFactory)    {
         this.browserFactory = browserFactory;
         PageFactory.initElements(browserFactory.getDriver(),this );
     }
@@ -143,47 +146,77 @@ public class ProteusWebCreativesPage extends BrowserFactory {
     @CacheLookup
     private WebElement btnClosePopup;
 
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/button[2]")
+    @CacheLookup
+    public WebElement btnManageAdvancedMapping;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[1]/div/div[2]/div[3]/button[1]")
+    @CacheLookup
+    public WebElement btnManageAdvMappingApplyFilters;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[1]/div/div[2]/h4")
+    @CacheLookup
+    public WebElement lblManageAdvancedMapping;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[1]/div/div[2]/div[1]/button")
+    @CacheLookup
+    public WebElement btnBackManageAdvancedMapping;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[1]/div/div/div/div/div[1]//input")
+    public WebElement txtDeliveryDataRangeFromDate;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[1]/div/div/div/div/div[2]//input")
+    public WebElement txtDeliveryDataRangeToDate;
+
+    @FindBy(how = How.XPATH, using = "/html/body/div/div/div[2]/section/header")
+    public WebElement lblPopupDate;
+
+    @FindBy(how = How.XPATH, using = "/html/body/div/div/div[2]/nav/button[2]")
+    public WebElement btnPopupOk;
+
+    @FindBy(how = How.XPATH, using = "/html/body/div/div/div[2]/section/div/div/div/span/div//div[@class='theme_day_3cb3g theme_active_2k63V']/span")
+    public WebElement txtPopupDate;
+
+    @FindBy(how = How.XPATH, using = "/html/body/div/div/div[2]/section/div/div/div/span/div/span")
+    public WebElement txtPopupMonthYear;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[1]/div[2]/div[3]/div/label/div")
+    public WebElement chbxMissingMapping;
+
     private String strCreativeAdvertiserIconXpath=  "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[2]";
     private String strTagIconXpath =  "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[8]/span" ;
     private String strColumnHeaders = "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]/div/div";
 
-    public boolean creativesForAdvertiserListed()
-    {
+    public boolean creativesForAdvertiserListed() {
         return getElementCount(strCreativeAdvertiserIconXpath) > 0;
     }
 
-    public boolean checkForToolTipOnTagIcon()
-    {
+    public boolean checkForToolTipOnTagIcon() {
        return getToolTip(getElements(strTagIconXpath).get(0))
                .toLowerCase().equals("View creative tag and image".toLowerCase());
     }
 
-    public boolean checkForTagIconsOnCreativeList()
-    {
+    public boolean checkForTagIconsOnCreativeList() {
         return getElementCount(strTagIconXpath) > 0;
     }
 
-    public void clickOnTagIcon()
-    {
+    public void clickOnTagIcon() {
         mouseClick(getElements(strTagIconXpath).get(0));
         GeneralUtilites.wait(1);
     }
 
-    public boolean checkForCreativePopup()
-    {
+    public boolean checkForCreativePopup()    {
         return txtCreativeText.isDisplayed() && btnClosePopup.isDisplayed() && btnCopyCreativeDetails.isDisplayed();
     }
 
-    public boolean checkForCreativeColumns(List<String> expectedHeaders)
-    {
+    public boolean checkForCreativeColumns(List<String> expectedHeaders)    {
         List<WebElement> columnHeaders = getElements(strColumnHeaders);
         List<String> actualHeaders = new ArrayList<>();
         for (WebElement objHeader :columnHeaders) actualHeaders.add(objHeader.getText());
         return GeneralUtilites.listEqualsIgnoreOrder(expectedHeaders,actualHeaders);
     }
 
-    public void changeAdvertiserOnCreativeTab(String strAdvertiserName)
-    {
+    public void changeAdvertiserOnCreativeTab(String strAdvertiserName)    {
         mouseClick(btnChange);
         txtAdvertiserAccount.clear();
         txtAdvertiserAccount.sendKeys(strAdvertiserName);
@@ -220,10 +253,20 @@ public class ProteusWebCreativesPage extends BrowserFactory {
         mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div["+indexOne+"]/div[5]/div/div[2]/div/div/ul/li[1]"));
         mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div["+indexTwo+"]/div[5]/div/div[2]/div/div/div/input"));
         mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div["+indexTwo+"]/div[5]/div/div[2]/div/div/ul/li[2]"));
-
-
-
         GeneralUtilites.wait(1);
+    }
 
+    public void dragAndDrop(){
+        WebElement fromObj = getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[1]/div/div[2]/div/div[1]/div[1]");
+        WebElement   toObj = getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div[1]/div[1]");
+        Actions builder = new Actions(browserFactory.getDriver());
+        builder.keyDown(Keys.CONTROL)
+                .click(fromObj)
+                .dragAndDrop(fromObj, toObj)
+                .keyUp(Keys.CONTROL);
+
+        Action selected = builder.build();
+        selected.perform();
+        System.out.println("Drag and drop done");
     }
 }

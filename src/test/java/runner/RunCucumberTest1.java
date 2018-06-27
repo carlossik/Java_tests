@@ -13,7 +13,7 @@ import com.github.mkolisnyk.cucumber.runner.ExtendedCucumberOptions;
 //@RunWith(E.class)
 @RunWith(ExtendedCucumber.class)
 @CucumberOptions(
-         strict = true,
+        strict = true,
         features = {"./src/test/resources/features/"},
         format = {
                 "pretty",
@@ -45,7 +45,6 @@ import com.github.mkolisnyk.cucumber.runner.ExtendedCucumberOptions;
         includeCoverageTags = {"@passed" },
         outputFolder = "target/reports")
 public class RunCucumberTest1     {
-
         @Test
         public void testMe() {
                 assertTrue(true);

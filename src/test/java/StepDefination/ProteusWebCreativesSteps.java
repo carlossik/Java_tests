@@ -11,8 +11,12 @@ import java.io.*;
 
 import cucumber.api.PendingException;
 import cucumber.api.java.en.*;
+import org.joda.time.DateTime;
+import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
 import org.junit.Assert;
 import SupportingUtilites.*;
+import org.openqa.selenium.WebElement;
 
 public class ProteusWebCreativesSteps extends BrowserFactory {
     private BrowserFactory browserFactory;
@@ -31,6 +35,7 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
     private String MergedAdvertiser;
     private String AdvertiserNameBeforeEdit;
     private String AdvertiserNameAfterEdit;
+    private String DateOnTextField;
     private static String currentPath = System.getProperty("user.dir");
 
     public ProteusWebCreativesSteps() {
@@ -53,12 +58,14 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
 
     @Then("^Creatives screen opened$")
     public void creativesScreenOpened()  {
-        Assert.assertTrue("Creatives screen not opened",creativesPage.lblCreatives.isDisplayed());
+        Assert.assertTrue("Creatives screen not opened",
+                creativesPage.lblCreatives.isDisplayed());
     }
 
     @And("^Creatives are listed for the Advertiser Account of the Flight selected$")
     public void creativesAreListedForTheAdvertiserAccountOfTheFlightSelected()  {
-        Assert.assertTrue("Creatives are not listed for the Advertiser Account of the Flight selected",creativesPage.creativesForAdvertiserListed());
+        Assert.assertTrue("Creatives are not listed for the Advertiser Account of the Flight selected",
+                creativesPage.creativesForAdvertiserListed());
     }
 
     @And("^Flights Advertiser Account is automatically applied on the Advertiser Account Name$")
@@ -212,15 +219,18 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
     @Then("^Dropdown list with AD Server Placements for each Creative$")
     public void dropdownListWithADServerPlacementsForEachCreative()   {
         Assert.assertTrue("Dropdown list with AD Server Placements for each Creative not shown",
-                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div /div/div[2]/div/div/div/div/div/div/ul/li") >= 8);
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div /div/div[2]/div/div/div/div/div/div/ul/li")
+                        >= 8);
     }
 
 
     @And("^Dropdown lists for Classification and Classification Type exist for each Creative$")
     public void dropdownListsForClassificationAndClassificationTypeExistForEachCreative() {
         Assert.assertTrue("Dropdown lists for Classification and Classification Type exist for each Creative not shown",
-                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div[1]/div[5]/div/div[1]/div/div/ul/li") == 2
-                     && getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div[1]/div[5]/div/div[2]/div/div/ul/li") >= 3);
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div[1]/div[5]/div/div[1]/div/div/ul/li")
+                        == 2
+                     && getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div[1]/div[5]/div/div[2]/div/div/ul/li")
+                        >= 3);
 
     }
 
@@ -246,8 +256,10 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
     @And("^The Creative Name is a deeplink$")
     public void theCreativeNameIsADeeplink()    {
         Assert.assertTrue("The Creative Name is a not deeplink",
-                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[2]/div/a") > 0 &&
-                        !getElements("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[2]/div/a").get(0).getAttribute("href").equals(""));
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[2]/div/a")
+                        > 0 &&
+                        !getElements("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[2]/div/a")
+                                .get(0).getAttribute("href").equals(""));
 
     }
 
@@ -257,5 +269,96 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
     }
 
 
+    @And("^Navigate to Manage Advanced Mappings$")
+    public void navigateToManageAdvancedMappings()   {
+     mouseClick(creativesPage.btnManageAdvancedMapping);
+    }
+
+    @Then("^Manage Advanced Mappings screen shown$")
+    public void manageAdvancedMappingsScreenShown() throws Throwable {
+        GeneralUtilites.wait(2);
+       Assert.assertTrue("Manage Advanced Mappings screen not shown",
+               creativesPage.lblManageAdvancedMapping.isDisplayed() &&
+               creativesPage.lblManageAdvancedMapping.getText().equals("Manage Advanced Mappings"));
+    }
+
+    @When("^Open \"([^\"]*)\" date pop up$")
+    public void openDatePopUp(String txtField) throws Throwable {
+        if ("From Date".equals(txtField)) {
+            this.DateOnTextField = creativesPage.txtDeliveryDataRangeFromDate.getAttribute("value");
+            mouseClick(creativesPage.txtDeliveryDataRangeFromDate);
+        }
+        else if("To Date".equals(txtField)){
+            this.DateOnTextField = creativesPage.txtDeliveryDataRangeToDate.getAttribute("value");
+            mouseClick(creativesPage.txtDeliveryDataRangeToDate);
+        }
+    }
+
+    @Then("^Date popup shown with the selected date$")
+    public void datePopupShownWithTheSelectedDate() throws Throwable {
+        GeneralUtilites.wait(1);
+        DateTimeFormatter formatter = DateTimeFormat.forPattern("dd MMMM yyyy");
+        DateTime dateTextBoxDate = formatter.parseDateTime(this.DateOnTextField);
+
+        String day = creativesPage.txtPopupDate.getText();
+        String monthYear = creativesPage.txtPopupMonthYear.getText();
+        DateTime datePopUpDate = formatter.parseDateTime(day + " " +monthYear);
+        mouseClick(creativesPage.btnPopupOk);
+        GeneralUtilites.wait(1);
+        Assert.assertEquals("",dateTextBoxDate,datePopUpDate);
+    }
+
+    @When("^Navigate to Creatives tab$")
+    public void clickOnCreatives() throws Throwable {
+        mouseClick(creativesPage.btnCreatives);
+        if (creativesPage.txtAdvertiserAccount.isDisplayed()) {
+            GeneralUtilites.wait(1);
+            creativesPage.txtAdvertiserAccount.sendKeys("EasyJet UK (SMRS - TEL)");
+            GeneralUtilites.wait(1);
+            mouseClick(getElements("/html/body/div/div/div[2]/section/div[2]/form/div[1]/div/ul").get(0));
+            GeneralUtilites.wait(1);
+            creativesPage.btnOK.click();
+            // creativesPage.changeAdvertiserOnCreativeTab("EasyJet UK (SMRS-TEL)");
+        }
+    }
+
+    @When("^I view the Unmapped DSP Creatives Table$")
+    public void iViewTheUnmappedDSPCreativesTable() throws Throwable {
+        mouseClick(creativesPage.txtDeliveryDataRangeFromDate);
+        mouseClick(getElement("/html/body/div/div/div[2]/section/div/div/div/span/div/div[2]/div[1]/span"));
+        mouseClick(creativesPage.btnPopupOk);
+        GeneralUtilites.wait(1);
+        mouseClick(creativesPage.btnManageAdvMappingApplyFilters);
+        Assert.assertTrue("Unmapped DSP Creatives Tables not shown ",
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[1]/div/div[2]/div/div") >0);
+
+    }
+
+    @Then("^I am able to select a creative - click on text data$")
+    public void iAmAbleToSelectACreativeClickOnTextData() throws Throwable {
+        GeneralUtilites.wait(1);
+        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[1]/div/div[2]/div/div[1]"));
+    }
+
+    @And("^drag the single creative to the Ad server placements list$")
+    public void dragTheSingleCreativeToTheAdServerPlacementsList() throws Throwable {
+        GeneralUtilites.wait(1);
+        if(creativesPage.chbxMissingMapping.getAttribute("class").contains("checked"))
+            mouseClick(creativesPage.chbxMissingMapping);
+        GeneralUtilites.wait(2);
+        creativesPage.dragAndDrop();
+    }
+
+    @Then("^I am able to drop and link the creative to a placement which does not have any Creative mappings$")
+    public void iAmAbleToDropAndLinkTheCreativeToAPlacementWhichDoesNotHaveAnyCreativeMappings() throws Throwable {
+        System.out.println("Drag and drop count : " +
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div[1]/div[2]/div[2]/div"));
+    }
+
+    @Then("^I am able to drop and link the creative to a placement which already has DSP creatives mapped$")
+    public void iAmAbleToDropAndLinkTheCreativeToAPlacementWhichAlreadyHasDSPCreativeSMapped() throws Throwable {
+        System.out.println("Drag and drop count : " +
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div[1]/div[2]/div[2]/div"));
+    }
 }
 
