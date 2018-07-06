@@ -415,7 +415,6 @@ public class ProteusWebSteps extends BrowserFactory
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("Option to sort result by Flight Created and Updated does not exist",
             campaignsPage.checkForSortOptions() );
-
     }
 
     @When("^Select sort by Flight created$")
@@ -867,7 +866,7 @@ public class ProteusWebSteps extends BrowserFactory
     @When("^Click on \"([^\"]*)\" Operation Unit Tableau report$")
     public void clickOnOperationUnitTableauReport(String strReportType)   {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
-        campaignsPage.SelectTableauOPerationalUnitReporting(strReportType);
+        campaignsPage.SelectTableauOperationalUnitReporting(strReportType);
     }
 
     @And("^There are two links in the pop up for the following Operational Unit reports:$")

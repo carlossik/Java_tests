@@ -256,6 +256,9 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
             enterText(txtAdvertiser, Advertiser);
         if (!Agency.equals(""))
             enterText(txtAgency, Agency);
+
+        GeneralUtilites.wait(1);
+        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/div[1]/div/div[6]/label/input[@value='ALL']"));
     }
 
     public boolean CheckFilterExist() {
@@ -568,7 +571,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
             mouseClick(elementReportOptions.get(0));
     }
 
-    public void SelectTableauOPerationalUnitReporting(String ReportType) {
+    public void SelectTableauOperationalUnitReporting(String ReportType) {
         By ReportButtons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/div[1]/span/div/button");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(ReportButtons);
         mouseClick(elementTypes.get(0));

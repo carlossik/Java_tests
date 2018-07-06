@@ -11,6 +11,7 @@ import java.io.*;
 
 import cucumber.api.PendingException;
 import cucumber.api.java.en.*;
+import org.apache.commons.lang.time.DateUtils;
 import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
@@ -37,6 +38,8 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
     private String AdvertiserNameAfterEdit;
     private String DateOnTextField;
     private static String currentPath = System.getProperty("user.dir");
+
+    private int AdServerPlacementsCount;
 
     public ProteusWebCreativesSteps() {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
@@ -275,7 +278,7 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
     }
 
     @Then("^Manage Advanced Mappings screen shown$")
-    public void manageAdvancedMappingsScreenShown() throws Throwable {
+    public void manageAdvancedMappingsScreenShown()   {
         GeneralUtilites.wait(2);
        Assert.assertTrue("Manage Advanced Mappings screen not shown",
                creativesPage.lblManageAdvancedMapping.isDisplayed() &&
@@ -283,7 +286,7 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
     }
 
     @When("^Open \"([^\"]*)\" date pop up$")
-    public void openDatePopUp(String txtField) throws Throwable {
+    public void openDatePopUp(String txtField)   {
         if ("From Date".equals(txtField)) {
             this.DateOnTextField = creativesPage.txtDeliveryDataRangeFromDate.getAttribute("value");
             mouseClick(creativesPage.txtDeliveryDataRangeFromDate);
@@ -295,7 +298,7 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
     }
 
     @Then("^Date popup shown with the selected date$")
-    public void datePopupShownWithTheSelectedDate() throws Throwable {
+    public void datePopupShownWithTheSelectedDate()   {
         GeneralUtilites.wait(1);
         DateTimeFormatter formatter = DateTimeFormat.forPattern("dd MMMM yyyy");
         DateTime dateTextBoxDate = formatter.parseDateTime(this.DateOnTextField);
@@ -309,7 +312,7 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
     }
 
     @When("^Navigate to Creatives tab$")
-    public void clickOnCreatives() throws Throwable {
+    public void clickOnCreatives()   {
         mouseClick(creativesPage.btnCreatives);
         if (creativesPage.txtAdvertiserAccount.isDisplayed()) {
             GeneralUtilites.wait(1);
@@ -323,42 +326,192 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
     }
 
     @When("^I view the Unmapped DSP Creatives Table$")
-    public void iViewTheUnmappedDSPCreativesTable() throws Throwable {
+    public void iViewTheUnmappedDSPCreativesTable()   {
         mouseClick(creativesPage.txtDeliveryDataRangeFromDate);
         mouseClick(getElement("/html/body/div/div/div[2]/section/div/div/div/span/div/div[2]/div[1]/span"));
         mouseClick(creativesPage.btnPopupOk);
         GeneralUtilites.wait(1);
         mouseClick(creativesPage.btnManageAdvMappingApplyFilters);
-        Assert.assertTrue("Unmapped DSP Creatives Tables not shown ",
-                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[1]/div/div[2]/div/div") >0);
 
     }
 
     @Then("^I am able to select a creative - click on text data$")
-    public void iAmAbleToSelectACreativeClickOnTextData() throws Throwable {
+    public void iAmAbleToSelectACreativeClickOnTextData()  {
         GeneralUtilites.wait(1);
         mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[1]/div/div[2]/div/div[1]"));
     }
 
     @And("^drag the single creative to the Ad server placements list$")
-    public void dragTheSingleCreativeToTheAdServerPlacementsList() throws Throwable {
-        GeneralUtilites.wait(1);
-        if(creativesPage.chbxMissingMapping.getAttribute("class").contains("checked"))
-            mouseClick(creativesPage.chbxMissingMapping);
-        GeneralUtilites.wait(2);
-        creativesPage.dragAndDrop();
+    public void dragTheSingleCreativeToTheAdServerPlacementsList()  {
+        GeneralUtilites.wait(10);
+       //  if(creativesPage.chbxMissingMapping.getAttribute("class").contains("checked"))
+       //     mouseClick(creativesPage.chbxMissingMapping);
+
+       GeneralUtilites.wait(2);
+       creativesPage.dragAndDrop();
     }
 
     @Then("^I am able to drop and link the creative to a placement which does not have any Creative mappings$")
-    public void iAmAbleToDropAndLinkTheCreativeToAPlacementWhichDoesNotHaveAnyCreativeMappings() throws Throwable {
+    public void iAmAbleToDropAndLinkTheCreativeToAPlacementWhichDoesNotHaveAnyCreativeMappings()  {
+        System.out.println("Drag and drop count : " +
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div[1]/div[2]/div[2]/div"));
+        Assert.assertTrue("I am unable to drop and link the creative to a placement which does not have any Creative mappings",
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div[1]/div[2]/div[2]/div")
+                        >= 1);
+    }
+
+    @Then("^I am able to drop and link the creative to a placement which already has DSP creatives mapped$")
+    public void iAmAbleToDropAndLinkTheCreativeToAPlacementWhichAlreadyHasDSPCreativeSMapped() {
         System.out.println("Drag and drop count : " +
                 getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div[1]/div[2]/div[2]/div"));
     }
 
-    @Then("^I am able to drop and link the creative to a placement which already has DSP creatives mapped$")
-    public void iAmAbleToDropAndLinkTheCreativeToAPlacementWhichAlreadyHasDSPCreativeSMapped() throws Throwable {
-        System.out.println("Drag and drop count : " +
-                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div[1]/div[2]/div[2]/div"));
+    @And("^Advance Mapping Save button and Cancel button displayed$")
+    public void advanceMappingSaveButtonAndCancelButton()  {
+         Assert.assertTrue("Advance Mapping Save button and Cancel button",
+                 creativesPage.btnSaveAdvancedMapping.isDisplayed()
+                      && creativesPage.btnCancelAdvancedMapping.isDisplayed());
+    }
+
+    @When("^Click on Advance Mapping Save button$")
+    public void clickOnAdvanceMappingSaveButton()   {
+         AdServerPlacementsCount =  getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div");
+         mouseClick(creativesPage.btnSaveAdvancedMapping);
+         GeneralUtilites.wait(1);
+    }
+
+    @Then("^the Ad server is removed for the 'Missing Mapping' list$")
+    public void theAdServerIsRemovedForTheMissingMappingList()  {
+        mouseClick(creativesPage.chbxMissingMapping);
+        if(!creativesPage.chbxMissingMapping.getAttribute("class").contains("checked"))
+            mouseClick(creativesPage.chbxMissingMapping);
+        Assert.assertEquals("the Ad server is removed for the Missing Mapping list",
+                AdServerPlacementsCount -1 ,
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div"));
+    }
+
+    @When("^Click on Advance Mapping Cancel button$")
+    public void clickOnAdvanceMappingCancelButton()  {
+        AdServerPlacementsCount =  getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div");
+        mouseClick(creativesPage.btnCancelAdvancedMapping);
+        GeneralUtilites.wait(2);
+    }
+
+    @Then("^the Ad server is not removed for the 'Missing Mapping' list$")
+    public void theAdServerIsNotRemovedForTheMissingMappingList()  {
+        mouseClick(creativesPage.chbxMissingMapping);
+        GeneralUtilites.wait(10);
+        if(!creativesPage.chbxMissingMapping.getAttribute("class").contains("checked"))
+            mouseClick(creativesPage.chbxMissingMapping);
+        Assert.assertEquals("the Ad server is removed for the Missing Mapping list",
+                AdServerPlacementsCount ,
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div"));
+    }
+
+    @Then("^Unmapped DSP Creatives table shown on the left hand side$")
+    public void unmappedDSPCreativesTableShownOnTheLeftHandSide()   {
+        Assert.assertTrue("Unmapped DSP Creatives Tables not shown ",
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[1]/div/div[2]/div/div") >0);
+
+    }
+
+    @And("^there is a counter - number of creatives in the list$")
+    public void thereIsACounterNumberOfCreativesInTheList()   {
+      GeneralUtilites.wait(1);
+        Assert.assertTrue("no counter shown",
+        Integer.parseInt( creativesPage.lblUnmappedDSPCreatives.getText()
+                .split("\\(")[1].split("\\)")[0] ) >= 1);
+    }
+
+    @And("^the following column data is displayed in Unmapped DSP Creatives table$")
+    public void theFollowingColumnDataIsDisplayedInUnmappedDSPCreativesTable()   {
+        Assert.assertTrue("expected columns are not displayed in Unmapped DSP Creatives table",
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[1]/div/div[2]/div/div[1]//div") == 5
+                  &&  getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[1]/div/div[2]/div/div[1]//label") == 3
+                  && getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[1]/div/div[2]/div/div[1]//button") == 2);
+    }
+
+    @When("^Click on Delivery Data Range - creatives and placements icon$")
+    public void clickOnDeliveryDataRangeCreativesAndPlacementsIcon()  {
+         mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[1]/div/div[2]/div[2]/div[1]/span"));
+    }
+
+    @Then("^a pop is displayed showing the delivery dates in the correct format$")
+    public void aPopIsDisplayedShowingTheDeliveryDatesInTheCorrectFormat()  {
+        GeneralUtilites.wait(2);
+        Assert.assertTrue(" popup not displayed showing the delivery dates in the correct format",
+        getElementCount("/html/body/div/div/div[2]/section/div[2]/div/div/div") > 1);
+        mouseClick(getElement("/html/body/div/div/div[2]/section/div[2]/div/div//button"));
+    }
+
+    @And("^Dates are defaults the last two weeks$")
+    public void datesAreDefaultsTheLastTwoWeeks()   {
+        DateTimeFormatter formatter = DateTimeFormat.forPattern("dd MMMM yyyy");
+        DateTime dateFromDate = formatter.parseDateTime(creativesPage.txtDeliveryDataRangeFromDate.getAttribute("value"));
+        DateTime dateToDate = formatter.parseDateTime(creativesPage.txtDeliveryDataRangeToDate.getAttribute("value"));
+
+        Assert.assertEquals("Dates are defaults the last two weeks",dateToDate.plusDays(1).toLocalDate(),DateTime.now().toLocalDate());
+        Assert.assertEquals("Dates are defaults the last two weeks",dateFromDate.plusDays(14).toLocalDate(),DateTime.now().toLocalDate());
+    }
+
+    @And("^Tooltips shown on mouseover on Delivery Data Range$")
+    public void tooltipsShownOnMouseoverOnDeliveryDataRange()   {
+        Assert.assertTrue("Tooltips not shown on mouseover on tag icon 'View creative tag and image'",
+                creativesPage.checkForToolTipOnDelivetyDataRange());
+    }
+
+    @And("^there is an Ad Server Placement listed$")
+    public void thereIsAnAdServerPlacementListed()   {
+        if(creativesPage.chbxMissingMapping.getAttribute("class").contains("checked"))
+            mouseClick(creativesPage.chbxMissingMapping);
+        Assert.assertTrue("No Ad Server Placement listed",
+              getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div") > 0);
+    }
+
+    @And("^there is an option to expand next to the Ad Server Placement Name$")
+    public void thereIsAnOptionToExpandNextToTheAdServerPlacementName()   {
+        Assert.assertTrue("an option to expand next to the Ad Server Placement Name does not exist",
+                creativesPage.btnExpand.isDisplayed());
+    }
+
+    @When("^I select the expand option next to the Ad Server Placement Name$")
+    public void iSelectTheExpandOptionNextToTheAdServerPlacementName()   {
+        mouseClick(creativesPage.btnExpand);
+    }
+
+    @Then("^a section loads to display any DSP creatives which are mapped to the Ad Server Placement$")
+    public void aSectionLoadsToDisplayAnyDSPCreativesWhichAreMappedToTheAdServerPlacement()  {
+        mouseClick( getElements("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div//i").get(0));
+    }
+
+    @And("^i can see the following data next to each Creative and is in line for the Ad server Placement data$")
+    public void iCanSeeTheFollowingDataNextToEachCreativeAndIsInLineForTheAdServerPlacementData()   {
+    Assert.assertTrue("i can't see the following data next to each Creative and is in line for the Ad server Placement data",
+            getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div[1]/div[2]/div/div") >= 4 );
+    }
+
+    @Then("^there is an option to filter mappings based on platforms$")
+    public void thereIsAnOptionToFilterMappingsBasedOnPlatforms()   {
+       Assert.assertTrue("option to filter mappings based on platforms does not exist",
+               creativesPage.lstAdServerPlatformList.isDisplayed());
+    }
+
+    @And("^Able to select a platform from the dropdown$")
+    public void ableToSelectAPlatformFromTheDropdown()  {
+        Assert.assertTrue ("Unable to select a platform from the dropdown",
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[1]/div/div[1]/div[2]/div[2]/div/ul/li") >0);
+        mouseClick(creativesPage.lstAdServerPlatformList);
+        mouseClick(getElements("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[1]/div/div[1]/div[2]/div[2]/div/ul/li").get(0));
+        GeneralUtilites.wait(1);
+        Assert.assertNotEquals("platforms dropdown not selected",
+                creativesPage.lstAdServerPlatformList.getAttribute("value"),"");
+    }
+
+    @And("^platforms dropdown default to ALL platforms$")
+    public void platformsDropdownDefaultToALLPlatforms()   {
+        GeneralUtilites.wait(2);
+        Assert.assertEquals("platforms dropdown is not default to ALL platforms",
+                creativesPage.lstAdServerPlatformList.getAttribute("value"),"");
     }
 }
 

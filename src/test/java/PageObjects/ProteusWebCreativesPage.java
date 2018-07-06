@@ -177,8 +177,28 @@ public class ProteusWebCreativesPage extends BrowserFactory {
     @FindBy(how = How.XPATH, using = "/html/body/div/div/div[2]/section/div/div/div/span/div/span")
     public WebElement txtPopupMonthYear;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[1]/div[2]/div[3]/div/label/div")
+
+    @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[1]/div[2]/div[3]/div/label/div")
     public WebElement chbxMissingMapping;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section//button[contains(text(), 'Cancel')]")
+    public WebElement btnCancelAdvancedMapping;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section//button[contains(text(), 'Save')]")
+    public WebElement btnSaveAdvancedMapping;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[1]/div[1]/span[text()='fullscreen']")
+    public WebElement btnExpand;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[1]/div[1]/span[text()='fullscreen_exit']")
+    public WebElement getBtnExpandExit;
+
+    @FindBy(how = How.XPATH, using = "/html/body/div[1]/div/section/div/div[2]/div/div/div[2]/div[1]/div/div[1]/div[1]/h5")
+    public WebElement lblUnmappedDSPCreatives;
+
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[1]/div/div[1]/div[2]/div[2]/div/div/input")
+    public WebElement lstAdServerPlatformList;
 
     private String strCreativeAdvertiserIconXpath=  "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[2]";
     private String strTagIconXpath =  "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[8]/span" ;
@@ -191,6 +211,11 @@ public class ProteusWebCreativesPage extends BrowserFactory {
     public boolean checkForToolTipOnTagIcon() {
        return getToolTip(getElements(strTagIconXpath).get(0))
                .toLowerCase().equals("View creative tag and image".toLowerCase());
+    }
+
+    public boolean checkForToolTipOnDelivetyDataRange() {
+        return getToolTip(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[1]/div/div[2]/div[2]/div[1]/span"))
+                .toLowerCase().equals("View latest delivery dates".toLowerCase());
     }
 
     public boolean checkForTagIconsOnCreativeList() {
@@ -254,15 +279,22 @@ public class ProteusWebCreativesPage extends BrowserFactory {
     }
 
     public void dragAndDrop(){
-        WebElement fromObj = getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[1]/div/div[2]/div/div[1]/div[1]");
-        WebElement   toObj = getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div[1]/div[1]");
+        WebElement fromObj = getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[1]/div/div[2]/div/div[1]");
+        WebElement   toObj = getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div[1]/div[2]");
         Actions builder = new Actions(browserFactory.getDriver());
-        builder.keyDown(Keys.CONTROL)
-                .click(fromObj)
+        /*  builder.keyDown(Keys.CONTROL)
+             //   .click(fromObj)
                 .dragAndDrop(fromObj, toObj)
                 .keyUp(Keys.CONTROL);
         Action selected = builder.build();
-        selected.perform();
+        selected.perform();*/
+        builder.clickAndHold(fromObj).build().perform();
+        GeneralUtilites.wait(4);
+        builder.clickAndHold(toObj).moveToElement(toObj)
+                .release(toObj)
+                .build().perform();
+        GeneralUtilites.wait(4);
+        //  dragAndDrop.perform();
         System.out.println("Drag and drop done");
     }
 }

@@ -77,8 +77,8 @@ public class BrowserFactory {
                 break;
         }
         //Set the Timeouts
-        driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
-        driver.manage().timeouts().pageLoadTimeout(60,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.MINUTES);
+        driver.manage().timeouts().pageLoadTimeout(5,TimeUnit.MINUTES);
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
         driver.switchTo().defaultContent();
