@@ -92,3 +92,25 @@ Feature: Manage Advance Mappings feature
     Then there is an option to filter mappings based on platforms
     And platforms dropdown default to ALL platforms
     And Able to select a platform from the dropdown
+
+    Scenario: 08 Back Button on Advanced Mapping Screen go back to Main Screen without notification
+      When Navigate to Manage Advanced Mappings
+      Then Manage Advanced Mappings screen shown
+      And there is a back button enabled on advanced mapping screen
+      When I select the back button on advanced mapping screen
+      Then Creatives screen opened
+
+  Scenario: 09 Back Button on Advanced Mapping Screen go back to Main Screen with notification
+    When Navigate to Manage Advanced Mappings
+    Then Manage Advanced Mappings screen shown
+    And there is a back button enabled on advanced mapping screen
+    When I have made changes to Creative > Placement mappings
+    And I select the back button on advanced mapping screen
+    Then there is a notification for the user to discard changes or cancel going back
+    When Select the discard option
+    Then the user is sent back to the Advanced Mapping Screen to save changes
+    When I have made changes to Creative > Placement mappings
+    And I select the back button on advanced mapping screen
+    Then there is a notification for the user to discard changes or cancel going back
+    When Select the cancel option
+    Then Creatives screen opened

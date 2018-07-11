@@ -513,5 +513,15 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
         Assert.assertEquals("platforms dropdown is not default to ALL platforms",
                 creativesPage.lstAdServerPlatformList.getAttribute("value"),"");
     }
+
+    @And("^there is a back button enabled on advanced mapping screen$")
+    public void thereIsABackButtonEnabledOnAdvancedMappingScreen() {
+        Assert.assertTrue("",creativesPage.btnBackManageAdvancedMapping.isDisplayed());
+    }
+
+    @When("^I select the back button on advanced mapping screen$")
+    public void iSelectTheBackButtonOnAdvancedMappingScreen()   {
+       mouseClick(creativesPage.btnBackManageAdvancedMapping);
+    }
 }
 
