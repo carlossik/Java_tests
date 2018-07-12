@@ -1,6 +1,5 @@
 @AdvanceMappings
 Feature: Manage Advance Mappings feature
-
   Background:
     Given I am a Proteus User
     And I have the role: Pro Web Campaigns
@@ -93,24 +92,52 @@ Feature: Manage Advance Mappings feature
     And platforms dropdown default to ALL platforms
     And Able to select a platform from the dropdown
 
-    Scenario: 08 Back Button on Advanced Mapping Screen go back to Main Screen without notification
-      When Navigate to Manage Advanced Mappings
-      Then Manage Advanced Mappings screen shown
-      And there is a back button enabled on advanced mapping screen
-      When I select the back button on advanced mapping screen
-      Then Creatives screen opened
+  Scenario: 08 Back Button on Advanced Mapping Screen go back to Main Screen without notification
+    When Navigate to Manage Advanced Mappings
+    Then Manage Advanced Mappings screen shown
+    And there is a back button enabled on advanced mapping screen
+    When I select the back button on advanced mapping screen
+    Then Creatives screen opened
 
   Scenario: 09 Back Button on Advanced Mapping Screen go back to Main Screen with notification
     When Navigate to Manage Advanced Mappings
     Then Manage Advanced Mappings screen shown
     And there is a back button enabled on advanced mapping screen
-    When I have made changes to Creative > Placement mappings
-    And I select the back button on advanced mapping screen
-    Then there is a notification for the user to discard changes or cancel going back
-    When Select the discard option
-    Then the user is sent back to the Advanced Mapping Screen to save changes
-    When I have made changes to Creative > Placement mappings
+    When I view the Unmapped DSP Creatives Table
+    Then I am able to select a creative - click on text data
+    And drag the single creative to the Ad server placements list
     And I select the back button on advanced mapping screen
     Then there is a notification for the user to discard changes or cancel going back
     When Select the cancel option
+    Then the user is sent back to the Advanced Mapping Screen to save changes
+    And I select the back button on advanced mapping screen
+    Then there is a notification for the user to discard changes or cancel going back
+    When Select the discard option
     Then Creatives screen opened
+
+  Scenario: 10 Untick 'Missing Mapping' when copying creative name into Ad Server Placement search
+    When Navigate to Manage Advanced Mappings
+    Then Manage Advanced Mappings screen shown
+    When I view the Unmapped DSP Creatives Table
+    Then I am able to select a creative - click on text data
+    When I select to 'copy' the creative name into the ad server placement search field
+    Then the 'Missing Mapping' box is unticked
+
+  Scenario: 11 Do NOT untick 'Missing Mapping' when carrying out generic search in Ad Server Placement search field
+    When Navigate to Manage Advanced Mappings
+    Then Manage Advanced Mappings screen shown
+    When I view the Unmapped DSP Creatives Table
+    Then I am able to select a creative - click on text data
+    When carry out a generic search in the Ad Server Placement search field
+    Then the 'Missing Mapping' box is ticked
+
+
+  Scenario: 12 Highlight Creative Card, Unhighlight Creative Card
+    When Navigate to Manage Advanced Mappings
+    Then Manage Advanced Mappings screen shown
+    When I view the Unmapped DSP Creatives Table
+    Then I am able to select a creative - click on text data
+    When I select to 'copy' the creative name into the ad server placement search field
+    Then highlight the Creative Card/Name
+    When clear the ad server placements search box
+    Then Unhighlight the Creative Card/Name

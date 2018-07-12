@@ -156,7 +156,7 @@ public class ProteusWebCreativesPage extends BrowserFactory {
     public WebElement lblManageAdvancedMapping;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[1]/div/div[2]/div[1]/button")
-    @CacheLookup
+
     public WebElement btnBackManageAdvancedMapping;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[1]/div/div/div/div/div[1]//input")
@@ -191,14 +191,19 @@ public class ProteusWebCreativesPage extends BrowserFactory {
     public WebElement btnExpand;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[1]/div[1]/span[text()='fullscreen_exit']")
-    public WebElement getBtnExpandExit;
+    public WebElement btnExpandExit;
 
     @FindBy(how = How.XPATH, using = "/html/body/div[1]/div/section/div/div[2]/div/div/div[2]/div[1]/div/div[1]/div[1]/h5")
     public WebElement lblUnmappedDSPCreatives;
 
-
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[1]/div/div[1]/div[2]/div[2]/div/div/input")
     public WebElement lstAdServerPlatformList;
+
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[1]/div/div[1]/div[2]/div[1]/div/input")
+    public WebElement txtAdServerPlatformSearch;
+
+
 
     private String strCreativeAdvertiserIconXpath=  "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[2]";
     private String strTagIconXpath =  "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[8]/span" ;

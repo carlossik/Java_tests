@@ -347,7 +347,7 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
        //  if(creativesPage.chbxMissingMapping.getAttribute("class").contains("checked"))
        //     mouseClick(creativesPage.chbxMissingMapping);
 
-       GeneralUtilites.wait(2);
+
        creativesPage.dragAndDrop();
     }
 
@@ -516,12 +516,84 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
 
     @And("^there is a back button enabled on advanced mapping screen$")
     public void thereIsABackButtonEnabledOnAdvancedMappingScreen() {
-        Assert.assertTrue("",creativesPage.btnBackManageAdvancedMapping.isDisplayed());
+        Assert.assertTrue("there is a back button disabled on advanced mapping screen",
+                creativesPage.btnBackManageAdvancedMapping.isDisplayed());
     }
 
     @When("^I select the back button on advanced mapping screen$")
     public void iSelectTheBackButtonOnAdvancedMappingScreen()   {
-       mouseClick(creativesPage.btnBackManageAdvancedMapping);
+        GeneralUtilites.wait(2);
+        mouseClick(creativesPage.btnBackManageAdvancedMapping);
+    }
+
+    @Then("^there is a notification for the user to discard changes or cancel going back$")
+    public void thereIsANotificationForTheUserToDiscardChangesOrCancelGoingBack() {
+        GeneralUtilites.wait(2);
+        Assert.assertTrue("no notification for the user to discard changes or cancel going back",
+                getElementCount("/html/body//div/div[2]/section/div[2]/div[2]/button") > 1);
+    }
+
+    @When("^Select the discard option$")
+    public void selectTheDiscardOption()  {
+         mouseClick(getElement("/html/body//div/div[2]/section/div[2]/div[2]/button[1]"));
+    }
+
+    @When("^Select the cancel option$")
+    public void selectTheCancelOption()  {
+        mouseClick(getElement("/html/body//div/div[2]/section/div[2]/div[2]/button[2]"));
+    }
+
+    @Then("^the user is sent back to the Advanced Mapping Screen to save changes$")
+    public void theUserIsSentBackToTheAdvancedMappingScreenToSaveChanges()     {
+        GeneralUtilites.wait(2);
+        Assert.assertTrue("Manage Advanced Mappings screen not shown",
+                creativesPage.lblManageAdvancedMapping.isDisplayed() &&
+                        creativesPage.lblManageAdvancedMapping.getText().equals("Manage Advanced Mappings"));
+    }
+
+
+    @When("^I select to 'copy' the creative name into the ad server placement search field$")
+    public void iSelectToCopyTheCreativeNameIntoTheAdServerPlacementSearchField()   {
+    mouseClick( getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[1]/div/div[2]/div/div[1]/button[1]"));
+    }
+
+    @Then("^the 'Missing Mapping' box is unticked$")
+    public void theMissingMappingBoxIsUnticked() {
+     Assert.assertFalse("the 'Missing Mapping' box is not unticked",
+             creativesPage.chbxMissingMapping.getAttribute("class").contains("checked"));
+    }
+
+    @When("^carry out a generic search in the Ad Server Placement search field$")
+    public void carryOutAGenericSearchInTheAdServerPlacementSearchField()     {
+       enterText( creativesPage.txtAdServerPlatformSearch,"aaaa");
+    }
+
+    @Then("^the 'Missing Mapping' box is ticked$")
+    public void theMissingMappingBoxIsTicked()  {
+        Assert.assertTrue("the 'Missing Mapping' box is not ticked",
+                creativesPage.chbxMissingMapping.getAttribute("class").contains("checked"));
+    }
+
+    @Then("^highlight the Creative Card/Name$")
+    public void highlightTheCreativeCardName()     {
+        GeneralUtilites.wait(1);
+
+      Assert.assertTrue("the Creative Card/Name not highlight",
+      getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[1]/div/div[2]/div/div[1]/div[2]").
+      getAttribute("class").contains("highlighted"));
+    }
+
+    @When("^clear the ad server placements search box$")
+    public void clearTheAdServerPlacementsSearchBox()     {
+     typeText(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[1]/div[2]/div[1]/div/input"),"ss" );
+        GeneralUtilites.wait(2);
+    }
+
+    @Then("^Unhighlight the Creative Card/Name$")
+    public void unhighlightTheCreativeCardName() throws Throwable {
+        Assert.assertFalse("the Creative Card/Name highlight after clearing the search text",
+                getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[1]/div/div[2]/div/div[1]/div[2]").
+                        getAttribute("class").contains("highlighted"));
     }
 }
 
