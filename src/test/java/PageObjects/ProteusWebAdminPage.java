@@ -1,5 +1,5 @@
 package PageObjects;
-  import SupportingUtilites.ElementExtensions;
+
   import SupportingUtilites.GeneralUtilites;
   import org.openqa.selenium.WebElement;
   import org.openqa.selenium.interactions.Actions;
@@ -32,7 +32,6 @@ public class ProteusWebAdminPage extends BrowserFactory
     @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[1]/aside/button[4]")
     @CacheLookup
     private WebElement btnAdvertiserAccounts;
-
 
     @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[2]/div/div/div/div/div[1]/div[1]/button")
     @CacheLookup
