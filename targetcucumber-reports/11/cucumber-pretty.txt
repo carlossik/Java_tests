@@ -1,0 +1,25 @@
+@SeatStorageConfig
+Feature: Ability to Edit Advertiser Account settings
+
+  Background:                                              [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionToEditSeatsStorageConfig.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                              [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Advertiser_Manager_Editor[0m [90m# ProteusWebSteps.GivenIHaveTheRoleProWebAdvertiserManagerEditor()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m         [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                          [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m              [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mAdministration[0m[32m" from home page[0m        [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAdministration page shown correctly[0m               [90m# ProteusWebSteps.administrationPageShownCorrectly()[0m
+    [33mWhen [0m[33mI click on "SEATS" on Administration Tab[0m
+    [33mThen [0m[33mSeats page shown correctly[0m
+
+  @SeatStorageConfig
+  Scenario: 01 Creating a new Seat Storage Config setting the Data Format [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionToEditSeatsStorageConfig.feature:16[0m
+    [33mWhen [0m[33mSearch and select seat "DBM TEST ACCOUNT (LIVE)"[0m
+    [33mThen [0m[33mSeat details page shown[0m
+    [33mWhen [0m[33mClick on "MANAGE CREDENTIALS"[0m
+    [33mThen [0m[33mCredentials page shown[0m
+    [33mWhen [0m[33mSelect the credential "DBM TEST ACCOUNT (LIVE)"[0m
+    [33mThen [0m[33mOption to add Storage Location[0m
+    [33mWhen [0m[33mI clicked on the Storage Locations "add" button[0m
+    [33mThen [0m[33mDefault Values selected on add storage location popup[0m
+    [33mWhen [0m[33mMandatory options shown on the popup[0m

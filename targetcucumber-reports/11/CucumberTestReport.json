@@ -1,0 +1,260 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4231679,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 57600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Advertiser_Manager_Editor",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebAdvertiserManagerEditor()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3990255365,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4983567367,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 41361049,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3100453504,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on \"Administration\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Administration",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 128733385,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Administration page shown correctly",
+            "match": {
+              "location": "ProteusWebSteps.administrationPageShownCorrectly()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "I click on \"SEATS\" on Administration Tab",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "Seats page shown correctly",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 510751782,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "01 Creating a new Seat Storage Config setting the Data Format",
+        "description": "",
+        "id": "ability-to-edit-advertiser-account-settings;01-creating-a-new-seat-storage-config-setting-the-data-format",
+        "after": [
+          {
+            "result": {
+              "duration": 1924660512,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "Search and select seat \"DBM TEST ACCOUNT (LIVE)\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "Seat details page shown",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "Click on \"MANAGE CREDENTIALS\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "Credentials page shown",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "Select the credential \"DBM TEST ACCOUNT (LIVE)\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 22,
+            "name": "Option to add Storage Location",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "I clicked on the Storage Locations \"add\" button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "Default Values selected on add storage location popup",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "Mandatory options shown on the popup",
+            "match": {},
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "line": 15,
+            "name": "@SeatStorageConfig"
+          }
+        ]
+      }
+    ],
+    "name": "Ability to Edit Advertiser Account settings",
+    "description": "",
+    "id": "ability-to-edit-advertiser-account-settings",
+    "keyword": "Feature",
+    "uri": "C:/repoProteusWebJava/./src/test/java/Features/OptionToEditSeatsStorageConfig.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@SeatStorageConfig"
+      }
+    ]
+  }
+]

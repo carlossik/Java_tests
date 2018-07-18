@@ -1,0 +1,133 @@
+@TableauReporting
+Feature: Ability to deep-link to Tableau reports
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @TableauReporting
+  Scenario: 01 Reporting Icon at Flight Level                                [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:16[0m
+    [32mThen [0m[32mAll Flights matching search/filter combination load as results[0m      [90m# ProteusWebSteps.ThenAllFlightsMatchingSearchFilterCombinationLoadAsResults()[0m
+    [32mAnd [0m[32mThere is a reporting chart icon to the right hand side of the Flight[0m [90m# ProteusWebSteps.thereIsAReportingChartIconToTheRightHandSideOfTheFlight()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @TableauReporting
+  Scenario: 02 Reporting tooltip on Icon                                  [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:21[0m
+    [32mThen [0m[32mTooltip 'Click to go to reports' shown on mouseover[0m              [90m# ProteusWebSteps.tooltipClickToGoToReportsShownOnMouseover()[0m
+    [32mAnd [0m[32mThere are two links in the pop up for the following core reports:[0m [90m# ProteusWebSteps.thereAreTwoLinksInThePopUpForTheFollowingCoreReports()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  #Advertiser Analysis
+  #Operations Breakdown
+  @TableauReporting
+  Scenario: 03 Tableau Reporting tab opened for Data Explorer [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:28[0m
+    [32mWhen [0m[32mClick on "[0m[32m[1mData Explorer[0m[32m" Tableau report[0m              [90m# ProteusWebSteps.clickOnTableauReport(String)[0m
+    [32mThen [0m[32mTableau report opened for "[0m[32m[1mDataExplorer[0m[32m"[0m             [90m# ProteusWebSteps.tableauReportOpenedFor(String)[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @TableauReporting
+  Scenario: 04 Tableau Reporting tab opened for Operations Breakdown [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:33[0m
+    [32mWhen [0m[32mClick on "[0m[32m[1mOperations Breakdown[0m[32m" Tableau report[0m              [90m# ProteusWebSteps.clickOnTableauReport(String)[0m
+    [32mThen [0m[32mTableau report opened for "[0m[32m[1mOperationsBreakdown[0m[32m"[0m             [90m# ProteusWebSteps.tableauReportOpenedFor(String)[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @TableauReporting
+  Scenario: 05 Reporting Icon at Operation Unit                                                          [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:38[0m
+    [32mThen [0m[32mThere is a Operation Unit Level reporting chart icon to the right hand side of the Flight count[0m [90m# ProteusWebSteps.thereIsAOperationUnitLevelReportingChartIconToTheRightHandSideOfTheFlight()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @TableauReporting
+  Scenario: 06 Operation Unit Level Reporting tooltip on Icon                                              [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:42[0m
+    [32mThen [0m[32mTooltip 'Click to go to reports Operational Unit level' shown on mouseover at Operation Unit icon[0m [90m# ProteusWebSteps.tooltipClickToGoToReportsOperationalUnitLevelShownOnMouseoverAtOperationUnitIcon()[0m
+    [32mAnd [0m[32mThere are two links in the pop up for the following Operational Unit reports:[0m                      [90m# ProteusWebSteps.thereAreTwoLinksInThePopUpForTheFollowingOperationalUnitReports()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  #Management Report
+  #Performance Overview
+  @TableauReporting
+  Scenario: 07 Tableau Reporting tab opened for Management Report   [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:49[0m
+    [32mWhen [0m[32mClick on "[0m[32m[1mManagement Report[0m[32m" Operation Unit Tableau report[0m [90m# ProteusWebSteps.clickOnOperationUnitTableauReport(String)[0m
+    [32mThen [0m[32mTableau report opened for "[0m[32m[1mManagementReport[0m[32m"[0m               [90m# ProteusWebSteps.tableauReportOpenedFor(String)[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @TableauReporting
+  Scenario: 08 Tableau Reporting tab opened for Performance Overview   [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:54[0m
+    [32mWhen [0m[32mClick on "[0m[32m[1mPerformance Overview[0m[32m" Operation Unit Tableau report[0m [90m# ProteusWebSteps.clickOnOperationUnitTableauReport(String)[0m
+    [32mThen [0m[32mTableau report opened for "[0m[32m[1mPerformanceOverview[0m[32m"[0m               [90m# ProteusWebSteps.tableauReportOpenedFor(String)[0m

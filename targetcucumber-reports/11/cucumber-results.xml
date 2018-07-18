@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="14.684072">
+<testcase classname="Ability to Edit Advertiser Account settings" name="01 Creating a new Seat Storage Config setting the Data Format" time="14.684072">
+<failure message="The scenario has pending or undefined step(s)"><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Advertiser_Manager_Editor......................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Administration" from home page.............................passed
+Then Administration page shown correctly....................................passed
+When I click on "SEATS" on Administration Tab...............................undefined
+Then Seats page shown correctly.............................................undefined
+When Search and select seat "DBM TEST ACCOUNT (LIVE)".......................undefined
+Then Seat details page shown................................................undefined
+When Click on "MANAGE CREDENTIALS"..........................................undefined
+Then Credentials page shown.................................................undefined
+When Select the credential "DBM TEST ACCOUNT (LIVE)"........................undefined
+Then Option to add Storage Location.........................................undefined
+When I clicked on the Storage Locations "add" button........................undefined
+Then Default Values selected on add storage location popup..................undefined
+When Mandatory options shown on the popup...................................undefined
+]]></failure>
+</testcase>
+</testsuite>

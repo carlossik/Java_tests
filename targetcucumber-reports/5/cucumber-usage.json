@@ -1,0 +1,510 @@
+[
+  {
+    "source": "All Flights matching search/filter combination load as results",
+    "steps": [
+      {
+        "name": "All Flights matching search/filter combination load as results",
+        "aggregatedDurations": {
+          "average": 0.02225919,
+          "median": 0.02225919
+        },
+        "durations": [
+          {
+            "duration": 0.018926072,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:36"
+          },
+          {
+            "duration": 0.025592309,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:48"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I go to the Proteus Home URL in my browser",
+    "steps": [
+      {
+        "name": "I go to the Proteus Home URL in my browser",
+        "aggregatedDurations": {
+          "average": 4.09326588,
+          "median": 4.095524652
+        },
+        "durations": [
+          {
+            "duration": 4.039623663,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:7"
+          },
+          {
+            "duration": 4.127836106,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:7"
+          },
+          {
+            "duration": 4.063213199,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:7"
+          },
+          {
+            "duration": 4.142390553,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Option to sort result by Flight Created and Updated$",
+    "steps": [
+      {
+        "name": "Option to sort result by Flight Created and Updated",
+        "aggregatedDurations": {
+          "average": 1.586232923,
+          "median": 1.586232923
+        },
+        "durations": [
+          {
+            "duration": 1.586232923,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:23"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Click on Apply button",
+    "steps": [
+      {
+        "name": "Click on Apply button",
+        "aggregatedDurations": {
+          "average": 3.204269423,
+          "median": 3.208158204
+        },
+        "durations": [
+          {
+            "duration": 3.182581682,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:18"
+          },
+          {
+            "duration": 3.222068385,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:33"
+          },
+          {
+            "duration": 3.208158204,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:45"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Sort by \"([^\"]*)\" is shown$",
+    "steps": [
+      {
+        "name": "Sort by \"Start Date Descending\" is shown",
+        "aggregatedDurations": {
+          "average": 1.051763178,
+          "median": 1.04797054
+        },
+        "durations": [
+          {
+            "duration": 1.060848188,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:22"
+          },
+          {
+            "duration": 1.046470807,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:34"
+          },
+          {
+            "duration": 1.04797054,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:46"
+          }
+        ]
+      },
+      {
+        "name": "Sort by \"Flight Created Descending\" is shown",
+        "aggregatedDurations": {
+          "average": 1.03832233,
+          "median": 1.03832233
+        },
+        "durations": [
+          {
+            "duration": 1.03832233,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:38"
+          }
+        ]
+      },
+      {
+        "name": "Sort by \"Flight Updated Descending\" is shown",
+        "aggregatedDurations": {
+          "average": 1.0447475,
+          "median": 1.0447475
+        },
+        "durations": [
+          {
+            "duration": 1.0447475,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:50"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Sort by Flight updated selected$",
+    "steps": [
+      {
+        "name": "Sort by Flight updated selected",
+        "aggregatedDurations": {
+          "average": 10.335267697,
+          "median": 10.335267697
+        },
+        "durations": [
+          {
+            "duration": 10.335267697,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:27"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^\u0027Requires action\u0027 is selected$",
+    "steps": [
+      {
+        "name": "\u0027Requires action\u0027 is selected",
+        "aggregatedDurations": {
+          "average": 0.02332671,
+          "median": 0.02332671
+        },
+        "durations": [
+          {
+            "duration": 0.02332671,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^All flights sorted based on created date$",
+    "steps": [
+      {
+        "name": "All flights sorted based on created date",
+        "aggregatedDurations": {
+          "average": 0.555035923,
+          "median": 0.555035923
+        },
+        "durations": [
+          {
+            "duration": 0.555035923,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:37"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Login as \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "Login as \"ADMINISTRATOR\"",
+        "aggregatedDurations": {
+          "average": 5.003301972,
+          "median": 5.002600746
+        },
+        "durations": [
+          {
+            "duration": 5.002057813,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:8"
+          },
+          {
+            "duration": 4.98505686,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:8"
+          },
+          {
+            "duration": 5.003143679,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:8"
+          },
+          {
+            "duration": 5.022949536,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Sort by Flight created selected$",
+    "steps": [
+      {
+        "name": "Sort by Flight created selected",
+        "aggregatedDurations": {
+          "average": 14.339618415,
+          "median": 14.339618415
+        },
+        "durations": [
+          {
+            "duration": 14.339618415,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:25"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I search/filter for a particular result",
+    "steps": [
+      {
+        "name": "I search/filter for a particular result",
+        "aggregatedDurations": {
+          "average": 2.999606613,
+          "median": 2.999606613
+        },
+        "durations": [
+          {
+            "duration": 2.994591149,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:32"
+          },
+          {
+            "duration": 3.004622078,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:44"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^All flights sorted based on updated date$",
+    "steps": [
+      {
+        "name": "All flights sorted based on updated date",
+        "aggregatedDurations": {
+          "average": 0.5138801,
+          "median": 0.5138801
+        },
+        "durations": [
+          {
+            "duration": 0.5138801,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:49"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^There is an option to filter by \u0027Requires action\u0027$",
+    "steps": [
+      {
+        "name": "There is an option to filter by \u0027Requires action\u0027",
+        "aggregatedDurations": {
+          "average": 1.054476777,
+          "median": 1.054476777
+        },
+        "durations": [
+          {
+            "duration": 1.054476777,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I have the role: Pro Web Campaigns",
+    "steps": [
+      {
+        "name": "I have the role: Pro Web Campaigns",
+        "aggregatedDurations": {
+          "average": 0.000042346,
+          "median": 0.000038827
+        },
+        "durations": [
+          {
+            "duration": 0.00006016,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:6"
+          },
+          {
+            "duration": 0.000041387,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:6"
+          },
+          {
+            "duration": 0.000036267,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:6"
+          },
+          {
+            "duration": 0.000031573,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on \"([^\"]*)\" from home page$",
+    "steps": [
+      {
+        "name": "I click on \"Campaigns\" from home page",
+        "aggregatedDurations": {
+          "average": 3.10879686,
+          "median": 3.106449234
+        },
+        "durations": [
+          {
+            "duration": 3.103609982,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:10"
+          },
+          {
+            "duration": 3.107730301,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:10"
+          },
+          {
+            "duration": 3.105168168,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:10"
+          },
+          {
+            "duration": 3.11867899,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Click on \u0027Requires action\u0027$",
+    "steps": [
+      {
+        "name": "Click on \u0027Requires action\u0027",
+        "aggregatedDurations": {
+          "average": 1.02242431,
+          "median": 1.02242431
+        },
+        "durations": [
+          {
+            "duration": 1.02242431,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:16"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Select sort by Flight created$",
+    "steps": [
+      {
+        "name": "Select sort by Flight created",
+        "aggregatedDurations": {
+          "average": 2.390739886,
+          "median": 2.390739886
+        },
+        "durations": [
+          {
+            "duration": 2.379904265,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:24"
+          },
+          {
+            "duration": 2.401575508,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:35"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Select sort by Flight Updated$",
+    "steps": [
+      {
+        "name": "Select sort by Flight Updated",
+        "aggregatedDurations": {
+          "average": 2.378846772,
+          "median": 2.378846772
+        },
+        "durations": [
+          {
+            "duration": 2.347646572,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:26"
+          },
+          {
+            "duration": 2.410046972,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:47"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I am a Proteus User",
+    "steps": [
+      {
+        "name": "I am a Proteus User",
+        "aggregatedDurations": {
+          "average": 0.001680746,
+          "median": 0.000968747
+        },
+        "durations": [
+          {
+            "duration": 0.003887785,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:5"
+          },
+          {
+            "duration": 0.000923307,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:5"
+          },
+          {
+            "duration": 0.001014187,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:5"
+          },
+          {
+            "duration": 0.000897707,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "The main homepage loads successfully",
+    "steps": [
+      {
+        "name": "The main homepage loads successfully",
+        "aggregatedDurations": {
+          "average": 0.042588675,
+          "median": 0.042131822
+        },
+        "durations": [
+          {
+            "duration": 0.042187502,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:9"
+          },
+          {
+            "duration": 0.041768942,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:9"
+          },
+          {
+            "duration": 0.042076142,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:9"
+          },
+          {
+            "duration": 0.044322114,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Default \u0027Requires action\u0027 is unselected$",
+    "steps": [
+      {
+        "name": "Default \u0027Requires action\u0027 is unselected",
+        "aggregatedDurations": {
+          "average": 2.236851099,
+          "median": 2.236851099
+        },
+        "durations": [
+          {
+            "duration": 2.236851099,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSortFlights.feature:15"
+          }
+        ]
+      }
+    ]
+  }
+]

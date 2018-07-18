@@ -1,0 +1,272 @@
+[
+  {
+    "source": "All Flights loads which I have access to",
+    "steps": [
+      {
+        "name": "All Flights loads which I have access to",
+        "aggregatedDurations": {
+          "average": 0.273397643,
+          "median": 0.273397643
+        },
+        "durations": [
+          {
+            "duration": 0.273397643,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditOptimisationManager.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Edit Optimisation Manager and Save$",
+    "steps": [
+      {
+        "name": "Edit Optimisation Manager and Save",
+        "aggregatedDurations": {
+          "average": 3.636299249,
+          "median": 3.636299249
+        },
+        "durations": [
+          {
+            "duration": 3.636299249,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditOptimisationManager.feature:21"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I go to the Proteus Home URL in my browser",
+    "steps": [
+      {
+        "name": "I go to the Proteus Home URL in my browser",
+        "aggregatedDurations": {
+          "average": 4.075025461,
+          "median": 4.075025461
+        },
+        "durations": [
+          {
+            "duration": 4.075025461,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditOptimisationManager.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Click on Apply button",
+    "steps": [
+      {
+        "name": "Click on Apply button",
+        "aggregatedDurations": {
+          "average": 3.239912857,
+          "median": 3.239912857
+        },
+        "durations": [
+          {
+            "duration": 3.239912857,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditOptimisationManager.feature:16"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Login as \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "Login as \"ADMINISTRATOR\"",
+        "aggregatedDurations": {
+          "average": 5.036682651,
+          "median": 5.036682651
+        },
+        "durations": [
+          {
+            "duration": 5.036682651,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditOptimisationManager.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Edited Optimisation Manager saved$",
+    "steps": [
+      {
+        "name": "Edited Optimisation Manager saved",
+        "aggregatedDurations": {
+          "average": 7.091631748,
+          "median": 7.091631748
+        },
+        "durations": [
+          {
+            "duration": 7.091631748,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditOptimisationManager.feature:22"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^The box states \u0027Unknown User\u0027$",
+    "steps": [
+      {
+        "name": "The box states \u0027Unknown User\u0027",
+        "aggregatedDurations": {
+          "average": 0.061375121,
+          "median": 0.061375121
+        },
+        "durations": [
+          {
+            "duration": 0.061375121,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditOptimisationManager.feature:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I have the role: Pro Web Campaigns",
+    "steps": [
+      {
+        "name": "I have the role: Pro Web Campaigns",
+        "aggregatedDurations": {
+          "average": 0.000433493,
+          "median": 0.000433493
+        },
+        "durations": [
+          {
+            "duration": 0.000433493,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditOptimisationManager.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on \"([^\"]*)\" from home page$",
+    "steps": [
+      {
+        "name": "I click on \"Campaigns\" from home page",
+        "aggregatedDurations": {
+          "average": 3.113657125,
+          "median": 3.113657125
+        },
+        "durations": [
+          {
+            "duration": 3.113657125,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditOptimisationManager.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Select one of Optimisation Manager and Save$",
+    "steps": [
+      {
+        "name": "Select one of Optimisation Manager and Save",
+        "aggregatedDurations": {
+          "average": 3.651483882,
+          "median": 3.651483882
+        },
+        "durations": [
+          {
+            "duration": 3.651483882,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditOptimisationManager.feature:19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Optimisation Manager saved$",
+    "steps": [
+      {
+        "name": "Optimisation Manager saved",
+        "aggregatedDurations": {
+          "average": 7.128456052,
+          "median": 7.128456052
+        },
+        "durations": [
+          {
+            "duration": 7.128456052,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditOptimisationManager.feature:20"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Option to edit Optimisation Manager exist$",
+    "steps": [
+      {
+        "name": "Option to edit Optimisation Manager exist",
+        "aggregatedDurations": {
+          "average": 0.049000939,
+          "median": 0.049000939
+        },
+        "durations": [
+          {
+            "duration": 0.049000939,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditOptimisationManager.feature:18"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I am a Proteus User",
+    "steps": [
+      {
+        "name": "I am a Proteus User",
+        "aggregatedDurations": {
+          "average": 0.005242025,
+          "median": 0.005242025
+        },
+        "durations": [
+          {
+            "duration": 0.005242025,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditOptimisationManager.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "The main homepage loads successfully",
+    "steps": [
+      {
+        "name": "The main homepage loads successfully",
+        "aggregatedDurations": {
+          "average": 0.04748798,
+          "median": 0.04748798
+        },
+        "durations": [
+          {
+            "duration": 0.04748798,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditOptimisationManager.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I search/filter for a flight with no Optimisation Manager$",
+    "steps": [
+      {
+        "name": "I search/filter for a flight with no Optimisation Manager",
+        "aggregatedDurations": {
+          "average": 3.147999083,
+          "median": 3.147999083
+        },
+        "durations": [
+          {
+            "duration": 3.147999083,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditOptimisationManager.feature:15"
+          }
+        ]
+      }
+    ]
+  }
+]

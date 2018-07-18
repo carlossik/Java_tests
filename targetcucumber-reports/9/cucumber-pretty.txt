@@ -1,0 +1,282 @@
+@Creatives
+Feature: Creatives for flights and Advertisers
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @Creatives
+  Scenario: 01 Add new icons on left hand tool bar, icon on each flight and tooltip [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:16[0m
+    [32mThen [0m[32mAll Flights matching search/filter combination load as results[0m             [90m# ProteusWebSteps.ThenAllFlightsMatchingSearchFilterCombinationLoadAsResults()[0m
+    [32mAnd [0m[32mCreatives option shown on the Campaigns tab[0m                                 [90m# ProteusWebSteps.creativesOptionShownOnTheCampaignsTab()[0m
+    [32mAnd [0m[32mThere is an icons for Creatives[0m                                             [90m# ProteusWebSteps.thereIsAnIconsForCreatives()[0m
+    [32mAnd [0m[32mTooltips shown on mouseover on each Creatives icon[0m                          [90m# ProteusWebSteps.tooltipsShownOnMouseoverOnEachCreativesIcon()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @Creatives
+  Scenario: 02 Able to open creatives tab from flights                                     [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:23[0m
+    [32mThen [0m[32mAll Flights matching search/filter combination load as results[0m                    [90m# ProteusWebSteps.ThenAllFlightsMatchingSearchFilterCombinationLoadAsResults()[0m
+    [32mAnd [0m[32mCreatives option shown on the Campaigns tab[0m                                        [90m# ProteusWebSteps.creativesOptionShownOnTheCampaignsTab()[0m
+    [32mWhen [0m[32mI click on the creatives icon on flight row[0m                                       [90m# ProteusWebSteps.iClickOnTheCreativesIconOnFlightRow()[0m
+    [32mThen [0m[32mCreatives screen opened[0m                                                           [90m# ProteusWebCreativesSteps.creativesScreenOpened()[0m
+    [32mAnd [0m[32mCreatives are listed for the Advertiser Account of the Flight selected[0m             [90m# ProteusWebCreativesSteps.creativesAreListedForTheAdvertiserAccountOfTheFlightSelected()[0m
+    [32mAnd [0m[32mFlights Advertiser Account is automatically applied on the Advertiser Account Name[0m [90m# ProteusWebCreativesSteps.flightsAdvertiserAccountShown()[0m
+    [32mAnd [0m[32mChange button shown on the creative page[0m                                           [90m# ProteusWebCreativesSteps.changeButtonShownOnTheCreativePage()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @Creatives
+  Scenario: 03 Able to change the Advertiser Account on Creatives screen [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:33[0m
+    [32mWhen [0m[32mI click on the creatives icon on flight row[0m                     [90m# ProteusWebSteps.iClickOnTheCreativesIconOnFlightRow()[0m
+    [32mThen [0m[32mCreatives screen opened[0m                                         [90m# ProteusWebCreativesSteps.creativesScreenOpened()[0m
+    [32mWhen [0m[32mClick on Change button[0m                                          [90m# ProteusWebCreativesSteps.clickOnChangeButton()[0m
+    [32mThen [0m[32mOption to change advertiser account exist[0m                       [90m# ProteusWebCreativesSteps.optionToChangeAdvertiserAccountExist()[0m
+    [32mWhen [0m[32mI change the advertiser and save[0m                                [90m# ProteusWebCreativesSteps.iChangeTheAdvertiserAndSave()[0m
+    [32mThen [0m[32mNew advertiser details shown on the creatives page[0m              [90m# ProteusWebCreativesSteps.newAdvertiserDetailsShownOnTheCreativesPage()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @Creatives
+  Scenario: 04 Tag icon on creatives screen                                   [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:42[0m
+    [32mWhen [0m[32mI click on the creatives icon on flight row[0m                          [90m# ProteusWebSteps.iClickOnTheCreativesIconOnFlightRow()[0m
+    [32mThen [0m[32mCreatives screen opened[0m                                              [90m# ProteusWebCreativesSteps.creativesScreenOpened()[0m
+    [32mAnd [0m[32mThere is a tag icon on the right hand side of the creative row[0m        [90m# ProteusWebCreativesSteps.thereIsATagIconOnTheRightHandSideOfTheCreativeRow()[0m
+    [32mAnd [0m[32mTooltips shown on mouseover on tag icon 'View creative tag and image'[0m [90m# ProteusWebCreativesSteps.tooltipsShownOnMouseoverOnTagIconViewCreativeTagAndImage()[0m
+    [32mWhen [0m[32mClick on the tag icon[0m                                                [90m# ProteusWebCreativesSteps.clickOnTheTagIcon()[0m
+    [32mThen [0m[32mPop up shown with the creative name and options[0m                      [90m# ProteusWebCreativesSteps.popUpShownWithTheCreativeNameAndOptions()[0m
+    [32mAnd [0m[32mAble to copy the creative tag script[0m                                  [90m# ProteusWebCreativesSteps.ableToCopyTheCreativeTagScript()[0m
+    [32mAnd [0m[32mUnable to edit the creative tag script[0m                                [90m# ProteusWebCreativesSteps.unableToEditTheCreativeTagScript()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @Creatives
+  Scenario: 05 Creatives screen columns for advertiser with ad server mapped [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:53[0m
+    [32mWhen [0m[32mI click on the creatives icon on flight row[0m                         [90m# ProteusWebSteps.iClickOnTheCreativesIconOnFlightRow()[0m
+    [32mThen [0m[32mCreatives screen opened[0m                                             [90m# ProteusWebCreativesSteps.creativesScreenOpened()[0m
+    [32mAnd [0m[32mThe following column for advertiser with ad server mapped[0m            [90m# ProteusWebCreativesSteps.theFollowingColumnInformationIsAvailable()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @Creatives
+  Scenario: 06 Creatives screen columns for advertiser without ad server mapped [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:59[0m
+    [32mWhen [0m[32mI click on the creatives icon on flight row[0m                            [90m# ProteusWebSteps.iClickOnTheCreativesIconOnFlightRow()[0m
+    [32mThen [0m[32mCreatives screen opened[0m                                                [90m# ProteusWebCreativesSteps.creativesScreenOpened()[0m
+    [32mWhen [0m[32mI change the advertiser "[0m[32m[1mTestBrand GB[0m[32m" and save[0m                        [90m# ProteusWebCreativesSteps.iChangeTheAdvertiserAndSave(String)[0m
+    [32mThen [0m[32mThe following column for advertiser without ad server mapped[0m           [90m# ProteusWebCreativesSteps.theFollowingColumnForAdvertiserWithoutAdServerMapped()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @Creatives
+  Scenario: 07 Bulk Edit - read only and editable columns        [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:66[0m
+    [32mWhen [0m[32mI click on the creatives icon on flight row[0m             [90m# ProteusWebSteps.iClickOnTheCreativesIconOnFlightRow()[0m
+    [32mThen [0m[32mCreatives screen opened[0m                                 [90m# ProteusWebCreativesSteps.creativesScreenOpened()[0m
+    [31mAnd [0m[31mCreatives bulk edit button shown on Creatives tab[0m        [90m# ProteusWebCreativesSteps.creativesBulkEditButtonShownOnCreativesTab()[0m
+      [31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/button"}
+        (Session info: chrome=67.0.3396.79)
+        (Driver info: chromedriver=2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+      Command duration or timeout: 0 milliseconds
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+      System info: host: 'TELLONLAP106', ip: '192.168.0.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\Users\RAMCHA~1.TEL\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.79, webStorageEnabled: true}
+      Session ID: 3c46a439def1407c45d728d16818a1b9
+      *** Element info: {Using=xpath, value=//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/button}
+      	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+      	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+      	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+      	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+      	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+      	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+      	at com.sun.proxy.$Proxy25.isDisplayed(Unknown Source)
+      	at StepDefination.ProteusWebCreativesSteps.creativesBulkEditButtonShownOnCreativesTab(ProteusWebCreativesSteps.java:163)
+      	at ✽.And Creatives bulk edit button shown on Creatives tab(C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:69)
+      [0m
+    [36mAnd [0m[36mTooltips shown on mouseover on Creative Bulk edit button[0m [90m# ProteusWebCreativesSteps.tooltipsShownOnMouseoverOnBulkEditButton()[0m
+    [36mWhen [0m[36mClick on Creatives bulk edit[0m                            [90m# ProteusWebCreativesSteps.clickOnCreativesBulkEdit()[0m
+    [36mThen [0m[36mCreatives grid changed to editable state[0m                [90m# ProteusWebCreativesSteps.creativesGridChangedToEditableState()[0m
+    [36mAnd [0m[36mSave button shown and is disabled[0m                        [90m# ProteusWebPixelsSteps.saveButtonShownAndIsDisabled()[0m
+    [36mAnd [0m[36mCancel button shown and is enabled[0m                       [90m# ProteusWebPixelsSteps.cancelButtonShownAndIsEnabled()[0m
+    [36mAnd [0m[36mEditable columns shown on Creatives grid[0m                 [90m# ProteusWebCreativesSteps.editableColumnsShownOnPixelGrid()[0m
+    [36mAnd [0m[36mReadOnly columns shown on Creatives grid[0m                 [90m# ProteusWebCreativesSteps.readonlyColumnsShownOnPixelGrid()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @Creatives
+  Scenario: 08 Missing values for Creatives                                               [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:79[0m
+    [32mWhen [0m[32mI click on the creatives icon on flight row[0m                                      [90m# ProteusWebSteps.iClickOnTheCreativesIconOnFlightRow()[0m
+    [32mAnd [0m[32mI change the advertiser "[0m[32m[1mTRAVEL - LUXURY[0m[32m" and save[0m                                [90m# ProteusWebCreativesSteps.iChangeTheAdvertiserAndSave(String)[0m
+    [32mThen [0m[32mCreatives screen opened[0m                                                          [90m# ProteusWebCreativesSteps.creativesScreenOpened()[0m
+    [32mWhen [0m[32mI click on the creatives add icon[0m                                                [90m# ProteusWebCreativesSteps.iClickOnTheCreativesAddIcon()[0m
+    [31mThen [0m[31mDropdown list with AD Server Placements for each Creative[0m                        [90m# ProteusWebCreativesSteps.dropdownListWithADServerPlacementsForEachCreative()[0m
+      [31mjava.lang.AssertionError: Dropdown list with AD Server Placements for each Creative not shown
+      	at org.junit.Assert.fail(Assert.java:88)
+      	at org.junit.Assert.assertTrue(Assert.java:41)
+      	at StepDefination.ProteusWebCreativesSteps.dropdownListWithADServerPlacementsForEachCreative(ProteusWebCreativesSteps.java:214)
+      	at ✽.Then Dropdown list with AD Server Placements for each Creative(C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:84)
+      [0m
+    [36mAnd [0m[36mDropdown lists for Classification and Classification Type exist for each Creative[0m [90m# ProteusWebCreativesSteps.dropdownListsForClassificationAndClassificationTypeExistForEachCreative()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @Creatives
+  Scenario: 09 Ability to edit and save Creatives classification                          [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:88[0m
+    [32mWhen [0m[32mI click on the creatives icon on flight row[0m                                      [90m# ProteusWebSteps.iClickOnTheCreativesIconOnFlightRow()[0m
+    [32mThen [0m[32mCreatives screen opened[0m                                                          [90m# ProteusWebCreativesSteps.creativesScreenOpened()[0m
+    [31mWhen [0m[31mClick on Creatives bulk edit[0m                                                     [90m# ProteusWebCreativesSteps.clickOnCreativesBulkEdit()[0m
+      [31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/button"}
+        (Session info: chrome=67.0.3396.79)
+        (Driver info: chromedriver=2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+      Command duration or timeout: 0 milliseconds
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+      System info: host: 'TELLONLAP106', ip: '192.168.0.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\Users\RAMCHA~1.TEL\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.79, webStorageEnabled: true}
+      Session ID: 7f7a06466f9847372f181277c252c05b
+      *** Element info: {Using=xpath, value=//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/button}
+      	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+      	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+      	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+      	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+      	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+      	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+      	at com.sun.proxy.$Proxy25.getCoordinates(Unknown Source)
+      	at org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:65)
+      	at org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:43)
+      	at org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:36)
+      	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:641)
+      	at SupportingUtilites.BrowserFactory.mouseClick(BrowserFactory.java:111)
+      	at StepDefination.ProteusWebCreativesSteps.clickOnCreativesBulkEdit(ProteusWebCreativesSteps.java:168)
+      	at ✽.When Click on Creatives bulk edit(C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:91)
+      [0m
+    [36mThen [0m[36mDropdown list with AD Server Placements for each Creative[0m                        [90m# ProteusWebCreativesSteps.dropdownListWithADServerPlacementsForEachCreative()[0m
+    [36mAnd [0m[36mDropdown lists for Classification and Classification Type exist for each Creative[0m [90m# ProteusWebCreativesSteps.dropdownListsForClassificationAndClassificationTypeExistForEachCreative()[0m
+    [36mWhen [0m[36mBulk edit AD Server Placements and Classification[0m                                [90m# ProteusWebCreativesSteps.bulkEditADServerPlacementsAndClassification()[0m
+    [36mThen [0m[36mSave button Enabled on Creatives tab[0m                                             [90m# ProteusWebCreativesSteps.saveButtonEnabledOnCreativesTab()[0m
+    [36mWhen [0m[36mClick on Save[0m                                                                    [90m# ProteusWebPixelsSteps.clickOnSave()[0m
+    [36mThen [0m[36mCreatives details saved[0m                                                          [90m# ProteusWebCreativesSteps.creativesDetailsSaved()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @Creatives
+  Scenario: 10 Deeplink Creatives Name                    [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:100[0m
+    [32mWhen [0m[32mI click on the creatives icon on flight row[0m      [90m# ProteusWebSteps.iClickOnTheCreativesIconOnFlightRow()[0m
+    [32mAnd [0m[32mI change the advertiser "[0m[32m[1mTestBrand GB[0m[32m" and save[0m   [90m# ProteusWebCreativesSteps.iChangeTheAdvertiserAndSave(String)[0m
+    [32mThen [0m[32mCreatives screen opened[0m                          [90m# ProteusWebCreativesSteps.creativesScreenOpened()[0m
+    [32mAnd [0m[32mThe Creative Name is a deeplink[0m                   [90m# ProteusWebCreativesSteps.theCreativeNameIsADeeplink()[0m
+    [32mWhen [0m[32mClick on the Creative Name[0m                       [90m# ProteusWebCreativesSteps.clickOnTheCreativeName()[0m
+    [32mThen [0m[32mDSP tab opened in the browser for the Advertiser[0m [90m# ProteusWebPixelsSteps.dspTabOpenedInTheBrowserForTheAdvertiser()[0m

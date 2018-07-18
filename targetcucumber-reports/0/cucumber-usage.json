@@ -1,0 +1,400 @@
+[
+  {
+    "source": "I go to the Proteus Home URL in my browser",
+    "steps": [
+      {
+        "name": "I go to the Proteus Home URL in my browser",
+        "aggregatedDurations": {
+          "average": 4.506541522,
+          "median": 4.142487833
+        },
+        "durations": [
+          {
+            "duration": 5.357404435,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:7"
+          },
+          {
+            "duration": 4.129908851,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:7"
+          },
+          {
+            "duration": 4.9069722,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:7"
+          },
+          {
+            "duration": 4.142487833,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:7"
+          },
+          {
+            "duration": 3.995934295,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Pixels option shown on the Campaigns tab$",
+    "steps": [
+      {
+        "name": "Pixels option shown on the Campaigns tab",
+        "aggregatedDurations": {
+          "average": 0.060433467,
+          "median": 0.060433467
+        },
+        "durations": [
+          {
+            "duration": 0.060433467,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:37"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Login as \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "Login as \"ADMINISTRATOR\"",
+        "aggregatedDurations": {
+          "average": 5.056406874,
+          "median": 5.062243814
+        },
+        "durations": [
+          {
+            "duration": 5.104132222,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:11"
+          },
+          {
+            "duration": 5.002844586,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:24"
+          },
+          {
+            "duration": 5.062243814,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:32"
+          }
+        ]
+      },
+      {
+        "name": "Login as \"INVALID\"",
+        "aggregatedDurations": {
+          "average": 4.87296816,
+          "median": 4.87296816
+        },
+        "durations": [
+          {
+            "duration": 4.87296816,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:19"
+          }
+        ]
+      },
+      {
+        "name": "Login as \"CAMPAIGN MANAGEMENT WEB\"",
+        "aggregatedDurations": {
+          "average": 5.091236654,
+          "median": 5.091236654
+        },
+        "durations": [
+          {
+            "duration": 5.091236654,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:42"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Pixels option not shown on the Campaigns tab$",
+    "steps": [
+      {
+        "name": "Pixels option not shown on the Campaigns tab",
+        "aggregatedDurations": {
+          "average": 0.012168528,
+          "median": 0.012168528
+        },
+        "durations": [
+          {
+            "duration": 0.012168528,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:45"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "LogOut ProteusWeb from Home Page",
+    "steps": [
+      {
+        "name": "LogOut ProteusWeb from Home Page",
+        "aggregatedDurations": {
+          "average": 2.781033586,
+          "median": 2.721765025
+        },
+        "durations": [
+          {
+            "duration": 3.220945826,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:15"
+          },
+          {
+            "duration": 2.868861069,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:28"
+          },
+          {
+            "duration": 2.459658471,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:38"
+          },
+          {
+            "duration": 2.574668981,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:46"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I have the role: Pro Web Campaigns",
+    "steps": [
+      {
+        "name": "I have the role: Pro Web Campaigns",
+        "aggregatedDurations": {
+          "average": 0.000073984,
+          "median": 0.000071254
+        },
+        "durations": [
+          {
+            "duration": 0.000062294,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:6"
+          },
+          {
+            "duration": 0.000071254,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:6"
+          },
+          {
+            "duration": 0.000063574,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:6"
+          },
+          {
+            "duration": 0.00007424,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:6"
+          },
+          {
+            "duration": 0.00009856,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Log Out button exist",
+    "steps": [
+      {
+        "name": "Log Out button exist",
+        "aggregatedDurations": {
+          "average": 2.257069544,
+          "median": 2.257069544
+        },
+        "durations": [
+          {
+            "duration": 2.257069544,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on \"([^\"]*)\" from home page$",
+    "steps": [
+      {
+        "name": "I click on \"Campaigns\" from home page",
+        "aggregatedDurations": {
+          "average": 3.113785125,
+          "median": 3.113785125
+        },
+        "durations": [
+          {
+            "duration": 3.108135634,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:26"
+          },
+          {
+            "duration": 3.119434616,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:34"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "The Campaigns page loads successfully",
+    "steps": [
+      {
+        "name": "The Campaigns page loads successfully",
+        "aggregatedDurations": {
+          "average": 0.059804135,
+          "median": 0.059804135
+        },
+        "durations": [
+          {
+            "duration": 0.059804135,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:27"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^There is a box called \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "There is a box called \"Campaigns\"",
+        "aggregatedDurations": {
+          "average": 0.051564351,
+          "median": 0.051564351
+        },
+        "durations": [
+          {
+            "duration": 0.051564351,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "An error message displayed advising to try again",
+    "steps": [
+      {
+        "name": "An error message displayed advising to try again",
+        "aggregatedDurations": {
+          "average": 2.077110153,
+          "median": 2.077110153
+        },
+        "durations": [
+          {
+            "duration": 2.077110153,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:20"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Creatives option not shown on the Campaigns tab$",
+    "steps": [
+      {
+        "name": "Creatives option not shown on the Campaigns tab",
+        "aggregatedDurations": {
+          "average": 0.020640844,
+          "median": 0.020640844
+        },
+        "durations": [
+          {
+            "duration": 0.020640844,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:44"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Log out, Back to Home, Flights icon shown on Campaign page",
+    "steps": [
+      {
+        "name": "Log out, Back to Home, Flights icon shown on Campaign page",
+        "aggregatedDurations": {
+          "average": 2.793153368,
+          "median": 2.793153368
+        },
+        "durations": [
+          {
+            "duration": 2.604954195,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:35"
+          },
+          {
+            "duration": 2.981352541,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:43"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Creatives option shown on the Campaigns tab$",
+    "steps": [
+      {
+        "name": "Creatives option shown on the Campaigns tab",
+        "aggregatedDurations": {
+          "average": 0.091924441,
+          "median": 0.091924441
+        },
+        "durations": [
+          {
+            "duration": 0.091924441,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:36"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I am a Proteus User",
+    "steps": [
+      {
+        "name": "I am a Proteus User",
+        "aggregatedDurations": {
+          "average": 0.073769184,
+          "median": 0.002285225
+        },
+        "durations": [
+          {
+            "duration": 0.360286993,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:5"
+          },
+          {
+            "duration": 0.002600959,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:5"
+          },
+          {
+            "duration": 0.002285225,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:5"
+          },
+          {
+            "duration": 0.002096639,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:5"
+          },
+          {
+            "duration": 0.001576106,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "The main homepage loads successfully",
+    "steps": [
+      {
+        "name": "The main homepage loads successfully",
+        "aggregatedDurations": {
+          "average": 0.047763322,
+          "median": 0.045076034
+        },
+        "durations": [
+          {
+            "duration": 0.05483859,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:12"
+          },
+          {
+            "duration": 0.043375342,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:25"
+          },
+          {
+            "duration": 0.045076034,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:33"
+          }
+        ]
+      }
+    ]
+  }
+]

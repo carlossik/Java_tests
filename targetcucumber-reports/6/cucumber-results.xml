@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="3" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="12" time="577.281984">
+<testcase classname="Ability to Edit Advertiser Account settings" name="01 Check if Advertiser Accounts tab opened correctly" time="22.862877">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Advertiser_Manager_Editor......................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Administration" from home page.............................passed
+Then Administration page shown correctly....................................passed
+Then Able to navigate to Administration Advertiser Accounts.................passed
+And LogOut ProteusWeb from Reports Page.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Ability to Edit Advertiser Account settings" name="02 Access and View Advertiser Account Overview" time="25.925955">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Advertiser_Manager_Editor......................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Administration" from home page.............................passed
+Then Administration page shown correctly....................................passed
+Then Able to navigate to Administration Advertiser Accounts.................passed
+When I select a First Advertiser Account....................................passed
+Then Advertiser Account Overview screen shown...............................passed
+And LogOut ProteusWeb from Admin Page.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Ability to Edit Advertiser Account settings" name="03 Able to search for Advertiser Account" time="25.451088">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Advertiser_Manager_Editor......................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Administration" from home page.............................passed
+Then Administration page shown correctly....................................passed
+Then Able to navigate to Administration Advertiser Accounts.................passed
+When Search for an Advertiser to EditName...................................passed
+Then Advertisers filtered as per search key "AdvertiserNameBeforeEdit"......passed
+]]></system-out>
+</testcase>
+<testcase classname="Ability to Edit Advertiser Account settings" name="04 Able to see Advertiser Account Overview screen information" time="30.993749">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Advertiser_Manager_Editor......................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Administration" from home page.............................passed
+Then Administration page shown correctly....................................passed
+Then Able to navigate to Administration Advertiser Accounts.................passed
+When Search for an Advertiser to EditName...................................passed
+Then Advertisers filtered as per search key "AdvertiserNameBeforeEdit"......passed
+When I select a First Advertiser Account....................................passed
+Then Advertiser Account details displayed on the page.......................passed
+And LogOut ProteusWeb from Admin Page.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Ability to Edit Advertiser Account settings" name="05 Able to edit Advertiser Account details" time="46.825496">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Advertiser_Manager_Editor......................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Administration" from home page.............................passed
+Then Administration page shown correctly....................................passed
+Then Able to navigate to Administration Advertiser Accounts.................passed
+When Search for an Advertiser to EditName...................................passed
+When I select a First Advertiser Account....................................passed
+When Click on edit icon to change advertiser information....................passed
+And Update Advertiser, Agency Name and save the details.....................passed
+When Search for Advertiser before edit name.................................passed
+Then No Advertisers returned................................................passed
+When Search for Advertiser with updated name................................passed
+Then Advertisers filtered as per search key "AdvertiserNameAfterEdit".......passed
+And LogOut ProteusWeb from Admin Page.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Ability to Edit Advertiser Account settings" name="06 Option to Merge advertiser account into another" time="32.920341">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Advertiser_Manager_Editor......................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Administration" from home page.............................passed
+Then Administration page shown correctly....................................passed
+Then Able to navigate to Administration Advertiser Accounts.................passed
+When Search for an Advertiser to EditName...................................passed
+Then Advertisers filtered as per search key "AdvertiserNameBeforeEdit"......passed
+When I select a First Advertiser Account....................................passed
+Then Option to Merge advertiser account into another exist..................passed
+And LogOut ProteusWeb from Admin Page.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Ability to Edit Advertiser Account settings" name="07 Option to Merge advertiser account into another" time="90.541987">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div/div/input&quot;}&#10;  (Session info: chrome=67.0.3396.79)&#10;  (Driver info: chromedriver=2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'&#10;System info: host: 'TELLONLAP106', ip: '192.168.0.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\Users\RAMCHA~1.TEL\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.79, webStorageEnabled: true}&#10;Session ID: ca01dd952d4adcc7927f2d22627ed8d5&#10;*** Element info: {Using=xpath, value=/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div/div/input}&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)&#13;&#10;&#9;at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)&#13;&#10;&#9;at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)&#13;&#10;&#9;at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at com.sun.proxy.$Proxy25.isDisplayed(Unknown Source)&#13;&#10;&#9;at PageObjects.ProteusWebAdvertiserAccountsPage.CheckForMergeObjectsOnDialog(ProteusWebAdvertiserAccountsPage.java:179)&#13;&#10;&#9;at StepDefination.ProteusWebAdvertiserSteps.optionToSelectAdvertiserAndConfirmMergeMessageShown(ProteusWebAdvertiserSteps.java:106)&#13;&#10;&#9;at ✽.Then Option to select Advertiser and confirm merge message shown(C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:69)&#13;&#10;"><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Advertiser_Manager_Editor......................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Administration" from home page.............................passed
+Then Administration page shown correctly....................................passed
+Then Able to navigate to Administration Advertiser Accounts.................passed
+When Search for an Advertiser to EditName...................................passed
+Then Advertisers filtered as per search key "AdvertiserNameBeforeEdit"......passed
+When I select a First Advertiser Account....................................passed
+When Click on Merge Into Another Advertiser Account.........................passed
+Then Option to select Advertiser and confirm merge message shown............failed
+And LogOut ProteusWeb from Admin Page.......................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div/div/input"}
+  (Session info: chrome=67.0.3396.79)
+  (Driver info: chromedriver=2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'TELLONLAP106', ip: '192.168.0.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\Users\RAMCHA~1.TEL\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.79, webStorageEnabled: true}
+Session ID: ca01dd952d4adcc7927f2d22627ed8d5
+*** Element info: {Using=xpath, value=/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div/div/input}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy25.isDisplayed(Unknown Source)
+	at PageObjects.ProteusWebAdvertiserAccountsPage.CheckForMergeObjectsOnDialog(ProteusWebAdvertiserAccountsPage.java:179)
+	at StepDefination.ProteusWebAdvertiserSteps.optionToSelectAdvertiserAndConfirmMergeMessageShown(ProteusWebAdvertiserSteps.java:106)
+	at ✽.Then Option to select Advertiser and confirm merge message shown(C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:69)
+]]></failure>
+</testcase>
+<testcase classname="Ability to Edit Advertiser Account settings" name="08 Advertiser Platform Details shown on the Advertiser details page" time="69.340306">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Advertiser_Manager_Editor......................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Administration" from home page.............................passed
+Then Administration page shown correctly....................................passed
+Then Able to navigate to Administration Advertiser Accounts.................passed
+When Search for a Advertiser Name "PHARMA - MAINTAIN".......................passed
+Then Advertisers filtered as per search key "PHARMA - MAINTAIN".............passed
+When I select a First Advertiser Account....................................passed
+Then Advertiser Platform details shown......................................passed
+Then Tooltip with Platform Name and Platform External ID shown on mouseover on icon.passed
+Then Advertiser Platforms tab opened on clicking Platform icon..............passed
+And LogOut ProteusWeb from Admin Page.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Ability to Edit Advertiser Account settings" name="09 Merge advertiser account into another" time="88.42476">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div/div/input&quot;}&#10;  (Session info: chrome=67.0.3396.79)&#10;  (Driver info: chromedriver=2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'&#10;System info: host: 'TELLONLAP106', ip: '192.168.0.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\Users\RAMCHA~1.TEL\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.79, webStorageEnabled: true}&#10;Session ID: 3a9703dcc98397a2c144cff9ef5b64e4&#10;*** Element info: {Using=xpath, value=/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div/div/input}&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)&#13;&#10;&#9;at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)&#13;&#10;&#9;at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)&#13;&#10;&#9;at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at com.sun.proxy.$Proxy25.getCoordinates(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:65)&#13;&#10;&#9;at org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:43)&#13;&#10;&#9;at org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:36)&#13;&#10;&#9;at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:641)&#13;&#10;&#9;at SupportingUtilites.BrowserFactory.mouseClick(BrowserFactory.java:111)&#13;&#10;&#9;at PageObjects.ProteusWebAdvertiserAccountsPage.SelectAdvertiserToMerge(ProteusWebAdvertiserAccountsPage.java:253)&#13;&#10;&#9;at StepDefination.ProteusWebAdvertiserSteps.selectTheAdvertiserToBeMergedAndSave(ProteusWebAdvertiserSteps.java:144)&#13;&#10;&#9;at ✽.And Select the Advertiser to be merged and Save(C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:90)&#13;&#10;"><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Advertiser_Manager_Editor......................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Administration" from home page.............................passed
+Then Administration page shown correctly....................................passed
+Then Able to navigate to Administration Advertiser Accounts.................passed
+When Search for an Advertiser to Merge......................................passed
+And I select a First Advertiser Account.....................................passed
+And Click on Merge Into Another Advertiser Account..........................passed
+And Select the Advertiser to be merged and Save.............................failed
+Then Second Advertiser details page shown...................................skipped
+When Search for Advertiser one merged.......................................skipped
+Then No Advertisers returned................................................skipped
+When Search for Advertiser two merged.......................................skipped
+Then Advertisers filtered as per search key "MergedAdvertiser"..............skipped
+And LogOut ProteusWeb from Admin Page.......................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div/div/input"}
+  (Session info: chrome=67.0.3396.79)
+  (Driver info: chromedriver=2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'TELLONLAP106', ip: '192.168.0.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\Users\RAMCHA~1.TEL\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.79, webStorageEnabled: true}
+Session ID: 3a9703dcc98397a2c144cff9ef5b64e4
+*** Element info: {Using=xpath, value=/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div/div/input}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy25.getCoordinates(Unknown Source)
+	at org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:65)
+	at org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:43)
+	at org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:36)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:641)
+	at SupportingUtilites.BrowserFactory.mouseClick(BrowserFactory.java:111)
+	at PageObjects.ProteusWebAdvertiserAccountsPage.SelectAdvertiserToMerge(ProteusWebAdvertiserAccountsPage.java:253)
+	at StepDefination.ProteusWebAdvertiserSteps.selectTheAdvertiserToBeMergedAndSave(ProteusWebAdvertiserSteps.java:144)
+	at ✽.And Select the Advertiser to be merged and Save(C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:90)
+]]></failure>
+</testcase>
+<testcase classname="Ability to Edit Advertiser Account settings" name="10 Cancel Merge advertiser account into another" time="88.490674">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div/div/input&quot;}&#10;  (Session info: chrome=67.0.3396.79)&#10;  (Driver info: chromedriver=2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'&#10;System info: host: 'TELLONLAP106', ip: '192.168.0.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\Users\RAMCHA~1.TEL\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.79, webStorageEnabled: true}&#10;Session ID: 181504ae55effd1f850559e4f003abac&#10;*** Element info: {Using=xpath, value=/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div/div/input}&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)&#13;&#10;&#9;at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)&#13;&#10;&#9;at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)&#13;&#10;&#9;at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at com.sun.proxy.$Proxy25.getCoordinates(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:65)&#13;&#10;&#9;at org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:43)&#13;&#10;&#9;at org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:36)&#13;&#10;&#9;at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:641)&#13;&#10;&#9;at SupportingUtilites.BrowserFactory.mouseClick(BrowserFactory.java:111)&#13;&#10;&#9;at PageObjects.ProteusWebAdvertiserAccountsPage.SelectAdvertiserToMergeAndCancel(ProteusWebAdvertiserAccountsPage.java:263)&#13;&#10;&#9;at StepDefination.ProteusWebAdvertiserSteps.selectTheAdvertiserToBeMergedAndCancel(ProteusWebAdvertiserSteps.java:202)&#13;&#10;&#9;at ✽.And Select the Advertiser to be merged and Cancel(C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:104)&#13;&#10;"><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Advertiser_Manager_Editor......................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Administration" from home page.............................passed
+Then Administration page shown correctly....................................passed
+Then Able to navigate to Administration Advertiser Accounts.................passed
+When Search for an Advertiser to Merge......................................passed
+And I select a First Advertiser Account.....................................passed
+And Click on Merge Into Another Advertiser Account..........................passed
+And Select the Advertiser to be merged and Cancel...........................failed
+Then First Advertiser details page shown....................................skipped
+When Search for Advertiser one merged.......................................skipped
+Then Advertisers filtered as per search key "AdvertiserMerged"..............skipped
+When Search for Advertiser two merged.......................................skipped
+Then Advertisers filtered as per search key "MergedAdvertiser"..............skipped
+And LogOut ProteusWeb from Admin Page.......................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div/div/input"}
+  (Session info: chrome=67.0.3396.79)
+  (Driver info: chromedriver=2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'TELLONLAP106', ip: '192.168.0.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\Users\RAMCHA~1.TEL\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.79, webStorageEnabled: true}
+Session ID: 181504ae55effd1f850559e4f003abac
+*** Element info: {Using=xpath, value=/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div/div/input}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy25.getCoordinates(Unknown Source)
+	at org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:65)
+	at org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:43)
+	at org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:36)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:641)
+	at SupportingUtilites.BrowserFactory.mouseClick(BrowserFactory.java:111)
+	at PageObjects.ProteusWebAdvertiserAccountsPage.SelectAdvertiserToMergeAndCancel(ProteusWebAdvertiserAccountsPage.java:263)
+	at StepDefination.ProteusWebAdvertiserSteps.selectTheAdvertiserToBeMergedAndCancel(ProteusWebAdvertiserSteps.java:202)
+	at ✽.And Select the Advertiser to be merged and Cancel(C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:104)
+]]></failure>
+</testcase>
+<testcase classname="Ability to Edit Advertiser Account settings" name="11 Able to search by Requires action" time="25.19106">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Advertiser_Manager_Editor......................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Administration" from home page.............................passed
+Then Administration page shown correctly....................................passed
+Then Able to navigate to Administration Advertiser Accounts.................passed
+When Search based on Requires action........................................passed
+Then Advertisers filtered as per Requires action............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Ability to Edit Advertiser Account settings" name="12 Able to Bulk edit and save" time="30.313691">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Advertiser_Manager_Editor......................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Administration" from home page.............................passed
+Then Administration page shown correctly....................................passed
+Then Able to navigate to Administration Advertiser Accounts.................passed
+When Search based on Requires action........................................passed
+And Click on bulk edit......................................................passed
+And Edit two or more Advertiser, Agency details and Save....................passed
+Then Bulk edit saved successfuly............................................passed
+]]></system-out>
+</testcase>
+</testsuite>

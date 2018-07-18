@@ -1,0 +1,33 @@
+@FlightDates
+Feature: Flight Start and End Dates shown
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/ReadOnlyFlightDates.feature:3[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+
+  @FlightDates
+  Scenario: 01 There is a box/area to show Start Date and End Date [90m# C:/repoProteusWebJava/./src/test/java/Features/ReadOnlyFlightDates.feature:12[0m
+    [32mWhen [0m[32mI search/filter for result with end date[0m                  [90m# ProteusWebSteps.iSearchResultWithEndDate()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+    [32mThen [0m[32mBox shown with Start Date and End Date[0m                    [90m# ProteusWebSteps.boxShownWithStartDateAndEndDate()[0m
+    [32mAnd [0m[32mA progress bar shown[0m                                       [90m# ProteusWebSteps.aProgressBarShown()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/ReadOnlyFlightDates.feature:3[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+
+  @FlightDates
+  Scenario: 02 There is a box/area to show Start Date Indefinite [90m# C:/repoProteusWebJava/./src/test/java/Features/ReadOnlyFlightDates.feature:19[0m
+    [32mWhen [0m[32mI search/filter for result without end date[0m             [90m# ProteusWebSteps.iSearchResultWithOutEndDate()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                                    [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+    [32mThen [0m[32mBox shown with Start Date[0m                               [90m# ProteusWebSteps.boxShownWithStartDate()[0m
+    [32mThen [0m[32mEnd date shown as an icon and Tooltip shown[0m             [90m# ProteusWebSteps.endDateShownAsAnIcon()[0m
+    [32mAnd [0m[32mA progress bar shown[0m                                     [90m# ProteusWebSteps.aProgressBarShown()[0m

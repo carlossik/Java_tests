@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="8" time="193.665899">
+<testcase classname="Ability to deep-link to Tableau reports" name="01 Reporting Icon at Flight Level" time="21.343712">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+Then All Flights matching search/filter combination load as results.........passed
+And There is a reporting chart icon to the right hand side of the Flight....passed
+]]></system-out>
+</testcase>
+<testcase classname="Ability to deep-link to Tableau reports" name="02 Reporting tooltip on Icon" time="24.347314">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+Then Tooltip 'Click to go to reports' shown on mouseover....................passed
+And There are two links in the pop up for the following core reports:.......passed
+]]></system-out>
+</testcase>
+<testcase classname="Ability to deep-link to Tableau reports" name="03 Tableau Reporting tab opened for Data Explorer" time="26.500881">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+When Click on "Data Explorer" Tableau report................................passed
+Then Tableau report opened for "DataExplorer"...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Ability to deep-link to Tableau reports" name="04 Tableau Reporting tab opened for Operations Breakdown" time="25.961773">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+When Click on "Operations Breakdown" Tableau report.........................passed
+Then Tableau report opened for "OperationsBreakdown"........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Ability to deep-link to Tableau reports" name="05 Reporting Icon at Operation Unit" time="20.428054">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+Then There is a Operation Unit Level reporting chart icon to the right hand side of the Flight count.passed
+]]></system-out>
+</testcase>
+<testcase classname="Ability to deep-link to Tableau reports" name="06 Operation Unit Level Reporting tooltip on Icon" time="23.547137">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+Then Tooltip 'Click to go to reports Operational Unit level' shown on mouseover at Operation Unit icon.passed
+And There are two links in the pop up for the following Operational Unit reports:.passed
+]]></system-out>
+</testcase>
+<testcase classname="Ability to deep-link to Tableau reports" name="07 Tableau Reporting tab opened for Management Report" time="26.047536">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+When Click on "Management Report" Operation Unit Tableau report.............passed
+Then Tableau report opened for "ManagementReport"...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Ability to deep-link to Tableau reports" name="08 Tableau Reporting tab opened for Performance Overview" time="25.489492">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+When Click on "Performance Overview" Operation Unit Tableau report..........passed
+Then Tableau report opened for "PerformanceOverview"........................passed
+]]></system-out>
+</testcase>
+</testsuite>

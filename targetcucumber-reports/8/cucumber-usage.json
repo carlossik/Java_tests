@@ -1,0 +1,362 @@
+[
+  {
+    "source": "^Discrepancy Details displayed when flight is expanded$",
+    "steps": [
+      {
+        "name": "Discrepancy Details displayed when flight is expanded",
+        "aggregatedDurations": {
+          "average": 0.106642728,
+          "median": 0.106642728
+        },
+        "durations": [
+          {
+            "duration": 0.106642728,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ExpandFlightInformation.feature:18"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "All Flights loads which I have access to",
+    "steps": [
+      {
+        "name": "All Flights loads which I have access to",
+        "aggregatedDurations": {
+          "average": 0.235640219,
+          "median": 0.235640219
+        },
+        "durations": [
+          {
+            "duration": 0.235640219,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ExpandFlightInformation.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I go to the Proteus Home URL in my browser",
+    "steps": [
+      {
+        "name": "I go to the Proteus Home URL in my browser",
+        "aggregatedDurations": {
+          "average": 4.10827686,
+          "median": 4.10827686
+        },
+        "durations": [
+          {
+            "duration": 4.10827686,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ExpandFlightInformation.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Expand flight details$",
+    "steps": [
+      {
+        "name": "Expand flight details",
+        "aggregatedDurations": {
+          "average": 3.156758973,
+          "median": 3.156758973
+        },
+        "durations": [
+          {
+            "duration": 3.156758973,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ExpandFlightInformation.feature:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Click on Apply button",
+    "steps": [
+      {
+        "name": "Click on Apply button",
+        "aggregatedDurations": {
+          "average": 3.214145189,
+          "median": 3.214145189
+        },
+        "durations": [
+          {
+            "duration": 3.214145189,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ExpandFlightInformation.feature:16"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Primary Goal Details displayed when flight is expanded$",
+    "steps": [
+      {
+        "name": "Primary Goal Details displayed when flight is expanded",
+        "aggregatedDurations": {
+          "average": 0.114460538,
+          "median": 0.114460538
+        },
+        "durations": [
+          {
+            "duration": 0.114460538,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ExpandFlightInformation.feature:20"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^DSP Data detials show tooltip$",
+    "steps": [
+      {
+        "name": "DSP Data detials show tooltip",
+        "aggregatedDurations": {
+          "average": 2.108570834,
+          "median": 2.108570834
+        },
+        "durations": [
+          {
+            "duration": 2.108570834,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ExpandFlightInformation.feature:25"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Login as \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "Login as \"ADMINISTRATOR\"",
+        "aggregatedDurations": {
+          "average": 5.33800263,
+          "median": 5.33800263
+        },
+        "durations": [
+          {
+            "duration": 5.33800263,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ExpandFlightInformation.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I search/filter for a flightName \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I search/filter for a flightName \"IO-6920\"",
+        "aggregatedDurations": {
+          "average": 2.595079853,
+          "median": 2.595079853
+        },
+        "durations": [
+          {
+            "duration": 2.595079853,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ExpandFlightInformation.feature:15"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Discrepancy Details show tooltip$",
+    "steps": [
+      {
+        "name": "Discrepancy Details show tooltip",
+        "aggregatedDurations": {
+          "average": 2.107958994,
+          "median": 2.107958994
+        },
+        "durations": [
+          {
+            "duration": 2.107958994,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ExpandFlightInformation.feature:19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Viewability detials show tooltip$",
+    "steps": [
+      {
+        "name": "Viewability detials show tooltip",
+        "aggregatedDurations": {
+          "average": 2.121413068,
+          "median": 2.121413068
+        },
+        "durations": [
+          {
+            "duration": 2.121413068,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ExpandFlightInformation.feature:23"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I have the role: Pro Web Campaigns",
+    "steps": [
+      {
+        "name": "I have the role: Pro Web Campaigns",
+        "aggregatedDurations": {
+          "average": 0.000033707,
+          "median": 0.000033707
+        },
+        "durations": [
+          {
+            "duration": 0.000033707,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ExpandFlightInformation.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on \"([^\"]*)\" from home page$",
+    "steps": [
+      {
+        "name": "I click on \"Campaigns\" from home page",
+        "aggregatedDurations": {
+          "average": 3.107016914,
+          "median": 3.107016914
+        },
+        "durations": [
+          {
+            "duration": 3.107016914,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ExpandFlightInformation.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Actual Goal detials show tooltip$",
+    "steps": [
+      {
+        "name": "Actual Goal detials show tooltip",
+        "aggregatedDurations": {
+          "average": 2.103713662,
+          "median": 2.103713662
+        },
+        "durations": [
+          {
+            "duration": 2.103713662,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ExpandFlightInformation.feature:21"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^AdServer Data Details displayed when flight is expanded$",
+    "steps": [
+      {
+        "name": "AdServer Data Details displayed when flight is expanded",
+        "aggregatedDurations": {
+          "average": 0.14164474,
+          "median": 0.14164474
+        },
+        "durations": [
+          {
+            "duration": 0.14164474,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ExpandFlightInformation.feature:26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^DSP Data Details displayed when flight is expanded$",
+    "steps": [
+      {
+        "name": "DSP Data Details displayed when flight is expanded",
+        "aggregatedDurations": {
+          "average": 0.156740199,
+          "median": 0.156740199
+        },
+        "durations": [
+          {
+            "duration": 0.156740199,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ExpandFlightInformation.feature:24"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Viewability Details displayed when flight is expanded$",
+    "steps": [
+      {
+        "name": "Viewability Details displayed when flight is expanded",
+        "aggregatedDurations": {
+          "average": 0.138456688,
+          "median": 0.138456688
+        },
+        "durations": [
+          {
+            "duration": 0.138456688,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ExpandFlightInformation.feature:22"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I am a Proteus User",
+    "steps": [
+      {
+        "name": "I am a Proteus User",
+        "aggregatedDurations": {
+          "average": 0.003653972,
+          "median": 0.003653972
+        },
+        "durations": [
+          {
+            "duration": 0.003653972,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ExpandFlightInformation.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "The main homepage loads successfully",
+    "steps": [
+      {
+        "name": "The main homepage loads successfully",
+        "aggregatedDurations": {
+          "average": 0.042613315,
+          "median": 0.042613315
+        },
+        "durations": [
+          {
+            "duration": 0.042613315,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ExpandFlightInformation.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^AdServer detials show tooltip$",
+    "steps": [
+      {
+        "name": "AdServer detials show tooltip",
+        "aggregatedDurations": {
+          "average": 2.095378306,
+          "median": 2.095378306
+        },
+        "durations": [
+          {
+            "duration": 2.095378306,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ExpandFlightInformation.feature:27"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,661 @@
+[
+  {
+    "source": "All Flights matching search/filter combination load as results",
+    "steps": [
+      {
+        "name": "All Flights matching search/filter combination load as results",
+        "aggregatedDurations": {
+          "average": 0.015229434,
+          "median": 0.015229434
+        },
+        "durations": [
+          {
+            "duration": 0.015229434,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^There is a Operation Unit Level reporting chart icon to the right hand side of the Flight count$",
+    "steps": [
+      {
+        "name": "There is a Operation Unit Level reporting chart icon to the right hand side of the Flight count",
+        "aggregatedDurations": {
+          "average": 0.036127558,
+          "median": 0.036127558
+        },
+        "durations": [
+          {
+            "duration": 0.036127558,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:39"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "All Flights loads which I have access to",
+    "steps": [
+      {
+        "name": "All Flights loads which I have access to",
+        "aggregatedDurations": {
+          "average": 0.274353323,
+          "median": 0.267955725
+        },
+        "durations": [
+          {
+            "duration": 0.291794222,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:11"
+          },
+          {
+            "duration": 0.339956335,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:11"
+          },
+          {
+            "duration": 0.322841889,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:11"
+          },
+          {
+            "duration": 0.209350738,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:11"
+          },
+          {
+            "duration": 0.341622467,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:11"
+          },
+          {
+            "duration": 0.217808974,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:11"
+          },
+          {
+            "duration": 0.244117229,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:11"
+          },
+          {
+            "duration": 0.22733473,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I go to the Proteus Home URL in my browser",
+    "steps": [
+      {
+        "name": "I go to the Proteus Home URL in my browser",
+        "aggregatedDurations": {
+          "average": 4.267078713,
+          "median": 4.142054553
+        },
+        "durations": [
+          {
+            "duration": 4.600874411,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:7"
+          },
+          {
+            "duration": 4.558849042,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:7"
+          },
+          {
+            "duration": 4.493120216,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:7"
+          },
+          {
+            "duration": 4.113767632,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:7"
+          },
+          {
+            "duration": 4.078270687,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:7"
+          },
+          {
+            "duration": 4.050105152,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:7"
+          },
+          {
+            "duration": 4.170341474,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:7"
+          },
+          {
+            "duration": 4.07130109,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Click on Apply button",
+    "steps": [
+      {
+        "name": "Click on Apply button",
+        "aggregatedDurations": {
+          "average": 3.22441329,
+          "median": 3.213881508
+        },
+        "durations": [
+          {
+            "duration": 3.220005453,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:13"
+          },
+          {
+            "duration": 3.215394468,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:13"
+          },
+          {
+            "duration": 3.261105809,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:13"
+          },
+          {
+            "duration": 3.212261883,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:13"
+          },
+          {
+            "duration": 3.254635411,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:13"
+          },
+          {
+            "duration": 3.212368549,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:13"
+          },
+          {
+            "duration": 3.20943479,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:13"
+          },
+          {
+            "duration": 3.210099964,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Login as \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "Login as \"ADMINISTRATOR\"",
+        "aggregatedDurations": {
+          "average": 5.013680794,
+          "median": 5.011886928
+        },
+        "durations": [
+          {
+            "duration": 5.03987241,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:8"
+          },
+          {
+            "duration": 4.99991808,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:8"
+          },
+          {
+            "duration": 5.053682751,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:8"
+          },
+          {
+            "duration": 5.01504042,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:8"
+          },
+          {
+            "duration": 5.017154553,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:8"
+          },
+          {
+            "duration": 4.976351583,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:8"
+          },
+          {
+            "duration": 4.998693121,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:8"
+          },
+          {
+            "duration": 5.008733436,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I search/filter for a particular result",
+    "steps": [
+      {
+        "name": "I search/filter for a particular result",
+        "aggregatedDurations": {
+          "average": 2.772752897,
+          "median": 2.774040203
+        },
+        "durations": [
+          {
+            "duration": 2.849839851,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:12"
+          },
+          {
+            "duration": 2.708604711,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:12"
+          },
+          {
+            "duration": 2.784428039,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:12"
+          },
+          {
+            "duration": 2.769512631,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:12"
+          },
+          {
+            "duration": 2.778567775,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:12"
+          },
+          {
+            "duration": 2.719462093,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:12"
+          },
+          {
+            "duration": 2.877446452,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:12"
+          },
+          {
+            "duration": 2.694161624,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Tooltip \u0027Click to go to reports Operational Unit level\u0027 shown on mouseover at Operation Unit icon$",
+    "steps": [
+      {
+        "name": "Tooltip \u0027Click to go to reports Operational Unit level\u0027 shown on mouseover at Operation Unit icon",
+        "aggregatedDurations": {
+          "average": 2.111875366,
+          "median": 2.111875366
+        },
+        "durations": [
+          {
+            "duration": 2.111875366,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:43"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I have the role: Pro Web Campaigns",
+    "steps": [
+      {
+        "name": "I have the role: Pro Web Campaigns",
+        "aggregatedDurations": {
+          "average": 0.000072266,
+          "median": 0.0000576
+        },
+        "durations": [
+          {
+            "duration": 0.00007168,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:6"
+          },
+          {
+            "duration": 0.000145493,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:6"
+          },
+          {
+            "duration": 0.000055894,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:6"
+          },
+          {
+            "duration": 0.000059307,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:6"
+          },
+          {
+            "duration": 0.000046933,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:6"
+          },
+          {
+            "duration": 0.000055466,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:6"
+          },
+          {
+            "duration": 0.000099413,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:6"
+          },
+          {
+            "duration": 0.000043947,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on \"([^\"]*)\" from home page$",
+    "steps": [
+      {
+        "name": "I click on \"Campaigns\" from home page",
+        "aggregatedDurations": {
+          "average": 3.114613444,
+          "median": 3.113816271
+        },
+        "durations": [
+          {
+            "duration": 3.113086245,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:10"
+          },
+          {
+            "duration": 3.102850943,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:10"
+          },
+          {
+            "duration": 3.114546297,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:10"
+          },
+          {
+            "duration": 3.125146827,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:10"
+          },
+          {
+            "duration": 3.111557072,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:10"
+          },
+          {
+            "duration": 3.116462457,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:10"
+          },
+          {
+            "duration": 3.12518224,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:10"
+          },
+          {
+            "duration": 3.108075474,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^There is a reporting chart icon to the right hand side of the Flight$",
+    "steps": [
+      {
+        "name": "There is a reporting chart icon to the right hand side of the Flight",
+        "aggregatedDurations": {
+          "average": 0.025890123,
+          "median": 0.025890123
+        },
+        "durations": [
+          {
+            "duration": 0.025890123,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:18"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Tooltip \u0027Click to go to reports\u0027 shown on mouseover$",
+    "steps": [
+      {
+        "name": "Tooltip \u0027Click to go to reports\u0027 shown on mouseover",
+        "aggregatedDurations": {
+          "average": 2.122094454,
+          "median": 2.122094454
+        },
+        "durations": [
+          {
+            "duration": 2.122094454,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:22"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^There are two links in the pop up for the following core reports:$",
+    "steps": [
+      {
+        "name": "There are two links in the pop up for the following core reports:",
+        "aggregatedDurations": {
+          "average": 1.204651432,
+          "median": 1.204651432
+        },
+        "durations": [
+          {
+            "duration": 1.204651432,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:23"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^There are two links in the pop up for the following Operational Unit reports:$",
+    "steps": [
+      {
+        "name": "There are two links in the pop up for the following Operational Unit reports:",
+        "aggregatedDurations": {
+          "average": 1.182482269,
+          "median": 1.182482269
+        },
+        "durations": [
+          {
+            "duration": 1.182482269,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:44"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Tableau report opened for \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "Tableau report opened for \"DataExplorer\"",
+        "aggregatedDurations": {
+          "average": 1.263642341,
+          "median": 1.263642341
+        },
+        "durations": [
+          {
+            "duration": 1.263642341,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:30"
+          }
+        ]
+      },
+      {
+        "name": "Tableau report opened for \"OperationsBreakdown\"",
+        "aggregatedDurations": {
+          "average": 1.309939068,
+          "median": 1.309939068
+        },
+        "durations": [
+          {
+            "duration": 1.309939068,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:35"
+          }
+        ]
+      },
+      {
+        "name": "Tableau report opened for \"ManagementReport\"",
+        "aggregatedDurations": {
+          "average": 1.324999542,
+          "median": 1.324999542
+        },
+        "durations": [
+          {
+            "duration": 1.324999542,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:51"
+          }
+        ]
+      },
+      {
+        "name": "Tableau report opened for \"PerformanceOverview\"",
+        "aggregatedDurations": {
+          "average": 1.087400496,
+          "median": 1.087400496
+        },
+        "durations": [
+          {
+            "duration": 1.087400496,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:56"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Click on \"([^\"]*)\" Operation Unit Tableau report$",
+    "steps": [
+      {
+        "name": "Click on \"Management Report\" Operation Unit Tableau report",
+        "aggregatedDurations": {
+          "average": 4.244218776,
+          "median": 4.244218776
+        },
+        "durations": [
+          {
+            "duration": 4.244218776,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:50"
+          }
+        ]
+      },
+      {
+        "name": "Click on \"Performance Overview\" Operation Unit Tableau report",
+        "aggregatedDurations": {
+          "average": 4.25614453,
+          "median": 4.25614453
+        },
+        "durations": [
+          {
+            "duration": 4.25614453,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:55"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I am a Proteus User",
+    "steps": [
+      {
+        "name": "I am a Proteus User",
+        "aggregatedDurations": {
+          "average": 0.002080052,
+          "median": 0.001511252
+        },
+        "durations": [
+          {
+            "duration": 0.005108051,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:5"
+          },
+          {
+            "duration": 0.001550079,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:5"
+          },
+          {
+            "duration": 0.001810346,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:5"
+          },
+          {
+            "duration": 0.002435413,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:5"
+          },
+          {
+            "duration": 0.001467306,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:5"
+          },
+          {
+            "duration": 0.001373439,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:5"
+          },
+          {
+            "duration": 0.00142336,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:5"
+          },
+          {
+            "duration": 0.001472426,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "The main homepage loads successfully",
+    "steps": [
+      {
+        "name": "The main homepage loads successfully",
+        "aggregatedDurations": {
+          "average": 0.046348993,
+          "median": 0.045008621
+        },
+        "durations": [
+          {
+            "duration": 0.042198169,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:9"
+          },
+          {
+            "duration": 0.052398058,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:9"
+          },
+          {
+            "duration": 0.050703339,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:9"
+          },
+          {
+            "duration": 0.046852673,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:9"
+          },
+          {
+            "duration": 0.051386431,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:9"
+          },
+          {
+            "duration": 0.041914862,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:9"
+          },
+          {
+            "duration": 0.042173849,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:9"
+          },
+          {
+            "duration": 0.043164569,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Click on \"([^\"]*)\" Tableau report$",
+    "steps": [
+      {
+        "name": "Click on \"Data Explorer\" Tableau report",
+        "aggregatedDurations": {
+          "average": 4.264764474,
+          "median": 4.264764474
+        },
+        "durations": [
+          {
+            "duration": 4.264764474,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:29"
+          }
+        ]
+      },
+      {
+        "name": "Click on \"Operations Breakdown\" Tableau report",
+        "aggregatedDurations": {
+          "average": 4.269983031,
+          "median": 4.269983031
+        },
+        "durations": [
+          {
+            "duration": 4.269983031,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToDeeplinkTableauReports.feature:34"
+          }
+        ]
+      }
+    ]
+  }
+]

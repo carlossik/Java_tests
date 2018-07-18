@@ -21,8 +21,8 @@ public class ProteusWebHomePage extends BrowserFactory
         PageFactory.initElements(browserFactory.getDriver(),this );
     }
 
-    @FindBy(how = How.XPATH, using = "//*[@id='administration']")
-    //@FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[1]/div/div/div/nav/label[contains(text(), 'Admin')]")
+   // @FindBy(how = How.XPATH, using = "//*[@id='administration']")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[1]/div/div/div/nav/label[contains(text(), 'Admin')]")
     @CacheLookup
     private WebElement tabAdministration;
 
@@ -30,14 +30,14 @@ public class ProteusWebHomePage extends BrowserFactory
     @CacheLookup
     private WebElement tabReporting;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='clientReporting'")
-    //@FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[1]/div/div/div/nav/label[contains(text(), 'Client Reports')]")
+   // @FindBy(how = How.XPATH, using = "//*[@id='clientReporting'")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[1]/div/div/div/nav/label[contains(text(), 'Client Reports')]")
     @CacheLookup
     private WebElement tabClientReporting;
 
 
-    @FindBy(how = How.XPATH, using = "//*[@id='campaigns']")
-    //@FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[1]/div/div/div/nav/label[contains(text(), 'Campaigns')]")
+    //@FindBy(how = How.XPATH, using = "//*[@id='campaigns']")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[1]/div/div/div/nav/label[contains(text(), 'Campaigns')]")
     @CacheLookup
     private WebElement tabCampaign ;
 

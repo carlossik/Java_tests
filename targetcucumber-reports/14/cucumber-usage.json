@@ -1,0 +1,342 @@
+[
+  {
+    "source": "I have the role: Pro Web Campaigns",
+    "steps": [
+      {
+        "name": "I have the role: Pro Web Campaigns",
+        "aggregatedDurations": {
+          "average": 0.000035555,
+          "median": 0.00003712
+        },
+        "durations": [
+          {
+            "duration": 0.00003712,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:6"
+          },
+          {
+            "duration": 0.000041813,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:6"
+          },
+          {
+            "duration": 0.000027734,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on \"([^\"]*)\" from home page$",
+    "steps": [
+      {
+        "name": "I click on \"Campaigns\" from home page",
+        "aggregatedDurations": {
+          "average": 3.114247062,
+          "median": 3.115126564
+        },
+        "durations": [
+          {
+            "duration": 3.107269074,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:10"
+          },
+          {
+            "duration": 3.120345548,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:10"
+          },
+          {
+            "duration": 3.115126564,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I search/filter for a flight \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I search/filter for a flight \"4573\"",
+        "aggregatedDurations": {
+          "average": 2.886138502,
+          "median": 2.886138502
+        },
+        "durations": [
+          {
+            "duration": 2.886138502,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:17"
+          }
+        ]
+      },
+      {
+        "name": "I search/filter for a flight \"454\"",
+        "aggregatedDurations": {
+          "average": 2.719834999,
+          "median": 2.719834999
+        },
+        "durations": [
+          {
+            "duration": 2.719834999,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:17"
+          }
+        ]
+      },
+      {
+        "name": "I search/filter for a flight \"808\"",
+        "aggregatedDurations": {
+          "average": 2.731960434,
+          "median": 2.731960434
+        },
+        "durations": [
+          {
+            "duration": 2.731960434,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "All Flights loads which I have access to",
+    "steps": [
+      {
+        "name": "All Flights loads which I have access to",
+        "aggregatedDurations": {
+          "average": 0.272140114,
+          "median": 0.257344743
+        },
+        "durations": [
+          {
+            "duration": 0.198860715,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:11"
+          },
+          {
+            "duration": 0.360214886,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:11"
+          },
+          {
+            "duration": 0.257344743,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I go to the Proteus Home URL in my browser",
+    "steps": [
+      {
+        "name": "I go to the Proteus Home URL in my browser",
+        "aggregatedDurations": {
+          "average": 4.005542824,
+          "median": 4.008552103
+        },
+        "durations": [
+          {
+            "duration": 4.008552103,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:7"
+          },
+          {
+            "duration": 3.960753084,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:7"
+          },
+          {
+            "duration": 4.047323287,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Click on Apply button",
+    "steps": [
+      {
+        "name": "Click on Apply button",
+        "aggregatedDurations": {
+          "average": 3.216437383,
+          "median": 3.215376548
+        },
+        "durations": [
+          {
+            "duration": 3.214064548,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:18"
+          },
+          {
+            "duration": 3.219871053,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:18"
+          },
+          {
+            "duration": 3.215376548,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:18"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Numbers displayed match the reporting API for flight \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "Numbers displayed match the reporting API for flight \"4573\"",
+        "aggregatedDurations": {
+          "average": 3.261497488,
+          "median": 3.261497488
+        },
+        "durations": [
+          {
+            "duration": 3.261497488,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:20"
+          }
+        ]
+      },
+      {
+        "name": "Numbers displayed match the reporting API for flight \"454\"",
+        "aggregatedDurations": {
+          "average": 3.242718189,
+          "median": 3.242718189
+        },
+        "durations": [
+          {
+            "duration": 3.242718189,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:20"
+          }
+        ]
+      },
+      {
+        "name": "Numbers displayed match the reporting API for flight \"808\"",
+        "aggregatedDurations": {
+          "average": 3.238812058,
+          "median": 3.238812058
+        },
+        "durations": [
+          {
+            "duration": 3.238812058,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:20"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I get numbers from reporting API for flight \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I get numbers from reporting API for flight \"4573\"",
+        "aggregatedDurations": {
+          "average": 3.251471253,
+          "median": 3.251471253
+        },
+        "durations": [
+          {
+            "duration": 3.251471253,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:19"
+          }
+        ]
+      },
+      {
+        "name": "I get numbers from reporting API for flight \"454\"",
+        "aggregatedDurations": {
+          "average": 0.734659953,
+          "median": 0.734659953
+        },
+        "durations": [
+          {
+            "duration": 0.734659953,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:19"
+          }
+        ]
+      },
+      {
+        "name": "I get numbers from reporting API for flight \"808\"",
+        "aggregatedDurations": {
+          "average": 0.284627078,
+          "median": 0.284627078
+        },
+        "durations": [
+          {
+            "duration": 0.284627078,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Login as \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "Login as \"ADMINISTRATOR\"",
+        "aggregatedDurations": {
+          "average": 5.000258559,
+          "median": 5.000791039
+        },
+        "durations": [
+          {
+            "duration": 5.000791039,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:8"
+          },
+          {
+            "duration": 5.018246392,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:8"
+          },
+          {
+            "duration": 4.981738248,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I am a Proteus User",
+    "steps": [
+      {
+        "name": "I am a Proteus User",
+        "aggregatedDurations": {
+          "average": 0.001788443,
+          "median": 0.000872106
+        },
+        "durations": [
+          {
+            "duration": 0.003745705,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:5"
+          },
+          {
+            "duration": 0.000872106,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:5"
+          },
+          {
+            "duration": 0.00074752,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "The main homepage loads successfully",
+    "steps": [
+      {
+        "name": "The main homepage loads successfully",
+        "aggregatedDurations": {
+          "average": 0.044649225,
+          "median": 0.042850542
+        },
+        "durations": [
+          {
+            "duration": 0.048438593,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:9"
+          },
+          {
+            "duration": 0.042850542,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:9"
+          },
+          {
+            "duration": 0.042658542,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/ReportingAPIvsProteusWeb.feature:9"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,505 @@
+[
+  {
+    "source": "I go to the Proteus Home URL in my browser",
+    "steps": [
+      {
+        "name": "I go to the Proteus Home URL in my browser",
+        "aggregatedDurations": {
+          "average": 4.003095358,
+          "median": 4.007503143
+        },
+        "durations": [
+          {
+            "duration": 4.018017699,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:7"
+          },
+          {
+            "duration": 3.97761793,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:7"
+          },
+          {
+            "duration": 4.019757218,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:7"
+          },
+          {
+            "duration": 3.996988588,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Able to navigate to Administration Master Data$",
+    "steps": [
+      {
+        "name": "Able to navigate to Administration Master Data",
+        "aggregatedDurations": {
+          "average": 6.19535821,
+          "median": 6.19535821
+        },
+        "durations": [
+          {
+            "duration": 6.19535821,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:35"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^LogOut ProteusWeb from Admin Page$",
+    "steps": [
+      {
+        "name": "LogOut ProteusWeb from Admin Page",
+        "aggregatedDurations": {
+          "average": 2.467353401,
+          "median": 2.467353401
+        },
+        "durations": [
+          {
+            "duration": 2.467353401,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:36"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^LogOut ProteusWeb from Client Reports Page$",
+    "steps": [
+      {
+        "name": "LogOut ProteusWeb from Client Reports Page",
+        "aggregatedDurations": {
+          "average": 2.523924683,
+          "median": 2.523924683
+        },
+        "durations": [
+          {
+            "duration": 2.523924683,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:47"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Login as \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "Login as \"ADMINISTRATOR\"",
+        "aggregatedDurations": {
+          "average": 5.014576953,
+          "median": 4.987303258
+        },
+        "durations": [
+          {
+            "duration": 5.118582136,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:11"
+          },
+          {
+            "duration": 5.000049066,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:21"
+          },
+          {
+            "duration": 4.965119161,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:29"
+          },
+          {
+            "duration": 4.974557451,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:39"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "LogOut ProteusWeb from Home Page",
+    "steps": [
+      {
+        "name": "LogOut ProteusWeb from Home Page",
+        "aggregatedDurations": {
+          "average": 2.44467821,
+          "median": 2.44467821
+        },
+        "durations": [
+          {
+            "duration": 2.44467821,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Able to navigate to Client Reports Performance$",
+    "steps": [
+      {
+        "name": "Able to navigate to Client Reports Performance",
+        "aggregatedDurations": {
+          "average": 2.194835544,
+          "median": 2.194835544
+        },
+        "durations": [
+          {
+            "duration": 2.194835544,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:44"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Able to navigate to Client Reports DSP$",
+    "steps": [
+      {
+        "name": "Able to navigate to Client Reports DSP",
+        "aggregatedDurations": {
+          "average": 2.14954703,
+          "median": 2.14954703
+        },
+        "durations": [
+          {
+            "duration": 2.14954703,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:45"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Able to navigate to Client Reports Tactics$",
+    "steps": [
+      {
+        "name": "Able to navigate to Client Reports Tactics",
+        "aggregatedDurations": {
+          "average": 2.14965583,
+          "median": 2.14965583
+        },
+        "durations": [
+          {
+            "duration": 2.14965583,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:46"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I have the role: Pro Web Campaigns",
+    "steps": [
+      {
+        "name": "I have the role: Pro Web Campaigns",
+        "aggregatedDurations": {
+          "average": 0.000030293,
+          "median": 0.000029866
+        },
+        "durations": [
+          {
+            "duration": 0.000027733,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:6"
+          },
+          {
+            "duration": 0.000028586,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:6"
+          },
+          {
+            "duration": 0.000031147,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:6"
+          },
+          {
+            "duration": 0.000033707,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on \"([^\"]*)\" from home page$",
+    "steps": [
+      {
+        "name": "I click on \"Reports\" from home page",
+        "aggregatedDurations": {
+          "average": 3.102980223,
+          "median": 3.102980223
+        },
+        "durations": [
+          {
+            "duration": 3.102980223,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:23"
+          }
+        ]
+      },
+      {
+        "name": "I click on \"Administration\" from home page",
+        "aggregatedDurations": {
+          "average": 3.110603473,
+          "median": 3.110603473
+        },
+        "durations": [
+          {
+            "duration": 3.110603473,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:31"
+          }
+        ]
+      },
+      {
+        "name": "I click on \"Client Reports\" from home page",
+        "aggregatedDurations": {
+          "average": 3.098617985,
+          "median": 3.098617985
+        },
+        "durations": [
+          {
+            "duration": 3.098617985,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:41"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^There is a box called \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "There is a box called \"Campaigns\"",
+        "aggregatedDurations": {
+          "average": 0.040333636,
+          "median": 0.040333636
+        },
+        "durations": [
+          {
+            "duration": 0.040333636,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:13"
+          }
+        ]
+      },
+      {
+        "name": "There is a box called \"Reports\"",
+        "aggregatedDurations": {
+          "average": 0.048679233,
+          "median": 0.048679233
+        },
+        "durations": [
+          {
+            "duration": 0.048679233,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:14"
+          }
+        ]
+      },
+      {
+        "name": "There is a box called \"Client Reports\"",
+        "aggregatedDurations": {
+          "average": 0.048846486,
+          "median": 0.048846486
+        },
+        "durations": [
+          {
+            "duration": 0.048846486,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:15"
+          }
+        ]
+      },
+      {
+        "name": "There is a box called \"Administration\"",
+        "aggregatedDurations": {
+          "average": 0.040547823,
+          "median": 0.040547823
+        },
+        "durations": [
+          {
+            "duration": 0.040547823,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:16"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Reports page shown correctly$",
+    "steps": [
+      {
+        "name": "Reports page shown correctly",
+        "aggregatedDurations": {
+          "average": 1.095816493,
+          "median": 1.095816493
+        },
+        "durations": [
+          {
+            "duration": 1.095816493,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:24"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Administration page shown correctly$",
+    "steps": [
+      {
+        "name": "Administration page shown correctly",
+        "aggregatedDurations": {
+          "average": 0.124473974,
+          "median": 0.124473974
+        },
+        "durations": [
+          {
+            "duration": 0.124473974,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:32"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Client Reports page shown correctly$",
+    "steps": [
+      {
+        "name": "Client Reports page shown correctly",
+        "aggregatedDurations": {
+          "average": 4.543623875,
+          "median": 4.543623875
+        },
+        "durations": [
+          {
+            "duration": 4.543623875,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:42"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^LogOut ProteusWeb from Reports Page$",
+    "steps": [
+      {
+        "name": "LogOut ProteusWeb from Reports Page",
+        "aggregatedDurations": {
+          "average": 2.467646947,
+          "median": 2.467646947
+        },
+        "durations": [
+          {
+            "duration": 2.467646947,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:25"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Able to navigate to Administration Jobs$",
+    "steps": [
+      {
+        "name": "Able to navigate to Administration Jobs",
+        "aggregatedDurations": {
+          "average": 3.129550025,
+          "median": 3.129550025
+        },
+        "durations": [
+          {
+            "duration": 3.129550025,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:34"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Able to navigate to Client Reports Dashboard$",
+    "steps": [
+      {
+        "name": "Able to navigate to Client Reports Dashboard",
+        "aggregatedDurations": {
+          "average": 2.161615717,
+          "median": 2.161615717
+        },
+        "durations": [
+          {
+            "duration": 2.161615717,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:43"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I am a Proteus User",
+    "steps": [
+      {
+        "name": "I am a Proteus User",
+        "aggregatedDurations": {
+          "average": 0.001423679,
+          "median": 0.000783359
+        },
+        "durations": [
+          {
+            "duration": 0.003364692,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:5"
+          },
+          {
+            "duration": 0.000793599,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:5"
+          },
+          {
+            "duration": 0.000763306,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:5"
+          },
+          {
+            "duration": 0.00077312,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "The main homepage loads successfully",
+    "steps": [
+      {
+        "name": "The main homepage loads successfully",
+        "aggregatedDurations": {
+          "average": 0.045495874,
+          "median": 0.044763501
+        },
+        "durations": [
+          {
+            "duration": 0.042499822,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:12"
+          },
+          {
+            "duration": 0.045305154,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:22"
+          },
+          {
+            "duration": 0.044221848,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:30"
+          },
+          {
+            "duration": 0.049956672,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:40"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Able to filter seats by Operation Unit TEL$",
+    "steps": [
+      {
+        "name": "Able to filter seats by Operation Unit TEL",
+        "aggregatedDurations": {
+          "average": 2.476402996,
+          "median": 2.476402996
+        },
+        "durations": [
+          {
+            "duration": 2.476402996,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature:33"
+          }
+        ]
+      }
+    ]
+  }
+]

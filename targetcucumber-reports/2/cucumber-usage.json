@@ -1,0 +1,388 @@
+[
+  {
+    "source": "All Flights loads which I have access to",
+    "steps": [
+      {
+        "name": "All Flights loads which I have access to",
+        "aggregatedDurations": {
+          "average": 0.212905936,
+          "median": 0.212905936
+        },
+        "durations": [
+          {
+            "duration": 0.233421554,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditGoalData.feature:11"
+          },
+          {
+            "duration": 0.192390318,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditGoalData.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Option to select Goal Type and Goal Value exist$",
+    "steps": [
+      {
+        "name": "Option to select Goal Type and Goal Value exist",
+        "aggregatedDurations": {
+          "average": 0.101633023,
+          "median": 0.101633023
+        },
+        "durations": [
+          {
+            "duration": 0.11030054,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditGoalData.feature:26"
+          },
+          {
+            "duration": 0.092965507,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditGoalData.feature:33"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Edited Goal Type and Goal Values saved$",
+    "steps": [
+      {
+        "name": "Edited Goal Type and Goal Values saved",
+        "aggregatedDurations": {
+          "average": 7.3266405,
+          "median": 7.3266405
+        },
+        "durations": [
+          {
+            "duration": 7.3266405,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditGoalData.feature:37"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I go to the Proteus Home URL in my browser",
+    "steps": [
+      {
+        "name": "I go to the Proteus Home URL in my browser",
+        "aggregatedDurations": {
+          "average": 4.076054154,
+          "median": 4.076054154
+        },
+        "durations": [
+          {
+            "duration": 4.103600169,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditGoalData.feature:7"
+          },
+          {
+            "duration": 4.04850814,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditGoalData.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^There is an edit icon in the box$",
+    "steps": [
+      {
+        "name": "There is an edit icon in the box",
+        "aggregatedDurations": {
+          "average": 0.02330239,
+          "median": 0.02330239
+        },
+        "durations": [
+          {
+            "duration": 0.02330239,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditGoalData.feature:31"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Click on Apply button",
+    "steps": [
+      {
+        "name": "Click on Apply button",
+        "aggregatedDurations": {
+          "average": 3.218037667,
+          "median": 3.218037667
+        },
+        "durations": [
+          {
+            "duration": 3.224014411,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditGoalData.feature:16"
+          },
+          {
+            "duration": 3.212060923,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditGoalData.feature:23"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Login as \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "Login as \"ADMINISTRATOR\"",
+        "aggregatedDurations": {
+          "average": 5.178967817,
+          "median": 5.178967817
+        },
+        "durations": [
+          {
+            "duration": 5.02363519,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditGoalData.feature:8"
+          },
+          {
+            "duration": 5.334300444,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditGoalData.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Selected Goal Type and Goal Values saved$",
+    "steps": [
+      {
+        "name": "Selected Goal Type and Goal Values saved",
+        "aggregatedDurations": {
+          "average": 7.401902762,
+          "median": 7.401902762
+        },
+        "durations": [
+          {
+            "duration": 7.401902762,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditGoalData.feature:30"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Edit Goal Type, Goal Value and Save$",
+    "steps": [
+      {
+        "name": "Edit Goal Type, Goal Value and Save",
+        "aggregatedDurations": {
+          "average": 3.75825973,
+          "median": 3.75825973
+        },
+        "durations": [
+          {
+            "duration": 3.75825973,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditGoalData.feature:36"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I search/filter for a flight with No goal$",
+    "steps": [
+      {
+        "name": "I search/filter for a flight with No goal",
+        "aggregatedDurations": {
+          "average": 3.742306883,
+          "median": 3.742306883
+        },
+        "durations": [
+          {
+            "duration": 4.296039554,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditGoalData.feature:15"
+          },
+          {
+            "duration": 3.188574213,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditGoalData.feature:22"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I have the role: Pro Web Campaigns",
+    "steps": [
+      {
+        "name": "I have the role: Pro Web Campaigns",
+        "aggregatedDurations": {
+          "average": 0.000051199,
+          "median": 0.000051199
+        },
+        "durations": [
+          {
+            "duration": 0.000063146,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditGoalData.feature:6"
+          },
+          {
+            "duration": 0.000039253,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditGoalData.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on \"([^\"]*)\" from home page$",
+    "steps": [
+      {
+        "name": "I click on \"Campaigns\" from home page",
+        "aggregatedDurations": {
+          "average": 3.119376588,
+          "median": 3.119376588
+        },
+        "durations": [
+          {
+            "duration": 3.134277489,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditGoalData.feature:10"
+          },
+          {
+            "duration": 3.104475688,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditGoalData.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^There is an Add icon in the box orange to inform the user action is required$",
+    "steps": [
+      {
+        "name": "There is an Add icon in the box orange to inform the user action is required",
+        "aggregatedDurations": {
+          "average": 0.046835606,
+          "median": 0.046835606
+        },
+        "durations": [
+          {
+            "duration": 0.051155604,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditGoalData.feature:17"
+          },
+          {
+            "duration": 0.042515608,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditGoalData.feature:24"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Select Goal Type, Goal Value and Save$",
+    "steps": [
+      {
+        "name": "Select Goal Type, Goal Value and Save",
+        "aggregatedDurations": {
+          "average": 3.807576402,
+          "median": 3.807576402
+        },
+        "durations": [
+          {
+            "duration": 3.807576402,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditGoalData.feature:29"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Click to edit Goal Type$",
+    "steps": [
+      {
+        "name": "Click to edit Goal Type",
+        "aggregatedDurations": {
+          "average": 1.128581918,
+          "median": 1.128581918
+        },
+        "durations": [
+          {
+            "duration": 1.128581918,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditGoalData.feature:32"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^The box states \u0027Goal Info and Target\u0027$",
+    "steps": [
+      {
+        "name": "The box states \u0027Goal Info and Target\u0027",
+        "aggregatedDurations": {
+          "average": 0.053509524,
+          "median": 0.053509524
+        },
+        "durations": [
+          {
+            "duration": 0.053509524,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditGoalData.feature:18"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I am a Proteus User",
+    "steps": [
+      {
+        "name": "I am a Proteus User",
+        "aggregatedDurations": {
+          "average": 0.004568318,
+          "median": 0.004568318
+        },
+        "durations": [
+          {
+            "duration": 0.007567783,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditGoalData.feature:5"
+          },
+          {
+            "duration": 0.001568853,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditGoalData.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "The main homepage loads successfully",
+    "steps": [
+      {
+        "name": "The main homepage loads successfully",
+        "aggregatedDurations": {
+          "average": 0.045726487,
+          "median": 0.045726487
+        },
+        "durations": [
+          {
+            "duration": 0.049538966,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditGoalData.feature:9"
+          },
+          {
+            "duration": 0.041914009,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditGoalData.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Click on Add \u0027Goal Info and Target\u0027$",
+    "steps": [
+      {
+        "name": "Click on Add \u0027Goal Info and Target\u0027",
+        "aggregatedDurations": {
+          "average": 1.154769,
+          "median": 1.154769
+        },
+        "durations": [
+          {
+            "duration": 1.154769,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditGoalData.feature:25"
+          }
+        ]
+      }
+    ]
+  }
+]

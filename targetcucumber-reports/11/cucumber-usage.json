@@ -1,0 +1,128 @@
+[
+  {
+    "source": "^I click on \"([^\"]*)\" from home page$",
+    "steps": [
+      {
+        "name": "I click on \"Administration\" from home page",
+        "aggregatedDurations": {
+          "average": 3.100453504,
+          "median": 3.100453504
+        },
+        "durations": [
+          {
+            "duration": 3.100453504,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionToEditSeatsStorageConfig.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I go to the Proteus Home URL in my browser",
+    "steps": [
+      {
+        "name": "I go to the Proteus Home URL in my browser",
+        "aggregatedDurations": {
+          "average": 3.990255365,
+          "median": 3.990255365
+        },
+        "durations": [
+          {
+            "duration": 3.990255365,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionToEditSeatsStorageConfig.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Administration page shown correctly$",
+    "steps": [
+      {
+        "name": "Administration page shown correctly",
+        "aggregatedDurations": {
+          "average": 0.128733385,
+          "median": 0.128733385
+        },
+        "durations": [
+          {
+            "duration": 0.128733385,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionToEditSeatsStorageConfig.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Login as \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "Login as \"ADMINISTRATOR\"",
+        "aggregatedDurations": {
+          "average": 4.983567367,
+          "median": 4.983567367
+        },
+        "durations": [
+          {
+            "duration": 4.983567367,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionToEditSeatsStorageConfig.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I have the role: Pro Web Advertiser_Manager_Editor",
+    "steps": [
+      {
+        "name": "I have the role: Pro Web Advertiser_Manager_Editor",
+        "aggregatedDurations": {
+          "average": 0.0000576,
+          "median": 0.0000576
+        },
+        "durations": [
+          {
+            "duration": 0.0000576,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionToEditSeatsStorageConfig.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I am a Proteus User",
+    "steps": [
+      {
+        "name": "I am a Proteus User",
+        "aggregatedDurations": {
+          "average": 0.004231679,
+          "median": 0.004231679
+        },
+        "durations": [
+          {
+            "duration": 0.004231679,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionToEditSeatsStorageConfig.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "The main homepage loads successfully",
+    "steps": [
+      {
+        "name": "The main homepage loads successfully",
+        "aggregatedDurations": {
+          "average": 0.041361049,
+          "median": 0.041361049
+        },
+        "durations": [
+          {
+            "duration": 0.041361049,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionToEditSeatsStorageConfig.feature:9"
+          }
+        ]
+      }
+    ]
+  }
+]

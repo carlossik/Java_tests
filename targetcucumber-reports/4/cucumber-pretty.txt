@@ -1,0 +1,191 @@
+@SearchOnProWeb
+Feature: Ability to search for Flights
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+
+  @SearchOnProWeb
+  Scenario: 01 View Flights - initial load       [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:13[0m
+    [32mThen [0m[32mThe Campaigns page loads successfully[0m   [90m# ProteusWebSteps.ThenTheCampaignsPageLoadsSuccessfully()[0m
+    [32mAnd [0m[32mAll Flights loads which I have access to[0m [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mAnd [0m[32mThere is a section called 'Flights'[0m      [90m# ProteusWebSteps.thereIsASectionCalledFlights()[0m
+    [32mAnd [0m[32mLogOut ProteusWeb from Campaigns page[0m    [90m# ProteusWebSteps.ThenLogOutProteusWebFromCampaignsPage()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+
+  @SearchOnProWeb
+  Scenario: 02 Ability to Search fights by Flight Name or Booking Code [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:20[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m                      [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mAnd [0m[32mI can search by Flight Name or Booking Code[0m                    [90m# ProteusWebSteps.ThenICanSearchByFlightNameOrBookingCode()[0m
+    [32mAnd [0m[32mLogOut ProteusWeb from Campaigns page[0m                          [90m# ProteusWebSteps.ThenLogOutProteusWebFromCampaignsPage()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+
+  @SearchOnProWeb
+  Scenario: 03 Ability to Filter fights by Advertiser or Agency [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:26[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m               [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mAnd [0m[32mFilter dropdown fields exist[0m                            [90m# ProteusWebSteps.ThenFilterDropdownFieldsExist()[0m
+    [32mAnd [0m[32mLogOut ProteusWeb from Campaigns page[0m                   [90m# ProteusWebSteps.ThenLogOutProteusWebFromCampaignsPage()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+
+  @SearchOnProWeb
+  Scenario: 04 Ability to use search and filter combinations [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:33[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m            [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mAnd [0m[32mLogOut ProteusWeb from Campaigns page[0m                [90m# ProteusWebSteps.ThenLogOutProteusWebFromCampaignsPage()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+
+  @SearchOnProWeb
+  Scenario: 05 Apply button is enabled after entering/selecting search and filters [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:38[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m                                  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m                                   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mThen [0m[32mApply button is enabled[0m                                                   [90m# ProteusWebSteps.ThenApplyButtonIsEnabled()[0m
+    [32mAnd [0m[32mLogOut ProteusWeb from Campaigns page[0m                                      [90m# ProteusWebSteps.ThenLogOutProteusWebFromCampaignsPage()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+
+  @SearchOnProWeb
+  Scenario: 06 Clear Filters button is enabled after entering/selecting search and filters [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:45[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m                                          [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m                                           [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mThen [0m[32mClear Filters button is enabled[0m                                                   [90m# ProteusWebSteps.ThenClearFiltersButtonIsEnabled()[0m
+    [32mAnd [0m[32mLogOut ProteusWeb from Campaigns page[0m                                              [90m# ProteusWebSteps.ThenLogOutProteusWebFromCampaignsPage()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+
+  @SearchOnProWeb
+  Scenario: 07 Flights matching Search/Filter Combination loaded as results                        [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:52[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m                                                  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m                                                   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                                                                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+    [32mThen [0m[32mAll Flights matching search/filter combination load as results[0m                            [90m# ProteusWebSteps.ThenAllFlightsMatchingSearchFilterCombinationLoadAsResults()[0m
+    [32mAnd [0m[32mThere is a section called 'Flights'[0m                                                        [90m# ProteusWebSteps.thereIsASectionCalledFlights()[0m
+    [32mAnd [0m[32mEach flight title includes Advertiser, Agency, Flight Names and External Booking Reference[0m [90m# ProteusWebSteps.CheckFlightDetailsShown()[0m
+    [32mThen [0m[32mLogOut ProteusWeb from Campaigns page[0m                                                     [90m# ProteusWebSteps.ThenLogOutProteusWebFromCampaignsPage()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+
+  @SearchOnProWeb
+  Scenario: 08 Goal Type, Goal Value, Optimisation Manager, Budget, Spend information and Flight Dates [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:63[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m                                                      [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m                                                       [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                                                                          [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+    [32mThen [0m[32mAll Flights matching search/filter combination load as results[0m                                [90m# ProteusWebSteps.ThenAllFlightsMatchingSearchFilterCombinationLoadAsResults()[0m
+    [32mAnd [0m[32mGoal Type, Goal Value, Optimisation Manager, Budget, Spend information and Flight Dates[0m        [90m# ProteusWebSteps.goalTypeGoalValueOptimisationManagerBudgetSpendInformationAndFlightDates()[0m
+    #And  The Currency code for the Flight is displayed next to the Budget
+    [32mThen [0m[32mLogOut ProteusWeb from Campaigns page[0m                                                         [90m# ProteusWebSteps.ThenLogOutProteusWebFromCampaignsPage()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+
+  @SearchOnProWeb
+  Scenario: 09 Goal Type, Goal Value, Optimisation Manager are editable [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:73[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m                       [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m                        [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                                           [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+    [32mThen [0m[32mAll Flights matching search/filter combination load as results[0m [90m# ProteusWebSteps.ThenAllFlightsMatchingSearchFilterCombinationLoadAsResults()[0m
+    [32mAnd [0m[32mGoal Type, Goal Value, Optimisation Manager are editable[0m        [90m# ProteusWebSteps.goalTypeGoalValueOptimisationManagerAreEditable()[0m
+    [32mThen [0m[32mLogOut ProteusWeb from Campaigns page[0m                          [90m# ProteusWebSteps.ThenLogOutProteusWebFromCampaignsPage()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+
+  @SearchOnProWeb
+  Scenario: 10 Pagination shown when more than 20 flights displayed     [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:83[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m                       [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m                        [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                                           [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+    [32mThen [0m[32mAll Flights matching search/filter combination load as results[0m [90m# ProteusWebSteps.ThenAllFlightsMatchingSearchFilterCombinationLoadAsResults()[0m
+    # And Pagination shown when more than 20 flights displayed
+    [32mThen [0m[32mLogOut ProteusWeb from Campaigns page[0m                          [90m# ProteusWebSteps.ThenLogOutProteusWebFromCampaignsPage()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+
+  @SearchOnProWeb
+  Scenario: 11 No flights matching your search message shown [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:93[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m            [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a flightName "[0m[32m[1mAAAAAAAAA[0m[32m"[0m        [90m# ProteusWebSteps.iSearchFilterForAFlightName(String)[0m
+    [32mAnd [0m[32mClick on Apply button[0m                                [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+    [32mThen [0m[32mNo flights returned and message displayed[0m           [90m# ProteusWebAdvertiserSteps.noFlightsReturnedAndMessageDisplayed()[0m
+    [32mThen [0m[32mLogOut ProteusWeb from Campaigns page[0m               [90m# ProteusWebSteps.ThenLogOutProteusWebFromCampaignsPage()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+
+  @SearchOnProWeb
+  Scenario: 12 Able to search flights based on Campaign Name                       [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:101[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m                                  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a Campaign "[0m[32m[1mLOCAL BRANDING - GAME/COUNTRY[0m[32m"[0m            [90m# ProteusWebSteps.iSearchFilterForACampaign(String)[0m
+    [32mAnd [0m[32mClick on Apply button[0m                                                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+    [32mThen [0m[32mCampaign details shown for each flight row[0m                                [90m# ProteusWebSteps.campaignDetailsShownForEachFlightRow()[0m
+    [32mAnd [0m[32mAll Flights matching campaign "[0m[32m[1mLOCAL BRANDING - GAME/COUNTRY[0m[32m" are filtered[0m [90m# ProteusWebSteps.allFlightsMatchingCampaignAreFiltered(String)[0m
+    [32mAnd [0m[32mLogOut ProteusWeb from Campaigns page[0m                                      [90m# ProteusWebSteps.ThenLogOutProteusWebFromCampaignsPage()[0m

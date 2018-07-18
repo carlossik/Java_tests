@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="5" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="20" time="880.301847">
+<testcase classname="Creatives for flights and Advertisers" name="01 View Pixels via toolbar icon" time="27.657539">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+Then There is a Pixels Icon on the left hand tool bar.......................passed
+When Click on Pixels icon...................................................passed
+Then Pixels screen opened...................................................passed
+And Pixels are listed.......................................................passed
+And Advertiser Account is labelled as the title of the Page.................passed
+And Change button shown on the pixel page...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Creatives for flights and Advertisers" name="02 Able to change the Advertiser Account on Pixels screen" time="36.122641">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+When Click on Pixels icon...................................................passed
+Then Pixels screen opened...................................................passed
+When Click on Pixel Change button...........................................passed
+Then Option to change pixel advertiser account exist........................passed
+When I change the pixel advertiser and save.................................passed
+Then New advertiser details shown on the pixel page.........................passed
+When Click on Pixel Change button...........................................passed
+And I don't change the pixel advertiser and save............................passed
+Then Advertiser details shown on the pixel page.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Creatives for flights and Advertisers" name="03 Add new icons on left hand tool bar, icon on each flight and tooltip" time="22.495679">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+Then All Flights matching search/filter combination load as results.........passed
+And Pixels option shown on the Campaigns tab................................passed
+And There is an icons for Pixels............................................passed
+And Tooltips shown on mouseover on each Pixels icon.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Creatives for flights and Advertisers" name="04 Able to open pixels tab from flights" time="25.847757">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+Then All Flights matching search/filter combination load as results.........passed
+And Pixels option shown on the Campaigns tab................................passed
+When I click on the pixels icon on flight row...............................passed
+Then Pixels screen opened...................................................passed
+And Pixels are listed for the Advertiser Account of the Flight selected.....passed
+And Flights Advertiser Account is automatically applied on the Advertiser Account.passed
+And Change button shown on the pixel page...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Creatives for flights and Advertisers" name="05 Able to change the Advertiser Account on Pixel screen" time="33.836182">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+When I click on the pixels icon on flight row...............................passed
+Then Pixels screen opened...................................................passed
+When Click on Pixel Change button...........................................passed
+Then Option to change pixel advertiser account exist........................passed
+When I change the pixel advertiser and save.................................passed
+Then New advertiser details shown on the pixel page.........................passed
+When Click on Pixel Change button...........................................passed
+And I don't change the pixel advertiser and save............................passed
+Then Advertiser details shown on the pixel page.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Creatives for flights and Advertisers" name="06 Pixel screen columns for advertiser" time="30.931621">
+<failure message="java.lang.AssertionError: All the expected columns not shown&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at StepDefination.ProteusWebPixelsSteps.theFollowingColumnShownInPixelGrid(ProteusWebPixelsSteps.java:190)&#13;&#10;&#9;at ✽.And The following column shown in pixel grid(C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:74)&#13;&#10;"><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+When I click on the pixels icon on flight row...............................passed
+Then Pixels screen opened...................................................passed
+When I change the pixel advertiser to "QAAutomationAdvertiser 1 GB" and save.passed
+And The following column shown in pixel grid................................failed
+
+StackTrace:
+java.lang.AssertionError: All the expected columns not shown
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at StepDefination.ProteusWebPixelsSteps.theFollowingColumnShownInPixelGrid(ProteusWebPixelsSteps.java:190)
+	at ✽.And The following column shown in pixel grid(C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:74)
+]]></failure>
+</testcase>
+<testcase classname="Creatives for flights and Advertisers" name="07 Missing values for pixels" time="33.199964">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+When I click on the pixels icon on flight row...............................passed
+Then Pixels screen opened...................................................passed
+When I change the pixel advertiser to "QAAutomationAdvertiser 1 GB" and save.passed
+And There is an action icon on the screen indicating the missing values.....passed
+And Tooltips shown on mouseover on each missing icon........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Creatives for flights and Advertisers" name="08  Sort columns" time="85.979756">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//span[text() = 'Platform']&quot;}&#10;  (Session info: chrome=67.0.3396.79)&#10;  (Driver info: chromedriver=2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'&#10;System info: host: 'TELLONLAP106', ip: '192.168.0.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\Users\RAMCHA~1.TEL\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.79, webStorageEnabled: true}&#10;Session ID: 6e81709b5d81f150ed1b230a24c25363&#10;*** Element info: {Using=xpath, value=//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//span[text() = 'Platform']}&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)&#13;&#10;&#9;at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)&#13;&#10;&#9;at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)&#13;&#10;&#9;at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)&#13;&#10;&#9;at PageObjects.ProteusWebPixelsPage.SortPixelGridOn(ProteusWebPixelsPage.java:121)&#13;&#10;&#9;at StepDefination.ProteusWebPixelsSteps.clickedOnTheHeader(ProteusWebPixelsSteps.java:224)&#13;&#10;&#9;at ✽.When Clicked on the header &quot;Platform&quot;(C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:95)&#13;&#10;"><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+When I click on the pixels icon on flight row...............................passed
+Then Pixels screen opened...................................................passed
+When Clicked on the header "Platform".......................................failed
+Then Rows are sorted based on "Platform"....................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//span[text() = 'Platform']"}
+  (Session info: chrome=67.0.3396.79)
+  (Driver info: chromedriver=2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'TELLONLAP106', ip: '192.168.0.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\Users\RAMCHA~1.TEL\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.79, webStorageEnabled: true}
+Session ID: 6e81709b5d81f150ed1b230a24c25363
+*** Element info: {Using=xpath, value=//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//span[text() = 'Platform']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at PageObjects.ProteusWebPixelsPage.SortPixelGridOn(ProteusWebPixelsPage.java:121)
+	at StepDefination.ProteusWebPixelsSteps.clickedOnTheHeader(ProteusWebPixelsSteps.java:224)
+	at ✽.When Clicked on the header "Platform"(C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:95)
+]]></failure>
+</testcase>
+<testcase classname="Creatives for flights and Advertisers" name="08  Sort columns 3" time="85.76927">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//span[text() = 'Pixel Name']&quot;}&#10;  (Session info: chrome=67.0.3396.79)&#10;  (Driver info: chromedriver=2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'&#10;System info: host: 'TELLONLAP106', ip: '192.168.0.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\Users\RAMCHA~1.TEL\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.79, webStorageEnabled: true}&#10;Session ID: f180c79f1ef7d51b6d555827edfba4cc&#10;*** Element info: {Using=xpath, value=//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//span[text() = 'Pixel Name']}&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)&#13;&#10;&#9;at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)&#13;&#10;&#9;at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)&#13;&#10;&#9;at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)&#13;&#10;&#9;at PageObjects.ProteusWebPixelsPage.SortPixelGridOn(ProteusWebPixelsPage.java:121)&#13;&#10;&#9;at StepDefination.ProteusWebPixelsSteps.clickedOnTheHeader(ProteusWebPixelsSteps.java:224)&#13;&#10;&#9;at ✽.When Clicked on the header &quot;Pixel Name&quot;(C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:95)&#13;&#10;"><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+When I click on the pixels icon on flight row...............................passed
+Then Pixels screen opened...................................................passed
+When Clicked on the header "Pixel Name".....................................failed
+Then Rows are sorted based on "Pixel Name"..................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//span[text() = 'Pixel Name']"}
+  (Session info: chrome=67.0.3396.79)
+  (Driver info: chromedriver=2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'TELLONLAP106', ip: '192.168.0.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\Users\RAMCHA~1.TEL\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.79, webStorageEnabled: true}
+Session ID: f180c79f1ef7d51b6d555827edfba4cc
+*** Element info: {Using=xpath, value=//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//span[text() = 'Pixel Name']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at PageObjects.ProteusWebPixelsPage.SortPixelGridOn(ProteusWebPixelsPage.java:121)
+	at StepDefination.ProteusWebPixelsSteps.clickedOnTheHeader(ProteusWebPixelsSteps.java:224)
+	at ✽.When Clicked on the header "Pixel Name"(C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:95)
+]]></failure>
+</testcase>
+<testcase classname="Creatives for flights and Advertisers" name="08  Sort columns 5" time="85.762846">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//span[text() = 'External ID']&quot;}&#10;  (Session info: chrome=67.0.3396.79)&#10;  (Driver info: chromedriver=2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'&#10;System info: host: 'TELLONLAP106', ip: '192.168.0.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\Users\RAMCHA~1.TEL\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.79, webStorageEnabled: true}&#10;Session ID: 3a1bdb9b50eff2164accb851f91f3f04&#10;*** Element info: {Using=xpath, value=//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//span[text() = 'External ID']}&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)&#13;&#10;&#9;at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)&#13;&#10;&#9;at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)&#13;&#10;&#9;at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)&#13;&#10;&#9;at PageObjects.ProteusWebPixelsPage.SortPixelGridOn(ProteusWebPixelsPage.java:121)&#13;&#10;&#9;at StepDefination.ProteusWebPixelsSteps.clickedOnTheHeader(ProteusWebPixelsSteps.java:224)&#13;&#10;&#9;at ✽.When Clicked on the header &quot;External ID&quot;(C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:95)&#13;&#10;"><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+When I click on the pixels icon on flight row...............................passed
+Then Pixels screen opened...................................................passed
+When Clicked on the header "External ID"....................................failed
+Then Rows are sorted based on "External ID".................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//span[text() = 'External ID']"}
+  (Session info: chrome=67.0.3396.79)
+  (Driver info: chromedriver=2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'TELLONLAP106', ip: '192.168.0.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\Users\RAMCHA~1.TEL\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.79, webStorageEnabled: true}
+Session ID: 3a1bdb9b50eff2164accb851f91f3f04
+*** Element info: {Using=xpath, value=//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//span[text() = 'External ID']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at PageObjects.ProteusWebPixelsPage.SortPixelGridOn(ProteusWebPixelsPage.java:121)
+	at StepDefination.ProteusWebPixelsSteps.clickedOnTheHeader(ProteusWebPixelsSteps.java:224)
+	at ✽.When Clicked on the header "External ID"(C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:95)
+]]></failure>
+</testcase>
+<testcase classname="Creatives for flights and Advertisers" name="08  Sort columns 7" time="86.521223">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//span[text() = 'Category']&quot;}&#10;  (Session info: chrome=67.0.3396.79)&#10;  (Driver info: chromedriver=2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'&#10;System info: host: 'TELLONLAP106', ip: '192.168.0.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\Users\RAMCHA~1.TEL\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.79, webStorageEnabled: true}&#10;Session ID: 5d7adb1f42ee03a9968cb86b437018e2&#10;*** Element info: {Using=xpath, value=//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//span[text() = 'Category']}&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)&#13;&#10;&#9;at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)&#13;&#10;&#9;at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)&#13;&#10;&#9;at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)&#13;&#10;&#9;at PageObjects.ProteusWebPixelsPage.SortPixelGridOn(ProteusWebPixelsPage.java:121)&#13;&#10;&#9;at StepDefination.ProteusWebPixelsSteps.clickedOnTheHeader(ProteusWebPixelsSteps.java:224)&#13;&#10;&#9;at ✽.When Clicked on the header &quot;Category&quot;(C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:95)&#13;&#10;"><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+When I click on the pixels icon on flight row...............................passed
+Then Pixels screen opened...................................................passed
+When Clicked on the header "Category".......................................failed
+Then Rows are sorted based on "Category"....................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//span[text() = 'Category']"}
+  (Session info: chrome=67.0.3396.79)
+  (Driver info: chromedriver=2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'TELLONLAP106', ip: '192.168.0.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\Users\RAMCHA~1.TEL\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.79, webStorageEnabled: true}
+Session ID: 5d7adb1f42ee03a9968cb86b437018e2
+*** Element info: {Using=xpath, value=//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//span[text() = 'Category']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at PageObjects.ProteusWebPixelsPage.SortPixelGridOn(ProteusWebPixelsPage.java:121)
+	at StepDefination.ProteusWebPixelsSteps.clickedOnTheHeader(ProteusWebPixelsSteps.java:224)
+	at ✽.When Clicked on the header "Category"(C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:95)
+]]></failure>
+</testcase>
+<testcase classname="Creatives for flights and Advertisers" name="08  Sort columns 9" time="30.455278">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+When I click on the pixels icon on flight row...............................passed
+Then Pixels screen opened...................................................passed
+When Clicked on the header "Type"...........................................passed
+Then Rows are sorted based on "Type"........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Creatives for flights and Advertisers" name="09 Pagination on screen when pixels list loads" time="27.310755">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+When I click on the pixels icon on flight row...............................passed
+Then the Pixels list of results is defaulted to 'Missing Classification'....passed
+And Dropdown to filter based on Platforms exist and defaulted to ALL........passed
+And Pixels screen opened....................................................passed
+And Pagination shown at the bottom of the page..............................passed
+And Option to enter search key exist........................................passed
+When I entered search key...................................................passed
+Then Clear Filters button enabled...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Creatives for flights and Advertisers" name="10 Search for the pixels" time="27.269686">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+When I click on the pixels icon on flight row...............................passed
+Then Pixels screen opened...................................................passed
+When Enter a search key "Autogen"and click on Apply.........................passed
+Then Pixels filtered based on the "Autogen".................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Creatives for flights and Advertisers" name="10 Search for the pixels 3" time="27.17879">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+When I click on the pixels icon on flight row...............................passed
+Then Pixels screen opened...................................................passed
+When Enter a search key "837828"and click on Apply..........................passed
+Then Pixels filtered based on the "837828"..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Creatives for flights and Advertisers" name="10 Search for the pixels 5" time="27.044673">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+When I click on the pixels icon on flight row...............................passed
+Then Pixels screen opened...................................................passed
+When Enter a search key "g4zbkad"and click on Apply.........................passed
+Then Pixels filtered based on the "g4zbkad".................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Creatives for flights and Advertisers" name="11 Bulk Edit - read only and editable columns" time="29.742337">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+When I click on the pixels icon on flight row...............................passed
+Then Pixels screen opened...................................................passed
+And Pixel bulk edit button shown on pixel tab...............................passed
+And Tooltips shown on mouseover on Bulk edit button.........................passed
+When Click on pixel bulk edit...............................................passed
+Then Pixel grid changed to editable state...................................passed
+And Save button shown and is disabled.......................................passed
+And Cancel button shown and is enabled......................................passed
+And Editable columns shown on pixel grid....................................passed
+And ReadOnly columns shown on pixel grid....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Creatives for flights and Advertisers" name="12 Ability to edit and save pixel classification" time="31.811734">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+When I click on the pixels icon on flight row...............................passed
+Then Pixels screen opened...................................................passed
+When Click on pixel bulk edit...............................................passed
+Then Dropdown list with categories, Hard and Soft...........................passed
+And Dropdown list with Types: Homepage, Confirmation Page, Landing Page.....passed
+When Bulk edit Category and Type............................................passed
+Then Save button Enabled....................................................passed
+When Click on Save..........................................................passed
+Then Pixel details saved....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Creatives for flights and Advertisers" name="13 Missing values for pixels" time="92.198842">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+When I click on the pixels icon on flight row...............................passed
+And I change the pixel advertiser to "QAAutomationAdvertiser 1 GB" and save.passed
+Then Pixels screen opened...................................................passed
+When I click on the add icon................................................passed
+Then Dropdown list with categories, Hard and Soft...........................passed
+And Dropdown list with Types: Homepage, Confirmation Page, Landing Page.....passed
+]]></system-out>
+</testcase>
+<testcase classname="Creatives for flights and Advertisers" name="14 Deeplink Pixel Name" time="33.165274">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+When I click on the pixels icon on flight row...............................passed
+And I change the pixel advertiser to "TestBrand GB" and save................passed
+Then Pixels screen opened...................................................passed
+And The Pixels Name is a deeplink...........................................passed
+When Click on the Pixel Name................................................passed
+Then DSP tab opened in the browser for the Advertiser.......................passed
+]]></system-out>
+</testcase>
+</testsuite>

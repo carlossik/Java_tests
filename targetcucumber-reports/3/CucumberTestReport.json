@@ -1,0 +1,257 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5242025,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 433493,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4075025461,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5036682651,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 47487980,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3113657125,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on \"Campaigns\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Campaigns",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 273397643,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "All Flights loads which I have access to",
+            "match": {
+              "location": "ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 499637974,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "01 Add/Edit Optimisation Manager details to flight",
+        "description": "",
+        "id": "ability-to-add/edit-optimisation-manager;01-add/edit-optimisation-manager-details-to-flight",
+        "after": [
+          {
+            "result": {
+              "duration": 1591017988,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3147999083,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I search/filter for a flight with no Optimisation Manager",
+            "match": {
+              "location": "ProteusWebSteps.iSearchFilterForAFlightWithNoOptimisationManager()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3239912857,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Click on Apply button",
+            "match": {
+              "location": "ProteusWebSteps.WhenClickOnApplyButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 61375121,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "The box states \u0027Unknown User\u0027",
+            "match": {
+              "location": "ProteusWebSteps.theBoxStatesUnknownUser()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 49000939,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Option to edit Optimisation Manager exist",
+            "match": {
+              "location": "ProteusWebSteps.optionToEditOptimisationManagerExist()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3651483882,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Select one of Optimisation Manager and Save",
+            "match": {
+              "location": "ProteusWebSteps.selectOneOfOptimisationManagerAndSave()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7128456052,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Optimisation Manager saved",
+            "match": {
+              "location": "ProteusWebSteps.optimisationManagerSaved()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3636299249,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Edit Optimisation Manager and Save",
+            "match": {
+              "location": "ProteusWebSteps.editOptimisationManagerAndSave()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7091631748,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Edited Optimisation Manager saved",
+            "match": {
+              "location": "ProteusWebSteps.editedOptimisationManagerSaved()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@EditOptimisationManager"
+          }
+        ]
+      }
+    ],
+    "name": "Ability to add/edit Optimisation Manager",
+    "description": "",
+    "id": "ability-to-add/edit-optimisation-manager",
+    "keyword": "Feature",
+    "uri": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditOptimisationManager.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@EditOptimisationManager"
+      }
+    ]
+  }
+]

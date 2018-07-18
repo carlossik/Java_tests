@@ -1,0 +1,1045 @@
+[
+  {
+    "source": "All Flights matching search/filter combination load as results",
+    "steps": [
+      {
+        "name": "All Flights matching search/filter combination load as results",
+        "aggregatedDurations": {
+          "average": 0.019527245,
+          "median": 0.019527245
+        },
+        "durations": [
+          {
+            "duration": 0.020572152,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:17"
+          },
+          {
+            "duration": 0.018482339,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:24"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Option to change advertiser account exist$",
+    "steps": [
+      {
+        "name": "Option to change advertiser account exist",
+        "aggregatedDurations": {
+          "average": 2.09466364,
+          "median": 2.09466364
+        },
+        "durations": [
+          {
+            "duration": 2.09466364,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:37"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Click on Change button$",
+    "steps": [
+      {
+        "name": "Click on Change button",
+        "aggregatedDurations": {
+          "average": 1.297534167,
+          "median": 1.297534167
+        },
+        "durations": [
+          {
+            "duration": 1.297534167,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:36"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I go to the Proteus Home URL in my browser",
+    "steps": [
+      {
+        "name": "I go to the Proteus Home URL in my browser",
+        "aggregatedDurations": {
+          "average": 4.088818266,
+          "median": 4.069732877
+        },
+        "durations": [
+          {
+            "duration": 4.127441865,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:7"
+          },
+          {
+            "duration": 4.003003732,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:7"
+          },
+          {
+            "duration": 4.010161489,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:7"
+          },
+          {
+            "duration": 4.135157276,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:7"
+          },
+          {
+            "duration": 4.067478158,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:7"
+          },
+          {
+            "duration": 4.099496917,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:7"
+          },
+          {
+            "duration": 4.378617438,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:7"
+          },
+          {
+            "duration": 3.993955416,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:7"
+          },
+          {
+            "duration": 4.000882773,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:7"
+          },
+          {
+            "duration": 4.071987596,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Click on Apply button",
+    "steps": [
+      {
+        "name": "Click on Apply button",
+        "aggregatedDurations": {
+          "average": 3.212274512,
+          "median": 3.210615163
+        },
+        "durations": [
+          {
+            "duration": 3.205576872,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:13"
+          },
+          {
+            "duration": 3.21877196,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:13"
+          },
+          {
+            "duration": 3.201436074,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:13"
+          },
+          {
+            "duration": 3.205846952,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:13"
+          },
+          {
+            "duration": 3.216741028,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:13"
+          },
+          {
+            "duration": 3.206755325,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:13"
+          },
+          {
+            "duration": 3.213248336,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:13"
+          },
+          {
+            "duration": 3.230216862,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:13"
+          },
+          {
+            "duration": 3.207981991,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:13"
+          },
+          {
+            "duration": 3.216169721,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^There is a tag icon on the right hand side of the creative row$",
+    "steps": [
+      {
+        "name": "There is a tag icon on the right hand side of the creative row",
+        "aggregatedDurations": {
+          "average": 0.183928241,
+          "median": 0.183928241
+        },
+        "durations": [
+          {
+            "duration": 0.183928241,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:45"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^The Creative Name is a deeplink$",
+    "steps": [
+      {
+        "name": "The Creative Name is a deeplink",
+        "aggregatedDurations": {
+          "average": 0.074405515,
+          "median": 0.074405515
+        },
+        "durations": [
+          {
+            "duration": 0.074405515,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:104"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Click on the Creative Name$",
+    "steps": [
+      {
+        "name": "Click on the Creative Name",
+        "aggregatedDurations": {
+          "average": 1.120170616,
+          "median": 1.120170616
+        },
+        "durations": [
+          {
+            "duration": 1.120170616,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:105"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Tooltips shown on mouseover on each Creatives icon$",
+    "steps": [
+      {
+        "name": "Tooltips shown on mouseover on each Creatives icon",
+        "aggregatedDurations": {
+          "average": 2.108901927,
+          "median": 2.108901927
+        },
+        "durations": [
+          {
+            "duration": 2.108901927,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:20"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Click on the tag icon$",
+    "steps": [
+      {
+        "name": "Click on the tag icon",
+        "aggregatedDurations": {
+          "average": 2.104866089,
+          "median": 2.104866089
+        },
+        "durations": [
+          {
+            "duration": 2.104866089,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:47"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I change the advertiser and save$",
+    "steps": [
+      {
+        "name": "I change the advertiser and save",
+        "aggregatedDurations": {
+          "average": 1.370832908,
+          "median": 1.370832908
+        },
+        "durations": [
+          {
+            "duration": 1.370832908,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:38"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I change the advertiser \"([^\"]*)\" and save$",
+    "steps": [
+      {
+        "name": "I change the advertiser \"TestBrand GB\" and save",
+        "aggregatedDurations": {
+          "average": 5.01401898,
+          "median": 5.01401898
+        },
+        "durations": [
+          {
+            "duration": 4.884958769,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:62"
+          },
+          {
+            "duration": 5.143079192,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:102"
+          }
+        ]
+      },
+      {
+        "name": "I change the advertiser \"TRAVEL - LUXURY\" and save",
+        "aggregatedDurations": {
+          "average": 5.078821513,
+          "median": 5.078821513
+        },
+        "durations": [
+          {
+            "duration": 5.078821513,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:81"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on the creatives add icon$",
+    "steps": [
+      {
+        "name": "I click on the creatives add icon",
+        "aggregatedDurations": {
+          "average": 1.442935277,
+          "median": 1.442935277
+        },
+        "durations": [
+          {
+            "duration": 1.442935277,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:83"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "All Flights loads which I have access to",
+    "steps": [
+      {
+        "name": "All Flights loads which I have access to",
+        "aggregatedDurations": {
+          "average": 0.229387848,
+          "median": 0.197685889
+        },
+        "durations": [
+          {
+            "duration": 0.201808127,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:11"
+          },
+          {
+            "duration": 0.190119173,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:11"
+          },
+          {
+            "duration": 0.200279381,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:11"
+          },
+          {
+            "duration": 0.195092397,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:11"
+          },
+          {
+            "duration": 0.211513083,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:11"
+          },
+          {
+            "duration": 0.180334856,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:11"
+          },
+          {
+            "duration": 0.3113428,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:11"
+          },
+          {
+            "duration": 0.417189368,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:11"
+          },
+          {
+            "duration": 0.19410765,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:11"
+          },
+          {
+            "duration": 0.192091652,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Creatives screen opened$",
+    "steps": [
+      {
+        "name": "Creatives screen opened",
+        "aggregatedDurations": {
+          "average": 0.351628413,
+          "median": 0.363231845
+        },
+        "durations": [
+          {
+            "duration": 0.372737974,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:27"
+          },
+          {
+            "duration": 0.317240612,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:35"
+          },
+          {
+            "duration": 0.361890833,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:44"
+          },
+          {
+            "duration": 0.463759162,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:55"
+          },
+          {
+            "duration": 0.363231845,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:61"
+          },
+          {
+            "duration": 0.366627684,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:68"
+          },
+          {
+            "duration": 0.222485239,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:82"
+          },
+          {
+            "duration": 0.478030303,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:90"
+          },
+          {
+            "duration": 0.218652067,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:103"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on the creatives icon on flight row$",
+    "steps": [
+      {
+        "name": "I click on the creatives icon on flight row",
+        "aggregatedDurations": {
+          "average": 1.152063887,
+          "median": 1.147791297
+        },
+        "durations": [
+          {
+            "duration": 1.166078222,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:26"
+          },
+          {
+            "duration": 1.156156094,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:34"
+          },
+          {
+            "duration": 1.143461486,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:43"
+          },
+          {
+            "duration": 1.161432678,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:54"
+          },
+          {
+            "duration": 1.144060525,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:60"
+          },
+          {
+            "duration": 1.14752975,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:67"
+          },
+          {
+            "duration": 1.158524946,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:80"
+          },
+          {
+            "duration": 1.143539992,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:89"
+          },
+          {
+            "duration": 1.147791297,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:101"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^DSP tab opened in the browser for the Advertiser$",
+    "steps": [
+      {
+        "name": "DSP tab opened in the browser for the Advertiser",
+        "aggregatedDurations": {
+          "average": 1.652667882,
+          "median": 1.652667882
+        },
+        "durations": [
+          {
+            "duration": 1.652667882,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:106"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Flights Advertiser Account is automatically applied on the Advertiser Account Name$",
+    "steps": [
+      {
+        "name": "Flights Advertiser Account is automatically applied on the Advertiser Account Name",
+        "aggregatedDurations": {
+          "average": 0.063335226,
+          "median": 0.063335226
+        },
+        "durations": [
+          {
+            "duration": 0.063335226,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:29"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Login as \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "Login as \"ADMINISTRATOR\"",
+        "aggregatedDurations": {
+          "average": 5.067517624,
+          "median": 5.00709909
+        },
+        "durations": [
+          {
+            "duration": 4.982081288,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:8"
+          },
+          {
+            "duration": 5.005967358,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:8"
+          },
+          {
+            "duration": 5.008230823,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:8"
+          },
+          {
+            "duration": 4.981527048,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:8"
+          },
+          {
+            "duration": 5.212045989,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:8"
+          },
+          {
+            "duration": 4.97722369,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:8"
+          },
+          {
+            "duration": 5.474542304,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:8"
+          },
+          {
+            "duration": 4.993631149,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:8"
+          },
+          {
+            "duration": 5.017314979,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:8"
+          },
+          {
+            "duration": 5.022611617,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Tooltips shown on mouseover on tag icon \u0027View creative tag and image\u0027$",
+    "steps": [
+      {
+        "name": "Tooltips shown on mouseover on tag icon \u0027View creative tag and image\u0027",
+        "aggregatedDurations": {
+          "average": 2.132355784,
+          "median": 2.132355784
+        },
+        "durations": [
+          {
+            "duration": 2.132355784,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:46"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I search/filter for a particular result",
+    "steps": [
+      {
+        "name": "I search/filter for a particular result",
+        "aggregatedDurations": {
+          "average": 2.739113327,
+          "median": 2.717148281
+        },
+        "durations": [
+          {
+            "duration": 2.708740817,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:12"
+          },
+          {
+            "duration": 2.740857284,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:12"
+          },
+          {
+            "duration": 2.715512442,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:12"
+          },
+          {
+            "duration": 2.71878412,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:12"
+          },
+          {
+            "duration": 2.73353782,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:12"
+          },
+          {
+            "duration": 2.71104183,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:12"
+          },
+          {
+            "duration": 2.836822256,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:12"
+          },
+          {
+            "duration": 2.818057037,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:12"
+          },
+          {
+            "duration": 2.701106048,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:12"
+          },
+          {
+            "duration": 2.706673618,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^There is an icons for Creatives$",
+    "steps": [
+      {
+        "name": "There is an icons for Creatives",
+        "aggregatedDurations": {
+          "average": 0.026798922,
+          "median": 0.026798922
+        },
+        "durations": [
+          {
+            "duration": 0.026798922,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Change button shown on the creative page$",
+    "steps": [
+      {
+        "name": "Change button shown on the creative page",
+        "aggregatedDurations": {
+          "average": 0.05402835,
+          "median": 0.05402835
+        },
+        "durations": [
+          {
+            "duration": 0.05402835,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:30"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^The following column for advertiser without ad server mapped$",
+    "steps": [
+      {
+        "name": "The following column for advertiser without ad server mapped",
+        "aggregatedDurations": {
+          "average": 0.442765891,
+          "median": 0.442765891
+        },
+        "durations": [
+          {
+            "duration": 0.442765891,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:63"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I have the role: Pro Web Campaigns",
+    "steps": [
+      {
+        "name": "I have the role: Pro Web Campaigns",
+        "aggregatedDurations": {
+          "average": 0.000038954,
+          "median": 0.00003264
+        },
+        "durations": [
+          {
+            "duration": 0.00003968,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:6"
+          },
+          {
+            "duration": 0.000034134,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:6"
+          },
+          {
+            "duration": 0.000029013,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:6"
+          },
+          {
+            "duration": 0.000048214,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:6"
+          },
+          {
+            "duration": 0.000084907,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:6"
+          },
+          {
+            "duration": 0.00003072,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:6"
+          },
+          {
+            "duration": 0.00003584,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:6"
+          },
+          {
+            "duration": 0.0000256,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:6"
+          },
+          {
+            "duration": 0.000030293,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:6"
+          },
+          {
+            "duration": 0.000031146,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on \"([^\"]*)\" from home page$",
+    "steps": [
+      {
+        "name": "I click on \"Campaigns\" from home page",
+        "aggregatedDurations": {
+          "average": 3.10511364,
+          "median": 3.105709181
+        },
+        "durations": [
+          {
+            "duration": 3.103870249,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:10"
+          },
+          {
+            "duration": 3.102545876,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:10"
+          },
+          {
+            "duration": 3.105819688,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:10"
+          },
+          {
+            "duration": 3.105598675,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:10"
+          },
+          {
+            "duration": 3.09469948,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:10"
+          },
+          {
+            "duration": 3.103592489,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:10"
+          },
+          {
+            "duration": 3.107573714,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:10"
+          },
+          {
+            "duration": 3.10980902,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:10"
+          },
+          {
+            "duration": 3.109818406,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:10"
+          },
+          {
+            "duration": 3.107808808,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Creatives are listed for the Advertiser Account of the Flight selected$",
+    "steps": [
+      {
+        "name": "Creatives are listed for the Advertiser Account of the Flight selected",
+        "aggregatedDurations": {
+          "average": 0.21715148,
+          "median": 0.21715148
+        },
+        "durations": [
+          {
+            "duration": 0.21715148,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:28"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^New advertiser details shown on the creatives page$",
+    "steps": [
+      {
+        "name": "New advertiser details shown on the creatives page",
+        "aggregatedDurations": {
+          "average": 0.231688861,
+          "median": 0.231688861
+        },
+        "durations": [
+          {
+            "duration": 0.231688861,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:39"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Creatives option shown on the Campaigns tab$",
+    "steps": [
+      {
+        "name": "Creatives option shown on the Campaigns tab",
+        "aggregatedDurations": {
+          "average": 0.048588566,
+          "median": 0.048588566
+        },
+        "durations": [
+          {
+            "duration": 0.047266967,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:18"
+          },
+          {
+            "duration": 0.049910165,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:25"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Unable to edit the creative tag script$",
+    "steps": [
+      {
+        "name": "Unable to edit the creative tag script",
+        "aggregatedDurations": {
+          "average": 0.018417059,
+          "median": 0.018417059
+        },
+        "durations": [
+          {
+            "duration": 0.018417059,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:50"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Able to copy the creative tag script$",
+    "steps": [
+      {
+        "name": "Able to copy the creative tag script",
+        "aggregatedDurations": {
+          "average": 0.016987727,
+          "median": 0.016987727
+        },
+        "durations": [
+          {
+            "duration": 0.016987727,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:49"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I am a Proteus User",
+    "steps": [
+      {
+        "name": "I am a Proteus User",
+        "aggregatedDurations": {
+          "average": 0.001127167,
+          "median": 0.000847359
+        },
+        "durations": [
+          {
+            "duration": 0.003620692,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:5"
+          },
+          {
+            "duration": 0.000835839,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:5"
+          },
+          {
+            "duration": 0.000873387,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:5"
+          },
+          {
+            "duration": 0.000925013,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:5"
+          },
+          {
+            "duration": 0.000842239,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:5"
+          },
+          {
+            "duration": 0.000931413,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:5"
+          },
+          {
+            "duration": 0.00085248,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:5"
+          },
+          {
+            "duration": 0.000788053,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:5"
+          },
+          {
+            "duration": 0.00080896,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:5"
+          },
+          {
+            "duration": 0.0007936,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "The main homepage loads successfully",
+    "steps": [
+      {
+        "name": "The main homepage loads successfully",
+        "aggregatedDurations": {
+          "average": 0.044922946,
+          "median": 0.043322008
+        },
+        "durations": [
+          {
+            "duration": 0.043381315,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:9"
+          },
+          {
+            "duration": 0.041948569,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:9"
+          },
+          {
+            "duration": 0.055593363,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:9"
+          },
+          {
+            "duration": 0.043244781,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:9"
+          },
+          {
+            "duration": 0.049361472,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:9"
+          },
+          {
+            "duration": 0.043262702,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:9"
+          },
+          {
+            "duration": 0.043513155,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:9"
+          },
+          {
+            "duration": 0.042106862,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:9"
+          },
+          {
+            "duration": 0.045353794,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:9"
+          },
+          {
+            "duration": 0.041463449,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^The following column for advertiser with ad server mapped$",
+    "steps": [
+      {
+        "name": "The following column for advertiser with ad server mapped",
+        "aggregatedDurations": {
+          "average": 0.355961022,
+          "median": 0.355961022
+        },
+        "durations": [
+          {
+            "duration": 0.355961022,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:56"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Pop up shown with the creative name and options$",
+    "steps": [
+      {
+        "name": "Pop up shown with the creative name and options",
+        "aggregatedDurations": {
+          "average": 0.145811991,
+          "median": 0.145811991
+        },
+        "durations": [
+          {
+            "duration": 0.145811991,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:48"
+          }
+        ]
+      }
+    ]
+  }
+]

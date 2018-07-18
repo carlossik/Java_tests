@@ -1,0 +1,550 @@
+@Pixels
+Feature: Creatives for flights and Advertisers
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @Pixels
+  Scenario: 01 View Pixels via toolbar icon                     [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:16[0m
+    [32mThen [0m[32mThere is a Pixels Icon on the left hand tool bar[0m       [90m# ProteusWebPixelsSteps.thereIsAPixelsIconOnTheLeftHandToolBar()[0m
+    [32mWhen [0m[32mClick on Pixels icon[0m                                   [90m# ProteusWebPixelsSteps.clickOnPixelsIcon()[0m
+    [32mThen [0m[32mPixels screen opened[0m                                   [90m# ProteusWebPixelsSteps.creativesScreenOpened()[0m
+    [32mAnd [0m[32mPixels are listed[0m                                       [90m# ProteusWebPixelsSteps.pixelsAreListed()[0m
+    [32mAnd [0m[32mAdvertiser Account is labelled as the title of the Page[0m [90m# ProteusWebPixelsSteps.flightsAdvertiserAccountShown()[0m
+    [32mAnd [0m[32mChange button shown on the pixel page[0m                   [90m# ProteusWebPixelsSteps.changeButtonShownOnThePixelPage()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @Pixels
+  Scenario: 02 Able to change the Advertiser Account on Pixels screen [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:26[0m
+    [32mWhen [0m[32mClick on Pixels icon[0m                                         [90m# ProteusWebPixelsSteps.clickOnPixelsIcon()[0m
+    [32mThen [0m[32mPixels screen opened[0m                                         [90m# ProteusWebPixelsSteps.creativesScreenOpened()[0m
+    [32mWhen [0m[32mClick on Pixel Change button[0m                                 [90m# ProteusWebPixelsSteps.clickOnPixelChangeButton()[0m
+    [32mThen [0m[32mOption to change pixel advertiser account exist[0m              [90m# ProteusWebPixelsSteps.optionToChangePixelAdvertiserAccountExist()[0m
+    [32mWhen [0m[32mI change the pixel advertiser and save[0m                       [90m# ProteusWebPixelsSteps.iChangeThePixelAdvertiserAndSave()[0m
+    [32mThen [0m[32mNew advertiser details shown on the pixel page[0m               [90m# ProteusWebPixelsSteps.newAdvertiserDetailsShownOnThePixelPage()[0m
+    [32mWhen [0m[32mClick on Pixel Change button[0m                                 [90m# ProteusWebPixelsSteps.clickOnPixelChangeButton()[0m
+    [32mAnd [0m[32mI don't change the pixel advertiser and save[0m                  [90m# ProteusWebPixelsSteps.iDonTChangeThePixelAdvertiserAndSave()[0m
+    [32mThen [0m[32mAdvertiser details shown on the pixel page[0m                   [90m# ProteusWebPixelsSteps.advertiserDetailsShownOnThePixelPage()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @Pixels
+  Scenario: 03 Add new icons on left hand tool bar, icon on each flight and tooltip [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:39[0m
+    [32mThen [0m[32mAll Flights matching search/filter combination load as results[0m             [90m# ProteusWebSteps.ThenAllFlightsMatchingSearchFilterCombinationLoadAsResults()[0m
+    [32mAnd [0m[32mPixels option shown on the Campaigns tab[0m                                    [90m# ProteusWebSteps.pixelsOptionShownOnTheCampaignsTab()[0m
+    [32mAnd [0m[32mThere is an icons for Pixels[0m                                                [90m# ProteusWebPixelsSteps.thereIsAnIconsForPixels()[0m
+    [32mAnd [0m[32mTooltips shown on mouseover on each Pixels icon[0m                             [90m# ProteusWebPixelsSteps.tooltipsShownOnMouseoverOnEachPixelsIcon()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @Pixels
+  Scenario: 04 Able to open pixels tab from flights                                   [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:46[0m
+    [32mThen [0m[32mAll Flights matching search/filter combination load as results[0m               [90m# ProteusWebSteps.ThenAllFlightsMatchingSearchFilterCombinationLoadAsResults()[0m
+    [32mAnd [0m[32mPixels option shown on the Campaigns tab[0m                                      [90m# ProteusWebSteps.pixelsOptionShownOnTheCampaignsTab()[0m
+    [32mWhen [0m[32mI click on the pixels icon on flight row[0m                                     [90m# ProteusWebPixelsSteps.iClickOnThePixelsIconOnFlightRow()[0m
+    [32mThen [0m[32mPixels screen opened[0m                                                         [90m# ProteusWebPixelsSteps.creativesScreenOpened()[0m
+    [32mAnd [0m[32mPixels are listed for the Advertiser Account of the Flight selected[0m           [90m# ProteusWebPixelsSteps.pixelsAreListedForTheAdvertiserAccountOfTheFlightSelected()[0m
+    [32mAnd [0m[32mFlights Advertiser Account is automatically applied on the Advertiser Account[0m [90m# ProteusWebPixelsSteps.flightsAdvertiserAccountIsAutomaticallyAppliedOnTheAdvertiserAccount()[0m
+    [32mAnd [0m[32mChange button shown on the pixel page[0m                                         [90m# ProteusWebPixelsSteps.changeButtonShownOnThePixelPage()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @Pixels
+  Scenario: 05 Able to change the Advertiser Account on Pixel screen [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:57[0m
+    [32mWhen [0m[32mI click on the pixels icon on flight row[0m                    [90m# ProteusWebPixelsSteps.iClickOnThePixelsIconOnFlightRow()[0m
+    [32mThen [0m[32mPixels screen opened[0m                                        [90m# ProteusWebPixelsSteps.creativesScreenOpened()[0m
+    [32mWhen [0m[32mClick on Pixel Change button[0m                                [90m# ProteusWebPixelsSteps.clickOnPixelChangeButton()[0m
+    [32mThen [0m[32mOption to change pixel advertiser account exist[0m             [90m# ProteusWebPixelsSteps.optionToChangePixelAdvertiserAccountExist()[0m
+    [32mWhen [0m[32mI change the pixel advertiser and save[0m                      [90m# ProteusWebPixelsSteps.iChangeThePixelAdvertiserAndSave()[0m
+    [32mThen [0m[32mNew advertiser details shown on the pixel page[0m              [90m# ProteusWebPixelsSteps.newAdvertiserDetailsShownOnThePixelPage()[0m
+    [32mWhen [0m[32mClick on Pixel Change button[0m                                [90m# ProteusWebPixelsSteps.clickOnPixelChangeButton()[0m
+    [32mAnd [0m[32mI don't change the pixel advertiser and save[0m                 [90m# ProteusWebPixelsSteps.iDonTChangeThePixelAdvertiserAndSave()[0m
+    [32mThen [0m[32mAdvertiser details shown on the pixel page[0m                  [90m# ProteusWebPixelsSteps.advertiserDetailsShownOnThePixelPage()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @Pixels
+  Scenario: 06 Pixel screen columns for advertiser                               [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:70[0m
+    [32mWhen [0m[32mI click on the pixels icon on flight row[0m                                [90m# ProteusWebPixelsSteps.iClickOnThePixelsIconOnFlightRow()[0m
+    [32mThen [0m[32mPixels screen opened[0m                                                    [90m# ProteusWebPixelsSteps.creativesScreenOpened()[0m
+    [32mWhen [0m[32mI change the pixel advertiser to "[0m[32m[1mQAAutomationAdvertiser 1 GB[0m[32m" and save[0m [90m# ProteusWebPixelsSteps.iChangeThePixelAdvertiserToAndSave(String)[0m
+    [31mAnd [0m[31mThe following column shown in pixel grid[0m                                 [90m# ProteusWebPixelsSteps.theFollowingColumnShownInPixelGrid()[0m
+      [31mjava.lang.AssertionError: All the expected columns not shown
+      	at org.junit.Assert.fail(Assert.java:88)
+      	at org.junit.Assert.assertTrue(Assert.java:41)
+      	at StepDefination.ProteusWebPixelsSteps.theFollowingColumnShownInPixelGrid(ProteusWebPixelsSteps.java:190)
+      	at ✽.And The following column shown in pixel grid(C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:74)
+      [0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  #Platform/Seat Name (text i..e AppNexus-PBU-UK)
+  #Pixel Name (text)
+  #External ID (text)
+  #Category (text)
+  #Type (text)
+  @Pixels
+  Scenario: 07 Missing values for pixels                                         [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:82[0m
+    [32mWhen [0m[32mI click on the pixels icon on flight row[0m                                [90m# ProteusWebPixelsSteps.iClickOnThePixelsIconOnFlightRow()[0m
+    [32mThen [0m[32mPixels screen opened[0m                                                    [90m# ProteusWebPixelsSteps.creativesScreenOpened()[0m
+    [32mWhen [0m[32mI change the pixel advertiser to "[0m[32m[1mQAAutomationAdvertiser 1 GB[0m[32m" and save[0m [90m# ProteusWebPixelsSteps.iChangeThePixelAdvertiserToAndSave(String)[0m
+    [32mAnd [0m[32mThere is an action icon on the screen indicating the missing values[0m      [90m# ProteusWebPixelsSteps.thereIsAnActionIconOnTheScreenIndicatingTheMissingValues()[0m
+    [32mAnd [0m[32mTooltips shown on mouseover on each missing icon[0m                         [90m# ProteusWebPixelsSteps.tooltipsShownOnMouseoverOnEachMissingIcon()[0m
+
+  @Pixels
+  Scenario Outline: 08  Sort columns              [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:91[0m
+    [36mWhen [0m[36mI click on the pixels icon on flight row[0m
+    [36mThen [0m[36mPixels screen opened[0m
+    [36mWhen [0m[36mClicked on the header "<Header>"[0m
+    [36mThen [0m[36mRows are sorted based on "<Header>"[0m
+
+    Examples: 
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @Pixels
+  Scenario Outline: 08  Sort columns              [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:99[0m
+    [32mWhen [0m[32mI click on the pixels icon on flight row[0m [90m# ProteusWebPixelsSteps.iClickOnThePixelsIconOnFlightRow()[0m
+    [32mThen [0m[32mPixels screen opened[0m                     [90m# ProteusWebPixelsSteps.creativesScreenOpened()[0m
+    [31mWhen [0m[31mClicked on the header "[0m[31m[1mPlatform[0m[31m"[0m         [90m# ProteusWebPixelsSteps.clickedOnTheHeader(String)[0m
+      [31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//span[text() = 'Platform']"}
+        (Session info: chrome=67.0.3396.79)
+        (Driver info: chromedriver=2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+      Command duration or timeout: 0 milliseconds
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+      System info: host: 'TELLONLAP106', ip: '192.168.0.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\Users\RAMCHA~1.TEL\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.79, webStorageEnabled: true}
+      Session ID: 6e81709b5d81f150ed1b230a24c25363
+      *** Element info: {Using=xpath, value=//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//span[text() = 'Platform']}
+      	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+      	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+      	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+      	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+      	at PageObjects.ProteusWebPixelsPage.SortPixelGridOn(ProteusWebPixelsPage.java:121)
+      	at StepDefination.ProteusWebPixelsSteps.clickedOnTheHeader(ProteusWebPixelsSteps.java:224)
+      	at ✽.When Clicked on the header "Platform"(C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:95)
+      [0m
+    [36mThen [0m[36mRows are sorted based on "[0m[36m[1mPlatform[0m[36m"[0m      [90m# ProteusWebPixelsSteps.rowsAreSortedBasedOn(String)[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @Pixels
+  Scenario Outline: 08  Sort columns              [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:100[0m
+    [32mWhen [0m[32mI click on the pixels icon on flight row[0m [90m# ProteusWebPixelsSteps.iClickOnThePixelsIconOnFlightRow()[0m
+    [32mThen [0m[32mPixels screen opened[0m                     [90m# ProteusWebPixelsSteps.creativesScreenOpened()[0m
+    [31mWhen [0m[31mClicked on the header "[0m[31m[1mPixel Name[0m[31m"[0m       [90m# ProteusWebPixelsSteps.clickedOnTheHeader(String)[0m
+      [31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//span[text() = 'Pixel Name']"}
+        (Session info: chrome=67.0.3396.79)
+        (Driver info: chromedriver=2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+      Command duration or timeout: 0 milliseconds
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+      System info: host: 'TELLONLAP106', ip: '192.168.0.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\Users\RAMCHA~1.TEL\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.79, webStorageEnabled: true}
+      Session ID: f180c79f1ef7d51b6d555827edfba4cc
+      *** Element info: {Using=xpath, value=//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//span[text() = 'Pixel Name']}
+      	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+      	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+      	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+      	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+      	at PageObjects.ProteusWebPixelsPage.SortPixelGridOn(ProteusWebPixelsPage.java:121)
+      	at StepDefination.ProteusWebPixelsSteps.clickedOnTheHeader(ProteusWebPixelsSteps.java:224)
+      	at ✽.When Clicked on the header "Pixel Name"(C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:95)
+      [0m
+    [36mThen [0m[36mRows are sorted based on "[0m[36m[1mPixel Name[0m[36m"[0m    [90m# ProteusWebPixelsSteps.rowsAreSortedBasedOn(String)[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @Pixels
+  Scenario Outline: 08  Sort columns              [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:101[0m
+    [32mWhen [0m[32mI click on the pixels icon on flight row[0m [90m# ProteusWebPixelsSteps.iClickOnThePixelsIconOnFlightRow()[0m
+    [32mThen [0m[32mPixels screen opened[0m                     [90m# ProteusWebPixelsSteps.creativesScreenOpened()[0m
+    [31mWhen [0m[31mClicked on the header "[0m[31m[1mExternal ID[0m[31m"[0m      [90m# ProteusWebPixelsSteps.clickedOnTheHeader(String)[0m
+      [31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//span[text() = 'External ID']"}
+        (Session info: chrome=67.0.3396.79)
+        (Driver info: chromedriver=2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+      Command duration or timeout: 0 milliseconds
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+      System info: host: 'TELLONLAP106', ip: '192.168.0.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\Users\RAMCHA~1.TEL\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.79, webStorageEnabled: true}
+      Session ID: 3a1bdb9b50eff2164accb851f91f3f04
+      *** Element info: {Using=xpath, value=//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//span[text() = 'External ID']}
+      	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+      	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+      	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+      	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+      	at PageObjects.ProteusWebPixelsPage.SortPixelGridOn(ProteusWebPixelsPage.java:121)
+      	at StepDefination.ProteusWebPixelsSteps.clickedOnTheHeader(ProteusWebPixelsSteps.java:224)
+      	at ✽.When Clicked on the header "External ID"(C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:95)
+      [0m
+    [36mThen [0m[36mRows are sorted based on "[0m[36m[1mExternal ID[0m[36m"[0m   [90m# ProteusWebPixelsSteps.rowsAreSortedBasedOn(String)[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @Pixels
+  Scenario Outline: 08  Sort columns              [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:102[0m
+    [32mWhen [0m[32mI click on the pixels icon on flight row[0m [90m# ProteusWebPixelsSteps.iClickOnThePixelsIconOnFlightRow()[0m
+    [32mThen [0m[32mPixels screen opened[0m                     [90m# ProteusWebPixelsSteps.creativesScreenOpened()[0m
+    [31mWhen [0m[31mClicked on the header "[0m[31m[1mCategory[0m[31m"[0m         [90m# ProteusWebPixelsSteps.clickedOnTheHeader(String)[0m
+      [31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//span[text() = 'Category']"}
+        (Session info: chrome=67.0.3396.79)
+        (Driver info: chromedriver=2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+      Command duration or timeout: 0 milliseconds
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+      System info: host: 'TELLONLAP106', ip: '192.168.0.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\Users\RAMCHA~1.TEL\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.79, webStorageEnabled: true}
+      Session ID: 5d7adb1f42ee03a9968cb86b437018e2
+      *** Element info: {Using=xpath, value=//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//span[text() = 'Category']}
+      	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+      	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+      	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+      	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+      	at PageObjects.ProteusWebPixelsPage.SortPixelGridOn(ProteusWebPixelsPage.java:121)
+      	at StepDefination.ProteusWebPixelsSteps.clickedOnTheHeader(ProteusWebPixelsSteps.java:224)
+      	at ✽.When Clicked on the header "Category"(C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:95)
+      [0m
+    [36mThen [0m[36mRows are sorted based on "[0m[36m[1mCategory[0m[36m"[0m      [90m# ProteusWebPixelsSteps.rowsAreSortedBasedOn(String)[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @Pixels
+  Scenario Outline: 08  Sort columns              [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:103[0m
+    [32mWhen [0m[32mI click on the pixels icon on flight row[0m [90m# ProteusWebPixelsSteps.iClickOnThePixelsIconOnFlightRow()[0m
+    [32mThen [0m[32mPixels screen opened[0m                     [90m# ProteusWebPixelsSteps.creativesScreenOpened()[0m
+    [32mWhen [0m[32mClicked on the header "[0m[32m[1mType[0m[32m"[0m             [90m# ProteusWebPixelsSteps.clickedOnTheHeader(String)[0m
+    [32mThen [0m[32mRows are sorted based on "[0m[32m[1mType[0m[32m"[0m          [90m# ProteusWebPixelsSteps.rowsAreSortedBasedOn(String)[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @Pixels
+  Scenario: 09 Pagination on screen when pixels list loads                   [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:106[0m
+    [32mWhen [0m[32mI click on the pixels icon on flight row[0m                            [90m# ProteusWebPixelsSteps.iClickOnThePixelsIconOnFlightRow()[0m
+    [32mThen [0m[32mthe Pixels list of results is defaulted to 'Missing Classification'[0m [90m# ProteusWebPixelsSteps.thePixelsListOfResultsIsDefaultedToMissingClassification()[0m
+    [32mAnd [0m[32mDropdown to filter based on Platforms exist and defaulted to ALL[0m     [90m# ProteusWebPixelsSteps.dropdownToFilterBasedOnPlatformsExistAndDefaultedToALL()[0m
+    [32mAnd [0m[32mPixels screen opened[0m                                                 [90m# ProteusWebPixelsSteps.creativesScreenOpened()[0m
+    [32mAnd [0m[32mPagination shown at the bottom of the page[0m                           [90m# ProteusWebPixelsSteps.paginationShownAtTheBottomOfThePage()[0m
+    [32mAnd [0m[32mOption to enter search key exist[0m                                     [90m# ProteusWebPixelsSteps.optionToEnterSearchKeyExist()[0m
+    [32mWhen [0m[32mI entered search key[0m                                                [90m# ProteusWebPixelsSteps.iEnteredSearchKey()[0m
+    [32mThen [0m[32mClear Filters button enabled[0m                                        [90m# ProteusWebPixelsSteps.clearFiltersButtonEnabled()[0m
+
+  @Pixels
+  Scenario Outline: 10 Search for the pixels                [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:117[0m
+    [36mWhen [0m[36mI click on the pixels icon on flight row[0m
+    [36mThen [0m[36mPixels screen opened[0m
+    [36mWhen [0m[36mEnter a search key "<SearchKey>"and click on Apply[0m
+    [36mThen [0m[36mPixels filtered based on the "<SearchKey>"[0m
+
+    Examples: 
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @Pixels
+  Scenario Outline: 10 Search for the pixels            [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:124[0m
+    [32mWhen [0m[32mI click on the pixels icon on flight row[0m       [90m# ProteusWebPixelsSteps.iClickOnThePixelsIconOnFlightRow()[0m
+    [32mThen [0m[32mPixels screen opened[0m                           [90m# ProteusWebPixelsSteps.creativesScreenOpened()[0m
+    [32mWhen [0m[32mEnter a search key "[0m[32m[1mAutogen[0m[32m"and click on Apply[0m [90m# ProteusWebPixelsSteps.enterASearchKeyAndClickOnApply(String)[0m
+    [32mThen [0m[32mPixels filtered based on the "[0m[32m[1mAutogen[0m[32m"[0m         [90m# ProteusWebPixelsSteps.pixelsFilteredBasedOnThe(String)[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @Pixels
+  Scenario Outline: 10 Search for the pixels           [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:125[0m
+    [32mWhen [0m[32mI click on the pixels icon on flight row[0m      [90m# ProteusWebPixelsSteps.iClickOnThePixelsIconOnFlightRow()[0m
+    [32mThen [0m[32mPixels screen opened[0m                          [90m# ProteusWebPixelsSteps.creativesScreenOpened()[0m
+    [32mWhen [0m[32mEnter a search key "[0m[32m[1m837828[0m[32m"and click on Apply[0m [90m# ProteusWebPixelsSteps.enterASearchKeyAndClickOnApply(String)[0m
+    [32mThen [0m[32mPixels filtered based on the "[0m[32m[1m837828[0m[32m"[0m         [90m# ProteusWebPixelsSteps.pixelsFilteredBasedOnThe(String)[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @Pixels
+  Scenario Outline: 10 Search for the pixels            [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:126[0m
+    [32mWhen [0m[32mI click on the pixels icon on flight row[0m       [90m# ProteusWebPixelsSteps.iClickOnThePixelsIconOnFlightRow()[0m
+    [32mThen [0m[32mPixels screen opened[0m                           [90m# ProteusWebPixelsSteps.creativesScreenOpened()[0m
+    [32mWhen [0m[32mEnter a search key "[0m[32m[1mg4zbkad[0m[32m"and click on Apply[0m [90m# ProteusWebPixelsSteps.enterASearchKeyAndClickOnApply(String)[0m
+    [32mThen [0m[32mPixels filtered based on the "[0m[32m[1mg4zbkad[0m[32m"[0m         [90m# ProteusWebPixelsSteps.pixelsFilteredBasedOnThe(String)[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @Pixels
+  Scenario: 11 Bulk Edit - read only and editable columns [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:129[0m
+    [32mWhen [0m[32mI click on the pixels icon on flight row[0m         [90m# ProteusWebPixelsSteps.iClickOnThePixelsIconOnFlightRow()[0m
+    [32mThen [0m[32mPixels screen opened[0m                             [90m# ProteusWebPixelsSteps.creativesScreenOpened()[0m
+    [32mAnd [0m[32mPixel bulk edit button shown on pixel tab[0m         [90m# ProteusWebPixelsSteps.pixelBulkEditButtonShownOnPixelTab()[0m
+    [32mAnd [0m[32mTooltips shown on mouseover on Bulk edit button[0m   [90m# ProteusWebPixelsSteps.tooltipsShownOnMouseoverOnBulkEditButton()[0m
+    [32mWhen [0m[32mClick on pixel bulk edit[0m                         [90m# ProteusWebPixelsSteps.clickOnPixelBulkEdit()[0m
+    [32mThen [0m[32mPixel grid changed to editable state[0m             [90m# ProteusWebPixelsSteps.pixelGridChangedToEditableState()[0m
+    [32mAnd [0m[32mSave button shown and is disabled[0m                 [90m# ProteusWebPixelsSteps.saveButtonShownAndIsDisabled()[0m
+    [32mAnd [0m[32mCancel button shown and is enabled[0m                [90m# ProteusWebPixelsSteps.cancelButtonShownAndIsEnabled()[0m
+    [32mAnd [0m[32mEditable columns shown on pixel grid[0m              [90m# ProteusWebPixelsSteps.editableColumnsShownOnPixelGrid()[0m
+    [32mAnd [0m[32mReadOnly columns shown on pixel grid[0m              [90m# ProteusWebPixelsSteps.readonlyColumnsShownOnPixelGrid()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @Pixels
+  Scenario: 12 Ability to edit and save pixel classification                [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:142[0m
+    [32mWhen [0m[32mI click on the pixels icon on flight row[0m                           [90m# ProteusWebPixelsSteps.iClickOnThePixelsIconOnFlightRow()[0m
+    [32mThen [0m[32mPixels screen opened[0m                                               [90m# ProteusWebPixelsSteps.creativesScreenOpened()[0m
+    [32mWhen [0m[32mClick on pixel bulk edit[0m                                           [90m# ProteusWebPixelsSteps.clickOnPixelBulkEdit()[0m
+    [32mThen [0m[32mDropdown list with categories, Hard and Soft[0m                       [90m# ProteusWebPixelsSteps.dropdownListWithCategoriesHardAndSoft()[0m
+    [32mAnd [0m[32mDropdown list with Types: Homepage, Confirmation Page, Landing Page[0m [90m# ProteusWebPixelsSteps.dropdownListWithTypesHomepageConfirmationPageLandingPage()[0m
+    [32mWhen [0m[32mBulk edit Category and Type[0m                                        [90m# ProteusWebPixelsSteps.bulkEditCategoryAndType()[0m
+    [32mThen [0m[32mSave button Enabled[0m                                                [90m# ProteusWebPixelsSteps.saveButtonEnabled()[0m
+    [32mWhen [0m[32mClick on Save[0m                                                      [90m# ProteusWebPixelsSteps.clickOnSave()[0m
+    [32mThen [0m[32mPixel details saved[0m                                                [90m# ProteusWebPixelsSteps.pixelDetailsSaved()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @Pixels
+  Scenario: 13 Missing values for pixels                                        [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:154[0m
+    [32mWhen [0m[32mI click on the pixels icon on flight row[0m                               [90m# ProteusWebPixelsSteps.iClickOnThePixelsIconOnFlightRow()[0m
+    [32mAnd [0m[32mI change the pixel advertiser to "[0m[32m[1mQAAutomationAdvertiser 1 GB[0m[32m" and save[0m [90m# ProteusWebPixelsSteps.iChangeThePixelAdvertiserToAndSave(String)[0m
+    [32mThen [0m[32mPixels screen opened[0m                                                   [90m# ProteusWebPixelsSteps.creativesScreenOpened()[0m
+    [32mWhen [0m[32mI click on the add icon[0m                                                [90m# ProteusWebPixelsSteps.iClickOnTheAddIcon()[0m
+    [32mThen [0m[32mDropdown list with categories, Hard and Soft[0m                           [90m# ProteusWebPixelsSteps.dropdownListWithCategoriesHardAndSoft()[0m
+    [32mAnd [0m[32mDropdown list with Types: Homepage, Confirmation Page, Landing Page[0m     [90m# ProteusWebPixelsSteps.dropdownListWithTypesHomepageConfirmationPageLandingPage()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+    [32mWhen [0m[32mI search/filter for a particular result[0m   [90m# ProteusWebSteps.WhenISearchFilterForAParticularResult()[0m
+    [32mAnd [0m[32mClick on Apply button[0m                      [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+
+  @Pixels
+  Scenario: 14 Deeplink Pixel Name                               [90m# C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:164[0m
+    [32mWhen [0m[32mI click on the pixels icon on flight row[0m                [90m# ProteusWebPixelsSteps.iClickOnThePixelsIconOnFlightRow()[0m
+    [32mAnd [0m[32mI change the pixel advertiser to "[0m[32m[1mTestBrand GB[0m[32m" and save[0m [90m# ProteusWebPixelsSteps.iChangeThePixelAdvertiserToAndSave(String)[0m
+    [32mThen [0m[32mPixels screen opened[0m                                    [90m# ProteusWebPixelsSteps.creativesScreenOpened()[0m
+    [32mAnd [0m[32mThe Pixels Name is a deeplink[0m                            [90m# ProteusWebPixelsSteps.thePixelsNameIsADeeplink()[0m
+    [32mWhen [0m[32mClick on the Pixel Name[0m                                 [90m# ProteusWebPixelsSteps.clickOnThePixelName()[0m
+    [32mThen [0m[32mDSP tab opened in the browser for the Advertiser[0m        [90m# ProteusWebPixelsSteps.dspTabOpenedInTheBrowserForTheAdvertiser()[0m

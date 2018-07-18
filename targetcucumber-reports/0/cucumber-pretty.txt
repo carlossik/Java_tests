@@ -1,0 +1,66 @@
+@LoginProWeb
+Feature: Ability to log into Pro Web
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+
+  @LoginProWeb
+  Scenario: 01 Entering Pro Web               [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:10[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m             [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mAnd [0m[32mThere is a box called "[0m[32m[1mCampaigns[0m[32m"[0m     [90m# ProteusWebSteps.thereIsABoxCalled(String)[0m
+    [32mAnd [0m[32mLog Out button exist[0m                  [90m# ProteusWebSteps.ThenLogOutButtonExist()[0m
+    [32mAnd [0m[32mLogOut ProteusWeb from Home Page[0m      [90m# ProteusWebSteps.ThenLogoutProteusWeb()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+
+  @LoginProWeb
+  Scenario: 02 Entering Pro Web with incorrect details    [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:18[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mINVALID[0m[32m"[0m                               [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mAn error message displayed advising to try again[0m [90m# ProteusWebSteps.ThenAnErrorMessageDisplayedAdvisingToTryAgain()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+
+  @LoginProWeb
+  Scenario: 03 Campaigns page loaded           [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:23[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m              [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m  [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mThe Campaigns page loads successfully[0m [90m# ProteusWebSteps.ThenTheCampaignsPageLoadsSuccessfully()[0m
+    [32mAnd [0m[32mLogOut ProteusWeb from Home Page[0m       [90m# ProteusWebSteps.ThenLogoutProteusWeb()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+
+  @LoginProWeb
+  Scenario: 04 Campaigns page loaded with different options         [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:31[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                                   [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m                       [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m                      [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mLog out, Back to Home, Flights icon shown on Campaign page[0m [90m# ProteusWebSteps.ThenLogOutBackToHomeFlightsIconShownOnCampaignPage()[0m
+    [32mAnd [0m[32mCreatives option shown on the Campaigns tab[0m                 [90m# ProteusWebSteps.creativesOptionShownOnTheCampaignsTab()[0m
+    [32mAnd [0m[32mPixels option shown on the Campaigns tab[0m                    [90m# ProteusWebSteps.pixelsOptionShownOnTheCampaignsTab()[0m
+    [32mAnd [0m[32mLogOut ProteusWeb from Home Page[0m                            [90m# ProteusWebSteps.ThenLogoutProteusWeb()[0m
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+
+  @LoginProWeb
+  Scenario: 05 Navigated to Campaigns when logged in with only Campaign Web role [90m# C:/repoProteusWebJava/./src/test/java/Features/AbilityLogInProWeb.feature:41[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mCAMPAIGN MANAGEMENT WEB[0m[32m"[0m                                      [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mLog out, Back to Home, Flights icon shown on Campaign page[0m              [90m# ProteusWebSteps.ThenLogOutBackToHomeFlightsIconShownOnCampaignPage()[0m
+    [32mAnd [0m[32mCreatives option not shown on the Campaigns tab[0m                          [90m# ProteusWebSteps.creativesOptionNotShownOnTheCampaignsTab()[0m
+    [32mAnd [0m[32mPixels option not shown on the Campaigns tab[0m                             [90m# ProteusWebSteps.pixelsOptionNotShownOnTheCampaignsTab()[0m
+    [32mAnd [0m[32mLogOut ProteusWeb from Home Page[0m                                         [90m# ProteusWebSteps.ThenLogoutProteusWeb()[0m

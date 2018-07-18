@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="42.648741">
+<testcase classname="Ability to add/edit Optimisation Manager" name="01 Add/Edit Optimisation Manager details to flight" time="42.648741">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a flight with no Optimisation Manager..............passed
+And Click on Apply button...................................................passed
+Then The box states 'Unknown User'..........................................passed
+And Option to edit Optimisation Manager exist...............................passed
+When Select one of Optimisation Manager and Save............................passed
+Then Optimisation Manager saved.............................................passed
+When Edit Optimisation Manager and Save.....................................passed
+Then Edited Optimisation Manager saved......................................passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,0 +1,334 @@
+@AdvertiserAccounts
+Feature: Ability to Edit Advertiser Account settings
+
+  Background:                                              [90m# C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                              [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Advertiser_Manager_Editor[0m [90m# ProteusWebSteps.GivenIHaveTheRoleProWebAdvertiserManagerEditor()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m         [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                          [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m              [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mAdministration[0m[32m" from home page[0m        [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAdministration page shown correctly[0m               [90m# ProteusWebSteps.administrationPageShownCorrectly()[0m
+
+  @AdvertiserAccounts
+  Scenario: 01 Check if Advertiser Accounts tab opened correctly [90m# C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:14[0m
+    [32mThen [0m[32mAble to navigate to Administration Advertiser Accounts[0m  [90m# ProteusWebSteps.ableToNavigateToAdministrationAdvertiserAccounts()[0m
+    [32mAnd [0m[32mLogOut ProteusWeb from Reports Page[0m                      [90m# ProteusWebSteps.logoutProteusWebFromReportsPage()[0m
+
+  Background:                                              [90m# C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                              [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Advertiser_Manager_Editor[0m [90m# ProteusWebSteps.GivenIHaveTheRoleProWebAdvertiserManagerEditor()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m         [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                          [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m              [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mAdministration[0m[32m" from home page[0m        [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAdministration page shown correctly[0m               [90m# ProteusWebSteps.administrationPageShownCorrectly()[0m
+
+  @AdvertiserAccounts
+  Scenario: 02 Access and View Advertiser Account Overview      [90m# C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:19[0m
+    [32mThen [0m[32mAble to navigate to Administration Advertiser Accounts[0m [90m# ProteusWebSteps.ableToNavigateToAdministrationAdvertiserAccounts()[0m
+    [32mWhen [0m[32mI select a First Advertiser Account[0m                    [90m# ProteusWebAdvertiserSteps.iSelectAAdvertiserAccountRow()[0m
+    [32mThen [0m[32mAdvertiser Account Overview screen shown[0m               [90m# ProteusWebAdvertiserSteps.advertiserAccountOverviewScreenShown()[0m
+    [32mAnd [0m[32mLogOut ProteusWeb from Admin Page[0m                       [90m# ProteusWebSteps.logoutProteusWebFromAdminPage()[0m
+
+  Background:                                              [90m# C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                              [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Advertiser_Manager_Editor[0m [90m# ProteusWebSteps.GivenIHaveTheRoleProWebAdvertiserManagerEditor()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m         [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                          [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m              [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mAdministration[0m[32m" from home page[0m        [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAdministration page shown correctly[0m               [90m# ProteusWebSteps.administrationPageShownCorrectly()[0m
+
+  @AdvertiserAccounts
+  Scenario: 03 Able to search for Advertiser Account                       [90m# C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:26[0m
+    [32mThen [0m[32mAble to navigate to Administration Advertiser Accounts[0m            [90m# ProteusWebSteps.ableToNavigateToAdministrationAdvertiserAccounts()[0m
+    [32mWhen [0m[32mSearch for an Advertiser to EditName[0m                              [90m# ProteusWebAdvertiserSteps.searchForAnAdvertiserToEditName()[0m
+    [32mThen [0m[32mAdvertisers filtered as per search key "[0m[32m[1mAdvertiserNameBeforeEdit[0m[32m"[0m [90m# ProteusWebAdvertiserSteps.advertisersFilteredAsPerSearchKey(String)[0m
+
+  Background:                                              [90m# C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                              [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Advertiser_Manager_Editor[0m [90m# ProteusWebSteps.GivenIHaveTheRoleProWebAdvertiserManagerEditor()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m         [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                          [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m              [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mAdministration[0m[32m" from home page[0m        [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAdministration page shown correctly[0m               [90m# ProteusWebSteps.administrationPageShownCorrectly()[0m
+
+  @AdvertiserAccounts
+  Scenario: 04 Able to see Advertiser Account Overview screen information  [90m# C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:32[0m
+    [32mThen [0m[32mAble to navigate to Administration Advertiser Accounts[0m            [90m# ProteusWebSteps.ableToNavigateToAdministrationAdvertiserAccounts()[0m
+    [32mWhen [0m[32mSearch for an Advertiser to EditName[0m                              [90m# ProteusWebAdvertiserSteps.searchForAnAdvertiserToEditName()[0m
+    [32mThen [0m[32mAdvertisers filtered as per search key "[0m[32m[1mAdvertiserNameBeforeEdit[0m[32m"[0m [90m# ProteusWebAdvertiserSteps.advertisersFilteredAsPerSearchKey(String)[0m
+    [32mWhen [0m[32mI select a First Advertiser Account[0m                               [90m# ProteusWebAdvertiserSteps.iSelectAAdvertiserAccountRow()[0m
+    [32mThen [0m[32mAdvertiser Account details displayed on the page[0m                  [90m# ProteusWebAdvertiserSteps.advertiserAccountDetailsDisplayedOnThePage()[0m
+    [32mAnd [0m[32mLogOut ProteusWeb from Admin Page[0m                                  [90m# ProteusWebSteps.logoutProteusWebFromAdminPage()[0m
+
+  Background:                                              [90m# C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                              [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Advertiser_Manager_Editor[0m [90m# ProteusWebSteps.GivenIHaveTheRoleProWebAdvertiserManagerEditor()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m         [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                          [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m              [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mAdministration[0m[32m" from home page[0m        [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAdministration page shown correctly[0m               [90m# ProteusWebSteps.administrationPageShownCorrectly()[0m
+
+  @AdvertiserAccounts
+  Scenario: 05 Able to edit Advertiser Account details                    [90m# C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:41[0m
+    [32mThen [0m[32mAble to navigate to Administration Advertiser Accounts[0m           [90m# ProteusWebSteps.ableToNavigateToAdministrationAdvertiserAccounts()[0m
+    [32mWhen [0m[32mSearch for an Advertiser to EditName[0m                             [90m# ProteusWebAdvertiserSteps.searchForAnAdvertiserToEditName()[0m
+    [32mWhen [0m[32mI select a First Advertiser Account[0m                              [90m# ProteusWebAdvertiserSteps.iSelectAAdvertiserAccountRow()[0m
+    [32mWhen [0m[32mClick on edit icon to change advertiser information[0m              [90m# ProteusWebAdvertiserSteps.clickOnEditIconToChangeAdvertiserInformation()[0m
+    [32mAnd [0m[32mUpdate Advertiser, Agency Name and save the details[0m               [90m# ProteusWebAdvertiserSteps.updateAdvertiserAgencyNameAndSaveTheDetails()[0m
+    [32mWhen [0m[32mSearch for Advertiser before edit name[0m                           [90m# ProteusWebAdvertiserSteps.searchForAdvertiserBeforeEditName()[0m
+    [32mThen [0m[32mNo Advertisers returned[0m                                          [90m# ProteusWebAdvertiserSteps.noAdvertisersReturned()[0m
+    [32mWhen [0m[32mSearch for Advertiser with updated name[0m                          [90m# ProteusWebAdvertiserSteps.searchForAdvertiserWithUpdatedName()[0m
+    [32mThen [0m[32mAdvertisers filtered as per search key "[0m[32m[1mAdvertiserNameAfterEdit[0m[32m"[0m [90m# ProteusWebAdvertiserSteps.advertisersFilteredAsPerSearchKey(String)[0m
+    [32mAnd [0m[32mLogOut ProteusWeb from Admin Page[0m                                 [90m# ProteusWebSteps.logoutProteusWebFromAdminPage()[0m
+
+  Background:                                              [90m# C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                              [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Advertiser_Manager_Editor[0m [90m# ProteusWebSteps.GivenIHaveTheRoleProWebAdvertiserManagerEditor()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m         [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                          [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m              [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mAdministration[0m[32m" from home page[0m        [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAdministration page shown correctly[0m               [90m# ProteusWebSteps.administrationPageShownCorrectly()[0m
+
+  @AdvertiserAccounts
+  Scenario: 06 Option to Merge advertiser account into another             [90m# C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:54[0m
+    [32mThen [0m[32mAble to navigate to Administration Advertiser Accounts[0m            [90m# ProteusWebSteps.ableToNavigateToAdministrationAdvertiserAccounts()[0m
+    [32mWhen [0m[32mSearch for an Advertiser to EditName[0m                              [90m# ProteusWebAdvertiserSteps.searchForAnAdvertiserToEditName()[0m
+    [32mThen [0m[32mAdvertisers filtered as per search key "[0m[32m[1mAdvertiserNameBeforeEdit[0m[32m"[0m [90m# ProteusWebAdvertiserSteps.advertisersFilteredAsPerSearchKey(String)[0m
+    [32mWhen [0m[32mI select a First Advertiser Account[0m                               [90m# ProteusWebAdvertiserSteps.iSelectAAdvertiserAccountRow()[0m
+    [32mThen [0m[32mOption to Merge advertiser account into another exist[0m             [90m# ProteusWebAdvertiserSteps.optionToMergeAdvertiserAccountIntoAnotherExist()[0m
+    [32mAnd [0m[32mLogOut ProteusWeb from Admin Page[0m                                  [90m# ProteusWebSteps.logoutProteusWebFromAdminPage()[0m
+
+  Background:                                              [90m# C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                              [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Advertiser_Manager_Editor[0m [90m# ProteusWebSteps.GivenIHaveTheRoleProWebAdvertiserManagerEditor()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m         [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                          [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m              [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mAdministration[0m[32m" from home page[0m        [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAdministration page shown correctly[0m               [90m# ProteusWebSteps.administrationPageShownCorrectly()[0m
+
+  @AdvertiserAccounts
+  Scenario: 07 Option to Merge advertiser account into another             [90m# C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:63[0m
+    [32mThen [0m[32mAble to navigate to Administration Advertiser Accounts[0m            [90m# ProteusWebSteps.ableToNavigateToAdministrationAdvertiserAccounts()[0m
+    [32mWhen [0m[32mSearch for an Advertiser to EditName[0m                              [90m# ProteusWebAdvertiserSteps.searchForAnAdvertiserToEditName()[0m
+    [32mThen [0m[32mAdvertisers filtered as per search key "[0m[32m[1mAdvertiserNameBeforeEdit[0m[32m"[0m [90m# ProteusWebAdvertiserSteps.advertisersFilteredAsPerSearchKey(String)[0m
+    [32mWhen [0m[32mI select a First Advertiser Account[0m                               [90m# ProteusWebAdvertiserSteps.iSelectAAdvertiserAccountRow()[0m
+    [32mWhen [0m[32mClick on Merge Into Another Advertiser Account[0m                    [90m# ProteusWebAdvertiserSteps.clickOnMergeIntoAnotherAdvertiserAccount()[0m
+    [31mThen [0m[31mOption to select Advertiser and confirm merge message shown[0m       [90m# ProteusWebAdvertiserSteps.optionToSelectAdvertiserAndConfirmMergeMessageShown()[0m
+      [31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div/div/input"}
+        (Session info: chrome=67.0.3396.79)
+        (Driver info: chromedriver=2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+      Command duration or timeout: 0 milliseconds
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+      System info: host: 'TELLONLAP106', ip: '192.168.0.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\Users\RAMCHA~1.TEL\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.79, webStorageEnabled: true}
+      Session ID: ca01dd952d4adcc7927f2d22627ed8d5
+      *** Element info: {Using=xpath, value=/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div/div/input}
+      	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+      	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+      	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+      	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+      	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+      	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+      	at com.sun.proxy.$Proxy25.isDisplayed(Unknown Source)
+      	at PageObjects.ProteusWebAdvertiserAccountsPage.CheckForMergeObjectsOnDialog(ProteusWebAdvertiserAccountsPage.java:179)
+      	at StepDefination.ProteusWebAdvertiserSteps.optionToSelectAdvertiserAndConfirmMergeMessageShown(ProteusWebAdvertiserSteps.java:106)
+      	at ✽.Then Option to select Advertiser and confirm merge message shown(C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:69)
+      [0m
+    [36mAnd [0m[36mLogOut ProteusWeb from Admin Page[0m                                  [90m# ProteusWebSteps.logoutProteusWebFromAdminPage()[0m
+
+  Background:                                              [90m# C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                              [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Advertiser_Manager_Editor[0m [90m# ProteusWebSteps.GivenIHaveTheRoleProWebAdvertiserManagerEditor()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m         [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                          [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m              [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mAdministration[0m[32m" from home page[0m        [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAdministration page shown correctly[0m               [90m# ProteusWebSteps.administrationPageShownCorrectly()[0m
+
+  @AdvertiserAccounts
+  Scenario: 08 Advertiser Platform Details shown on the Advertiser details page         [90m# C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:73[0m
+    [32mThen [0m[32mAble to navigate to Administration Advertiser Accounts[0m                         [90m# ProteusWebSteps.ableToNavigateToAdministrationAdvertiserAccounts()[0m
+    [32mWhen [0m[32mSearch for a Advertiser Name "[0m[32m[1mPHARMA - MAINTAIN[0m[32m"[0m                               [90m# ProteusWebAdvertiserSteps.searchForAAdvertiserName(String)[0m
+    [32mThen [0m[32mAdvertisers filtered as per search key "[0m[32m[1mPHARMA - MAINTAIN[0m[32m"[0m                     [90m# ProteusWebAdvertiserSteps.advertisersFilteredAsPerSearchKey(String)[0m
+    [32mWhen [0m[32mI select a First Advertiser Account[0m                                            [90m# ProteusWebAdvertiserSteps.iSelectAAdvertiserAccountRow()[0m
+    [32mThen [0m[32mAdvertiser Platform details shown[0m                                              [90m# ProteusWebAdvertiserSteps.advertiserPlatformDetailsShown()[0m
+    [32mThen [0m[32mTooltip with Platform Name and Platform External ID shown on mouseover on icon[0m [90m# ProteusWebAdvertiserSteps.tooltipWithPlatformNameAndPlatformExternalIDShownOnMouseoverOnIcon()[0m
+    [32mThen [0m[32mAdvertiser Platforms tab opened on clicking Platform icon[0m                      [90m# ProteusWebAdvertiserSteps.advertiserPlatformsTabOpenedOnClickingPlatformIcon()[0m
+    [32mAnd [0m[32mLogOut ProteusWeb from Admin Page[0m                                               [90m# ProteusWebSteps.logoutProteusWebFromAdminPage()[0m
+
+  Background:                                              [90m# C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                              [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Advertiser_Manager_Editor[0m [90m# ProteusWebSteps.GivenIHaveTheRoleProWebAdvertiserManagerEditor()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m         [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                          [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m              [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mAdministration[0m[32m" from home page[0m        [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAdministration page shown correctly[0m               [90m# ProteusWebSteps.administrationPageShownCorrectly()[0m
+
+  @AdvertiserAccounts
+  Scenario: 09 Merge advertiser account into another               [90m# C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:85[0m
+    [32mThen [0m[32mAble to navigate to Administration Advertiser Accounts[0m    [90m# ProteusWebSteps.ableToNavigateToAdministrationAdvertiserAccounts()[0m
+    [32mWhen [0m[32mSearch for an Advertiser to Merge[0m                         [90m# ProteusWebAdvertiserSteps.searchForAnAdvertiserToMerge()[0m
+    [32mAnd [0m[32mI select a First Advertiser Account[0m                        [90m# ProteusWebAdvertiserSteps.iSelectAAdvertiserAccountRow()[0m
+    [32mAnd [0m[32mClick on Merge Into Another Advertiser Account[0m             [90m# ProteusWebAdvertiserSteps.clickOnMergeIntoAnotherAdvertiserAccount()[0m
+    [31mAnd [0m[31mSelect the Advertiser to be merged and Save[0m                [90m# ProteusWebAdvertiserSteps.selectTheAdvertiserToBeMergedAndSave()[0m
+      [31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div/div/input"}
+        (Session info: chrome=67.0.3396.79)
+        (Driver info: chromedriver=2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+      Command duration or timeout: 0 milliseconds
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+      System info: host: 'TELLONLAP106', ip: '192.168.0.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\Users\RAMCHA~1.TEL\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.79, webStorageEnabled: true}
+      Session ID: 3a9703dcc98397a2c144cff9ef5b64e4
+      *** Element info: {Using=xpath, value=/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div/div/input}
+      	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+      	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+      	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+      	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+      	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+      	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+      	at com.sun.proxy.$Proxy25.getCoordinates(Unknown Source)
+      	at org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:65)
+      	at org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:43)
+      	at org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:36)
+      	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:641)
+      	at SupportingUtilites.BrowserFactory.mouseClick(BrowserFactory.java:111)
+      	at PageObjects.ProteusWebAdvertiserAccountsPage.SelectAdvertiserToMerge(ProteusWebAdvertiserAccountsPage.java:253)
+      	at StepDefination.ProteusWebAdvertiserSteps.selectTheAdvertiserToBeMergedAndSave(ProteusWebAdvertiserSteps.java:144)
+      	at ✽.And Select the Advertiser to be merged and Save(C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:90)
+      [0m
+    [36mThen [0m[36mSecond Advertiser details page shown[0m                      [90m# ProteusWebAdvertiserSteps.secondAdvertiserDetailsPageShown()[0m
+    [36mWhen [0m[36mSearch for Advertiser one merged[0m                          [90m# ProteusWebAdvertiserSteps.searchForAdvertiserOneMerged()[0m
+    [36mThen [0m[36mNo Advertisers returned[0m                                   [90m# ProteusWebAdvertiserSteps.noAdvertisersReturned()[0m
+    [36mWhen [0m[36mSearch for Advertiser two merged[0m                          [90m# ProteusWebAdvertiserSteps.searchForAdvertiserTwoMerged()[0m
+    [36mThen [0m[36mAdvertisers filtered as per search key "[0m[36m[1mMergedAdvertiser[0m[36m"[0m [90m# ProteusWebAdvertiserSteps.advertisersFilteredAsPerSearchKey(String)[0m
+    [36mAnd [0m[36mLogOut ProteusWeb from Admin Page[0m                          [90m# ProteusWebSteps.logoutProteusWebFromAdminPage()[0m
+
+  Background:                                              [90m# C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                              [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Advertiser_Manager_Editor[0m [90m# ProteusWebSteps.GivenIHaveTheRoleProWebAdvertiserManagerEditor()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m         [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                          [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m              [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mAdministration[0m[32m" from home page[0m        [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAdministration page shown correctly[0m               [90m# ProteusWebSteps.administrationPageShownCorrectly()[0m
+
+  @AdvertiserAccounts
+  Scenario: 10 Cancel Merge advertiser account into another        [90m# C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:99[0m
+    [32mThen [0m[32mAble to navigate to Administration Advertiser Accounts[0m    [90m# ProteusWebSteps.ableToNavigateToAdministrationAdvertiserAccounts()[0m
+    [32mWhen [0m[32mSearch for an Advertiser to Merge[0m                         [90m# ProteusWebAdvertiserSteps.searchForAnAdvertiserToMerge()[0m
+    [32mAnd [0m[32mI select a First Advertiser Account[0m                        [90m# ProteusWebAdvertiserSteps.iSelectAAdvertiserAccountRow()[0m
+    [32mAnd [0m[32mClick on Merge Into Another Advertiser Account[0m             [90m# ProteusWebAdvertiserSteps.clickOnMergeIntoAnotherAdvertiserAccount()[0m
+    [31mAnd [0m[31mSelect the Advertiser to be merged and Cancel[0m              [90m# ProteusWebAdvertiserSteps.selectTheAdvertiserToBeMergedAndCancel()[0m
+      [31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div/div/input"}
+        (Session info: chrome=67.0.3396.79)
+        (Driver info: chromedriver=2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+      Command duration or timeout: 0 milliseconds
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+      System info: host: 'TELLONLAP106', ip: '192.168.0.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\Users\RAMCHA~1.TEL\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.79, webStorageEnabled: true}
+      Session ID: 181504ae55effd1f850559e4f003abac
+      *** Element info: {Using=xpath, value=/html/body/div[2]/div/div[2]/section/div[2]/form/div[1]/div/div/input}
+      	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+      	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+      	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+      	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+      	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+      	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+      	at com.sun.proxy.$Proxy25.getCoordinates(Unknown Source)
+      	at org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:65)
+      	at org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:43)
+      	at org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:36)
+      	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:641)
+      	at SupportingUtilites.BrowserFactory.mouseClick(BrowserFactory.java:111)
+      	at PageObjects.ProteusWebAdvertiserAccountsPage.SelectAdvertiserToMergeAndCancel(ProteusWebAdvertiserAccountsPage.java:263)
+      	at StepDefination.ProteusWebAdvertiserSteps.selectTheAdvertiserToBeMergedAndCancel(ProteusWebAdvertiserSteps.java:202)
+      	at ✽.And Select the Advertiser to be merged and Cancel(C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:104)
+      [0m
+    [36mThen [0m[36mFirst Advertiser details page shown[0m                       [90m# ProteusWebAdvertiserSteps.firstAdvertiserDetailsPageShown()[0m
+    [36mWhen [0m[36mSearch for Advertiser one merged[0m                          [90m# ProteusWebAdvertiserSteps.searchForAdvertiserOneMerged()[0m
+    [36mThen [0m[36mAdvertisers filtered as per search key "[0m[36m[1mAdvertiserMerged[0m[36m"[0m [90m# ProteusWebAdvertiserSteps.advertisersFilteredAsPerSearchKey(String)[0m
+    [36mWhen [0m[36mSearch for Advertiser two merged[0m                          [90m# ProteusWebAdvertiserSteps.searchForAdvertiserTwoMerged()[0m
+    [36mThen [0m[36mAdvertisers filtered as per search key "[0m[36m[1mMergedAdvertiser[0m[36m"[0m [90m# ProteusWebAdvertiserSteps.advertisersFilteredAsPerSearchKey(String)[0m
+    [36mAnd [0m[36mLogOut ProteusWeb from Admin Page[0m                          [90m# ProteusWebSteps.logoutProteusWebFromAdminPage()[0m
+
+  Background:                                              [90m# C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                              [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Advertiser_Manager_Editor[0m [90m# ProteusWebSteps.GivenIHaveTheRoleProWebAdvertiserManagerEditor()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m         [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                          [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m              [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mAdministration[0m[32m" from home page[0m        [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAdministration page shown correctly[0m               [90m# ProteusWebSteps.administrationPageShownCorrectly()[0m
+
+  @AdvertiserAccounts
+  Scenario: 11 Able to search by Requires action                [90m# C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:114[0m
+    [32mThen [0m[32mAble to navigate to Administration Advertiser Accounts[0m [90m# ProteusWebSteps.ableToNavigateToAdministrationAdvertiserAccounts()[0m
+    [32mWhen [0m[32mSearch based on Requires action[0m                        [90m# ProteusWebAdvertiserSteps.searchBasedOnRequiresAction()[0m
+    [32mThen [0m[32mAdvertisers filtered as per Requires action[0m            [90m# ProteusWebAdvertiserSteps.advertisersFilteredAsPerRequiresAction()[0m
+
+  Background:                                              [90m# C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                              [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Advertiser_Manager_Editor[0m [90m# ProteusWebSteps.GivenIHaveTheRoleProWebAdvertiserManagerEditor()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m         [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                          [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m              [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mAdministration[0m[32m" from home page[0m        [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAdministration page shown correctly[0m               [90m# ProteusWebSteps.administrationPageShownCorrectly()[0m
+
+  @AdvertiserAccounts
+  Scenario: 12 Able to Bulk edit and save                       [90m# C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:120[0m
+    [32mThen [0m[32mAble to navigate to Administration Advertiser Accounts[0m [90m# ProteusWebSteps.ableToNavigateToAdministrationAdvertiserAccounts()[0m
+    [32mWhen [0m[32mSearch based on Requires action[0m                        [90m# ProteusWebAdvertiserSteps.searchBasedOnRequiresAction()[0m
+    [32mAnd [0m[32mClick on bulk edit[0m                                      [90m# ProteusWebAdvertiserSteps.clickOnBulkEdit()[0m
+    [32mAnd [0m[32mEdit two or more Advertiser, Agency details and Save[0m    [90m# ProteusWebAdvertiserSteps.editTwoOrMoreAdvertiserAgencyDetailsAndSave()[0m
+    [32mThen [0m[32mBulk edit saved successfuly[0m                            [90m# ProteusWebAdvertiserSteps.bulkEditSavedSuccessfuly()[0m

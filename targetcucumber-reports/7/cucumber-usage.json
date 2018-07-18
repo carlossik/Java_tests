@@ -1,0 +1,276 @@
+[
+  {
+    "source": "All Flights matching search/filter combination load as results",
+    "steps": [
+      {
+        "name": "All Flights matching search/filter combination load as results",
+        "aggregatedDurations": {
+          "average": 0.017184633,
+          "median": 0.017184633
+        },
+        "durations": [
+          {
+            "duration": 0.014618874,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/DisplayPlatformForFlight.feature:17"
+          },
+          {
+            "duration": 0.019750392,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/DisplayPlatformForFlight.feature:23"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "All Flights loads which I have access to",
+    "steps": [
+      {
+        "name": "All Flights loads which I have access to",
+        "aggregatedDurations": {
+          "average": 0.249409813,
+          "median": 0.249409813
+        },
+        "durations": [
+          {
+            "duration": 0.29631774,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/DisplayPlatformForFlight.feature:11"
+          },
+          {
+            "duration": 0.202501887,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/DisplayPlatformForFlight.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I go to the Proteus Home URL in my browser",
+    "steps": [
+      {
+        "name": "I go to the Proteus Home URL in my browser",
+        "aggregatedDurations": {
+          "average": 4.040689903,
+          "median": 4.040689903
+        },
+        "durations": [
+          {
+            "duration": 4.052767978,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/DisplayPlatformForFlight.feature:7"
+          },
+          {
+            "duration": 4.028611828,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/DisplayPlatformForFlight.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Click on Apply button",
+    "steps": [
+      {
+        "name": "Click on Apply button",
+        "aggregatedDurations": {
+          "average": 3.214990201,
+          "median": 3.214990201
+        },
+        "durations": [
+          {
+            "duration": 3.217307214,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/DisplayPlatformForFlight.feature:13"
+          },
+          {
+            "duration": 3.212673189,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/DisplayPlatformForFlight.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Platforms tab opened for the Advertiser in the Platform on click$",
+    "steps": [
+      {
+        "name": "Platforms tab opened for the Advertiser in the Platform on click",
+        "aggregatedDurations": {
+          "average": 61.159821585,
+          "median": 61.159821585
+        },
+        "durations": [
+          {
+            "duration": 61.159821585,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/DisplayPlatformForFlight.feature:24"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Login as \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "Login as \"ADMINISTRATOR\"",
+        "aggregatedDurations": {
+          "average": 5.014078713,
+          "median": 5.014078713
+        },
+        "durations": [
+          {
+            "duration": 5.05253459,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/DisplayPlatformForFlight.feature:8"
+          },
+          {
+            "duration": 4.975622837,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/DisplayPlatformForFlight.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I search/filter for a particular result",
+    "steps": [
+      {
+        "name": "I search/filter for a particular result",
+        "aggregatedDurations": {
+          "average": 2.720238839,
+          "median": 2.720238839
+        },
+        "durations": [
+          {
+            "duration": 2.694612184,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/DisplayPlatformForFlight.feature:12"
+          },
+          {
+            "duration": 2.745865495,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/DisplayPlatformForFlight.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I have the role: Pro Web Campaigns",
+    "steps": [
+      {
+        "name": "I have the role: Pro Web Campaigns",
+        "aggregatedDurations": {
+          "average": 0.000044373,
+          "median": 0.000044373
+        },
+        "durations": [
+          {
+            "duration": 0.000046933,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/DisplayPlatformForFlight.feature:6"
+          },
+          {
+            "duration": 0.000041813,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/DisplayPlatformForFlight.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on \"([^\"]*)\" from home page$",
+    "steps": [
+      {
+        "name": "I click on \"Campaigns\" from home page",
+        "aggregatedDurations": {
+          "average": 3.109143633,
+          "median": 3.109143633
+        },
+        "durations": [
+          {
+            "duration": 3.115176484,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/DisplayPlatformForFlight.feature:10"
+          },
+          {
+            "duration": 3.103110783,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/DisplayPlatformForFlight.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Tooltips shown on mouseover on each platform icon$",
+    "steps": [
+      {
+        "name": "Tooltips shown on mouseover on each platform icon",
+        "aggregatedDurations": {
+          "average": 1.095829719,
+          "median": 1.095829719
+        },
+        "durations": [
+          {
+            "duration": 1.095829719,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/DisplayPlatformForFlight.feature:19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^There icons for platforms are displayed$",
+    "steps": [
+      {
+        "name": "There icons for platforms are displayed",
+        "aggregatedDurations": {
+          "average": 0.026767775,
+          "median": 0.026767775
+        },
+        "durations": [
+          {
+            "duration": 0.026767775,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/DisplayPlatformForFlight.feature:18"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I am a Proteus User",
+    "steps": [
+      {
+        "name": "I am a Proteus User",
+        "aggregatedDurations": {
+          "average": 0.002339412,
+          "median": 0.002339412
+        },
+        "durations": [
+          {
+            "duration": 0.003776425,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/DisplayPlatformForFlight.feature:5"
+          },
+          {
+            "duration": 0.000902399,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/DisplayPlatformForFlight.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "The main homepage loads successfully",
+    "steps": [
+      {
+        "name": "The main homepage loads successfully",
+        "aggregatedDurations": {
+          "average": 0.043938328,
+          "median": 0.043938328
+        },
+        "durations": [
+          {
+            "duration": 0.044580674,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/DisplayPlatformForFlight.feature:9"
+          },
+          {
+            "duration": 0.043295982,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/DisplayPlatformForFlight.feature:9"
+          }
+        ]
+      }
+    ]
+  }
+]

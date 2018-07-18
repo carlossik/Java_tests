@@ -1,0 +1,2017 @@
+[
+  {
+    "source": "^Pixels are listed for the Advertiser Account of the Flight selected$",
+    "steps": [
+      {
+        "name": "Pixels are listed for the Advertiser Account of the Flight selected",
+        "aggregatedDurations": {
+          "average": 0.017367886,
+          "median": 0.017367886
+        },
+        "durations": [
+          {
+            "duration": 0.017367886,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:51"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Enter a search key \"([^\"]*)\"and click on Apply$",
+    "steps": [
+      {
+        "name": "Enter a search key \"Autogen\"and click on Apply",
+        "aggregatedDurations": {
+          "average": 1.290952836,
+          "median": 1.290952836
+        },
+        "durations": [
+          {
+            "duration": 1.290952836,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:120"
+          }
+        ]
+      },
+      {
+        "name": "Enter a search key \"837828\"and click on Apply",
+        "aggregatedDurations": {
+          "average": 1.27342623,
+          "median": 1.27342623
+        },
+        "durations": [
+          {
+            "duration": 1.27342623,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:120"
+          }
+        ]
+      },
+      {
+        "name": "Enter a search key \"g4zbkad\"and click on Apply",
+        "aggregatedDurations": {
+          "average": 1.286557317,
+          "median": 1.286557317
+        },
+        "durations": [
+          {
+            "duration": 1.286557317,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:120"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Cancel button shown and is enabled$",
+    "steps": [
+      {
+        "name": "Cancel button shown and is enabled",
+        "aggregatedDurations": {
+          "average": 0.067765304,
+          "median": 0.067765304
+        },
+        "durations": [
+          {
+            "duration": 0.067765304,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:137"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Pixels screen opened$",
+    "steps": [
+      {
+        "name": "Pixels screen opened",
+        "aggregatedDurations": {
+          "average": 4.454707095,
+          "median": 4.479330782
+        },
+        "durations": [
+          {
+            "duration": 4.439002266,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:19"
+          },
+          {
+            "duration": 4.464704228,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:28"
+          },
+          {
+            "duration": 4.502166825,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:50"
+          },
+          {
+            "duration": 4.488037338,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:59"
+          },
+          {
+            "duration": 4.483262087,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:72"
+          },
+          {
+            "duration": 4.493442776,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:84"
+          },
+          {
+            "duration": 4.477404383,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:94"
+          },
+          {
+            "duration": 4.470367372,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:94"
+          },
+          {
+            "duration": 4.495053442,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:94"
+          },
+          {
+            "duration": 4.479330782,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:94"
+          },
+          {
+            "duration": 4.518247459,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:94"
+          },
+          {
+            "duration": 4.274878176,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:110"
+          },
+          {
+            "duration": 4.477456863,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:119"
+          },
+          {
+            "duration": 4.463590628,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:119"
+          },
+          {
+            "duration": 4.503868799,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:119"
+          },
+          {
+            "duration": 4.50815253,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:131"
+          },
+          {
+            "duration": 4.511175889,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:144"
+          },
+          {
+            "duration": 4.294172461,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:157"
+          },
+          {
+            "duration": 4.295120514,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:167"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^the Pixels list of results is defaulted to \u0027Missing Classification\u0027$",
+    "steps": [
+      {
+        "name": "the Pixels list of results is defaulted to \u0027Missing Classification\u0027",
+        "aggregatedDurations": {
+          "average": 0.244073709,
+          "median": 0.244073709
+        },
+        "durations": [
+          {
+            "duration": 0.244073709,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:108"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Editable columns shown on pixel grid$",
+    "steps": [
+      {
+        "name": "Editable columns shown on pixel grid",
+        "aggregatedDurations": {
+          "average": 0.052179178,
+          "median": 0.052179178
+        },
+        "durations": [
+          {
+            "duration": 0.052179178,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:138"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Change button shown on the pixel page$",
+    "steps": [
+      {
+        "name": "Change button shown on the pixel page",
+        "aggregatedDurations": {
+          "average": 0.045597207,
+          "median": 0.045597207
+        },
+        "durations": [
+          {
+            "duration": 0.04775294,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:22"
+          },
+          {
+            "duration": 0.043441475,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:53"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Tooltips shown on mouseover on Bulk edit button$",
+    "steps": [
+      {
+        "name": "Tooltips shown on mouseover on Bulk edit button",
+        "aggregatedDurations": {
+          "average": 2.087836549,
+          "median": 2.087836549
+        },
+        "durations": [
+          {
+            "duration": 2.087836549,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:133"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Tooltips shown on mouseover on each Pixels icon$",
+    "steps": [
+      {
+        "name": "Tooltips shown on mouseover on each Pixels icon",
+        "aggregatedDurations": {
+          "average": 2.107253288,
+          "median": 2.107253288
+        },
+        "durations": [
+          {
+            "duration": 2.107253288,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:43"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^There is a Pixels Icon on the left hand tool bar$",
+    "steps": [
+      {
+        "name": "There is a Pixels Icon on the left hand tool bar",
+        "aggregatedDurations": {
+          "average": 0.051601472,
+          "median": 0.051601472
+        },
+        "durations": [
+          {
+            "duration": 0.051601472,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Pagination shown at the bottom of the page$",
+    "steps": [
+      {
+        "name": "Pagination shown at the bottom of the page",
+        "aggregatedDurations": {
+          "average": 0.025386229,
+          "median": 0.025386229
+        },
+        "durations": [
+          {
+            "duration": 0.025386229,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:111"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I don\u0027t change the pixel advertiser and save$",
+    "steps": [
+      {
+        "name": "I don\u0027t change the pixel advertiser and save",
+        "aggregatedDurations": {
+          "average": 1.096001665,
+          "median": 1.096001665
+        },
+        "durations": [
+          {
+            "duration": 1.096575532,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:34"
+          },
+          {
+            "duration": 1.095427799,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:65"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on the pixels icon on flight row$",
+    "steps": [
+      {
+        "name": "I click on the pixels icon on flight row",
+        "aggregatedDurations": {
+          "average": 1.148253251,
+          "median": 1.148083136
+        },
+        "durations": [
+          {
+            "duration": 1.153867881,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:49"
+          },
+          {
+            "duration": 1.148083136,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:58"
+          },
+          {
+            "duration": 1.148733376,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:71"
+          },
+          {
+            "duration": 1.152532415,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:83"
+          },
+          {
+            "duration": 1.145046978,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:93"
+          },
+          {
+            "duration": 1.144173591,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:93"
+          },
+          {
+            "duration": 1.149313643,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:93"
+          },
+          {
+            "duration": 1.145700204,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:93"
+          },
+          {
+            "duration": 1.144515352,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:93"
+          },
+          {
+            "duration": 1.160840038,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:107"
+          },
+          {
+            "duration": 1.151683348,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:118"
+          },
+          {
+            "duration": 1.149694656,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:118"
+          },
+          {
+            "duration": 1.149431403,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:118"
+          },
+          {
+            "duration": 1.144411672,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:130"
+          },
+          {
+            "duration": 1.141198447,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:143"
+          },
+          {
+            "duration": 1.143289539,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:155"
+          },
+          {
+            "duration": 1.147789591,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:165"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Click on Pixel Change button$",
+    "steps": [
+      {
+        "name": "Click on Pixel Change button",
+        "aggregatedDurations": {
+          "average": 1.180964082,
+          "median": 1.182885255
+        },
+        "durations": [
+          {
+            "duration": 1.194192131,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:29"
+          },
+          {
+            "duration": 1.17157838,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:33"
+          },
+          {
+            "duration": 1.200370261,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:60"
+          },
+          {
+            "duration": 1.157715559,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:64"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^There is an action icon on the screen indicating the missing values$",
+    "steps": [
+      {
+        "name": "There is an action icon on the screen indicating the missing values",
+        "aggregatedDurations": {
+          "average": 0.027845535,
+          "median": 0.027845535
+        },
+        "durations": [
+          {
+            "duration": 0.027845535,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:86"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Pixels option shown on the Campaigns tab$",
+    "steps": [
+      {
+        "name": "Pixels option shown on the Campaigns tab",
+        "aggregatedDurations": {
+          "average": 0.04690622,
+          "median": 0.04690622
+        },
+        "durations": [
+          {
+            "duration": 0.046399554,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:41"
+          },
+          {
+            "duration": 0.047412887,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:48"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I change the pixel advertiser to \"([^\"]*)\" and save$",
+    "steps": [
+      {
+        "name": "I change the pixel advertiser to \"QAAutomationAdvertiser 1 GB\" and save",
+        "aggregatedDurations": {
+          "average": 4.973040936,
+          "median": 4.944218051
+        },
+        "durations": [
+          {
+            "duration": 4.907887826,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:73"
+          },
+          {
+            "duration": 4.944218051,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:85"
+          },
+          {
+            "duration": 5.067016931,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:156"
+          }
+        ]
+      },
+      {
+        "name": "I change the pixel advertiser to \"TestBrand GB\" and save",
+        "aggregatedDurations": {
+          "average": 4.998750294,
+          "median": 4.998750294
+        },
+        "durations": [
+          {
+            "duration": 4.998750294,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:166"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^DSP tab opened in the browser for the Advertiser$",
+    "steps": [
+      {
+        "name": "DSP tab opened in the browser for the Advertiser",
+        "aggregatedDurations": {
+          "average": 1.584630364,
+          "median": 1.584630364
+        },
+        "durations": [
+          {
+            "duration": 1.584630364,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:170"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Option to enter search key exist$",
+    "steps": [
+      {
+        "name": "Option to enter search key exist",
+        "aggregatedDurations": {
+          "average": 0.048689473,
+          "median": 0.048689473
+        },
+        "durations": [
+          {
+            "duration": 0.048689473,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:112"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I entered search key$",
+    "steps": [
+      {
+        "name": "I entered search key",
+        "aggregatedDurations": {
+          "average": 1.207047591,
+          "median": 1.207047591
+        },
+        "durations": [
+          {
+            "duration": 1.207047591,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:113"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Login as \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "Login as \"ADMINISTRATOR\"",
+        "aggregatedDurations": {
+          "average": 5.036375664,
+          "median": 4.999016107
+        },
+        "durations": [
+          {
+            "duration": 4.97579137,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:8"
+          },
+          {
+            "duration": 4.99190059,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:8"
+          },
+          {
+            "duration": 4.995640749,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:8"
+          },
+          {
+            "duration": 5.005989544,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:8"
+          },
+          {
+            "duration": 4.975232437,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:8"
+          },
+          {
+            "duration": 5.005892264,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:8"
+          },
+          {
+            "duration": 5.002444799,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:8"
+          },
+          {
+            "duration": 5.02438015,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:8"
+          },
+          {
+            "duration": 5.003168425,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:8"
+          },
+          {
+            "duration": 4.997357654,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:8"
+          },
+          {
+            "duration": 5.786078384,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:8"
+          },
+          {
+            "duration": 4.99913088,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:8"
+          },
+          {
+            "duration": 4.997017601,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:8"
+          },
+          {
+            "duration": 4.998901334,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:8"
+          },
+          {
+            "duration": 5.0168273,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:8"
+          },
+          {
+            "duration": 4.987046832,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:8"
+          },
+          {
+            "duration": 4.983802887,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:8"
+          },
+          {
+            "duration": 4.978600542,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:8"
+          },
+          {
+            "duration": 5.00098688,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:8"
+          },
+          {
+            "duration": 5.001322666,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I search/filter for a particular result",
+    "steps": [
+      {
+        "name": "I search/filter for a particular result",
+        "aggregatedDurations": {
+          "average": 2.748118464,
+          "median": 2.725456117
+        },
+        "durations": [
+          {
+            "duration": 2.715136121,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:12"
+          },
+          {
+            "duration": 2.714377509,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:12"
+          },
+          {
+            "duration": 2.714797775,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:12"
+          },
+          {
+            "duration": 2.695382743,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:12"
+          },
+          {
+            "duration": 2.715164708,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:12"
+          },
+          {
+            "duration": 2.714054949,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:12"
+          },
+          {
+            "duration": 2.792927235,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:12"
+          },
+          {
+            "duration": 2.720623479,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:12"
+          },
+          {
+            "duration": 2.757525864,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:12"
+          },
+          {
+            "duration": 2.770530231,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:12"
+          },
+          {
+            "duration": 2.704576979,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:12"
+          },
+          {
+            "duration": 2.752860265,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:12"
+          },
+          {
+            "duration": 2.76494346,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:12"
+          },
+          {
+            "duration": 2.748908907,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:12"
+          },
+          {
+            "duration": 2.776028256,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:12"
+          },
+          {
+            "duration": 2.730288755,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:12"
+          },
+          {
+            "duration": 2.684275761,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:12"
+          },
+          {
+            "duration": 2.93046915,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:12"
+          },
+          {
+            "duration": 2.889983621,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:12"
+          },
+          {
+            "duration": 2.669513528,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I have the role: Pro Web Campaigns",
+    "steps": [
+      {
+        "name": "I have the role: Pro Web Campaigns",
+        "aggregatedDurations": {
+          "average": 0.000033493,
+          "median": 0.00003136
+        },
+        "durations": [
+          {
+            "duration": 0.000032854,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:6"
+          },
+          {
+            "duration": 0.00002432,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:6"
+          },
+          {
+            "duration": 0.000036694,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:6"
+          },
+          {
+            "duration": 0.000033707,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:6"
+          },
+          {
+            "duration": 0.000037973,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:6"
+          },
+          {
+            "duration": 0.000045227,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:6"
+          },
+          {
+            "duration": 0.000037547,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:6"
+          },
+          {
+            "duration": 0.000032853,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:6"
+          },
+          {
+            "duration": 0.00003072,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:6"
+          },
+          {
+            "duration": 0.00004096,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:6"
+          },
+          {
+            "duration": 0.000030294,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:6"
+          },
+          {
+            "duration": 0.000052906,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:6"
+          },
+          {
+            "duration": 0.000028586,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:6"
+          },
+          {
+            "duration": 0.00002688,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:6"
+          },
+          {
+            "duration": 0.000030293,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:6"
+          },
+          {
+            "duration": 0.000029867,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:6"
+          },
+          {
+            "duration": 0.000027733,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:6"
+          },
+          {
+            "duration": 0.000028587,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:6"
+          },
+          {
+            "duration": 0.000029866,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:6"
+          },
+          {
+            "duration": 0.000032,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on \"([^\"]*)\" from home page$",
+    "steps": [
+      {
+        "name": "I click on \"Campaigns\" from home page",
+        "aggregatedDurations": {
+          "average": 3.107160039,
+          "median": 3.104803795
+        },
+        "durations": [
+          {
+            "duration": 3.103742249,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:10"
+          },
+          {
+            "duration": 3.109488593,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:10"
+          },
+          {
+            "duration": 3.103127849,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:10"
+          },
+          {
+            "duration": 3.104436862,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:10"
+          },
+          {
+            "duration": 3.103132542,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:10"
+          },
+          {
+            "duration": 3.109212967,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:10"
+          },
+          {
+            "duration": 3.140046874,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:10"
+          },
+          {
+            "duration": 3.107832701,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:10"
+          },
+          {
+            "duration": 3.101302997,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:10"
+          },
+          {
+            "duration": 3.105457875,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:10"
+          },
+          {
+            "duration": 3.105262035,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:10"
+          },
+          {
+            "duration": 3.108162941,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:10"
+          },
+          {
+            "duration": 3.112606246,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:10"
+          },
+          {
+            "duration": 3.105170729,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:10"
+          },
+          {
+            "duration": 3.102955476,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:10"
+          },
+          {
+            "duration": 3.103228543,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:10"
+          },
+          {
+            "duration": 3.10204753,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:10"
+          },
+          {
+            "duration": 3.101190784,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:10"
+          },
+          {
+            "duration": 3.113305125,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:10"
+          },
+          {
+            "duration": 3.101489876,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Option to change pixel advertiser account exist$",
+    "steps": [
+      {
+        "name": "Option to change pixel advertiser account exist",
+        "aggregatedDurations": {
+          "average": 2.082370738,
+          "median": 2.082370738
+        },
+        "durations": [
+          {
+            "duration": 2.069534264,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:30"
+          },
+          {
+            "duration": 2.095207213,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:61"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Clear Filters button enabled$",
+    "steps": [
+      {
+        "name": "Clear Filters button enabled",
+        "aggregatedDurations": {
+          "average": 0.043269528,
+          "median": 0.043269528
+        },
+        "durations": [
+          {
+            "duration": 0.043269528,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:114"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Save button shown and is disabled$",
+    "steps": [
+      {
+        "name": "Save button shown and is disabled",
+        "aggregatedDurations": {
+          "average": 0.063212346,
+          "median": 0.063212346
+        },
+        "durations": [
+          {
+            "duration": 0.063212346,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:136"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I change the pixel advertiser and save$",
+    "steps": [
+      {
+        "name": "I change the pixel advertiser and save",
+        "aggregatedDurations": {
+          "average": 1.376100106,
+          "median": 1.376100106
+        },
+        "durations": [
+          {
+            "duration": 1.353625876,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:31"
+          },
+          {
+            "duration": 1.398574337,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:62"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "All Flights matching search/filter combination load as results",
+    "steps": [
+      {
+        "name": "All Flights matching search/filter combination load as results",
+        "aggregatedDurations": {
+          "average": 0.019163299,
+          "median": 0.019163299
+        },
+        "durations": [
+          {
+            "duration": 0.019193592,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:40"
+          },
+          {
+            "duration": 0.019133006,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:47"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Save button Enabled$",
+    "steps": [
+      {
+        "name": "Save button Enabled",
+        "aggregatedDurations": {
+          "average": 0.034916252,
+          "median": 0.034916252
+        },
+        "durations": [
+          {
+            "duration": 0.034916252,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:149"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I go to the Proteus Home URL in my browser",
+    "steps": [
+      {
+        "name": "I go to the Proteus Home URL in my browser",
+        "aggregatedDurations": {
+          "average": 4.043101208,
+          "median": 4.022152097
+        },
+        "durations": [
+          {
+            "duration": 3.981175048,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:7"
+          },
+          {
+            "duration": 4.003330132,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:7"
+          },
+          {
+            "duration": 4.012310608,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:7"
+          },
+          {
+            "duration": 4.03989161,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:7"
+          },
+          {
+            "duration": 3.97596545,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:7"
+          },
+          {
+            "duration": 4.005610664,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:7"
+          },
+          {
+            "duration": 4.123172641,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:7"
+          },
+          {
+            "duration": 4.124857973,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:7"
+          },
+          {
+            "duration": 4.040276036,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:7"
+          },
+          {
+            "duration": 4.019758498,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:7"
+          },
+          {
+            "duration": 4.024545696,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:7"
+          },
+          {
+            "duration": 4.025638816,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:7"
+          },
+          {
+            "duration": 4.088113456,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:7"
+          },
+          {
+            "duration": 4.038272837,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:7"
+          },
+          {
+            "duration": 3.971141985,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:7"
+          },
+          {
+            "duration": 3.982885554,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:7"
+          },
+          {
+            "duration": 4.367950776,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:7"
+          },
+          {
+            "duration": 4.008578129,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:7"
+          },
+          {
+            "duration": 4.035864731,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:7"
+          },
+          {
+            "duration": 3.992683523,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Click on Apply button",
+    "steps": [
+      {
+        "name": "Click on Apply button",
+        "aggregatedDurations": {
+          "average": 3.215877966,
+          "median": 3.213047802
+        },
+        "durations": [
+          {
+            "duration": 3.226108063,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:13"
+          },
+          {
+            "duration": 3.213148923,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:13"
+          },
+          {
+            "duration": 3.219191799,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:13"
+          },
+          {
+            "duration": 3.200493141,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:13"
+          },
+          {
+            "duration": 3.214670842,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:13"
+          },
+          {
+            "duration": 3.210736124,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:13"
+          },
+          {
+            "duration": 3.262119568,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:13"
+          },
+          {
+            "duration": 3.204499112,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:13"
+          },
+          {
+            "duration": 3.222332492,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:13"
+          },
+          {
+            "duration": 3.208050685,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:13"
+          },
+          {
+            "duration": 3.20285986,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:13"
+          },
+          {
+            "duration": 3.201745834,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:13"
+          },
+          {
+            "duration": 3.212946682,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:13"
+          },
+          {
+            "duration": 3.199606102,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:13"
+          },
+          {
+            "duration": 3.206786045,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:13"
+          },
+          {
+            "duration": 3.207386791,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:13"
+          },
+          {
+            "duration": 3.242769816,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:13"
+          },
+          {
+            "duration": 3.213193296,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:13"
+          },
+          {
+            "duration": 3.233837981,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:13"
+          },
+          {
+            "duration": 3.215076175,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Clicked on the header \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "Clicked on the header \"Type\"",
+        "aggregatedDurations": {
+          "average": 3.100816597,
+          "median": 3.100816597
+        },
+        "durations": [
+          {
+            "duration": 3.100816597,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:95"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Dropdown list with categories, Hard and Soft$",
+    "steps": [
+      {
+        "name": "Dropdown list with categories, Hard and Soft",
+        "aggregatedDurations": {
+          "average": 0.023432096,
+          "median": 0.023432096
+        },
+        "durations": [
+          {
+            "duration": 0.027800734,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:146"
+          },
+          {
+            "duration": 0.019063459,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:159"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Pixels filtered based on the \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "Pixels filtered based on the \"Autogen\"",
+        "aggregatedDurations": {
+          "average": 0.085933616,
+          "median": 0.085933616
+        },
+        "durations": [
+          {
+            "duration": 0.085933616,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:121"
+          }
+        ]
+      },
+      {
+        "name": "Pixels filtered based on the \"837828\"",
+        "aggregatedDurations": {
+          "average": 0.086403803,
+          "median": 0.086403803
+        },
+        "durations": [
+          {
+            "duration": 0.086403803,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:121"
+          }
+        ]
+      },
+      {
+        "name": "Pixels filtered based on the \"g4zbkad\"",
+        "aggregatedDurations": {
+          "average": 0.088384389,
+          "median": 0.088384389
+        },
+        "durations": [
+          {
+            "duration": 0.088384389,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:121"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^There is an icons for Pixels$",
+    "steps": [
+      {
+        "name": "There is an icons for Pixels",
+        "aggregatedDurations": {
+          "average": 0.028968521,
+          "median": 0.028968521
+        },
+        "durations": [
+          {
+            "duration": 0.028968521,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:42"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Dropdown list with Types: Homepage, Confirmation Page, Landing Page$",
+    "steps": [
+      {
+        "name": "Dropdown list with Types: Homepage, Confirmation Page, Landing Page",
+        "aggregatedDurations": {
+          "average": 0.021856417,
+          "median": 0.021856417
+        },
+        "durations": [
+          {
+            "duration": 0.026071455,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:147"
+          },
+          {
+            "duration": 0.01764138,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:160"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Pixel grid changed to editable state$",
+    "steps": [
+      {
+        "name": "Pixel grid changed to editable state",
+        "aggregatedDurations": {
+          "average": 0.05470803,
+          "median": 0.05470803
+        },
+        "durations": [
+          {
+            "duration": 0.05470803,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:135"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^The Pixels Name is a deeplink$",
+    "steps": [
+      {
+        "name": "The Pixels Name is a deeplink",
+        "aggregatedDurations": {
+          "average": 0.03800233,
+          "median": 0.03800233
+        },
+        "durations": [
+          {
+            "duration": 0.03800233,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:168"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Pixel bulk edit button shown on pixel tab$",
+    "steps": [
+      {
+        "name": "Pixel bulk edit button shown on pixel tab",
+        "aggregatedDurations": {
+          "average": 0.047372353,
+          "median": 0.047372353
+        },
+        "durations": [
+          {
+            "duration": 0.047372353,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:132"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Pixel details saved$",
+    "steps": [
+      {
+        "name": "Pixel details saved",
+        "aggregatedDurations": {
+          "average": 0.032360946,
+          "median": 0.032360946
+        },
+        "durations": [
+          {
+            "duration": 0.032360946,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:151"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Click on Save$",
+    "steps": [
+      {
+        "name": "Click on Save",
+        "aggregatedDurations": {
+          "average": 2.104138622,
+          "median": 2.104138622
+        },
+        "durations": [
+          {
+            "duration": 2.104138622,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:150"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "All Flights loads which I have access to",
+    "steps": [
+      {
+        "name": "All Flights loads which I have access to",
+        "aggregatedDurations": {
+          "average": 0.241305667,
+          "median": 0.222547958
+        },
+        "durations": [
+          {
+            "duration": 0.181184776,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:11"
+          },
+          {
+            "duration": 0.184709042,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:11"
+          },
+          {
+            "duration": 0.222579105,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:11"
+          },
+          {
+            "duration": 0.190380292,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:11"
+          },
+          {
+            "duration": 0.195361623,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:11"
+          },
+          {
+            "duration": 0.235465713,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:11"
+          },
+          {
+            "duration": 0.386800475,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:11"
+          },
+          {
+            "duration": 0.244878402,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:11"
+          },
+          {
+            "duration": 0.19556045,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:11"
+          },
+          {
+            "duration": 0.200971861,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:11"
+          },
+          {
+            "duration": 0.242079043,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:11"
+          },
+          {
+            "duration": 0.197526102,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:11"
+          },
+          {
+            "duration": 0.273262391,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:11"
+          },
+          {
+            "duration": 0.356795154,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:11"
+          },
+          {
+            "duration": 0.266416953,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:11"
+          },
+          {
+            "duration": 0.209358418,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:11"
+          },
+          {
+            "duration": 0.182632455,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:11"
+          },
+          {
+            "duration": 0.285381425,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:11"
+          },
+          {
+            "duration": 0.352252863,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:11"
+          },
+          {
+            "duration": 0.222516812,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Click on pixel bulk edit$",
+    "steps": [
+      {
+        "name": "Click on pixel bulk edit",
+        "aggregatedDurations": {
+          "average": 1.25638453,
+          "median": 1.25638453
+        },
+        "durations": [
+          {
+            "duration": 1.253544425,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:134"
+          },
+          {
+            "duration": 1.259224636,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:145"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^ReadOnly columns shown on pixel grid$",
+    "steps": [
+      {
+        "name": "ReadOnly columns shown on pixel grid",
+        "aggregatedDurations": {
+          "average": 0.079804553,
+          "median": 0.079804553
+        },
+        "durations": [
+          {
+            "duration": 0.079804553,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:139"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Click on the Pixel Name$",
+    "steps": [
+      {
+        "name": "Click on the Pixel Name",
+        "aggregatedDurations": {
+          "average": 1.116159097,
+          "median": 1.116159097
+        },
+        "durations": [
+          {
+            "duration": 1.116159097,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:169"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^New advertiser details shown on the pixel page$",
+    "steps": [
+      {
+        "name": "New advertiser details shown on the pixel page",
+        "aggregatedDurations": {
+          "average": 1.040419609,
+          "median": 1.040419609
+        },
+        "durations": [
+          {
+            "duration": 1.037477957,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:32"
+          },
+          {
+            "duration": 1.043361261,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:63"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Flights Advertiser Account is automatically applied on the Advertiser Account$",
+    "steps": [
+      {
+        "name": "Flights Advertiser Account is automatically applied on the Advertiser Account",
+        "aggregatedDurations": {
+          "average": 0.044928834,
+          "median": 0.044928834
+        },
+        "durations": [
+          {
+            "duration": 0.044928834,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:52"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Tooltips shown on mouseover on each missing icon$",
+    "steps": [
+      {
+        "name": "Tooltips shown on mouseover on each missing icon",
+        "aggregatedDurations": {
+          "average": 2.116517924,
+          "median": 2.116517924
+        },
+        "durations": [
+          {
+            "duration": 2.116517924,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:87"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Advertiser details shown on the pixel page$",
+    "steps": [
+      {
+        "name": "Advertiser details shown on the pixel page",
+        "aggregatedDurations": {
+          "average": 0.185297414,
+          "median": 0.185297414
+        },
+        "durations": [
+          {
+            "duration": 0.157438653,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:35"
+          },
+          {
+            "duration": 0.213156175,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:66"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Pixels are listed$",
+    "steps": [
+      {
+        "name": "Pixels are listed",
+        "aggregatedDurations": {
+          "average": 0.05563987,
+          "median": 0.05563987
+        },
+        "durations": [
+          {
+            "duration": 0.05563987,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:20"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Dropdown to filter based on Platforms exist and defaulted to ALL$",
+    "steps": [
+      {
+        "name": "Dropdown to filter based on Platforms exist and defaulted to ALL",
+        "aggregatedDurations": {
+          "average": 0.077155807,
+          "median": 0.077155807
+        },
+        "durations": [
+          {
+            "duration": 0.077155807,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:109"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on the add icon$",
+    "steps": [
+      {
+        "name": "I click on the add icon",
+        "aggregatedDurations": {
+          "average": 61.158377319,
+          "median": 61.158377319
+        },
+        "durations": [
+          {
+            "duration": 61.158377319,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:158"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I am a Proteus User",
+    "steps": [
+      {
+        "name": "I am a Proteus User",
+        "aggregatedDurations": {
+          "average": 0.00092689,
+          "median": 0.000794026
+        },
+        "durations": [
+          {
+            "duration": 0.003587838,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:5"
+          },
+          {
+            "duration": 0.000799573,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:5"
+          },
+          {
+            "duration": 0.000810666,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:5"
+          },
+          {
+            "duration": 0.000809387,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:5"
+          },
+          {
+            "duration": 0.000808106,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:5"
+          },
+          {
+            "duration": 0.000811093,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:5"
+          },
+          {
+            "duration": 0.00078848,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:5"
+          },
+          {
+            "duration": 0.000806826,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:5"
+          },
+          {
+            "duration": 0.000778666,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:5"
+          },
+          {
+            "duration": 0.000759466,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:5"
+          },
+          {
+            "duration": 0.000832426,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:5"
+          },
+          {
+            "duration": 0.000800853,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:5"
+          },
+          {
+            "duration": 0.000772266,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:5"
+          },
+          {
+            "duration": 0.000779947,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:5"
+          },
+          {
+            "duration": 0.000754346,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:5"
+          },
+          {
+            "duration": 0.000780799,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:5"
+          },
+          {
+            "duration": 0.000713813,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:5"
+          },
+          {
+            "duration": 0.000772266,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:5"
+          },
+          {
+            "duration": 0.000727893,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:5"
+          },
+          {
+            "duration": 0.000843093,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "The main homepage loads successfully",
+    "steps": [
+      {
+        "name": "The main homepage loads successfully",
+        "aggregatedDurations": {
+          "average": 0.04282829,
+          "median": 0.042854168
+        },
+        "durations": [
+          {
+            "duration": 0.040421529,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:9"
+          },
+          {
+            "duration": 0.043621102,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:9"
+          },
+          {
+            "duration": 0.042611608,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:9"
+          },
+          {
+            "duration": 0.042384622,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:9"
+          },
+          {
+            "duration": 0.042019822,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:9"
+          },
+          {
+            "duration": 0.044105368,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:9"
+          },
+          {
+            "duration": 0.042918381,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:9"
+          },
+          {
+            "duration": 0.042801901,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:9"
+          },
+          {
+            "duration": 0.042906435,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:9"
+          },
+          {
+            "duration": 0.041159662,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:9"
+          },
+          {
+            "duration": 0.043810968,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:9"
+          },
+          {
+            "duration": 0.042979395,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:9"
+          },
+          {
+            "duration": 0.043256728,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:9"
+          },
+          {
+            "duration": 0.048297793,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:9"
+          },
+          {
+            "duration": 0.041879022,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:9"
+          },
+          {
+            "duration": 0.042970008,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:9"
+          },
+          {
+            "duration": 0.042458862,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:9"
+          },
+          {
+            "duration": 0.042322755,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:9"
+          },
+          {
+            "duration": 0.042996035,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:9"
+          },
+          {
+            "duration": 0.040643823,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Rows are sorted based on \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "Rows are sorted based on \"Type\"",
+        "aggregatedDurations": {
+          "average": 1.630543944,
+          "median": 1.630543944
+        },
+        "durations": [
+          {
+            "duration": 1.630543944,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:96"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Advertiser Account is labelled as the title of the Page$",
+    "steps": [
+      {
+        "name": "Advertiser Account is labelled as the title of the Page",
+        "aggregatedDurations": {
+          "average": 0.049722006,
+          "median": 0.049722006
+        },
+        "durations": [
+          {
+            "duration": 0.049722006,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:21"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Bulk edit Category and Type$",
+    "steps": [
+      {
+        "name": "Bulk edit Category and Type",
+        "aggregatedDurations": {
+          "average": 2.261097276,
+          "median": 2.261097276
+        },
+        "durations": [
+          {
+            "duration": 2.261097276,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:148"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Click on Pixels icon$",
+    "steps": [
+      {
+        "name": "Click on Pixels icon",
+        "aggregatedDurations": {
+          "average": 3.036519878,
+          "median": 3.036519878
+        },
+        "durations": [
+          {
+            "duration": 3.032031133,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:18"
+          },
+          {
+            "duration": 3.041008623,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewPixels.feature:27"
+          }
+        ]
+      }
+    ]
+  }
+]

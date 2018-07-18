@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="119.060488">
+<testcase classname="Ability to sort Flights" name="01 Requires action tick box shown" time="21.684821">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then There is an option to filter by 'Requires action'......................passed
+And Default 'Requires action' is unselected.................................passed
+When Click on 'Requires action'.............................................passed
+Then 'Requires action' is selected..........................................passed
+And Click on Apply button...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Ability to sort Flights" name="02 Option to sort result" time="46.478241">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then Sort by "Start Date Descending" is shown...............................passed
+Then Option to sort result by Flight Created and Updated....................passed
+When Select sort by Flight created..........................................passed
+Then Sort by Flight created selected........................................passed
+When Select sort by Flight Updated..........................................passed
+Then Sort by Flight updated selected........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Ability to sort Flights" name="03 Flights sorted by Created date" time="25.494524">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+Then Sort by "Start Date Descending" is shown...............................passed
+When Select sort by Flight created..........................................passed
+Then All Flights matching search/filter combination load as results.........passed
+And All flights sorted based on created date................................passed
+And Sort by "Flight Created Descending" is shown............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Ability to sort Flights" name="04 Flights sorted by Updated date" time="25.402902">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+Then Sort by "Start Date Descending" is shown...............................passed
+When Select sort by Flight Updated..........................................passed
+Then All Flights matching search/filter combination load as results.........passed
+And All flights sorted based on updated date................................passed
+And Sort by "Flight Updated Descending" is shown............................passed
+]]></system-out>
+</testcase>
+</testsuite>

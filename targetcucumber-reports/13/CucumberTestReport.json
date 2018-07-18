@@ -1,0 +1,758 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3364692,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 27733,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4018017699,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 491910191,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "01 All four sections shown on the proteus home page",
+        "description": "",
+        "id": "regression-on-reports,client-reports,administration-tabs;01-all-four-sections-shown-on-the-proteus-home-page",
+        "after": [
+          {
+            "result": {
+              "duration": 1273820043,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5118582136,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 42499822,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 40333636,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "There is a box called \"Campaigns\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Campaigns",
+                  "offset": 23
+                }
+              ],
+              "location": "ProteusWebSteps.thereIsABoxCalled(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 48679233,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "There is a box called \"Reports\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Reports",
+                  "offset": 23
+                }
+              ],
+              "location": "ProteusWebSteps.thereIsABoxCalled(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 48846486,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "There is a box called \"Client Reports\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Client Reports",
+                  "offset": 23
+                }
+              ],
+              "location": "ProteusWebSteps.thereIsABoxCalled(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 40547823,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "There is a box called \"Administration\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Administration",
+                  "offset": 23
+                }
+              ],
+              "location": "ProteusWebSteps.thereIsABoxCalled(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2444678210,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "LogOut ProteusWeb from Home Page",
+            "match": {
+              "location": "ProteusWebSteps.ThenLogoutProteusWeb()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@ProteusWebRegression"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 793599,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 28586,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3977617930,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 901722495,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "02 Check if Reports tab opened correctly",
+        "description": "",
+        "id": "regression-on-reports,client-reports,administration-tabs;02-check-if-reports-tab-opened-correctly",
+        "after": [
+          {
+            "result": {
+              "duration": 1225144650,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5000049066,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 45305154,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3102980223,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I click on \"Reports\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Reports",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1095816493,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Reports page shown correctly",
+            "match": {
+              "location": "ProteusWebSteps.reportsPageShownCorrectly()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2467646947,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "LogOut ProteusWeb from Reports Page",
+            "match": {
+              "location": "ProteusWebSteps.logoutProteusWebFromReportsPage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@ProteusWebRegression"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 763306,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 31147,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4019757218,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 783217586,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "03 Check if Admin tab opened correctly",
+        "description": "",
+        "id": "regression-on-reports,client-reports,administration-tabs;03-check-if-admin-tab-opened-correctly",
+        "after": [
+          {
+            "result": {
+              "duration": 1232587421,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4965119161,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 44221848,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3110603473,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I click on \"Administration\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Administration",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 124473974,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Administration page shown correctly",
+            "match": {
+              "location": "ProteusWebSteps.administrationPageShownCorrectly()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2476402996,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Able to filter seats by Operation Unit TEL",
+            "match": {
+              "location": "ProteusWebSteps.ableToFilterSeatsByOperationUnitTEL()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3129550025,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "Able to navigate to Administration Jobs",
+            "match": {
+              "location": "ProteusWebSteps.ableToNavigateToAdministrationJobs()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6195358210,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Able to navigate to Administration Master Data",
+            "match": {
+              "location": "ProteusWebSteps.ableToNavigateToAdministrationMasterData()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2467353401,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "LogOut ProteusWeb from Admin Page",
+            "match": {
+              "location": "ProteusWebSteps.logoutProteusWebFromAdminPage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 27,
+            "name": "@ProteusWebRegression"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 773120,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 33707,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3996988588,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 501328852,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 38,
+        "name": "04 Check if Client Reports tab opened correctly",
+        "description": "",
+        "id": "regression-on-reports,client-reports,administration-tabs;04-check-if-client-reports-tab-opened-correctly",
+        "after": [
+          {
+            "result": {
+              "duration": 1239198618,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4974557451,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 49956672,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3098617985,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I click on \"Client Reports\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Client Reports",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4543623875,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "Client Reports page shown correctly",
+            "match": {
+              "location": "ProteusWebSteps.clientReportsPageShownCorrectly()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2161615717,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "Able to navigate to Client Reports Dashboard",
+            "match": {
+              "location": "ProteusWebSteps.ableToNavigateToClientReportsDashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2194835544,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "Able to navigate to Client Reports Performance",
+            "match": {
+              "location": "ProteusWebSteps.ableToNavigateToClientReportsPerformance()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2149547030,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "Able to navigate to Client Reports DSP",
+            "match": {
+              "location": "ProteusWebSteps.ableToNavigateToClientReportsDSP()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2149655830,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "Able to navigate to Client Reports Tactics",
+            "match": {
+              "location": "ProteusWebSteps.ableToNavigateToClientReportsTactics()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2523924683,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "LogOut ProteusWeb from Client Reports Page",
+            "match": {
+              "location": "ProteusWebSteps.logoutProteusWebFromClientReportsPage()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Regression on Reports,Client Reports,Administration tabs",
+    "description": "",
+    "id": "regression-on-reports,client-reports,administration-tabs",
+    "keyword": "Feature",
+    "uri": "C:/repoProteusWebJava/./src/test/java/Features/RegressionOtherModules.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@ProteusWebRegression"
+      }
+    ]
+  }
+]

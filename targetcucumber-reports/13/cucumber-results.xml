@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="89.522511">
+<testcase classname="Regression on Reports,Client Reports,Administration tabs" name="01 All four sections shown on the proteus home page" time="13.571308">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+And There is a box called "Campaigns".......................................passed
+And There is a box called "Reports".........................................passed
+And There is a box called "Client Reports"..................................passed
+And There is a box called "Administration"..................................passed
+And LogOut ProteusWeb from Home Page........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Regression on Reports,Client Reports,Administration tabs" name="02 Check if Reports tab opened correctly" time="17.817105">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Reports" from home page....................................passed
+Then Reports page shown correctly...........................................passed
+And LogOut ProteusWeb from Reports Page.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Regression on Reports,Client Reports,Administration tabs" name="03 Check if Admin tab opened correctly" time="28.54944">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Administration" from home page.............................passed
+Then Administration page shown correctly....................................passed
+And Able to filter seats by Operation Unit TEL..............................passed
+And Able to navigate to Administration Jobs.................................passed
+And Able to navigate to Administration Master Data..........................passed
+And LogOut ProteusWeb from Admin Page.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Regression on Reports,Client Reports,Administration tabs" name="04 Check if Client Reports tab opened correctly" time="29.584658">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Client Reports" from home page.............................passed
+Then Client Reports page shown correctly....................................passed
+And Able to navigate to Client Reports Dashboard............................passed
+And Able to navigate to Client Reports Performance..........................passed
+And Able to navigate to Client Reports DSP..................................passed
+And Able to navigate to Client Reports Tactics..............................passed
+And LogOut ProteusWeb from Client Reports Page..............................passed
+]]></system-out>
+</testcase>
+</testsuite>

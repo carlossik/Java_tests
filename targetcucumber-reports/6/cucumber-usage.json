@@ -1,0 +1,1044 @@
+[
+  {
+    "source": "^Click on edit icon to change advertiser information$",
+    "steps": [
+      {
+        "name": "Click on edit icon to change advertiser information",
+        "aggregatedDurations": {
+          "average": 1.21836108,
+          "median": 1.21836108
+        },
+        "durations": [
+          {
+            "duration": 1.21836108,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:45"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I go to the Proteus Home URL in my browser",
+    "steps": [
+      {
+        "name": "I go to the Proteus Home URL in my browser",
+        "aggregatedDurations": {
+          "average": 4.146764097,
+          "median": 4.071081357
+        },
+        "durations": [
+          {
+            "duration": 4.060058428,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:7"
+          },
+          {
+            "duration": 4.176221791,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:7"
+          },
+          {
+            "duration": 4.052209471,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:7"
+          },
+          {
+            "duration": 4.034299719,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:7"
+          },
+          {
+            "duration": 4.075805408,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:7"
+          },
+          {
+            "duration": 4.961673403,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:7"
+          },
+          {
+            "duration": 4.026827082,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:7"
+          },
+          {
+            "duration": 4.033432733,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:7"
+          },
+          {
+            "duration": 4.066357306,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:7"
+          },
+          {
+            "duration": 4.07591762,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:7"
+          },
+          {
+            "duration": 4.080431325,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:7"
+          },
+          {
+            "duration": 4.117934883,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Search for an Advertiser to Merge$",
+    "steps": [
+      {
+        "name": "Search for an Advertiser to Merge",
+        "aggregatedDurations": {
+          "average": 4.847184065,
+          "median": 4.847184065
+        },
+        "durations": [
+          {
+            "duration": 4.829862899,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:87"
+          },
+          {
+            "duration": 4.864505231,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:101"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Advertiser Platform details shown$",
+    "steps": [
+      {
+        "name": "Advertiser Platform details shown",
+        "aggregatedDurations": {
+          "average": 2.077085834,
+          "median": 2.077085834
+        },
+        "durations": [
+          {
+            "duration": 2.077085834,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:78"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Search for an Advertiser to EditName$",
+    "steps": [
+      {
+        "name": "Search for an Advertiser to EditName",
+        "aggregatedDurations": {
+          "average": 4.812329723,
+          "median": 4.7491824
+        },
+        "durations": [
+          {
+            "duration": 4.7491824,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:28"
+          },
+          {
+            "duration": 4.733987954,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:34"
+          },
+          {
+            "duration": 4.747687788,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:43"
+          },
+          {
+            "duration": 4.896953644,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:56"
+          },
+          {
+            "duration": 4.933836829,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:65"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^No Advertisers returned$",
+    "steps": [
+      {
+        "name": "No Advertisers returned",
+        "aggregatedDurations": {
+          "average": 0.043356568,
+          "median": 0.043356568
+        },
+        "durations": [
+          {
+            "duration": 0.043356568,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:48"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Click on bulk edit$",
+    "steps": [
+      {
+        "name": "Click on bulk edit",
+        "aggregatedDurations": {
+          "average": 1.2028893,
+          "median": 1.2028893
+        },
+        "durations": [
+          {
+            "duration": 1.2028893,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:123"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Update Advertiser, Agency Name and save the details$",
+    "steps": [
+      {
+        "name": "Update Advertiser, Agency Name and save the details",
+        "aggregatedDurations": {
+          "average": 7.799616512,
+          "median": 7.799616512
+        },
+        "durations": [
+          {
+            "duration": 7.799616512,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:46"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Administration page shown correctly$",
+    "steps": [
+      {
+        "name": "Administration page shown correctly",
+        "aggregatedDurations": {
+          "average": 0.140864011,
+          "median": 0.127249652
+        },
+        "durations": [
+          {
+            "duration": 0.151420522,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:11"
+          },
+          {
+            "duration": 0.129299998,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:11"
+          },
+          {
+            "duration": 0.269045645,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:11"
+          },
+          {
+            "duration": 0.125002614,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:11"
+          },
+          {
+            "duration": 0.128866932,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:11"
+          },
+          {
+            "duration": 0.126840693,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:11"
+          },
+          {
+            "duration": 0.127658612,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:11"
+          },
+          {
+            "duration": 0.122805281,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:11"
+          },
+          {
+            "duration": 0.1391129,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:11"
+          },
+          {
+            "duration": 0.121908001,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:11"
+          },
+          {
+            "duration": 0.126745972,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:11"
+          },
+          {
+            "duration": 0.121660962,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Bulk edit saved successfuly$",
+    "steps": [
+      {
+        "name": "Bulk edit saved successfuly",
+        "aggregatedDurations": {
+          "average": 0.952130154,
+          "median": 0.952130154
+        },
+        "durations": [
+          {
+            "duration": 0.952130154,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:125"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Search for Advertiser with updated name$",
+    "steps": [
+      {
+        "name": "Search for Advertiser with updated name",
+        "aggregatedDurations": {
+          "average": 4.53060372,
+          "median": 4.53060372
+        },
+        "durations": [
+          {
+            "duration": 4.53060372,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:49"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Click on Merge Into Another Advertiser Account$",
+    "steps": [
+      {
+        "name": "Click on Merge Into Another Advertiser Account",
+        "aggregatedDurations": {
+          "average": 2.12094345,
+          "median": 2.125871306
+        },
+        "durations": [
+          {
+            "duration": 2.126199413,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:68"
+          },
+          {
+            "duration": 2.110759633,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:89"
+          },
+          {
+            "duration": 2.125871306,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:103"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Option to Merge advertiser account into another exist$",
+    "steps": [
+      {
+        "name": "Option to Merge advertiser account into another exist",
+        "aggregatedDurations": {
+          "average": 3.209055484,
+          "median": 3.209055484
+        },
+        "durations": [
+          {
+            "duration": 3.209055484,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:59"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^LogOut ProteusWeb from Admin Page$",
+    "steps": [
+      {
+        "name": "LogOut ProteusWeb from Admin Page",
+        "aggregatedDurations": {
+          "average": 2.491065902,
+          "median": 2.483544541
+        },
+        "durations": [
+          {
+            "duration": 2.506543997,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:23"
+          },
+          {
+            "duration": 2.508574077,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:38"
+          },
+          {
+            "duration": 2.473645025,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:51"
+          },
+          {
+            "duration": 2.483544541,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:60"
+          },
+          {
+            "duration": 2.483021874,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:81"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Able to navigate to Administration Advertiser Accounts$",
+    "steps": [
+      {
+        "name": "Able to navigate to Administration Advertiser Accounts",
+        "aggregatedDurations": {
+          "average": 6.194412966,
+          "median": 6.191194585
+        },
+        "durations": [
+          {
+            "duration": 6.213650683,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:15"
+          },
+          {
+            "duration": 6.187999493,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:20"
+          },
+          {
+            "duration": 6.191666265,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:27"
+          },
+          {
+            "duration": 6.192154798,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:33"
+          },
+          {
+            "duration": 6.187696134,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:42"
+          },
+          {
+            "duration": 6.190722905,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:55"
+          },
+          {
+            "duration": 6.192417198,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:64"
+          },
+          {
+            "duration": 6.18937848,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:74"
+          },
+          {
+            "duration": 6.190577412,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:86"
+          },
+          {
+            "duration": 6.194901251,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:100"
+          },
+          {
+            "duration": 6.214806949,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:115"
+          },
+          {
+            "duration": 6.186984027,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:121"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Advertisers filtered as per search key \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "Advertisers filtered as per search key \"AdvertiserNameBeforeEdit\"",
+        "aggregatedDurations": {
+          "average": 0.023510176,
+          "median": 0.02434303
+        },
+        "durations": [
+          {
+            "duration": 0.026179829,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:29"
+          },
+          {
+            "duration": 0.022506231,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:35"
+          },
+          {
+            "duration": 0.026624842,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:57"
+          },
+          {
+            "duration": 0.018729805,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:66"
+          }
+        ]
+      },
+      {
+        "name": "Advertisers filtered as per search key \"AdvertiserNameAfterEdit\"",
+        "aggregatedDurations": {
+          "average": 0.025874335,
+          "median": 0.025874335
+        },
+        "durations": [
+          {
+            "duration": 0.025874335,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:50"
+          }
+        ]
+      },
+      {
+        "name": "Advertisers filtered as per search key \"PHARMA - MAINTAIN\"",
+        "aggregatedDurations": {
+          "average": 0.026458869,
+          "median": 0.026458869
+        },
+        "durations": [
+          {
+            "duration": 0.026458869,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:76"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Login as \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "Login as \"ADMINISTRATOR\"",
+        "aggregatedDurations": {
+          "average": 5.001100479,
+          "median": 4.999545813
+        },
+        "durations": [
+          {
+            "duration": 5.010836476,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:8"
+          },
+          {
+            "duration": 5.02970708,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:8"
+          },
+          {
+            "duration": 4.959162044,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:8"
+          },
+          {
+            "duration": 4.958739644,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:8"
+          },
+          {
+            "duration": 4.963632655,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:8"
+          },
+          {
+            "duration": 4.982944861,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:8"
+          },
+          {
+            "duration": 4.994626989,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:8"
+          },
+          {
+            "duration": 5.010202023,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:8"
+          },
+          {
+            "duration": 4.959712444,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:8"
+          },
+          {
+            "duration": 5.036557638,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:8"
+          },
+          {
+            "duration": 5.004464638,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:8"
+          },
+          {
+            "duration": 5.102619262,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I select a First Advertiser Account$",
+    "steps": [
+      {
+        "name": "I select a First Advertiser Account",
+        "aggregatedDurations": {
+          "average": 1.098423531,
+          "median": 1.096997505
+        },
+        "durations": [
+          {
+            "duration": 1.107517821,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:21"
+          },
+          {
+            "duration": 1.103400062,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:36"
+          },
+          {
+            "duration": 1.092798254,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:44"
+          },
+          {
+            "duration": 1.091668868,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:58"
+          },
+          {
+            "duration": 1.095646679,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:67"
+          },
+          {
+            "duration": 1.103451689,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:77"
+          },
+          {
+            "duration": 1.094556546,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:88"
+          },
+          {
+            "duration": 1.098348331,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:102"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Advertiser Account Overview screen shown$",
+    "steps": [
+      {
+        "name": "Advertiser Account Overview screen shown",
+        "aggregatedDurations": {
+          "average": 1.354762942,
+          "median": 1.354762942
+        },
+        "durations": [
+          {
+            "duration": 1.354762942,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:22"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Search for a Advertiser Name \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "Search for a Advertiser Name \"PHARMA - MAINTAIN\"",
+        "aggregatedDurations": {
+          "average": 2.647545323,
+          "median": 2.647545323
+        },
+        "durations": [
+          {
+            "duration": 2.647545323,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:75"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on \"([^\"]*)\" from home page$",
+    "steps": [
+      {
+        "name": "I click on \"Administration\" from home page",
+        "aggregatedDurations": {
+          "average": 3.110982281,
+          "median": 3.110161233
+        },
+        "durations": [
+          {
+            "duration": 3.121162189,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:10"
+          },
+          {
+            "duration": 3.107388967,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:10"
+          },
+          {
+            "duration": 3.109218087,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:10"
+          },
+          {
+            "duration": 3.109976273,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:10"
+          },
+          {
+            "duration": 3.110346193,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:10"
+          },
+          {
+            "duration": 3.111010512,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:10"
+          },
+          {
+            "duration": 3.111282726,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:10"
+          },
+          {
+            "duration": 3.106510461,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:10"
+          },
+          {
+            "duration": 3.107124435,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:10"
+          },
+          {
+            "duration": 3.104987689,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:10"
+          },
+          {
+            "duration": 3.117268857,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:10"
+          },
+          {
+            "duration": 3.11551099,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Search for Advertiser before edit name$",
+    "steps": [
+      {
+        "name": "Search for Advertiser before edit name",
+        "aggregatedDurations": {
+          "average": 4.474850784,
+          "median": 4.474850784
+        },
+        "durations": [
+          {
+            "duration": 4.474850784,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:47"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Advertisers filtered as per Requires action$",
+    "steps": [
+      {
+        "name": "Advertisers filtered as per Requires action",
+        "aggregatedDurations": {
+          "average": 0.583210845,
+          "median": 0.583210845
+        },
+        "durations": [
+          {
+            "duration": 0.583210845,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:117"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Tooltip with Platform Name and Platform External ID shown on mouseover on icon$",
+    "steps": [
+      {
+        "name": "Tooltip with Platform Name and Platform External ID shown on mouseover on icon",
+        "aggregatedDurations": {
+          "average": 22.557978642,
+          "median": 22.557978642
+        },
+        "durations": [
+          {
+            "duration": 22.557978642,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:79"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^LogOut ProteusWeb from Reports Page$",
+    "steps": [
+      {
+        "name": "LogOut ProteusWeb from Reports Page",
+        "aggregatedDurations": {
+          "average": 2.519847885,
+          "median": 2.519847885
+        },
+        "durations": [
+          {
+            "duration": 2.519847885,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:16"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Advertiser Platforms tab opened on clicking Platform icon$",
+    "steps": [
+      {
+        "name": "Advertiser Platforms tab opened on clicking Platform icon",
+        "aggregatedDurations": {
+          "average": 18.074681568,
+          "median": 18.074681568
+        },
+        "durations": [
+          {
+            "duration": 18.074681568,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:80"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Edit two or more Advertiser, Agency details and Save$",
+    "steps": [
+      {
+        "name": "Edit two or more Advertiser, Agency details and Save",
+        "aggregatedDurations": {
+          "average": 3.442067011,
+          "median": 3.442067011
+        },
+        "durations": [
+          {
+            "duration": 3.442067011,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:124"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Advertiser Account details displayed on the page$",
+    "steps": [
+      {
+        "name": "Advertiser Account details displayed on the page",
+        "aggregatedDurations": {
+          "average": 2.324319009,
+          "median": 2.324319009
+        },
+        "durations": [
+          {
+            "duration": 2.324319009,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:37"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I have the role: Pro Web Advertiser_Manager_Editor",
+    "steps": [
+      {
+        "name": "I have the role: Pro Web Advertiser_Manager_Editor",
+        "aggregatedDurations": {
+          "average": 0.000054222,
+          "median": 0.000052906
+        },
+        "durations": [
+          {
+            "duration": 0.000063573,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:6"
+          },
+          {
+            "duration": 0.000059733,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:6"
+          },
+          {
+            "duration": 0.000039253,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:6"
+          },
+          {
+            "duration": 0.000054186,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:6"
+          },
+          {
+            "duration": 0.000051626,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:6"
+          },
+          {
+            "duration": 0.00004992,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:6"
+          },
+          {
+            "duration": 0.000048213,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:6"
+          },
+          {
+            "duration": 0.00004864,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:6"
+          },
+          {
+            "duration": 0.000055467,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:6"
+          },
+          {
+            "duration": 0.00004736,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:6"
+          },
+          {
+            "duration": 0.000067413,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:6"
+          },
+          {
+            "duration": 0.00006528,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I am a Proteus User",
+    "steps": [
+      {
+        "name": "I am a Proteus User",
+        "aggregatedDurations": {
+          "average": 0.001125404,
+          "median": 0.000886826
+        },
+        "durations": [
+          {
+            "duration": 0.003763625,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:5"
+          },
+          {
+            "duration": 0.000832426,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:5"
+          },
+          {
+            "duration": 0.000838827,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:5"
+          },
+          {
+            "duration": 0.000888319,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:5"
+          },
+          {
+            "duration": 0.0008896,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:5"
+          },
+          {
+            "duration": 0.000867839,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:5"
+          },
+          {
+            "duration": 0.000858026,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:5"
+          },
+          {
+            "duration": 0.001003947,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:5"
+          },
+          {
+            "duration": 0.000931413,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:5"
+          },
+          {
+            "duration": 0.000841386,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:5"
+          },
+          {
+            "duration": 0.000885333,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:5"
+          },
+          {
+            "duration": 0.000904107,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "The main homepage loads successfully",
+    "steps": [
+      {
+        "name": "The main homepage loads successfully",
+        "aggregatedDurations": {
+          "average": 0.043720763,
+          "median": 0.042797635
+        },
+        "durations": [
+          {
+            "duration": 0.042688835,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:9"
+          },
+          {
+            "duration": 0.043662915,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:9"
+          },
+          {
+            "duration": 0.042906435,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:9"
+          },
+          {
+            "duration": 0.043194008,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:9"
+          },
+          {
+            "duration": 0.042527982,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:9"
+          },
+          {
+            "duration": 0.040956142,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:9"
+          },
+          {
+            "duration": 0.042651289,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:9"
+          },
+          {
+            "duration": 0.043245635,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:9"
+          },
+          {
+            "duration": 0.042466969,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:9"
+          },
+          {
+            "duration": 0.049639659,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:9"
+          },
+          {
+            "duration": 0.041964355,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:9"
+          },
+          {
+            "duration": 0.04874494,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Search based on Requires action$",
+    "steps": [
+      {
+        "name": "Search based on Requires action",
+        "aggregatedDurations": {
+          "average": 4.270129378,
+          "median": 4.270129378
+        },
+        "durations": [
+          {
+            "duration": 4.27970932,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:116"
+          },
+          {
+            "duration": 4.260549436,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AdvertiserAccounts.feature:122"
+          }
+        ]
+      }
+    ]
+  }
+]

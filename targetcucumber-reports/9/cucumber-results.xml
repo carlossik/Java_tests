@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="3" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="10" time="429.349944">
+<testcase classname="Creatives for flights and Advertisers" name="01 Add new icons on left hand tool bar, icon on each flight and tooltip" time="22.471408">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+Then All Flights matching search/filter combination load as results.........passed
+And Creatives option shown on the Campaigns tab.............................passed
+And There is an icons for Creatives.........................................passed
+And Tooltips shown on mouseover on each Creatives icon......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Creatives for flights and Advertisers" name="02 Able to open creatives tab from flights" time="22.29757">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+Then All Flights matching search/filter combination load as results.........passed
+And Creatives option shown on the Campaigns tab.............................passed
+When I click on the creatives icon on flight row............................passed
+Then Creatives screen opened................................................passed
+And Creatives are listed for the Advertiser Account of the Flight selected..passed
+And Flights Advertiser Account is automatically applied on the Advertiser Account Name.passed
+And Change button shown on the creative page................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Creatives for flights and Advertisers" name="03 Able to change the Advertiser Account on Creatives screen" time="26.73958">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+When I click on the creatives icon on flight row............................passed
+Then Creatives screen opened................................................passed
+When Click on Change button.................................................passed
+Then Option to change advertiser account exist..............................passed
+When I change the advertiser and save.......................................passed
+Then New advertiser details shown on the creatives page.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Creatives for flights and Advertisers" name="04 Tag icon on creatives screen" time="26.244412">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+When I click on the creatives icon on flight row............................passed
+Then Creatives screen opened................................................passed
+And There is a tag icon on the right hand side of the creative row..........passed
+And Tooltips shown on mouseover on tag icon 'View creative tag and image'...passed
+When Click on the tag icon..................................................passed
+Then Pop up shown with the creative name and options........................passed
+And Able to copy the creative tag script....................................passed
+And Unable to edit the creative tag script..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Creatives for flights and Advertisers" name="05 Creatives screen columns for advertiser with ad server mapped" time="22.30876">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+When I click on the creatives icon on flight row............................passed
+Then Creatives screen opened................................................passed
+And The following column for advertiser with ad server mapped...............passed
+]]></system-out>
+</testcase>
+<testcase classname="Creatives for flights and Advertisers" name="06 Creatives screen columns for advertiser without ad server mapped" time="26.899392">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+When I click on the creatives icon on flight row............................passed
+Then Creatives screen opened................................................passed
+When I change the advertiser "TestBrand GB" and save........................passed
+Then The following column for advertiser without ad server mapped...........passed
+]]></system-out>
+</testcase>
+<testcase classname="Creatives for flights and Advertisers" name="07 Bulk Edit - read only and editable columns" time="82.84644">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/button&quot;}&#10;  (Session info: chrome=67.0.3396.79)&#10;  (Driver info: chromedriver=2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'&#10;System info: host: 'TELLONLAP106', ip: '192.168.0.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\Users\RAMCHA~1.TEL\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.79, webStorageEnabled: true}&#10;Session ID: 3c46a439def1407c45d728d16818a1b9&#10;*** Element info: {Using=xpath, value=//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/button}&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)&#13;&#10;&#9;at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)&#13;&#10;&#9;at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)&#13;&#10;&#9;at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at com.sun.proxy.$Proxy25.isDisplayed(Unknown Source)&#13;&#10;&#9;at StepDefination.ProteusWebCreativesSteps.creativesBulkEditButtonShownOnCreativesTab(ProteusWebCreativesSteps.java:163)&#13;&#10;&#9;at ✽.And Creatives bulk edit button shown on Creatives tab(C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:69)&#13;&#10;"><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+When I click on the creatives icon on flight row............................passed
+Then Creatives screen opened................................................passed
+And Creatives bulk edit button shown on Creatives tab.......................failed
+And Tooltips shown on mouseover on Creative Bulk edit button................skipped
+When Click on Creatives bulk edit...........................................skipped
+Then Creatives grid changed to editable state...............................skipped
+And Save button shown and is disabled.......................................skipped
+And Cancel button shown and is enabled......................................skipped
+And Editable columns shown on Creatives grid................................skipped
+And ReadOnly columns shown on Creatives grid................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/button"}
+  (Session info: chrome=67.0.3396.79)
+  (Driver info: chromedriver=2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'TELLONLAP106', ip: '192.168.0.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\Users\RAMCHA~1.TEL\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.79, webStorageEnabled: true}
+Session ID: 3c46a439def1407c45d728d16818a1b9
+*** Element info: {Using=xpath, value=//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/button}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy25.isDisplayed(Unknown Source)
+	at StepDefination.ProteusWebCreativesSteps.creativesBulkEditButtonShownOnCreativesTab(ProteusWebCreativesSteps.java:163)
+	at ✽.And Creatives bulk edit button shown on Creatives tab(C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:69)
+]]></failure>
+</testcase>
+<testcase classname="Creatives for flights and Advertisers" name="08 Missing values for Creatives" time="88.322709">
+<failure message="java.lang.AssertionError: Dropdown list with AD Server Placements for each Creative not shown&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at StepDefination.ProteusWebCreativesSteps.dropdownListWithADServerPlacementsForEachCreative(ProteusWebCreativesSteps.java:214)&#13;&#10;&#9;at ✽.Then Dropdown list with AD Server Placements for each Creative(C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:84)&#13;&#10;"><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+When I click on the creatives icon on flight row............................passed
+And I change the advertiser "TRAVEL - LUXURY" and save......................passed
+Then Creatives screen opened................................................passed
+When I click on the creatives add icon......................................passed
+Then Dropdown list with AD Server Placements for each Creative..............failed
+And Dropdown lists for Classification and Classification Type exist for each Creative.skipped
+
+StackTrace:
+java.lang.AssertionError: Dropdown list with AD Server Placements for each Creative not shown
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at StepDefination.ProteusWebCreativesSteps.dropdownListWithADServerPlacementsForEachCreative(ProteusWebCreativesSteps.java:214)
+	at ✽.Then Dropdown list with AD Server Placements for each Creative(C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:84)
+]]></failure>
+</testcase>
+<testcase classname="Creatives for flights and Advertisers" name="09 Ability to edit and save Creatives classification" time="81.771675">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/button&quot;}&#10;  (Session info: chrome=67.0.3396.79)&#10;  (Driver info: chromedriver=2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'&#10;System info: host: 'TELLONLAP106', ip: '192.168.0.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\Users\RAMCHA~1.TEL\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.79, webStorageEnabled: true}&#10;Session ID: 7f7a06466f9847372f181277c252c05b&#10;*** Element info: {Using=xpath, value=//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/button}&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)&#13;&#10;&#9;at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)&#13;&#10;&#9;at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)&#13;&#10;&#9;at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at com.sun.proxy.$Proxy25.getCoordinates(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:65)&#13;&#10;&#9;at org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:43)&#13;&#10;&#9;at org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:36)&#13;&#10;&#9;at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:641)&#13;&#10;&#9;at SupportingUtilites.BrowserFactory.mouseClick(BrowserFactory.java:111)&#13;&#10;&#9;at StepDefination.ProteusWebCreativesSteps.clickOnCreativesBulkEdit(ProteusWebCreativesSteps.java:168)&#13;&#10;&#9;at ✽.When Click on Creatives bulk edit(C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:91)&#13;&#10;"><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+When I click on the creatives icon on flight row............................passed
+Then Creatives screen opened................................................passed
+When Click on Creatives bulk edit...........................................failed
+Then Dropdown list with AD Server Placements for each Creative..............skipped
+And Dropdown lists for Classification and Classification Type exist for each Creative.skipped
+When Bulk edit AD Server Placements and Classification......................skipped
+Then Save button Enabled on Creatives tab...................................skipped
+When Click on Save..........................................................skipped
+Then Creatives details saved................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/button"}
+  (Session info: chrome=67.0.3396.79)
+  (Driver info: chromedriver=2.37.543627 (63642262d9fb93fb4ab52398be4286d844092a5e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'TELLONLAP106', ip: '192.168.0.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.543627 (63642262d9fb93..., userDataDir: C:\Users\RAMCHA~1.TEL\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.79, webStorageEnabled: true}
+Session ID: 7f7a06466f9847372f181277c252c05b
+*** Element info: {Using=xpath, value=//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/button}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy25.getCoordinates(Unknown Source)
+	at org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:65)
+	at org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:43)
+	at org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:36)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:641)
+	at SupportingUtilites.BrowserFactory.mouseClick(BrowserFactory.java:111)
+	at StepDefination.ProteusWebCreativesSteps.clickOnCreativesBulkEdit(ProteusWebCreativesSteps.java:168)
+	at ✽.When Click on Creatives bulk edit(C:/repoProteusWebJava/./src/test/java/Features/OptionsToViewCreatives.feature:91)
+]]></failure>
+</testcase>
+<testcase classname="Creatives for flights and Advertisers" name="10 Deeplink Creatives Name" time="29.447998">
+<system-out><![CDATA[Given I am a Proteus User...................................................passed
+And I have the role: Pro Web Campaigns......................................passed
+And I go to the Proteus Home URL in my browser..............................passed
+When Login as "ADMINISTRATOR"...............................................passed
+Then The main homepage loads successfully...................................passed
+When I click on "Campaigns" from home page..................................passed
+Then All Flights loads which I have access to...............................passed
+When I search/filter for a particular result................................passed
+And Click on Apply button...................................................passed
+When I click on the creatives icon on flight row............................passed
+And I change the advertiser "TestBrand GB" and save.........................passed
+Then Creatives screen opened................................................passed
+And The Creative Name is a deeplink.........................................passed
+When Click on the Creative Name.............................................passed
+Then DSP tab opened in the browser for the Advertiser.......................passed
+]]></system-out>
+</testcase>
+</testsuite>

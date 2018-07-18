@@ -1,0 +1,860 @@
+[
+  {
+    "source": "All Flights matching search/filter combination load as results",
+    "steps": [
+      {
+        "name": "All Flights matching search/filter combination load as results",
+        "aggregatedDurations": {
+          "average": 0.018290978,
+          "median": 0.019413324
+        },
+        "durations": [
+          {
+            "duration": 0.019760631,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:56"
+          },
+          {
+            "duration": 0.020154018,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:67"
+          },
+          {
+            "duration": 0.014183247,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:77"
+          },
+          {
+            "duration": 0.019066018,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:87"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I go to the Proteus Home URL in my browser",
+    "steps": [
+      {
+        "name": "I go to the Proteus Home URL in my browser",
+        "aggregatedDurations": {
+          "average": 4.07651506,
+          "median": 4.073475809
+        },
+        "durations": [
+          {
+            "duration": 4.129176691,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:7"
+          },
+          {
+            "duration": 4.104389502,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:7"
+          },
+          {
+            "duration": 4.136661702,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:7"
+          },
+          {
+            "duration": 4.051629631,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:7"
+          },
+          {
+            "duration": 4.059809681,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:7"
+          },
+          {
+            "duration": 4.13877114,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:7"
+          },
+          {
+            "duration": 4.040574703,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:7"
+          },
+          {
+            "duration": 4.076017035,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:7"
+          },
+          {
+            "duration": 4.092735961,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:7"
+          },
+          {
+            "duration": 4.006711464,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:7"
+          },
+          {
+            "duration": 4.010768635,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:7"
+          },
+          {
+            "duration": 4.070934583,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Click on Apply button",
+    "steps": [
+      {
+        "name": "Click on Apply button",
+        "aggregatedDurations": {
+          "average": 3.217657933,
+          "median": 3.216720121
+        },
+        "durations": [
+          {
+            "duration": 3.21053943,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:55"
+          },
+          {
+            "duration": 3.210243323,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:66"
+          },
+          {
+            "duration": 3.217371214,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:76"
+          },
+          {
+            "duration": 3.222912758,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:86"
+          },
+          {
+            "duration": 3.228811849,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:96"
+          },
+          {
+            "duration": 3.216069028,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:104"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I can search by Flight Name or Booking Code",
+    "steps": [
+      {
+        "name": "I can search by Flight Name or Booking Code",
+        "aggregatedDurations": {
+          "average": 1.434416028,
+          "median": 1.434416028
+        },
+        "durations": [
+          {
+            "duration": 1.434416028,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:22"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Goal Type, Goal Value, Optimisation Manager are editable$",
+    "steps": [
+      {
+        "name": "Goal Type, Goal Value, Optimisation Manager are editable",
+        "aggregatedDurations": {
+          "average": 0.030424734,
+          "median": 0.030424734
+        },
+        "durations": [
+          {
+            "duration": 0.030424734,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:78"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Campaign details shown for each flight row$",
+    "steps": [
+      {
+        "name": "Campaign details shown for each flight row",
+        "aggregatedDurations": {
+          "average": 0.054365844,
+          "median": 0.054365844
+        },
+        "durations": [
+          {
+            "duration": 0.054365844,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:105"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Each flight title includes Advertiser, Agency, Flight Names and External Booking Reference$",
+    "steps": [
+      {
+        "name": "Each flight title includes Advertiser, Agency, Flight Names and External Booking Reference",
+        "aggregatedDurations": {
+          "average": 0.753553172,
+          "median": 0.753553172
+        },
+        "durations": [
+          {
+            "duration": 0.753553172,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:58"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^All Flights matching campaign \"([^\"]*)\" are filtered$",
+    "steps": [
+      {
+        "name": "All Flights matching campaign \"LOCAL BRANDING - GAME/COUNTRY\" are filtered",
+        "aggregatedDurations": {
+          "average": 0.056769256,
+          "median": 0.056769256
+        },
+        "durations": [
+          {
+            "duration": 0.056769256,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:106"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "The Campaigns page loads successfully",
+    "steps": [
+      {
+        "name": "The Campaigns page loads successfully",
+        "aggregatedDurations": {
+          "average": 0.476248117,
+          "median": 0.476248117
+        },
+        "durations": [
+          {
+            "duration": 0.476248117,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Goal Type, Goal Value, Optimisation Manager, Budget, Spend information and Flight Dates$",
+    "steps": [
+      {
+        "name": "Goal Type, Goal Value, Optimisation Manager, Budget, Spend information and Flight Dates",
+        "aggregatedDurations": {
+          "average": 1.291823236,
+          "median": 1.291823236
+        },
+        "durations": [
+          {
+            "duration": 1.291823236,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:68"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Filter dropdown fields exist",
+    "steps": [
+      {
+        "name": "Filter dropdown fields exist",
+        "aggregatedDurations": {
+          "average": 0.110810406,
+          "median": 0.110810406
+        },
+        "durations": [
+          {
+            "duration": 0.110810406,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:28"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^There is a section called \u0027Flights\u0027$",
+    "steps": [
+      {
+        "name": "There is a section called \u0027Flights\u0027",
+        "aggregatedDurations": {
+          "average": 0.044570434,
+          "median": 0.044570434
+        },
+        "durations": [
+          {
+            "duration": 0.040212463,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:16"
+          },
+          {
+            "duration": 0.048928406,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:57"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Apply button is enabled",
+    "steps": [
+      {
+        "name": "Apply button is enabled",
+        "aggregatedDurations": {
+          "average": 0.044748781,
+          "median": 0.044748781
+        },
+        "durations": [
+          {
+            "duration": 0.044748781,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:41"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "All Flights loads which I have access to",
+    "steps": [
+      {
+        "name": "All Flights loads which I have access to",
+        "aggregatedDurations": {
+          "average": 0.21132862,
+          "median": 0.229817502
+        },
+        "durations": [
+          {
+            "duration": 0.020196258,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:15"
+          },
+          {
+            "duration": 0.277421961,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:21"
+          },
+          {
+            "duration": 0.235162353,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:27"
+          },
+          {
+            "duration": 0.204283646,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:34"
+          },
+          {
+            "duration": 0.236630939,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:39"
+          },
+          {
+            "duration": 0.244567789,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:46"
+          },
+          {
+            "duration": 0.22639265,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:53"
+          },
+          {
+            "duration": 0.244522989,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:64"
+          },
+          {
+            "duration": 0.205566205,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:74"
+          },
+          {
+            "duration": 0.202759167,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:84"
+          },
+          {
+            "duration": 0.233242354,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:94"
+          },
+          {
+            "duration": 0.205197139,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:102"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^No flights returned and message displayed$",
+    "steps": [
+      {
+        "name": "No flights returned and message displayed",
+        "aggregatedDurations": {
+          "average": 0.064245733,
+          "median": 0.064245733
+        },
+        "durations": [
+          {
+            "duration": 0.064245733,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:97"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Login as \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "Login as \"ADMINISTRATOR\"",
+        "aggregatedDurations": {
+          "average": 5.030467613,
+          "median": 5.02993812
+        },
+        "durations": [
+          {
+            "duration": 5.048488513,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:8"
+          },
+          {
+            "duration": 5.032591773,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:8"
+          },
+          {
+            "duration": 5.035172251,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:8"
+          },
+          {
+            "duration": 5.139971354,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:8"
+          },
+          {
+            "duration": 4.963106576,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:8"
+          },
+          {
+            "duration": 4.96822316,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:8"
+          },
+          {
+            "duration": 5.027284468,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:8"
+          },
+          {
+            "duration": 5.001072639,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:8"
+          },
+          {
+            "duration": 4.997112747,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:8"
+          },
+          {
+            "duration": 5.067964558,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:8"
+          },
+          {
+            "duration": 5.013306447,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:8"
+          },
+          {
+            "duration": 5.071316877,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I search/filter for a particular result",
+    "steps": [
+      {
+        "name": "I search/filter for a particular result",
+        "aggregatedDurations": {
+          "average": 2.782907897,
+          "median": 2.728552435
+        },
+        "durations": [
+          {
+            "duration": 2.96099927,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:40"
+          },
+          {
+            "duration": 2.705351379,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:47"
+          },
+          {
+            "duration": 2.701409407,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:54"
+          },
+          {
+            "duration": 2.872582455,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:65"
+          },
+          {
+            "duration": 2.730077982,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:75"
+          },
+          {
+            "duration": 2.727026889,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:85"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I search/filter for a flightName \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I search/filter for a flightName \"AAAAAAAAA\"",
+        "aggregatedDurations": {
+          "average": 2.698686422,
+          "median": 2.698686422
+        },
+        "durations": [
+          {
+            "duration": 2.698686422,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:95"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I have the role: Pro Web Campaigns",
+    "steps": [
+      {
+        "name": "I have the role: Pro Web Campaigns",
+        "aggregatedDurations": {
+          "average": 0.000046079,
+          "median": 0.000044799
+        },
+        "durations": [
+          {
+            "duration": 0.00005248,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:6"
+          },
+          {
+            "duration": 0.000041813,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:6"
+          },
+          {
+            "duration": 0.000051627,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:6"
+          },
+          {
+            "duration": 0.00004736,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:6"
+          },
+          {
+            "duration": 0.000045226,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:6"
+          },
+          {
+            "duration": 0.000043947,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:6"
+          },
+          {
+            "duration": 0.000032,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:6"
+          },
+          {
+            "duration": 0.000046934,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:6"
+          },
+          {
+            "duration": 0.000039253,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:6"
+          },
+          {
+            "duration": 0.000044373,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:6"
+          },
+          {
+            "duration": 0.000041386,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:6"
+          },
+          {
+            "duration": 0.00006656,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on \"([^\"]*)\" from home page$",
+    "steps": [
+      {
+        "name": "I click on \"Campaigns\" from home page",
+        "aggregatedDurations": {
+          "average": 3.105637714,
+          "median": 3.106132007
+        },
+        "durations": [
+          {
+            "duration": 3.104621609,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:10"
+          },
+          {
+            "duration": 3.103399209,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:10"
+          },
+          {
+            "duration": 3.108078461,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:10"
+          },
+          {
+            "duration": 3.106654674,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:10"
+          },
+          {
+            "duration": 3.104986835,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:10"
+          },
+          {
+            "duration": 3.106699474,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:10"
+          },
+          {
+            "duration": 3.106719101,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:10"
+          },
+          {
+            "duration": 3.10760358,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:10"
+          },
+          {
+            "duration": 3.106742141,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:10"
+          },
+          {
+            "duration": 3.105609341,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:10"
+          },
+          {
+            "duration": 3.103205076,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:10"
+          },
+          {
+            "duration": 3.103333076,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I search/filter for a Campaign \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I search/filter for a Campaign \"LOCAL BRANDING - GAME/COUNTRY\"",
+        "aggregatedDurations": {
+          "average": 3.427111072,
+          "median": 3.427111072
+        },
+        "durations": [
+          {
+            "duration": 3.427111072,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:103"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I am a Proteus User",
+    "steps": [
+      {
+        "name": "I am a Proteus User",
+        "aggregatedDurations": {
+          "average": 0.001318292,
+          "median": 0.000953173
+        },
+        "durations": [
+          {
+            "duration": 0.004757758,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:5"
+          },
+          {
+            "duration": 0.001064533,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:5"
+          },
+          {
+            "duration": 0.001041919,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:5"
+          },
+          {
+            "duration": 0.001136639,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:5"
+          },
+          {
+            "duration": 0.001330773,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:5"
+          },
+          {
+            "duration": 0.000928853,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:5"
+          },
+          {
+            "duration": 0.000930133,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:5"
+          },
+          {
+            "duration": 0.000919466,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:5"
+          },
+          {
+            "duration": 0.000976213,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:5"
+          },
+          {
+            "duration": 0.000925439,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:5"
+          },
+          {
+            "duration": 0.000877653,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:5"
+          },
+          {
+            "duration": 0.000930133,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "The main homepage loads successfully",
+    "steps": [
+      {
+        "name": "The main homepage loads successfully",
+        "aggregatedDurations": {
+          "average": 0.044545047,
+          "median": 0.043806274
+        },
+        "durations": [
+          {
+            "duration": 0.048420246,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:9"
+          },
+          {
+            "duration": 0.048665579,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:9"
+          },
+          {
+            "duration": 0.043601901,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:9"
+          },
+          {
+            "duration": 0.045966487,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:9"
+          },
+          {
+            "duration": 0.044010648,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:9"
+          },
+          {
+            "duration": 0.043157314,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:9"
+          },
+          {
+            "duration": 0.042594969,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:9"
+          },
+          {
+            "duration": 0.044513687,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:9"
+          },
+          {
+            "duration": 0.043332675,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:9"
+          },
+          {
+            "duration": 0.042510062,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:9"
+          },
+          {
+            "duration": 0.041288516,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:9"
+          },
+          {
+            "duration": 0.046478486,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Clear Filters button is enabled",
+    "steps": [
+      {
+        "name": "Clear Filters button is enabled",
+        "aggregatedDurations": {
+          "average": 0.039944943,
+          "median": 0.039944943
+        },
+        "durations": [
+          {
+            "duration": 0.039944943,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:48"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "LogOut ProteusWeb from Campaigns page",
+    "steps": [
+      {
+        "name": "LogOut ProteusWeb from Campaigns page",
+        "aggregatedDurations": {
+          "average": 2.585189617,
+          "median": 2.513157541
+        },
+        "durations": [
+          {
+            "duration": 2.554372031,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:17"
+          },
+          {
+            "duration": 2.860536806,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:23"
+          },
+          {
+            "duration": 2.505661224,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:29"
+          },
+          {
+            "duration": 2.580972552,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:35"
+          },
+          {
+            "duration": 2.79056649,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:42"
+          },
+          {
+            "duration": 2.794169688,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:49"
+          },
+          {
+            "duration": 2.494216749,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:59"
+          },
+          {
+            "duration": 2.502444159,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:70"
+          },
+          {
+            "duration": 2.47596225,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:79"
+          },
+          {
+            "duration": 2.520653858,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:89"
+          },
+          {
+            "duration": 2.487227099,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:98"
+          },
+          {
+            "duration": 2.455492499,
+            "location": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToSearchForFlights.feature:107"
+          }
+        ]
+      }
+    ]
+  }
+]

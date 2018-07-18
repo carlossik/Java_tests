@@ -1,0 +1,27 @@
+@FlightInformation
+Feature: Proteus web Flight Information
+
+  Background:                                      [90m# C:/repoProteusWebJava/./src/test/java/Features/ExpandFlightInformation.feature:4[0m
+    [32mGiven [0m[32mI am a Proteus User[0m                      [90m# ProteusWebSteps.GivenIAmAProteusUser()[0m
+    [32mAnd [0m[32mI have the role: Pro Web Campaigns[0m         [90m# ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()[0m
+    [32mAnd [0m[32mI go to the Proteus Home URL in my browser[0m [90m# ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()[0m
+    [32mWhen [0m[32mLogin as "[0m[32m[1mADMINISTRATOR[0m[32m"[0m                  [90m# ProteusWebSteps.loginAs(String)[0m
+    [32mThen [0m[32mThe main homepage loads successfully[0m      [90m# ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()[0m
+    [32mWhen [0m[32mI click on "[0m[32m[1mCampaigns[0m[32m" from home page[0m     [90m# ProteusWebSteps.iClickOnFromHomePage(String)[0m
+    [32mThen [0m[32mAll Flights loads which I have access to[0m  [90m# ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()[0m
+
+  @FlightInformation
+  Scenario: 01 Goal, Viewability, DSP, Ad Server and Discrepancy Details displayed on Proteus Web [90m# C:/repoProteusWebJava/./src/test/java/Features/ExpandFlightInformation.feature:14[0m
+    [32mWhen [0m[32mI search/filter for a flightName "[0m[32m[1mIO-6920[0m[32m"[0m                                               [90m# ProteusWebSteps.iSearchFilterForAFlightName(String)[0m
+    [32mAnd [0m[32mClick on Apply button[0m                                                                     [90m# ProteusWebSteps.WhenClickOnApplyButton()[0m
+    [32mAnd [0m[32mExpand flight details[0m                                                                     [90m# ProteusWebSteps.expandFlightDetails()[0m
+    [32mThen [0m[32mDiscrepancy Details displayed when flight is expanded[0m                                    [90m# ProteusWebSteps.discrepancyDetailsDisplayedWhenFlightIsExpanded()[0m
+    [32mThen [0m[32mDiscrepancy Details show tooltip[0m                                                         [90m# ProteusWebSteps.discrepancyDetailsShowTooltip()[0m
+    [32mAnd [0m[32mPrimary Goal Details displayed when flight is expanded[0m                                    [90m# ProteusWebSteps.primaryGoalDetailsDisplayedWhenFlightIsExpanded()[0m
+    [32mAnd [0m[32mActual Goal detials show tooltip[0m                                                          [90m# ProteusWebSteps.actualGoalDetialsShowTooltip()[0m
+    [32mAnd [0m[32mViewability Details displayed when flight is expanded[0m                                     [90m# ProteusWebSteps.viewabilityDetailsDisplayedWhenFlightIsExpanded()[0m
+    [32mAnd [0m[32mViewability detials show tooltip[0m                                                          [90m# ProteusWebSteps.viewabilityDetialsShowTooltip()[0m
+    [32mAnd [0m[32mDSP Data Details displayed when flight is expanded[0m                                        [90m# ProteusWebSteps.dspDataDetailsDisplayedWhenFlightIsExpanded()[0m
+    [32mAnd [0m[32mDSP Data detials show tooltip[0m                                                             [90m# ProteusWebSteps.dspDataDetialsShowTooltip()[0m
+    [32mAnd [0m[32mAdServer Data Details displayed when flight is expanded[0m                                   [90m# ProteusWebSteps.adserverDataDetailsDisplayedWhenFlightIsExpanded()[0m
+    [32mAnd [0m[32mAdServer detials show tooltip[0m                                                             [90m# ProteusWebSteps.adserverDetialsShowTooltip()[0m

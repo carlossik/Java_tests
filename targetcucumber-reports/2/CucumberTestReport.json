@@ -1,0 +1,504 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7567783,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 63146,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4103600169,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5023635190,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 49538966,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3134277489,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on \"Campaigns\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Campaigns",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 233421554,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "All Flights loads which I have access to",
+            "match": {
+              "location": "ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 491413550,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "01 No goal set in the Goal Type/Value box",
+        "description": "",
+        "id": "ability-to-edit-flight-goal-data-in-campaigns;01-no-goal-set-in-the-goal-type/value-box",
+        "after": [
+          {
+            "result": {
+              "duration": 1536961051,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4296039554,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I search/filter for a flight with No goal",
+            "match": {
+              "location": "ProteusWebSteps.iSearchFilterForAFlightWithNoGoal()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3224014411,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Click on Apply button",
+            "match": {
+              "location": "ProteusWebSteps.WhenClickOnApplyButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51155604,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "There is an Add icon in the box orange to inform the user action is required",
+            "match": {
+              "location": "ProteusWebSteps.thereIsAnAddIconInTheBoxOrangeToInformTheUserActionIsRequired()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 53509524,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "The box states \u0027Goal Info and Target\u0027",
+            "match": {
+              "location": "ProteusWebSteps.theBoxStatesGoalInfoAndTarget()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1568853,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am a Proteus User",
+            "match": {
+              "location": "ProteusWebSteps.GivenIAmAProteusUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 39253,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have the role: Pro Web Campaigns",
+            "match": {
+              "location": "ProteusWebSteps.GivenIHaveTheRoleProWebCampaigns()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4048508140,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Proteus Home URL in my browser",
+            "match": {
+              "location": "ProteusWebSteps.GivenIGoToTheProteusHomeURLInMyBrowser()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5334300444,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Login as \"ADMINISTRATOR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMINISTRATOR",
+                  "offset": 10
+                }
+              ],
+              "location": "ProteusWebSteps.loginAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 41914009,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The main homepage loads successfully",
+            "match": {
+              "location": "ProteusWebSteps.ThenTheMainHomepageLoadsSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3104475688,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on \"Campaigns\" from home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Campaigns",
+                  "offset": 12
+                }
+              ],
+              "location": "ProteusWebSteps.iClickOnFromHomePage(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 192390318,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "All Flights loads which I have access to",
+            "match": {
+              "location": "ProteusWebSteps.ThenAllFlightsLoadsWhichIHaveAccessTo()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 585444017,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "02 Add/Edit goal set in the Goal Type/Value box",
+        "description": "",
+        "id": "ability-to-edit-flight-goal-data-in-campaigns;02-add/edit-goal-set-in-the-goal-type/value-box",
+        "after": [
+          {
+            "result": {
+              "duration": 1229235956,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3188574213,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I search/filter for a flight with No goal",
+            "match": {
+              "location": "ProteusWebSteps.iSearchFilterForAFlightWithNoGoal()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3212060923,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Click on Apply button",
+            "match": {
+              "location": "ProteusWebSteps.WhenClickOnApplyButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42515608,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "There is an Add icon in the box orange to inform the user action is required",
+            "match": {
+              "location": "ProteusWebSteps.thereIsAnAddIconInTheBoxOrangeToInformTheUserActionIsRequired()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1154769000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Click on Add \u0027Goal Info and Target\u0027",
+            "match": {
+              "location": "ProteusWebSteps.clickOnAddGoalInfoAndTarget()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 110300540,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Option to select Goal Type and Goal Value exist",
+            "match": {
+              "location": "ProteusWebSteps.optionToSelectGoalTypeAndGoalValueExist()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3807576402,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 27,
+                "value": "#Goal Type (dropdown)"
+              },
+              {
+                "line": 28,
+                "value": "#Goal Value (depending on goal type, value could be percentage/numeric/cost)"
+              }
+            ],
+            "line": 29,
+            "name": "Select Goal Type, Goal Value and Save",
+            "match": {
+              "location": "ProteusWebSteps.selectGoalTypeGoalValueAndSave()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7401902762,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Selected Goal Type and Goal Values saved",
+            "match": {
+              "location": "ProteusWebSteps.selectedGoalTypeAndGoalValuesSaved()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 23302390,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "There is an edit icon in the box",
+            "match": {
+              "location": "ProteusWebSteps.thereIsAnEditIconInTheBox()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1128581918,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Click to edit Goal Type",
+            "match": {
+              "location": "ProteusWebSteps.clickOnEditGoalInfoAndTarget()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 92965507,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Option to select Goal Type and Goal Value exist",
+            "match": {
+              "location": "ProteusWebSteps.optionToSelectGoalTypeAndGoalValueExist()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3758259730,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 34,
+                "value": "#Goal Type (dropdown)"
+              },
+              {
+                "line": 35,
+                "value": "#Goal Value (depending on goal type, value could be percentage/numeric/cost)"
+              }
+            ],
+            "line": 36,
+            "name": "Edit Goal Type, Goal Value and Save",
+            "match": {
+              "location": "ProteusWebSteps.editGoalTypeGoalValueAndSave()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7326640500,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Edited Goal Type and Goal Values saved",
+            "match": {
+              "location": "ProteusWebSteps.editedGoalTypeAndGoalValuesSaved()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Ability to edit flight Goal data in Campaigns",
+    "description": "",
+    "id": "ability-to-edit-flight-goal-data-in-campaigns",
+    "keyword": "Feature",
+    "uri": "C:/repoProteusWebJava/./src/test/java/Features/AbilityToEditGoalData.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@EditGoalData"
+      }
+    ]
+  }
+]
