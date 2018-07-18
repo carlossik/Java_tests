@@ -45,4 +45,3 @@ Feature: Regression on Reports,Client Reports,Administration tabs
     And Able to navigate to Client Reports DSP
     And Able to navigate to Client Reports Tactics
     And LogOut ProteusWeb from Client Reports Page
-

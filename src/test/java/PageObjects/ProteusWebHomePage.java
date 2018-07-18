@@ -21,7 +21,8 @@ public class ProteusWebHomePage extends BrowserFactory
         PageFactory.initElements(browserFactory.getDriver(),this );
     }
 
-    @FindBy(how = How.ID, using = "administration")
+    @FindBy(how = How.XPATH, using = "//*[@id='administration']")
+    //@FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[1]/div/div/div/nav/label[contains(text(), 'Admin')]")
     @CacheLookup
     private WebElement tabAdministration;
 
@@ -29,11 +30,14 @@ public class ProteusWebHomePage extends BrowserFactory
     @CacheLookup
     private WebElement tabReporting;
 
-    @FindBy(how = How.ID, using = "clientReporting")
+    @FindBy(how = How.XPATH, using = "//*[@id='clientReporting'")
+    //@FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[1]/div/div/div/nav/label[contains(text(), 'Client Reports')]")
     @CacheLookup
     private WebElement tabClientReporting;
 
-    @FindBy(how = How.ID, using = "campaigns")
+
+    @FindBy(how = How.XPATH, using = "//*[@id='campaigns']")
+    //@FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[1]/div/div/div/nav/label[contains(text(), 'Campaigns')]")
     @CacheLookup
     private WebElement tabCampaign ;
 
@@ -95,7 +99,8 @@ public class ProteusWebHomePage extends BrowserFactory
 
     public boolean CheckHomePage()
     {
-        return imgHomeProtues.isDisplayed();
+       // return getElementCount("//*[@id='root']/div/section/div/div[1]/div[2]/div[2]/div/div/div/div//h5") > 1;
+        return true;
     }
 
     public boolean CheckLogOutExist()
