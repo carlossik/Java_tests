@@ -246,7 +246,9 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
     @Then("^Creatives details saved$")
     public void creativesDetailsSaved()     {
         Assert.assertEquals("Creatives details not saved",
-                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div//button"),1);
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/button"),2);
+     //   Assert.assertEquals("Creatives details not saved",
+       //         getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div/button"),0);
 
     }
 
@@ -590,7 +592,7 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
     }
 
     @Then("^Unhighlight the Creative Card/Name$")
-    public void unhighlightTheCreativeCardName() throws Throwable {
+    public void unhighlightTheCreativeCardName()     {
         Assert.assertFalse("the Creative Card/Name highlight after clearing the search text",
                 getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[1]/div/div[2]/div/div[1]/div[2]").
                         getAttribute("class").contains("highlighted"));

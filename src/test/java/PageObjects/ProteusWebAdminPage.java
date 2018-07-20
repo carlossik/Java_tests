@@ -41,7 +41,7 @@ public class ProteusWebAdminPage extends BrowserFactory
     @CacheLookup
     public WebElement grdSeats;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[1]/div[2]/div[1]/div/div/input")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[1]//div[2]/div[1]/button")
     @CacheLookup
     public WebElement btnJobsRefresh ;
 

@@ -21,7 +21,7 @@ public class ProteusWebHomePage extends BrowserFactory
         PageFactory.initElements(browserFactory.getDriver(),this );
     }
 
-    // @FindBy(how = How.XPATH, using = "//*[@id='administration']")
+    //@FindBy(how = How.XPATH, using = "//*[@id='administration']")
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[1]/div/div/div/nav/label[contains(text(), 'Admin')]")
     @CacheLookup
     private WebElement tabAdministration;
@@ -30,16 +30,22 @@ public class ProteusWebHomePage extends BrowserFactory
     @CacheLookup
     private WebElement tabReporting;
 
-   // @FindBy(how = How.XPATH, using = "//*[@id='clientReporting'")
+    //@FindBy(how = How.XPATH, using = "//*[@id='clientReporting'")
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[1]/div/div/div/nav/label[contains(text(), 'Client Reports')]")
     @CacheLookup
     private WebElement tabClientReporting;
 
 
-    //@FindBy(how = How.XPATH, using = "//*[@id='campaigns']")
+   // @FindBy(how = How.XPATH, using = "//*[@id='campaigns']")
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[1]/div/div/div/nav/label[contains(text(), 'Campaigns')]")
     @CacheLookup
     private WebElement tabCampaign ;
+
+    // @FindBy(how = How.XPATH, using = "//*[@id='campaigns']")
+    @CacheLookup
+    private WebElement boxCampaign ;
+
+
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[2]/img")
     @CacheLookup
@@ -64,7 +70,10 @@ public class ProteusWebHomePage extends BrowserFactory
     public void NavigateProteusCampaign()
     {
         GeneralUtilites.wait(1);
-        mouseClick(tabCampaign );
+        if(tabCampaign.isDisplayed())
+            mouseClick(tabCampaign);
+        else if(boxCampaign.isDisplayed())
+            mouseClick(boxCampaign);
     }
 
     public void NavigateProteusReports()
@@ -81,7 +90,11 @@ public class ProteusWebHomePage extends BrowserFactory
 
     public boolean CheckCampaignTabExist()
     {
-        return tabCampaign.isDisplayed();
+        if(tabCampaign.isDisplayed())
+            return true;
+        else
+          return boxCampaign.isDisplayed();
+
     }
 
     public boolean CheckReportsTabExist()

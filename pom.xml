@@ -322,10 +322,10 @@
                         </goals>
                         <configuration>
                             <glue>StepDefination</glue>
-                            <featuresDirectory>./src/test/java/Features</featuresDirectory>
+                            <featuresDirectory>./src/test/resources/Features</featuresDirectory>
                             <cucumberOutputDir>target/cucumber-parallel</cucumberOutputDir>
                             <format>json,html</format>
-                            <tags>"~@ignored"</tags>
+
                             <parallelScheme>FEATURE</parallelScheme>
                         </configuration>
                     </execution>

@@ -82,7 +82,7 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
     @CacheLookup
     private WebElement cmbAgencyName;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div/form/div[2]/div[3]/div/input")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div/form/div[2]/div[3]//div/input")
     @CacheLookup
     private WebElement cmbOperationalUnit;
 

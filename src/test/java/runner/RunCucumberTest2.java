@@ -13,7 +13,7 @@ import java.io.File;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         strict = true,
-        features = {"./src/test/resources/features/AbilityLogInProWeb.feature"},
+        features = {"./src/test/resources/features/"},
         format = {
                 "pretty",
                 "html:target/cucumber-reports/cucumber-html-report",

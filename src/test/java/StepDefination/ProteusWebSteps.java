@@ -282,6 +282,13 @@ public class ProteusWebSteps extends BrowserFactory
         adminPage = new ProteusWebAdminPage(this.browserFactory);
         adminPage.NavigateAdministrationJobs();
         GeneralUtilites.wait(1);
+        if(getElement("/html/body/div/div/div[2]/section/div[2]/div/div[2]/button").isDisplayed()) {
+            mouseClick(getElement("/html/body/div/div/div[2]/section/div[2]/div/div[1]/div/div/div/input"));
+            mouseClick(getElement("/html/body/div/div/div[2]/section/div[2]/div/div[1]/div/div/ul/li[1]"));
+            mouseClick(getElement("/html/body/div/div/div[2]/section/div[2]/div/div[2]/button"));
+        }
+
+        GeneralUtilites.wait(1);
         Assert.assertTrue("Unable to navigate to Administration Jobs",
                 adminPage.btnJobsRefresh.isDisplayed());
     }
@@ -967,7 +974,10 @@ public class ProteusWebSteps extends BrowserFactory
     @When("^Search and select seat \"([^\"]*)\"$")
     public void searchAndSelectSeat(String strSearchKey)   {
      typeText(adminPage.txtSearch,strSearchKey);
-     mouseClick(adminPage.rowPlaformSeat);
+     if(getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[1]/div/div//div[@aria-label='row']/div[2]") > 1)
+        mouseClick(getElements("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[1]/div/div//div[@aria-label='row']/div[2]").get(1));
+     else
+         mouseClick(getElements("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[1]/div/div//div[@aria-label='row']/div[2]").get(0));
     }
 
     @Then("^Seat details page shown$")
