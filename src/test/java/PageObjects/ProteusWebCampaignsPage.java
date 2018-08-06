@@ -339,7 +339,6 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         }
         GeneralUtilites.wait(3);
         return obj.getAttribute("class").contains("activeMenuItem");
-
     }
 
     public boolean CheckFlightDetailsShown() {
@@ -394,9 +393,9 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
                     returnType = returnType &&  elementFlightDetails.get(1).getText().contains("SPEND VS BUDGET");
                     returnType = returnType && !elementFlightDetails.get(2).getText().equals("");
                     returnType = returnType &&  elementFlightDetails.get(3).getText().contains("Start:");
-                    return returnType;
-                }
 
+                }
+            return returnType;
         }
     }
 

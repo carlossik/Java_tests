@@ -23,7 +23,7 @@ public class ProteusWebAdminPage extends BrowserFactory
 
     @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[1]/aside/button[2]")
     @CacheLookup
-    public WebElement btnJobs;
+    public WebElement btnJobs;//*[@id="root"]/div/section/div/div[1]/aside/button/div[contains(text(),'Security Groups')]
 
     @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[1]/aside/button[3]")
     @CacheLookup
@@ -32,6 +32,10 @@ public class ProteusWebAdminPage extends BrowserFactory
     @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[1]/aside/button[4]")
     @CacheLookup
     private WebElement btnAdvertiserAccounts;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[1]/aside/button/div[contains(text(),'Security Groups')]")
+    @CacheLookup
+    public WebElement btnSecurityGroups;
 
     @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[2]/div/div/div/div/div[1]/div[1]/button")
     @CacheLookup

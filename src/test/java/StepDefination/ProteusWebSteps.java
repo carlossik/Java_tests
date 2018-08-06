@@ -127,7 +127,7 @@ public class ProteusWebSteps extends BrowserFactory
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("Logout option not shown on Campaign page",campaignsPage.CheckLogOutExist());
         Assert.assertTrue("Flights icon not shown on Campaign page",campaignsPage.CheckFLIGHTSExist() );
-        Assert.assertTrue( "Back to Home not shown on Campaign page",campaignsPage.CheckForNavigateToHome());
+       // Assert.assertTrue( "Back to Home not shown on Campaign page",campaignsPage.CheckForNavigateToHome());
     }
 
     @Then("All Flights loads which I have access to")
@@ -148,7 +148,6 @@ public class ProteusWebSteps extends BrowserFactory
         // Need to implement this
         Assert.assertTrue( "All Flights matching search/filter combination are not loaded as results",campaignsPage.GetFlightRowsCount()>0 );
     }
-
 
     @When("I search/filter for a particular result")
     public void WhenISearchFilterForAParticularResult()    {
@@ -172,13 +171,11 @@ public class ProteusWebSteps extends BrowserFactory
         GeneralUtilites.wait(1);
     }
 
-
     @Then("Clear Filters button is enabled")
     public void ThenClearFiltersButtonIsEnabled()    {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("Clear Filters button is not enabled after enter search",campaignsPage.btnClearFilters.isEnabled() );
     }
-
 
     @Then("I can search by Flight Name or Booking Code")
     public void ThenICanSearchByFlightNameOrBookingCode()    {
@@ -215,7 +212,6 @@ public class ProteusWebSteps extends BrowserFactory
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         campaignsPage.Logout();
     }
-
 
     @When("^API Search for Flights$")
     public void apiSearchForFlights()    {
@@ -287,7 +283,6 @@ public class ProteusWebSteps extends BrowserFactory
             mouseClick(getElement("/html/body/div/div/div[2]/section/div[2]/div/div[1]/div/div/ul/li[1]"));
             mouseClick(getElement("/html/body/div/div/div[2]/section/div[2]/div/div[2]/button"));
         }
-
         GeneralUtilites.wait(1);
         Assert.assertTrue("Unable to navigate to Administration Jobs",
                 adminPage.btnJobsRefresh.isDisplayed());
@@ -340,10 +335,8 @@ public class ProteusWebSteps extends BrowserFactory
     @Then("^Client Reports page shown correctly$")
     public void clientReportsPageShownCorrectly()    {
         clientReportsPage = new ProteusWebClientReportsPage(this.browserFactory);
-
         if(clientReportsPage.txtAdvertiser.isDisplayed())
             clientReportsPage.SelectAdvertiser();
-
         Assert.assertTrue("Client Reports page not shown correctly",
                 clientReportsPage.btnDashBoard.isDisplayed() &&
                         clientReportsPage.btnPerformance.isDisplayed() &&
@@ -382,7 +375,6 @@ public class ProteusWebSteps extends BrowserFactory
         Assert.assertTrue("Unable to navigate to Client Reports Tactics",
                 clientReportsPage.txtTacticsOverview.isDisplayed());
     }
-
 
     @Then("^There is an option to filter by 'Requires action'$")
     public void thereIsAnOptionToFilterByRequiresAction()    {
@@ -560,7 +552,6 @@ public class ProteusWebSteps extends BrowserFactory
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertEquals("^Sort by " + strSortBy + " is not shown$",
                 campaignsPage.getSortByLabel().trim().toLowerCase(),strSortBy.trim().toLowerCase());
-
     }
 
 
@@ -670,7 +661,6 @@ public class ProteusWebSteps extends BrowserFactory
         campaignsPage.CheckGoalDetailsSaved("eCPA","12");
     }
 
-
     @Then("^There is an edit icon in the box$")
     public void thereIsAnEditIconInTheBox()  {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
@@ -769,7 +759,7 @@ public class ProteusWebSteps extends BrowserFactory
       Assert.assertEquals( "UI Impressions not matching , Reporting API numbers",
               strNumbersUI.split(";")[0].replace(",",""),objResponse.FlightId.getImpressions());
 
-        Assert.assertEquals("UI Clicks not matching , Reporting API numbers",
+      Assert.assertEquals("UI Clicks not matching , Reporting API numbers",
                 strNumbersUI.split(";")[1].replace(",",""),objResponse.FlightId.getClicks());
     }
 
@@ -881,7 +871,6 @@ public class ProteusWebSteps extends BrowserFactory
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("Tooltip 'Click to go to reports' not shown on mouseover",
                 campaignsPage.OperationalUnitReportingOptions());
-
     }
 
     @When("^I search/filter for a Campaign \"([^\"]*)\"$")
@@ -916,8 +905,6 @@ public class ProteusWebSteps extends BrowserFactory
         Assert.assertTrue("Pixels option not shown on the Campaigns tab", campaignsPage.CheckForPixelsTab());
     }
 
-
-
     @And("^Creatives option not shown on the Campaigns tab$")
     public void creativesOptionNotShownOnTheCampaignsTab()  {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
@@ -930,8 +917,6 @@ public class ProteusWebSteps extends BrowserFactory
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertFalse("Creatives option shown on the Campaigns tab", campaignsPage.CheckForPixelsTab());
     }
-
-
 
     @And("^There is an icons for Creatives$")
     public void thereIsAnIconsForCreatives()  {
@@ -950,7 +935,6 @@ public class ProteusWebSteps extends BrowserFactory
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         mouseClick( campaignsPage.btnFlightCreatives);
     }
-
 
     @When("^I search/filter for a search key \"([^\"]*)\"$")
     public void iSearchFilterForASearchKey(String searchKey)     {
@@ -974,6 +958,7 @@ public class ProteusWebSteps extends BrowserFactory
     @When("^Search and select seat \"([^\"]*)\"$")
     public void searchAndSelectSeat(String strSearchKey)   {
      typeText(adminPage.txtSearch,strSearchKey);
+     GeneralUtilites.wait(2);
      if(getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[1]/div/div//div[@aria-label='row']/div[2]") > 1)
         mouseClick(getElements("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[1]/div/div//div[@aria-label='row']/div[2]").get(1));
      else
@@ -1051,7 +1036,7 @@ public class ProteusWebSteps extends BrowserFactory
     }
 
     @Then("^New seat storage details saved$")
-    public void newSeatStorageDetailsSaved()   {
+    public void newSeatStorageDetailsSaved()  {
        Assert.assertTrue("New seat storage details not saved",
       getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[3]/form/div/div[2]/div[7]/div[2]/div[1]/div/div[2]/div/div/div[1]/span[text()='INSERTION_ORDER']")>0);
     }

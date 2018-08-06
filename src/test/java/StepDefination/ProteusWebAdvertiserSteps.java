@@ -3,21 +3,25 @@ package StepDefination;
 import DataModels.ReportingAPIResponse;
 import PageObjects.*;
 import SupportingUtilites.BrowserFactory;
+
+import java.util.List;
 import java.util.Properties;
 import java.io.*;
+
+import cucumber.api.PendingException;
 import cucumber.api.java.en.*;
 import org.junit.Assert;
 import SupportingUtilites.*;
+import org.openqa.selenium.WebElement;
 
 public class ProteusWebAdvertiserSteps extends BrowserFactory {
     private BrowserFactory browserFactory;
-    private ProteusWebLoginPage loginPage;
-    private ProteusWebHomePage homePage;
+
     private ProteusWebCampaignsPage campaignsPage;
-    private ProteusWebAdminPage adminPage;
-    private ProteusWebReportsPage reportsPage;
-    private ProteusWebClientReportsPage clientReportsPage;
+
     private ProteusWebAdvertiserAccountsPage advertiserAccountsPage;
+    private AdminSecurityGroupsPage adminSecurityGroupsPage;
+    private ProteusWebAdminPage adminPage;
     private ReportingAPIResponse objResponse;
     private Properties prop = new Properties();
     private InputStream input = null;
@@ -43,37 +47,35 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
         }
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
+        adminSecurityGroupsPage = new AdminSecurityGroupsPage(this.browserFactory);
+        adminPage = new ProteusWebAdminPage(this.browserFactory);
     }
 
     @Then("^No flights returned and message displayed$")
     public void noFlightsReturnedAndMessageDisplayed()  {
-   //     campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("Flights returned and message not displayed",
                 campaignsPage.CheckForNoFlightsMatchingForSearch());
     }
 
     @When("^I select a First Advertiser Account$")
     public void iSelectAAdvertiserAccountRow()  {
-//        advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
         advertiserAccountsPage.SelectFirstAdvertiserRow();
     }
 
     @Then("^Advertiser Account Overview screen shown$")
     public void advertiserAccountOverviewScreenShown()  {
-   //     advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
+        GeneralUtilites.wait(1);
         Assert.assertTrue("Advertiser Account Overview screen not shown",advertiserAccountsPage.txtAdvertiserName.isDisplayed());
         mouseClick(advertiserAccountsPage.btnBack);
     }
 
     @When("^Search for a Advertiser Name \"([^\"]*)\"$")
     public void searchForAAdvertiserName(String strSearchKey)  {
-     //   advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
         advertiserAccountsPage.SearchForOnAdvertiserPage(strSearchKey);
     }
 
     @And("^Advertiser Account details displayed on the page$")
     public void advertiserAccountDetailsDisplayedOnThePage()  {
-     //   advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
         Assert.assertTrue( "Advertiser Account details not displayed on the page",
                 advertiserAccountsPage.CheckForAdvertiserAccountDetails());
         if(advertiserAccountsPage.btnBack.isDisplayed())
@@ -82,7 +84,6 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
 
     @And("^Option to Merge advertiser account into another exist$")
     public void optionToMergeAdvertiserAccountIntoAnotherExist()  {
-    //    advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
         GeneralUtilites.wait(1);
         Assert.assertTrue( "Option to Merge advertiser account into another doesn't exist",
                 advertiserAccountsPage.CheckForMergeAdvertiserAccount());
@@ -93,14 +94,12 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
 
     @When("^Click on Merge Into Another Advertiser Account$")
     public void clickOnMergeIntoAnotherAdvertiserAccount()  {
-    //    advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
         GeneralUtilites.wait(1);
         mouseClick(advertiserAccountsPage.btnMergeAdvertiser);
     }
 
     @Then("^Option to select Advertiser and confirm merge message shown$")
     public void optionToSelectAdvertiserAndConfirmMergeMessageShown()  {
-     //   advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
         GeneralUtilites.wait(2);
         Assert.assertTrue( "Option to select Advertiser and confirm merge message not shown",
                 advertiserAccountsPage.CheckForMergeObjectsOnDialog());
@@ -108,7 +107,6 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
 
     @Then("^Advertiser Platform details shown$")
     public void advertiserPlatformDetailsShown()  {
-      //  advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
         GeneralUtilites.wait(2);
         Assert.assertTrue( "Advertiser Platform details not shown",
                 advertiserAccountsPage.CheckForAdvertiserPlatformDetails());
@@ -116,7 +114,6 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
 
     @Then("^Tooltip with Platform Name and Platform External ID shown on mouseover on icon$")
     public void tooltipWithPlatformNameAndPlatformExternalIDShownOnMouseoverOnIcon()  {
-        //  advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
         GeneralUtilites.wait(2);
         Assert.assertTrue( "Tooltip with Platform Name and Platform External ID not shown on mouseover on icon",
                 advertiserAccountsPage.CheckForAdvertiserPlatformToolTip());
@@ -124,7 +121,6 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
 
     @Then("^Advertiser Platforms tab opened on clicking Platform icon$")
     public void advertiserPlatformsTabOpenedOnClickingPlatformIcon()  {
-        //  advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
         GeneralUtilites.wait(2);
         Assert.assertTrue( "Advertiser Platforms tab not opened on clicking Platform icon",
                 advertiserAccountsPage.CheckForAdvertiserPlatformTab());
@@ -132,7 +128,6 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
 
     @When("^Search for an Advertiser to Merge$")
     public void searchForAnAdvertiserToMerge()  {
-        //   advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
         this.AdvertiserMerger = GeneralUtilites.getAdvertiserNameDB("NoAgency");
         advertiserAccountsPage.SearchForAdvertiser(this.AdvertiserMerger);
         GeneralUtilites.wait(2);
@@ -140,40 +135,34 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
 
     @And("^Select the Advertiser to be merged and Save$")
     public void selectTheAdvertiserToBeMergedAndSave(){
-      //  advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
        this.MergedAdvertiser = advertiserAccountsPage.SelectAdvertiserToMerge();
         GeneralUtilites.wait(1);
     }
 
     @Then("^Second Advertiser details page shown$")
     public void secondAdvertiserDetailsPageShown(){
-      // advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
-       Assert.assertTrue("Second Advertiser details page not shown", advertiserAccountsPage.txtAdvertiserName.getAttribute("value").toLowerCase().equals(this.MergedAdvertiser.toLowerCase()));
+       Assert.assertEquals("Second Advertiser details page not shown", advertiserAccountsPage.txtAdvertiserName.getAttribute("value").toLowerCase(),this.MergedAdvertiser.toLowerCase());
        mouseClick(advertiserAccountsPage.btnBack);
     }
 
     @When("^Search for Advertiser one merged$")
     public void searchForAdvertiserOneMerged() {
-     //   advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
         advertiserAccountsPage.SearchForOnAdvertiserPage(this.AdvertiserMerger);
     }
 
     @Then("^No Advertisers returned$")
     public void noAdvertisersReturned()  {
-    //    advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
         Assert.assertTrue("Advertiser Still exist after Merge", advertiserAccountsPage.CheckForNoAdvertiserMatched());
     }
 
     @When("^Search for Advertiser two merged$")
     public void searchForAdvertiserTwoMerged()  {
-      //  advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
         advertiserAccountsPage.SearchForOnAdvertiserPage(this.MergedAdvertiser);
     }
 
 
     @Then("^Advertisers filtered as per search key \"([^\"]*)\"$")
     public void advertisersFilteredAsPerSearchKey(String strSearchKey)   {
-    //       advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
         switch (strSearchKey)
         {
             case "MergedAdvertiser":
@@ -198,34 +187,29 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
 
     @And("^Select the Advertiser to be merged and Cancel$")
     public void selectTheAdvertiserToBeMergedAndCancel() {
-    //  advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
         this.MergedAdvertiser = advertiserAccountsPage.SelectAdvertiserToMergeAndCancel();
         GeneralUtilites.wait(1);
     }
 
     @Then("^First Advertiser details page shown$")
     public void firstAdvertiserDetailsPageShown()   {
-    //  advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
         Assert.assertTrue("First Advertiser details page not shown", advertiserAccountsPage.txtAdvertiserName.getAttribute("value").toLowerCase().contains(this.AdvertiserMerger.toLowerCase().replace("_"," ")));
         mouseClick(advertiserAccountsPage.btnBack);
     }
 
     @When("^Click on edit icon to change advertiser information$")
     public void clickOnEditIconToChangeAdvertiserInformation()  {
-    //    advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
         mouseClick(advertiserAccountsPage.btnEditAdvertiserDetails);
     }
 
     @And("^Update Advertiser, Agency Name and save the details$")
     public void updateAdvertiserAgencyNameAndSaveTheDetails()  {
-   //     advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
         this.AdvertiserNameAfterEdit = "EditedAdvertiser" + GeneralUtilites.RandomNumber(1000,9999);
         advertiserAccountsPage.EditAdvertiserName(this.AdvertiserNameAfterEdit);
     }
 
     @When("^Search for an Advertiser to EditName$")
     public void searchForAnAdvertiserToEditName()  {
-    //    advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
         this.AdvertiserNameBeforeEdit = GeneralUtilites.getAdvertiserNameDB("EditName");
         advertiserAccountsPage.SearchForAdvertiser(this.AdvertiserNameBeforeEdit);
         GeneralUtilites.wait(2);
@@ -233,46 +217,221 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
 
     @When("^Search for Advertiser before edit name$")
     public void searchForAdvertiserBeforeEditName()   {
-    //    advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
         advertiserAccountsPage.SearchForAdvertiser(this.AdvertiserNameBeforeEdit);
         GeneralUtilites.wait(2);
     }
 
     @When("^Search for Advertiser with updated name$")
     public void searchForAdvertiserWithUpdatedName()   {
-    //    advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
+
         advertiserAccountsPage.SearchForAdvertiser(this.AdvertiserNameAfterEdit);
         GeneralUtilites.wait(2);
     }
 
     @When("^Search based on Requires action$")
     public void searchBasedOnRequiresAction()  {
-    //    advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
+
         advertiserAccountsPage.SearchForAdvertiserByRequiresAction();
         GeneralUtilites.wait(2);
     }
 
     @Then("^Advertisers filtered as per Requires action$")
     public void advertisersFilteredAsPerRequiresAction()  {
-    //    advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
+
         Assert.assertTrue("Advertisers not filtered as per Requires action", advertiserAccountsPage.CheckForAdvertiserRequiresActions());
     }
 
     @And("^Click on bulk edit$")
     public void clickOnBulkEdit()   {
-    //    advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
         mouseClick(advertiserAccountsPage.btnBulkEdit);
     }
 
     @And("^Edit two or more Advertiser, Agency details and Save$")
     public void editTwoOrMoreAdvertiserAgencyDetailsAndSave()  {
-    //    advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
         advertiserAccountsPage.BulkEditAdvertiserAgency();
     }
 
     @Then("^Bulk edit saved successfuly$")
-    public void bulkEditSavedSuccessfuly()     {
-     //   advertiserAccountsPage = new ProteusWebAdvertiserAccountsPage(this.browserFactory);
+    public void bulkEditSavedSuccessfuly()  {
         Assert.assertTrue("Bulk edit not saved successfuly", advertiserAccountsPage.CheckForAdvertiserRequiresActions());
+    }
+
+    @Then("^Able to navigate to Administration Security Groups$")
+    public void ableToNavigateToAdministrationSecurityGroups() throws Throwable {
+      Assert.assertTrue("Unable to navigate to Administration Security Groups",  adminSecurityGroupsPage.lblSecurityGroups.isDisplayed());
+    }
+
+    @When("^I click on Security Groups tab$")
+    public void iClickOnSecurityGroupsTab() throws Throwable {
+        mouseClick( adminPage.btnSecurityGroups);
+    }
+
+    @And("^Users column shown in the grid and it is numeric$")
+    public void usersColumnShownInTheGridAndItIsNumeric() throws Throwable {
+      Assert.assertTrue("Users column not shown in the grid and it is numeric",
+               getElementCount("//*[@id='root']/div/section/div/div/div/div/div/div/div/div/div/div/div/div/div[3]/span") > 0);
+      Assert.assertTrue("Users column  shown in the grid and it is not numeric", GeneralUtilites.isNumeric( getElements("//*[@id='root']/div/section/div/div/div/div/div/div/div/div/div/div/div/div/div[3]/span").get(0).getText()));
+    }
+
+    @When("^Clicked on the Users number$")
+    public void clickedOnTheUsersNumber() throws Throwable {
+        mouseClick(getElements("//*[@id='root']/div/section/div/div/div/div/div/div/div/div/div/div/div/div/div[3]/span").get(0));
+        GeneralUtilites.wait(2);
+    }
+
+    @Then("^Popup shown with Users who have access to group$")
+    public void popupShownWithUsersWhoHaveAccessToGroup() throws Throwable {
+        Assert.assertTrue("Popup not shown with Users who have access to group",
+        getElementCount("/html/body/div[5]/div/div[2]/section/div/div[2]/div[1]/div/div[2]/div/div") > 0);
+    }
+
+    @When("^Search for a key \"([^\"]*)\" on the Users list$")
+    public void searchForAKeyOnTheUsersList(String strSearchKey) throws Throwable {
+         typeText(adminSecurityGroupsPage.txtUserSearch,strSearchKey);
+    }
+
+    @Then("^Users list filtered based on Search Key \"([^\"]*)\"$")
+    public boolean usersListFilteredBasedOnSearchKey(String strSearchKey) throws Throwable {
+        List<WebElement> users =  getElements("/html/body/div[5]/div/div[2]/section/div/div[2]/div[1]/div/div[2]/div/div/div[1]");
+        boolean returnType= true;
+        for ( WebElement user : users  ) {
+            returnType = returnType &&  user.getText().toLowerCase().contains(strSearchKey.toLowerCase());
+        }
+        mouseClick(adminSecurityGroupsPage.btnUserCancel);
+        GeneralUtilites.wait(1);
+        return returnType;
+    }
+
+    @When("^Open Edit Security Group screen for one of the groups$")
+    public void openEditSecurityGroupScreenForOneOfTheGroups() throws Throwable {
+          mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[1]/div/div[2]/div/div[1]/div[1]/span"));
+          GeneralUtilites.wait(1);
+    }
+
+    @Then("^Unassigned Advertiser Accounts table shown$")
+    public void unassignedAdvertiserAccountsTableShown() throws Throwable {
+       Assert.assertTrue("Unassigned Advertiser Accounts table not shown",
+               getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[2]/div[1]/div/div[2]/div[1]/div/div[2]/div/div") > 0);
+    }
+
+    @And("^Assigned Advertiser Accounts table shown$")
+    public void assignedAdvertiserAccountsTableShown() throws Throwable {
+        Assert.assertTrue("Assigned Advertiser Accounts table not shown",
+                adminSecurityGroupsPage.lblAssignedAdvetiser.isDisplayed());
+    }
+
+    @And("^Count to identify how many Advertiser Accounts are currently assigned is shown$")
+    public void countToIdentifyHowManyAdvertiserAccountsAreCurrentlyAssignedIsShown() throws Throwable {
+
+       String strAssignedAdvertiser  = adminSecurityGroupsPage.lblAssignedAdvetiser.getText();
+        Assert.assertTrue("Count to identify how many Advertiser Accounts are currently assigned is not shown",
+                Integer.parseInt( adminSecurityGroupsPage.lblAssignedAdvetiser.getText()
+                        .split("\\(")[1].split("\\)")[0] ) >= 1);
+    }
+
+    @And("^Advertiser,Agency and Operational Unit columns displayed on the table$")
+    public void advertiserAgencyAndOperationalUnitColumnsDisplayedOnTheTable() throws Throwable {
+        WebElement headerAssigned = getElement("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div/div[1]");
+        Assert.assertTrue("Advertiser,Agency and Operational Unit columns not displayed on the table",
+        headerAssigned.getText().toLowerCase().contains("advertiser") &&
+        headerAssigned.getText().toLowerCase().contains("agency") &&
+        headerAssigned.getText().toLowerCase().contains("Op. Unit".toLowerCase()));
+    }
+
+    @And("^Option search advertiser exist on unassigned account table$")
+    public void optionSearchAdvertiserExistOnUnassignedAccountTable() throws Throwable {
+         Assert.assertTrue("Option search advertiser does not exist on unassigned account table",adminSecurityGroupsPage.txtAssignedAdvSearch.isDisplayed());
+    }
+
+    @When("^Search for a assigned advertiser \"([^\"]*)\"$")
+    public void searchForAAssignedAdvertiser(String strSearchKey) throws Throwable {
+       typeText(adminSecurityGroupsPage.txtAssignedAdvSearch,strSearchKey);
+       GeneralUtilites.wait(2);
+    }
+
+    @Then("^Assigned advertiser list filtered based on search key \"([^\"]*)\"$")
+    public void assignedAdvertiserListFilteredBasedOnSearchKey(String strSearchKey) throws Throwable {
+        List<WebElement> advs =  getElements("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[1]");
+        boolean returnType= true;
+        for ( WebElement adv : advs ) {
+            returnType = returnType &&  adv.getText().toLowerCase().contains(strSearchKey.toLowerCase());
+        }
+
+        Assert.assertTrue("Assigned advertiser list not filtered based on search key", returnType);
+    }
+
+    @Then("^I am able to clear this filter$")
+    public void iAmAbleToClearThisFilter() throws Throwable {
+        typeText(adminSecurityGroupsPage.txtAssignedAdvSearch,"");
+    }
+
+    @And("^the table will go back to listing all Advertiser Accounts assigned$")
+    public void theTableWillGoBackToListingAllAdvertiserAccountsAssigned() throws Throwable {
+        Assert.assertTrue("the table refreshed listing all Advertiser Accounts assigned",
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[1]") > 0);
+    }
+
+    @When("^Open Add Security Group screen$")
+    public void openAddSecurityGroupScreen() throws Throwable {
+       mouseClick( adminSecurityGroupsPage.btnAddSecurityGroups);
+       GeneralUtilites.wait(1);
+    }
+
+    @And("^Enter the Security Group name$")
+    public void enterTheSecurityGroupName() throws Throwable {
+        enterText(adminSecurityGroupsPage.txtSecurityGroupsName, "AutomationSecurityGroup" + GeneralUtilites.RandomNumber(100,999));
+        mouseClick(adminSecurityGroupsPage.btnSave);
+        GeneralUtilites.wait(2);
+    }
+
+    @And("^Search in the Advertiser search field  \"([^\"]*)\"$")
+    public void searchInTheAdvertiserSearchField(String strSearchKey) throws Throwable {
+        GeneralUtilites.wait(1);
+      typeText(adminSecurityGroupsPage.txtUnAssignedAdvSearch,strSearchKey);
+      GeneralUtilites.wait(1);
+    }
+
+    @Then("^There is a add button next to the Advertiser Account row$")
+    public void thereIsAAddButtonNextToTheAdvertiserAccountRow() throws Throwable {
+         Assert.assertTrue("There is no add button next to the Advertiser Account row", getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[2]/div[1]/div/div[2]/div[1]/div/div[2]/div/div/div[4]/button")>0);
+    }
+
+    @When("^I select add button next to the Advertiser Account row$")
+    public void iSelectAddButtonNextToTheAdvertiserAccountRow() throws Throwable {
+       GeneralUtilites.wait(1);
+       mouseClick( getElements("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[2]/div[1]/div/div[2]/div[1]/div/div[2]/div/div/div[4]/button").get(0));
+       GeneralUtilites.wait(1);
+    }
+
+    @Then("^the Advertiser Account moves to the right side table 'Assigned Advertiser Accounts'$")
+    public void theAdvertiserAccountMovesToTheRightSideTableAssignedAdvertiserAccounts() throws Throwable {
+        Assert.assertTrue("the Advertiser Account not moved to the right side table 'Assigned Advertiser Accounts'",
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div/div[2]/div/div") ==2);
+    }
+
+    @And("^there is a minus button next to the advertiser account row$")
+    public void thereIsAMinusButtonNextToTheAdvertiserAccountRow() throws Throwable {
+        Assert.assertTrue("there is no minus button next to the advertiser account row",
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[4]/button") ==2);
+
+    }
+
+    @When("^I select the minus button$")
+    public void iSelectTheMinusButton() throws Throwable {
+        mouseClick(getElements("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[4]/button").get(0));
+        GeneralUtilites.wait(1);
+    }
+
+    @Then("^the advertiser account is removed$")
+    public void theAdvertiserAccountIsRemoved() throws Throwable {
+        Assert.assertTrue("the advertiser account is not removed",
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div/div[2]/div/div") ==1);
+    }
+
+    @When("^Search for a Secuity group$")
+    public void searchForASecuityGroup() throws Throwable {
+       enterText(adminSecurityGroupsPage.txtSearchSecurityGroups,"Demo");
+       mouseClick(adminSecurityGroupsPage.btnApply);
+       GeneralUtilites.wait(2);
     }
 }

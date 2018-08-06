@@ -162,4 +162,14 @@ public class GeneralUtilites
         driver.close();
         driver.switchTo().window(browserTabs.get(0));
     }
+
+    public static boolean isNumeric(String number)
+    {
+        try {
+            Double num = Double.parseDouble(number);
+        } catch (NumberFormatException e) {
+           return false;
+        }
+        return true;
+    }
 }
