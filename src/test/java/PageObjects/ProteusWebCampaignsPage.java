@@ -436,14 +436,12 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         return elementTypes.size() >= 1;
     }
 
-
     public boolean CheckForStartDate() {
         By StartDate = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div//div[2]/div/div/div/div[2]/div/div[1]/div[4]/div/div[1]/div[1]");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(StartDate);
         System.out.println("\nFlight Count : " + elementTypes.size());
         return elementTypes.size() >= 1;
     }
-
 
     public boolean CheckForEndDate() {
         By EndDate = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div//div[2]/div/div/div/div[2]/div/div[1]/div[4]/div/div[1]/div[3]");
@@ -613,8 +611,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         mouseClick(btnSave);
     }
 
-    public boolean CheckGoalDetailsSaved(String GoalType, String GoalTarget)
-    {
+    public boolean CheckGoalDetailsSaved(String GoalType, String GoalTarget)    {
         String flightName = txtSearch.getAttribute("value");
         mouseClick(btnClearFilters);
         GeneralUtilites.wait(2);
@@ -625,7 +622,6 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         By txtGoalTarget = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div//div[2]/div/div/div[1]/div[2]");
         WebElement  elementGoalType = browserFactory.getDriver().findElement(txtGoalType);
         WebElement  elementGoalTarget = browserFactory.getDriver().findElement(txtGoalTarget);
-
         return elementGoalType.getText().toLowerCase().contains(GoalType.toLowerCase())
                && elementGoalTarget.getText().toLowerCase().contains(GoalTarget.toLowerCase());
     }
@@ -675,7 +671,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     }
 
     public String GetNumbersFromFlightDetails(){
-      //  GeneralUtilites.wait(1);
+        //  GeneralUtilites.wait(1);
         // mouseClick(btnExpandFlightDetails);
         GeneralUtilites.wait(1);
         return txtImpressions.getText() +";"+txtClicks.getText();

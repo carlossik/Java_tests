@@ -260,7 +260,7 @@ public class ProteusWebPixelsSteps extends BrowserFactory {
     @And("^Pagination shown at the bottom of the page$")
     public void paginationShownAtTheBottomOfThePage()   {
        Assert.assertTrue("Pagination not shown at the bottom of the page",
-               getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[2]/ul/li") >=3 );
+               getElementCount("//*[@id='root']/div/section/div/div[2]/div//div/div/div/ul/li") >=3 );
     }
 
     @And("^Option to enter search key exist$")

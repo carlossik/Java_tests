@@ -53,4 +53,10 @@ Feature: Ability to Edit Security Groups
     When I select the minus button
     Then the advertiser account is removed
 
+  @SecurityGroup
+  Scenario: 04 Pagination and scroll on tables
+    When I click on Security Groups tab
+    Then Able to navigate to Administration Security Groups
+    And  Pagination shown at the bottom of the page
+
 
