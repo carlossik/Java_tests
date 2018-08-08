@@ -156,6 +156,13 @@ public class ProteusWebSteps extends BrowserFactory
         GeneralUtilites.wait(2);
     }
 
+    @When("^I search/filter for a particular result \"([^\"]*)\"$")
+    public void iSearchFilterForAParticularResult(String strSearchKey) throws Throwable {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        campaignsPage.EnterSearchFilter(strSearchKey, "", "");
+        GeneralUtilites.wait(2);
+    }
+
     @Then("Apply button is enabled")
     public void ThenApplyButtonIsEnabled()    {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
@@ -936,7 +943,7 @@ public class ProteusWebSteps extends BrowserFactory
         mouseClick( campaignsPage.btnFlightCreatives);
     }
 
-    @When("^I search/filter for a search key \"([^\"]*)\"$")
+    @When("^I search/filter for \"([^\"]*)\" a particular result$")
     public void iSearchFilterForASearchKey(String searchKey)     {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         campaignsPage.EnterSearchFilter(searchKey, "", "");
@@ -1040,4 +1047,7 @@ public class ProteusWebSteps extends BrowserFactory
        Assert.assertTrue("New seat storage details not saved",
       getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[3]/form/div/div[2]/div[7]/div[2]/div[1]/div/div[2]/div/div/div[1]/span[text()='INSERTION_ORDER']")>0);
     }
+
+
+
 }

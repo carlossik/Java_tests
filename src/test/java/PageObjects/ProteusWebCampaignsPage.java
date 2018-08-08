@@ -807,6 +807,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         By SeatIcons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div/div/div[1]/div[6]/div[3]/button");
         WebElement SeatIconsObj = browserFactory.getDriver().findElement(SeatIcons);
         mouseClick(SeatIconsObj);
+        GeneralUtilites.wait(1);
         By PlatformIcons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div/div/div[1]/div[6]/div[3]/div/ul/div/li");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(PlatformIcons);
         for (WebElement elementType :elementTypes) {
