@@ -9,7 +9,7 @@ public class CampaigFlightSearchRoot {
 
     private String bookingId;
 
-    private String campaignId;
+    private String campaignId ;
 
     private String traderUserId;
 
