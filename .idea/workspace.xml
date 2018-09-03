@@ -3,22 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="14c0a861-ce48-4df8-a711-5e9e94835522" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/AdminSecurityGroupsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/AdminSecurityGroupsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdminPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdminPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdvertiserAccountsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdvertiserAccountsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCreativesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCreativesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebPixelsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebPixelsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebAdvertiserSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebAdvertiserSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebPixelsSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebPixelsSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/AdminSecurityGroup.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/AdminSecurityGroup.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/AdvertiserAccounts.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/AdvertiserAccounts.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/OptionToEditSeatsStorageConfig.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/OptionToEditSeatsStorageConfig.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/OptionsToViewPixels.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/OptionsToViewPixels.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/RegressionOtherModules.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/RegressionOtherModules.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/ProteusWebCampaignsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/ProteusWebCampaignsPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/ProteusWebHomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/ProteusWebHomePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefination/ProteusWebSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StepDefination/ProteusWebSteps.class" afterDir="false" />
@@ -519,13 +503,6 @@
       <option name="presentableId" value="Default" />
       <updated>1516620214550</updated>
     </task>
-    <task id="LOCAL-00006" summary="Added tests for Sort Flights">
-      <created>1517850139594</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1517850139594</updated>
-    </task>
     <task id="LOCAL-00007" summary="Updated Xpaths on Campaign page">
       <created>1518091116796</created>
       <option name="number" value="00007" />
@@ -862,7 +839,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533741616249</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Fixed the scripts for updated tabs on the main web page">
+      <created>1535983103084</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1535983103085</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -909,11 +893,11 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.19947916" side_tool="true" visible="true" weight="0.34218916" />
       <window_info anchor="right" id="Maven Projects" order="5" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.2431243" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.80052084" visible="true" weight="0.34218916" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.80052084" visible="true" weight="0.34218916" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.88958335" weight="0.38788524" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2296875" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2296875" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -960,7 +944,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added Tests for Expand flight details" />
     <MESSAGE value="Fixed the changes for explanded flight details" />
     <MESSAGE value="Added scripts to check the tooltip for flight info on expand" />
     <MESSAGE value="Added scripts for searching for no flights" />
@@ -985,7 +968,8 @@
     <MESSAGE value="Fixed the x-paths" />
     <MESSAGE value="Added tests for Security Groups" />
     <MESSAGE value="Added Rerun runner" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Rerun runner" />
+    <MESSAGE value="Fixed the scripts for updated tabs on the main web page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed the scripts for updated tabs on the main web page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
