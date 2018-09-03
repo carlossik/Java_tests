@@ -141,7 +141,8 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
 
     @Then("^Second Advertiser details page shown$")
     public void secondAdvertiserDetailsPageShown(){
-       Assert.assertEquals("Second Advertiser details page not shown", advertiserAccountsPage.txtAdvertiserName.getAttribute("value").toLowerCase(),this.MergedAdvertiser.toLowerCase());
+        GeneralUtilites.wait(1);
+       Assert.assertTrue("Second Advertiser details page not shown", this.MergedAdvertiser.toLowerCase().contains(advertiserAccountsPage.txtAdvertiserName.getAttribute("value").toLowerCase()));
        mouseClick(advertiserAccountsPage.btnBack);
     }
 
@@ -282,7 +283,7 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
     @Then("^Popup shown with Users who have access to group$")
     public void popupShownWithUsersWhoHaveAccessToGroup() throws Throwable {
         Assert.assertTrue("Popup not shown with Users who have access to group",
-        getElementCount("/html/body/div[5]/div/div[2]/section/div/div[2]/div[1]/div/div[2]/div/div") > 0);
+        getElementCount("/html/body/div/div/div[2]/section/div/div[2]/div[1]/div/div[2]/div/div") > 0);
     }
 
     @When("^Search for a key \"([^\"]*)\" on the Users list$")
@@ -292,7 +293,7 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
 
     @Then("^Users list filtered based on Search Key \"([^\"]*)\"$")
     public boolean usersListFilteredBasedOnSearchKey(String strSearchKey) throws Throwable {
-        List<WebElement> users =  getElements("/html/body/div[5]/div/div[2]/section/div/div[2]/div[1]/div/div[2]/div/div/div[1]");
+        List<WebElement> users =  getElements("/html/body/div/div/div[2]/section/div/div[2]/div[1]/div/div[2]/div/div/div[1]");
         boolean returnType= true;
         for ( WebElement user : users  ) {
             returnType = returnType &&  user.getText().toLowerCase().contains(strSearchKey.toLowerCase());

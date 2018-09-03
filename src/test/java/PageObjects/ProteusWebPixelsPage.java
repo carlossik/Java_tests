@@ -157,7 +157,7 @@ public class ProteusWebPixelsPage extends BrowserFactory {
 
 
     public void BulkEditPxiels(){
-        By PixelCategory = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[4]/div/div/div/input");
+        By PixelCategory = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[5]/div/div/div/input");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(PixelCategory);
         int maxLimit = 6;
         if(elementTypes.size() < maxLimit)
@@ -167,24 +167,24 @@ public class ProteusWebPixelsPage extends BrowserFactory {
         if(indexOne == indexTwo) {indexTwo++;}
         if(indexTwo > maxLimit) { indexTwo = 1;}
 
-        By PixelCategoryOne = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div["+indexOne+"]/div[4]/div/div/div/input");
+        By PixelCategoryOne = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div["+indexOne+"]/div[5]/div/div/div/input");
         browserFactory.getDriver().findElement(PixelCategoryOne).click();
-        By PixelCategoryListOne = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div["+indexOne+"]/div[4]/div/div/ul/li[1]");
+        By PixelCategoryListOne = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div["+indexOne+"]/div[5]/div/div/ul/li[1]");
         browserFactory.getDriver().findElement(PixelCategoryListOne).click();
 
-        By PixelCategoryTwo =     By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div["+indexTwo+"]/div[4]/div/div/div/input");
+        By PixelCategoryTwo =     By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div["+indexTwo+"]/div[5]/div/div/div/input");
         browserFactory.getDriver().findElement(PixelCategoryTwo).click();
-        By PixelCategoryListTwo = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div["+indexTwo+"]/div[4]/div/div/ul/li[2]");
+        By PixelCategoryListTwo = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div["+indexTwo+"]/div[5]/div/div/ul/li[2]");
         browserFactory.getDriver().findElement(PixelCategoryListTwo).click();
 
-        By PixelTypeOne =     By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div["+indexOne+"]/div[5]/div/div/div/input");
+        By PixelTypeOne =     By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div["+indexOne+"]/div[6]/div/div/div/input");
         browserFactory.getDriver().findElement(PixelTypeOne).click();
-        By PixelTypeListOne = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div["+indexOne+"]/div[5]/div/div/ul/li[2]");
+        By PixelTypeListOne = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div["+indexOne+"]/div[6]/div/div/ul/li[2]");
         browserFactory.getDriver().findElement(PixelTypeListOne).click();
 
-        By PixelTypeTwo =     By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div["+indexTwo+"]/div[5]/div/div/div/input");
+        By PixelTypeTwo =     By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div["+indexTwo+"]/div[6]/div/div/div/input");
         browserFactory.getDriver().findElement(PixelTypeTwo).click();
-        By PixelTypeListTwo = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div["+indexTwo+"]/div[5]/div/div/ul/li[1]");
+        By PixelTypeListTwo = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div["+indexTwo+"]/div[6]/div/div/ul/li[1]");
         browserFactory.getDriver().findElement(PixelTypeListTwo).click();
 
         GeneralUtilites.wait(1);

@@ -84,7 +84,7 @@ Feature: Pixels for flights and Advertisers
     Then Pixels screen opened
     When I change the pixel advertiser to "QAAutomationAdvertiser 1 GB" and save
     And There is an action icon on the screen indicating the missing values
-    And Tooltips shown on mouseover on each missing icon
+    #And Tooltips shown on mouseover on each missing icon
 
 
   @Pixels

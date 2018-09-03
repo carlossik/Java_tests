@@ -249,3 +249,15 @@
 [0807/194506.719:ERROR:file_io_win.cc(170)] CreateFile C:\Users\RAMCHA~1.TEL\AppData\Local\Temp\scoped_dir6604_17311\Crashpad\reports\43af9105-d47f-42d8-8e4f-3793e6b88f80.dmp: The system cannot find the path specified. (0x3)
 [0807/194506.719:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed
 [0808/120050.117:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[0808/182322.567:ERROR:file_io_win.cc(161)] CreateFile C:\Users\RAMCHA~1.TEL\AppData\Local\Temp\scoped_dir17936_27703\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[0808/182322.594:ERROR:file_io_win.cc(170)] CreateFile C:\Users\RAMCHA~1.TEL\AppData\Local\Temp\scoped_dir17936_27703\Crashpad\reports\597b469d-045a-4f03-96a7-d9e4e2412fe7.dmp: The system cannot find the path specified. (0x3)
+[0808/182322.594:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed
+[0831/144307.160:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[0831/165148.269:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[0831/173431.543:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[0831/232808.025:ERROR:file_io_win.cc(161)] CreateFile C:\Users\RAMCHA~1.TEL\AppData\Local\Temp\scoped_dir19784_11308\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[0831/232808.033:ERROR:file_io_win.cc(170)] CreateFile C:\Users\RAMCHA~1.TEL\AppData\Local\Temp\scoped_dir19784_11308\Crashpad\reports\da1abeae-a902-4ae1-9c34-0e55794541fb.dmp: The system cannot find the path specified. (0x3)
+[0831/232808.033:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed
+[0903/130706.119:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[0903/140943.721:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[0903/143813.585:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports

@@ -237,8 +237,8 @@ public class ProteusWebSteps extends BrowserFactory
             Assert.assertTrue( "There is a box called Campaigns does not exist",homePage.CheckCampaignTabExist());
         if(tabName.equals("Reports"))
             Assert.assertTrue( "There is a box called Reports does not exist",homePage.CheckReportsTabExist());
-        if(tabName.equals("Administration"))
-            Assert.assertTrue( "There is a box called Administration does not exist",homePage.CheckAdministrationTabExist());
+        if(tabName.equals("Organisations"))
+            Assert.assertTrue( "There is a box called Administration does not exist",homePage.CheckOrganisationsTabExist());
         if(tabName.equals("Client Reports"))
             Assert.assertTrue( "There is a box called Client Reports does not exist",homePage.CheckClientReportsTabExist());
     }
@@ -250,8 +250,12 @@ public class ProteusWebSteps extends BrowserFactory
             homePage.NavigateProteusCampaign();
         if(tabName.equals("Reports"))
             homePage.NavigateProteusReports();
-        if(tabName.equals("Administration"))
-            homePage.NavigateProteusAdministration();
+        if(tabName.equals("Organisations"))
+            homePage.NavigateProteusOrganisations();
+        if(tabName.equals("Users"))
+            homePage.NavigateProteusUsers();
+        if(tabName.equals("Vendors"))
+            homePage.NavigateProteusVendors();
         if(tabName.equals("Client Reports"))
             homePage.NavigateProteusClientReports();
         GeneralUtilites.wait(1);
@@ -264,6 +268,12 @@ public class ProteusWebSteps extends BrowserFactory
                 adminPage.btnSeats.isDisplayed() &&
                         adminPage.btnJobs.isDisplayed() &&
                         adminPage.btnMasterData.isDisplayed());
+    }
+
+    @Then("^Organisations page shown correctly$")
+    public void organisationsPageShownCorrectly()    {
+        Assert.assertTrue("Organisations page not shown correctly",
+              getElementCount("//*[@id='root']/div/section/div/div[1]/aside/button") > 0 );
     }
 
     @And("^LogOut ProteusWeb from Admin Page$")
@@ -982,6 +992,7 @@ public class ProteusWebSteps extends BrowserFactory
     public void clickOnMANAGECREDENTIALS()   {
         platformSeatPage = new ProteusWebPlatformSeat(this.browserFactory);
         mouseClick(platformSeatPage.btnManageCredentials);
+        GeneralUtilites.wait(1);
     }
 
     @Then("^Credentials page shown$")
@@ -1031,7 +1042,8 @@ public class ProteusWebSteps extends BrowserFactory
         platformSeatPage = new ProteusWebPlatformSeat(this.browserFactory);
         mouseClick(platformSeatPage.txtDataType);
         typeText(platformSeatPage.txtDataType, "INSERTION_ORDER");
-        mouseClick(getElement("/html/body/div[7]/div/div[2]/section/div[2]/form/div[1]/div[1]/ul/li[1]"));
+        GeneralUtilites.wait(1);
+        mouseClick(getElement("/html/body/div/div/div[2]/section/div[2]/form/div[1]/div[1]/ul/li[1]"));
         mouseClick(platformSeatPage.txtDataFormat);
         mouseClick(getElement("/html/body/div/div/div[2]/section/div[2]/form/div[1]/div[2]/ul/li[1]"));
         mouseClick(platformSeatPage.txtSchema);
@@ -1049,5 +1061,11 @@ public class ProteusWebSteps extends BrowserFactory
     }
 
 
+    @Then("^Users page shown correctly$")
+    public void usersPageShownCorrectly()   {
 
+        Assert.assertTrue("Users page not shown correctly",
+                getElementCount("//*[@id='root']/div/section/div/div[1]/aside/button")>0);
+
+    }
 }

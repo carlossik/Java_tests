@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Properties;
 import java.io.*;
 
+import com.gargoylesoftware.htmlunit.javascript.host.event.GamepadEvent;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.*;
 import org.junit.Assert;
@@ -125,6 +126,8 @@ public class ProteusWebPixelsSteps extends BrowserFactory {
     @When("^I change the pixel advertiser and save$")
     public void iChangeThePixelAdvertiserAndSave()   {
         pixelsPage.txtAdvertiserAccount.click();
+        enterText(pixelsPage.txtAdvertiserAccount, "");
+        enterText(pixelsPage.txtAdvertiserAccount, "tr");
         mouseClick(getElements("/html/body/div/div/div[2]/section/div[2]/form/div[1]/div/ul").get(0));
         pixelsPage.btnOK.click();
     }
@@ -208,7 +211,7 @@ public class ProteusWebPixelsSteps extends BrowserFactory {
     @And("^There is an action icon on the screen indicating the missing values$")
     public void thereIsAnActionIconOnTheScreenIndicatingTheMissingValues()    {
        Assert.assertTrue("There is no action icon on the screen indicating the missing values",
-               getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[5]/div/span") > 0);
+               pixelsPage.btnPixelsBulkEdit.isDisplayed());
     }
 
     @And("^Tooltips shown on mouseover on each missing icon$")
@@ -320,29 +323,33 @@ public class ProteusWebPixelsSteps extends BrowserFactory {
 
     @And("^Editable columns shown on pixel grid$")
     public void editableColumnsShownOnPixelGrid() {
+       mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[1]/div[1]/div/label/div"));
+       GeneralUtilites.wait(1);
         Assert.assertTrue("Category or Type columns are not editable",
-                   getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[4]/div/div/div/input") > 0
-                        && getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[5]/div/div/div/input") > 0);
+                   getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[5]/div/div/div/input") > 0
+                        && getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[6]/div/div/div/input") > 0);
     }
 
     @And("^ReadOnly columns shown on pixel grid$")
     public void readonlyColumnsShownOnPixelGrid() {
         Assert.assertTrue("ReadOnly columns not shown on pixel grid",
-                   getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[3]") > 0
-                        && getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[2]") > 0
-                        && getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[1]") > 0);
+                   getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[4]") > 0
+                        && getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[3]") > 0
+                        && getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[2]") > 0);
     }
 
     @Then("^Dropdown list with categories, Hard and Soft$")
     public void dropdownListWithCategoriesHardAndSoft(){
+        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[1]/div[1]/div/label/div"));
+        GeneralUtilites.wait(1);
         Assert.assertEquals("Dropdown list with categories(Hard and Soft) not shown",
-                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div[1]/div[4]/div/div/ul/li"), 2);
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div[1]/div[5]/div/div/ul/li"), 2);
     }
 
     @And("^Dropdown list with Types: Homepage, Confirmation Page, Landing Page$")
     public void dropdownListWithTypesHomepageConfirmationPageLandingPage(){
         Assert.assertEquals("Dropdown list with Types: Homepage, Confirmation Page, Landing Page not shown",
-                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div[1]/div[5]/div/div/ul/li"), 17);
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div[1]/div[6]/div/div/ul/li"), 17);
     }
 
     @When("^Bulk edit Category and Type$")
@@ -370,12 +377,9 @@ public class ProteusWebPixelsSteps extends BrowserFactory {
 
     @When("^I click on the add icon$")
     public void iClickOnTheAddIcon(){
-      if( getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div[2]/div/div/span") > 0)
-        mouseClick( getElements("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div[2]/div/div/span").get(0));
-      else  {
-        System.out.println("No add icon shown");
         mouseClick( pixelsPage.btnPixelsBulkEdit);
-      }
+        GeneralUtilites.wait(1);
+
     }
 
     @And("^The Pixels Name is a deeplink$")

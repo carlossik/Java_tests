@@ -13,7 +13,7 @@ Feature: Regression on Reports,Client Reports,Administration tabs
     And There is a box called "Campaigns"
     #And There is a box called "Reports"
     And There is a box called "Client Reports"
-    And There is a box called "Administration"
+    And There is a box called "Vendors"
     And LogOut ProteusWeb from Home Page
 
   @ProteusWebRegression
@@ -28,7 +28,7 @@ Feature: Regression on Reports,Client Reports,Administration tabs
   Scenario: 03 Check if Admin tab opened correctly
     When Login as "ADMINISTRATOR"
     Then The main homepage loads successfully
-    When I click on "Administration" from home page
+    When I click on "Vendors" from home page
     Then Administration page shown correctly
     And Able to filter seats by Operation Unit TEL
     And Able to navigate to Administration Jobs

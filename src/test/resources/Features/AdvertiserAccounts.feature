@@ -7,8 +7,8 @@ Background:
   And I go to the Proteus Home URL in my browser
   When Login as "ADMINISTRATOR"
   Then The main homepage loads successfully
-  When I click on "Administration" from home page
-  Then Administration page shown correctly
+  When I click on "Organisations" from home page
+  Then Organisations page shown correctly
 
 @AdvertiserAccounts
 Scenario: 01 Check if Advertiser Accounts tab opened correctly

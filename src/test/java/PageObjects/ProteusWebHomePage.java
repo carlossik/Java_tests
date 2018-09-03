@@ -22,22 +22,31 @@ public class ProteusWebHomePage extends BrowserFactory
     }
 
     //@FindBy(how = How.XPATH, using = "//*[@id='administration']")
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[1]/div/div/div/nav/label[contains(text(), 'Admin')]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div/div/div/div/nav/label[contains(text(), 'Organisations')]")
     @CacheLookup
-    private WebElement tabAdministration;
+    private WebElement tabOrganisations;
+
+    //@FindBy(how = How.XPATH, using = "//*[@id='administration']")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div/div/div/div/nav/label[contains(text(), 'Users')]")
+    @CacheLookup
+    private WebElement tabUsers;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div/div/div/div/nav/label[contains(text(), 'Vendors')]")
+    @CacheLookup
+    private WebElement tabVendors;
 
     @FindBy(how = How.ID, using = "reporting")
     @CacheLookup
     private WebElement tabReporting;
 
     //@FindBy(how = How.XPATH, using = "//*[@id='clientReporting'")
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[1]/div/div/div/nav/label[contains(text(), 'Client Reports')]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div/div/div/div/nav/label[contains(text(), 'Client Reports')]")
     @CacheLookup
     private WebElement tabClientReporting;
 
 
    // @FindBy(how = How.XPATH, using = "//*[@id='campaigns']")
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[1]/div/div/div/nav/label[contains(text(), 'Campaigns')]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div/div/div/div/nav/label[contains(text(), 'Campaigns')]")
     @CacheLookup
     private WebElement tabCampaign ;
 
@@ -61,10 +70,22 @@ public class ProteusWebHomePage extends BrowserFactory
     private WebElement btnLogOut;
 
 
-    public void NavigateProteusAdministration()
+    public void NavigateProteusOrganisations()
     {
         GeneralUtilites.wait(1);
-        mouseClick(tabAdministration );
+        mouseClick(tabOrganisations );
+    }
+
+    public void NavigateProteusUsers()
+    {
+        GeneralUtilites.wait(1);
+        mouseClick(tabUsers );
+    }
+
+    public void NavigateProteusVendors()
+    {
+        GeneralUtilites.wait(1);
+        mouseClick(tabVendors );
     }
 
     public void NavigateProteusCampaign()
@@ -105,9 +126,9 @@ public class ProteusWebHomePage extends BrowserFactory
     {
         return tabClientReporting.isDisplayed();
     }
-    public boolean CheckAdministrationTabExist()
+    public boolean CheckOrganisationsTabExist()
     {
-        return tabAdministration.isDisplayed();
+        return tabOrganisations.isDisplayed();
     }
 
     public boolean CheckHomePage()

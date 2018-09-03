@@ -1,17 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="14c0a861-ce48-4df8-a711-5e9e94835522" name="Default" comment="Added tests for Security Groups">
-      <change afterPath="$PROJECT_DIR$/src/test/java/runner/RunCucumberTest3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Rerun/AbilityLogInProWeb.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Rerun/AbilityToSortFlights.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Rerun/DisplayPlatformForFlight.feature" afterDir="false" />
+    <list default="true" id="14c0a861-ce48-4df8-a711-5e9e94835522" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/AdminSecurityGroupsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/AdminSecurityGroupsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdminPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdminPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdvertiserAccountsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdvertiserAccountsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCreativesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCreativesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebPixelsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebPixelsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebAdvertiserSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebAdvertiserSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebPixelsSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebPixelsSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/DisplayPlatformForFlight.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/DisplayPlatformForFlight.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/AdminSecurityGroup.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/AdminSecurityGroup.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/AdvertiserAccounts.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/AdvertiserAccounts.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/OptionToEditSeatsStorageConfig.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/OptionToEditSeatsStorageConfig.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/OptionsToViewPixels.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/OptionsToViewPixels.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/RegressionOtherModules.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/RegressionOtherModules.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/ProteusWebCampaignsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/ProteusWebCampaignsPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/ProteusWebHomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/ProteusWebHomePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefination/ProteusWebSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StepDefination/ProteusWebSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/mavensurefireplugin/target/" />
@@ -38,62 +49,103 @@
   <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" userTempatePath="" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProteusWebCampaignsPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java">
+      <file leaf-file-name="OptionsToViewCreatives.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/Features/OptionsToViewCreatives.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="809" column="30" selection-start-line="809" selection-start-column="30" selection-end-line="809" selection-end-column="30" />
-              <folding>
-                <element signature="e#28735#28736#0" expanded="true" />
-                <element signature="e#28793#28794#0" expanded="true" />
-                <element signature="e#29369#29370#0" expanded="true" />
-                <element signature="e#29419#29420#0" expanded="true" />
-                <element signature="e#29466#29467#0" expanded="true" />
-                <element signature="e#29549#29550#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-189">
+              <caret line="58" column="11" lean-forward="true" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DisplayPlatformForFlight.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/Features/DisplayPlatformForFlight.feature">
+      <file leaf-file-name="OptionsToViewPixels.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/Features/OptionsToViewPixels.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+            <state relative-caret-position="-1134">
+              <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RunCucumberTest2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/runner/RunCucumberTest2.java">
+      <file leaf-file-name="ProteusWebPixelsSteps.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebPixelsSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+            <state relative-caret-position="325">
+              <caret line="213" column="15" selection-start-line="213" selection-start-column="15" selection-end-line="213" selection-end-column="15" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RunCucumberTest3.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/runner/RunCucumberTest3.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbilityLogInProWeb.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/Rerun/AbilityLogInProWeb.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-855" />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ProteusWebSteps.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="739" column="16" selection-start-line="739" selection-start-column="16" selection-end-line="739" selection-end-column="16" />
+            <state relative-caret-position="181">
+              <caret line="776" column="32" selection-start-line="776" selection-start-column="27" selection-end-line="776" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OptionToEditSeatsStorageConfig.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/Features/OptionToEditSeatsStorageConfig.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdvertiserAccounts.feature" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AdvertiserAccounts.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2673">
+              <caret line="99" column="25" lean-forward="true" selection-start-line="99" selection-start-column="25" selection-end-line="99" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProteusWebAdvertiserSteps.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebAdvertiserSteps.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="190" column="63" lean-forward="true" selection-start-line="190" selection-start-column="63" selection-end-line="190" selection-end-column="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#10625#10626#0" expanded="true" />
+                <element signature="e#10690#10691#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GeneralUtilites.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SupportingUtilites/GeneralUtilites.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="137" column="25" selection-start-line="137" selection-start-column="25" selection-end-line="137" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Resources/config.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="42" column="80" lean-forward="true" selection-start-line="39" selection-start-column="35" selection-end-line="42" selection-end-column="80" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProteusWebAdvertiserAccountsPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdvertiserAccountsPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="667">
+              <caret line="283" column="5" lean-forward="true" selection-start-line="283" selection-start-column="5" selection-end-line="283" selection-end-column="5" />
+              <folding>
+                <element signature="e#7841#7842#0" expanded="true" />
+                <element signature="e#7896#7897#0" expanded="true" />
+                <element signature="e#12355#12356#0" expanded="true" />
+                <element signature="e#12421#12422#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,6 +190,7 @@
       <find>/html/body/div[2]/</find>
       <find>appl</find>
       <find>count</find>
+      <find>split</find>
     </findStrings>
     <replaceStrings>
       <replace>mouseClick</replace>
@@ -152,7 +205,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/DBDataModel/RecordCountMapper.java" />
         <option value="$PROJECT_DIR$/src/test/java/Features/AdvertiserAccounts.feature" />
         <option value="$PROJECT_DIR$/src/test/java/Features/AbilityToDeeplinkTableauReports.feature" />
         <option value="$PROJECT_DIR$/src/test/java/Features/AbilityToSearchForFlights.feature" />
@@ -174,35 +226,36 @@
         <option value="$PROJECT_DIR$/src/test/java/Features/OptionsToViewPixels.feature" />
         <option value="$PROJECT_DIR$/src/test/java/StepDefination/Hook.java" />
         <option value="$PROJECT_DIR$/src/test/java/Features/OptionToEditSeatsStorageConfig.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebPixelsPage.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/Features/OptionsToViewPixels.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/runner/RunCucumberTest1.java" />
         <option value="$PROJECT_DIR$/src/test/java/SupportingUtilites/BrowserFactory.java" />
         <option value="$PROJECT_DIR$/src/test/resources/Features/ManageAdvanceMappings.feature" />
         <option value="$PROJECT_DIR$/src/test/java/Resources/config.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdvertiserAccountsPage.java" />
         <option value="$PROJECT_DIR$/src/test/resources/Features/ExpandFlightInformation.feature" />
         <option value="$PROJECT_DIR$/src/test/java/runner/RunCucumberTest2.java" />
         <option value="$PROJECT_DIR$/src/test/resources/Features/AbilityLogInProWeb.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCreativesPage.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/resources/Features/OptionToEditSeatsStorageConfig.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/Features/RegressionOtherModules.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebCreativesSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebHomePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdminPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/SupportingUtilites/GeneralUtilites.java" />
         <option value="$PROJECT_DIR$/src/test/resources/Features/SecurityGroups.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObjects/AdminSecurityGroupsPage.java" />
         <option value="$PROJECT_DIR$/src/test/resources/UnderDev/AdminSecurityGroup.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebAdvertiserSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/Features/AdminSecurityGroup.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebPixelsSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/DataModels/CampaigFlightSearchRoot.java" />
         <option value="$PROJECT_DIR$/src/test/resources/Features/DisplayPlatformForFlight.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/runner/RunCucumberTest3.java" />
+        <option value="$PROJECT_DIR$/src/test/java/runner/RunCucumberTest1.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/Features/AdminSecurityGroup.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/Features/AdvertiserAccounts.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdminPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObjects/AdminSecurityGroupsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebCreativesSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/Features/OptionToEditSeatsStorageConfig.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebHomePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/Features/RegressionOtherModules.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebPixelsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCreativesPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebPixelsSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/Features/OptionsToViewPixels.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebAdvertiserSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdvertiserAccountsPage.java" />
       </list>
     </option>
   </component>
@@ -214,10 +267,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-290" />
-    <option name="y" value="36" />
-    <option name="width" value="1932" />
-    <option name="height" value="1045" />
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -247,9 +300,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -286,7 +337,23 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="runner" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="repoProteusWebJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="StepDefination" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="repoProteusWebJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="SupportingUtilites" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
@@ -306,20 +373,14 @@
             <path>
               <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
               <item name="repoProteusWebJava" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="Rerun" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="repoProteusWebJava" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -369,11 +430,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RunCucumberTest3">
-    <configuration name="Scenario: 02 Option to sort result" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber java.Scenario: 10 Cancel Merge advertiser account into another">
+    <configuration name="Scenario: 02 Able to change the Advertiser Account on Pixels screen" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="repoProteusWebJava" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^02 Option to sort result$&quot;" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^02 Able to change the Advertiser Account on Pixels screen$&quot;" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -381,10 +442,10 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Scenario: 02 Platforms tab opened for the Advertiser in the Platform" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: 05 Able to change the Advertiser Account on Pixel screen" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="repoProteusWebJava" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^02 Platforms tab opened for the Advertiser in the Platform$&quot;" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^05 Able to change the Advertiser Account on Pixel screen$&quot;" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -392,10 +453,10 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Scenario: 04 Campaigns page loaded with different options" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: 07 Missing values for pixels" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="repoProteusWebJava" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^04 Campaigns page loaded with different options$&quot;" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^07 Missing values for pixels$&quot;" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -403,10 +464,10 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Scenario: 04 Flights sorted by Updated date" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: 09 Merge advertiser account into another" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="repoProteusWebJava" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^04 Flights sorted by Updated date$&quot;" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^09 Merge advertiser account into another$&quot;" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -414,43 +475,31 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="RunCucumberTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: 10 Cancel Merge advertiser account into another" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="repoProteusWebJava" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^10 Cancel Merge advertiser account into another$&quot;" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="runner.*" />
+          <option name="PATTERN" value="cucumber.api.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="runner" />
-      <option name="MAIN_CLASS_NAME" value="runner.RunCucumberTest3" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
     </configuration>
     <list>
-      <item itemvalue="Cucumber java.Scenario: 04 Campaigns page loaded with different options" />
-      <item itemvalue="Cucumber java.Scenario: 02 Option to sort result" />
-      <item itemvalue="Cucumber java.Scenario: 04 Flights sorted by Updated date" />
-      <item itemvalue="Cucumber java.Scenario: 02 Platforms tab opened for the Advertiser in the Platform" />
-      <item itemvalue="JUnit.RunCucumberTest3" />
+      <item itemvalue="Cucumber java.Scenario: 02 Able to change the Advertiser Account on Pixels screen" />
+      <item itemvalue="Cucumber java.Scenario: 05 Able to change the Advertiser Account on Pixel screen" />
+      <item itemvalue="Cucumber java.Scenario: 07 Missing values for pixels" />
+      <item itemvalue="Cucumber java.Scenario: 09 Merge advertiser account into another" />
+      <item itemvalue="Cucumber java.Scenario: 10 Cancel Merge advertiser account into another" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RunCucumberTest3" />
-        <item itemvalue="Cucumber java.Scenario: 02 Platforms tab opened for the Advertiser in the Platform" />
-        <item itemvalue="Cucumber java.Scenario: 04 Flights sorted by Updated date" />
-        <item itemvalue="Cucumber java.Scenario: 02 Option to sort result" />
-        <item itemvalue="Cucumber java.Scenario: 04 Campaigns page loaded with different options" />
+        <item itemvalue="Cucumber java.Scenario: 10 Cancel Merge advertiser account into another" />
+        <item itemvalue="Cucumber java.Scenario: 09 Merge advertiser account into another" />
+        <item itemvalue="Cucumber java.Scenario: 07 Missing values for pixels" />
+        <item itemvalue="Cucumber java.Scenario: 05 Able to change the Advertiser Account on Pixel screen" />
+        <item itemvalue="Cucumber java.Scenario: 02 Able to change the Advertiser Account on Pixels screen" />
       </list>
     </recent_temporary>
   </component>
@@ -469,20 +518,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1516620214550</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Changed code to support Headless and refactored BrowserFactory">
-      <created>1517590872463</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1517590872463</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Changed code to support Headless and refactored BrowserFactory">
-      <created>1517590930152</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1517590930152</updated>
     </task>
     <task id="LOCAL-00006" summary="Added tests for Sort Flights">
       <created>1517850139594</created>
@@ -813,54 +848,68 @@
       <option name="project" value="LOCAL" />
       <updated>1533719719707</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Added tests for Security Groups">
+      <created>1533739752727</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1533739752728</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Added Rerun runner">
+      <created>1533741616249</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1533741616249</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Scenario__09_Pagination_on_screen_when_pixels_list_loads - 2018.08.07 at 12h 31m 38s.xml">
-      <configuration name="Scenario: 09 Pagination on screen when pixels list loads" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__07_Missing_values_for_pixels - 2018.09.03 at 13h 52m 11s.xml">
+      <configuration name="Scenario: 07 Missing values for pixels" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__04_Pagination_and_scroll_on_tables - 2018.08.07 at 13h 06m 30s.xml">
-      <configuration name="Scenario: 04 Pagination and scroll on tables" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__07_Missing_values_for_pixels - 2018.09.03 at 13h 53m 22s.xml">
+      <configuration name="Scenario: 07 Missing values for pixels" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__01_Entering_Pro_Web - 2018.08.08 at 11h 20m 57s.xml">
-      <configuration name="Scenario: 01 Entering Pro Web" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__07_Missing_values_for_pixels - 2018.09.03 at 13h 54m 10s.xml">
+      <configuration name="Scenario: 07 Missing values for pixels" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__04_Campaigns_page_loaded_with_different_options - 2018.08.08 at 11h 21m 40s.xml">
-      <configuration name="Scenario: 04 Campaigns page loaded with different options" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__09_Merge_advertiser_account_into_another - 2018.09.03 at 13h 55m 43s.xml">
+      <configuration name="Scenario: 09 Merge advertiser account into another" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__02_Option_to_sort_result - 2018.08.08 at 11h 27m 39s.xml">
-      <configuration name="Scenario: 02 Option to sort result" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__09_Merge_advertiser_account_into_another - 2018.09.03 at 14h 00m 19s.xml">
+      <configuration name="Scenario: 09 Merge advertiser account into another" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__04_Flights_sorted_by_Updated_date - 2018.08.08 at 11h 28m 21s.xml">
-      <configuration name="Scenario: 04 Flights sorted by Updated date" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__09_Merge_advertiser_account_into_another - 2018.09.03 at 14h 11m 31s.xml">
+      <configuration name="Scenario: 09 Merge advertiser account into another" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__02_Platforms_tab_opened_for_the_Advertiser_in_the_Platform - 2018.08.08 at 11h 32m 33s.xml">
-      <configuration name="Scenario: 02 Platforms tab opened for the Advertiser in the Platform" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__09_Merge_advertiser_account_into_another - 2018.09.03 at 14h 25m 19s.xml">
+      <configuration name="Scenario: 09 Merge advertiser account into another" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__02_Platforms_tab_opened_for_the_Advertiser_in_the_Platform - 2018.08.08 at 11h 36m 11s.xml">
-      <configuration name="Scenario: 02 Platforms tab opened for the Advertiser in the Platform" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__09_Merge_advertiser_account_into_another - 2018.09.03 at 14h 26m 06s.xml">
+      <configuration name="Scenario: 09 Merge advertiser account into another" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__02_Platforms_tab_opened_for_the_Advertiser_in_the_Platform - 2018.08.08 at 11h 40m 27s.xml">
-      <configuration name="Scenario: 02 Platforms tab opened for the Advertiser in the Platform" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__10_Cancel_Merge_advertiser_account_into_another - 2018.09.03 at 14h 27m 55s.xml">
+      <configuration name="Scenario: 10 Cancel Merge advertiser account into another" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="RunCucumberTest3 - 2018.08.08 at 11h 51m 27s.xml">
-      <configuration name="RunCucumberTest3" configurationId="JUnit" />
+    <history-entry file="Scenario__10_Cancel_Merge_advertiser_account_into_another - 2018.09.03 at 14h 28m 59s.xml">
+      <configuration name="Scenario: 10 Cancel Merge advertiser account into another" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.32515657" weight="0.24086021" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.3234375" weight="0.24017003" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.19479166" side_tool="true" visible="true" weight="0.33262485" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.19947916" side_tool="true" visible="true" weight="0.34218916" />
       <window_info anchor="right" id="Maven Projects" order="5" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.2431243" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8052083" visible="true" weight="0.33262485" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.80052084" visible="true" weight="0.34218916" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.88958335" weight="0.38788524" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
@@ -870,7 +919,7 @@
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.9067708" weight="0.4335813" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.81145835" weight="0.4335813" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.013020833" />
       <window_info anchor="right" id="Coverage" order="0" side_tool="true" visible="true" weight="0.058854166" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -911,7 +960,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added Tests for Reporting API vs Web Proteus" />
     <MESSAGE value="Added Tests for Expand flight details" />
     <MESSAGE value="Fixed the changes for explanded flight details" />
     <MESSAGE value="Added scripts to check the tooltip for flight info on expand" />
@@ -936,7 +984,8 @@
     <MESSAGE value="home page changes" />
     <MESSAGE value="Fixed the x-paths" />
     <MESSAGE value="Added tests for Security Groups" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added tests for Security Groups" />
+    <MESSAGE value="Added Rerun runner" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Rerun runner" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -949,13 +998,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebPixelsSteps.java</url>
-          <line>119</line>
+          <line>120</line>
           <properties />
           <option name="timeStamp" value="100" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebPixelsSteps.java</url>
-          <line>203</line>
+          <line>206</line>
           <properties />
           <option name="timeStamp" value="102" />
         </line-breakpoint>
@@ -991,25 +1040,91 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebAdvertiserSteps.java</url>
-          <line>355</line>
+          <line>356</line>
           <properties />
           <option name="timeStamp" value="170" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebAdvertiserSteps.java</url>
+          <line>214</line>
+          <properties />
+          <option name="timeStamp" value="171" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java</url>
+          <line>356</line>
+          <properties />
+          <option name="timeStamp" value="172" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java</url>
+          <line>362</line>
+          <properties />
+          <option name="timeStamp" value="173" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java</url>
+          <line>368</line>
+          <properties />
+          <option name="timeStamp" value="175" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java</url>
+          <line>374</line>
+          <properties />
+          <option name="timeStamp" value="176" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java</url>
+          <line>377</line>
+          <properties />
+          <option name="timeStamp" value="177" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebCreativesSteps.java</url>
+          <line>108</line>
+          <properties />
+          <option name="timeStamp" value="179" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCreativesPage.java</url>
+          <line>242</line>
+          <properties />
+          <option name="timeStamp" value="180" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdvertiserAccountsPage.java</url>
+          <line>298</line>
+          <properties />
+          <option name="timeStamp" value="181" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="171" />
+      <option name="time" value="183" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CucumberJavaRunConfigurationType">
         <watch expression="elementTypes" language="JAVA" />
         <watch expression="elementTypes.get(0).getText()" language="JAVA" />
+        <watch expression="expectedHeaders" language="JAVA" />
+        <watch expression="actualHeaders" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>actualHeaders</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>expectedHeaders</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>elementTypes.get(0).getText()</expression-string>
         <language-id>JAVA</language-id>
@@ -1050,13 +1165,10 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
       <expression>
-        <expression-string>DateTime.now()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>creativesPage.lblUnmappedDSPCreatives.getText()                .split(&quot;\\(&quot;)[1].split(&quot;\\)&quot;)[0]</expression-string>
+        <expression-string>expectedHeaders</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -1109,20 +1221,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/ReportingAPIvsProteusWeb.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/runner/RunCucumberTest1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="24" column="70" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/Hook.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1053">
@@ -1137,31 +1235,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCreativesPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2181">
-          <caret line="69" column="104" selection-start-line="69" selection-start-column="104" selection-end-line="69" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebReportsPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-540">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebPlatformSeat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-967">
-          <caret line="26" column="47" lean-forward="true" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/ReadOnlyFlightDates.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -1172,20 +1249,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/RegressionOtherModules.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebPixelsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-567">
-          <caret line="69" column="16" lean-forward="true" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebLoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -1193,59 +1256,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebHomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1161">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdminPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1417">
-          <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SupportingUtilites/GeneralUtilites.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="165" column="35" selection-start-line="165" selection-start-column="26" selection-end-line="165" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdvertiserAccountsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2484">
-          <caret line="100" column="102" selection-start-line="100" selection-start-column="38" selection-end-line="100" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/OptionToEditSeatsStorageConfig.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SupportingUtilites/BrowserFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3861">
           <caret line="163" column="37" selection-start-line="163" selection-start-column="21" selection-end-line="163" selection-end-column="37" />
-          <folding>
-            <element signature="e#5501#5502#0" expanded="true" />
-            <element signature="e#5560#5561#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1256,105 +1270,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebCreativesSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="424" column="56" selection-start-line="422" selection-start-column="7" selection-end-line="424" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/Features/SecurityGroups.feature" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/AdminSecurityGroupsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1917">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebAdvertiserSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10503">
-          <caret line="407" column="15" selection-start-line="407" selection-start-column="15" selection-end-line="407" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebPixelsSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="264" lean-forward="true" selection-start-line="264" selection-end-line="264" />
-          <folding>
-            <element signature="e#9546#9547#0" expanded="true" />
-            <element signature="e#9602#9603#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AbilityToDeeplinkTableauReports.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AbilityToEditGoalData.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="89">
           <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AbilityToEditOptimisationManager.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AbilityToSearchForFlights.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-235">
-          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AdvertiserAccounts.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2368">
-          <caret line="18" column="15" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/ExpandFlightInformation.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="31" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/OptionsToViewCreatives.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="87" column="17" lean-forward="true" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/OptionsToViewPixels.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="125" column="19" lean-forward="true" selection-start-line="125" selection-start-column="19" selection-end-line="125" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AdminSecurityGroup.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="55" column="16" lean-forward="true" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1365,31 +1285,97 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Rerun/AbilityLogInProWeb.feature">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/runner/RunCucumberTest3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/runner/RunCucumberTest1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/runner/RunCucumberTest2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="607">
+          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AbilityLogInProWeb.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+        <state relative-caret-position="-578">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AbilityToDeeplinkTableauReports.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="48" column="15" selection-start-line="48" selection-start-column="15" selection-end-line="48" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AbilityToEditOptimisationManager.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AbilityToSearchForFlights.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="100" column="10" lean-forward="true" selection-start-line="100" selection-start-column="10" selection-end-line="100" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AbilityToSortFlights.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
+        <state relative-caret-position="232">
+          <caret line="43" column="12" lean-forward="true" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/AdminSecurityGroupsPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="739" column="16" selection-start-line="739" selection-start-column="16" selection-end-line="739" selection-end-column="16" />
+        <state relative-caret-position="1204">
+          <caret line="62" column="52" selection-start-line="62" selection-start-column="52" selection-end-line="62" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AdminSecurityGroup.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/DisplayPlatformForFlight.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/ExpandFlightInformation.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="809" column="30" selection-start-line="809" selection-start-column="30" selection-end-line="809" selection-end-column="30" />
+        <state relative-caret-position="253">
+          <caret line="158" column="121" selection-start-line="158" selection-start-column="121" selection-end-line="158" selection-end-column="121" />
           <folding>
             <element signature="e#28735#28736#0" expanded="true" />
             <element signature="e#28793#28794#0" expanded="true" />
@@ -1401,29 +1387,147 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/DisplayPlatformForFlight.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebHomePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        <state relative-caret-position="433">
+          <caret line="85" column="5" lean-forward="true" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/runner/RunCucumberTest2.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdminPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+        <state relative-caret-position="190">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Rerun/AbilityLogInProWeb.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebPlatformSeat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-855" />
+        <state relative-caret-position="881">
+          <caret line="38" column="112" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="112" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/runner/RunCucumberTest3.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/ReadOnlyFlightDates.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="324">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/RegressionOtherModules.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/ReportingAPIvsProteusWeb.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebPixelsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="186" column="143" selection-start-line="186" selection-start-column="143" selection-end-line="186" selection-end-column="143" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebCreativesSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="166" column="45" lean-forward="true" selection-start-line="166" selection-start-column="45" selection-end-line="166" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCreativesPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="238" column="19" selection-start-line="238" selection-start-column="19" selection-end-line="238" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/OptionsToViewCreatives.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-189">
+          <caret line="58" column="11" lean-forward="true" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebPixelsSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="213" column="15" selection-start-line="213" selection-start-column="15" selection-end-line="213" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/OptionsToViewPixels.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1134">
+          <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SupportingUtilites/GeneralUtilites.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="137" column="25" selection-start-line="137" selection-start-column="25" selection-end-line="137" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="42" column="80" lean-forward="true" selection-start-line="39" selection-start-column="35" selection-end-line="42" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/OptionToEditSeatsStorageConfig.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="776" column="32" selection-start-line="776" selection-start-column="27" selection-end-line="776" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebAdvertiserSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="190" column="63" lean-forward="true" selection-start-line="190" selection-start-column="63" selection-end-line="190" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#10625#10626#0" expanded="true" />
+            <element signature="e#10690#10691#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdvertiserAccountsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="283" column="5" lean-forward="true" selection-start-line="283" selection-start-column="5" selection-end-line="283" selection-end-column="5" />
+          <folding>
+            <element signature="e#7841#7842#0" expanded="true" />
+            <element signature="e#7896#7897#0" expanded="true" />
+            <element signature="e#12355#12356#0" expanded="true" />
+            <element signature="e#12421#12422#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AdvertiserAccounts.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2673">
+          <caret line="99" column="25" lean-forward="true" selection-start-line="99" selection-start-column="25" selection-end-line="99" selection-end-column="25" />
         </state>
       </provider>
     </entry>

@@ -6,7 +6,7 @@ Feature: Ability to Edit Seat Storage Configuration
     And I go to the Proteus Home URL in my browser
     When Login as "ADMINISTRATOR"
     Then The main homepage loads successfully
-    When I click on "Administration" from home page
+    When I click on "Vendors" from home page
     Then Administration page shown correctly
     When I click on "SEATS" on Administration Tab
     Then Seats page shown correctly

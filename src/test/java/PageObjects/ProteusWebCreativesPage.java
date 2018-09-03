@@ -207,7 +207,7 @@ public class ProteusWebCreativesPage extends BrowserFactory {
 
     private String strCreativeAdvertiserIconXpath=  "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[2]";
     private String strTagIconXpath =  "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[8]/span" ;
-    private String strColumnHeaders = "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]/div/div";
+    private String strColumnHeaders = "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]/div/div[text() != '']";
 
     public boolean creativesForAdvertiserListed() {
         return getElementCount(strCreativeAdvertiserIconXpath) > 0;

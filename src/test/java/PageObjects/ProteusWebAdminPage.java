@@ -29,7 +29,7 @@ public class ProteusWebAdminPage extends BrowserFactory
     @CacheLookup
     public WebElement btnMasterData;
 
-    @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[1]/aside/button[4]")
+    @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[1]/aside/button[1]")
     @CacheLookup
     private WebElement btnAdvertiserAccounts;
 
