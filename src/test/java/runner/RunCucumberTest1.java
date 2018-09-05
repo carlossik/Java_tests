@@ -14,7 +14,7 @@ import com.github.mkolisnyk.cucumber.runner.ExtendedCucumberOptions;
 @RunWith(ExtendedCucumber.class)
 @CucumberOptions(
         strict = true,
-        features = {"./src/test/resources/features/*.feature"},
+        features = {"./src/test/resources/features/"},
         format = {
                 "pretty",
                 "html:target/cucumber-reports/cucumber-html-report",

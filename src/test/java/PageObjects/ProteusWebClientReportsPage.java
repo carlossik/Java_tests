@@ -72,17 +72,14 @@ public class ProteusWebClientReportsPage extends BrowserFactory
 
    public void SelectAdvertiser()
    {
+       GeneralUtilites.wait(1);
        Actions action = new Actions(browserFactory.getDriver());
        action.moveToElement(txtAdvertiser).build().perform();
        action.click(txtAdvertiser).perform();
+       action.sendKeys("tr").perform();
        GeneralUtilites.wait(1);
        action.moveToElement(lstAdvertiser).build().perform();
        action.click(lstAdvertiser).perform();
-
-     //  String tAdvertiser = lstAdvertiser.getText();
-      // System.out.println("tAdvertiser : " + tAdvertiser);
-
-     //  ElementExtensions.enterText(txtAdvertiser,tAdvertiser);
        GeneralUtilites.wait(1);
        mouseClick(btnOK );
        GeneralUtilites.wait(1);

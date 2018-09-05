@@ -100,6 +100,10 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
     @When("^I change the advertiser and save$")
     public void iChangeTheAdvertiserAndSave(){
         creativesPage.txtAdvertiserAccount.click();
+        enterText(creativesPage.txtAdvertiserAccount, "");
+        GeneralUtilites.wait(1);
+        enterText(creativesPage.txtAdvertiserAccount, "tr");
+        GeneralUtilites.wait(1);
         mouseClick(getElements("/html/body/div/div/div[2]/section/div[2]/form/div[1]/div/ul").get(0));
         creativesPage.btnOK.click();
     }

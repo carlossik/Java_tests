@@ -352,6 +352,7 @@ public class ProteusWebSteps extends BrowserFactory
     @Then("^Client Reports page shown correctly$")
     public void clientReportsPageShownCorrectly()    {
         clientReportsPage = new ProteusWebClientReportsPage(this.browserFactory);
+        GeneralUtilites.wait(1);
         if(clientReportsPage.txtAdvertiser.isDisplayed())
             clientReportsPage.SelectAdvertiser();
         Assert.assertTrue("Client Reports page not shown correctly",
