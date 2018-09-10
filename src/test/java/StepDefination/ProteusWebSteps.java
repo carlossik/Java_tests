@@ -235,12 +235,14 @@ public class ProteusWebSteps extends BrowserFactory
         homePage = new ProteusWebHomePage(this.browserFactory);
         if(tabName.equals("Campaigns"))
             Assert.assertTrue( "There is a box called Campaigns does not exist",homePage.CheckCampaignTabExist());
-        if(tabName.equals("Reports"))
-            Assert.assertTrue( "There is a box called Reports does not exist",homePage.CheckReportsTabExist());
-        if(tabName.equals("Organisations"))
-            Assert.assertTrue( "There is a box called Administration does not exist",homePage.CheckOrganisationsTabExist());
         if(tabName.equals("Client Reports"))
             Assert.assertTrue( "There is a box called Client Reports does not exist",homePage.CheckClientReportsTabExist());
+        if(tabName.equals("Vendors"))
+            Assert.assertTrue( "There is a box called Vendors does not exist",homePage.CheckVendorsTabExist());
+        if(tabName.equals("Organisations"))
+            Assert.assertTrue( "There is a box called Organisations does not exist",homePage.CheckOrganisationsTabExist());
+        if(tabName.equals("Users"))
+            Assert.assertTrue( "There is a box called Users does not exist",homePage.CheckUsersTabExist());
     }
 
     @When("^I click on \"([^\"]*)\" from home page$")
@@ -248,6 +250,8 @@ public class ProteusWebSteps extends BrowserFactory
         homePage = new ProteusWebHomePage(this.browserFactory);
         if(tabName.equals("Campaigns"))
             homePage.NavigateProteusCampaign();
+        if(tabName.equals("Home"))
+            homePage.NavigateProteusHome();
         if(tabName.equals("Reports"))
             homePage.NavigateProteusReports();
         if(tabName.equals("Organisations"))
@@ -316,7 +320,7 @@ public class ProteusWebSteps extends BrowserFactory
                         adminPage.btnMasterDataAddJobScdTemplates.isDisplayed());
     }
 
-    @And("^Able to navigate to Administration Advertiser Accounts$")
+    @And("^Able to navigate to Advertiser Accounts$")
     public void ableToNavigateToAdministrationAdvertiserAccounts()   {
         adminPage = new ProteusWebAdminPage(this.browserFactory);
         GeneralUtilites.wait(2);
@@ -353,8 +357,8 @@ public class ProteusWebSteps extends BrowserFactory
     public void clientReportsPageShownCorrectly()    {
         clientReportsPage = new ProteusWebClientReportsPage(this.browserFactory);
         GeneralUtilites.wait(1);
-        if(clientReportsPage.txtAdvertiser.isDisplayed())
-            clientReportsPage.SelectAdvertiser();
+        //if(clientReportsPage.txtAdvertiser.isDisplayed())
+          //  clientReportsPage.SelectAdvertiser();
         Assert.assertTrue("Client Reports page not shown correctly",
                 clientReportsPage.btnDashBoard.isDisplayed() &&
                         clientReportsPage.btnPerformance.isDisplayed() &&
@@ -1064,9 +1068,81 @@ public class ProteusWebSteps extends BrowserFactory
 
     @Then("^Users page shown correctly$")
     public void usersPageShownCorrectly()   {
-
         Assert.assertTrue("Users page not shown correctly",
                 getElementCount("//*[@id='root']/div/section/div/div[1]/aside/button")>0);
+    }
 
+    @Then("^Campaign Flights box shown on home page$")
+    public void campaignFlightsBoxShownOnHomePage() throws Throwable {
+        Assert.assertTrue("Campaign Flights box not shown on home page",
+                getElementCount("//*[@id='root']/div/section/div/div[1]/div/div[2]/div[2]/div[1]/div") > 0);
+    }
+
+    @And("^Recently viewed flights are listed \"([^\"]*)\"$")
+    public void recentlyViewedFlightsAreListed(String FlightName) throws Throwable {
+        Assert.assertTrue("Recently viewed flights are not listed",
+                getElementCount("//*[@id='root']/div/section/div/div[1]/div/div[2]/div[2]/div[1]/div/div[2]/div/div/div[contains(text(), '"+FlightName+"')]") >= 1);
+    }
+
+    @Then("^Advertiser Accounts box shown on home page$")
+    public void advertiserAccountsBoxShownOnHomePage() throws Throwable {
+        Assert.assertTrue("Advertiser Accounts box not shown on home page",
+                getElementCount("//*[@id='root']/div/section/div/div[1]/div/div[2]/div[2]/div[2]") >= 1);
+    }
+
+    @And("^Recently viewed Advertiser Accounts are listed \"([^\"]*)\"$")
+    public void recentlyViewedAdvertiserAccountsAreListed(String advertiserAccount) throws Throwable {
+        Assert.assertTrue("Recently viewed flights are not listed",
+                getElementCount("//*[@id='root']/div/section/div/div[1]/div/div[2]/div[2]/div[2]/div/div[2]/div/div/div[contains(text(), '"+advertiserAccount+"')]") >= 1);
+    }
+
+    @Then("^Ad Server Placements box shown on home page$")
+    public void adServerPlacementsBoxShownOnHomePage() throws Throwable {
+        Assert.assertTrue("Ad Server Placements box not shown on home page",
+                getElementCount("//*[@id='root']/div/section/div/div[1]/div/div[2]/div[3]/div[1]/div[1]/div") >= 1);
+    }
+
+    @And("^Recently viewed Ad Server Placements are listed$")
+    public void recentlyViewedAdServerPlacementsAreListed() throws Throwable {
+        Assert.assertTrue("Recently viewed Ad Server Placements are not listed",
+                getElementCount("//*[@id='root']/div/section/div/div[1]/div/div[2]/div[3]/div[1]/div[1]/div/div") >= 1);
+    }
+
+    @Then("^DSP Creatives box shown on home page$")
+    public void dspCreativesBoxShownOnHomePage() throws Throwable {
+        Assert.assertTrue("DSP Creatives box not shown on home page",
+                getElementCount("//*[@id='root']/div/section/div/div[1]/div/div[2]/div[3]/div[2]/div") >= 1);
+    }
+
+    @And("^Recently viewed DSP Creatives are listed$")
+    public void recentlyViewedDSPCreativesAreListed() throws Throwable {
+        Assert.assertTrue("Recently viewed DSP Creatives are not listed",
+                getElementCount("//*[@id='root']/div/section/div/div[1]/div/div[2]/div[3]/div[2]/div/div/div/div/div") >= 1);
+
+    }
+
+    @Then("^Advertiser Accounts with missing hard pixel box shown on home page$")
+    public void advertiserAccountsWithMissingHardPixelBoxShownOnHomePage() throws Throwable {
+        Assert.assertTrue("Advertiser Accounts with missing hard pixel box not shown on home page",
+                getElementCount("//*[@id='root']/div/section/div/div[1]/div/div[2]/div[3]/div[1]/div[2]/div/div[1]/div[1]") >= 1);
+
+    }
+
+    @And("^Recently viewed Advertiser Accounts with missing hard pixel are listed$")
+    public void recentlyViewedAdvertiserAccountsWithMissingHardPixelAreListed() throws Throwable {
+        Assert.assertTrue("Recently viewed Advertiser Accounts with missing hard pixel are not listed",
+                getElementCount("//*[@id='root']/div/section/div/div[1]/div/div[2]/div[3]/div[1]/div[2]/div/div[2]/div/div") >= 1);
+    }
+
+    @When("^Click on one of advertiser account$")
+    public void clickOnOneOfAdvertiserAccount() throws Throwable {
+        GeneralUtilites.wait(1);
+        mouseClick(getElements("//*[@id='root']/div/section/div/div[1]/div/div[2]/div[2]/div[2]/div/div[2]/div/div/div[2]/span").get(0));
+    }
+
+    @When("^Click on one of advertiser account with missing hard pixel$")
+    public void clickOnOneOfAdvertiserAccountWithMissingHardPixel() throws Throwable {
+        GeneralUtilites.wait(1);
+        mouseClick(getElements("//*[@id='root']/div/section/div/div[1]/div/div[2]/div[3]/div[1]/div[2]/div/div[2]/div/div/div[2]/span").get(0));
     }
 }

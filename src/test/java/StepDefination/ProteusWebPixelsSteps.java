@@ -48,7 +48,7 @@ public class ProteusWebPixelsSteps extends BrowserFactory {
 
     @Then("^Pixels screen opened$")
     public void creativesScreenOpened() {
-        Assert.assertTrue("Creatives screen not opened", pixelsPage.lblPixels.isDisplayed());
+        Assert.assertTrue("Pixels screen not opened", pixelsPage.lblPixels.isDisplayed());
         GeneralUtilites.wait(1);
         if(pixelsPage.chbxMissingUnclassified.getAttribute("checked").equals("true"))
         {

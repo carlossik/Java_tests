@@ -27,6 +27,11 @@ public class ProteusWebHomePage extends BrowserFactory
     private WebElement tabOrganisations;
 
     //@FindBy(how = How.XPATH, using = "//*[@id='administration']")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div/div/div/div/nav/label[contains(text(), 'Home')]")
+    @CacheLookup
+    private WebElement tabHome;
+
+    //@FindBy(how = How.XPATH, using = "//*[@id='administration']")
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div/div/div/div/nav/label[contains(text(), 'Users')]")
     @CacheLookup
     private WebElement tabUsers;
@@ -97,6 +102,12 @@ public class ProteusWebHomePage extends BrowserFactory
             mouseClick(boxCampaign);
     }
 
+    public void NavigateProteusHome()
+    {
+        GeneralUtilites.wait(1);
+        mouseClick(tabHome );
+    }
+
     public void NavigateProteusReports()
     {
         GeneralUtilites.wait(1);
@@ -129,6 +140,16 @@ public class ProteusWebHomePage extends BrowserFactory
     public boolean CheckOrganisationsTabExist()
     {
         return tabOrganisations.isDisplayed();
+    }
+
+    public boolean  CheckVendorsTabExist()
+    {
+        return tabVendors.isDisplayed();
+    }
+
+    public boolean CheckUsersTabExist()
+    {
+        return tabUsers.isDisplayed();
     }
 
     public boolean CheckHomePage()

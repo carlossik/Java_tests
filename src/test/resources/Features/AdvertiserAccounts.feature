@@ -12,25 +12,25 @@ Background:
 
 @AdvertiserAccounts
 Scenario: 01 Check if Advertiser Accounts tab opened correctly
- Then Able to navigate to Administration Advertiser Accounts
+ Then Able to navigate to Advertiser Accounts
  And LogOut ProteusWeb from Reports Page
 
 @AdvertiserAccounts
 Scenario: 02 Access and View Advertiser Account Overview
-  Then Able to navigate to Administration Advertiser Accounts
+  Then Able to navigate to Advertiser Accounts
   When I select a First Advertiser Account
   Then Advertiser Account Overview screen shown
   And LogOut ProteusWeb from Admin Page
 
 @AdvertiserAccounts
 Scenario: 03 Able to search for Advertiser Account
-  Then Able to navigate to Administration Advertiser Accounts
+  Then Able to navigate to Advertiser Accounts
   When Search for an Advertiser to EditName
   Then Advertisers filtered as per search key "AdvertiserNameBeforeEdit"
 
 @AdvertiserAccounts
 Scenario: 04 Able to see Advertiser Account Overview screen information
-  Then Able to navigate to Administration Advertiser Accounts
+  Then Able to navigate to Advertiser Accounts
   When Search for an Advertiser to EditName
   Then Advertisers filtered as per search key "AdvertiserNameBeforeEdit"
   When I select a First Advertiser Account
@@ -39,7 +39,7 @@ Scenario: 04 Able to see Advertiser Account Overview screen information
 
 @AdvertiserAccounts
 Scenario: 05 Able to edit Advertiser Account details
-  Then Able to navigate to Administration Advertiser Accounts
+  Then Able to navigate to Advertiser Accounts
   When Search for an Advertiser to EditName
   When I select a First Advertiser Account
   When Click on edit icon to change advertiser information
@@ -52,7 +52,7 @@ Scenario: 05 Able to edit Advertiser Account details
 
 @AdvertiserAccounts
 Scenario: 06 Option to Merge advertiser account into another
-  Then Able to navigate to Administration Advertiser Accounts
+  Then Able to navigate to Advertiser Accounts
   When Search for an Advertiser to EditName
   Then Advertisers filtered as per search key "AdvertiserNameBeforeEdit"
   When I select a First Advertiser Account
@@ -61,7 +61,7 @@ Scenario: 06 Option to Merge advertiser account into another
 
 @AdvertiserAccounts
 Scenario: 07 Option to Merge advertiser account into another
-  Then Able to navigate to Administration Advertiser Accounts
+  Then Able to navigate to Advertiser Accounts
   When Search for an Advertiser to EditName
   Then Advertisers filtered as per search key "AdvertiserNameBeforeEdit"
   When I select a First Advertiser Account
@@ -71,7 +71,7 @@ Scenario: 07 Option to Merge advertiser account into another
 
 @AdvertiserAccounts
 Scenario: 08 Advertiser Platform Details shown on the Advertiser details page
-  Then Able to navigate to Administration Advertiser Accounts
+  Then Able to navigate to Advertiser Accounts
   When Search for a Advertiser Name "PHARMA - MAINTAIN"
   Then Advertisers filtered as per search key "PHARMA - MAINTAIN"
   When I select a First Advertiser Account
@@ -83,7 +83,7 @@ Scenario: 08 Advertiser Platform Details shown on the Advertiser details page
 
   @AdvertiserAccounts
   Scenario: 09 Merge advertiser account into another
-    Then Able to navigate to Administration Advertiser Accounts
+    Then Able to navigate to Advertiser Accounts
     When Search for an Advertiser to Merge
     And I select a First Advertiser Account
     And Click on Merge Into Another Advertiser Account
@@ -97,7 +97,7 @@ Scenario: 08 Advertiser Platform Details shown on the Advertiser details page
 
   @AdvertiserAccounts
   Scenario: 10 Cancel Merge advertiser account into another
-    Then Able to navigate to Administration Advertiser Accounts
+    Then Able to navigate to Advertiser Accounts
     When Search for an Advertiser to Merge
     And I select a First Advertiser Account
     And Click on Merge Into Another Advertiser Account
@@ -112,13 +112,13 @@ Scenario: 08 Advertiser Platform Details shown on the Advertiser details page
 
   @AdvertiserAccounts
   Scenario: 11 Able to search by Requires action
-    Then Able to navigate to Administration Advertiser Accounts
+    Then Able to navigate to Advertiser Accounts
     When Search based on Requires action
     Then Advertisers filtered as per Requires action
 
   @AdvertiserAccounts
   Scenario: 12 Able to Bulk edit and save
-    Then Able to navigate to Administration Advertiser Accounts
+    Then Able to navigate to Advertiser Accounts
     When Search based on Requires action
     And Click on bulk edit
     And Edit two or more Advertiser, Agency details and Save
