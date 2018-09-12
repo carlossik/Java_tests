@@ -1,6 +1,7 @@
 package PageObjects;
 
 import SupportingUtilites.GeneralUtilites;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
@@ -301,5 +302,41 @@ public class ProteusWebCreativesPage extends BrowserFactory {
         GeneralUtilites.wait(4);
         //  dragAndDrop.perform();
         System.out.println("Drag and drop done");
+    }
+
+    public void SortCreativeGridOn(String HeaderName) {
+        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//*[text() = '"+HeaderName+"']"));
+        if(HeaderName.equals("Platform")) {
+            GeneralUtilites.wait(2);
+            mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//*[text() = '"+HeaderName+"']"));
+        }
+        GeneralUtilites.wait(2);
+    }
+
+    public boolean CheckIfCreativessSortedOn(String HeaderName)
+    {
+        String columnXpath = "";
+        switch (HeaderName)
+        {
+            case "Platform" :
+                columnXpath = "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[1]";
+                break;
+            case "Creative Name" :
+                columnXpath = "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[2]";
+                break;
+            case "External ID" :
+                columnXpath = "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[3]";
+                break;
+            case "Classification" :
+                columnXpath = "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[4]";
+                break;
+            case "DSP Status" :
+                columnXpath = "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[5]";
+                break;
+        }
+        List<WebElement> columnHeaders = getElements(columnXpath);
+        List<String> actualColumn = new ArrayList<>();
+        for (WebElement objHeader :columnHeaders) actualColumn.add(objHeader.getText().toLowerCase());
+        return  GeneralUtilites.isCollectionSorted(actualColumn);
     }
 }

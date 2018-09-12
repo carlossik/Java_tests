@@ -601,5 +601,16 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
                 getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div[1]/div/div[2]/div/div[1]/div[2]").
                         getAttribute("class").contains("highlighted"));
     }
+
+    @When("^Clicked on the creatives header \"([^\"]*)\"$")
+    public void clickedOnTheCreativesHeader(String HeaderName) throws Throwable {
+        creativesPage.SortCreativeGridOn( HeaderName);
+    }
+
+    @Then("^Creatives rows are sorted based on \"([^\"]*)\"$")
+    public void creativesRowsAreSortedBasedOn(String HeaderName) throws Throwable {
+        Assert.assertTrue("Creatives' rows are not sorted based on " + HeaderName,
+                creativesPage.CheckIfCreativessSortedOn(HeaderName));
+    }
 }
 

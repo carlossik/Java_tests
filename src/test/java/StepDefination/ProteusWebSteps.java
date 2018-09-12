@@ -1118,14 +1118,12 @@ public class ProteusWebSteps extends BrowserFactory
     public void recentlyViewedDSPCreativesAreListed() throws Throwable {
         Assert.assertTrue("Recently viewed DSP Creatives are not listed",
                 getElementCount("//*[@id='root']/div/section/div/div[1]/div/div[2]/div[3]/div[2]/div/div/div/div/div") >= 1);
-
     }
 
     @Then("^Advertiser Accounts with missing hard pixel box shown on home page$")
     public void advertiserAccountsWithMissingHardPixelBoxShownOnHomePage() throws Throwable {
         Assert.assertTrue("Advertiser Accounts with missing hard pixel box not shown on home page",
                 getElementCount("//*[@id='root']/div/section/div/div[1]/div/div[2]/div[3]/div[1]/div[2]/div/div[1]/div[1]") >= 1);
-
     }
 
     @And("^Recently viewed Advertiser Accounts with missing hard pixel are listed$")

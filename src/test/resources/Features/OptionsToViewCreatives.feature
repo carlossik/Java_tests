@@ -104,3 +104,17 @@ Feature: Creatives for flights and Advertisers
     And The Creative Name is a deeplink
     When Click on the Creative Name
     Then DSP tab opened in the browser for the Advertiser
+
+  @Creatives
+  Scenario Outline: 11 Sort columns on creatives
+    When I click on the creatives icon on flight row
+    Then Creatives screen opened
+    When Clicked on the creatives header "<Header>"
+    Then Creatives rows are sorted based on "<Header>"
+    Examples:
+      | Header       |
+      |Platform      |
+      |Creative Name |
+      |External ID   |
+      |Classification|
+      |DSP Status    |
