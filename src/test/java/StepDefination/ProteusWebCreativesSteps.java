@@ -612,5 +612,14 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
         Assert.assertTrue("Creatives' rows are not sorted based on " + HeaderName,
                 creativesPage.CheckIfCreativessSortedOn(HeaderName));
     }
+
+    @And("^Unselect missing classification on creatives tab$")
+    public void unselectMissingClassificationOnCreativesTab() throws Throwable {
+      GeneralUtilites.wait(1);
+      mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[1]/div/div[2]/form/div[3]/div/label/div"));
+      GeneralUtilites.wait(1);
+      mouseClick(creativesPage.btnCreativesApplyFilters);
+      GeneralUtilites.wait(1);
+    }
 }
 

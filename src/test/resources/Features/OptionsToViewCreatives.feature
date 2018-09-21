@@ -14,6 +14,7 @@ Feature: Creatives for flights and Advertisers
 
  @Creatives
  Scenario: 01 Add new icons on left hand tool bar, icon on each flight and tooltip
+
     Then All Flights matching search/filter combination load as results
     And Creatives option shown on the Campaigns tab
     And  There is an icons for Creatives
@@ -21,6 +22,7 @@ Feature: Creatives for flights and Advertisers
 
  @Creatives
  Scenario: 02 Able to open creatives tab from flights
+
     Then All Flights matching search/filter combination load as results
     And Creatives option shown on the Campaigns tab
     When I click on the creatives icon on flight row
@@ -31,6 +33,7 @@ Feature: Creatives for flights and Advertisers
 
  @Creatives
  Scenario: 03 Able to change the Advertiser Account on Creatives screen
+
       When I click on the creatives icon on flight row
       Then Creatives screen opened
       When Click on Change button
@@ -42,6 +45,8 @@ Feature: Creatives for flights and Advertisers
  Scenario: 04 Tag icon on creatives screen
       When I click on the creatives icon on flight row
       Then Creatives screen opened
+      When I change the advertiser "TRAVEL - LUXURY" and save
+     # And Unselect missing classification on creatives tab
       And There is a tag icon on the right hand side of the creative row
       And Tooltips shown on mouseover on tag icon 'View creative tag and image'
       When Click on the tag icon
@@ -51,12 +56,15 @@ Feature: Creatives for flights and Advertisers
 
   @Creatives
   Scenario: 05 Creatives screen columns for advertiser with ad server mapped
+
     When I click on the creatives icon on flight row
     Then Creatives screen opened
+    When I change the advertiser "TRAVEL - LUXURY" and save
     And  The following column for advertiser with ad server mapped
 
   @Creatives
   Scenario: 06 Creatives screen columns for advertiser without ad server mapped
+
     When I click on the creatives icon on flight row
     Then Creatives screen opened
     When I change the advertiser "TestBrand GB" and save
@@ -64,6 +72,7 @@ Feature: Creatives for flights and Advertisers
 
   @Creatives
   Scenario: 07 Bulk Edit - read only and editable columns
+
     When I click on the creatives icon on flight row
     Then Creatives screen opened
     And  Creatives bulk edit button shown on Creatives tab
@@ -77,6 +86,7 @@ Feature: Creatives for flights and Advertisers
 
   @Creatives
   Scenario: 08 Missing values for Creatives
+
     When I click on the creatives icon on flight row
     And I change the advertiser "TRAVEL - LUXURY" and save
     Then Creatives screen opened
@@ -86,6 +96,7 @@ Feature: Creatives for flights and Advertisers
 
   @Creatives
   Scenario: 09 Ability to edit and save Creatives classification
+
     When I click on the creatives icon on flight row
     Then Creatives screen opened
     When Click on Creatives bulk edit
@@ -98,6 +109,7 @@ Feature: Creatives for flights and Advertisers
 
   @Creatives
   Scenario: 10 Deeplink Creatives Name
+
     When I click on the creatives icon on flight row
     And I change the advertiser "TestBrand GB" and save
     Then Creatives screen opened
@@ -107,6 +119,7 @@ Feature: Creatives for flights and Advertisers
 
   @Creatives
   Scenario Outline: 11 Sort columns on creatives
+
     When I click on the creatives icon on flight row
     Then Creatives screen opened
     When Clicked on the creatives header "<Header>"

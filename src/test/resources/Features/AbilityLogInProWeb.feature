@@ -41,9 +41,10 @@ Feature: Ability to log into Pro Web
   Scenario: 05 Navigated to Campaigns when logged in with only Campaign Web role
     When Login as "CAMPAIGN MANAGEMENT WEB"
     And There is a box called "Campaigns"
+    And All other tabs apart from "Campaigns" are hidden
     When I click on "Campaigns" from home page
     Then The Campaigns page loads successfully
     Then Log out, Back to Home, Flights icon shown on Campaign page
-    And Creatives option not shown on the Campaigns tab
-    And Pixels option not shown on the Campaigns tab
+    And Creatives option shown on the Campaigns tab
+    And Pixels option shown on the Campaigns tab
     And LogOut ProteusWeb from Home Page

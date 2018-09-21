@@ -45,11 +45,11 @@ public class ProteusWebCreativesPage extends BrowserFactory {
     @CacheLookup
     public WebElement chbxCreativesUnclassified;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[1]/div/div[2]/form/div[5]/button[1]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[1]/div/div[2]/form/div/button[1]")
     @CacheLookup
     public WebElement btnCreativesApplyFilters;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[1]/div/div[2]/form/div[5]/button[2]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[1]/div/div[2]/form/div/button[2]")
     @CacheLookup
     public WebElement btnCreativesClearFilters;
 

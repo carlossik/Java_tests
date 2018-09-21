@@ -42,7 +42,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     @CacheLookup
     private WebElement tabHome;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='1']")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[2]/div/div/div/nav/label[contains(text(), 'Campaigns')]")
     @CacheLookup
     private WebElement tabCampaigns;
 

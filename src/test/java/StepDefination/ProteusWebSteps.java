@@ -89,6 +89,10 @@ public class ProteusWebSteps extends BrowserFactory
                 strUserName = prop.getProperty("InvalidUserName");
                 strPassword = prop.getProperty("InvalidPassword");
                 break;
+            case "ADVERTISERMANAGEREDITOR":
+                strUserName = prop.getProperty("AdvertiserMangerUserName");
+                strPassword = prop.getProperty("AdvertiserMangerPassword");
+                break;
             default:
                 strUserName = prop.getProperty("AdminUserName");
                 strPassword = prop.getProperty("AdminPassword");
@@ -243,6 +247,19 @@ public class ProteusWebSteps extends BrowserFactory
             Assert.assertTrue( "There is a box called Organisations does not exist",homePage.CheckOrganisationsTabExist());
         if(tabName.equals("Users"))
             Assert.assertTrue( "There is a box called Users does not exist",homePage.CheckUsersTabExist());
+    }
+
+    @And("^All other tabs apart from \"([^\"]*)\" are hidden$")
+    public void allOtherTabsApartFromAreHidden(String tabNames) throws Throwable {
+      Assert.assertEquals("All other tabs apart from " + tabNames + "are hidden",
+              getElementCount("//*[@id='root']/div/header/div/div[2]/div/div/div/nav/label")
+              ,tabNames.split(";").length);
+        for (String tabName:tabNames.split(";")) {
+            Assert.assertEquals("All other tabs apart from " + tabNames + "are hidden",
+                    getElementCount("//*[@id='root']/div/header/div/div[2]/div/div/div/nav/label[contains(text(),'"+tabName+"')]")
+                    ,1);
+
+        }
     }
 
     @When("^I click on \"([^\"]*)\" from home page$")
@@ -1143,4 +1160,6 @@ public class ProteusWebSteps extends BrowserFactory
         GeneralUtilites.wait(1);
         mouseClick(getElements("//*[@id='root']/div/section/div/div[1]/div/div[2]/div[3]/div[1]/div[2]/div/div[2]/div/div/div[2]/span").get(0));
     }
+
+
 }

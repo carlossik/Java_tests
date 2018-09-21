@@ -121,7 +121,7 @@ Feature: Pixels for flights and Advertisers
     Then Pixels filtered based on the "<SearchKey>"
     Examples:
       | SearchKey |
-      |Autogen    |
+      |test       |
       |837828     |
       |g4zbkad    |
 
