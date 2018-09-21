@@ -3,16 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="14c0a861-ce48-4df8-a711-5e9e94835522" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCreativesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCreativesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebCreativesSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebCreativesSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/AbilityLogInProWeb.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/AbilityLogInProWeb.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/OptionsToViewCreatives.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/OptionsToViewCreatives.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/OptionsToViewPixels.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/OptionsToViewPixels.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/UnderDev/MenuOptions.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/UnderDev/MenuOptions.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefination/ProteusWebSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StepDefination/ProteusWebSteps.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/workspace.xml" afterDir="false" />
     </list>
@@ -468,13 +458,6 @@
       <option name="presentableId" value="Default" />
       <updated>1516620214550</updated>
     </task>
-    <task id="LOCAL-00012" summary="Added Tests for Expand flight details">
-      <created>1520427767696</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1520427767696</updated>
-    </task>
     <task id="LOCAL-00013" summary="Added Tests for Expand flight details">
       <created>1520427779571</created>
       <option name="number" value="00013" />
@@ -811,7 +794,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536750104199</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary=" Added roles and securities testcases">
+      <created>1537521373149</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1537521373150</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -939,7 +929,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated selenium version" />
     <MESSAGE value="Added options to run tests from command prompt" />
     <MESSAGE value="Updated query SQLQueryFlightNameWithNoTrader" />
     <MESSAGE value="Added AdvertiserAccounts tests" />
@@ -964,7 +953,8 @@
     <MESSAGE value="Updated script on regression on other modules" />
     <MESSAGE value=" Added Home page test cases" />
     <MESSAGE value=" Added creatives rows sorting on headers" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Added creatives rows sorting on headers" />
+    <MESSAGE value=" Added roles and securities testcases" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Added roles and securities testcases" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
