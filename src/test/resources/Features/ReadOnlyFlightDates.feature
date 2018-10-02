@@ -13,7 +13,7 @@ Feature: Flight Start and End Dates shown
     When I search/filter for result with end date
     And Click on Apply button
     Then Box shown with Start Date and End Date
-    And A progress bar shown
+    #And A progress bar shown
 
   @FlightDates
   Scenario: 02 There is a box/area to show Start Date Indefinite
@@ -21,4 +21,4 @@ Feature: Flight Start and End Dates shown
     And Click on Apply button
     Then Box shown with Start Date
     Then End date shown as an icon and Tooltip shown
-    And A progress bar shown
+   # And A progress bar shown

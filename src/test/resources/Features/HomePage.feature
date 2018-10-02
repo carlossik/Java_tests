@@ -10,11 +10,11 @@ Background:
 
   Scenario: 01 Campaign Flights box on the home page
     When I click on "Campaigns" from home page
-    And I search/filter for a flightName "NewFlightAutomation 765"
+    And I search/filter for a flightName "2373 Campaign"
     And Click on Apply button
     When I click on "Home" from home page
     Then Campaign Flights box shown on home page
-    And Recently viewed flights are listed "NewFlightAutomation 765"
+    And Recently viewed flights are listed "2373 Campaign"
 
   Scenario: 02 Advertiser Accounts box on the home page
     When I click on "Organisations" from home page

@@ -102,9 +102,10 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
         creativesPage.txtAdvertiserAccount.click();
         enterText(creativesPage.txtAdvertiserAccount, "");
         GeneralUtilites.wait(1);
-        enterText(creativesPage.txtAdvertiserAccount, "tr");
+        typeText(creativesPage.txtAdvertiserAccount, "tr");
         GeneralUtilites.wait(1);
-        mouseClick(getElements("/html/body/div/div/div[2]/section/div[2]/form/div[1]/div/ul").get(0));
+        mouseClick(getElements("/html/body/div/div/div[2]/section/div[2]/form/div[1]/div/ul/li").get(0));
+        GeneralUtilites.wait(1);
         creativesPage.btnOK.click();
     }
 
@@ -192,19 +193,19 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
     @And("^Editable columns shown on Creatives grid$")
     public void editableColumnsShownOnPixelGrid() {
         Assert.assertTrue("AD Server Placement or Classification columns are not editable",
-                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[4]/div/div/div//input") > 0
-                        && getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[5]/div/div[1]/div//input") > 0
-                        && getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[5]/div/div[2]/div//input") > 0);
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div[4]/div/div/div/div/input") > 0
+                        && getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div[5]/div/div[1]/div/div/div/input") > 0
+                        && getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div[5]/div/div[2]/div/div/div/input") > 0);
     }
 
     @And("^ReadOnly columns shown on Creatives grid$")
     public void readonlyColumnsShownOnPixelGrid() {
         Assert.assertTrue("ReadOnly columns not shown on Creatives grid",
-                   getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[3]") > 0
-                        && getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[2]") > 0
-                        && getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[1]") > 0
-                        && getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[6]") > 0
-                        && getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[7]") > 0);
+                   getElementCount(" //*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div[1] ") > 0
+                        && getElementCount(" //*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div[2] ") > 0
+                        && getElementCount(" //*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div[3] ") > 0
+                        && getElementCount(" //*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div[6] ") > 0
+                        && getElementCount(" //*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div[7] ") > 0);
     }
 
     @And("^Tooltips shown on mouseover on Creative Bulk edit button$")
@@ -265,16 +266,16 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
     @And("^The Creative Name is a deeplink$")
     public void theCreativeNameIsADeeplink()    {
         Assert.assertTrue("The Creative Name is a not deeplink",
-                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[2]/div/a")
+                getElementCount(" //*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div/div/div/div[2]/div/div/div[2]/div/a")
                         > 0 &&
-                        !getElements("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[2]/div/a")
+                        !getElements("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div/div/div/div[2]/div/div/div[2]/div/a")
                                 .get(0).getAttribute("href").equals(""));
 
     }
 
     @When("^Click on the Creative Name$")
     public void clickOnTheCreativeName()     {
-        mouseClick(getElements("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[2]/div/a").get(0));
+        mouseClick(getElements("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div/div/div/div[2]/div/div/div[2]/div/a").get(0));
     }
 
 
@@ -620,6 +621,20 @@ public class ProteusWebCreativesSteps extends BrowserFactory {
       GeneralUtilites.wait(1);
       mouseClick(creativesPage.btnCreativesApplyFilters);
       GeneralUtilites.wait(1);
+    }
+
+    @And("^Creatives Save button shown and is disabled$")
+    public void creativesSaveButtonShownAndIsDisabled() throws Throwable {
+        Assert.assertTrue("Save button not shown or is it enabled",
+                creativesPage.btnCreativesBulkEditSave.isDisplayed() &&
+                        !creativesPage.btnCreativesBulkEditSave.isEnabled());
+    }
+
+    @And("^Creatives Cancel button shown and is enabled$")
+    public void creativesCancelButtonShownAndIsEnabled() throws Throwable {
+        Assert.assertTrue("Cancel button not shown or is it enabled",
+                creativesPage.btnCreativesBulkEditCancel.isDisplayed() &&
+                        creativesPage.btnCreativesBulkEditCancel.isEnabled());
     }
 }
 

@@ -19,11 +19,11 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
         PageFactory.initElements(browserFactory.getDriver(),this );
     }
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/h4")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div[1]/h4")
     @CacheLookup
     public WebElement lblAdvertiserAccounts;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/form/div[1]/div/input")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div[2]/div/div/form/div[1]/div/input")
     public WebElement txtSearch;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/form/div[2]/div/div/input")
@@ -38,15 +38,15 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
     @CacheLookup
     private WebElement chbxRequiresAction;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/form/div/button[1]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div[2]/div/div/form/div[6]/button[1]")
     //@CacheLookup
     private WebElement btnApplyFilters;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/form/div/button[2]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div[2]/div/div/form/div[6]/button[2]")
     @CacheLookup
     public WebElement btnClearFilters;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/button")
+    @FindBy(how = How.XPATH, using = " //*[@id=\"root\"]/div/section/div/div[2]/div/div/div/div[2]/div/div[1]/div[2]/div/div/div/div/button")
     @CacheLookup
     public WebElement btnBulkEdit;
 
@@ -67,11 +67,11 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
     @CacheLookup
     public WebElement hdrAgencyName;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[3]/div[1]/div/div[2]/div/div")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div[1]")
     @CacheLookup
     private WebElement rowAdvertiser;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div/form/div[1]/div[2]/button[1]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div/form/div[1]/div[2]/div[2]/button")
     @CacheLookup
     public WebElement btnEditAdvertiserDetails;
 
@@ -91,11 +91,11 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
     @CacheLookup
     private WebElement cmbOperationalUnit;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div/form/div[1]/div[2]/div/button[2]")
+    @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div/form/div[1]/div[2]/div[2]/div[1]/button")
     @CacheLookup
     private WebElement btnSave;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div/form/div[1]/div[2]/div/button[1]")
+    @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div/form/div[1]/div[2]/div[2]/div[2]/button")
     @CacheLookup
     public WebElement btnCancel;
 
@@ -103,11 +103,11 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
     @CacheLookup
     public WebElement lblAdvertiserPlatformDetails;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/button")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div/form/div[1]/div[2]/div[1]/button")
     @CacheLookup
     public WebElement btnBack;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div/form/div[1]/div[2]/button[2]")
+    @FindBy(how = How.XPATH, using = " //*[@id=\"root\"]/div/section/div/div[2]/div/div/div/div[2]/div[1]/div/form/div[1]/div[2]/div[3]/button")
     @CacheLookup
     public WebElement btnMergeAdvertiser;
 
@@ -120,11 +120,11 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
     @CacheLookup
     private WebElement chbxConfirmMergeAdvertiser;
 
-    @FindBy(how = How.XPATH, using = "/html/body/div/div/div[2]/section/div[2]/form/div[3]/button[1]")
+    @FindBy(how = How.XPATH, using = "/html/body/div/div/div[2]/section/div[2]/form/div[3]/button[2]")
     @CacheLookup
     private WebElement btnMergeCancel;
 
-    @FindBy(how = How.XPATH, using = "/html/body/div/div/div[2]/section/div[2]/form/div[3]/button[2]")
+    @FindBy(how = How.XPATH, using = "/html/body/div/div/div[2]/section/div[2]/form/div[3]/button[1]")
     @CacheLookup
     private WebElement btnMergeSave;
 
@@ -170,7 +170,7 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
     }
 
     public boolean CheckForAdvertiserRows(String strSearchKey){
-        By PlatformIcons = By.xpath( "//*[@id='root']/div/section/div/div[2]/div/div/div/div[3]/div[1]/div/div[2]/div/div/div[contains(text(),'"+strSearchKey.trim()+"') ]");
+        By PlatformIcons = By.xpath( " //*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[contains(text(),'"+strSearchKey.trim()+"') ]");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(PlatformIcons);
         return elementTypes.size() > 0 ;
     }

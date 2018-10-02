@@ -270,20 +270,20 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
     @And("^Users column shown in the grid and it is numeric$")
     public void usersColumnShownInTheGridAndItIsNumeric() throws Throwable {
       Assert.assertTrue("Users column not shown in the grid and it is numeric",
-               getElementCount("//*[@id='root']/div/section/div/div/div/div/div/div/div/div/div/div/div/div/div[3]/span") > 0);
-      Assert.assertTrue("Users column  shown in the grid and it is not numeric", GeneralUtilites.isNumeric( getElements("//*[@id='root']/div/section/div/div/div/div/div/div/div/div/div/div/div/div/div[3]/span").get(0).getText()));
+               getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[3]/span") > 0);
+      Assert.assertTrue("Users column  shown in the grid and it is not numeric", GeneralUtilites.isNumeric( getElements("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[3]/span").get(0).getText()));
     }
 
     @When("^Clicked on the Users number$")
     public void clickedOnTheUsersNumber() throws Throwable {
-        mouseClick(getElements("//*[@id='root']/div/section/div/div/div/div/div/div/div/div/div/div/div/div/div[3]/span").get(0));
+        mouseClick(getElements("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[3]/span").get(0));
         GeneralUtilites.wait(2);
     }
 
     @Then("^Popup shown with Users who have access to group$")
     public void popupShownWithUsersWhoHaveAccessToGroup() throws Throwable {
         Assert.assertTrue("Popup not shown with Users who have access to group",
-        getElementCount("/html/body/div/div/div[2]/section/div/div[2]/div[1]/div/div[2]/div/div") > 0);
+        getElementCount("/html/body/div[2]/div/div[2]/section/div[2]/div[1]/div[1]/div/div[2]/div/div") > 0);
     }
 
     @When("^Search for a key \"([^\"]*)\" on the Users list$")
@@ -293,7 +293,7 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
 
     @Then("^Users list filtered based on Search Key \"([^\"]*)\"$")
     public boolean usersListFilteredBasedOnSearchKey(String strSearchKey) throws Throwable {
-        List<WebElement> users =  getElements("/html/body/div/div/div[2]/section/div/div[2]/div[1]/div/div[2]/div/div/div[1]");
+        List<WebElement> users =  getElements("/html/body/div[2]/div/div[2]/section/div[2]/div[1]/div[1]/div/div[2]/div/div/div[1]");
         boolean returnType= true;
         for ( WebElement user : users  ) {
             returnType = returnType &&  user.getText().toLowerCase().contains(strSearchKey.toLowerCase());
@@ -305,7 +305,7 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
 
     @When("^Open Edit Security Group screen for one of the groups$")
     public void openEditSecurityGroupScreenForOneOfTheGroups() throws Throwable {
-          mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[1]/div/div[2]/div/div[1]/div[1]/span"));
+          mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div[1]/div[1]/span"));
           GeneralUtilites.wait(1);
     }
 

@@ -11,19 +11,12 @@ Feature: Regression on Reports,Client Reports,Administration tabs
     When Login as "ADMINISTRATOR"
     Then The main homepage loads successfully
     And There is a box called "Campaigns"
-    And There is a box called "Client Reports"
+    And There is a box called "Reports"
     And There is a box called "Vendors"
     And There is a box called "Organisations"
     And There is a box called "Users"
     And LogOut ProteusWeb from Home Page
 
-  @ProteusWebRegression
-  Scenario: 02 Check if Reports tab opened correctly
-    When Login as "ADMINISTRATOR"
-    Then The main homepage loads successfully
-    #  When I click on "Reports" from home page
-    # Then Reports page shown correctly
-    And LogOut ProteusWeb from Reports Page
 
   @ProteusWebRegression
   Scenario: 03 Check if Admin tab opened correctly
@@ -39,7 +32,7 @@ Feature: Regression on Reports,Client Reports,Administration tabs
   Scenario: 04 Check if Client Reports tab opened correctly
     When Login as "ADMINISTRATOR"
     Then The main homepage loads successfully
-    When I click on "Client Reports" from home page
+    When I click on "Reports" from home page
     Then Client Reports page shown correctly
     And Able to navigate to Client Reports Dashboard
     And Able to navigate to Client Reports Performance

@@ -25,7 +25,7 @@ Feature: Pixels for flights and Advertisers
   @Pixels
   Scenario: 02 Able to change the Advertiser Account on Pixels screen
     When Click on Pixels icon
-    Then Pixels screen opened
+    #Then Pixels screen opened
     When Click on Pixel Change button
     Then Option to change pixel advertiser account exist
     When I change the pixel advertiser and save
@@ -56,7 +56,7 @@ Feature: Pixels for flights and Advertisers
   @Pixels
   Scenario: 05 Able to change the Advertiser Account on Pixel screen
     When I click on the pixels icon on flight row
-    Then Pixels screen opened
+   # Then Pixels screen opened
     When Click on Pixel Change button
     Then Option to change pixel advertiser account exist
     When I change the pixel advertiser and save
@@ -89,7 +89,6 @@ Feature: Pixels for flights and Advertisers
 
   @Pixels
   Scenario Outline: 08  Sort columns
-
     When I click on the pixels icon on flight row
     Then Pixels screen opened
     When Clicked on the header "<Header>"
@@ -106,7 +105,7 @@ Feature: Pixels for flights and Advertisers
   Scenario: 09 Pagination on screen when pixels list loads
     When I click on the pixels icon on flight row
     Then the Pixels list of results is defaulted to 'Missing Classification'
-    And Dropdown to filter based on Platforms exist and defaulted to ALL
+    #And Dropdown to filter based on Platforms exist and defaulted to ALL
     And Pixels screen opened
     And Pagination shown at the bottom of the page
     And Option to enter search key exist
@@ -121,7 +120,7 @@ Feature: Pixels for flights and Advertisers
     Then Pixels filtered based on the "<SearchKey>"
     Examples:
       | SearchKey |
-      |test       |
+      |Test       |
       |837828     |
       |g4zbkad    |
 

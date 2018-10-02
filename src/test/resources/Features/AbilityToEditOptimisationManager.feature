@@ -14,10 +14,13 @@ Feature: Ability to add/edit Optimisation Manager
   Scenario: 01 Add/Edit Optimisation Manager details to flight
     When I search/filter for a flight with no Optimisation Manager
     And Click on Apply button
-    Then The box states 'Unknown User'
+    Then There is an Add icon in the box orange to inform the user action is required
+    When Click on Add 'Goal Info and Target'
     And Option to edit Optimisation Manager exist
     When Select one of Optimisation Manager and Save
     Then Optimisation Manager saved
     When Edit Optimisation Manager and Save
     Then Edited Optimisation Manager saved
+
+
 

@@ -60,12 +60,12 @@ Feature: Ability to search for Flights
 
 
   @SearchOnProWeb
-  Scenario: 08 Goal Type, Goal Value, Optimisation Manager, Budget, Spend information and Flight Dates
+  Scenario: 08 Budget, Spend information and Flight Dates
     Then All Flights loads which I have access to
     When I search/filter for a particular result
     And Click on Apply button
     Then All Flights matching search/filter combination load as results
-    And  Goal Type, Goal Value, Optimisation Manager, Budget, Spend information and Flight Dates
+    And  Budget, Spend information and Flight Dates
     #And  The Currency code for the Flight is displayed next to the Budget
     Then LogOut ProteusWeb from Campaigns page
 
@@ -102,6 +102,5 @@ Feature: Ability to search for Flights
     Then All Flights loads which I have access to
     When I search/filter for a Campaign "LOCAL BRANDING - GAME/COUNTRY"
     And Click on Apply button
-    Then Campaign details shown for each flight row
-    And All Flights matching campaign "LOCAL BRANDING - GAME/COUNTRY" are filtered
+    Then All Flights matching campaign "LOCAL BRANDING - GAME/COUNTRY" are filtered
     And LogOut ProteusWeb from Campaigns page

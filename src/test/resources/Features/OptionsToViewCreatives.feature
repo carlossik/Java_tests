@@ -56,7 +56,6 @@ Feature: Creatives for flights and Advertisers
 
   @Creatives
   Scenario: 05 Creatives screen columns for advertiser with ad server mapped
-
     When I click on the creatives icon on flight row
     Then Creatives screen opened
     When I change the advertiser "TRAVEL - LUXURY" and save
@@ -79,8 +78,8 @@ Feature: Creatives for flights and Advertisers
     And  Tooltips shown on mouseover on Creative Bulk edit button
     When Click on Creatives bulk edit
     Then Creatives grid changed to editable state
-    And Save button shown and is disabled
-    And Cancel button shown and is enabled
+    And Creatives Save button shown and is disabled
+    And Creatives Cancel button shown and is enabled
     And Editable columns shown on Creatives grid
     And ReadOnly columns shown on Creatives grid
 
@@ -130,4 +129,4 @@ Feature: Creatives for flights and Advertisers
       |Creative Name |
       |External ID   |
       |Classification|
-      |DSP Status    |
+     # |DSP Status    |

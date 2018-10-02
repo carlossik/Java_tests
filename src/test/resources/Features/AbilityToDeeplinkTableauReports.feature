@@ -26,12 +26,12 @@ Feature: Ability to deep-link to Tableau reports
 
   @TableauReporting
   Scenario: 03 Tableau Reporting tab opened for Data Explorer
-    When Click on "Data Explorer" Tableau report
+    When Click on "Data explorer" Tableau report
     Then Tableau report opened for "DataExplorer"
 
   @TableauReporting
   Scenario: 04 Tableau Reporting tab opened for Operations Breakdown
-    When Click on "Operations Breakdown" Tableau report
+    When Click on "Operations breakdown" Tableau report
     Then Tableau report opened for "OperationsBreakdown"
 
   @TableauReporting
@@ -40,7 +40,7 @@ Feature: Ability to deep-link to Tableau reports
 
   @TableauReporting
   Scenario: 06 Operation Unit Level Reporting tooltip on Icon
-    Then Tooltip 'Click to go to reports Operational Unit level' shown on mouseover at Operation Unit icon
+    Then Tooltip 'Click to go to reports at Operational Unit level' shown on mouseover at Operation Unit icon
     And There are two links in the pop up for the following Operational Unit reports:
        #Management Report
        #Performance Overview

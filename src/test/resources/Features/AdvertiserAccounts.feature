@@ -109,7 +109,6 @@ Scenario: 08 Advertiser Platform Details shown on the Advertiser details page
     Then Advertisers filtered as per search key "MergedAdvertiser"
     And LogOut ProteusWeb from Admin Page
 
-
   @AdvertiserAccounts
   Scenario: 11 Able to search by Requires action
     Then Able to navigate to Advertiser Accounts

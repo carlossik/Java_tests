@@ -16,11 +16,11 @@ public class ProteusWebPlatformSeat extends BrowserFactory {
         PageFactory.initElements(browserFactory.getDriver(), this);
     }
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[2]/div[1]/div[1]/div[2]/button")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[2]/div[1]/div[1]/div[2]//button")
     @CacheLookup
     public WebElement btnManageCredentials;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[2]/div[2]/div[1]/div[2]/button")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[2]/div[2]/div[1]/div[2]//button")
     @CacheLookup
     public WebElement btnManageConfigurations;
 
@@ -64,11 +64,11 @@ public class ProteusWebPlatformSeat extends BrowserFactory {
     @CacheLookup
     public WebElement chbxRegularExpression;
 
-    @FindBy(how = How.XPATH, using = "/html/body/div/div/div[2]/section/div[2]/form/div[6]/button[1]")
+    @FindBy(how = How.XPATH, using = "/html/body/div/div/div[2]/section/div[2]/form/div[6]/button[2]")
     @CacheLookup
     public WebElement btnCancel;
 
-    @FindBy(how = How.XPATH, using = "/html/body/div/div/div[2]/section/div[2]/form/div[6]/button[2]")
+    @FindBy(how = How.XPATH, using = "/html/body/div/div/div[2]/section/div[2]/form/div[6]/button[1]")
     @CacheLookup
     public WebElement btnSave;
 

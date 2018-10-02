@@ -93,6 +93,15 @@ public class ProteusWebSteps extends BrowserFactory
                 strUserName = prop.getProperty("AdvertiserMangerUserName");
                 strPassword = prop.getProperty("AdvertiserMangerPassword");
                 break;
+            case "VENDORMANAGERROLE":
+                strUserName = prop.getProperty("VendorMangerUserName");
+                strPassword = prop.getProperty("VendorMangerPassword");
+                break;
+            case "DASHBOARDROLE":
+                strUserName = prop.getProperty("DashboardRoleUserName");
+                strPassword = prop.getProperty("DashboardRolePassword");
+                break;
+
             default:
                 strUserName = prop.getProperty("AdminUserName");
                 strPassword = prop.getProperty("AdminPassword");
@@ -137,7 +146,7 @@ public class ProteusWebSteps extends BrowserFactory
     @Then("All Flights loads which I have access to")
     public void ThenAllFlightsLoadsWhichIHaveAccessTo()    {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
-        System.out.println("Need to implement this to check the list of flights");
+
         Assert.assertTrue("Need to implement this to check the list of flights",campaignsPage.GetFlightRowsCount()> 0);
     }
 
@@ -158,6 +167,7 @@ public class ProteusWebSteps extends BrowserFactory
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         campaignsPage.EnterSearchFilter("Automation 84", "", "");
         GeneralUtilites.wait(2);
+        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]/div[2]/div/div[1]/div/div[1]/label/input[@value='ENDED']"));
     }
 
     @When("^I search/filter for a particular result \"([^\"]*)\"$")
@@ -239,14 +249,16 @@ public class ProteusWebSteps extends BrowserFactory
         homePage = new ProteusWebHomePage(this.browserFactory);
         if(tabName.equals("Campaigns"))
             Assert.assertTrue( "There is a box called Campaigns does not exist",homePage.CheckCampaignTabExist());
-        if(tabName.equals("Client Reports"))
-            Assert.assertTrue( "There is a box called Client Reports does not exist",homePage.CheckClientReportsTabExist());
+        if(tabName.equals("Reports"))
+            Assert.assertTrue( "There is a box called Client Reports does not exist",homePage.CheckReportsTabExist());
         if(tabName.equals("Vendors"))
             Assert.assertTrue( "There is a box called Vendors does not exist",homePage.CheckVendorsTabExist());
         if(tabName.equals("Organisations"))
             Assert.assertTrue( "There is a box called Organisations does not exist",homePage.CheckOrganisationsTabExist());
         if(tabName.equals("Users"))
             Assert.assertTrue( "There is a box called Users does not exist",homePage.CheckUsersTabExist());
+        if(tabName.equals("Home"))
+            Assert.assertTrue( "There is a box called Users does not exist",homePage.CheckHomeTabExist());
     }
 
     @And("^All other tabs apart from \"([^\"]*)\" are hidden$")
@@ -294,7 +306,7 @@ public class ProteusWebSteps extends BrowserFactory
     @Then("^Organisations page shown correctly$")
     public void organisationsPageShownCorrectly()    {
         Assert.assertTrue("Organisations page not shown correctly",
-              getElementCount("//*[@id='root']/div/section/div/div[1]/aside/button") > 0 );
+              getElementCount("//*[@id='root']/div/section/div/div[1]/aside//button") > 0 );
     }
 
     @And("^LogOut ProteusWeb from Admin Page$")
@@ -506,7 +518,7 @@ public class ProteusWebSteps extends BrowserFactory
                 campaignsPage.CheckFlightDetailsShown());
     }
 
-    @And("^Goal Type, Goal Value, Optimisation Manager, Budget, Spend information and Flight Dates$")
+    @And("^Budget, Spend information and Flight Dates$")
     public void goalTypeGoalValueOptimisationManagerBudgetSpendInformationAndFlightDates()    {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("Goal Type, Goal Value, Optimisation Manager, Budget, Spend information and Flight Dates not shown",
@@ -539,6 +551,8 @@ public class ProteusWebSteps extends BrowserFactory
     public void iSearchResultWithEndDate()   {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         campaignsPage.EnterSearchFilter("FINANCE", "FINANCE - INSURE", "Agency > Business & Industrial 1742");
+        GeneralUtilites.wait(2);
+        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]/div[2]/div/div[1]/div/div[1]/label/input[@value='ENDED']"));
     }
 
     @When("^I search/filter for result without end date$")
@@ -725,13 +739,15 @@ public class ProteusWebSteps extends BrowserFactory
     public void optionToEditOptimisationManagerExist() {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("Option to edit Optimisation Manager not exist",
-                campaignsPage.CheckForEditOptimisationManager());
+                campaignsPage.OptionsToAddGoalDetails());
+
+
     }
 
     @When("^Select one of Optimisation Manager and Save$")
     public void selectOneOfOptimisationManagerAndSave()  {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
-        campaignsPage.SaveOptimisationManagerDetails("Amelia Lee");
+        campaignsPage.SaveGoalDetails("CTR","10");
     }
 
     @Then("^Optimisation Manager saved$")
@@ -892,7 +908,7 @@ public class ProteusWebSteps extends BrowserFactory
                 campaignsPage.getOperationUnitReportButtonCount() > 0);
     }
 
-    @Then("^Tooltip 'Click to go to reports Operational Unit level' shown on mouseover at Operation Unit icon$")
+    @Then("^Tooltip 'Click to go to reports at Operational Unit level' shown on mouseover at Operation Unit icon$")
     public void tooltipClickToGoToReportsOperationalUnitLevelShownOnMouseoverAtOperationUnitIcon()  {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("Tooltip 'Click to go to reports at Operation Unit level' not shown on mouseover",
@@ -917,6 +933,7 @@ public class ProteusWebSteps extends BrowserFactory
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         campaignsPage.EnterSearchFilter(CampaignName, "", "");
         GeneralUtilites.wait(2);
+        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]/div[2]/div/div[1]/div/div[1]/label/input[@value='ENDED']"));
     }
 
     @Then("^Campaign details shown for each flight row$")
@@ -1073,7 +1090,9 @@ public class ProteusWebSteps extends BrowserFactory
         typeText(platformSeatPage.txtBucketName, "gdbm-1501436");
         typeText(platformSeatPage.txtFileNamePattern, "{yyyyMMdd}.0.Campaign.json");
         typeText(platformSeatPage.txtFolderNamePattern, "entity");
+        GeneralUtilites.wait(2);
         mouseClick(platformSeatPage.btnSave);
+        GeneralUtilites.wait(1);
     }
 
     @Then("^New seat storage details saved$")
@@ -1086,7 +1105,7 @@ public class ProteusWebSteps extends BrowserFactory
     @Then("^Users page shown correctly$")
     public void usersPageShownCorrectly()   {
         Assert.assertTrue("Users page not shown correctly",
-                getElementCount("//*[@id='root']/div/section/div/div[1]/aside/button")>0);
+                getElementCount("//*[@id='root']/div/section/div/div[1]/aside//button")>0);
     }
 
     @Then("^Campaign Flights box shown on home page$")
@@ -1161,5 +1180,21 @@ public class ProteusWebSteps extends BrowserFactory
         mouseClick(getElements("//*[@id='root']/div/section/div/div[1]/div/div[2]/div[3]/div[1]/div[2]/div/div[2]/div/div/div[2]/span").get(0));
     }
 
+    @When("^Clicked on the flight header \"([^\"]*)\"$")
+    public void clickedOnTheFlightHeader(String HeaderName) throws Throwable {
 
+            mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[1]/div/*[text()='"+HeaderName+"']"));
+            if(HeaderName.equals("Start Date")) {
+                GeneralUtilites.wait(2);
+                mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[1]/div/*[text()='"+HeaderName+"']"));
+            }
+            GeneralUtilites.wait(2);
+    }
+
+    @Then("^Flight rows are sorted based on \"([^\"]*)\"$")
+    public void flightRowsAreSortedBasedOn(String HeaderName) throws Throwable {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Flights' rows are not sorted based on " + HeaderName,
+                campaignsPage.CheckIfFlightSortedOn(HeaderName));
+    }
 }

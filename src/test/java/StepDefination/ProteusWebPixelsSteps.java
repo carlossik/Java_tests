@@ -50,9 +50,10 @@ public class ProteusWebPixelsSteps extends BrowserFactory {
     public void creativesScreenOpened() {
         Assert.assertTrue("Pixels screen not opened", pixelsPage.lblPixels.isDisplayed());
         GeneralUtilites.wait(1);
+
         if(pixelsPage.chbxMissingUnclassified.getAttribute("checked").equals("true"))
         {
-           // pixelsPage.chbxMissingUnclassified.clear();
+            // pixelsPage.chbxMissingUnclassified.clear();
             mouseClick(pixelsPage.chbxMissingUnclassifiedClickable);
             mouseClick(pixelsPage.btnPixelsApplyFilters);
             GeneralUtilites.wait(1);
@@ -67,8 +68,11 @@ public class ProteusWebPixelsSteps extends BrowserFactory {
     @When("^Click on Pixels icon$")
     public void clickOnPixelsIcon()   {
        mouseClick(campaignsPage.btnPIXELS);
+        GeneralUtilites.wait(1);
+        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[1]/div/div/div[1]/div/div/span[2]"));
+        GeneralUtilites.wait(1);
 
-       if(pixelsPage.txtAdvertiserAccount.isDisplayed())
+       if(getElementCount("/html/body/div/div/div[2]/section/div[2]/form/div[1]/div/div/input") > 0 )
        {
            pixelsPage.txtAdvertiserAccount.click();
            typeText(pixelsPage.txtAdvertiserAccount,"QAAutomationAdvertiser 1 GB");
@@ -126,8 +130,11 @@ public class ProteusWebPixelsSteps extends BrowserFactory {
     @When("^I change the pixel advertiser and save$")
     public void iChangeThePixelAdvertiserAndSave()   {
         pixelsPage.txtAdvertiserAccount.click();
-        enterText(pixelsPage.txtAdvertiserAccount, "");
-        enterText(pixelsPage.txtAdvertiserAccount, "tr");
+        //GeneralUtilites.wait(1);
+        //enterText(pixelsPage.txtAdvertiserAccount, "");
+        GeneralUtilites.wait(1);
+        typeText(pixelsPage.txtAdvertiserAccount, "tra");
+        GeneralUtilites.wait(1);
         mouseClick(getElements("/html/body/div/div/div[2]/section/div[2]/form/div[1]/div/ul").get(0));
         pixelsPage.btnOK.click();
     }
@@ -145,7 +152,7 @@ public class ProteusWebPixelsSteps extends BrowserFactory {
     public void iDonTChangeThePixelAdvertiserAndSave()   {
         GeneralUtilites.wait(1);
       //  pixelsPage.txtAdvertiserAccount.click();
-        pixelsPage.btnOK.click();
+        pixelsPage.btnCancel.click();
     }
 
     @Then("^Advertiser details shown on the pixel page$")
@@ -241,7 +248,7 @@ public class ProteusWebPixelsSteps extends BrowserFactory {
     @Then("^Pixels filtered based on the \"([^\"]*)\"$")
     public void pixelsFilteredBasedOnThe(String SearchKey)   {
     Assert.assertTrue("Pixels not filtered based on the key " + SearchKey,
-            getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div[contains(.,'"+SearchKey+"')]") > 0);
+            getElementCount("//*[@id=\"root\"]/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div[1]/div/div[2]/div/div//*[contains(text(),'"+SearchKey+"')]") > 0);
         //getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div[contains(.,'"+SearchKey+"')]") > 0
         //getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div[not(contains(.,'"+SearchKey+"'))]") == 0
 
@@ -303,8 +310,8 @@ public class ProteusWebPixelsSteps extends BrowserFactory {
 
     @Then("^Pixel grid changed to editable state$")
     public void pixelGridChangedToEditableState()  {
-        Assert.assertFalse("Pixel grid not changed to editable state",
-                pixelsPage.btnPixelsBulkEdit.isEnabled());
+        Assert.assertTrue("Pixel grid not changed to editable state",
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]/div[2]/div/div/div/div/button") == 2);
     }
 
     @And("^Save button shown and is disabled$")
@@ -323,33 +330,33 @@ public class ProteusWebPixelsSteps extends BrowserFactory {
 
     @And("^Editable columns shown on pixel grid$")
     public void editableColumnsShownOnPixelGrid() {
-       mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[1]/div[1]/div/label/div"));
+       mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[1]/div/div[1]/div[1]/div/label/div"));
        GeneralUtilites.wait(1);
         Assert.assertTrue("Category or Type columns are not editable",
-                   getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[5]/div/div/div/input") > 0
-                        && getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[6]/div/div/div/input") > 0);
+                   getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div/div//div[2]/div/div/div[5]/div/div/div/input") > 0
+                        && getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div/div//div[2]/div/div/div[6]/div/div/div/input") > 0);
     }
 
     @And("^ReadOnly columns shown on pixel grid$")
     public void readonlyColumnsShownOnPixelGrid() {
         Assert.assertTrue("ReadOnly columns not shown on pixel grid",
-                   getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[4]") > 0
-                        && getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[3]") > 0
-                        && getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div/div[2]") > 0);
+                   getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div[4]") > 0
+                        && getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div[3]") > 0
+                        && getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div[2]") > 0);
     }
 
     @Then("^Dropdown list with categories, Hard and Soft$")
     public void dropdownListWithCategoriesHardAndSoft(){
-        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[1]/div[1]/div/label/div"));
+        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[1]/div/div[1]/div[1]/div/label/div"));
         GeneralUtilites.wait(1);
         Assert.assertEquals("Dropdown list with categories(Hard and Soft) not shown",
-                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div[1]/div[5]/div/div/ul/li"), 2);
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div/div//div[2]/div/div[1]/div[5]/div/div/ul/li"), 2);
     }
 
     @And("^Dropdown list with Types: Homepage, Confirmation Page, Landing Page$")
     public void dropdownListWithTypesHomepageConfirmationPageLandingPage(){
         Assert.assertEquals("Dropdown list with Types: Homepage, Confirmation Page, Landing Page not shown",
-                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div/div[1]/div/div[2]/div/div[1]/div[6]/div/div/ul/li"), 17);
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div/div//div[2]/div/div[1]/div[6]/div/div/ul/li"), 17);
     }
 
     @When("^Bulk edit Category and Type$")
@@ -371,8 +378,8 @@ public class ProteusWebPixelsSteps extends BrowserFactory {
 
     @Then("^Pixel details saved$")
     public void pixelDetailsSaved() {
-        Assert.assertEquals("Pixel details not saved",
-                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div//button"),1);
+        Assert.assertTrue("Pixel details not saved",
+               pixelsPage.btnPixelsBulkEdit.isDisplayed());
     }
 
     @When("^I click on the add icon$")
@@ -385,14 +392,14 @@ public class ProteusWebPixelsSteps extends BrowserFactory {
     @And("^The Pixels Name is a deeplink$")
     public void thePixelsNameIsADeeplink(){
         Assert.assertTrue("The Pixels Name is a not deeplink",
-         getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[2]/div/a") > 0 &&
-                 !getElements("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[2]/div/a").get(0).getAttribute("href").equals(""));
+         getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div[1]/div/div/div/div/div/div/a") > 0 &&
+                 !getElements("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div[1]/div/div/div/div/div/div/a").get(0).getAttribute("href").equals(""));
 
         }
 
     @When("^Click on the Pixel Name$")
     public void clickOnThePixelName() {
-       mouseClick(getElements("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[2]/div/a").get(0));
+       mouseClick(getElements("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div[1]/div/div/div/div/div/div/a").get(0));
     }
 
     @Then("^DSP tab opened in the browser for the Advertiser$")

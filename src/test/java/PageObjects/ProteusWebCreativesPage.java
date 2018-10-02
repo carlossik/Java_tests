@@ -21,7 +21,7 @@ public class ProteusWebCreativesPage extends BrowserFactory {
         PageFactory.initElements(browserFactory.getDriver(),this );
     }
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[1]/div/div[2]/h4")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[1]/div/div/div[1]/h4")
     @CacheLookup
     public WebElement lblCreatives;
 
@@ -53,22 +53,22 @@ public class ProteusWebCreativesPage extends BrowserFactory {
     @CacheLookup
     public WebElement btnCreativesClearFilters;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[1]/div/div[1]/div")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[1]/div/div/div[1]/div/div/span[1]")
     @CacheLookup
     public WebElement lblAdvertiserCreatives;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[1]/div/div[1]/button")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[1]/div/div/div[1]/div/div/span[2]")
     @CacheLookup
     public WebElement btnChange;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]//button[1]")
     public WebElement btnCreativesBulkEdit;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/button[1]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]/div[2]/div/div/div[1]/button")
     @CacheLookup
     public WebElement btnCreativesBulkEditSave;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/button[2]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]/div[2]/div/div/div[2]/button")
     @CacheLookup
     public WebElement btnCreativesBulkEditCancel;
 
@@ -120,7 +120,7 @@ public class ProteusWebCreativesPage extends BrowserFactory {
     @CacheLookup
     public WebElement txtAdvertiserAccount;
 
-    @FindBy(how = How.XPATH, using = "/html/body/div/div/div[2]/section/div[2]/form/div[2]/button")
+    @FindBy(how = How.XPATH, using = "/html/body/div/div/div[2]/section/div[2]/form/div[2]/button[1]")
     @CacheLookup
     public WebElement btnOK;
 
@@ -206,9 +206,9 @@ public class ProteusWebCreativesPage extends BrowserFactory {
 
 
 
-    private String strCreativeAdvertiserIconXpath=  "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[2]";
-    private String strTagIconXpath =  "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[8]/span" ;
-    private String strColumnHeaders = "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]/div/div[text() != '']";
+    private String strCreativeAdvertiserIconXpath=  "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div[1]/div/div[2]/div/div";
+    private String strTagIconXpath =  "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div/div/div/div/div/div[2]/div/div/div[8]/span" ;
+    private String strColumnHeaders = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div[1]/div/div[1]/div/div[text()!='']";
 
     public boolean creativesForAdvertiserListed() {
         return getElementCount(strCreativeAdvertiserIconXpath) > 0;
@@ -305,10 +305,10 @@ public class ProteusWebCreativesPage extends BrowserFactory {
     }
 
     public void SortCreativeGridOn(String HeaderName) {
-        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//*[text() = '"+HeaderName+"']"));
+        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div[1]/div/div[1]/div/div[text()='"+HeaderName+"']"));
         if(HeaderName.equals("Platform")) {
             GeneralUtilites.wait(2);
-            mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[1]//*[text() = '"+HeaderName+"']"));
+            mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div[1]/div/div[1]/div/div[text()='"+HeaderName+"']"));
         }
         GeneralUtilites.wait(2);
     }
@@ -319,19 +319,19 @@ public class ProteusWebCreativesPage extends BrowserFactory {
         switch (HeaderName)
         {
             case "Platform" :
-                columnXpath = "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[1]";
+                columnXpath = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div[1]/div/div[2]/div/div/div[1]/div";
                 break;
             case "Creative Name" :
-                columnXpath = "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[2]";
+                columnXpath = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div[1]/div/div[2]/div/div/div[2]/div";
                 break;
             case "External ID" :
-                columnXpath = "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[3]";
+                columnXpath = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div[1]/div/div[2]/div/div//div[3]";
                 break;
             case "Classification" :
-                columnXpath = "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[4]";
+                columnXpath = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div[1]/div/div[2]/div/div//div[5]";
                 break;
             case "DSP Status" :
-                columnXpath = "//*[@id='root']/div/section/div/div[2]/div/div/div[3]/div[1]/div[1]/div/div[2]/div/div/div[5]";
+                columnXpath = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div[1]/div/div[2]/div/div//div[6]";
                 break;
         }
         List<WebElement> columnHeaders = getElements(columnXpath);

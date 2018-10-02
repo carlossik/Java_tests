@@ -17,23 +17,23 @@ public class ProteusWebAdminPage extends BrowserFactory
         PageFactory.initElements(browserFactory.getDriver(),this );
     }
 
-    @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[1]/aside/button[1]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[1]/aside/div[1]//button")
     @CacheLookup
     public WebElement btnSeats;
 
-    @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[1]/aside/button[2]")
+    @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[1]/aside/div[2]//button")
     @CacheLookup
     public WebElement btnJobs;//*[@id="root"]/div/section/div/div[1]/aside/button/div[contains(text(),'Security Groups')]
 
-    @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[1]/aside/button[3]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[1]/aside/div[3]//button")
     @CacheLookup
     public WebElement btnMasterData;
 
-    @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[1]/aside/button[1]")
+    @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[1]/aside//button[1]")
     @CacheLookup
     private WebElement btnAdvertiserAccounts;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[1]/aside/button/div[contains(text(),'Security Groups')]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[1]/aside//button/div[contains(text(),'Security Groups')]")
     @CacheLookup
     public WebElement btnSecurityGroups;
 
@@ -45,11 +45,11 @@ public class ProteusWebAdminPage extends BrowserFactory
     @CacheLookup
     public WebElement grdSeats;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[1]//div[2]/div[1]/button")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div/div//div[2]/div/div[3]/button")
     @CacheLookup
     public WebElement btnJobsRefresh ;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[1]/div[2]/div[1]/div/div/input")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[1]//div[2]/div[1]/div/div/input")
     @CacheLookup
     public WebElement drpdwnOperationalUnit ;
 
@@ -57,11 +57,11 @@ public class ProteusWebAdminPage extends BrowserFactory
     @CacheLookup
     private WebElement lstTEL;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[1]/div/div/div/div[2]/div/button")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/div/div/div[2]/div/div[2]/button")
     @CacheLookup
     public WebElement btnMasterDataAddPubLocation ;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div/div[1]/div[2]/div/button")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div/div[1]/div[2]/div/div[2]/button")
     @CacheLookup
     public WebElement btnMasterDataAddJobScdTemplates ;
 
@@ -78,7 +78,7 @@ public class ProteusWebAdminPage extends BrowserFactory
     @CacheLookup
     private WebElement btnLogOut;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[1]/div[2]/div[3]/div/input")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[1]//div[2]/div[3]/div/input")
     @CacheLookup
     public WebElement txtSearch;
 

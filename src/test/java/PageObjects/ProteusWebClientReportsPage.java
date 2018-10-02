@@ -18,35 +18,35 @@ public class ProteusWebClientReportsPage extends BrowserFactory
         PageFactory.initElements(browserFactory.getDriver(),this );
     }
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div/div[1]/aside/button[1]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div/div[1]/aside/div[1]//button")
     @CacheLookup
     public WebElement btnDashBoard;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div/div[1]/aside/button[2]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div/div[1]/aside/div[2]//button")
     @CacheLookup
     public WebElement btnPerformance;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div/div[1]/aside/button[3]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div/div[1]/aside/div[3]//button")
     @CacheLookup
     public WebElement btnDSP;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div/div[1]/aside/button[4]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div/div[1]/aside/div[4]//button")
     @CacheLookup
     public WebElement btnTactics;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div/div[2]/div/div/div/div[1]/div/div[2]/div[1]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div/div[2]/div/div/div/div[1]/div/h4")
     @CacheLookup
     public WebElement txtRecentFligts;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div/div[2]/div/div/div/div[1]/div/div[1]/div[2]/div")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div/div[2]/div/div/div/div[1]/div/div[1]/h4")
     @CacheLookup
     public WebElement txtPerformanceOverview;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div/div[2]/div/div/div/div[1]/div/div[1]/div[2]/div")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div/div[2]/div/div/div/div[1]/div/div[1]/h4")
     @CacheLookup
     public WebElement txtDSPOverview;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div/div[2]/div/div/div/div[1]/div/div[1]/div[2]/div")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div/div[2]/div/div/div/div[1]/div/div[1]/h4")
     @CacheLookup
     public WebElement txtTacticsOverview;
 

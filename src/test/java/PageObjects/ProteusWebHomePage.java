@@ -40,9 +40,10 @@ public class ProteusWebHomePage extends BrowserFactory
     @CacheLookup
     private WebElement tabVendors;
 
-    @FindBy(how = How.ID, using = "reporting")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div/div/div/div/nav/label[contains(text(), 'Reports')]")
+    //@FindBy(how = How.ID, using = "reporting")
     @CacheLookup
-    private WebElement tabReporting;
+    private WebElement tabReports;
 
     //@FindBy(how = How.XPATH, using = "//*[@id='clientReporting'")
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div/div/div/div/nav/label[contains(text(), 'Client Reports')]")
@@ -111,7 +112,7 @@ public class ProteusWebHomePage extends BrowserFactory
     public void NavigateProteusReports()
     {
         GeneralUtilites.wait(1);
-         mouseClick(tabReporting );
+         mouseClick(tabReports );
     }
 
     public void NavigateProteusClientReports()
@@ -131,7 +132,7 @@ public class ProteusWebHomePage extends BrowserFactory
 
     public boolean CheckReportsTabExist()
     {
-        return tabReporting.isDisplayed();
+        return tabReports.isDisplayed();
     }
     public boolean CheckClientReportsTabExist()
     {
@@ -150,6 +151,11 @@ public class ProteusWebHomePage extends BrowserFactory
     public boolean CheckUsersTabExist()
     {
         return tabUsers.isDisplayed();
+    }
+
+    public boolean CheckHomeTabExist()
+    {
+        return tabHome.isDisplayed();
     }
 
     public boolean CheckHomePage()
