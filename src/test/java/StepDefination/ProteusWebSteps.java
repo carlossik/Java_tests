@@ -832,6 +832,22 @@ public class ProteusWebSteps extends BrowserFactory
                 campaignsPage.CheckForDiscrepancyDetails());
     }
 
+    @Then("^Performance Details displayed when flight is expanded$")
+    public void performanceDetailsDisplayedWhenFlightIsExpanded()   {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Performance Details not displayed when flight is expanded",
+                campaignsPage.CheckForPerformanceDetails());
+    }
+
+    @Then("^Cost Breakdown Details displayed when flight is expanded$")
+    public void costBreakdownDetailsDisplayedWhenFlightIsExpanded()   {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Cost Breakdown Details not displayed when flight is expanded",
+                campaignsPage.CheckForCostBreakdownDetails());
+    }
+
+
+
     @Then("^Primary Goal Details displayed when flight is expanded$")
     public void primaryGoalDetailsDisplayedWhenFlightIsExpanded()   {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
@@ -845,32 +861,40 @@ public class ProteusWebSteps extends BrowserFactory
         campaignsPage.ExpandFlightDetails();
     }
 
-    @Then("^Viewability Details displayed when flight is expanded$")
+    @Then("^MRC Viewability Details displayed when flight is expanded$")
     public void viewabilityDetailsDisplayedWhenFlightIsExpanded() {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
-        Assert.assertTrue("Primary Goal Details not displayed when flight is expanded",
-                campaignsPage.CheckForViewabilityDetails());
+        Assert.assertTrue("MRC Viewability Details not displayed when flight is expanded",
+                campaignsPage.CheckForMRCViewabilityDetails());
+
     }
 
-    @Then("^DSP Data Details displayed when flight is expanded$")
+    @Then("^DSP Delivery Details displayed when flight is expanded$")
     public void dspDataDetailsDisplayedWhenFlightIsExpanded()  {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
-        Assert.assertTrue("DSP Data Details not displayed when flight is expanded",
-                campaignsPage.CheckForDSPDataDetails());
+        Assert.assertTrue("DSP Delivery Details not displayed when flight is expanded",
+                campaignsPage.CheckForDSPDeliveryDetails());
     }
 
-    @Then("^AdServer Data Details displayed when flight is expanded$")
-    public void adserverDataDetailsDisplayedWhenFlightIsExpanded()   {
+    @Then("^AdServer Delivery Details displayed when flight is expanded$")
+    public void adserverDeliveryDetailsDisplayedWhenFlightIsExpanded()   {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("Ad Server Data Details not displayed when flight is expanded",
-                campaignsPage.CheckForAdServerDataDetails());
+                campaignsPage.CheckForAdServerDeliveryDetails());
     }
 
     @Then("^Discrepancy Details show tooltip$")
     public void discrepancyDetailsShowTooltip()  {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("Discrepancy Details tooltip not shown",
-                campaignsPage.CheckForDiscrepancyDetailsToolTip());
+                campaignsPage.CheckForDSPDeliveryDetailsToolTip());
+    }
+
+    @Then("^Performance Details show tooltip$")
+    public void performanceDetailsShowTooltip()  {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Performance Details tooltip not shown",
+                campaignsPage.CheckForPerformanceDetailsToolTip());
     }
 
     @And("^Actual Goal detials show tooltip$")
@@ -887,11 +911,11 @@ public class ProteusWebSteps extends BrowserFactory
                 campaignsPage.CheckForViewabilityDetailsToolTip());
     }
 
-    @And("^DSP Data detials show tooltip$")
-    public void dspDataDetialsShowTooltip()  {
+    @And("^DSP Delivery detials show tooltip$")
+    public void dspDeliveryDetialsShowTooltip()  {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("DSP Data detials tooltip not shown",
-                campaignsPage.CheckForDSPDataDetailsToolTip());
+                campaignsPage.CheckForDSPDeliveryDetailsToolTip());
     }
 
     @And("^AdServer detials show tooltip$")
@@ -1196,5 +1220,12 @@ public class ProteusWebSteps extends BrowserFactory
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("Flights' rows are not sorted based on " + HeaderName,
                 campaignsPage.CheckIfFlightSortedOn(HeaderName));
+    }
+
+    @And("^I Click on search for ended flights$")
+    public void iClickOnSearchForEndedFlights() throws Throwable {
+        GeneralUtilites.wait(1);
+        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]/div[2]/div/div[1]/div/div[1]/label/input[@value='ENDED']"));
+        GeneralUtilites.wait(1);
     }
 }

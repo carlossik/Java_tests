@@ -12,6 +12,7 @@ Background:
     When I click on "Campaigns" from home page
     And I search/filter for a flightName "2373 Campaign"
     And Click on Apply button
+    And Expand flight details
     When I click on "Home" from home page
     Then Campaign Flights box shown on home page
     And Recently viewed flights are listed "2373 Campaign"

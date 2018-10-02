@@ -327,7 +327,7 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
        String strAssignedAdvertiser  = adminSecurityGroupsPage.lblAssignedAdvetiser.getText();
         Assert.assertTrue("Count to identify how many Advertiser Accounts are currently assigned is not shown",
                 Integer.parseInt( adminSecurityGroupsPage.lblAssignedAdvetiser.getText()
-                        .split("\\(")[1].split("\\)")[0] ) >= 1);
+                        .split(" " )[0]) >= 1);
     }
 
     @And("^Advertiser,Agency and Operational Unit columns displayed on the table$")
@@ -383,6 +383,7 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
         enterText(adminSecurityGroupsPage.txtSecurityGroupsName, "AutomationSecurityGroup" + GeneralUtilites.RandomNumber(100,999));
         mouseClick(adminSecurityGroupsPage.btnSave);
         GeneralUtilites.wait(2);
+      //  mouseClick(adminSecurityGroupsPage.btnBack);
     }
 
     @And("^Search in the Advertiser search field  \"([^\"]*)\"$")
@@ -394,13 +395,13 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
 
     @Then("^There is a add button next to the Advertiser Account row$")
     public void thereIsAAddButtonNextToTheAdvertiserAccountRow() throws Throwable {
-         Assert.assertTrue("There is no add button next to the Advertiser Account row", getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[2]/div[1]/div/div[2]/div[1]/div/div[2]/div/div/div[4]/button")>0);
+         Assert.assertTrue("There is no add button next to the Advertiser Account row", getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[2]/div[1]/div/div[2]/div[1]/div/div[2]/div/div/div[4]//button")>0);
     }
 
     @When("^I select add button next to the Advertiser Account row$")
     public void iSelectAddButtonNextToTheAdvertiserAccountRow() throws Throwable {
        GeneralUtilites.wait(1);
-       mouseClick( getElements("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[2]/div[1]/div/div[2]/div[1]/div/div[2]/div/div/div[4]/button").get(0));
+       mouseClick( getElements("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[2]/div[1]/div/div[2]/div[1]/div/div[2]/div/div/div[4]//button").get(0));
        GeneralUtilites.wait(1);
     }
 
@@ -413,13 +414,13 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
     @And("^there is a minus button next to the advertiser account row$")
     public void thereIsAMinusButtonNextToTheAdvertiserAccountRow() throws Throwable {
         Assert.assertTrue("there is no minus button next to the advertiser account row",
-                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[4]/button") ==2);
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[4]//button") ==2);
 
     }
 
     @When("^I select the minus button$")
     public void iSelectTheMinusButton() throws Throwable {
-        mouseClick(getElements("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[4]/button").get(0));
+        mouseClick(getElements("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[4]//button").get(0));
         GeneralUtilites.wait(1);
     }
 

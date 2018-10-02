@@ -13,15 +13,14 @@ Feature: Proteus web Flight Information
   @FlightInformation
   Scenario: 01 Goal, Viewability, DSP, Ad Server and Discrepancy Details displayed on Proteus Web
     When I search/filter for a flightName "IO-6920"
+    And I Click on search for ended flights
     And Click on Apply button
-   # And Expand flight details
-    Then Discrepancy Details displayed when flight is expanded
-    Then Discrepancy Details show tooltip
-    And Primary Goal Details displayed when flight is expanded
-    And Actual Goal detials show tooltip
-    And Viewability Details displayed when flight is expanded
-    And Viewability detials show tooltip
-    And DSP Data Details displayed when flight is expanded
-    And DSP Data detials show tooltip
-    And AdServer Data Details displayed when flight is expanded
-    And AdServer detials show tooltip
+    And Expand flight details
+    Then Performance Details displayed when flight is expanded
+    Then Performance Details show tooltip
+    And Cost Breakdown Details displayed when flight is expanded
+    And MRC Viewability Details displayed when flight is expanded
+    And DSP Delivery Details displayed when flight is expanded
+    And DSP Delivery detials show tooltip
+    And AdServer Delivery Details displayed when flight is expanded
+

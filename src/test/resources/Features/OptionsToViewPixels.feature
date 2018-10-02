@@ -99,7 +99,7 @@ Feature: Pixels for flights and Advertisers
       |Pixel Name |
       |External ID|
       |Category   |
-      |Type       |
+      #|Type       |
 
   @Pixels
   Scenario: 09 Pagination on screen when pixels list loads

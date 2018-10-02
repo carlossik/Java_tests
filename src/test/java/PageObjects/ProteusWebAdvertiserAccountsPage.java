@@ -50,11 +50,11 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
     @CacheLookup
     public WebElement btnBulkEdit;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[2]/button[1]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]//div[1]/button[1]")
     @CacheLookup
     private WebElement btnBulkSave;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[2]/button[2]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]//div[2]/button[1]")
     @CacheLookup
     public WebElement btnBulkCancel;
 
@@ -253,7 +253,7 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
 
     public boolean CheckForAdvertiserRequiresActions(){
         Boolean returnType = true;
-        By AgencyName = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[3]/div[1]/div/div[2]/div/div/div[2]/label");
+        By AgencyName = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[2]/label");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(AgencyName);
         for (WebElement elementType :elementTypes){
             returnType = returnType && elementType.getText().toLowerCase().equals("Please select".toLowerCase());
@@ -289,39 +289,33 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
 
     public void BulkEditAdvertiserAgency(){
 
+        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div[1]/div/div[1]/div[1]/div/label/div"));
         int maxLimit = 6;
-        if(getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div[3]/div[1]/div/div[2]/div/div/div/div") < maxLimit)
-            maxLimit = getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div[3]/div[1]/div/div[2]/div/div/div/div");
+        if(getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div") < maxLimit)
+            maxLimit = getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div");
         int indexOne =   GeneralUtilites.RandomNumber(1,maxLimit);
         int indexTwo =  GeneralUtilites.RandomNumber(1,maxLimit);
         if(indexOne == indexTwo) {indexTwo++;}
         if(indexTwo > maxLimit) { indexTwo = 1;}
-        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div/div[3]/div[1]/div/div[2]/div/div[" + indexOne + "]/div[1]/div/label/input"));
-        GeneralUtilites.wait(1);
 
-        By AdvertiserNameOne = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[3]/div[1]/div/div[2]/div/div["+indexOne+"]/div/div/div/input");
-        browserFactory.getDriver().findElement(AdvertiserNameOne).click();
-        browserFactory.getDriver().findElement(AdvertiserNameOne).sendKeys("Edit");
-
-        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div/div[3]/div[1]/div/div[2]/div/div[" + indexTwo +"]/div[1]/div/label/input"));
-        GeneralUtilites.wait(1);
-
-        By AdvertiserNameTwo = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[3]/div[1]/div/div[2]/div/div["+indexTwo+"]/div/div/div/input");
-        browserFactory.getDriver().findElement(AdvertiserNameTwo).click();
-        browserFactory.getDriver().findElement(AdvertiserNameTwo).sendKeys("Edit");
-
-        By AgencyNameOne = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[3]/div[1]/div/div[2]/div/div["+indexOne+"]/div[3]/div/div/div/input");
-        browserFactory.getDriver().findElement(AgencyNameOne).click();
-
-        By AgencyListOne = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[3]/div[1]/div/div[2]/div/div["+indexOne+"]/div[3]/div/div/ul/li[1]");
-        browserFactory.getDriver().findElement(AgencyListOne).click();
+        WebElement AdvertiserNameOne = getElement("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div["+indexOne+"]/div[2]/div/div/input");
+        mouseClick(AdvertiserNameOne);
+        AdvertiserNameOne.sendKeys("Edit");
 
 
-        By AgencyNameTwo = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[3]/div[1]/div/div[2]/div/div["+indexTwo+"]/div[3]/div/div/div/input");
-        browserFactory.getDriver().findElement(AgencyNameTwo).click();
+        WebElement AdvertiserNameTwo = getElement("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div["+indexTwo+"]/div[2]/div/div/input");
+        mouseClick(AdvertiserNameTwo);
+        AdvertiserNameTwo.sendKeys("Edit");
 
-        By AgencyListTwo = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[3]/div[1]/div/div[2]/div/div["+indexTwo+"]/div[3]/div/div/ul/li[1]");
-        browserFactory.getDriver().findElement(AgencyListTwo).click();
+
+
+        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div["+indexOne+"]/div[3]//input"));
+        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div["+indexOne+"]/div[3]//li"));
+
+        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div["+indexTwo+"]/div[3]//input"));
+        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div["+indexTwo+"]/div[3]//li"));
+
+
 
         GeneralUtilites.wait(1);
         mouseClick(btnBulkSave);

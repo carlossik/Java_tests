@@ -10,6 +10,7 @@ Feature: Display Platform for each Flight
     When I click on "Campaigns" from home page
     Then All Flights loads which I have access to
     When I search/filter for "FLIGHT 6655" a particular result
+    And I Click on search for ended flights
     And Click on Apply button
 
   @LinksToPlatforms
