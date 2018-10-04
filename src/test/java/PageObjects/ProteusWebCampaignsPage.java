@@ -147,10 +147,10 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div//div[2]/div//div[2]/div/div//i")
     private WebElement btnExpandFlightDetails;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div//div[2]/div//div[2]/div/div[2]/div/div/div[3]/div[2]/span[2]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[1]/div/div/div/div[5]/div[2]/div[1]/div[2]")
     private WebElement txtImpressions;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div//div[2]/div//div[2]/div/div[2]/div/div/div[3]/div[3]/span[2]")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[1]/div/div/div/div[5]/div[2]/div[2]/div[2]")
     private WebElement txtClicks;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div[1]/div/div/div[1]/button")
@@ -526,7 +526,9 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
 
         List<WebElement> elementTypes = getElements("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div/div/div[4]/div/button");
         mouseClick(elementTypes.get(0));
-        By ReportOptions = By.xpath("/html/body/div[4]/div/div/ul/li/span");
+        mouseClick(elementTypes.get(0));
+        GeneralUtilites.wait(1);
+        By ReportOptions = By.xpath("/html/body/div//div[@class='theme_menu_2bOZL theme_topRight_tGYgQ theme_active_3owm6']/ul/li");
         List<WebElement> elementReportOptions = browserFactory.getDriver().findElements(ReportOptions);
         return elementReportOptions.size() == 2
                 && elementReportOptions.get(1).getText().toUpperCase().contains("Data explorer".toUpperCase())
@@ -838,11 +840,11 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         WebElement SeatIconsObj = browserFactory.getDriver().findElement(SeatIcons);
         mouseClick(SeatIconsObj);
         GeneralUtilites.wait(1);
-        By PlatformIcons = By.xpath("/html/body/div[3]//ul/li/span[1]");
-        int count = getElementCount("/html/body/div[3]//ul/li/span[1]");
+        By PlatformIcons = By.xpath("/html/body/div/div/div[contains(@class,'theme_menu_2bOZL theme_topRight_tGYgQ theme_active_3owm6')]/ul/li");
+        int count = getElementCount("/html/body/div/div/div[contains(@class,'theme_menu_2bOZL theme_topRight_tGYgQ theme_active_3owm6')]/ul/li");
         for(int i=0; i<count;i++ )
         {
-            mouseClick(getElements("/html/body/div[3]//ul/li/span[1]").get(i));
+            mouseClick(getElements("/html/body/div/div/div[contains(@class,'theme_menu_2bOZL theme_topRight_tGYgQ theme_active_3owm6')]/ul/li").get(i));
             GeneralUtilites.wait(2);
             List<String> browserTabs = new ArrayList<>(this.browserFactory.getDriver().getWindowHandles());
             returnType = browserTabs.size() >= 2 && returnType;
@@ -856,20 +858,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
             mouseClick(SeatIconsObj);
             GeneralUtilites.wait(1);
             mouseClick(SeatIconsObj);
-
         }
-      /*  List<WebElement> elementTypes = browserFactory.getDriver().findElements(PlatformIcons);
-        for (WebElement elementType :elementTypes) {
-            mouseClick(elementType);
-            GeneralUtilites.wait(2);
-            List<String> browserTabs = new ArrayList<>(this.browserFactory.getDriver().getWindowHandles());
-            returnType = browserTabs.size() >= 2 && returnType;
-            this.browserFactory.getDriver().switchTo().window(browserTabs.get(1));
-            this.browserFactory.getDriver().close();
-            this.browserFactory.getDriver().switchTo().window(browserTabs.get(0));
-            GeneralUtilites.wait(1);
-            mouseClick(SeatIconsObj);
-        }*/
         return returnType;
     }
 
@@ -920,5 +909,4 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         for (WebElement objHeader :columnHeaders) actualColumn.add(objHeader.getText().toLowerCase());
         return  GeneralUtilites.isCollectionSorted(actualColumn);
     }
-
 }

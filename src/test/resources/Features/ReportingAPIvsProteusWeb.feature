@@ -16,6 +16,7 @@ Feature: Reporting API Vs Proteus web
 
     When I search/filter for a flight "<FlightId>"
     And Click on Apply button
+    And Expand flight details
     And I get numbers from reporting API for flight "<FlightId>"
     Then Numbers displayed match the reporting API for flight "<FlightId>"
     Examples:
