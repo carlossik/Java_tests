@@ -46,7 +46,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     @CacheLookup
     private WebElement tabCampaigns;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header//button")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div[1]/div[1]/div/i")
     @CacheLookup
     private WebElement btnExpand;
 
@@ -153,20 +153,41 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[1]/div/div/div/div[5]/div[2]/div[2]/div[2]")
     private WebElement txtClicks;
 
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[10]/div")
+    private WebElement txtBudget;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[9]/div")
+    private WebElement txtCost;
+
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div[1]/div/div/div[1]/button")
     public  WebElement btnFlightCreatives;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div[1]/div/div/div[2]/button")
-
     public  WebElement btnFlightPixels;
 
-    public boolean CheckForCreativeTab()
-    {
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]/div[2]/div/div[1]/div/div[2]/div/label/div")
+    public  WebElement chbxShowDecimalPlaces;
+
+    public boolean CheckForCreativeTab()    {
         By asideButtons = By.xpath("//*[@id='root']/div/section/div/div[1]/aside//button");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(asideButtons);
         System.out.println("asideButtons count : " + elementTypes.size());
         return elementTypes.size() > 2 && elementTypes.get(1).getText().toUpperCase().contains("CREATIVES".toUpperCase());
     }
+
+    public void showDecimalPlaces()    {
+        if(!chbxShowDecimalPlaces.getAttribute("class").contains("checked"))
+            mouseClick(chbxShowDecimalPlaces);
+    }
+    public void hideDecimalPlaces()    {
+        if(chbxShowDecimalPlaces.getAttribute("class").contains("checked"))
+            mouseClick(chbxShowDecimalPlaces);
+    }
+
+    public boolean checkForDecimalPlaces()    {
+        return txtBudget.getText().contains(".") && txtCost.getText().contains(".");
+    }
+
 
     public boolean CheckForPixelsTab()
     {
@@ -692,16 +713,23 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
 
         return getElement("//*[@id='root']/div/section//div[5]/div[1]/div/div[1]").getText().toLowerCase().contains("DSP DELIVERY".toLowerCase());
     }
+
     public boolean CheckForPerformanceDetails(){
        boolean  returnType;
         returnType =   getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[1]/div/div/div/div[2]/div[1]/div/div[1]").getText().toLowerCase().contains("PERFORMANCE".toLowerCase());
-        By DiscrepancyDetails = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[1]/div/div/div/div[2]/div[2]/div");
-        List<WebElement> webElements = browserFactory.getDriver().findElements(DiscrepancyDetails);
+        List<WebElement> webElements =getElements("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[1]/div/div/div/div[2]/div[2]/div");
         returnType = returnType && webElements.get(0).getText().toLowerCase().contains("Total".toLowerCase());
         returnType = returnType && webElements.get(1).getText().toLowerCase().contains("7 day".toLowerCase());
         returnType = returnType && webElements.get(2).getText().toLowerCase().contains("Pacing".toLowerCase());
+
+        webElements =getElements("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[1]/div/div/div/div[2]/div[2]/div/div[2]");
+        for (WebElement element:webElements) {
+            if(!element.getText().toLowerCase().contains("-".toLowerCase()))
+                returnType = returnType && element.getText().toLowerCase().matches(".*\\d+.*");
+        }
         return returnType;
     }
+
     public boolean  CheckForCostBreakdownDetails(){
         boolean  returnType;
         returnType =   getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[1]/div/div/div/div[3]/div[1]/div/div[1]").getText().toLowerCase().contains("COST BREAKDOWN".toLowerCase());
@@ -712,6 +740,12 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         returnType = returnType && webElements.get(2).getText().toLowerCase().contains("Data fees".toLowerCase());
         returnType = returnType && webElements.get(3).getText().toLowerCase().contains("Other cost".toLowerCase());
         returnType = returnType && webElements.get(4).getText().toLowerCase().contains("Cost".toLowerCase());
+
+        webElements =getElements("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[1]/div/div/div/div[3]/div[2]/div/div[2]");
+        for (WebElement element:webElements) {
+            if(!element.getText().toLowerCase().contains("-".toLowerCase()))
+                returnType = returnType && element.getText().toLowerCase().matches(".*\\d+.*");
+        }
         return returnType;
     }
 
@@ -723,9 +757,18 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         returnType = returnType && webElements.get(0).getText().toLowerCase().contains("Trackable".toLowerCase());
         returnType = returnType && webElements.get(1).getText().toLowerCase().contains("Measurable".toLowerCase());
         returnType = returnType && webElements.get(2).getText().toLowerCase().contains("Viewable".toLowerCase());
+        webElements =getElements("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[1]/div/div/div/div[4]/div[2]/div/div[2]");
+        for (WebElement element:webElements) {
+            if(!element.getText().toLowerCase().contains("-".toLowerCase()))
+                returnType = returnType && element.getText().toLowerCase().matches(".*\\d+.*");
+        }
         return returnType;
     }
 
+   public boolean CheckForLightDetailsCollapsed(){
+        GeneralUtilites.wait(1);
+       return btnExpand.getAttribute("class").contains("Collapsed");
+   }
 
     public boolean CheckForDSPDeliveryDetailsToolTip(){
         WebElement webElement = getElement("//*[@id='root']/div/section//div[5]/div[1]/div/div[2]");
@@ -819,6 +862,13 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         returnType = returnType && webElements.get(0).getText().toLowerCase().contains("Impressions".toLowerCase());
         returnType = returnType && webElements.get(1).getText().toLowerCase().contains("Clicks".toLowerCase());
         returnType = returnType && webElements.get(2).getText().toLowerCase().contains("Conversions".toLowerCase());
+
+        webElements =getElements("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[1]/div/div/div/div[5]/div[2]/div/div[2]");
+        for (WebElement element:webElements) {
+            if(!element.getText().toLowerCase().contains("-".toLowerCase()))
+                returnType = returnType && element.getText().toLowerCase().matches(".*\\d+.*");
+        }
+
         return returnType;
     }
 

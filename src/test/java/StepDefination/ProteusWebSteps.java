@@ -861,6 +861,18 @@ public class ProteusWebSteps extends BrowserFactory
         campaignsPage.ExpandFlightDetails();
     }
 
+    @Then("^Click on arrow flight details$")
+    public void clickFlightDetails()    {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        campaignsPage.ExpandFlightDetails();
+    }
+    @Then("^Flight details collapsed$")
+    public void flightDetailsCollasped(){
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Flight details not collapsed",
+                campaignsPage.CheckForLightDetailsCollapsed());
+    }
+
     @Then("^MRC Viewability Details displayed when flight is expanded$")
     public void viewabilityDetailsDisplayedWhenFlightIsExpanded() {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
@@ -911,7 +923,7 @@ public class ProteusWebSteps extends BrowserFactory
                 campaignsPage.CheckForViewabilityDetailsToolTip());
     }
 
-    @And("^DSP Delivery detials show tooltip$")
+    @And("^DSP Delivery details show tooltip$")
     public void dspDeliveryDetialsShowTooltip()  {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("DSP Data detials tooltip not shown",
@@ -1227,5 +1239,29 @@ public class ProteusWebSteps extends BrowserFactory
         GeneralUtilites.wait(1);
         mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]/div[2]/div/div[1]/div/div[1]/label/input[@value='ENDED']"));
         GeneralUtilites.wait(1);
+    }
+
+    @When("^I select show decimal places$")
+    public void iSelectShowDecimalPlaces() throws Throwable {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        campaignsPage.showDecimalPlaces();
+    }
+
+    @Then("^Decimal places shown for amounts$")
+    public void decimalPlacesShownForAmounts() throws Throwable {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Decimal places not shown for amounts", campaignsPage.checkForDecimalPlaces());
+    }
+
+    @When("^I select hide decimal places$")
+    public void iSelectHideDecimalPlaces() throws Throwable {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        campaignsPage.hideDecimalPlaces();
+    }
+
+    @Then("^Decimal places not shown for amounts$")
+    public void decimalPlacesNotShownForAmounts() throws Throwable {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertFalse("Decimal places shown for amounts", campaignsPage.checkForDecimalPlaces());
     }
 }

@@ -21,6 +21,11 @@ Feature: Proteus web Flight Information
     And Cost Breakdown Details displayed when flight is expanded
     And MRC Viewability Details displayed when flight is expanded
     And DSP Delivery Details displayed when flight is expanded
-    And DSP Delivery detials show tooltip
+    And DSP Delivery details show tooltip
     And AdServer Delivery Details displayed when flight is expanded
-
+    When Click on arrow flight details
+    Then Flight details collapsed
+    When I select show decimal places
+    Then Decimal places shown for amounts
+    When I select hide decimal places
+    Then Decimal places not shown for amounts
