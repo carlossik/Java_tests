@@ -8,6 +8,7 @@ Feature: Creatives for flights and Advertisers
     When Login as "ADMINISTRATOR"
     Then The main homepage loads successfully
     When I click on "Campaigns" from home page
+    And Navigate to "Flights" Tab on Campaigns
     Then All Flights loads which I have access to
     When I search/filter for a particular result
     And Click on Apply button

@@ -8,6 +8,7 @@ Feature: Ability to sort Flights
     When Login as "ADMINISTRATOR"
     Then The main homepage loads successfully
     When I click on "Campaigns" from home page
+    And Navigate to "Flights" Tab on Campaigns
 
 
   @SortOnProWeb

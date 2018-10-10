@@ -7,6 +7,7 @@ Feature: Flight Start and End Dates shown
     When Login as "ADMINISTRATOR"
     Then The main homepage loads successfully
     When I click on "Campaigns" from home page
+    And Navigate to "Flights" Tab on Campaigns
 
   @FlightDates
   Scenario: 01 There is a box/area to show Start Date and End Date
