@@ -60,7 +60,7 @@ Feature: Ability to log into Pro Web
     Then Able to navigate to Advertiser Accounts
 
   @LoginProWeb
-  Scenario: 06 Login with a user that has access to vendor management role
+  Scenario: 07 Login with a user that has access to vendor management role
     When Login as "VENDORMANAGERROLE"
     And There is a box called "Vendors"
     And All other tabs apart from "Vendors" are hidden
@@ -71,7 +71,7 @@ Feature: Ability to log into Pro Web
     And Able to navigate to Administration Master Data
 
   @LoginProWeb
-  Scenario: 07 Login with a user that has access to Proteus home dashboard role
+  Scenario: 08 Login with a user that has access to Proteus home dashboard role
     When Login as "DASHBOARDROLE"
     And There is a box called "Home"
     And All other tabs apart from "Home" are hidden

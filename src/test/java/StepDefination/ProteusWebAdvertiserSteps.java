@@ -270,13 +270,13 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
     @And("^Users column shown in the grid and it is numeric$")
     public void usersColumnShownInTheGridAndItIsNumeric() throws Throwable {
       Assert.assertTrue("Users column not shown in the grid and it is numeric",
-               getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[3]/span") > 0);
-      Assert.assertTrue("Users column  shown in the grid and it is not numeric", GeneralUtilites.isNumeric( getElements("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[3]/span").get(0).getText()));
+               getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[3]/div") > 0);
+      Assert.assertTrue("Users column  shown in the grid and it is not numeric", GeneralUtilites.isNumeric( getElements("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[3]/div").get(0).getText()));
     }
 
     @When("^Clicked on the Users number$")
     public void clickedOnTheUsersNumber() throws Throwable {
-        mouseClick(getElements("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[3]/span").get(0));
+        mouseClick(getElements("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[3]/div").get(0));
         GeneralUtilites.wait(2);
     }
 
@@ -305,7 +305,7 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
 
     @When("^Open Edit Security Group screen for one of the groups$")
     public void openEditSecurityGroupScreenForOneOfTheGroups() throws Throwable {
-          mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div[1]/div[1]/span"));
+          mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div[1]/div[1]/div"));
           GeneralUtilites.wait(1);
     }
 
@@ -341,6 +341,7 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
 
     @And("^Option search advertiser exist on unassigned account table$")
     public void optionSearchAdvertiserExistOnUnassignedAccountTable() throws Throwable {
+        GeneralUtilites.wait(1);
          Assert.assertTrue("Option search advertiser does not exist on unassigned account table",adminSecurityGroupsPage.txtAssignedAdvSearch.isDisplayed());
     }
 

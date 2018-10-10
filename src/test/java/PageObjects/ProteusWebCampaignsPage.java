@@ -50,15 +50,23 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     @CacheLookup
     private WebElement btnExpand;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[1]/aside/div[1]//button")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[3]/div/div/div[1]/button")
+    @CacheLookup
+    private WebElement btnShowUserOptions;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section//button/div[text()='Flights']/..")
     @CacheLookup
     public WebElement btnFLIGHTS;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[1]/aside/div[2]/button")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section//button/div[text()='Campaigns']/..")
+    @CacheLookup
+    public WebElement btnCAMPAIGNS;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section//button/div[text()='Creatives']/..")
     @CacheLookup
     public WebElement btnCREATIVES;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[1]/aside/div[3]/button")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section//button/div[text()='Pixels']/..")
     @CacheLookup
     public WebElement btnPIXELS;
 
@@ -188,6 +196,10 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         return txtBudget.getText().contains(".") && txtCost.getText().contains(".");
     }
 
+    public boolean checkForDateFilter(){
+       return getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]/div[2]/div/div[1]/div/div[1]/label/div") >= 3;
+    }
+
 
     public boolean CheckForPixelsTab()
     {
@@ -242,10 +254,10 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     }
 
     public boolean CheckLogOutExist() {
-        mouseClick(btnExpand);
+        mouseClick(btnShowUserOptions);
         GeneralUtilites.wait(0.5);
         boolean boolLogOut = btnLogOut.isDisplayed();
-        mouseClick(btnExpand);
+        mouseClick(btnShowUserOptions);
         return boolLogOut;
     }
 
@@ -572,7 +584,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(ReportButtons);
         mouseClick(elementTypes.get(0));
         GeneralUtilites.wait(2);
-        By ReportOptions = By.xpath("/html/body/div[4]/div/div/ul/li/span");
+        By ReportOptions = By.xpath("/html/body/div/div/div[@class='theme_menu_2bOZL theme_topRight_tGYgQ theme_active_3owm6']/ul/li/span");
         List<WebElement> elementReportOptions = browserFactory.getDriver().findElements(ReportOptions);
 
         if (ReportType.equals("Data explorer"))

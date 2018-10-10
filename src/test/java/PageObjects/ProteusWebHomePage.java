@@ -68,7 +68,7 @@ public class ProteusWebHomePage extends BrowserFactory
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header//button")
     @CacheLookup
-    private WebElement btnExpand  ;
+    private WebElement btnShowUserOptions  ;
 
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[3]/div/div/div[2]/ul/li[2]")
@@ -167,16 +167,16 @@ public class ProteusWebHomePage extends BrowserFactory
     public boolean CheckLogOutExist()
     {
         GeneralUtilites.wait(0.5);
-         mouseClick(btnExpand);
+         mouseClick(btnShowUserOptions);
         GeneralUtilites.wait(0.5);
         boolean boolLogOut = btnLogOut.isDisplayed();
-         mouseClick(btnExpand );
+         mouseClick(btnShowUserOptions );
         return boolLogOut;
     }
 
     public void Logout()
     {
-         mouseClick(btnExpand );
+         mouseClick( btnShowUserOptions);
          GeneralUtilites.wait(0.5);
          mouseClick(btnLogOut );
     }

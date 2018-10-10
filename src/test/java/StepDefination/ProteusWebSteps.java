@@ -1264,4 +1264,19 @@ public class ProteusWebSteps extends BrowserFactory
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertFalse("Decimal places shown for amounts", campaignsPage.checkForDecimalPlaces());
     }
+
+    @And("^There are options to filter flights based on date$")
+    public void thereAreOptionsToFilterFlightsBasedOnDate() throws Throwable {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertFalse("Options to filter flights based on date not shown", campaignsPage.checkForDateFilter());
+    }
+
+    @And("^Navigate to \"([^\"]*)\" Tab on Campaigns$")
+    public void navigateToTabOnCampaigns(String tabName) throws Throwable {
+        campaignsPage= new ProteusWebCampaignsPage(this.browserFactory);
+        if(tabName.equals("Flights"))
+           mouseClick( campaignsPage.btnFLIGHTS);
+        GeneralUtilites.wait(1);
+
+    }
 }
