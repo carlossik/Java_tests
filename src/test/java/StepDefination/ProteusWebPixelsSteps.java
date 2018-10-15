@@ -48,6 +48,7 @@ public class ProteusWebPixelsSteps extends BrowserFactory {
 
     @Then("^Pixels screen opened$")
     public void creativesScreenOpened() {
+        GeneralUtilites.wait(1);
         Assert.assertTrue("Pixels screen not opened", pixelsPage.lblPixels.isDisplayed());
         GeneralUtilites.wait(1);
 

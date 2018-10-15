@@ -147,7 +147,7 @@ public class ProteusWebSteps extends BrowserFactory
     public void ThenAllFlightsLoadsWhichIHaveAccessTo()    {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
 
-        Assert.assertTrue("Need to implement this to check the list of flights",campaignsPage.GetFlightRowsCount()> 0);
+        Assert.assertTrue("All Flights not loads which I have access to",campaignsPage.GetFlightRowsCount()> 0);
     }
 
     @Then("All Flights matching search/filter combination load as results")
@@ -866,6 +866,8 @@ public class ProteusWebSteps extends BrowserFactory
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         campaignsPage.ExpandFlightDetails();
     }
+
+
     @Then("^Flight details collapsed$")
     public void flightDetailsCollasped(){
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
@@ -1007,7 +1009,7 @@ public class ProteusWebSteps extends BrowserFactory
     @And("^Pixels option not shown on the Campaigns tab$")
     public void pixelsOptionNotShownOnTheCampaignsTab()  {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
-        Assert.assertFalse("Creatives option shown on the Campaigns tab", campaignsPage.CheckForPixelsTab());
+        Assert.assertFalse("Pixels option shown on the Campaigns tab", campaignsPage.CheckForPixelsTab());
     }
 
     @And("^There is an icons for Creatives$")
@@ -1279,4 +1281,6 @@ public class ProteusWebSteps extends BrowserFactory
         GeneralUtilites.wait(1);
 
     }
+
+
 }

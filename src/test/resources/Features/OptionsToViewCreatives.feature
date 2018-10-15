@@ -23,7 +23,6 @@ Feature: Creatives for flights and Advertisers
 
  @Creatives
  Scenario: 02 Able to open creatives tab from flights
-
     Then All Flights matching search/filter combination load as results
     And Creatives option shown on the Campaigns tab
     When I click on the creatives icon on flight row
@@ -34,7 +33,6 @@ Feature: Creatives for flights and Advertisers
 
  @Creatives
  Scenario: 03 Able to change the Advertiser Account on Creatives screen
-
       When I click on the creatives icon on flight row
       Then Creatives screen opened
       When Click on Change button

@@ -50,7 +50,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     @CacheLookup
     private WebElement btnExpand;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[3]/div/div/div[1]/button")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header//button")
     @CacheLookup
     private WebElement btnShowUserOptions;
 
@@ -180,7 +180,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         By asideButtons = By.xpath("//*[@id='root']/div/section/div/div[1]/aside//button");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(asideButtons);
         System.out.println("asideButtons count : " + elementTypes.size());
-        return elementTypes.size() > 2 && elementTypes.get(1).getText().toUpperCase().contains("CREATIVES".toUpperCase());
+        return elementTypes.size() > 2 && elementTypes.get(2).getText().toUpperCase().contains("CREATIVES".toUpperCase());
     }
 
     public void showDecimalPlaces()    {
@@ -188,6 +188,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
             mouseClick(chbxShowDecimalPlaces);
     }
     public void hideDecimalPlaces()    {
+        GeneralUtilites.wait(1);
         if(chbxShowDecimalPlaces.getAttribute("class").contains("checked"))
             mouseClick(chbxShowDecimalPlaces);
     }
@@ -206,7 +207,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         By asideButtons = By.xpath("//*[@id='root']/div/section/div/div[1]/aside//button");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(asideButtons);
         System.out.println("asideButtons count : " + elementTypes.size());
-        return elementTypes.size() >= 3 && elementTypes.get(2).getText().toUpperCase().contains("PIXELS".toUpperCase());
+        return elementTypes.size() >= 4 && elementTypes.get(3).getText().toUpperCase().contains("PIXELS".toUpperCase());
     }
 
     public boolean CheckForAdvertiserCreativeIcon()
@@ -262,7 +263,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     }
 
     public void Logout() {
-        mouseClick(btnExpand);
+        mouseClick(btnShowUserOptions);
         GeneralUtilites.wait(0.5);
         mouseClick(btnLogOut);
     }
@@ -277,6 +278,9 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
             return false;
         }
     }
+
+
+
 
     public void EnterSearchFilter(String Search, String Advertiser, String Agency) {
         if (!Search.equals(""))
@@ -538,7 +542,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         String ToolTipText;
         if(strReportType.toUpperCase().equals("OperationUnit".toUpperCase())) {
            btnReports = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]/div[2]/div/div[2]/div/button";
-            ToolTipText= "Click to go to reports at Operational Unit level";
+            ToolTipText= "Go to high level reports in Tableau";
         }
         else {
             btnReports = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div/div/div[4]/div/button";
@@ -839,16 +843,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         return returnType;
     }
 
-    public boolean CheckForViewabilityDetails(){
-        boolean returnType;
-        By DiscrepancyDetails = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div//div[2]/div/div[2]/div/div/div[2]/div");
-        List<WebElement> webElements = browserFactory.getDriver().findElements(DiscrepancyDetails);
-        returnType = webElements.get(0).getText().toLowerCase().contains("Viewability".toLowerCase());
-        returnType = returnType && webElements.get(2).getText().toLowerCase().contains("Measurable".toLowerCase());
-        returnType = returnType && webElements.get(1).getText().toLowerCase().contains("Trackable".toLowerCase());
-        returnType = returnType && webElements.get(3).getText().toLowerCase().contains("Viewable".toLowerCase());
-        return returnType;
-    }
+
 
     public boolean CheckForCampaignDetailsForFlight(){
         By CampaignDetails = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div[1]/div[7]");
