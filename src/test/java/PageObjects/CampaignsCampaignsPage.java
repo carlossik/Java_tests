@@ -82,13 +82,13 @@ public class CampaignsCampaignsPage extends BrowserFactory {
     @FindBy(how = How.XPATH, using = "//*[@id='root']//*[@class='automation_campaignsFilterSort']//button")
     private WebElement btnSort;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']//*[@class='automation_campaignsFilterAdvertiser']//input")
+    @FindBy(how = How.XPATH, using = "/html/body//section//div[@class='automation_campaignsFilterAdvertiser local_filter_1dfE4']//input")
     private WebElement txtAdvertiser;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']//*[@class='automation_campaignsFilterRequiresAction']//input[@name='onlyWithEmptyGoalOrUnknownTrader']/../div")
     public WebElement chbxRequiresAction;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']//*[@class='automation_campaignsFilterAgency']//input")
+    @FindBy(how = How.XPATH, using = "/html/body//section//div[@class='automation_campaignsFilterAgency local_filter_1dfE4']//input")
     private WebElement txtAgency;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']//*[contains(@class,'automation_campaignsFilterApply')]")
@@ -300,7 +300,11 @@ public class CampaignsCampaignsPage extends BrowserFactory {
 
     public boolean CheckFilterExist() {
         GeneralUtilites.wait(1);
-        return txtAdvertiser.isDisplayed() && txtAgency.isDisplayed();
+        mouseClick( getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]/div[1]/div[2]/div/div[2]/div[2]/button"));
+        GeneralUtilites.wait(1);
+        boolean  returnType =  txtAdvertiser.isDisplayed() && txtAgency.isDisplayed();
+        mouseClick(getElement("/html/body//section//button[text()='OK']"));
+        return  returnType;
     }
 
 }

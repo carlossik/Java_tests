@@ -30,19 +30,7 @@ Feature: Ability to search for Flights
     And LogOut ProteusWeb from Campaigns page
 
 
-  @CampaignsTabProWeb
-  Scenario: 04 Apply button is enabled after entering/selecting search and filters
-    Then All Campaigns loads which I have access to
-    When I search/filter for a particular campaign
-    Then Campaign Tab Apply button is enabled
-    And LogOut ProteusWeb from Campaigns page
 
-  @CampaignsTabProWeb
-  Scenario: 05 Clear Filters button is enabled after entering/selecting search and filters
-    Then All Campaigns loads which I have access to
-    When I search/filter for a particular campaign
-    Then Campaign tab clear Filters button is enabled
-    And LogOut ProteusWeb from Campaigns page
 
 
   @CampaignsTabProWeb

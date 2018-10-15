@@ -74,19 +74,19 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     @CacheLookup
     private WebElement btnLogOut;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']//input[@class='theme_inputElement_27dyY']")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//input[@type='text']")
     private WebElement txtSearch;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']//*[@class='automation_flightsFilterSort']//button")
     private WebElement btnSort;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']//*[@class='automation_flightsFilterAdvertiser']//input")
+    @FindBy(how = How.XPATH, using = "/html/body//section//div[@class='automation_campaignsFilterAdvertiser local_filter_27trk']//input")
     private WebElement txtAdvertiser;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']//*[@class='automation_flightsFilterRequiresAction']//input[@name='onlyWithEmptyGoalOrUnknownTrader']/../div")
     public WebElement chbxRequiresAction;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']//*[@class='automation_flightsFilterAgency']//input")
+    @FindBy(how = How.XPATH, using = "/html/body//section//div[@class='automation_campaignsFilterAgency local_filter_27trk']//input ")
     private WebElement txtAgency;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']//*[contains(@class,'automation_flightsFilterApply')]")
@@ -283,6 +283,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
 
 
     public void EnterSearchFilter(String Search, String Advertiser, String Agency) {
+        GeneralUtilites.wait(1);
         if (!Search.equals(""))
             enterText(txtSearch, Search);
         if (!Advertiser.equals(""))
@@ -291,11 +292,16 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
             enterText(txtAgency, Agency);
 
         GeneralUtilites.wait(1);
-      //  mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/div//div[6]/label/input[@value='ALL']"));
+
     }
 
     public boolean CheckFilterExist() {
-        return txtAdvertiser.isDisplayed() && txtAgency.isDisplayed();
+        GeneralUtilites.wait(1);
+        mouseClick( getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]/div[1]/div[2]/div/div[2]/div[2]/div[1]/button"));
+        GeneralUtilites.wait(1);
+        boolean  returnType =  txtAdvertiser.isDisplayed() && txtAgency.isDisplayed();
+        mouseClick(getElement("/html/body//section//button[text()='OK']"));
+        return  returnType;
     }
 
     public void SelectRequiredAction() {
@@ -614,7 +620,8 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     }
 
     public boolean AddGoalDetailsButtonExist() {
-       mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[1]/div/i"));
+        GeneralUtilites.wait(5);
+       mouseClick(getElements("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[1]/div/i").get(0));
        GeneralUtilites.wait(1);
        return btnAddEditGoalDetails.isDisplayed();
     }
@@ -641,16 +648,19 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         enterText(drpdwnGoalType, GoalType);
         mouseClick(txtGoalTarget);
         enterText(txtGoalTarget, GoalTarget);
-        enterText(txtEditOptimisationManager,"Amelia Lee");
+        typeText(txtEditOptimisationManager,"Amelia Lee");
+        GeneralUtilites.wait(1);
+        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[1]/div/div/div/div[1]/div[2]/form/div[2]/div[1]/div/ul/li[1]"));
+        GeneralUtilites.wait(1);
         mouseClick(btnSave);
     }
 
     public boolean CheckGoalDetailsSaved(String GoalType, String GoalTarget)    {
         String flightName = txtSearch.getAttribute("value");
-        mouseClick(btnClearFilters);
-        GeneralUtilites.wait(2);
-        EnterSearchFilter(flightName,"","");
-        mouseClick(btnApplyFilters);
+     //   mouseClick(btnClearFilters);
+       // GeneralUtilites.wait(2);
+      //  EnterSearchFilter(flightName,"","");
+       // mouseClick(btnApplyFilters);
         GeneralUtilites.wait(2);
         String txtGoalType   = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[1]/div/div/div/div[1]/div[2]/div[1]/div[1]/div[1]";
         String txtGoalTarget = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[1]/div/div/div/div[1]/div[2]/div[1]/div[1]/div[2]";
@@ -677,11 +687,11 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
 
     public boolean CheckOptimisationManagerDetailsSaved(String OptManager ){
         String flightName = txtSearch.getAttribute("value");
-        mouseClick(btnClearFilters);
+      //  mouseClick(btnClearFilters);
         GeneralUtilites.wait(2);
-        EnterSearchFilter(flightName,"","");
-        mouseClick(btnApplyFilters);
-        GeneralUtilites.wait(2);
+   //     EnterSearchFilter(flightName,"","");
+    //    mouseClick(btnApplyFilters);
+     //   GeneralUtilites.wait(2);
         return  txtOptimisationManager.getText().toLowerCase().equals(OptManager.toLowerCase());
     }
 

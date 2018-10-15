@@ -11,7 +11,7 @@ Feature: Ability to deep-link to Tableau reports
     And Navigate to "Flights" Tab on Campaigns
    Then All Flights loads which I have access to
    When I search/filter for a particular result
-   And Click on Apply button
+  # And Click on Apply button
 
   @TableauReporting
   Scenario: 01 Reporting Icon at Flight Level

@@ -165,9 +165,10 @@ public class ProteusWebSteps extends BrowserFactory
     @When("I search/filter for a particular result")
     public void WhenISearchFilterForAParticularResult()    {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
-        campaignsPage.EnterSearchFilter("Automation 84", "", "");
-        GeneralUtilites.wait(2);
-        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]/div[2]/div/div[1]/div/div[1]/label/input[@value='ENDED']"));
+        campaignsPage.EnterSearchFilter("Automation 52", "", "");
+        GeneralUtilites.wait(5);
+        mouseClick(getElement("//*[@id='root']//section//label/input[@value='ENDED']/.."));
+        GeneralUtilites.wait(1);
     }
 
     @When("^I search/filter for a particular result \"([^\"]*)\"$")
@@ -188,7 +189,7 @@ public class ProteusWebSteps extends BrowserFactory
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         //  Assert.assertTrue(Page.ProteusWebCampaigns.btnApplyFilters.Enabled, "Apply button is not enabled after enter search");
         GeneralUtilites.wait(1);
-       mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]/div[1]/div[2]/div/div[2]/div[2]/button"));
+       mouseClick(getElement("//*[@id='root']//section/div/div[2]/div/div/div[2]/div/div[1]//div[1]/button"));
        GeneralUtilites.wait(1);
        mouseClick(getElement("/html/body//section//div/button[text()='OK']"));
       //  mouseClick(campaignsPage.btnApplyFilters );
@@ -973,8 +974,9 @@ public class ProteusWebSteps extends BrowserFactory
     public void iSearchFilterForACampaign(String CampaignName)   {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         campaignsPage.EnterSearchFilter(CampaignName, "", "");
-        GeneralUtilites.wait(2);
-        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]/div[2]/div/div[1]/div/div[1]/label/input[@value='ENDED']"));
+        GeneralUtilites.wait(5);
+        mouseClick(getElement("//*[@id='root']//section//label/input[@value='ENDED']/.."));
+        GeneralUtilites.wait(1);
     }
 
     @Then("^Campaign details shown for each flight row$")
