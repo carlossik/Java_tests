@@ -74,7 +74,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     @CacheLookup
     private WebElement btnLogOut;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']//*[@class='automation_flightsFilterSearchText']//input")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//input[@class='theme_inputElement_27dyY']")
     private WebElement txtSearch;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']//*[@class='automation_flightsFilterSort']//button")

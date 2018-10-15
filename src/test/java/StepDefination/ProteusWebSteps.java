@@ -188,7 +188,10 @@ public class ProteusWebSteps extends BrowserFactory
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         //  Assert.assertTrue(Page.ProteusWebCampaigns.btnApplyFilters.Enabled, "Apply button is not enabled after enter search");
         GeneralUtilites.wait(1);
-        mouseClick(campaignsPage.btnApplyFilters );
+       mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]/div[1]/div[2]/div/div[2]/div[2]/button"));
+       GeneralUtilites.wait(1);
+       mouseClick(getElement("/html/body//section//div/button[text()='OK']"));
+      //  mouseClick(campaignsPage.btnApplyFilters );
         GeneralUtilites.wait(1);
     }
 
@@ -1239,7 +1242,7 @@ public class ProteusWebSteps extends BrowserFactory
     @And("^I Click on search for ended flights$")
     public void iClickOnSearchForEndedFlights() throws Throwable {
         GeneralUtilites.wait(1);
-        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]/div[2]/div/div[1]/div/div[1]/label/input[@value='ENDED']"));
+        mouseClick(getElement("//*[@id='root']/div/section//label/input[@value='ENDED']"));
         GeneralUtilites.wait(1);
     }
 
