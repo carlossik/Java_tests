@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="14c0a861-ce48-4df8-a711-5e9e94835522" name="Default" comment="Fixed the scripts to cater the flat view changes on web app">
-      <change afterPath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebCampaignsSteps.java" afterDir="false" />
+    <list default="true" id="14c0a861-ce48-4df8-a711-5e9e94835522" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/CampaignsCampaignsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/CampaignsCampaignsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebPixelsSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebPixelsSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/DisplayPlatformForFlight.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/DisplayPlatformForFlight.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/OptionsToViewCreatives.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/OptionsToViewCreatives.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/UnderDev/CampaignsTab.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/UnderDev/CampaignsTab.feature" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/mavensurefireplugin/target/" />
@@ -39,20 +29,11 @@
   <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" userTempatePath="" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CampaignsTab.feature" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/UnderDev/CampaignsTab.feature">
+      <file leaf-file-name="AbilityToDeeplinkTableauReports.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AbilityToDeeplinkTableauReports.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="93" column="24" selection-start-line="93" selection-start-column="24" selection-end-line="93" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbilityToSortFlights.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AbilityToSortFlights.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+            <state relative-caret-position="322">
+              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -60,17 +41,26 @@
       <file leaf-file-name="ExpandFlightInformation.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/Features/ExpandFlightInformation.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+            <state relative-caret-position="486">
+              <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProteusWebCampaignsSteps.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebCampaignsSteps.java">
+      <file leaf-file-name="DisplayPlatformForFlight.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/Features/DisplayPlatformForFlight.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="69" column="16" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
+            <state relative-caret-position="351">
+              <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProteusWebSteps.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="1248" column="43" lean-forward="true" selection-start-line="1248" selection-start-column="43" selection-end-line="1248" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,50 +71,35 @@
       <file leaf-file-name="AbilityToSearchForFlights.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AbilityToSearchForFlights.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
+            <state relative-caret-position="-1350">
               <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OptionsToViewCreatives.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/Features/OptionsToViewCreatives.feature">
+      <file leaf-file-name="AbilityToEditOptimisationManager.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AbilityToEditOptimisationManager.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CampaignsCampaignsPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/CampaignsCampaignsPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="52" column="106" selection-start-line="52" selection-start-column="106" selection-end-line="52" selection-end-column="106" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DisplayPlatformForFlight.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/Features/DisplayPlatformForFlight.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
+            <state relative-caret-position="270">
               <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProteusWebSteps.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java">
+      <file leaf-file-name="AbilityLogInProWeb.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AbilityLogInProWeb.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="993" column="100" selection-start-line="993" selection-start-column="100" selection-end-line="993" selection-end-column="100" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="376">
+              <caret line="67" column="44" lean-forward="true" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbilityToSortFlights.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AbilityToSortFlights.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -132,15 +107,20 @@
       <file leaf-file-name="ProteusWebCampaignsPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="188" column="5" lean-forward="true" selection-start-line="188" selection-start-column="5" selection-end-line="188" selection-end-column="5" />
+            <state relative-caret-position="270">
+              <caret line="154" column="119" lean-forward="true" selection-start-line="154" selection-start-column="38" selection-end-line="154" selection-end-column="119" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#12411#12412#0" expanded="true" />
-                <element signature="e#12463#12464#0" expanded="true" />
-                <element signature="e#14077#14078#0" expanded="true" />
-                <element signature="e#14154#14155#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbilityToEditGoalData.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AbilityToEditGoalData.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -226,7 +206,6 @@
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebPlatformSeat.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebPixelsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebCreativesSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCreativesPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdminPage.java" />
         <option value="$PROJECT_DIR$/src/test/resources/Features/HomePage.feature" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdvertiserAccountsPage.java" />
@@ -247,12 +226,13 @@
         <option value="$PROJECT_DIR$/src/test/resources/Features/ReportingAPIvsProteusWeb.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/Features/DisplayPlatformForFlight.feature" />
         <option value="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebPixelsSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebCampaignsSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObjects/CampaignsCampaignsPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java" />
         <option value="$PROJECT_DIR$/src/test/resources/Features/OptionsToViewCreatives.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObjects/CampaignsCampaignsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCreativesPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebCampaignsSteps.java" />
         <option value="$PROJECT_DIR$/src/test/resources/UnderDev/CampaignsTab.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java" />
       </list>
     </option>
   </component>
@@ -264,10 +244,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-224" />
-    <option name="y" value="104" />
-    <option name="width" value="1918" />
-    <option name="height" value="1038" />
+    <option name="x" value="-2101" />
+    <option name="y" value="235" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -297,9 +277,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -324,54 +303,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="repoProteusWebJava" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Libraries" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="repoProteusWebJava" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="PageObjects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="repoProteusWebJava" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="repoProteusWebJava" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="runner" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="repoProteusWebJava" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="StepDefination" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="repoProteusWebJava" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="SupportingUtilites" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="repoProteusWebJava" type="b2602c69:ProjectViewProjectNode" />
@@ -409,6 +340,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -458,11 +390,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: 10 Sort columns on Campaign (1)">
-    <configuration name="Scenario: 09 Goal, Viewability, Cost Breakdown, DSP Delivery and AD Server Delivery details" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber java.Feature: CampaignsTab">
+    <configuration name="Feature: CampaignsTab" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="repoProteusWebJava" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^09 Goal\, Viewability\, Cost Breakdown\, DSP Delivery and AD Server Delivery details$&quot;" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -492,7 +424,7 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Scenario: 11 Able to open creatives tab from Campaign" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: 11 Able to open creatives tab from Campaign (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="repoProteusWebJava" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^11 Able to open creatives tab from Campaign$&quot;" />
@@ -503,7 +435,7 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Scenario: 12 Able to open pixels tab from Campaign" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: 12 Able to open pixels tab from Campaign (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="repoProteusWebJava" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^12 Able to open pixels tab from Campaign$&quot;" />
@@ -515,19 +447,19 @@
       </extension>
     </configuration>
     <list>
-      <item itemvalue="Cucumber java.Scenario: 09 Goal, Viewability, Cost Breakdown, DSP Delivery and AD Server Delivery details" />
-      <item itemvalue="Cucumber java.Scenario: 11 Able to open creatives tab from Campaign" />
-      <item itemvalue="Cucumber java.Scenario: 12 Able to open pixels tab from Campaign" />
       <item itemvalue="Cucumber java.Scenario: 10 Sort columns on Campaign" />
       <item itemvalue="Cucumber java.Scenario: 10 Sort columns on Campaign (1)" />
+      <item itemvalue="Cucumber java.Scenario: 11 Able to open creatives tab from Campaign (1)" />
+      <item itemvalue="Cucumber java.Scenario: 12 Able to open pixels tab from Campaign (1)" />
+      <item itemvalue="Cucumber java.Feature: CampaignsTab" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber java.Feature: CampaignsTab" />
         <item itemvalue="Cucumber java.Scenario: 10 Sort columns on Campaign (1)" />
+        <item itemvalue="Cucumber java.Scenario: 12 Able to open pixels tab from Campaign (1)" />
+        <item itemvalue="Cucumber java.Scenario: 11 Able to open creatives tab from Campaign (1)" />
         <item itemvalue="Cucumber java.Scenario: 10 Sort columns on Campaign" />
-        <item itemvalue="Cucumber java.Scenario: 12 Able to open pixels tab from Campaign" />
-        <item itemvalue="Cucumber java.Scenario: 11 Able to open creatives tab from Campaign" />
-        <item itemvalue="Cucumber java.Scenario: 09 Goal, Viewability, Cost Breakdown, DSP Delivery and AD Server Delivery details" />
       </list>
     </recent_temporary>
   </component>
@@ -546,27 +478,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1516620214550</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Added options to run tests from command prompt">
-      <created>1521631564004</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1521631564005</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Updated query SQLQueryFlightNameWithNoTrader">
-      <created>1521734700674</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1521734700674</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Added AdvertiserAccounts tests">
-      <created>1522934349124</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1522934349124</updated>
     </task>
     <task id="LOCAL-00024" summary="Added AdvertiserAccounts tests">
       <created>1522934414291</created>
@@ -890,47 +801,67 @@
       <option name="project" value="LOCAL" />
       <updated>1539171057086</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Fixed the scripts to cater the flat view changes on web app">
+      <created>1539594571790</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1539594571790</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Fixed the scripts to cater the flat view changes on web app">
+      <created>1539594654270</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1539594654270</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Fixed the scripts to cater the flat view changes on web app">
+      <created>1539596941538</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1539596941538</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Scenario__09_Goal,_Viewability,_Cost_Breakdown,_DSP_Delivery_and_AD_Server_Delivery_details - 2018.10.11 at 18h 14m 58s.xml">
-      <configuration name="Scenario: 09 Goal, Viewability, Cost Breakdown, DSP Delivery and AD Server Delivery details" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__10_Sort_columns_on_Campaign_(1) - 2018.10.12 at 14h 41m 14s.xml">
+      <configuration name="Scenario: 10 Sort columns on Campaign (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__09_Goal,_Viewability,_Cost_Breakdown,_DSP_Delivery_and_AD_Server_Delivery_details - 2018.10.11 at 18h 17m 18s.xml">
-      <configuration name="Scenario: 09 Goal, Viewability, Cost Breakdown, DSP Delivery and AD Server Delivery details" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__10_Sort_columns_on_Campaign_(1) - 2018.10.12 at 14h 46m 19s.xml">
+      <configuration name="Scenario: 10 Sort columns on Campaign (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__11_Able_to_open_creatives_tab_from_Campaign - 2018.10.11 at 18h 17m 52s.xml">
-      <configuration name="Scenario: 11 Able to open creatives tab from Campaign" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__10_Sort_columns_on_Campaign_(1) - 2018.10.12 at 14h 47m 04s.xml">
+      <configuration name="Scenario: 10 Sort columns on Campaign (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__11_Able_to_open_creatives_tab_from_Campaign - 2018.10.11 at 18h 20m 25s.xml">
-      <configuration name="Scenario: 11 Able to open creatives tab from Campaign" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__10_Sort_columns_on_Campaign_(1) - 2018.10.12 at 14h 47m 50s.xml">
+      <configuration name="Scenario: 10 Sort columns on Campaign (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__11_Able_to_open_creatives_tab_from_Campaign - 2018.10.11 at 18h 21m 41s.xml">
-      <configuration name="Scenario: 11 Able to open creatives tab from Campaign" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__10_Sort_columns_on_Campaign_(1) - 2018.10.12 at 14h 49m 28s.xml">
+      <configuration name="Scenario: 10 Sort columns on Campaign (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__11_Able_to_open_creatives_tab_from_Campaign - 2018.10.11 at 18h 31m 29s.xml">
-      <configuration name="Scenario: 11 Able to open creatives tab from Campaign" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__10_Sort_columns_on_Campaign_(1) - 2018.10.12 at 14h 50m 42s.xml">
+      <configuration name="Scenario: 10 Sort columns on Campaign (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__11_Able_to_open_creatives_tab_from_Campaign - 2018.10.11 at 18h 32m 57s.xml">
-      <configuration name="Scenario: 11 Able to open creatives tab from Campaign" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__10_Sort_columns_on_Campaign_(1) - 2018.10.12 at 14h 51m 45s.xml">
+      <configuration name="Scenario: 10 Sort columns on Campaign (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__12_Able_to_open_pixels_tab_from_Campaign - 2018.10.11 at 18h 33m 39s.xml">
-      <configuration name="Scenario: 12 Able to open pixels tab from Campaign" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__10_Sort_columns_on_Campaign_(1) - 2018.10.12 at 14h 52m 28s.xml">
+      <configuration name="Scenario: 10 Sort columns on Campaign (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__10_Sort_columns_on_Campaign - 2018.10.11 at 18h 34m 28s.xml">
-      <configuration name="Scenario: 10 Sort columns on Campaign" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__10_Sort_columns_on_Campaign_(1) - 2018.10.12 at 14h 55m 31s.xml">
+      <configuration name="Scenario: 10 Sort columns on Campaign (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__10_Sort_columns_on_Campaign - 2018.10.11 at 18h 40m 48s.xml">
-      <configuration name="Scenario: 10 Sort columns on Campaign" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__10_Sort_columns_on_Campaign_(1) - 2018.10.12 at 14h 56m 44s.xml">
+      <configuration name="Scenario: 10 Sort columns on Campaign (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.32291666" weight="0.23804463" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
@@ -941,7 +872,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.88958335" weight="0.38788524" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20572917" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20572917" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -956,33 +887,34 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4984375" weight="0.32731137" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.32291666" weight="0.23804463" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4984375" weight="0.32731137" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.88958335" weight="0.38788524" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.013020833" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Coverage" order="0" side_tool="true" visible="true" weight="0.058854166" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7453125" visible="true" weight="0.38469714" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.2431243" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22604166" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7453125" visible="true" weight="0.38469714" />
       <window_info id="Image Layers" order="7" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.81041664" weight="0.2794899" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4984375" weight="0.32731137" />
       <window_info id="Learn" order="5" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.81041664" weight="0.2794899" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.88958335" weight="0.38788524" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" visible="true" weight="0.058854166" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.2546875" side_tool="true" weight="0.34112647" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.2431243" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
-      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.32291666" weight="0.23804463" />
       <window_info anchor="right" id="Maven Projects" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
@@ -1134,19 +1066,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java</url>
-          <line>1138</line>
+          <line>1141</line>
           <properties />
           <option name="timeStamp" value="197" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java</url>
-          <line>1131</line>
+          <line>1134</line>
           <properties />
           <option name="timeStamp" value="198" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java</url>
-          <line>1132</line>
+          <line>1135</line>
           <properties />
           <option name="timeStamp" value="200" />
         </line-breakpoint>
@@ -1180,11 +1112,17 @@
           <properties />
           <option name="timeStamp" value="212" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebCampaignsSteps.java</url>
+          <line>159</line>
+          <properties />
+          <option name="timeStamp" value="213" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="213" />
+      <option name="time" value="214" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CucumberJavaRunConfigurationType">
@@ -1414,13 +1352,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AbilityLogInProWeb.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="67" column="44" lean-forward="true" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebAdvertiserAccountsPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-645">
@@ -1428,34 +1359,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCreativesPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8559">
-          <caret line="333" column="140" selection-end-line="341" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AdvertiserAccounts.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="727">
           <caret line="122" column="34" lean-forward="true" selection-start-line="122" selection-start-column="34" selection-end-line="122" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AbilityToEditGoalData.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AbilityToEditOptimisationManager.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -1501,24 +1408,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/UnderDev/FliterFlightsBasedOnDates.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AdminSecurityGroup.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
           <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AbilityToDeeplinkTableauReports.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="42" column="22" lean-forward="true" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1559,89 +1452,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AbilityToSortFlights.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/OptionsToViewCreatives.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        <state relative-caret-position="702">
+          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/DisplayPlatformForFlight.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCreativesPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AbilityToSearchForFlights.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/ExpandFlightInformation.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        <state relative-caret-position="351">
+          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/CampaignsCampaignsPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="52" column="106" selection-start-line="52" selection-start-column="106" selection-end-line="52" selection-end-column="106" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="6372">
+          <caret line="246" column="125" selection-start-line="246" selection-start-column="31" selection-end-line="246" selection-end-column="125" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebCampaignsSteps.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/UnderDev/FliterFlightsBasedOnDates.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="69" column="16" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="993" column="100" selection-start-line="993" selection-start-column="100" selection-end-line="993" selection-end-column="100" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="188" column="5" lean-forward="true" selection-start-line="188" selection-start-column="5" selection-end-line="188" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#12411#12412#0" expanded="true" />
-            <element signature="e#12463#12464#0" expanded="true" />
-            <element signature="e#14077#14078#0" expanded="true" />
-            <element signature="e#14154#14155#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/OptionsToViewCreatives.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+        <state relative-caret-position="405">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/UnderDev/CampaignsTab.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="93" column="24" selection-start-line="93" selection-start-column="24" selection-end-line="93" selection-end-column="24" />
+        <state relative-caret-position="648">
+          <caret line="51" column="18" lean-forward="true" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebCampaignsSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="184" column="16" selection-start-line="184" selection-start-column="16" selection-end-line="184" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AbilityToDeeplinkTableauReports.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AbilityToEditGoalData.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AbilityToEditOptimisationManager.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AbilityLogInProWeb.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="67" column="44" lean-forward="true" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AbilityToSortFlights.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/AbilityToSearchForFlights.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1350">
+          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjects/ProteusWebCampaignsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="154" column="119" lean-forward="true" selection-start-line="154" selection-start-column="38" selection-end-line="154" selection-end-column="119" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/ExpandFlightInformation.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Features/DisplayPlatformForFlight.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/StepDefination/ProteusWebSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="1248" column="43" lean-forward="true" selection-start-line="1248" selection-start-column="43" selection-end-line="1248" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

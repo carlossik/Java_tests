@@ -562,6 +562,7 @@ public class ProteusWebSteps extends BrowserFactory
     public void iSearchResultWithOutEndDate()   {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         campaignsPage.EnterSearchFilter("Collection_io", "", "");
+        GeneralUtilites.wait(3);
     }
 
 

@@ -499,12 +499,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         boolean returnType;
         if (elementTypes.size() >= 1) {
             returnType = elementTypes.get(0).getAttribute("class").contains("infinite");
-            //System.out.println(" tool tip1 :  " + elementTypes.get(0).getAttribute("class"));
-            Actions toolAct = new Actions(browserFactory.getDriver());
-            toolAct.clickAndHold(elementTypes.get(0)).build().perform();
-            GeneralUtilites.wait(2);
-            returnType = returnType && txtTooltip.getText().toLowerCase().contains("Indefinite".toLowerCase());
-            //System.out.println(" tool tip :  " + txtTooltip.getText().toLowerCase());
+            returnType = returnType && getToolTip("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[12]/div/span/i").toLowerCase().contains("Indefinite".toLowerCase());
             return returnType;
         } else
             return false;
