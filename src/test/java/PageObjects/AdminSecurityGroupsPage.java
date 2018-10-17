@@ -20,7 +20,7 @@ public class AdminSecurityGroupsPage extends BrowserFactory {
     @CacheLookup
     public WebElement lblSecurityGroups;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div/div[1]/div[2]/div/div/button")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div/div[1]//div[2]/div/div/button")
     @CacheLookup
     public WebElement btnAddSecurityGroups;
 
@@ -72,12 +72,10 @@ public class AdminSecurityGroupsPage extends BrowserFactory {
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]//div[2]/div/div[2]//h5")
     public WebElement lblAssignedAdvetiser;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div/div[1]/div/div/div/div/input")
-
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div/div[1]//div/div/div/div/input")
     public WebElement txtAssignedAdvSearch;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[2]/div[1]/div/div[1]/div[2]/div/div//input")
-
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[2]/div[1]/div/div[1]//div/div/div/div/input")
     public WebElement txtUnAssignedAdvSearch;
 
 

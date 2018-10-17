@@ -46,7 +46,7 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
     @CacheLookup
     public WebElement btnClearFilters;
 
-    @FindBy(how = How.XPATH, using = " //*[@id=\"root\"]/div/section/div/div[2]/div/div/div/div[2]/div/div[1]/div[2]/div/div/div/div/button")
+    @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div[1]//div[2]/div/div/div/div/button")
     @CacheLookup
     public WebElement btnBulkEdit;
 
@@ -71,7 +71,7 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
     @CacheLookup
     private WebElement rowAdvertiser;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div/form/div[1]/div[2]/div[2]/button")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div/form/div[1]//div[2]/div[2]/button")
     @CacheLookup
     public WebElement btnEditAdvertiserDetails;
 
@@ -91,7 +91,7 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
     @CacheLookup
     private WebElement cmbOperationalUnit;
 
-    @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div/form/div[1]/div[2]/div[2]/div[1]/button")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div/form/div[1]//div[2]/div[2]/div[1]/button")
     @CacheLookup
     private WebElement btnSave;
 
@@ -103,11 +103,11 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
     @CacheLookup
     public WebElement lblAdvertiserPlatformDetails;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div/form/div[1]/div[2]/div[1]/button")
-    @CacheLookup
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div/form/div[1]//div[2]/div[1]/button")
+
     public WebElement btnBack;
 
-    @FindBy(how = How.XPATH, using = " //*[@id=\"root\"]/div/section/div/div[2]/div/div/div/div[2]/div[1]/div/form/div[1]/div[2]/div[3]/button")
+    @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div/form/div[1]//div[2]/div[3]/button")
     @CacheLookup
     public WebElement btnMergeAdvertiser;
 

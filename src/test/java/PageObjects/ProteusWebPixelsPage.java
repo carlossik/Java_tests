@@ -57,14 +57,14 @@ public class ProteusWebPixelsPage extends BrowserFactory {
 
     public WebElement btnChange;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]/div[2]/div/div/div/button")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]//div[2]/div/div/div/button")
     public WebElement btnPixelsBulkEdit;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]/div[2]/div/div/div/div[1]/button")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]//div[2]/div/div/div/div[1]/button")
     @CacheLookup
     public WebElement btnPixelsBulkSave;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]/div[2]/div/div/div/div[2]/button")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]//div[2]/div/div/div/div[2]/button")
     @CacheLookup
     public WebElement btnPixelsBulkCancel;
 

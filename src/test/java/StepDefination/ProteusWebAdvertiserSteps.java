@@ -66,6 +66,7 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
     public void advertiserAccountOverviewScreenShown()  {
         GeneralUtilites.wait(1);
         Assert.assertTrue("Advertiser Account Overview screen not shown",advertiserAccountsPage.txtAdvertiserName.isDisplayed());
+        GeneralUtilites.wait(1);
         mouseClick(advertiserAccountsPage.btnBack);
     }
 

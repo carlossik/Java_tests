@@ -312,7 +312,7 @@ public class ProteusWebPixelsSteps extends BrowserFactory {
     @Then("^Pixel grid changed to editable state$")
     public void pixelGridChangedToEditableState()  {
         Assert.assertTrue("Pixel grid not changed to editable state",
-                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]/div[2]/div/div/div/div/button") == 2);
+                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]//div[2]/div/div/div/div//button") == 2);
     }
 
     @And("^Save button shown and is disabled$")

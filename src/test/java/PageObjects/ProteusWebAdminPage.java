@@ -57,11 +57,11 @@ public class ProteusWebAdminPage extends BrowserFactory
     @CacheLookup
     private WebElement lstTEL;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/div/div/div[2]/div/div[2]/button")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div//div[1]/div/div/div/div[1]/div[2]//div[2]/button")
     @CacheLookup
     public WebElement btnMasterDataAddPubLocation ;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div/div/div[1]/div[2]/div/div[2]/button")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div//div[2]/div/div/div/div[1]/div[2]//div[2]/button")
     @CacheLookup
     public WebElement btnMasterDataAddJobScdTemplates ;
 

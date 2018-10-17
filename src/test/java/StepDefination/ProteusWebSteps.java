@@ -556,7 +556,6 @@ public class ProteusWebSteps extends BrowserFactory
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         campaignsPage.EnterSearchFilter("FINANCE", "FINANCE - INSURE", "Agency > Business & Industrial 1742");
         GeneralUtilites.wait(2);
-        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]/div[2]/div/div[1]/div/div[1]/label/input[@value='ENDED']"));
     }
 
     @When("^I search/filter for result without end date$")

@@ -10,6 +10,7 @@ Background:
 
   Scenario: 01 Campaign Flights box on the home page
     When I click on "Campaigns" from home page
+    And Navigate to "Flights" Tab on Campaigns
     And I search/filter for a flightName "2373 Campaign"
     And Click on Apply button
     And Expand flight details
