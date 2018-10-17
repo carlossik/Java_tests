@@ -14,14 +14,12 @@ Feature: Ability to edit flight Goal data in Campaigns
 
  Scenario: 01 No goal set in the Goal Type/Value box
    When I search/filter for a flight with No goal
-#   And Click on Apply button
    Then There is an Add icon in the box orange to inform the user action is required
    And The box states 'Goal Info and Target'
 
 
 Scenario: 02 Add/Edit goal set in the Goal Type/Value box
   When I search/filter for a flight with No goal
- # And Click on Apply button
   Then There is an Add icon in the box orange to inform the user action is required
   When Click on Add 'Goal Info and Target'
   Then Option to select Goal Type and Goal Value exist
