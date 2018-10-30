@@ -51,7 +51,6 @@ public class CampaignsCampaignsPage extends BrowserFactory {
     public WebElement rdbtnEnded;
 
     @FindBy(how=How.XPATH, using = "//*[@id='root']/div/section//label[@data-react-toolbox='checkbox']/div")
-
     public WebElement chbtnShowDecimalPlaces;
 
     @FindBy(how = How.XPATH, using = "/html/body/div/span[contains(@class,'theme_tooltip')]/span[contains(@class,'theme_tooltipInner')]")
@@ -69,7 +68,6 @@ public class CampaignsCampaignsPage extends BrowserFactory {
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[8]/div")
     private WebElement txtCost;
 
-
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div[1]/div/div/div[1]/button")
     public  WebElement btnCampaignCreatives;
 
@@ -77,41 +75,43 @@ public class CampaignsCampaignsPage extends BrowserFactory {
     public  WebElement btnCampaignPixels;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section//div/input")
-    private WebElement txtSearch;
+    public WebElement txtSearch;
+
+    @FindBy(how=How.XPATH,using = "//*[@id='root']/div/section//div[2]/div[2]/button")
+    public   WebElement btnFilter;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']//*[@class='automation_campaignsFilterSort']//button")
     private WebElement btnSort;
 
     @FindBy(how = How.XPATH, using = "/html/body//section//div[@class='automation_campaignsFilterAdvertiser local_filter_1dfE4']//input")
-    private WebElement txtAdvertiser;
+    public WebElement txtAdvertiser;
+
+    @FindBy(how = How.XPATH, using = "/html/body//section//div[@class='automation_campaignsFilterAgency local_filter_1dfE4']//input")
+    public WebElement txtAgency;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']//*[@class='automation_campaignsFilterRequiresAction']//input[@name='onlyWithEmptyGoalOrUnknownTrader']/../div")
     public WebElement chbxRequiresAction;
 
-    @FindBy(how = How.XPATH, using = "/html/body//section//div[@class='automation_campaignsFilterAgency local_filter_1dfE4']//input")
-    private WebElement txtAgency;
-
     @FindBy(how = How.XPATH, using = "//*[@id='root']//*[contains(@class,'automation_campaignsFilterApply')]")
     public WebElement btnApplyFilters;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']//*[contains(@class,'automation_campaignsFilterCancel')]")
+    @FindBy(how = How.XPATH, using = "//html/body//button[@title='Clear Filters']")
     public WebElement btnClearFilters;
 
+    @FindBy(how = How.XPATH, using = "//html/body//section/div[2]//button[1]")
+    public WebElement btnOkFilters;
 
-    //  Header
+    @FindBy(how = How.XPATH, using = "//html/body//section/div[2]//button[2]")
+    public WebElement btnCancelFilters;
+
+    //html/body//button[@title='Clear Filters']
     // "//*[@id='root']/div/section//div[@role='columnheader']/div[text()='"+TableHeader+"']"
-
-    //Expand
-    //  //*[@id='root']/div/section//i[contains(@class,'expandedIconCollapsed')]
-
-    // Collaspe
+    //*[@id='root']/div/section//i[contains(@class,'expandedIconCollapsed')]
     //*[@id='root']/div/section//i[contains(@class,'expandIconExpanded')]
-
 
     @FindBy(how=How.XPATH, using = " //*[@id='root']//div[@class='local_menuButton_oXknz automation_operationalLevelReportsIcon']/button")
     @CacheLookup
     public WebElement btnOperationalLevelReport;
-
 
     public int GetCampaignRowsCount() {
         return getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div");
@@ -159,7 +159,6 @@ public class CampaignsCampaignsPage extends BrowserFactory {
         returnType = returnType && webElements.get(2).getText().toLowerCase().contains("Data fees".toLowerCase());
         returnType = returnType && webElements.get(3).getText().toLowerCase().contains("Other cost".toLowerCase());
         returnType = returnType && webElements.get(4).getText().toLowerCase().contains("Cost".toLowerCase());
-
         webElements =getElements("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[1]/div/div/div/div[2]/div[2]/div/div[2]");
         for (WebElement element:webElements) {
             if(!element.getText().toLowerCase().contains("-".toLowerCase()))
@@ -249,18 +248,15 @@ public class CampaignsCampaignsPage extends BrowserFactory {
             case "Market" :
                 columnXpath = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[5]";
                 break;
-
             case "Campaign" :
                 columnXpath = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[6]";
                 break;
-
             case "Budget" :
                 columnXpath = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[7]";
                 break;
             case "Cost" :
                 columnXpath = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[8]";
                 break;
-
             case "Start Date" :
                 columnXpath = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[9]";
                 break;
@@ -281,7 +277,6 @@ public class CampaignsCampaignsPage extends BrowserFactory {
             enterText(txtAdvertiser, Advertiser);
         if (!Agency.equals(""))
             enterText(txtAgency, Agency);
-
         GeneralUtilites.wait(1);
         //  mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div/div[1]/div/div//div[6]/label/input[@value='ALL']"));
     }
@@ -303,7 +298,6 @@ public class CampaignsCampaignsPage extends BrowserFactory {
         mouseClick( getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]/div[1]/div[2]/div/div[2]/div[2]/button"));
         GeneralUtilites.wait(1);
         boolean  returnType =  txtAdvertiser.isDisplayed() && txtAgency.isDisplayed();
-        mouseClick(getElement("/html/body//section//button[text()='OK']"));
         return  returnType;
     }
 

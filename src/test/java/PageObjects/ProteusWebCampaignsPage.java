@@ -75,25 +75,21 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     private WebElement btnLogOut;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']//input[@type='text']")
-    private WebElement txtSearch;
+    public  WebElement txtSearch;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']//*[@class='automation_flightsFilterSort']//button")
     private WebElement btnSort;
 
-    @FindBy(how = How.XPATH, using = "/html/body//section//div[@class='automation_campaignsFilterAdvertiser local_filter_27trk']//input")
-    private WebElement txtAdvertiser;
+
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']//*[@class='automation_flightsFilterRequiresAction']//input[@name='onlyWithEmptyGoalOrUnknownTrader']/../div")
     public WebElement chbxRequiresAction;
 
-    @FindBy(how = How.XPATH, using = "/html/body//section//div[@class='automation_campaignsFilterAgency local_filter_27trk']//input ")
-    private WebElement txtAgency;
+
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']//*[contains(@class,'automation_flightsFilterApply')]")
     public WebElement btnApplyFilters;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']//*[contains(@class,'automation_flightsFilterCancel')]")
-    public WebElement btnClearFilters;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']//section/div/div[2]/div/div/div/div[2]/div")
     public WebElement rowFlights;
@@ -168,13 +164,29 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     private WebElement txtCost;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div[1]/div/div/div[1]/button")
-    public  WebElement btnFlightCreatives;
+    public WebElement btnFlightCreatives;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div[1]/div/div/div[2]/button")
-    public  WebElement btnFlightPixels;
+    public WebElement btnFlightPixels;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section//label/input[@name='showDecimalPlaces']/../div")
-    public  WebElement chbxShowDecimalPlaces;
+    public WebElement chbxShowDecimalPlaces;
+
+    @FindBy(how=How.XPATH,using = "//*[@id='root']/div/section//div[2]/div[1]/button")
+    public WebElement btnFilter;
+
+    @FindBy(how = How.XPATH, using = "//html/body//button[@title='Clear Filters']")
+    public WebElement btnClearFilters;
+
+    @FindBy(how = How.XPATH, using = "/html/body//section//div[@class='automation_campaignsFilterAdvertiser local_filter_27trk']//input")
+    public WebElement txtAdvertiser;
+
+    @FindBy(how = How.XPATH, using = "/html/body//section//div[@class='automation_campaignsFilterAgency local_filter_27trk']//input")
+    public WebElement txtAgency;
+
+    @FindBy(how = How.XPATH, using = "//html/body//section//button[2]")
+    public WebElement btnCancelFilters;
+
 
     public boolean CheckForCreativeTab()    {
         By asideButtons = By.xpath("//*[@id='root']/div/section/div/div[1]/aside//button");
@@ -246,9 +258,9 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     }
 
     public int GetFlightRowsCount() {
-
         return getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div");
     }
+
 
     public boolean CheckFLIGHTSExist() {
         return txtFlightsCount.isDisplayed();
@@ -305,7 +317,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
         mouseClick( getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]/div[1]/div[2]/div/div[2]/div[2]/div[1]/button"));
         GeneralUtilites.wait(1);
         boolean  returnType =  txtAdvertiser.isDisplayed() && txtAgency.isDisplayed();
-        mouseClick(getElement("/html/body//section//button[text()='OK']"));
+   //     mouseClick(getElement("/html/body//section//button[text()='OK']"));
         return  returnType;
     }
 
@@ -493,13 +505,13 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     }
 
     public boolean CheckForInfiniteBudgetIcon() {
-        By EndDate = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[12]/div/span/i");
+        By EndDate = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div/div/span/i[text()='all_inclusive']");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(EndDate);
 
         boolean returnType;
         if (elementTypes.size() >= 1) {
             returnType = elementTypes.get(0).getAttribute("class").contains("infinite");
-            returnType = returnType && getToolTip("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[12]/div/span/i").toLowerCase().contains("Indefinite".toLowerCase());
+            returnType = returnType && getToolTip("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div/div/span/i[text()='all_inclusive']").toLowerCase().contains("Indefinite".toLowerCase());
             return returnType;
         } else
             return false;

@@ -194,7 +194,7 @@ public class ProteusWebCampaignsSteps extends BrowserFactory {
         Assert.assertTrue( "Clear Filters button is not enabled after enter search",campaignsCampaignPage.btnClearFilters.isEnabled());
     }
 
-    @And("^Campaigns Tab Filter dropdown fields exist$")
+    @And("^Campaigns Tab Filter dropdown fields exist on popup$")
     public void campaignsTabFilterDropdownFieldsExist () throws Throwable {
         Assert.assertTrue( "Filter dropdown fields does not exist",campaignsCampaignPage.CheckFilterExist());
     }
@@ -203,5 +203,60 @@ public class ProteusWebCampaignsSteps extends BrowserFactory {
     public void clickOnEndedOnCampaignTab() throws Throwable {
        mouseClick(campaignsCampaignPage.rdbtnEnded);
        GeneralUtilites.wait(1);
+    }
+
+    @And("^There is option to set the filters$")
+    public void thereIsOptionToSetTheFilters() throws Throwable {
+       Assert.assertTrue("Option to set the filters is not displayed",campaignsCampaignPage.btnFilter.isDisplayed());
+    }
+
+    @And("^I can see Clear filter icon on popup$")
+    public void iCanSeeClearFilterIconOnPopup() throws Throwable {
+        Assert.assertTrue("Option to set the filters is not displayed",campaignsCampaignPage.btnClearFilters.isDisplayed());
+    }
+
+    @And("^Campaign column is shown as a link$")
+    public void campaignColumnIsShownAsALink() throws Throwable {
+         Assert.assertTrue("",getElementCount("//*[@id='root']/div/section//div[6]/div/span") > 0);
+    }
+
+    @When("^Clicked on the Campaign name in the table$")
+    public void clickedOnTheCampaignNameInTheTable() throws Throwable {
+        mouseClick(getElements("//*[@id='root']/div/section//div[6]/div/span").get(0));
+    }
+
+    @Then("^Flights tab loaded$")
+    public void flightsTabLoaded() throws Throwable {
+        campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Flights tab loaded",campaignsPage.GetFlightRowsCount()> 0);
+    }
+
+    @When("^I have selected values in one or more filters$")
+    public void iHaveSelectedValuesInOneOrMoreFilters() throws Throwable {
+        enterText(campaignsCampaignPage.txtAdvertiser,"TRAVEL - LUXURY");
+        enterText(campaignsCampaignPage.txtAgency,"Agency > Business & Industrial 1597");
+    }
+
+    @When("^I click on clear filters$")
+    public void iClickOnClearFilters() throws Throwable {
+       mouseClick(campaignsCampaignPage.btnClearFilters);
+    }
+
+    @Then("^The values are cleared on popup$")
+    public void theValuesAreClearedOnPopup() throws Throwable {
+        Assert.assertTrue("The values are not cleared on popup",
+        campaignsCampaignPage.txtAdvertiser.getText().equals("") &&
+        campaignsCampaignPage.txtAgency.getText().equals(""));
+    }
+
+    @When("^I click on cancel on popup$")
+    public void iClickOnCancelOnPopup() throws Throwable {
+        mouseClick(campaignsCampaignPage.btnCancelFilters);
+    }
+
+    @Then("^Changes are discarded on the popup and popup closed$")
+    public void changesAreDiscardedOnThePopupAndPopupClosed() throws Throwable {
+        Assert.assertTrue("Popup not closed",
+                        campaignsCampaignPage.txtSearch.isDisplayed());
     }
 }

@@ -47,4 +47,3 @@ Background:
     And Recently viewed Advertiser Accounts with missing hard pixel are listed
     When Click on one of advertiser account with missing hard pixel
     Then Pixels screen opened
-

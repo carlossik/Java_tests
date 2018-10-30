@@ -179,13 +179,16 @@ public class BrowserFactory {
         GeneralUtilites.wait(3);
         By objBy = By.xpath("/html/body/div/span[contains(@class,'theme_tooltip')]/span[contains(@class,'theme_tooltipInner')]");
         WebElement  txtToolTip = driver.findElement(objBy);
-        // System.out.println("Tool Tip : " + txtToolTip.getText());
+         System.out.println("Tool Tip : " + txtToolTip.getText());
         return txtToolTip.getText();
     }
 
     protected static String getToolTip(String Xpath)
     {
-        return  getToolTip(driver.findElement(By.xpath(Xpath)));
+      if( getElementCount(Xpath)==1)
+        return  getToolTip(driver.findElements(By.xpath(Xpath)).get(0));
+      else
+          return  getToolTip(driver.findElements(By.xpath(Xpath)).get(1));
     }
 }
 

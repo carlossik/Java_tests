@@ -24,17 +24,21 @@ Feature: Ability to search for Flights
     And LogOut ProteusWeb from Campaigns page
 
   @CampaignsTabProWeb
-  Scenario: 03 Ability to Filter Campaigns by Advertiser or Agency
+  Scenario: 03 Ability to Filter Campaigns by Advertiser, Agency, Group advertiser and Market
     Then All Campaigns loads which I have access to
-    And Campaigns Tab Filter dropdown fields exist
+    And There is option to set the filters
+    And Campaigns Tab Filter dropdown fields exist on popup
+    And I can see Clear filter icon on popup
+    When I have selected values in one or more filters
+    When I click on clear filters
+    Then The values are cleared on popup
+    When I have selected values in one or more filters
+    When I click on cancel on popup
+    Then Changes are discarded on the popup and popup closed
     And LogOut ProteusWeb from Campaigns page
 
-
-
-
-
   @CampaignsTabProWeb
-  Scenario: 06 Pagination shown when more than 20 flights displayed
+  Scenario: 04 Pagination shown when more than 20 flights displayed
     Then All Campaigns loads which I have access to
     When I search/filter for a particular campaign
     And Campaigns tab click on Apply button
@@ -42,9 +46,8 @@ Feature: Ability to search for Flights
     # And Pagination shown when more than 20 flights displayed
     Then LogOut ProteusWeb from Campaigns page
 
-
   @CampaignsTabProWeb
-  Scenario: 07 No flights matching your search message shown
+  Scenario: 05 No flights matching your search message shown
     Then All Campaigns loads which I have access to
     When I search/filter for a campaign "AAAAAAAAA" on Campaigns tab
     And Campaigns tab click on Apply button
@@ -52,7 +55,7 @@ Feature: Ability to search for Flights
     Then LogOut ProteusWeb from Campaigns page
 
   @CampaignsTabProWeb
-  Scenario: 08 Able to search flights based on Campaign Name
+  Scenario: 06 Able to search flights based on Campaign Name
     Then All Campaigns loads which I have access to
     When I search/filter for a campaign "LOCAL BRANDING - GAME/COUNTRY" on Campaigns tab
     And Campaigns tab click on Apply button
@@ -61,7 +64,7 @@ Feature: Ability to search for Flights
     And LogOut ProteusWeb from Campaigns page
 
   @CampaignsTabProWeb
-  Scenario: 09 Goal, Viewability, Cost Breakdown, DSP Delivery and AD Server Delivery details
+  Scenario: 07 Goal, Viewability, Cost Breakdown, DSP Delivery and AD Server Delivery details
     When I search/filter for a campaign "LOCAL BRANDING - GAME/COUNTRY" on Campaigns tab
     And Campaigns tab click on Apply button
     And Click on ended on campaign tab
@@ -79,7 +82,7 @@ Feature: Ability to search for Flights
     Then Decimal places not shown for amounts on campaign grid
 
   @CampaignsTabProWeb
-  Scenario Outline: 10 Sort columns on Campaign
+  Scenario Outline: 08 Sort columns on Campaign
     When I search/filter for a particular campaign
     And Campaigns tab click on Apply button
     #Then All Campaign matching search/filter combination load as results
@@ -96,7 +99,7 @@ Feature: Ability to search for Flights
       #|End Date|
 
   @CampaignsTabProWeb
-  Scenario: 11 Able to open creatives tab from Campaign
+  Scenario: 09 Able to open creatives tab from Campaign
     When I search/filter for a particular campaign
     And Campaigns tab click on Apply button
     Then All campaign matching search/filter combination load as results
@@ -104,13 +107,20 @@ Feature: Ability to search for Flights
     When I click on the creatives icon on Campaign row
     Then Creatives screen opened
 
-
-
   @CampaignsTabProWeb
-  Scenario: 12 Able to open pixels tab from Campaign
+  Scenario: 10 Able to open pixels tab from Campaign
     When I search/filter for a particular campaign
     And Campaigns tab click on Apply button
     Then All campaign matching search/filter combination load as results
     And Pixels option shown on the Campaigns tab
     When I click on the pixels icon on Campaign row
     Then Pixels screen opened
+
+    @CampaignsTabProWeb
+    Scenario: 11 Flight link on campaign tab
+      When I search/filter for a particular campaign
+      And Campaigns tab click on Apply button
+      Then All campaign matching search/filter combination load as results
+      And Campaign column is shown as a link
+      When Clicked on the Campaign name in the table
+      Then Flights tab loaded

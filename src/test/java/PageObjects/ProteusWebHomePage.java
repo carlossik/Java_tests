@@ -70,11 +70,65 @@ public class ProteusWebHomePage extends BrowserFactory
     @CacheLookup
     private WebElement btnShowUserOptions  ;
 
-
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/header/div/div[3]/div/div/div[2]/ul/li[2]")
     @CacheLookup
     private WebElement btnLogOut;
 
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//section//div[2]/div[1]/div/div/input")
+    @CacheLookup
+    private WebElement dpdwnOperationalUnit;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//section//div[2]/div[1]/div/ul/li[1]")
+    @CacheLookup
+    private WebElement dpdwnOperationalUnitItems;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//section//div[2]/div/ul/li[1]")
+    @CacheLookup
+    private WebElement dpdwnGroupAdvertisersItems;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//section//div[4]//ul/li[1]")
+    @CacheLookup
+    private WebElement dpdwnAgenciesItems;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//section//div[5]//ul/li[1]")
+    @CacheLookup
+    private WebElement dpdwnDSPsItems;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//section//div[3]//ul/li[1]")
+    @CacheLookup
+    private WebElement dpdwnAdvertisersItems;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//section//div[2]/div/div/div/div[2]/div")
+    @CacheLookup
+    private WebElement dpdwnDateRange;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//section//div[1]/div[1]/div/ul/li[1]")
+    @CacheLookup
+    private WebElement dpdwnDateRangeItems;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//section//div[2]/div/div/input")
+    @CacheLookup
+    private WebElement dpdwnGroupAdvertisers;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//section//div[3]/div/div/input")
+    @CacheLookup
+    private WebElement dpdwnAdvertisers;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//section//div[4]/div/div/input")
+    @CacheLookup
+    private WebElement dpdwnAgencies;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//section//div[5]/div/div/input")
+    @CacheLookup
+    private WebElement dpdwnDSPs;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//section//button[text()='apply']")
+    @CacheLookup
+    private WebElement btnApply;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//section//button[text()='clear']")
+    @CacheLookup
+    private WebElement btnClear;
 
     public void NavigateProteusOrganisations()
     {
@@ -164,13 +218,24 @@ public class ProteusWebHomePage extends BrowserFactory
         return true;
     }
 
+    public boolean checkForFilterOptions()
+    {
+       GeneralUtilites.wait(1);
+       return dpdwnDateRange.isDisplayed() &&
+              dpdwnOperationalUnit.isDisplayed() &&
+              dpdwnGroupAdvertisers.isDisplayed() &&
+              dpdwnAdvertisers.isDisplayed() &&
+              dpdwnAgencies.isDisplayed() &&
+              dpdwnDSPs.isDisplayed();
+    }
+
     public boolean CheckLogOutExist()
     {
         GeneralUtilites.wait(0.5);
-         mouseClick(btnShowUserOptions);
+        mouseClick(btnShowUserOptions);
         GeneralUtilites.wait(0.5);
         boolean boolLogOut = btnLogOut.isDisplayed();
-         mouseClick(btnShowUserOptions );
+        mouseClick(btnShowUserOptions );
         return boolLogOut;
     }
 

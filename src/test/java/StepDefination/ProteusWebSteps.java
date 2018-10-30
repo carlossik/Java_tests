@@ -5,7 +5,6 @@ import PageObjects.*;
 import SupportingUtilites.BrowserFactory;
 import java.util.Properties;
 import java.io.*;
-
 import cucumber.api.PendingException;
 import cucumber.api.java.en.*;
 import org.junit.Assert;
@@ -146,7 +145,6 @@ public class ProteusWebSteps extends BrowserFactory
     @Then("All Flights loads which I have access to")
     public void ThenAllFlightsLoadsWhichIHaveAccessTo()    {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
-
         Assert.assertTrue("All Flights not loads which I have access to",campaignsPage.GetFlightRowsCount()> 0);
     }
 
@@ -554,7 +552,7 @@ public class ProteusWebSteps extends BrowserFactory
     @When("^I search/filter for result with end date$")
     public void iSearchResultWithEndDate()   {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
-        campaignsPage.EnterSearchFilter("FINANCE", "FINANCE - INSURE", "Agency > Business & Industrial 1742");
+        campaignsPage.EnterSearchFilter("MOBILE - FINANCE", "FINANCE - PERSONAL", "Agency > Business & Industrial 1048");
         GeneralUtilites.wait(2);
     }
 
@@ -568,6 +566,7 @@ public class ProteusWebSteps extends BrowserFactory
 
     @Then("^Box shown with Start Date and End Date$")
     public void boxShownWithStartDateAndEndDate()   {
+        GeneralUtilites.wait(2);
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
         Assert.assertTrue("Box not shown with Start Date and End Date",
                 campaignsPage.CheckForStartDate() && campaignsPage.CheckForEndDate() );
@@ -583,7 +582,7 @@ public class ProteusWebSteps extends BrowserFactory
     @Then("^End date shown as an icon and Tooltip shown$")
     public void endDateShownAsAnIcon()  {
         campaignsPage = new ProteusWebCampaignsPage(this.browserFactory);
-        Assert.assertTrue("Box not shown with Start Date",
+        Assert.assertTrue("Box not shown with End Date and tooltip",
                 campaignsPage.CheckForInfiniteBudgetIcon());
     }
 
@@ -1288,4 +1287,56 @@ public class ProteusWebSteps extends BrowserFactory
     }
 
 
+    @And("^There is option to set the filters on flights tab$")
+    public void thereIsOptionToSetTheFiltersOnFlightsTab() throws Throwable {
+        campaignsPage= new ProteusWebCampaignsPage(this.browserFactory);
+        Assert.assertTrue("Option to set the filters is not displayed",campaignsPage.btnFilter.isDisplayed());
+    }
+
+    @And("^Fights Tab Filter dropdown fields exist on popup$")
+    public void fightsTabFilterDropdownFieldsExistOnPopup() throws Throwable {
+        Assert.assertTrue( "Filter dropdown fields does not exist",campaignsPage.CheckFilterExist());
+    }
+
+    @And("^I can see Clear filter icon on flights filter popup$")
+    public void iCanSeeClearFilterIconOnFlightsFilterPopup() throws Throwable {
+        Assert.assertTrue("Option to set the filters is not displayed",campaignsPage.btnClearFilters.isDisplayed());
+    }
+
+    @When("^I have selected values in one or more on flights filter popup$")
+    public void iHaveSelectedValuesInOneOrMoreOnFlightsFilterPopup() throws Throwable {
+        enterText(campaignsPage.txtAdvertiser,"TRAVEL - LUXURY");
+        enterText(campaignsPage.txtAgency,"Agency > Business & Industrial 1597");
+    }
+
+    @When("^I click on clear filters on flights filter popup$")
+    public void iClickOnClearFiltersOnFlightsFilterPopup() throws Throwable {
+       mouseClick( campaignsPage.btnClearFilters);
+    }
+
+    @Then("^The values are cleared on popup on flights filter popup$")
+    public void theValuesAreClearedOnPopupOnFlightsFilterPopup() throws Throwable {
+        Assert.assertTrue("The values are not cleared on popup",
+                campaignsPage.txtAdvertiser.getText().equals("") &&
+                        campaignsPage.txtAgency.getText().equals(""));
+    }
+
+    @When("^I click on cancel on popup on flights filter popup$")
+    public void iClickOnCancelOnPopupOnFlightsFilterPopup() throws Throwable {
+        mouseClick(campaignsPage.btnCancelFilters);
+    }
+
+    @Then("^Changes are discarded on the fligts popup and popup closed$")
+    public void changesAreDiscardedOnTheFligtsPopupAndPopupClosed() throws Throwable {
+      GeneralUtilites.wait(1);
+        Assert.assertTrue("Popup not closed",
+                campaignsPage.txtSearch.isDisplayed());
+    }
+
+    @Then("^Option to filter the rows on the home page$")
+    public void optionToFilterTheRowsOnTheHomePage() throws Throwable {
+        homePage = new ProteusWebHomePage(this.browserFactory);
+        Assert.assertTrue("Options to filter the rows  doesn't exist on the home page",
+                homePage.checkForFilterOptions());
+    }
 }

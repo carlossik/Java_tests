@@ -29,6 +29,20 @@ Feature: Ability to search for Flights
     And Filter dropdown fields exist
     And LogOut ProteusWeb from Campaigns page
 
+  @CampaignsTabProWeb
+  Scenario: 03 Ability to Filter fights by Advertiser, Agency, Group advertiser and Market
+    Then All Campaigns loads which I have access to
+    And There is option to set the filters on flights tab
+    And Fights Tab Filter dropdown fields exist on popup
+    And I can see Clear filter icon on flights filter popup
+    When I have selected values in one or more on flights filter popup
+    When I click on clear filters on flights filter popup
+    Then The values are cleared on popup on flights filter popup
+    When I have selected values in one or more on flights filter popup
+    When I click on cancel on popup on flights filter popup
+    Then Changes are discarded on the fligts popup and popup closed
+    And LogOut ProteusWeb from Campaigns page
+
 
   @SearchOnProWeb
   Scenario: 04 Ability to use search and filter combinations
