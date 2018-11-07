@@ -191,8 +191,9 @@ public class CampaignsCampaignsPage extends BrowserFactory {
         By DiscrepancyDetails = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[2]/div/div[1]/div[1]/div/div/div/div[4]/div[2]/div");
         List<WebElement> webElements = browserFactory.getDriver().findElements(DiscrepancyDetails);
         returnType = returnType && webElements.get(0).getText().toLowerCase().contains("Impressions".toLowerCase());
-        returnType = returnType && webElements.get(1).getText().toLowerCase().contains("Clicks".toLowerCase());
-        returnType = returnType && webElements.get(2).getText().toLowerCase().contains("Conversions".toLowerCase());
+        returnType = returnType && webElements.get(1).getText().toLowerCase().contains("Imp. discrepancy vs DSP".toLowerCase());
+        returnType = returnType && webElements.get(2).getText().toLowerCase().contains("Clicks".toLowerCase());
+        returnType = returnType && webElements.get(3).getText().toLowerCase().contains("Conversions".toLowerCase());
         return returnType;
     }
 

@@ -1,4 +1,4 @@
-@EditGoalData
+@NotValid
 Feature: Proteus home page
 
 Background:

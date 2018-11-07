@@ -324,7 +324,7 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
 
     @And("^Count to identify how many Advertiser Accounts are currently assigned is shown$")
     public void countToIdentifyHowManyAdvertiserAccountsAreCurrentlyAssignedIsShown() throws Throwable {
-
+       GeneralUtilites.wait(1);
        String strAssignedAdvertiser  = adminSecurityGroupsPage.lblAssignedAdvetiser.getText();
         Assert.assertTrue("Count to identify how many Advertiser Accounts are currently assigned is not shown",
                 Integer.parseInt( adminSecurityGroupsPage.lblAssignedAdvetiser.getText()
@@ -354,7 +354,7 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
 
     @Then("^Assigned advertiser list filtered based on search key \"([^\"]*)\"$")
     public void assignedAdvertiserListFilteredBasedOnSearchKey(String strSearchKey) throws Throwable {
-        List<WebElement> advs =  getElements("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[1]");
+        List<WebElement> advs =  getElements("//*[@id='root']//section//div[2]/div/div[2]/div/div/div/div/div[2]/div/div/div[1]");
         boolean returnType= true;
         for ( WebElement adv : advs ) {
             returnType = returnType &&  adv.getText().toLowerCase().contains(strSearchKey.toLowerCase());
@@ -371,7 +371,7 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
     @And("^the table will go back to listing all Advertiser Accounts assigned$")
     public void theTableWillGoBackToListingAllAdvertiserAccountsAssigned() throws Throwable {
         Assert.assertTrue("the table refreshed listing all Advertiser Accounts assigned",
-                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[1]") > 0);
+                getElementCount("//*[@id='root']//section//div[2]/div/div[2]/div/div/div/div/div[2]/div/div/div[1]") > 0);
     }
 
     @When("^Open Add Security Group screen$")
@@ -397,39 +397,39 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
 
     @Then("^There is a add button next to the Advertiser Account row$")
     public void thereIsAAddButtonNextToTheAdvertiserAccountRow() throws Throwable {
-         Assert.assertTrue("There is no add button next to the Advertiser Account row", getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[2]/div[1]/div/div[2]/div[1]/div/div[2]/div/div/div[4]//button")>0);
+         Assert.assertTrue("There is no add button next to the Advertiser Account row", getElementCount("//*[@id='root']//section//div[1]/div[1]/div[2]/div/div/div[1]/div/div[2]/div/div/div[4]//button")>0);
     }
 
     @When("^I select add button next to the Advertiser Account row$")
     public void iSelectAddButtonNextToTheAdvertiserAccountRow() throws Throwable {
        GeneralUtilites.wait(1);
-       mouseClick( getElements("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[2]/div[1]/div/div[2]/div[1]/div/div[2]/div/div/div[4]//button").get(0));
+       mouseClick( getElements("//*[@id='root']//section//div[1]/div[1]/div[2]/div/div/div[1]/div/div[2]/div/div/div[4]//button").get(0));
        GeneralUtilites.wait(1);
     }
 
     @Then("^the Advertiser Account moves to the right side table 'Assigned Advertiser Accounts'$")
     public void theAdvertiserAccountMovesToTheRightSideTableAssignedAdvertiserAccounts() throws Throwable {
         Assert.assertTrue("the Advertiser Account not moved to the right side table 'Assigned Advertiser Accounts'",
-                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div/div[2]/div/div") ==2);
+                getElementCount("//*[@id='root']//section//div[2]/div/div[2]/div/div[1]/div[1]/div/div[2]/div/div") ==2);
     }
 
     @And("^there is a minus button next to the advertiser account row$")
     public void thereIsAMinusButtonNextToTheAdvertiserAccountRow() throws Throwable {
         Assert.assertTrue("there is no minus button next to the advertiser account row",
-                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[4]//button") ==2);
+                getElementCount("//*[@id='root']//section//div[2]/div/div[2]//div/div[4]/div/button") ==2);
 
     }
 
     @When("^I select the minus button$")
     public void iSelectTheMinusButton() throws Throwable {
-        mouseClick(getElements("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div/div[2]/div/div/div[4]//button").get(0));
+        mouseClick(getElements("//*[@id='root']//section//div[2]/div/div[2]//div/div[4]/div/button").get(0));
         GeneralUtilites.wait(1);
     }
 
     @Then("^the advertiser account is removed$")
     public void theAdvertiserAccountIsRemoved() throws Throwable {
         Assert.assertTrue("the advertiser account is not removed",
-                getElementCount("//*[@id='root']/div/section/div/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div/div[2]/div/div") ==1);
+                getElementCount("//*[@id='root']//section//div[2]/div/div[2]/div/div[1]/div[1]/div/div[2]/div/div") ==1);
     }
 
     @When("^Search for a Secuity group$")
@@ -437,5 +437,16 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
        enterText(adminSecurityGroupsPage.txtSearchSecurityGroups,"Demo");
        mouseClick(adminSecurityGroupsPage.btnApply);
        GeneralUtilites.wait(2);
+    }
+
+    @When("^I click on save button after editing advertiser account details$")
+    public void iClickOnSaveTheAdvertiserAccountDetailsSavedToSecurityGroup() throws Throwable {
+       mouseClick(getElement("//*[@id='root']//section//button[text()='Save']"));
+       GeneralUtilites.wait(1);
+    }
+
+    @Then("^Changes to Advertiser account details are saved$")
+    public void changesToAdvertiserAccountDetailsAreSaved() throws Throwable {
+        Assert.assertTrue("Changes to Advertiser account details are not saved",getElementCount("//*[@id='root']//section//button[text()='Save']") ==0 );
     }
 }

@@ -1,5 +1,5 @@
 @CampaignsTabProWeb
-Feature: Ability to search for Flights
+Feature: Ability to search for Campaigns
 
   Background:
     Given I am a Proteus User
@@ -116,8 +116,8 @@ Feature: Ability to search for Flights
     When I click on the pixels icon on Campaign row
     Then Pixels screen opened
 
-    @CampaignsTabProWeb
-    Scenario: 11 Flight link on campaign tab
+  @CampaignsTabProWeb
+  Scenario: 11 Flight link on campaign tab
       When I search/filter for a particular campaign
       And Campaigns tab click on Apply button
       Then All campaign matching search/filter combination load as results

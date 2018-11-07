@@ -52,6 +52,9 @@ Feature: Ability to Edit Security Groups
     And there is a minus button next to the advertiser account row
     When I select the minus button
     Then the advertiser account is removed
+    When I click on save button after editing advertiser account details
+    Then Changes to Advertiser account details are saved
+
 
   @SecurityGroup
   Scenario: 04 Pagination and scroll on tables

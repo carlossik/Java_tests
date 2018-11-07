@@ -128,28 +128,40 @@ public class ProteusWebHomePage extends BrowserFactory
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']//section//button[text()='clear']")
     @CacheLookup
-    private WebElement btnClear;
+    public WebElement btnClear;
 
-    public void NavigateProteusOrganisations()
-    {
-        GeneralUtilites.wait(1);
-        mouseClick(tabOrganisations );
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//section//div[2]/div[1]/div/div/div/div[2]/div[1]/div/div[1]")
+    @CacheLookup
+    public WebElement tblhdData;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//section//button/span[text()='refresh']/..")
+    @CacheLookup
+    public WebElement btnRefresh;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//section//label/span[text()='Cost']")
+    @CacheLookup
+    public WebElement rdbtnCost;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//section//label/span[text()='Impressions']")
+    @CacheLookup
+    public WebElement rdbtnImpressions;
+
+    public void NavigateProteusOrganisations()     {
+       GeneralUtilites.wait(1);
+       mouseClick(tabOrganisations );
     }
 
-    public void NavigateProteusUsers()
-    {
+    public void NavigateProteusUsers()    {
         GeneralUtilites.wait(1);
         mouseClick(tabUsers );
     }
 
-    public void NavigateProteusVendors()
-    {
+    public void NavigateProteusVendors()    {
         GeneralUtilites.wait(1);
         mouseClick(tabVendors );
     }
 
-    public void NavigateProteusCampaign()
-    {
+    public void NavigateProteusCampaign()    {
         GeneralUtilites.wait(1);
         if(tabCampaign.isDisplayed())
             mouseClick(tabCampaign);
@@ -157,69 +169,57 @@ public class ProteusWebHomePage extends BrowserFactory
             mouseClick(boxCampaign);
     }
 
-    public void NavigateProteusHome()
-    {
+    public void NavigateProteusHome()    {
         GeneralUtilites.wait(1);
         mouseClick(tabHome );
     }
 
-    public void NavigateProteusReports()
-    {
+    public void NavigateProteusReports()    {
         GeneralUtilites.wait(1);
          mouseClick(tabReports );
     }
 
-    public void NavigateProteusClientReports()
-    {
+    public void NavigateProteusClientReports()    {
         GeneralUtilites.wait(1);
          mouseClick(tabClientReporting );
     }
 
-    public boolean CheckCampaignTabExist()
-    {
+    public boolean CheckCampaignTabExist()    {
         if(tabCampaign.isDisplayed())
             return true;
         else
           return boxCampaign.isDisplayed();
-
     }
 
-    public boolean CheckReportsTabExist()
-    {
+    public boolean CheckReportsTabExist()    {
         return tabReports.isDisplayed();
     }
-    public boolean CheckClientReportsTabExist()
-    {
+
+    public boolean CheckClientReportsTabExist()    {
         return tabClientReporting.isDisplayed();
     }
-    public boolean CheckOrganisationsTabExist()
-    {
+    public boolean CheckOrganisationsTabExist()    {
         return tabOrganisations.isDisplayed();
     }
 
-    public boolean  CheckVendorsTabExist()
-    {
+    public boolean  CheckVendorsTabExist()    {
         return tabVendors.isDisplayed();
     }
 
-    public boolean CheckUsersTabExist()
-    {
+    public boolean CheckUsersTabExist()    {
         return tabUsers.isDisplayed();
     }
 
-    public boolean CheckHomeTabExist()
-    {
+    public boolean CheckHomeTabExist()    {
         return tabHome.isDisplayed();
     }
 
-    public boolean CheckHomePage()
-    {
+    public boolean CheckHomePage()    {
        // return getElementCount("//*[@id='root']/div/section/div/div[1]/div[2]/div[2]/div/div/div/div//h5") > 1;
         return true;
     }
 
-    public boolean checkForFilterOptions()
-    {
+    public boolean checkForFilterOptions()    {
        GeneralUtilites.wait(1);
        return dpdwnDateRange.isDisplayed() &&
               dpdwnOperationalUnit.isDisplayed() &&
@@ -229,8 +229,24 @@ public class ProteusWebHomePage extends BrowserFactory
               dpdwnDSPs.isDisplayed();
     }
 
-    public boolean CheckLogOutExist()
-    {
+    public boolean checkForDatagrid(){
+        GeneralUtilites.wait(1);
+        return tblhdData.isDisplayed();
+    }
+
+    public boolean checkForGraphFilter(){
+        GeneralUtilites.wait(1);
+        return rdbtnCost.isDisplayed() && rdbtnImpressions.isDisplayed();
+    }
+
+    public void changeFilterOptions(){
+       mouseClick( dpdwnDateRange);
+       GeneralUtilites.wait(1);
+       mouseClick(dpdwnDateRangeItems);
+       mouseClick(btnApply);
+    }
+
+    public boolean CheckLogOutExist()    {
         GeneralUtilites.wait(0.5);
         mouseClick(btnShowUserOptions);
         GeneralUtilites.wait(0.5);
@@ -239,8 +255,7 @@ public class ProteusWebHomePage extends BrowserFactory
         return boolLogOut;
     }
 
-    public void Logout()
-    {
+    public void Logout()    {
          mouseClick( btnShowUserOptions);
          GeneralUtilites.wait(0.5);
          mouseClick(btnLogOut );

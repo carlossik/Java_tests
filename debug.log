@@ -391,3 +391,17 @@
 [1026/124255.345:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
 [1030/144742.018:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
 [1030/150130.503:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[1030/164746.574:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[1030/224438.606:ERROR:file_io_win.cc(161)] CreateFile C:\Users\RAMCHA~1.TEL\AppData\Local\Temp\scoped_dir11208_3594\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[1030/224438.606:ERROR:file_io_win.cc(170)] CreateFile C:\Users\RAMCHA~1.TEL\AppData\Local\Temp\scoped_dir11208_3594\Crashpad\reports\2497f6da-1e19-4b61-8b8c-1ff5a2a8f19e.dmp: The system cannot find the path specified. (0x3)
+[1030/224438.606:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed
+[1031/102323.374:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[1031/103845.055:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[1031/110701.297:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[1031/112717.112:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[1031/165539.555:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[1101/102906.780:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[1101/135430.056:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[1101/201741.737:ERROR:file_io_win.cc(161)] CreateFile C:\Users\RAMCHA~1.TEL\AppData\Local\Temp\scoped_dir20264_5753\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[1101/201741.750:ERROR:file_io_win.cc(170)] CreateFile C:\Users\RAMCHA~1.TEL\AppData\Local\Temp\scoped_dir20264_5753\Crashpad\reports\bba15adf-5d44-4897-b561-86b6e44865d9.dmp: The system cannot find the path specified. (0x3)
+[1101/201741.750:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed

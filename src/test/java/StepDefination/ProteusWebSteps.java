@@ -1339,4 +1339,53 @@ public class ProteusWebSteps extends BrowserFactory
         Assert.assertTrue("Options to filter the rows  doesn't exist on the home page",
                 homePage.checkForFilterOptions());
     }
+
+    @Then("^Datagrid with advertiser and their Clicks and Impressions shown$")
+    public void datagridWithAdvertiserAndTheirClicksAndImpressionsShown() throws Throwable {
+        homePage = new ProteusWebHomePage(this.browserFactory);
+        Assert.assertTrue("Datagrid with advertiser and their Clicks and Impressions not shown", homePage.checkForDatagrid());
+    }
+
+    @When("^Filter options changed and applied$")
+    public void filterOptionsChangedAndApplied() throws Throwable {
+        homePage = new ProteusWebHomePage(this.browserFactory);
+        homePage.changeFilterOptions();
+    }
+
+    @Then("^Datagrid refresh with new values$")
+    public void datagridRefreshWithNewValues() throws Throwable {
+        homePage = new ProteusWebHomePage(this.browserFactory);
+        Assert.assertTrue("Datagrid not refresh with new values", homePage.checkForDatagrid());
+    }
+
+    @Then("^option to select Cost or Impressions$")
+    public void optionToSelectCostOrImpressions() throws Throwable {
+        homePage = new ProteusWebHomePage(this.browserFactory);
+        Assert.assertTrue("Datagrid not refresh with new values", homePage.checkForGraphFilter());
+    }
+
+    @When("^Select the Impressions button$")
+    public void selectTheImpressionsButton() throws Throwable {
+        homePage = new ProteusWebHomePage(this.browserFactory);
+        mouseClick(homePage.rdbtnImpressions);
+    }
+
+    @When("^Select the Cost button$")
+    public void selectTheCostButton() throws Throwable {
+        homePage = new ProteusWebHomePage(this.browserFactory);
+        mouseClick(homePage.rdbtnCost);
+        GeneralUtilites.wait(1);
+    }
+
+    @Then("^Graph updated with Impressions$")
+    public void graphUpdatedWithImpressions() throws Throwable {
+        homePage = new ProteusWebHomePage(this.browserFactory);
+        Assert.assertTrue("Still not implemented ", 1==1);
+    }
+
+    @Then("^Graph updated with Cost$")
+    public void graphUpdatedWithCost() throws Throwable {
+        homePage = new ProteusWebHomePage(this.browserFactory);
+        Assert.assertTrue("Still not implemented ", 1==1);
+    }
 }
