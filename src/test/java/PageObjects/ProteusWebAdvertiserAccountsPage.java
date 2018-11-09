@@ -71,7 +71,7 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
     @CacheLookup
     private WebElement rowAdvertiser;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div/form/div[1]//div[2]/div[2]/button")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//section//form//div[1]/button")
     @CacheLookup
     public WebElement btnEditAdvertiserDetails;
 
@@ -91,11 +91,11 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
     @CacheLookup
     private WebElement cmbOperationalUnit;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div/form/div[1]//div[2]/div[2]/div[1]/button")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//section//form//div[1]/button")
     @CacheLookup
     private WebElement btnSave;
 
-    @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div/form/div[1]/div[2]/div[2]/div[2]/button")
+    @FindBy(how = How.XPATH, using = " //*[@id='root']//section//form//div[2]/button")
     @CacheLookup
     public WebElement btnCancel;
 
@@ -103,11 +103,10 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
     @CacheLookup
     public WebElement lblAdvertiserPlatformDetails;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div/form/div[1]//div[2]/div[1]/button")
-
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//section//div[1]/div[1]/div/button")
     public WebElement btnBack;
 
-    @FindBy(how = How.XPATH, using = " //*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[1]/div/form/div[1]//div[2]/div[3]/button")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//section//form//div[2]/button")
     @CacheLookup
     public WebElement btnMergeAdvertiser;
 
@@ -151,6 +150,7 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
 
     public void EditAdvertiserName(String strAdvertiserName)
     {
+        GeneralUtilites.wait(1);
         enterText(txtAdvertiserName,strAdvertiserName);
         mouseClick(cmbAgencyName);
         GeneralUtilites.wait(1);
@@ -199,13 +199,13 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
 
     public boolean CheckForAdvertiserPlatformDetails(){
 
-        By PlatformIcons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[2]/div/div[2]/div/div[1]");
+        By PlatformIcons = By.xpath("//*[@id='root']//section//div[2]/div/div[2]//div[2]/div/div/div/div");
         List<WebElement> elementTypesPlatformIcons = browserFactory.getDriver().findElements(PlatformIcons);
 
-        By PlatformName = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[2]/div/div[2]/div/div[2]");
+        By PlatformName = By.xpath("//*[@id='root']//section//div[2]/div/div[2]/div/div[2]/div/div/div[2]");
         List<WebElement> elementTypesPlatformName = browserFactory.getDriver().findElements(PlatformName);
 
-        By PlatformExternalID = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[2]/div/div[2]/div/div[3]");
+        By PlatformExternalID = By.xpath("//*[@id='root']//section//div[2]/div/div[2]/div/div[2]/div/div/div[5]");
         List<WebElement> elementTypesPlatformExternalID = browserFactory.getDriver().findElements(PlatformExternalID);
 
         return elementTypesPlatformIcons.size() > 0 &&
@@ -215,7 +215,7 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
 
     public boolean CheckForAdvertiserPlatformToolTip(){
         boolean returnType = true;
-        By PlatformIcons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[2]/div/div[2]/div/div[1]");
+        By PlatformIcons = By.xpath("//*[@id='root']//section//div[2]/div/div[2]//div[2]/div/div/div/div");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(PlatformIcons);
         for (WebElement elementType :elementTypes){
                returnType = returnType && !getToolTip(elementType).equals("");
@@ -226,7 +226,7 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
 
     public boolean CheckForAdvertiserPlatformTab(){
         boolean returnType = true;
-        By PlatformIcons = By.xpath("//*[@id='root']/div/section/div/div[2]/div/div/div/div[2]/div[2]/div/div[2]/div/div[1]");
+        By PlatformIcons = By.xpath("//*[@id='root']//section//div[2]/div/div[2]//div[2]/div/div/div/div");
         List<WebElement> elementTypes = browserFactory.getDriver().findElements(PlatformIcons);
         for (WebElement elementType :elementTypes){
             mouseClick(elementType);

@@ -48,11 +48,11 @@ public class AdminSecurityGroupsPage extends BrowserFactory {
     @CacheLookup
     public WebElement txtSecurityGroupsName;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']//section//div/form//div[1]//div[2]/div[2]/button")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//section//form//div[2]/button")
     @CacheLookup
     public WebElement btnCancel;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']//section//div/form//div[1]//div[2]/div[1]/button")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//section//form//div[1]/button")
     @CacheLookup
     public WebElement btnSave;
 
