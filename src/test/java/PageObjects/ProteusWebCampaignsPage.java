@@ -87,7 +87,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
 
 
 
-    @FindBy(how = How.XPATH, using = "//*[@id='root']//*[contains(@class,'automation_flightsFilterApply')]")
+    @FindBy(how = How.XPATH, using = "//html/body//section//button[text()='APPLY']")
     public WebElement btnApplyFilters;
 
 
@@ -172,16 +172,16 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
     @FindBy(how = How.XPATH, using = "//*[@id='root']/div/section//label/input[@name='showDecimalPlaces']/../div")
     public WebElement chbxShowDecimalPlaces;
 
-    @FindBy(how=How.XPATH,using = "//*[@id='root']/div/section//div[2]/div[1]/button")
+    @FindBy(how=How.XPATH,using = " //*[@id='root']//section//div[2]/div/div/div[1]/div/div/div[1]/div/button/span")
     public WebElement btnFilter;
 
-    @FindBy(how = How.XPATH, using = "//html/body//button[@title='Clear Filters']")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//section//button[text()='CLEAR']")
     public WebElement btnClearFilters;
 
-    @FindBy(how = How.XPATH, using = "/html/body//section//div[@class='automation_campaignsFilterAdvertiser local_filter_27trk']//input")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//section//div[@class='automation_campaignsFilterAdvertiser local_filter_2Os0s']//input")
     public WebElement txtAdvertiser;
 
-    @FindBy(how = How.XPATH, using = "/html/body//section//div[@class='automation_campaignsFilterAgency local_filter_27trk']//input")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//section//div[@class='automation_campaignsFilterAgency local_filter_2Os0s']//input")
     public WebElement txtAgency;
 
     @FindBy(how = How.XPATH, using = "//html/body//section//button[2]")
@@ -300,12 +300,12 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
             enterText(txtSearch, Search);
         GeneralUtilites.wait(1);
         if (!Advertiser.equals("") || !Agency.equals("")) {
-            mouseClick(getElement("//*[@id='root']//section/div/div[2]/div/div/div[2]/div/div[1]//div[1]/button"));
+            mouseClick(btnFilter);
             GeneralUtilites.wait(2);
             typeText(txtAdvertiser, Advertiser);
           //  enterText(txtAgency, Agency);
             GeneralUtilites.wait(2);
-            mouseClick(getElement("/html/body//section//div/button[text()='OK']"));
+            mouseClick(btnApplyFilters);
         }
 
         GeneralUtilites.wait(1);
@@ -314,7 +314,7 @@ public class ProteusWebCampaignsPage extends BrowserFactory {
 
     public boolean CheckFilterExist() {
         GeneralUtilites.wait(1);
-        mouseClick( getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]/div[1]/div[2]/div/div[2]/div[2]/div[1]/button"));
+        mouseClick( btnFilter);
         GeneralUtilites.wait(1);
         boolean  returnType =  txtAdvertiser.isDisplayed() && txtAgency.isDisplayed();
    //     mouseClick(getElement("/html/body//section//button[text()='OK']"));

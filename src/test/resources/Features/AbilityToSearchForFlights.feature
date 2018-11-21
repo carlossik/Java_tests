@@ -30,41 +30,41 @@ Feature: Ability to search for Flights
     And LogOut ProteusWeb from Campaigns page
 
   @CampaignsTabProWeb
-  Scenario: 03 Ability to Filter fights by Advertiser, Agency, Group advertiser and Market
+  Scenario: 04 Ability to Filter fights by Advertiser, Agency, Group advertiser and Market
     Then All Campaigns loads which I have access to
     And There is option to set the filters on flights tab
     And Fights Tab Filter dropdown fields exist on popup
     And I can see Clear filter icon on flights filter popup
     When I have selected values in one or more on flights filter popup
     When I click on clear filters on flights filter popup
-    Then The values are cleared on popup on flights filter popup
-    When I have selected values in one or more on flights filter popup
-    When I click on cancel on popup on flights filter popup
-    Then Changes are discarded on the fligts popup and popup closed
+    #Then The values are cleared on popup on flights filter popup
+    #When I have selected values in one or more on flights filter popup
+    #When I click on cancel on popup on flights filter popup
+    #Then Changes are discarded on the fligts popup and popup closed
     And LogOut ProteusWeb from Campaigns page
 
 
   @SearchOnProWeb
-  Scenario: 04 Ability to use search and filter combinations
+  Scenario: 05 Ability to use search and filter combinations
     Then All Flights loads which I have access to
     And LogOut ProteusWeb from Campaigns page
 
   @SearchOnProWeb
-  Scenario: 05 Apply button is enabled after entering/selecting search and filters
+  Scenario: 06 Apply button is enabled after entering/selecting search and filters
     Then All Flights loads which I have access to
     When I search/filter for a particular result
     #Then Apply button is enabled
     And LogOut ProteusWeb from Campaigns page
 
   @SearchOnProWeb
-  Scenario: 06 Clear Filters button is enabled after entering/selecting search and filters
+  Scenario: 07 Clear Filters button is enabled after entering/selecting search and filters
     Then All Flights loads which I have access to
     When I search/filter for a particular result
    # Then Clear Filters button is enabled
     And LogOut ProteusWeb from Campaigns page
 
   @SearchOnProWeb
-  Scenario: 07 Flights matching Search/Filter Combination loaded as results
+  Scenario: 08 Flights matching Search/Filter Combination loaded as results
     Then All Flights loads which I have access to
     When I search/filter for a particular result
     And Click on Apply button
@@ -75,7 +75,7 @@ Feature: Ability to search for Flights
 
 
   @SearchOnProWeb
-  Scenario: 08 Budget, Spend information and Flight Dates
+  Scenario: 09 Budget, Spend information and Flight Dates
     Then All Flights loads which I have access to
     When I search/filter for a particular result
     And Click on Apply button
@@ -85,7 +85,7 @@ Feature: Ability to search for Flights
     Then LogOut ProteusWeb from Campaigns page
 
   @SearchOnProWeb
-  Scenario: 09 Goal Type, Goal Value, Optimisation Manager are editable
+  Scenario: 10 Goal Type, Goal Value, Optimisation Manager are editable
     Then All Flights loads which I have access to
     When I search/filter for a particular result
     And Click on Apply button
@@ -95,7 +95,7 @@ Feature: Ability to search for Flights
 
 
   @SearchOnProWeb
-  Scenario: 10 Pagination shown when more than 20 flights displayed
+  Scenario: 11 Pagination shown when more than 20 flights displayed
     Then All Flights loads which I have access to
     When I search/filter for a particular result
     And Click on Apply button
@@ -105,7 +105,7 @@ Feature: Ability to search for Flights
 
 
   @SearchOnProWeb
-  Scenario: 11 No flights matching your search message shown
+  Scenario: 12 No flights matching your search message shown
     Then All Flights loads which I have access to
     When I search/filter for a flightName "AAAAAAAAA"
     And Click on Apply button
@@ -113,7 +113,7 @@ Feature: Ability to search for Flights
     Then LogOut ProteusWeb from Campaigns page
 
   @SearchOnProWeb
-  Scenario: 12 Able to search flights based on Campaign Name
+  Scenario: 13 Able to search flights based on Campaign Name
     Then All Flights loads which I have access to
     When I search/filter for a Campaign "LOCAL BRANDING - GAME/COUNTRY"
     And Click on Apply button

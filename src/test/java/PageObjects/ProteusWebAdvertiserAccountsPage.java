@@ -148,13 +148,15 @@ public class ProteusWebAdvertiserAccountsPage extends BrowserFactory {
         GeneralUtilites.wait(1);
     }
 
-    public void EditAdvertiserName(String strAdvertiserName)
+    public void EditAdvertiserName(String strAdvertiserName,boolean editAgency)
     {
         GeneralUtilites.wait(1);
         enterText(txtAdvertiserName,strAdvertiserName);
-        mouseClick(cmbAgencyName);
-        GeneralUtilites.wait(1);
-        mouseClick(listitemAgency);
+        if(editAgency) {
+            mouseClick(cmbAgencyName);
+            GeneralUtilites.wait(1);
+            mouseClick(listitemAgency);
+        }
         GeneralUtilites.wait(1);
         mouseClick(cmbGroupAdvertiser);
         GeneralUtilites.wait(1);

@@ -62,4 +62,8 @@ Feature: Ability to Edit Security Groups
     Then Able to navigate to Administration Security Groups
     And  Pagination shown at the bottom of the page
 
-
+  @SecurityGroup
+  Scenario: 05 Correct tooltip shown on the Security Group row
+    When I click on Security Groups tab
+    Then Security Group rows shown
+    #Then Tooltip Security Group name shown on mouseover on name

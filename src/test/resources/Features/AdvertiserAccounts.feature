@@ -50,8 +50,21 @@ Scenario: 05 Able to edit Advertiser Account details
   Then Advertisers filtered as per search key "AdvertiserNameAfterEdit"
   And LogOut ProteusWeb from Admin Page
 
+  @AdvertiserAccounts
+  Scenario: 06 Able to edit Advertiser Account details and save details without agency
+    Then Able to navigate to Advertiser Accounts
+    When Search for an Advertiser to EditName
+    When I select a First Advertiser Account
+    When Click on edit icon to change advertiser information
+    And Update Advertiser and save the details
+    When Search for Advertiser before edit name
+    Then No Advertisers returned
+    When Search for Advertiser with updated name
+    Then Advertisers filtered as per search key "AdvertiserNameAfterEdit"
+    And LogOut ProteusWeb from Admin Page
+
 @AdvertiserAccounts
-Scenario: 06 Option to Merge advertiser account into another
+Scenario: 07 Option to Merge advertiser account into another
   Then Able to navigate to Advertiser Accounts
   When Search for an Advertiser to EditName
   Then Advertisers filtered as per search key "AdvertiserNameBeforeEdit"
@@ -60,7 +73,7 @@ Scenario: 06 Option to Merge advertiser account into another
   And LogOut ProteusWeb from Admin Page
 
 @AdvertiserAccounts
-Scenario: 07 Option to Merge advertiser account into another
+Scenario: 08 Option to Merge advertiser account into another
   Then Able to navigate to Advertiser Accounts
   When Search for an Advertiser to EditName
   Then Advertisers filtered as per search key "AdvertiserNameBeforeEdit"
@@ -70,7 +83,7 @@ Scenario: 07 Option to Merge advertiser account into another
   And LogOut ProteusWeb from Admin Page
 
 @AdvertiserAccounts
-Scenario: 08 Advertiser Platform Details shown on the Advertiser details page
+Scenario: 09 Advertiser Platform Details shown on the Advertiser details page
   Then Able to navigate to Advertiser Accounts
   When Search for a Advertiser Name "PHARMA - MAINTAIN"
   Then Advertisers filtered as per search key "PHARMA - MAINTAIN"
@@ -82,7 +95,7 @@ Scenario: 08 Advertiser Platform Details shown on the Advertiser details page
 
 
   @AdvertiserAccounts
-  Scenario: 09 Merge advertiser account into another
+  Scenario: 10 Merge advertiser account into another
     Then Able to navigate to Advertiser Accounts
     When Search for an Advertiser to Merge
     And I select a First Advertiser Account
@@ -96,7 +109,7 @@ Scenario: 08 Advertiser Platform Details shown on the Advertiser details page
     And LogOut ProteusWeb from Admin Page
 
   @AdvertiserAccounts
-  Scenario: 10 Cancel Merge advertiser account into another
+  Scenario: 11 Cancel Merge advertiser account into another
     Then Able to navigate to Advertiser Accounts
     When Search for an Advertiser to Merge
     And I select a First Advertiser Account
@@ -110,13 +123,13 @@ Scenario: 08 Advertiser Platform Details shown on the Advertiser details page
     And LogOut ProteusWeb from Admin Page
 
   @AdvertiserAccounts
-  Scenario: 11 Able to search by Requires action
+  Scenario: 12 Able to search by Requires action
     Then Able to navigate to Advertiser Accounts
     When Search based on Requires action
     Then Advertisers filtered as per Requires action
 
   @AdvertiserAccounts
-  Scenario: 12 Able to Bulk edit and save
+  Scenario: 13 Able to Bulk edit and save
     Then Able to navigate to Advertiser Accounts
     When Search based on Requires action
     And Click on bulk edit

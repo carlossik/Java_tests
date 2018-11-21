@@ -31,10 +31,10 @@ Feature: Ability to search for Campaigns
     And I can see Clear filter icon on popup
     When I have selected values in one or more filters
     When I click on clear filters
-    Then The values are cleared on popup
-    When I have selected values in one or more filters
-    When I click on cancel on popup
-    Then Changes are discarded on the popup and popup closed
+   # Then The values are cleared on popup
+  #  When I have selected values in one or more filters
+    #When I click on cancel on popup
+   # Then Changes are discarded on the popup and popup closed
     And LogOut ProteusWeb from Campaigns page
 
   @CampaignsTabProWeb

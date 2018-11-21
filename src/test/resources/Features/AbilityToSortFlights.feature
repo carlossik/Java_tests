@@ -27,5 +27,5 @@ Feature: Ability to sort Flights
   |Booking|
   |Campaign|
   |Flight|
-  |Start Date|
+ # |Start Date|
   |End Date|

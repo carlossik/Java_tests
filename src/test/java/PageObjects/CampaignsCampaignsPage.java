@@ -83,10 +83,10 @@ public class CampaignsCampaignsPage extends BrowserFactory {
     @FindBy(how = How.XPATH, using = "//*[@id='root']//*[@class='automation_campaignsFilterSort']//button")
     private WebElement btnSort;
 
-    @FindBy(how = How.XPATH, using = "/html/body//section//div[@class='automation_campaignsFilterAdvertiser local_filter_1dfE4']//input")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//section//div[@class='automation_campaignsFilterGroupAdvertiser local_filter_2Kk7y']//input")
     public WebElement txtAdvertiser;
 
-    @FindBy(how = How.XPATH, using = "/html/body//section//div[@class='automation_campaignsFilterAgency local_filter_1dfE4']//input")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//section//div[@class='automation_campaignsFilterAgency local_filter_2Kk7y']//input")
     public WebElement txtAgency;
 
     @FindBy(how = How.XPATH, using = "//*[@id='root']//*[@class='automation_campaignsFilterRequiresAction']//input[@name='onlyWithEmptyGoalOrUnknownTrader']/../div")
@@ -95,7 +95,7 @@ public class CampaignsCampaignsPage extends BrowserFactory {
     @FindBy(how = How.XPATH, using = "//*[@id='root']//*[contains(@class,'automation_campaignsFilterApply')]")
     public WebElement btnApplyFilters;
 
-    @FindBy(how = How.XPATH, using = "//html/body//button[@title='Clear Filters']")
+    @FindBy(how = How.XPATH, using = "//*[@id='root']//button[text()='CLEAR']")
     public WebElement btnClearFilters;
 
     @FindBy(how = How.XPATH, using = "//html/body//section/div[2]//button[1]")
@@ -296,7 +296,7 @@ public class CampaignsCampaignsPage extends BrowserFactory {
 
     public boolean CheckFilterExist() {
         GeneralUtilites.wait(1);
-        mouseClick( getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]/div[1]/div[2]/div/div[2]/div[2]/button"));
+        mouseClick( getElement("//*[@id='root']//section//div[2]/div/div/div[1]/div/div/div[1]/div/button"));
         GeneralUtilites.wait(1);
         boolean  returnType =  txtAdvertiser.isDisplayed() && txtAgency.isDisplayed();
         return  returnType;

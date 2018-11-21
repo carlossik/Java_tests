@@ -184,9 +184,9 @@ public class ProteusWebCampaignsSteps extends BrowserFactory {
     @And("^Campaigns tab click on Apply button$")
     public void clickOnApplyButtonOnCampaignsTab() throws Throwable {
         GeneralUtilites.wait(1);
-        //mouseClick(campaignsCampaignPage.btnApplyFilters);
-        mouseClick(getElement("//*[@id='root']/div/section/div/div[2]/div/div/div[2]/div/div[1]/div[1]/div[2]/div/div[2]/div[3]/button"));
+        mouseClick(getElement("//*[@id='root']//section//div[2]/div/div/div[1]/div/div/div[1]/div/button"));
         GeneralUtilites.wait(1);
+        mouseClick(getElement("//*[@id='root']//section//button[text()='APPLY']"));
     }
 
     @Then("^Campaign tab clear Filters button is enabled$")

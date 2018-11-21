@@ -207,7 +207,13 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
     @And("^Update Advertiser, Agency Name and save the details$")
     public void updateAdvertiserAgencyNameAndSaveTheDetails()  {
         this.AdvertiserNameAfterEdit = "EditedAdvertiser" + GeneralUtilites.RandomNumber(1000,9999);
-        advertiserAccountsPage.EditAdvertiserName(this.AdvertiserNameAfterEdit);
+        advertiserAccountsPage.EditAdvertiserName(this.AdvertiserNameAfterEdit,true);
+    }
+
+    @And("^Update Advertiser and save the details$")
+    public void updateAdvertiserAndSaveTheDetails() throws Throwable {
+        this.AdvertiserNameAfterEdit = "EditedAdvertiser" + GeneralUtilites.RandomNumber(1000,9999);
+        advertiserAccountsPage.EditAdvertiserName(this.AdvertiserNameAfterEdit,false);
     }
 
     @When("^Search for an Advertiser to EditName$")
@@ -448,5 +454,22 @@ public class ProteusWebAdvertiserSteps extends BrowserFactory {
     @Then("^Changes to Advertiser account details are saved$")
     public void changesToAdvertiserAccountDetailsAreSaved() throws Throwable {
         Assert.assertTrue("Changes to Advertiser account details are not saved",getElementCount("//*[@id='root']//section//button[text()='Save']") ==0 );
+    }
+
+
+    @Then("^Security Group rows shown$")
+    public void securityGroupRowsShown() throws Throwable {
+         Assert.assertTrue("Security group rows not shown",getElementCount("//*[@id='root']//section//div[2]/div/div/div[2]/div/div") > 1);
+    }
+
+    @Then("^Tooltip Security Group name shown on mouseover on name$")
+    public void tooltipSecurityGroupNameShownOnMouseoverOnName() throws Throwable {
+        List<WebElement> objRows =  getElements("//*[@id='root']//section//div[2]/div/div/div[2]/div/div[1]/div[2]");
+        for ( WebElement objRow:objRows) {
+             System.out.println( " TExt on Element : " + objRow.getText() );
+             Assert.assertEquals("",objRow.getText(),  getToolTip(objRow));
+        }
+
+
     }
 }
